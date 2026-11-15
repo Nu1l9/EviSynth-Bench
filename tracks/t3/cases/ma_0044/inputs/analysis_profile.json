@@ -1,0 +1,35 @@
+{
+  "case_id": "ma_0044",
+  "analysis_profile_id": "ma_0044_main_analysis_profile_v1",
+  "analyses": [
+    {
+      "analysis_id": "main_pr_intraoperative_iatrogenic_retinal_break",
+      "pooled_result_id": "pr_intraoperative_iatrogenic_retinal_break",
+      "outcome_group": "Intraoperative iatrogenic retinal breaks",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "eligible_outcome_codes": [
+        "intraoperative_iatrogenic_retinal_break"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "20g_vs_mivs_intraoperative_iatrogenic_break_odds"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

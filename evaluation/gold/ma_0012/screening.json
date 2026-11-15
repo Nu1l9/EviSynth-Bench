@@ -1,0 +1,142 @@
+{
+  "case_id": "ma_0012",
+  "positive_count": 5,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_012001",
+      "title": "Risk of Pneumococcal Disease in Children With Chronic Medical Conditions in the Era of Pneumococcal Conjugate Vaccine",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0012/candidate_014.pdf",
+      "source_filename": "a_012001.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1093/cid/ciu348"
+    },
+    {
+      "candidate_id": "a_012002",
+      "title": "UNDERLYING CONDITIONS IN CHILDREN WITH INVASIVE PNEUMOCOCCAL DISEASE IN THE CONJUGATE VACCINE ERA",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0012/candidate_012.pdf",
+      "source_filename": "a_012002.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1097/inf.0b013e3181fab1cf"
+    },
+    {
+      "candidate_id": "a_012003",
+      "title": "Rates and costs of invasive pneumococcal disease and pneumonia in persons with underlying medical conditions",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0012/candidate_002.pdf",
+      "source_filename": "a_012003.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1186/s12913-016-1432-4"
+    },
+    {
+      "candidate_id": "a_012004",
+      "title": "Risk Factors for Invasive Pneumococcal Disease in Children in the Era of Conjugate Vaccine Use",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0012/candidate_005.pdf",
+      "source_filename": "a_012004.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1542/peds.2009-2150"
+    },
+    {
+      "candidate_id": "a_012005",
+      "title": "The Association between Asthma and Invasive Pneumococcal Disease: A Nationwide Study in Korea",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0012/candidate_007.pdf",
+      "source_filename": "a_012005.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.3346/jkms.2015.30.1.60"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Pediatric Asthma Health Care Utilization, Viral Testing, and Air Pollution Changes During the COVID-19 Pandemic",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_001.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1016/j.jaip.2020.07.057"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Clinical Efficacy and Laboratory Improvement of Bacillus Calmette-Guerin Vaccination on Adult Atopic Asthma: A Cohort Study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_011.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1097/wox.0b013e31816c8b85"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "A case series evaluating the serological response of adult asthma patients to the 23-valent pneumococcal polysaccharide vaccine",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_003.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1186/s13223-017-0200-2"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Impact of COVID-19 on Pediatric Asthma: Practice Adjustments and Disease Burden",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_013.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1016/j.jaip.2020.06.001"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Influenza in Malaysian adult patients hospitalized with community-acquired pneumonia, acute exacerbation of chronic obstructive pulmonary disease or asthma: a multicenter, active surveillance study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_006.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1186/s12879-021-06360-9"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Pediatric asthma control during the COVID‐19 pandemic",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_015.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1002/iid3.418"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Association between asthma and invasive pneumococcal disease risk: a systematic review and meta-analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_004.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1186/s13223-020-00492-4"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "COVID-19 Pandemic–Related Reductions in Pediatric Asthma Exacerbations Corresponded with an Overall Decrease in Respiratory Viral Infections",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_009.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1016/j.jaip.2021.10.067"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Two years follow-up of relapsing eosinophilic pneumonia with concomitant severe asthma successfully treated with benralizumab: A case report and brief review of the literature",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_010.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1016/j.rmcr.2022.101795"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Pediatric Asthma Exacerbation in Children with Suspected and Confirmed Coronavirus Disease 2019 (COVID-19): An Observational Study from Saudi Arabia",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0012/candidate_008.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.2147/jaa.s326860"
+    }
+  ]
+}

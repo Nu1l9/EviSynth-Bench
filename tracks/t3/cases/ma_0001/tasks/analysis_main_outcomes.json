@@ -1,0 +1,78 @@
+{
+  "case_id": "ma_0001",
+  "task_type": "analysis",
+  "screening_stage": "not_applicable",
+  "extraction_protocol": "../inputs/extraction_protocol.json",
+  "allowed_inputs": {
+    "document_ids": [
+      "a_10968377",
+      "a_12456229",
+      "a_15847242",
+      "a_17676383",
+      "a_2041550",
+      "a_2041553",
+      "a_23011216",
+      "a_24345687",
+      "a_26833805",
+      "a_27466237",
+      "a_28379800",
+      "a_29216261",
+      "a_29777238",
+      "a_30500906",
+      "a_30507935",
+      "a_30553512",
+      "a_30571333",
+      "a_30874785",
+      "a_31025893",
+      "a_31266987",
+      "a_31585180",
+      "a_31766777",
+      "a_31787929",
+      "a_32534567",
+      "a_32641375",
+      "a_33355207",
+      "a_33397045",
+      "a_33911167",
+      "a_33964322",
+      "a_33980955",
+      "a_34195237",
+      "a_34255908",
+      "a_34446018",
+      "a_8696426"
+    ],
+    "representations": [],
+    "forbidden_document_ids": [
+      "review_ma_0001"
+    ]
+  },
+  "target_scope": {
+    "analysis_profile_id": "ma_0001_main_analysis_profile_v1"
+  },
+  "evaluation": {
+    "metrics": [
+      "selection_precision",
+      "selection_recall",
+      "selection_f1",
+      "pooled_numeric_accuracy",
+      "pooled_composition_accuracy",
+      "pooled_direction_accuracy"
+    ],
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    }
+  },
+  "submission_contract": {
+    "schema": "../../../../../schemas/submission.schema.json",
+    "task_type": "analysis"
+  },
+  "$schema": "../../../../../schemas/task.schema.json",
+  "task_id": "ma_0001_analysis_main_outcomes_v1",
+  "task_definition": "Use the public PICO declarations and evidence candidates to identify eligible independent evidence, then produce a justified quantitative synthesis where possible.",
+  "input_files": [
+    "../inputs/extraction_protocol.json",
+    "../inputs/analysis_profile.json",
+    "../inputs/analysis_extensions.json",
+    "../inputs/analysis_evidence_candidates.json"
+  ]
+}

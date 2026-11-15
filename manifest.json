@@ -1,0 +1,156 @@
+{
+  "cases": [
+    {
+      "case_id": "ma_0001",
+      "documents": 33,
+      "request": "cases/ma_0001/request.json"
+    },
+    {
+      "case_id": "ma_0005",
+      "documents": 14,
+      "request": "cases/ma_0005/request.json"
+    },
+    {
+      "case_id": "ma_0010",
+      "documents": 17,
+      "request": "cases/ma_0010/request.json"
+    },
+    {
+      "case_id": "ma_0011",
+      "documents": 14,
+      "request": "cases/ma_0011/request.json"
+    },
+    {
+      "case_id": "ma_0012",
+      "documents": 15,
+      "request": "cases/ma_0012/request.json"
+    },
+    {
+      "case_id": "ma_0017",
+      "documents": 18,
+      "request": "cases/ma_0017/request.json"
+    },
+    {
+      "case_id": "ma_0024",
+      "documents": 12,
+      "request": "cases/ma_0024/request.json"
+    },
+    {
+      "case_id": "ma_0025",
+      "documents": 14,
+      "request": "cases/ma_0025/request.json"
+    },
+    {
+      "case_id": "ma_0026",
+      "documents": 56,
+      "request": "cases/ma_0026/request.json"
+    },
+    {
+      "case_id": "ma_0028",
+      "documents": 19,
+      "request": "cases/ma_0028/request.json"
+    },
+    {
+      "case_id": "ma_0032",
+      "documents": 14,
+      "request": "cases/ma_0032/request.json"
+    },
+    {
+      "case_id": "ma_0034",
+      "documents": 21,
+      "request": "cases/ma_0034/request.json"
+    },
+    {
+      "case_id": "ma_0037",
+      "documents": 37,
+      "request": "cases/ma_0037/request.json"
+    },
+    {
+      "case_id": "ma_0041",
+      "documents": 19,
+      "request": "cases/ma_0041/request.json"
+    },
+    {
+      "case_id": "ma_0044",
+      "documents": 42,
+      "request": "cases/ma_0044/request.json"
+    },
+    {
+      "case_id": "ma_0046",
+      "documents": 30,
+      "request": "cases/ma_0046/request.json"
+    },
+    {
+      "case_id": "ma_0054",
+      "documents": 20,
+      "request": "cases/ma_0054/request.json"
+    },
+    {
+      "case_id": "ma_0055",
+      "documents": 19,
+      "request": "cases/ma_0055/request.json"
+    },
+    {
+      "case_id": "ma_0056",
+      "documents": 19,
+      "request": "cases/ma_0056/request.json"
+    },
+    {
+      "case_id": "ma_0064",
+      "documents": 17,
+      "request": "cases/ma_0064/request.json"
+    },
+    {
+      "case_id": "ma_0076",
+      "documents": 100,
+      "request": "cases/ma_0076/request.json"
+    },
+    {
+      "case_id": "ma_0086",
+      "documents": 12,
+      "request": "cases/ma_0086/request.json"
+    }
+  ],
+  "documents": 562,
+  "name": "EviSynth-Bench",
+  "paper_title": "TRACE: traceable, reviewable, agentic and cross-stage evidence synthesis for medical meta-analysis",
+  "release_version": "1.0.1",
+  "release_date": "2026-11-15",
+  "literature_policy": "DOI and title only; document and study IDs are structural keys. Full texts are supplied locally by the user.",
+  "tracks": {
+    "t1": {
+      "manifest": "tracks/t1/manifest.json",
+      "cases": 22
+    },
+    "t2": {
+      "manifest": "tracks/t2/manifest.json",
+      "cases": 22
+    },
+    "t3": {
+      "manifest": "tracks/t3/manifest.json",
+      "cases": 22
+    },
+    "t4": {
+      "manifest": "tracks/t4/manifest.json",
+      "cases": 22
+    }
+  },
+  "cohort_difference": {
+    "t1_t2_t4_only": [],
+    "t3_only": []
+  },
+  "unique_cases_across_tracks": 22,
+  "t2_evaluator": {
+    "entrypoint": "evaluate_t2.py",
+    "documentation": "OUTPUT_CONTRACT.md",
+    "implementation": "Python standard library",
+    "semantic_adjudication": [
+      "evaluator_json",
+      "official_openai"
+    ]
+  },
+  "licenses": {
+    "code": "MIT",
+    "benchmark_annotations": "CC-BY-4.0"
+  }
+}

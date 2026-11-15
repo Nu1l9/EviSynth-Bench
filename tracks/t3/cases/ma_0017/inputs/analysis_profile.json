@@ -1,0 +1,35 @@
+{
+  "case_id": "ma_0017",
+  "analysis_profile_id": "ma_0017_evt_utilization_analysis_profile_v1",
+  "scope": "Single pre-specified strict before-after stroke-care synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_evt_utilization",
+      "pooled_result_id": "pr_0017_primary_evt_utilization",
+      "outcome_group": "Odds of receiving endovascular thrombectomy during the COVID-19 pandemic",
+      "target_id": "endovascular_thrombectomy_during_covid19",
+      "eligible_outcome_codes": [
+        "endovascular_thrombectomy_receipt"
+      ],
+      "eligible_data_families": [
+        "two_group_event_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "odds_of_receiving_endovascular_thrombectomy_in_the_source_defined_acute_stroke_cohort"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select one report-level contrast with explicit EVT event and cohort counts for COVID-19 and a pre-pandemic reference period.",
+          "The denominator may be an acute-stroke or ischemic-stroke cohort only when that cohort is expressly defined by the primary report.",
+          "Do not use review forest estimates, percentage-only values, or a contrast lacking both group totals."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

@@ -1,0 +1,142 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0046",
+    "task_id": "ma_0046_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among patients undergoing transcatheter aortic valve replacement, does new permanent pacemaker implantation affect subsequent clinical outcomes compared with no new permanent pacemaker implantation?",
+    "pico": {
+      "population": "Patients undergoing transcatheter aortic valve replacement or implantation",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparator": "No new permanent pacemaker implantation after TAVR",
+      "outcomes": [
+        "All-cause death after TAVR",
+        "all-cause death",
+        "all-cause mortality",
+        "total mortality",
+        "death"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "new_ppm_vs_no_new_ppm_all_cause_death_risk"
+      ],
+      "targets": [
+        {
+          "target_id": "long_term_all_cause_death",
+          "outcome": {
+            "description": "All-cause death after TAVR",
+            "aliases": [
+              "all-cause death",
+              "all-cause mortality",
+              "total mortality",
+              "death"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RR"
+          ],
+          "estimands": [
+            "new_ppm_vs_no_new_ppm_all_cause_death_risk"
+          ],
+          "effect_selection_rule": "Retain one all-cause-death arm-count comparison per independent report. Prefer the directly tabulated study-specific long-term comparison. Keep alternative timepoints as non-selected candidates when the report exposes incompatible risk sets.",
+          "data_contract": {
+            "raw_data_fields": [
+              "new_ppm_deaths",
+              "new_ppm_total",
+              "no_new_ppm_deaths",
+              "no_new_ppm_total"
+            ],
+            "field_definitions": {
+              "new_ppm_deaths": "All-cause deaths in the new post-TAVR PPM group.",
+              "new_ppm_total": "Participants in the new PPM group.",
+              "no_new_ppm_deaths": "All-cause deaths in the no-new-PPM group.",
+              "no_new_ppm_total": "Participants in the no-new-PPM group."
+            },
+            "poolability_required_fields": [
+              "new_ppm_deaths",
+              "new_ppm_total",
+              "no_new_ppm_deaths",
+              "no_new_ppm_total"
+            ],
+            "allowed_source_derivations": [],
+            "derivation_preconditions": [],
+            "derivation_instructions": [],
+            "source_aggregation_rules": [],
+            "integrity_checks": [
+              "exclude_pre_existing_ppm",
+              "outcome_must_be_all_cause_death",
+              "follow_up_must_be_at_least_10_months",
+              "do_not_convert_hazard_ratio_to_arm_counts"
+            ]
+          },
+          "quantitative_use_policy": "exact_source_data_required",
+          "quantitative_usability": "poolable",
+          "extraction_notes": [
+            "Do not use mortality plus hospitalization composite endpoints.",
+            "Do not replace raw death counts with adjusted hazard ratios.",
+            "The source corpus contains timepoint-selection ambiguity; preserve each source timepoint in the extraction record."
+          ]
+        }
+      ],
+      "model_selection_policy": "Retain one all-cause-death arm-count comparison per independent report. Prefer the directly tabulated study-specific long-term comparison. Keep alternative timepoints as non-selected candidates when the report exposes incompatible risk sets.",
+      "exclusion_concepts": "Do not use mortality plus hospitalization composite endpoints. Do not replace raw death counts with adjusted hazard ratios. The source corpus contains timepoint-selection ambiguity; preserve each source timepoint in the extraction record.",
+      "evidence_requirements": "Every extracted record must retain exact source evidence, page, source-defined effect scale, exposure unit, adjustment set, and missingness."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_046001",
+        "a_046002",
+        "a_046003",
+        "a_046004",
+        "a_046005",
+        "a_046006",
+        "a_046007",
+        "a_046008",
+        "a_046009",
+        "a_046010",
+        "a_046011",
+        "a_046012",
+        "a_046013",
+        "a_046014",
+        "a_046015",
+        "a_046016",
+        "a_046017",
+        "a_046018",
+        "a_046019",
+        "a_046020"
+      ],
+      "study_ids": {
+        "a_046001": "s_046001",
+        "a_046002": "s_046002",
+        "a_046003": "s_046003",
+        "a_046004": "s_046004",
+        "a_046005": "s_046005",
+        "a_046006": "s_046006",
+        "a_046007": "s_046007",
+        "a_046008": "s_046008",
+        "a_046009": "s_046009",
+        "a_046010": "s_046010",
+        "a_046011": "s_046011",
+        "a_046012": "s_046012",
+        "a_046013": "s_046013",
+        "a_046014": "s_046014",
+        "a_046015": "s_046015",
+        "a_046016": "s_046016",
+        "a_046017": "s_046017",
+        "a_046018": "s_046018",
+        "a_046019": "s_046019",
+        "a_046020": "s_046020"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

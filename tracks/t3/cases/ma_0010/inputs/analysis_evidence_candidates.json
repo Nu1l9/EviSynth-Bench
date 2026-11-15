@@ -1,0 +1,1379 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0010",
+  "candidate_set_id": "ma_0010_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0010_05_carvalho",
+      "study_id": "s_0010_05_carvalho",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "CT heterozygote versus TT common homozygote",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "RA-only subgroup of source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "heterozygote_label": "CT",
+        "common_homozygote_label": "TT",
+        "case_heterozygote": 10,
+        "case_common_homozygote": 87,
+        "control_heterozygote": 3,
+        "control_common_homozygote": 69,
+        "case_counts": {
+          "TT": 87,
+          "CT": 10,
+          "CC": 3
+        },
+        "control_counts": {
+          "TT": 69,
+          "CT": 3,
+          "CC": 3
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 2.64367816091954,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.972171190268612,
+        "variance": 0.459320339830085,
+        "direction": "heterozygote_higher_ra_odds_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0010_05_carvalho",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 3, RA-only subgroup"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0010_01_gomes",
+      "study_id": "s_0010_01_gomes",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "AG heterozygote versus AA common homozygote",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "Source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "case_heterozygote": 8,
+        "case_common_homozygote": 119,
+        "control_heterozygote": 13,
+        "control_common_homozygote": 120,
+        "case_counts": {
+          "AA": 119,
+          "AG": 8,
+          "GG": 0
+        },
+        "control_counts": {
+          "AA": 120,
+          "AG": 13,
+          "GG": 1
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 0.620555914673562,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.477139566111184,
+        "variance": 0.218659771600948,
+        "direction": "heterozygote_higher_ra_odds_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0010_01_gomes",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 2"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Youngest age subgroup (age ≤50 years): rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Age ≤50 years",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 17,
+          "A/G": 12,
+          "G/G": 2
+        },
+        "control_counts": {
+          "A/A": 92,
+          "A/G": 20,
+          "G/G": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "content_0262",
+        "content_list_item_index": 262
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0010_03_louahchi",
+      "study_id": "s_0010_03_louahchi",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Heterozygote versus common homozygote not source-calculable",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "Source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 343,
+        "control_total_n": 323,
+        "case_allele_percent": {
+          "T": 93.7,
+          "C": 6.2
+        },
+        "control_allele_percent": {
+          "T": 94.0,
+          "C": 6.0
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_03_louahchi",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table III"
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0010_04_pawlik",
+      "study_id": "s_0010_04_pawlik",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 allele frequency",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "422 rheumatoid arthritis patients and healthy Caucasian controls from the Pomeranian region of Poland; source methods report 337 controls",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 422,
+        "control_total_n": 337,
+        "case_allele_percent": {
+          "T": 95.38,
+          "C": 4.62
+        },
+        "control_allele_percent": {
+          "T": 96.89,
+          "C": 3.11
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_04_pawlik",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 43
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Women with rheumatoid arthritis and healthy women",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 51,
+          "A/G": 30,
+          "G/G": 6
+        },
+        "control_counts": {
+          "A/A": 92,
+          "A/G": 33,
+          "G/G": 2
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 256
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0010_01_gomes",
+      "study_id": "s_0010_01_gomes",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Brazilian rheumatoid arthritis patients and healthy controls; northeastern Brazilian population",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 127,
+        "control_total_n": 134,
+        "case_allele_percent": {
+          "G": 96.85,
+          "A": 3.15
+        },
+        "control_allele_percent": {
+          "G": 94.4,
+          "A": 5.6
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_01_gomes",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 50
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0010_07_paradowska_gorycka",
+      "study_id": "s_0010_07_paradowska_gorycka",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "AG heterozygote versus AA common homozygote",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "Source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "case_heterozygote": 24,
+        "case_common_homozygote": 195,
+        "control_heterozygote": 8,
+        "control_common_homozygote": 98,
+        "case_counts": {
+          "AA": 195,
+          "AG": 24,
+          "GG": 1
+        },
+        "control_counts": {
+          "AA": 98,
+          "AG": 8,
+          "GG": 0
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 1.507692307692308,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.410580208774935,
+        "variance": 0.181998953427525,
+        "direction": "heterozygote_higher_ra_odds_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0010_07_paradowska_gorycka",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 2"
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "AG heterozygote versus AA common homozygote",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "Source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "case_heterozygote": 37,
+        "case_common_homozygote": 68,
+        "control_heterozygote": 17,
+        "control_common_homozygote": 185,
+        "case_counts": {
+          "AA": 68,
+          "AG": 37,
+          "GG": 3
+        },
+        "control_counts": {
+          "AA": 185,
+          "AG": 17,
+          "GG": 0
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 5.921280276816609,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 1.778552688490227,
+        "variance": 0.105961844197138,
+        "direction": "heterozygote_higher_ra_odds_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "page": 31,
+        "source_type": "table",
+        "source_id": "Table 3"
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Men with rheumatoid arthritis and healthy men",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 13,
+          "A/G": 6,
+          "G/G": 2
+        },
+        "control_counts": {
+          "A/A": 45,
+          "A/G": 29,
+          "G/G": 1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 256
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0010_04_pawlik",
+      "study_id": "s_0010_04_pawlik",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "422 rheumatoid arthritis patients and healthy Caucasian controls from the Pomeranian region of Poland; source methods report 337 controls",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "TT",
+          "CT",
+          "CC"
+        ],
+        "case_counts": {
+          "TT": 385,
+          "CT": 35,
+          "CC": 2
+        },
+        "control_counts": {
+          "TT": 318,
+          "CT": 19,
+          "CC": 1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_04_pawlik",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 43
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0010_04_pawlik",
+      "study_id": "s_0010_04_pawlik",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "CT heterozygote versus TT common homozygote",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "Source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "heterozygote_label": "CT",
+        "common_homozygote_label": "TT",
+        "case_heterozygote": 35,
+        "case_common_homozygote": 385,
+        "control_heterozygote": 19,
+        "control_common_homozygote": 318,
+        "case_counts": {
+          "TT": 385,
+          "CT": 35,
+          "CC": 2
+        },
+        "control_counts": {
+          "TT": 318,
+          "CT": 19,
+          "CC": 1
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 1.521531100478469,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.419717130815366,
+        "variance": 0.08694506420425,
+        "direction": "heterozygote_higher_ra_odds_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0010_04_pawlik",
+        "page": 3,
+        "source_type": "table",
+        "source_id": "Table 1"
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0010_05_carvalho",
+      "study_id": "s_0010_05_carvalho",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Exclusive rheumatoid arthritis (RA) patients versus healthy controls",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 100,
+        "control_total_n": 75,
+        "case_allele_percent": {
+          "T": 92.0,
+          "C": 8.0
+        },
+        "control_allele_percent": {
+          "T": 94.0,
+          "C": 6.0
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_05_carvalho",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0010_07_paradowska_gorycka",
+      "study_id": "s_0010_07_paradowska_gorycka",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Polish patients with rheumatoid arthritis and healthy controls",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 220,
+        "control_total_n": 106,
+        "case_allele_percent": {
+          "A": 94.1,
+          "G": 5.9
+        },
+        "control_allele_percent": {
+          "A": 96.2,
+          "G": 3.8
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_07_paradowska_gorycka",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 41
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0010_03_louahchi",
+      "study_id": "s_0010_03_louahchi",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 allele/genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Algerian rheumatoid arthritis patients and healthy controls",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 343,
+        "control_total_n": 323,
+        "case_allele_percent": {
+          "T": 93.7,
+          "C": 6.2
+        },
+        "control_allele_percent": {
+          "T": 94.0,
+          "C": 6.0
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_03_louahchi",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0010_06_bogunia_kubik",
+      "study_id": "s_0010_06_bogunia_kubik",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL-17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Polish rheumatoid arthritis patients and healthy individuals",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "AA",
+          "AG",
+          "GG"
+        ],
+        "case_counts": {
+          "AA": 64,
+          "AG": 16,
+          "GG": 9
+        },
+        "control_counts": {
+          "AA": 114,
+          "AG": 11,
+          "GG": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_06_bogunia_kubik",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "High disease activity RA cases and healthy controls",
+      "timepoint": "High disease activity",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 42,
+          "A/G": 10,
+          "G/G": 1
+        },
+        "control_counts": {
+          "A/A": 185,
+          "A/G": 17,
+          "G/G": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 9",
+        "content_list_item_index": 283
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Low disease activity or remission RA cases and healthy controls",
+      "timepoint": "Low disease activity/remission",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 17,
+          "A/G": 5,
+          "G/G": 1
+        },
+        "control_counts": {
+          "A/A": 185,
+          "A/G": 17,
+          "G/G": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 9",
+        "content_list_item_index": 283
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0010_06_bogunia_kubik",
+      "study_id": "s_0010_06_bogunia_kubik",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL-17F rs763780 allele",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Polish rheumatoid arthritis patients and healthy individuals",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 89,
+        "control_total_n": 125,
+        "case_allele_percent": {
+          "A": 89.9,
+          "G": 28.1
+        },
+        "control_allele_percent": {
+          "A": 100.0,
+          "G": 8.8
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_06_bogunia_kubik",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Oldest age subgroup (age >50 years): rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Age >50 years",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 59,
+          "A/G": 16,
+          "G/G": 2
+        },
+        "control_counts": {
+          "A/A": 81,
+          "A/G": 8,
+          "G/G": 1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "content_0262",
+        "content_list_item_index": 262
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0010_05_carvalho",
+      "study_id": "s_0010_05_carvalho",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Exclusive rheumatoid arthritis (RA) patients versus healthy controls",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "TT",
+          "CT",
+          "CC"
+        ],
+        "case_counts": {
+          "TT": 87,
+          "CT": 10,
+          "CC": 3
+        },
+        "control_counts": {
+          "TT": 69,
+          "CT": 3,
+          "CC": 3
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_05_carvalho",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Smoking subgroup: RA smokers and control smokers",
+      "timepoint": "Smoking subgroup",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 67,
+          "A/G": 10,
+          "G/G": 1
+        },
+        "control_counts": {
+          "A/A": 18,
+          "A/G": 7,
+          "G/G": 3
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 6",
+        "content_list_item_index": 268
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Moderate disease activity RA cases and healthy controls",
+      "timepoint": "Moderate disease activity",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 25,
+          "A/G": 6,
+          "G/G": 1
+        },
+        "control_counts": {
+          "A/A": 185,
+          "A/G": 17,
+          "G/G": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 9",
+        "content_list_item_index": 283
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0010_01_gomes",
+      "study_id": "s_0010_01_gomes",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Brazilian rheumatoid arthritis patients and healthy controls; northeastern Brazilian population",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "AA",
+          "AG",
+          "GG"
+        ],
+        "case_counts": {
+          "AA": 119,
+          "AG": 8,
+          "GG": 0
+        },
+        "control_counts": {
+          "AA": 120,
+          "AG": 13,
+          "GG": 1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_01_gomes",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 50
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0010_06_bogunia_kubik",
+      "study_id": "s_0010_06_bogunia_kubik",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "AG heterozygote versus AA common homozygote",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": "binary_case_control"
+      },
+      "population_or_subgroup": "Source-defined rheumatoid arthritis cases and healthy controls",
+      "timepoint": "Not applicable; inherited genotype at case-control ascertainment",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "case_heterozygote": 16,
+        "case_common_homozygote": 64,
+        "control_heterozygote": 11,
+        "control_common_homozygote": 114,
+        "case_counts": {
+          "AA": 64,
+          "AG": 16,
+          "GG": 9
+        },
+        "control_counts": {
+          "AA": 114,
+          "AG": 11,
+          "GG": 0
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 2.590909090909091,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.952008814476234,
+        "variance": 0.177806020733652,
+        "direction": "heterozygote_higher_ra_odds_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0010_06_bogunia_kubik",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 2"
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0010_02_marwa",
+      "study_id": "s_0010_02_marwa",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Tunisian rheumatoid arthritis cases and healthy controls",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "A/A",
+          "A/G",
+          "G/G"
+        ],
+        "case_counts": {
+          "A/A": 68,
+          "A/G": 37,
+          "G/G": 3
+        },
+        "control_counts": {
+          "A/A": 185,
+          "A/G": 17,
+          "G/G": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_02_marwa",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 253
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0010_05_carvalho",
+      "study_id": "s_0010_05_carvalho",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Rheumatoid arthritis with secondary Sjögren’s syndrome (RA/SS) patients versus healthy controls",
+      "timepoint": "",
+      "data_family": "allele_frequency_summary_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "case_total_n": 31,
+        "control_total_n": 75,
+        "case_allele_percent": {
+          "T": 91.9,
+          "C": 8.1
+        },
+        "control_allele_percent": {
+          "T": 94.0,
+          "C": 6.0
+        },
+        "genotype_counts_status": "not_reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_05_carvalho",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0010_07_paradowska_gorycka",
+      "study_id": "s_0010_07_paradowska_gorycka",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "IL17F rs763780 genotype",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Rheumatoid arthritis case status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Polish patients with rheumatoid arthritis and healthy controls",
+      "timepoint": "",
+      "data_family": "complete_genotype_case_control_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "rsid": "rs763780",
+        "genotype_labels": [
+          "AA",
+          "AG",
+          "GG"
+        ],
+        "case_counts": {
+          "AA": 195,
+          "AG": 24,
+          "GG": 1
+        },
+        "control_counts": {
+          "AA": 98,
+          "AG": 8,
+          "GG": 0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0010_07_paradowska_gorycka",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 41
+      }
+    }
+  ]
+}

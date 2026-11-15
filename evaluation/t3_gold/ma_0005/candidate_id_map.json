@@ -1,0 +1,16 @@
+{
+  "case_id": "ma_0005",
+  "evaluator_only": true,
+  "runtime_to_canonical_candidate_id": {
+    "cand_0001": "ce_0005_02",
+    "cand_0002": "ce_0005_04",
+    "cand_0003": "x_0005_0005",
+    "cand_0004": "x_0005_0001",
+    "cand_0005": "x_0005_0004",
+    "cand_0006": "ce_0005_01",
+    "cand_0007": "x_0005_0003",
+    "cand_0008": "x_0005_0002",
+    "cand_0009": "ce_0005_03"
+  },
+  "source_format": "candidate_id_gold"
+}

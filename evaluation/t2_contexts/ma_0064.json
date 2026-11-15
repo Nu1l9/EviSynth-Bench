@@ -1,0 +1,93 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0064",
+    "task_id": "ma_0064_extraction_all_archived_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among surgically staged endometrial-cancer cohorts, is low-volume sentinel-node metastasis associated with recurrence compared with pathologically node-negative status?",
+    "pico": {
+      "population": "Patients with surgically staged endometrial cancer in a cohort reporting sentinel-node pathology and follow-up",
+      "exposure": "Low-volume nodal metastasis: isolated tumor cells or micrometastasis",
+      "comparator": "Pathologically node-negative status",
+      "outcomes": [
+        "Source-defined disease recurrence recorded as binary events, with a secondary capture lane for source-reported time-to-event disease-free-survival effects.",
+        "recurrence",
+        "disease recurrence",
+        "disease-free survival",
+        "disease event"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR",
+        "HR"
+      ],
+      "estimands": [
+        "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+        "micrometastasis_vs_node_negative_adjusted_disease_event_hazard"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "recurrence",
+          "outcome": {
+            "description": "Source-defined disease recurrence recorded as binary events, with a secondary capture lane for source-reported time-to-event disease-free-survival effects.",
+            "aliases": [
+              "recurrence",
+              "disease recurrence",
+              "disease-free survival",
+              "disease event"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_exposure_outcome_counts",
+            "adjusted_time_to_event_effect"
+          ],
+          "preferred_effect_measures": [
+            "RR",
+            "HR"
+          ],
+          "estimands": [
+            "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+            "micrometastasis_vs_node_negative_adjusted_disease_event_hazard"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "Capture source-supported ITC, micrometastasis, and node-negative arms separately. Preserve partial records and source-reported time-to-event effects instead of fabricating a binary contrast.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "A binary recurrence effect requires events and a denominator for both comparison groups. An adjusted time-to-event effect may be captured only with its explicitly source-reported estimate and confidence interval; it is not interchangeable with a binary risk ratio."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0064_19",
+        "a_0064_20",
+        "a_0064_22",
+        "a_0064_23",
+        "a_0064_24",
+        "a_0064_26",
+        "a_0064_27"
+      ],
+      "study_ids": {
+        "a_0064_19": "s_0064_kim_low_risk",
+        "a_0064_20": "s_0064_kim_ultrastaging",
+        "a_0064_22": "s_0064_st_clair",
+        "a_0064_23": "s_0064_todo",
+        "a_0064_24": "s_0064_plante",
+        "a_0064_26": "s_0064_ignatov",
+        "a_0064_27": "s_0064_piedimonte"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

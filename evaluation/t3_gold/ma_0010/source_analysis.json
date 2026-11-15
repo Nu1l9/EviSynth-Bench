@@ -1,0 +1,26 @@
+{
+  "case_id": "ma_0010_full",
+  "gold_id": "ma_0010_full_rs763780_heterozygote_analysis_gold_v2",
+  "task_type": "analysis",
+  "calculation_provenance": "Recalculated from extraction_gold primary genotype counts; no target-review numeric field was used.",
+  "pooled_results": [
+    {
+      "analysis_id": "rs763780_heterozygote_vs_common_homozygote",
+      "included_articles": [
+        "a_0010_01_gomes",
+        "a_0010_02_marwa",
+        "a_0010_04_pawlik",
+        "a_0010_05_carvalho",
+        "a_0010_06_bogunia_kubik",
+        "a_0010_07_paradowska_gorycka"
+      ],
+      "model": "DerSimonian_Laird_random_effects",
+      "estimate_or": 1.9921652915,
+      "ci_lower": 1.0486305034,
+      "ci_upper": 3.7846720422,
+      "Q": 19.0953702847,
+      "i_squared_percent": 73.8156426115,
+      "tau_squared": 0.4568970741
+    }
+  ]
+}

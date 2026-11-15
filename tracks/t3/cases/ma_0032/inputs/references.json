@@ -1,0 +1,25 @@
+{
+  "case_id": "ma_0032",
+  "articles": [
+    {
+      "article_id": "a_0032_01",
+      "doi": "10.1111/j.1572-0241.2005.00306.x",
+      "title": "Urgent Colonoscopy for Evaluation and Management of Acute Lower Gastrointestinal Hemorrhage: A Randomized Controlled Trial"
+    },
+    {
+      "article_id": "a_0032_02",
+      "doi": "10.1038/ajg.2010.277",
+      "title": "Randomized Trial of Urgent vs. Elective Colonoscopy in Patients Hospitalized With Lower GI Bleeding"
+    },
+    {
+      "article_id": "a_0032_03",
+      "doi": "10.1097/mcg.0000000000001048",
+      "title": "Early Versus Standard Colonoscopy"
+    },
+    {
+      "article_id": "a_0032_04",
+      "doi": "10.1053/j.gastro.2019.09.010",
+      "title": "Efficacy and Safety of Early vs Elective Colonoscopy for Acute Lower Gastrointestinal Bleeding"
+    }
+  ]
+}

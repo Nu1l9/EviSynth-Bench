@@ -1,0 +1,303 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0024",
+  "topic": "How accurately do computer-aided fundus-photo classifiers identify diabetic retinopathy relative to expert ophthalmologist classification?",
+  "protocol": {
+    "protocol_id": "ma_0024_dr_diagnostic_accuracy_protocol_v1",
+    "case_id": "ma_0024",
+    "pico": {
+      "population": "Retinal fundus images",
+      "intervention_or_exposure": "Computer-aided retinal image classifier",
+      "comparison": "Expert ophthalmologist classification",
+      "outcome": "Diabetic retinopathy detection"
+    },
+    "eligible_study_designs": [
+      "diagnostic accuracy evaluation"
+    ],
+    "targets": [
+      {
+        "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+        "outcome": "Diabetic retinopathy detection",
+        "comparison": "Computer-aided classification versus expert ophthalmologist reference classification",
+        "population_or_subgroup": "Held-out retinal fundus image test set",
+        "timepoint_policy": {
+          "rule": "Use the held-out/test-set evaluation explicitly reported by the source, not training performance."
+        },
+        "accepted_data_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "preferred_effect_measures": [
+          "sensitivity",
+          "specificity"
+        ],
+        "estimands": [
+          "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection"
+        ],
+        "effect_selection_rule": null,
+        "extraction_notes": []
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_dr_detection_sensitivity",
+      "outcome_group": "Sensitivity of computer-aided diabetic retinopathy detection",
+      "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+      "eligible_outcome_codes": [
+        "diabetic_retinopathy_detection"
+      ],
+      "eligible_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "accepted_effect_types": [
+        "diagnostic_accuracy_pair"
+      ],
+      "estimands": [
+        "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection"
+      ],
+      "selection_rules": [
+        "Select one held-out image-level 2x2 diagnostic table per source.",
+        "Select only an expert-referenced DR-positive (NPDR/PDR) versus normal contrast with TP, FP, FN, and TN.",
+        "Use counts, not potentially mislabeled sensitivity/specificity columns or review forest values.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use the held-out/test-set evaluation explicitly reported by the source, not training performance."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "logit_sensitivity",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Sensitivity of computer-aided diabetic retinopathy detection"
+      ],
+      "exposure": {
+        "terms": [
+          "Computer-aided retinal image classifier"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Computer-aided classification versus expert ophthalmologist reference classification"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Held-out retinal fundus image test set"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use the held-out/test-set evaluation explicitly reported by the source, not training performance.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": [
+      {
+        "analysis_id": "primary_dr_detection_specificity",
+        "outcome_group": "Specificity of computer-aided diabetic retinopathy detection",
+        "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+        "eligible_outcome_codes": [
+          "diabetic_retinopathy_detection"
+        ],
+        "eligible_data_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "accepted_effect_types": [
+          "diagnostic_accuracy_pair"
+        ],
+        "estimands": [
+          "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection"
+        ],
+        "selection_rules": [
+          "Apply the same complete image-level 2x2 eligibility rules as the paired sensitivity analysis.",
+          "When a specificity is 0 or 1, apply the calculator's declared 0.5 boundary correction only during logit pooling.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Timepoint eligibility: Use the held-out/test-set evaluation explicitly reported by the source, not training performance."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "logit_specificity",
+          "heterogeneity_estimator": "dersimonian_laird",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "Specificity of computer-aided diabetic retinopathy detection"
+        ],
+        "exposure": {
+          "terms": [
+            "Computer-aided retinal image classifier"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "Computer-aided classification versus expert ophthalmologist reference classification"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Held-out retinal fundus image test set"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Use the held-out/test-set evaluation explicitly reported by the source, not training performance.",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "article_id": "a_0024_01",
+      "document_id": "a_0024_01",
+      "study_id": "s_0024_01",
+      "role": "candidate_article",
+      "title": "Computer-based detection of diabetes retinopathy stages using digital fundus images",
+      "source_representation": "benchmark_full_text",
+      "paths": {
+        "pdf": "../../documents/ma_0024/a_0024_01.pdf"
+      },
+      "doi": "10.1243/09544119jeim486"
+    },
+    {
+      "article_id": "a_0024_02",
+      "document_id": "a_0024_02",
+      "study_id": "s_0024_02",
+      "role": "candidate_article",
+      "title": "Automated Identification of Diabetic Retinopathy Stages Using Digital Fundus Images",
+      "source_representation": "benchmark_full_text",
+      "paths": {
+        "pdf": "../../documents/ma_0024/a_0024_02.pdf"
+      },
+      "doi": "10.1007/s10916-007-9113-9"
+    },
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Deep Learning-Based Automated Classification of Multi-Categorical Abnormalities From Optical Coherence Tomography Images",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_001.pdf"
+      },
+      "doi": "10.1167/tvst.7.6.41"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Automatic detection of 39 fundus diseases and conditions in retinal photographs using deep neural networks",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_002.pdf"
+      },
+      "doi": "10.1038/s41467-021-25138-w"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "How Artificial Intelligence Is Shaping Medical Imaging Technology: A Survey of Innovations and Applications",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_003.pdf"
+      },
+      "doi": "10.3390/bioengineering10121435"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Quality assessment standards in artificial intelligence diagnostic accuracy systematic reviews: a meta-research study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_004.pdf"
+      },
+      "doi": "10.1038/s41746-021-00544-y"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Multi-categorical deep learning neural network to classify retinal images: A pilot study employing small database",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_005.pdf"
+      },
+      "doi": "10.1371/journal.pone.0187336"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Artificial Intelligence in Dermatology: Challenges and Perspectives",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_006.pdf"
+      },
+      "doi": "10.1007/s13555-022-00833-8"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "A deep learning system for detecting diabetic retinopathy across the disease spectrum",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_007.pdf"
+      },
+      "doi": "10.1038/s41467-021-23458-5"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "A Smartphone-Based Tool for Rapid, Portable, and Automated Wide-Field Retinal Imaging",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_008.pdf"
+      },
+      "doi": "10.1167/tvst.7.5.21"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Digital technology, tele-medicine and artificial intelligence in ophthalmology: A global perspective",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_009.pdf"
+      },
+      "doi": "10.1016/j.preteyeres.2020.100900"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Topographic Distribution and Progression of Soft Drusen Volume in Age-Related Macular Degeneration Implicate Neurobiology of Fovea",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0024/candidate_010.pdf"
+      },
+      "doi": "10.1167/iovs.62.2.26"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

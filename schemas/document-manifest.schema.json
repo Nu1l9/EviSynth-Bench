@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/document-manifest.schema.json",
+  "title": "Meta-analysis bench document manifest",
+  "type": "object",
+  "required": [
+    "case_id",
+    "target_review_document_id",
+    "documents"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "target_review_document_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_supplement_document_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "task_leakage_policy": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "document_id",
+          "role",
+          "access_policy",
+          "representations"
+        ],
+        "properties": {
+          "document_id": {
+            "type": "string"
+          },
+          "article_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "role": {
+            "enum": [
+              "candidate_article",
+              "gold_only_target_review",
+              "gold_only_target_supplement"
+            ]
+          },
+          "access_policy": {
+            "enum": [
+              "task_input",
+              "gold_only"
+            ]
+          },
+          "representations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "license": {
+            "type": "object"
+          },
+          "remote": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

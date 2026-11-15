@@ -1,0 +1,126 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0037",
+    "task_id": "ma_0037_extraction_all_reports_v1_1_expanded_full_corpus_draft",
+    "task_type": "extraction",
+    "topic": "Among patients undergoing diagnostic sampling of pulmonary lesions or mediastinal lymph nodes, does rapid on-site cytologic evaluation increase the probability of an adequate sample compared with no rapid on-site evaluation?",
+    "pico": {
+      "population": "Patients undergoing diagnostic sampling of pulmonary lesions or mediastinal or hilar lymph nodes",
+      "exposure": "Rapid on-site cytologic evaluation during sampling",
+      "comparator": "No rapid on-site cytologic evaluation during sampling",
+      "outcomes": [
+        "Adequate diagnostic sample",
+        "sample adequacy",
+        "adequate cytological sample",
+        "qualified puncture specimen"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RD"
+      ],
+      "estimands": [
+        "risk_difference_adequate_sampling_rose_vs_no_rose"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+          "outcome": {
+            "description": "Adequate diagnostic sample",
+            "aliases": [
+              "sample adequacy",
+              "adequate cytological sample",
+              "qualified puncture specimen"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RD"
+          ],
+          "estimands": [
+            "risk_difference_adequate_sampling_rose_vs_no_rose"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "Across all known-included reports, capture source-supported arm-level adequate-sampling records after ROSE versus no ROSE and preserve sampling modality and unit of analysis. Do not treat diagnostic yield, sensitivity, accuracy, procedure time, or complication outcomes as adequacy.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "Extract adequate-sample counts and denominators in both groups, the source adequacy definition, sampling modality, analysis unit, and a verified primary-source locator. Do not copy counts or effects from a review forest plot."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0037_01",
+        "a_0037_02",
+        "a_0037_03",
+        "a_0037_04",
+        "a_0037_05",
+        "a_0037_06",
+        "a_0037_07",
+        "a_0037_08",
+        "a_0037_09",
+        "a_0037_10",
+        "a_0037_11",
+        "a_0037_12",
+        "a_0037_13",
+        "a_0037_14",
+        "a_0037_15",
+        "a_0037_16",
+        "a_0037_17",
+        "a_0037_18",
+        "a_0037_19",
+        "a_0037_20",
+        "a_0037_21",
+        "a_0037_22",
+        "a_0037_23",
+        "a_0037_24",
+        "a_0037_25",
+        "a_0037_26",
+        "a_0037_27"
+      ],
+      "study_ids": {
+        "a_0037_01": "s_0037_01",
+        "a_0037_02": "s_0037_02",
+        "a_0037_03": "s_0037_03",
+        "a_0037_04": "s_0037_04",
+        "a_0037_05": "s_0037_05",
+        "a_0037_06": "s_0037_06",
+        "a_0037_07": "s_0037_07",
+        "a_0037_08": "s_0037_08",
+        "a_0037_09": "s_0037_09",
+        "a_0037_10": "s_0037_10",
+        "a_0037_11": "s_0037_11",
+        "a_0037_12": "s_0037_12",
+        "a_0037_13": "s_0037_13",
+        "a_0037_14": "s_0037_14",
+        "a_0037_15": "s_0037_15",
+        "a_0037_16": "s_0037_16",
+        "a_0037_17": "s_0037_17",
+        "a_0037_18": "s_0037_18",
+        "a_0037_19": "s_0037_19",
+        "a_0037_20": "s_0037_20",
+        "a_0037_21": "s_0037_21",
+        "a_0037_22": "s_0037_22",
+        "a_0037_23": "s_0037_23",
+        "a_0037_24": "s_0037_24",
+        "a_0037_25": "s_0037_25",
+        "a_0037_26": "s_0037_26",
+        "a_0037_27": "s_0037_27"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

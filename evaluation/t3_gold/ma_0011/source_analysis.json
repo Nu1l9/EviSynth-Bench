@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0011",
+  "task_type": "analysis",
+  "gold_id": "ma_0011_analysis_gold_v1",
+  "provenance": {
+    "target_review_document_id": "review_ma_0011",
+    "annotation_status": "adjudicated"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "main_pr_adverse_cardiac_events",
+      "selected_candidate_ids": [
+        "ce_0004",
+        "ce_0001",
+        "ce_0002"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_011004_adjusted_ln_ls",
+        "ee_011001_adjusted_nfs",
+        "ee_011002_adjusted_ls"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_adverse_cardiac_events",
+          "outcome_group": "Adverse cardiac events",
+          "effect": {
+            "effect_type": "HR",
+            "value": 1.15,
+            "ci_lower": 1.04,
+            "ci_upper": 1.28,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0004",
+            "ce_0001",
+            "ce_0002"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_011004_adjusted_ln_ls",
+            "ee_011001_adjusted_nfs",
+            "ee_011002_adjusted_ls"
+          ],
+          "heterogeneity_i2": 60
+        }
+      ]
+    }
+  ]
+}

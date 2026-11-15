@@ -1,0 +1,90 @@
+{
+  "case_id": "ma_0041",
+  "analysis_profile_id": "ma_0041_full_psi_vs_standard_controlled_v2",
+  "scope": "Three pre-specified controlled-study syntheses selected exclusively from extracted source fields.",
+  "analyses": [
+    {
+      "analysis_id": "psi_vs_standard_version",
+      "outcome_axis": [
+        "version"
+      ],
+      "eligible_data_families": [
+        "independent_continuous_arms"
+      ],
+      "intervention_class": "patient_specific_instrument",
+      "comparator_class": "standard_instrumentation",
+      "accepted_measurement_semantics": [
+        "absolute_deviation_from_intended_position",
+        "planned_versus_actual_deviation_as_reported"
+      ],
+      "unit": "degrees",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select quantitatively complete, overall controlled comparisons matching every public field in this profile.",
+          "Do not select postoperative-alignment summaries, single-arm summaries, preoperative summaries, or source records with another outcome axis."
+        ]
+      },
+      "minimum_independent_studies": 2,
+      "accepted_effect_types": [
+        "MD"
+      ]
+    },
+    {
+      "analysis_id": "psi_vs_standard_inclination",
+      "outcome_axis": [
+        "inclination"
+      ],
+      "eligible_data_families": [
+        "independent_continuous_arms"
+      ],
+      "intervention_class": "patient_specific_instrument",
+      "comparator_class": "standard_instrumentation",
+      "accepted_measurement_semantics": [
+        "absolute_deviation_from_intended_position",
+        "planned_versus_actual_deviation_as_reported"
+      ],
+      "unit": "degrees",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select quantitatively complete, overall controlled comparisons matching every public field in this profile.",
+          "Do not select postoperative-alignment summaries, single-arm summaries, preoperative summaries, or source records with another outcome axis."
+        ]
+      },
+      "minimum_independent_studies": 2,
+      "accepted_effect_types": [
+        "MD"
+      ]
+    },
+    {
+      "analysis_id": "psi_vs_standard_offset",
+      "outcome_axis": [
+        "offset_or_starting_point",
+        "offset_or_position"
+      ],
+      "eligible_data_families": [
+        "independent_continuous_arms"
+      ],
+      "intervention_class": "patient_specific_instrument",
+      "comparator_class": "standard_instrumentation",
+      "accepted_measurement_semantics": [
+        "absolute_deviation_from_intended_position",
+        "planned_versus_actual_deviation_as_reported"
+      ],
+      "unit": "mm",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select quantitatively complete, overall controlled comparisons matching every public field in this profile.",
+          "Accept the source labels starting-point deviation and total-offset deviation as two permitted position measures defined in this profile."
+        ]
+      },
+      "minimum_independent_studies": 2,
+      "accepted_effect_types": [
+        "MD"
+      ]
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

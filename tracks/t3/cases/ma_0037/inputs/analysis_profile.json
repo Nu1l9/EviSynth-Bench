@@ -1,0 +1,36 @@
+{
+  "case_id": "ma_0037",
+  "analysis_profile_id": "ma_0037_adequate_sampling_rose_analysis_profile_v1_1_expanded_full_corpus_draft",
+  "scope": "Single pre-specified primary aggregate-data synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_adequate_sampling_with_rose",
+      "pooled_result_id": "pr_0037_primary_adequate_sampling",
+      "outcome_group": "Adequate diagnostic sampling with rapid on-site evaluation",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "eligible_outcome_codes": [
+        "adequate_sampling_with_rapid_onsite_evaluation"
+      ],
+      "eligible_data_families": [
+        "binary_arm_outcome"
+      ],
+      "accepted_effect_types": [
+        "RD"
+      ],
+      "estimands": [
+        "risk_difference_adequate_sampling_rose_vs_no_rose"
+      ],
+      "timepoint_policy": "Select source-defined adequate-sample outcomes from the index diagnostic procedure. Do not substitute diagnostic accuracy, diagnostic yield, sensitivity for malignancy, needle passes, or complications.",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select one complete binary adequate-sampling record per report when it compares rapid on-site cytologic evaluation with no rapid on-site evaluation.",
+          "Require source-defined adequate-sample counts, group denominators, and a RD. Where a study has multiple intervention arms, use only a contrast with the same sampling modality and needle system in both groups.",
+          "Do not use target-review forest rows, review totals, article-specific labels, or target combined effects."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

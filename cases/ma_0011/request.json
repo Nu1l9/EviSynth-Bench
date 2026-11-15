@@ -1,0 +1,319 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0011",
+  "topic": "Among patients hospitalized with heart failure, is higher liver stiffness or a validated liver-fibrosis score associated with subsequent adverse cardiac events?",
+  "protocol": {
+    "protocol_id": "ma_0011_extraction_protocol_v1",
+    "case_id": "ma_0011",
+    "pico": {
+      "population": "Patients hospitalized with heart failure",
+      "intervention_or_exposure": "Liver stiffness or a validated liver-fibrosis score",
+      "comparison": "Source-defined higher versus lower exposure, or a one-unit exposure increase",
+      "outcome": "Composite cardiovascular death or heart-failure hospitalization/readmission; All-cause mortality"
+    },
+    "eligible_study_designs": [
+      "observational cohort study"
+    ],
+    "targets": [
+      {
+        "target_id": "adverse_cardiac_event",
+        "outcome": "Composite cardiovascular death or heart-failure hospitalization/readmission",
+        "comparison": "Source-defined continuous liver-stiffness-related exposure increase",
+        "population_or_subgroup": "Source-defined hospitalized heart-failure cohort",
+        "timepoint_policy": {
+          "rule": "Preserve the source-reported follow-up duration for each report; do not replace it with the review median.",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "time_to_event"
+        ],
+        "preferred_effect_measures": [
+          "HR"
+        ],
+        "estimands": [
+          "adjusted_continuous_exposure_association"
+        ],
+        "effect_selection_rule": "For each report, retain the adjudicated source-reported adjusted continuous hazard ratio for the source-defined liver-stiffness-related exposure. Preserve its exposure unit and adjustment set verbatim.",
+        "extraction_notes": [
+          "Keep categorical exposure effects separate from the selected continuous effect.",
+          "Record a source-only finding if the endpoint is all-cause mortality rather than the target composite cardiac event."
+        ],
+        "source_constraints": [
+          "effect and confidence interval must be primary source reported",
+          "exposure unit must not be silently rescaled",
+          "outcome must match target"
+        ]
+      },
+      {
+        "target_id": "all_cause_mortality",
+        "outcome": "All-cause mortality",
+        "comparison": "Source-defined continuous liver-stiffness-related exposure increase",
+        "population_or_subgroup": "Source-defined hospitalized heart-failure cohort",
+        "timepoint_policy": {
+          "rule": "Preserve the source-reported follow-up duration.",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "time_to_event"
+        ],
+        "preferred_effect_measures": [
+          "HR"
+        ],
+        "estimands": [
+          "adjusted_continuous_exposure_association"
+        ],
+        "effect_selection_rule": "Retain the source-reported adjusted continuous hazard ratio, with its source-defined exposure unit and adjustment set.",
+        "extraction_notes": [
+          "This target is retained as a plausible but ineligible record for the prespecified adverse-cardiac-event main analysis."
+        ],
+        "source_constraints": [
+          "effect and confidence interval must be primary source reported",
+          "exposure unit must not be silently rescaled",
+          "outcome must match target"
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "main_pr_adverse_cardiac_events",
+      "outcome_group": "Adverse cardiac events",
+      "target_id": "adverse_cardiac_event",
+      "eligible_outcome_codes": [
+        "adverse_cardiac_event"
+      ],
+      "eligible_data_families": [
+        "time_to_event"
+      ],
+      "accepted_effect_types": [
+        "HR"
+      ],
+      "estimands": [
+        "adjusted_continuous_exposure_association"
+      ],
+      "selection_rules": [
+        "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+        "Select no more than one eligible estimate from each independent study for an analysis.",
+        "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+        "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Preserve the source-reported follow-up duration for each report; do not replace it with the review median.",
+        "Source selection: For each report, retain the adjudicated source-reported adjusted continuous hazard ratio for the source-defined liver-stiffness-related exposure. Preserve its exposure unit and adjustment set verbatim.",
+        "effect and confidence interval must be primary source reported",
+        "exposure unit must not be silently rescaled",
+        "outcome must match target",
+        "Keep categorical exposure effects separate from the selected continuous effect.",
+        "Record a source-only finding if the endpoint is all-cause mortality rather than the target composite cardiac event."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Adverse cardiac events"
+      ],
+      "exposure": {
+        "terms": [
+          "Liver stiffness or a validated liver-fibrosis score"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Source-defined continuous liver-stiffness-related exposure increase"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Source-defined hospitalized heart-failure cohort"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Preserve the source-reported follow-up duration for each report; do not replace it with the review median.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Prognostic Relevance of Liver Stiffness Assessed by Transient Elastography in Patients With Acute Decompensated Heart Failure",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_001.pdf"
+      },
+      "doi": "10.1253/circj.cj-17-1344"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "The impact of non-alcoholic fatty liver disease fibrosis score on cardiac prognosis in patients with chronic heart failure",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_002.pdf"
+      },
+      "doi": "10.1007/s00380-017-1113-1"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Disparities in Heart Failure Deaths among Patients with Cirrhosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_003.pdf"
+      },
+      "doi": "10.3390/jcm13206153"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Sleep-Disordered Breathing in Patients with Chronic Heart Failure and Its Implications on Real-Time Hemodynamic Regulation, Baroreceptor Reflex Sensitivity, and Survival",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_004.pdf"
+      },
+      "doi": "10.3390/jcm13237219"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "The Liver in Heart Failure: From Biomarkers to Clinical Risk",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_005.pdf"
+      },
+      "doi": "10.3390/ijms242115665"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Liver stiffness as measured by transient elastography is a predictor of outcomes in patients with chronic heart failure with reduced, mid-range, and recovered left-ventricular ejection fraction",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_006.pdf"
+      },
+      "doi": "10.1016/j.ahjo.2021.100048"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Evaluation of thyroid congestion in patients with heart failure using shear wave elastography: An observational study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_007.pdf"
+      },
+      "doi": "10.1097/md.0000000000038159"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Navigating Heart–Lung Interactions in Mechanical Ventilation: Pathophysiology, Diagnosis, and Advanced Management Strategies in Acute Respiratory Distress Syndrome and Beyond",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_008.pdf"
+      },
+      "doi": "10.3390/jcm13247788"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Association Between the Liver Fibrosis Markers and Scores, and Hemodynamic Congestion Assessed by Peripheral Venous Pressure in Patients With Acute Heart Failure",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_009.pdf"
+      },
+      "doi": "10.1161/jaha.123.030788"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Liver Stiffness Reflecting Right-Sided Filling Pressure Can Predict Adverse Outcomes in Patients With Heart Failure",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_010.pdf"
+      },
+      "doi": "10.1016/j.jcmg.2017.10.022"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Liver stiffness assessed by Fibrosis-4 index predicts mortality in patients with heart failure",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_011.pdf"
+      },
+      "doi": "10.1136/openhrt-2017-000598"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "The Interplay between Severe Cirrhosis and Heart: A Focus on Diastolic Dysfunction",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_012.pdf"
+      },
+      "doi": "10.3390/jcm13185442"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Perioperative management of constrictive pericarditis with cardiac cirrhosis: A case report",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_013.pdf"
+      },
+      "doi": "10.1016/j.ijscr.2024.109843"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Spleen stiffness determined by spleen-dedicated device accurately predicted esophageal varices in cirrhosis patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0011/candidate_014.pdf"
+      },
+      "doi": "10.1177/20406223231206223"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

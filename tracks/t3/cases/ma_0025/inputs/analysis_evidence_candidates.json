@@ -1,0 +1,679 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0025",
+  "candidate_set_id": "ma_0025_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0025_04",
+      "study_id": "s_0025_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High-titre anti-influenza immune plasma",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children and adults hospitalized with severe influenza A infection; intention-to-treat/evaluable analysis population",
+      "timepoint": "Day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 6,
+        "intervention_arm.total": 88,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 45
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_04",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 73
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0025_03",
+      "study_id": "s_0025_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Anti-influenza hyperimmune intravenous immunoglobulin (hIVIG)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Survival / death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Severely ill patients with influenza A serotype H1N1 infection, in intensive care and on ventilator support; 34 evaluable patients",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports no evidence of an overall survival benefit in 34 evaluable patients but does not provide overall death event counts and denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_03",
+        "source_type": "paragraph",
+        "source_id": "content_0036",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0025_02",
+      "study_id": "s_0025_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Anti-influenza plasma plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults and children with PCR-confirmed severe influenza; primary efficacy population",
+      "timepoint": "Day 28/disposition after last hospital discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 1,
+        "intervention_arm.total": 42,
+        "comparator_arm.events": 5,
+        "comparator_arm.total": 45
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_02",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 79
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0025_01",
+      "study_id": "s_0025_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Hyperimmune intravenous immunoglobulin (H-IVIG)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Subgroup of 22 patients who received H-IVIG or IVIG within 5 days of symptom onset",
+      "timepoint": "21 days after treatment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Among 22 patients treated within 5 days of symptom onset, the source reports mortality of 0% with H-IVIG versus 40% with IVIG, with an adjusted OR of 0.14 (95% CI 0.02-0.92; P=.04). Arm-specific denominators and death-event counts for this subgroup are not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_01",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 40
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0025_03",
+      "study_id": "s_0025_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Anti-influenza hyperimmune intravenous immunoglobulin (hIVIG)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Severely ill patients with influenza A serotype H1N1 infection, in intensive care and on ventilator support, treated within 5 days of symptom onset",
+      "timepoint": "Study follow-up; treatment within 5 days of symptom onset",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 0,
+        "intervention_arm.total": 12,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 10
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_03",
+        "source_type": "paragraph",
+        "source_id": "content_0036",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0025_04",
+      "study_id": "s_0025_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults and children with severe influenza A",
+      "timepoint": "Death through day 28",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "All-cause death through day 28 in analyzed high-titre versus low-titre immune-plasma groups.",
+        "intervention_arm": {
+          "label": "Convalescent plasma or H-IVIG plus standard care",
+          "events": 6,
+          "total": 91
+        },
+        "comparator_arm": {
+          "label": "Control plasma, IVIG, or placebo plus standard care",
+          "events": 4,
+          "total": 47
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.7747252747252747,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.25524679669862704,
+        "variance": 0.38440105993297485,
+        "direction": "convalescent_plasma_lower_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0025_04",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 2, clinical status on study days"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0025_03",
+      "study_id": "s_0025_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with laboratory-confirmed influenza",
+      "timepoint": "Death during source follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "All-cause death in the primary analysis population receiving H-IVIG versus placebo.",
+        "intervention_arm": {
+          "label": "Convalescent plasma or H-IVIG plus standard care",
+          "events": 6,
+          "total": 156
+        },
+        "comparator_arm": {
+          "label": "Control plasma, IVIG, or placebo plus standard care",
+          "events": 5,
+          "total": 152
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.1692307692307693,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.15634607039069404,
+        "variance": 0.3536774628879892,
+        "direction": "convalescent_plasma_lower_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0025_03",
+        "page": 10,
+        "source_type": "table",
+        "source_id": "Table 3, Death and adverse events"
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0025_01",
+      "study_id": "s_0025_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Hyperimmune intravenous immunoglobulin (H-IVIG)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults with severe A(H1N1) infection requiring intensive care and positive-pressure ventilatory support; analyzed treatment and control groups",
+      "timepoint": "Study follow-up until ICU discharge or death",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 5,
+        "intervention_arm.total": 17,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 17
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_01",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 46
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0025_04",
+      "study_id": "s_0025_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High-titre anti-influenza immune plasma",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with severe influenza A/H1N1/pdm09 infection in a 2009 cohort study",
+      "timepoint": "Cohort follow-up; timepoint not specified in located excerpt",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 4,
+        "intervention_arm.total": 20,
+        "comparator_arm.events": 40,
+        "comparator_arm.total": 73
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_04",
+        "source_type": "paragraph",
+        "source_id": "content_0021",
+        "content_list_item_index": 21
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0025_01",
+      "study_id": "s_0025_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with severe 2009 H1N1 influenza receiving ICU care",
+      "timepoint": "Mortality during source follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "All-cause mortality among randomized H-IVIG versus standard IVIG recipients.",
+        "intervention_arm": {
+          "label": "Convalescent plasma or H-IVIG plus standard care",
+          "events": 5,
+          "total": 17
+        },
+        "comparator_arm": {
+          "label": "Control plasma, IVIG, or placebo plus standard care",
+          "events": 4,
+          "total": 17
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.25,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.22314355131420976,
+        "variance": 0.3323529411764706,
+        "direction": "convalescent_plasma_lower_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0025_01",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 1, Outcome"
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0025_04",
+      "study_id": "s_0025_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High-titre anti-influenza immune plasma",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children and adults hospitalized with severe influenza A infection; intention-to-treat/evaluable analysis population",
+      "timepoint": "Day 14",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 4,
+        "intervention_arm.total": 86,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 45
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_04",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 73
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0025_03",
+      "study_id": "s_0025_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High-titre hyperimmune intravenous immunoglobulin (hIVIG) plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with laboratory-confirmed influenza A or B infection, NEW score ≥2 at screening, symptom onset ≤7 days before randomisation; primary analysis population",
+      "timepoint": "Through 28 days of follow-up",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 6,
+        "intervention_arm.total": 156,
+        "comparator_arm.events": 5,
+        "comparator_arm.total": 152
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_03",
+        "source_type": "paragraph",
+        "source_id": "content_0005",
+        "content_list_item_index": 5
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0025_02",
+      "study_id": "s_0025_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Anti-influenza plasma plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults and children with PCR-confirmed severe influenza; primary efficacy population",
+      "timepoint": "Day 7",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 0,
+        "intervention_arm.total": 42,
+        "comparator_arm.events": 5,
+        "comparator_arm.total": 45
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_02",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 79
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0025_02",
+      "study_id": "s_0025_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults and children with PCR-confirmed severe influenza",
+      "timepoint": "Death through 28 days in the primary-efficacy population",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "All-cause death in the PCR-confirmed primary-efficacy population receiving anti-influenza plasma plus standard care versus standard care.",
+        "intervention_arm": {
+          "label": "Convalescent plasma or H-IVIG plus standard care",
+          "events": 0,
+          "total": 42
+        },
+        "comparator_arm": {
+          "label": "Control plasma, IVIG, or placebo plus standard care",
+          "events": 5,
+          "total": 45
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.09725158562367865,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -2.330453992002838,
+        "variance": 2.1368232374299105,
+        "direction": "convalescent_plasma_lower_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0025_02",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 2, disposition and ordinal clinical status"
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0025_03",
+      "study_id": "s_0025_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Anti-influenza hyperimmune intravenous immunoglobulin (hIVIG)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Severely ill patients with influenza A serotype H1N1 infection, in intensive care and on ventilator support, treated later than 5 days after symptom onset",
+      "timepoint": "Study follow-up; treatment later than 5 days after symptom onset",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 5,
+        "intervention_arm.total": 5,
+        "comparator_arm.events": 0,
+        "comparator_arm.total": 7
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_03",
+        "source_type": "paragraph",
+        "source_id": "content_0036",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0025_02",
+      "study_id": "s_0025_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Anti-influenza plasma plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults and children with severe influenza; all randomly assigned participants, intention-to-treat population",
+      "timepoint": "During study follow-up, through day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 1,
+        "intervention_arm.total": 49,
+        "comparator_arm.events": 5,
+        "comparator_arm.total": 49
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_02",
+        "source_type": "table",
+        "source_id": "table 2",
+        "content_list_item_index": 90
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0025_04",
+      "study_id": "s_0025_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High-titre anti-influenza immune plasma",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children and adults hospitalized with severe influenza A infection; intention-to-treat/evaluable analysis population",
+      "timepoint": "Day 7",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 2,
+        "intervention_arm.total": 91,
+        "comparator_arm.events": 2,
+        "comparator_arm.total": 46
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0025_04",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 73
+      }
+    }
+  ]
+}

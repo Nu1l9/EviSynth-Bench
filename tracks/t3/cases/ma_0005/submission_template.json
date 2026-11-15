@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0005",
+  "task_id": "ma_0005_analysis_preterm_birth_lt35_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_preterm_birth_lt35_weeks",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

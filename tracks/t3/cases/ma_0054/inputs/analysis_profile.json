@@ -1,0 +1,38 @@
+{
+  "case_id": "ma_0054",
+  "analysis_profile_id": "ma_0054_all_cause_mortality_analysis_profile_v1",
+  "scope": "single pre-specified primary pairwise synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_all_cause_mortality",
+      "pooled_result_id": "pr_0054_all_cause_mortality",
+      "outcome_group": "all-cause mortality",
+      "target_id": "all_cause_mortality",
+      "eligible_outcome_codes": [
+        "all_cause_mortality"
+      ],
+      "eligible_data_families": [
+        "binary_arm_event_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "ivermectin_vs_eligible_non_ivermectin_control_all_cause_mortality"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select a quantitatively complete candidate with explicit arm-level all-cause mortality counts.",
+          "The intervention must be an ivermectin-containing arm; the comparator must be placebo, standard care, or no additional experimental treatment.",
+          "Do not use active non-ivermectin drug arms as a comparator.",
+          "For mutually exclusive eligible arms in a multi-arm study, use the source-combined study-level contrast once.",
+          "Use a source outcome table's explicitly reported analysis denominator; do not replace it with a randomized denominator from another source section.",
+          "Do not infer mortality from a composite outcome, clinical progression, or a target-review forest plot."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

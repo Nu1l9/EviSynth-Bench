@@ -1,0 +1,108 @@
+{
+  "case_id": "ma_0028",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0028_01",
+      "document_id": "a_0028_01",
+      "doi": "10.1128/cdli.8.1.166-169.2001",
+      "title": "Lateral-Flow Assay for Rapid Serodiagnosis of Human Leptospirosis",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_01.pdf"
+      },
+      "article_id": "a_0028_01"
+    },
+    {
+      "study_id": "s_0028_02",
+      "document_id": "a_0028_02",
+      "doi": "10.1016/s0732-8893(01)00361-3",
+      "title": "Evaluation of the clinical utility of a rapid blood test for human leptospirosis",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_02.pdf"
+      },
+      "article_id": "a_0028_02"
+    },
+    {
+      "study_id": "s_0028_03",
+      "document_id": "a_0028_03",
+      "doi": "10.1099/jmm.0.05064-0",
+      "title": "Field application of Lepto lateral flow for rapid diagnosis of leptospirosis",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_03.pdf"
+      },
+      "article_id": "a_0028_03"
+    },
+    {
+      "study_id": "s_0028_04",
+      "document_id": "a_0028_04",
+      "doi": "10.1371/journal.pntd.0002290",
+      "title": "Prospective Evaluation of Three Rapid Diagnostic Tests for Diagnosis of Human Leptospirosis",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_04.pdf"
+      },
+      "article_id": "a_0028_04"
+    },
+    {
+      "study_id": "s_0028_05",
+      "document_id": "a_0028_05",
+      "doi": "10.1007/s00508-015-0853-0",
+      "title": "Evaluation of the immunochromatographic (Leptocheck) test for detection of specific antibodies against leptospires",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_05.pdf"
+      },
+      "article_id": "a_0028_05"
+    },
+    {
+      "study_id": "s_0028_06",
+      "document_id": "a_0028_06",
+      "doi": "10.1186/s12879-015-1080-z",
+      "title": "Evaluation of two immunodiagnostic tests for early rapid diagnosis of leptospirosis in Sri Lanka: a preliminary study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_06.pdf"
+      },
+      "article_id": "a_0028_06"
+    },
+    {
+      "study_id": "s_0028_07",
+      "document_id": "a_0028_07",
+      "doi": "10.1371/journal.pone.0129236",
+      "title": "Diagnosis of Leptospirosis: Comparison between Microscopic Agglutination Test, IgM-ELISA and IgM Rapid Immunochromatography Test",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_07.pdf"
+      },
+      "article_id": "a_0028_07",
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "docx_s1_acute",
+          "path": "../../../../documents/t2/ma_0028/a_0028_07_supplement_01.docx"
+        },
+        {
+          "component_id": "supplement_02",
+          "label": "docx_s2_acute_paired",
+          "path": "../../../../documents/t2/ma_0028/a_0028_07_supplement_02.docx"
+        }
+      ]
+    },
+    {
+      "study_id": "s_0028_08",
+      "document_id": "a_0028_08",
+      "doi": "10.4103/0255-0857.103762",
+      "title": "Efficiency of two commercial kits in serodiagnosis of leptospiral uveitis",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_08.pdf"
+      },
+      "article_id": "a_0028_08"
+    },
+    {
+      "study_id": "s_0028_09",
+      "document_id": "a_0028_09",
+      "doi": "10.1093/cid/cis403",
+      "title": "Fool's Gold: Why Imperfect Reference Tests Are Undermining the Evaluation of Novel Diagnostics: A Reevaluation of 5 Diagnostic Tests for Leptospirosis",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0028/a_0028_09.pdf"
+      },
+      "article_id": "a_0028_09"
+    }
+  ]
+}

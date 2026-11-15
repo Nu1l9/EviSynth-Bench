@@ -1,0 +1,357 @@
+{
+  "case_id": "ma_0001",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "article_id": "a_10968377",
+      "study_id": "s_10968377",
+      "document_id": "a_10968377",
+      "doi": "10.1093/aje/152.4.324",
+      "title": "Associations of Weight Change and Weight Variability with Cardiovascular and All-Cause Mortality in the Chicago Western Electric Company Study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_10968377.pdf"
+      }
+    },
+    {
+      "article_id": "a_12456229",
+      "study_id": "s_12456229",
+      "document_id": "a_12456229",
+      "doi": "10.1001/archinte.162.22.2575",
+      "title": "Weight Change, Weight Fluctuation, and Mortality",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_12456229.pdf"
+      }
+    },
+    {
+      "article_id": "a_15847242",
+      "study_id": "s_15847242",
+      "document_id": "a_15847242",
+      "doi": "10.1007/s10900-004-1955-1",
+      "title": "THE ASSOCIATION BETWEEN WEIGHT FLUCTUATION AND MORTALITY: RESULTS FROM A POPULATION-BASED COHORT STUDY",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_15847242.pdf"
+      }
+    },
+    {
+      "article_id": "a_2041550",
+      "study_id": "s_2041550",
+      "document_id": "a_2041550",
+      "doi": "10.1056/nejm199106273242602",
+      "title": "Variability of Body Weight and Health Outcomes in the Framingham Population",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_2041550.pdf"
+      }
+    },
+    {
+      "article_id": "a_27466237",
+      "study_id": "s_27466237",
+      "document_id": "a_27466237",
+      "doi": "10.1136/bmjopen-2015-010836",
+      "title": "Patterns of weight change after the diagnosis of type 2 diabetes in Scotland and their relationship with glycaemic control, mortality and cardiovascular outcomes: a retrospective cohort study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_27466237.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "bmjopen-2015-010836supp_figure (1)",
+          "path": "../../../../documents/t2/ma_0001/a_27466237_supplement_01.pdf"
+        },
+        {
+          "component_id": "supplement_02",
+          "label": "bmjopen-2015-010836supp_tables (1)",
+          "path": "../../../../documents/t2/ma_0001/a_27466237_supplement_02.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_28379800",
+      "study_id": "s_28379800",
+      "document_id": "a_28379800",
+      "doi": "10.1056/nejmoa1606148",
+      "title": "Body-Weight Fluctuations and Outcomes in Coronary Disease",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_28379800.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "nejmoa1606148_appendix",
+          "path": "../../../../documents/t2/ma_0001/a_28379800_supplement_01.pdf"
+        },
+        {
+          "component_id": "supplement_02",
+          "label": "nejmoa1606148_disclosures (1)",
+          "path": "../../../../documents/t2/ma_0001/a_28379800_supplement_02.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_29216261",
+      "study_id": "s_29216261",
+      "document_id": "a_29216261",
+      "doi": "10.1371/journal.pone.0189180",
+      "title": "Associations of changes in body mass index with all-cause and cardiovascular mortality in healthy middle-aged adults",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_29216261.pdf"
+      }
+    },
+    {
+      "article_id": "a_29777238",
+      "study_id": "s_29777238",
+      "document_id": "a_29777238",
+      "doi": "10.1038/s41366-018-0079-0",
+      "title": "Impact of body mass index and body weight variabilities on mortality: a nationwide cohort study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_29777238.pdf"
+      }
+    },
+    {
+      "article_id": "a_30507935",
+      "study_id": "s_30507935",
+      "document_id": "a_30507935",
+      "doi": "10.1371/journal.pone.0207223",
+      "title": "Weight cycling and cardiovascular outcome in women with suspected ischemia: A report from the NHLBI-sponsored WISE Study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_30507935.pdf"
+      }
+    },
+    {
+      "article_id": "a_30553512",
+      "study_id": "s_30553512",
+      "document_id": "a_30553512",
+      "doi": "10.1016/j.amjcard.2018.11.016",
+      "title": "Body Mass Index, Change in Weight, Body Weight Variability and Outcomes in Type 2 Diabetes Mellitus (from the ACCORD Trial)",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_30553512.pdf"
+      }
+    },
+    {
+      "article_id": "a_30571333",
+      "study_id": "s_30571333",
+      "document_id": "a_30571333",
+      "doi": "10.1161/circoutcomes.118.004724",
+      "title": "Body Weight Variability and Cardiovascular Outcomes in Patients With Type 2 Diabetes Mellitus",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_30571333.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "circcvqo_circcqo-2018-004724_supp1",
+          "path": "../../../../documents/t2/ma_0001/a_30571333_supplement_01.pdf"
+        },
+        {
+          "component_id": "supplement_02",
+          "label": "circcvqo_circcqo-2018-004724_supp2",
+          "path": "../../../../documents/t2/ma_0001/a_30571333_supplement_02.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_30874785",
+      "study_id": "s_30874785",
+      "document_id": "a_30874785",
+      "doi": "10.1001/jamanetworkopen.2019.0731",
+      "title": "Association of Weight Fluctuation With Mortality in Japanese Adults",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_30874785.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "jamanetwopen-2-e190731-s001",
+          "path": "../../../../documents/t2/ma_0001/a_30874785_supplement_01.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_31025893",
+      "study_id": "s_31025893",
+      "document_id": "a_31025893",
+      "doi": "10.1161/jaha.118.010793",
+      "title": "Association of Variability in Body Mass Index and Metabolic Health With Cardiometabolic Disease Risk",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_31025893.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "JAH3-8-e010793-s001",
+          "path": "../../../../documents/t2/ma_0001/a_31025893_supplement_01.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_31266987",
+      "study_id": "s_31266987",
+      "document_id": "a_31266987",
+      "doi": "10.1038/s41598-019-46037-7",
+      "title": "Impact of weight variability on mortality among Korean men and women: a population based study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_31266987.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "41598_2019_46037_MOESM1_ESM",
+          "path": "../../../../documents/t2/ma_0001/a_31266987_supplement_01.docx"
+        }
+      ]
+    },
+    {
+      "article_id": "a_31585180",
+      "study_id": "s_31585180",
+      "document_id": "a_31585180",
+      "doi": "10.1016/j.hrthm.2019.09.029",
+      "title": "Bodyweight fluctuation is associated with increased risk of incident atrial fibrillation",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_31585180.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "1-s2.0-S154752711930904X-mmc1",
+          "path": "../../../../documents/t2/ma_0001/a_31585180_supplement_01.docx"
+        }
+      ]
+    },
+    {
+      "article_id": "a_32534567",
+      "study_id": "s_32534567",
+      "document_id": "a_32534567",
+      "doi": "10.1186/s12933-020-01059-8",
+      "title": "High variability in bodyweight is associated with an increased risk of atrial fibrillation in patients with type 2 diabetes mellitus: a nationwide cohort study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_32534567.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "12933_2020_1059_MOESM1_ESM",
+          "path": "../../../../documents/t2/ma_0001/a_32534567_supplement_01.docx"
+        }
+      ]
+    },
+    {
+      "article_id": "a_32641375",
+      "study_id": "s_32641375",
+      "document_id": "a_32641375",
+      "doi": "10.2337/dc19-2552",
+      "title": "Body Weight Variability and the Risk of Cardiovascular Outcomes and Mortality in Patients With Type 2 Diabetes: A Nationwide Cohort Study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_32641375.pdf"
+      }
+    },
+    {
+      "article_id": "a_33355207",
+      "study_id": "s_33355207",
+      "document_id": "a_33355207",
+      "doi": "10.1136/bmjdrc-2020-001340",
+      "title": "Effects of BMI and LDL-cholesterol change pattern on cardiovascular disease in normal adults and diabetics",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_33355207.pdf"
+      }
+    },
+    {
+      "article_id": "a_33397045",
+      "study_id": "s_33397045",
+      "document_id": "a_33397045",
+      "doi": "10.3803/enm.2020.871",
+      "title": "Variabilities in Weight and Waist Circumference and Risk of Myocardial Infarction, Stroke, and Mortality: A Nationwide Cohort Study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_33397045.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "enm-2020-871-suppl1",
+          "path": "../../../../documents/t2/ma_0001/a_33397045_supplement_01.pdf"
+        },
+        {
+          "component_id": "supplement_02",
+          "label": "enm-2020-871-suppl2",
+          "path": "../../../../documents/t2/ma_0001/a_33397045_supplement_02.pdf"
+        },
+        {
+          "component_id": "supplement_03",
+          "label": "enm-2020-871-suppl3",
+          "path": "../../../../documents/t2/ma_0001/a_33397045_supplement_03.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_33911167",
+      "study_id": "s_33911167",
+      "document_id": "a_33911167",
+      "doi": "10.1038/s41598-021-88733-3",
+      "title": "Body weight variability and the risk of cardiovascular outcomes in patients with nonalcoholic fatty liver disease",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_33911167.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "41598_2021_88733_MOESM1_ESM",
+          "path": "../../../../documents/t2/ma_0001/a_33911167_supplement_01.docx"
+        },
+        {
+          "component_id": "supplement_02",
+          "label": "41598_2021_88733_MOESM2_ESM",
+          "path": "../../../../documents/t2/ma_0001/a_33911167_supplement_02.tif"
+        }
+      ]
+    },
+    {
+      "article_id": "a_33980955",
+      "study_id": "s_33980955",
+      "document_id": "a_33980955",
+      "doi": "10.1038/s41598-021-89666-7",
+      "title": "Association of weight fluctuation with cardiovascular disease risk among initially obese adults",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_33980955.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "41598_2021_89666_MOESM1_ESM",
+          "path": "../../../../documents/t2/ma_0001/a_33980955_supplement_01.docx"
+        }
+      ]
+    },
+    {
+      "article_id": "a_34195237",
+      "study_id": "s_34195237",
+      "document_id": "a_34195237",
+      "doi": "10.3389/fcvm.2021.689591",
+      "title": "Association of Body-Weight Fluctuation With Outcomes in Heart Failure With Preserved Ejection Fraction",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_34195237.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "Data Sheet 1",
+          "path": "../../../../documents/t2/ma_0001/a_34195237_supplement_01.pdf"
+        }
+      ]
+    },
+    {
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "document_id": "a_34446018",
+      "doi": "10.1186/s12933-021-01360-0",
+      "title": "Variability in body weight and the risk of cardiovascular complications in type 2 diabetes: results from the Swedish National Diabetes Register",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0001/a_34446018.pdf"
+      },
+      "supplements": [
+        {
+          "component_id": "supplement_01",
+          "label": "12933_2021_1360_MOESM1_ESM",
+          "path": "../../../../documents/t2/ma_0001/a_34446018_supplement_01.docx"
+        }
+      ]
+    }
+  ]
+}

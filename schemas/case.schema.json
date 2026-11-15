@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/case.schema.json",
+  "title": "Meta-analysis bench case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "domain",
+    "review_type",
+    "meta_analysis",
+    "review_question",
+    "criteria",
+    "expected_counts",
+    "candidate_articles"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "review_type": {
+      "type": "string",
+      "enum": [
+        "pairwise_systematic_review_meta_analysis",
+        "meta_analysis",
+        "systematic_review",
+        "network_meta_analysis",
+        "ipd_meta_analysis",
+        "other"
+      ]
+    },
+    "meta_analysis": {
+      "type": "object",
+      "required": [
+        "title"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pmcid": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "review_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_status": {
+      "type": "string",
+      "enum": [
+        "runnable",
+        "curation_incomplete",
+        "source_not_reconstructable_v1",
+        "out_of_scope_v1"
+      ]
+    },
+    "expected_counts": {
+      "type": "object",
+      "required": [
+        "included_articles",
+        "candidate_articles",
+        "report_units",
+        "main_pooled_results"
+      ],
+      "properties": {
+        "included_articles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "candidate_articles": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "report_units": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "main_pooled_results": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "criteria": {
+      "type": "object",
+      "required": [
+        "inclusion_criteria",
+        "exclusion_criteria"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "population": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "intervention_or_exposure": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "comparator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "outcomes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "study_designs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusion_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusion_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "candidate_articles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "article_id",
+          "study_id",
+          "title",
+          "document_status"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "article_id": {
+            "type": "string",
+            "pattern": "^a_[0-9]{4,}$"
+          },
+          "study_id": {
+            "type": "string",
+            "pattern": "^s_[0-9]{4,}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pmcid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "journal": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "abstract": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "document_status": {
+            "type": "string",
+            "enum": [
+              "metadata_only",
+              "full_text_local_only",
+              "full_text_public_redistributable",
+              "full_text_unavailable"
+            ]
+          },
+          "license": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "allows_redistribution": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "negative_type": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              null,
+              "prisma_excluded",
+              "full_text_excluded",
+              "same_query_not_included",
+              "nearby_review_included",
+              "other"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

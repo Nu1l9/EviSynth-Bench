@@ -1,0 +1,40 @@
+{
+  "case_id": "ma_0054",
+  "articles": [
+    {
+      "article_id": "a_0054_28",
+      "doi": "10.18483/ijsci.2378",
+      "title": "Effectiveness of Ivermectin in SARS-CoV-2/COVID-19 Patients"
+    },
+    {
+      "article_id": "a_0054_30",
+      "doi": "10.4103/1995-7645.318304",
+      "title": "Ivermectin as an adjunct treatment for hospitalized adult COVID-19 patients"
+    },
+    {
+      "article_id": "a_0054_32",
+      "doi": "10.1016/j.ijid.2020.11.191",
+      "title": "A five-day course of ivermectin for the treatment of COVID-19 may reduce the duration of illness"
+    },
+    {
+      "article_id": "a_0054_33",
+      "doi": "10.1101/2021.02.18.21252037",
+      "title": "Efficacy and safety of Ivermectin and Hydroxychloroquine in patients with severe COVID-19. A randomized controlled trial"
+    },
+    {
+      "article_id": "a_0054_34",
+      "doi": "10.1016/j.eclinm.2020.100720",
+      "title": "The effect of early treatment with ivermectin on viral load, symptoms and humoral response in patients with non-severe COVID-19: A pilot, double-blind, placebo-controlled, randomized clinical trial"
+    },
+    {
+      "article_id": "a_0054_36",
+      "doi": "10.1001/jama.2021.3071",
+      "title": "Effect of Ivermectin on Time to Resolution of Symptoms Among Adults With Mild COVID-19"
+    },
+    {
+      "article_id": "a_0054_37",
+      "doi": "10.1101/2021.01.05.21249310",
+      "title": "Ivermectin as a potential treatment for mild to moderate COVID-19 – A double blind randomized placebo-controlled trial"
+    }
+  ]
+}

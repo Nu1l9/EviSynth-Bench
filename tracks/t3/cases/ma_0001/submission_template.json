@@ -1,0 +1,32 @@
+{
+  "case_id": "ma_0001",
+  "task_id": "ma_0001_analysis_main_outcomes_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "main_pr_any_cv",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "main_pr_cv_death",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "main_pr_mi",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "main_pr_stroke",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "main_pr_composite",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

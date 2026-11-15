@@ -1,0 +1,76 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0041",
+    "task_id": "ma_0041_full_extraction_all_reports_v2",
+    "task_type": "extraction",
+    "topic": "Extract every source-reported glenoid positioning summary from the supplied primary reports without forcing semantically different measures into a common effect.",
+    "pico": {
+      "population": "Human patients or human cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty",
+      "exposure": "Surgical navigation, patient-specific instruments, or standard instrumentation",
+      "comparator": "Any reported comparator, or none for a single-arm report",
+      "outcomes": [
+        "Glenoid version, inclination or tilt, and offset or starting-point position"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [],
+      "estimands": [],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "glenoid_positioning_summary",
+          "outcome": {
+            "description": "Glenoid version, inclination or tilt, and offset or starting-point position",
+            "aliases": []
+          },
+          "accepted_data_families": [
+            "independent_continuous_arms",
+            "single_arm_continuous_summary"
+          ],
+          "preferred_effect_measures": [],
+          "estimands": [],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "Capture every overall or explicitly labelled subgroup summary with a reported n, mean and SD; retain outcome axis and measurement semantics.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": null
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0041_01_verborgt",
+        "a_0041_02_kircher",
+        "a_0041_03_lau_keith",
+        "a_0041_04_gauci",
+        "a_0041_05_dallalana",
+        "a_0041_06_throckmorton",
+        "a_0041_07_suero",
+        "a_0041_08_hendel",
+        "a_0041_09_gregory"
+      ],
+      "study_ids": {
+        "a_0041_01_verborgt": "s_0041_01",
+        "a_0041_02_kircher": "s_0041_02",
+        "a_0041_03_lau_keith": "s_0041_03",
+        "a_0041_04_gauci": "s_0041_04",
+        "a_0041_05_dallalana": "s_0041_05",
+        "a_0041_06_throckmorton": "s_0041_06",
+        "a_0041_07_suero": "s_0041_07",
+        "a_0041_08_hendel": "s_0041_08",
+        "a_0041_09_gregory": "s_0041_09"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0001",
+  "source_case_id": "ma_0001",
+  "task_id": "ma_0001_extraction_all_reports_v1",
+  "task_type": "extraction",
+  "task_definition": "For the known included primary reports, extract all source-grounded evidence requested by the external extraction protocol. Preserve the source-defined estimand, outcome, population or subgroup, follow-up, adjusted effect and confidence interval, model information, quantitative-usability status, and supporting location.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_10968377",
+    "a_12456229",
+    "a_15847242",
+    "a_2041550",
+    "a_27466237",
+    "a_28379800",
+    "a_29216261",
+    "a_29777238",
+    "a_30507935",
+    "a_30553512",
+    "a_30571333",
+    "a_30874785",
+    "a_31025893",
+    "a_31266987",
+    "a_31585180",
+    "a_32534567",
+    "a_32641375",
+    "a_33355207",
+    "a_33397045",
+    "a_33911167",
+    "a_33980955",
+    "a_34195237",
+    "a_34446018"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0001",
+    "review_ma_0001_supplement"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0037",
+  "gold_id": "ma_0037_analysis_gold_v1_1_expanded_full_corpus_draft",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0037",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_adequate_sampling_with_rose",
+      "selected_candidate_ids": [
+        "ce_0037_01",
+        "ce_0037_02",
+        "ce_0037_03",
+        "ce_0037_04",
+        "ce_0037_05"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0037_01",
+        "ee_0037_02",
+        "ee_0037_03",
+        "ee_0037_04",
+        "ee_0037_05"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0037_primary_adequate_sampling",
+          "outcome_group": "Adequate diagnostic sampling with rapid on-site evaluation",
+          "effect": {
+            "effect_type": "RD",
+            "value": 0.11038989369459844,
+            "ci_lower": 0.07068795708657938,
+            "ci_upper": 0.1500918303026175,
+            "direction": "rose_higher_adequacy_when_rd_gt_0"
+          },
+          "member_candidate_ids": [
+            "ce_0037_01",
+            "ce_0037_02",
+            "ce_0037_03",
+            "ce_0037_04",
+            "ce_0037_05"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0037_01",
+            "ee_0037_02",
+            "ee_0037_03",
+            "ee_0037_04",
+            "ee_0037_05"
+          ],
+          "heterogeneity_i2": 0.0,
+          "calculator_run": {
+            "calculator_id": "binary_rd_wald_v1",
+            "pooling": "fixed_effect_inverse_variance_risk_difference",
+            "q": 1.4771382664280994
+          }
+        }
+      ]
+    }
+  ]
+}

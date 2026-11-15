@@ -1,0 +1,3010 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0076",
+  "task_type": "extraction",
+  "gold_id": "ma_0076_extraction_gold_v1",
+  "applies_to_task_ids": [
+    "ma_0076_extraction_all_reports_v1",
+    "ma_0076_end_to_end_extraction_analysis_v1"
+  ],
+  "provenance": {
+    "target_review_document_id": "review_ma_0076",
+    "target_supplement_document_id": null,
+    "annotation_status": "adjudicated",
+    "numeric_basis": "Exact participant-level primary-source records only; the target review is used only for private reconciliation."
+  },
+  "unit_definition": "One source-defined independent trial comparison or one source-only assessment unit. Numeric scoring covers exact participant-level diarrhea arm counts only.",
+  "report_units": [
+    {
+      "report_unit_id": "ru_0001",
+      "source_record_key": "076005",
+      "article_id": "a_076005",
+      "study_id": "s_076005",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0001_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "omega-3-acid ethyl esters versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.475806,
+            "ci_lower": 0.08554,
+            "ci_upper": 2.646609,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 2,
+            "intervention_total": 126,
+            "control_events": 4,
+            "control_total": 122,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076005",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 2/126/4/122.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0002",
+      "source_record_key": "076008",
+      "article_id": "a_076008",
+      "study_id": "s_076008",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "18 months",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0002_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "docosahexaenoic acid versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.26,
+            "ci_lower": 0.566158,
+            "ci_upper": 2.804163,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 18,
+            "intervention_total": 238,
+            "control_events": 10,
+            "control_total": 164,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076008",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 18/238/10/164.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0003",
+      "source_record_key": "076009",
+      "article_id": "a_076009",
+      "study_id": "s_076009",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "24 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0003_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "prescription omega-3 versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.760769,
+            "ci_lower": 0.510533,
+            "ci_upper": 6.072686,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 7,
+            "intervention_total": 332,
+            "control_events": 4,
+            "control_total": 331,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076009",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 7/332/4/331.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0004",
+      "source_record_key": "076012",
+      "article_id": "a_076012",
+      "study_id": "s_076012",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "median 42 months",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0004_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "omega-3 carboxylic acid versus corn oil",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.607982,
+            "ci_lower": 2.279651,
+            "ci_upper": 2.983602,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 780,
+            "intervention_total": 6532,
+            "control_events": 323,
+            "control_total": 6535,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076012",
+            "page": 10,
+            "source_type": "table",
+            "source_id": "Table 5",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 780/6532/323/6535.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0005",
+      "source_record_key": "076013",
+      "article_id": "a_076013",
+      "study_id": "s_076013",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "median 718 days",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0005_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "fish oil versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.906367,
+            "ci_lower": 0.379879,
+            "ci_upper": 2.162532,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 11,
+            "intervention_total": 100,
+            "control_events": 12,
+            "control_total": 100,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076013",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 11/100/12/100.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0006",
+      "source_record_key": "076014_epic1",
+      "article_id": "a_076014",
+      "study_id": "s_076141",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "EPIC-1 randomized trial safety population",
+      "timepoint": "52 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0006_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "omega-3 free fatty acids versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.787281,
+            "ci_lower": 0.996292,
+            "ci_upper": 3.206261,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 35,
+            "intervention_total": 187,
+            "control_events": 21,
+            "control_total": 184,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076014",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 35/187/21/184.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0007",
+      "source_record_key": "076014_epic2",
+      "article_id": "a_076014",
+      "study_id": "s_076142",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "EPIC-2 randomized trial safety population",
+      "timepoint": "52 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0007_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "omega-3 free fatty acids versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.238397,
+            "ci_lower": 0.756385,
+            "ci_upper": 2.027574,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 44,
+            "intervention_total": 189,
+            "control_events": 37,
+            "control_total": 188,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076014",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 44/189/37/188.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0008",
+      "source_record_key": "076017_japanese",
+      "article_id": "a_076017",
+      "study_id": "s_076171",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "18 days",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0008_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "combined randomized omega-3 carboxylic acid doses versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.695652,
+            "ci_lower": 0.059965,
+            "ci_upper": 47.948275,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 1,
+            "intervention_total": 12,
+            "control_events": 0,
+            "control_total": 6,
+            "outcome_unit": "participants",
+            "component_intervention_arms": [
+              {
+                "arm": "2 g/day",
+                "events": 0,
+                "total": 6
+              },
+              {
+                "arm": "4 g/day",
+                "events": 1,
+                "total": 6
+              }
+            ],
+            "aggregation": "sum events and totals across mutually exclusive randomized intervention arms",
+            "source_note": "The white 4 g/day cohort was open-label and was not included."
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076017",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 1/12/0/6.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0009",
+      "source_record_key": "076019_main_effect",
+      "article_id": "a_076019",
+      "study_id": "s_076019",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "factorial randomized trial safety population",
+      "timepoint": "16 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0009_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "omega-3 allocation versus omega-3 placebo allocation across atorvastatin strata",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.063061,
+            "ci_lower": 0.589583,
+            "ci_upper": 1.916777,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 24,
+            "intervention_total": 397,
+            "control_events": 23,
+            "control_total": 403,
+            "outcome_unit": "participants",
+            "component_intervention_arms": [
+              {
+                "arm": "omega-3 plus atorvastatin",
+                "events": 15,
+                "total": 200
+              },
+              {
+                "arm": "omega-3 plus atorvastatin placebo",
+                "events": 9,
+                "total": 197
+              }
+            ],
+            "aggregation": "sum events and totals across mutually exclusive randomized intervention arms",
+            "component_control_arms": [
+              {
+                "arm": "omega-3 placebo plus atorvastatin",
+                "events": 8,
+                "total": 201
+              },
+              {
+                "arm": "double placebo",
+                "events": 15,
+                "total": 202
+              }
+            ],
+            "source_note": "The two factorial strata were collapsed to one omega-3 main-effect comparison before synthesis."
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076019",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 3",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 24/397/23/403.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0010",
+      "source_record_key": "076025_combined",
+      "article_id": "a_076025",
+      "study_id": "s_076025",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0010_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "combined icosapent ethyl doses versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.838717,
+            "ci_lower": 0.377837,
+            "ci_upper": 1.86177,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 17,
+            "intervention_total": 469,
+            "control_events": 10,
+            "control_total": 233,
+            "outcome_unit": "participants",
+            "component_intervention_arms": [
+              {
+                "arm": "4 g/day",
+                "events": 8,
+                "total": 233
+              },
+              {
+                "arm": "2 g/day",
+                "events": 9,
+                "total": 236
+              }
+            ],
+            "aggregation": "sum events and totals across mutually exclusive randomized intervention arms"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076025",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 17/469/10/233.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0011",
+      "source_record_key": "076026",
+      "article_id": "a_076026",
+      "study_id": "s_076026",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "8 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0011_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "prescription omega-3 plus simvastatin versus placebo plus simvastatin",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.084034,
+            "ci_lower": 0.214613,
+            "ci_upper": 5.475571,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 3,
+            "intervention_total": 122,
+            "control_events": 3,
+            "control_total": 132,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076026",
+            "page": 9,
+            "source_type": "table",
+            "source_id": "Table III",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 3/122/3/132.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0012",
+      "source_record_key": "076033_combined",
+      "article_id": "a_076033",
+      "study_id": "s_076033",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "52 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0012_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "combined omega-3 doses versus EPA-E comparator",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.935563,
+            "ci_lower": 0.407883,
+            "ci_upper": 2.145902,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 17,
+            "intervention_total": 336,
+            "control_events": 9,
+            "control_total": 167,
+            "outcome_unit": "participants",
+            "component_intervention_arms": [
+              {
+                "arm": "2 g/day",
+                "events": 8,
+                "total": 165
+              },
+              {
+                "arm": "4 g/day",
+                "events": 9,
+                "total": 171
+              }
+            ],
+            "aggregation": "sum events and totals across mutually exclusive randomized intervention arms"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076033",
+            "page": 9,
+            "source_type": "table",
+            "source_id": "Table 3",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 17/336/9/167.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0013",
+      "source_record_key": "076034_combined",
+      "article_id": "a_076034",
+      "study_id": "s_076034",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0013_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "combined omega-3 free-fatty-acid doses versus olive oil",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 4.60219,
+            "ci_lower": 1.072253,
+            "ci_upper": 19.752935,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 26,
+            "intervention_total": 300,
+            "control_events": 2,
+            "control_total": 99,
+            "outcome_unit": "participants",
+            "component_intervention_arms": [
+              {
+                "arm": "2 g/day",
+                "events": 10,
+                "total": 100
+              },
+              {
+                "arm": "3 g/day",
+                "events": 6,
+                "total": 101
+              },
+              {
+                "arm": "4 g/day",
+                "events": 10,
+                "total": 99
+              }
+            ],
+            "aggregation": "sum events and totals across mutually exclusive randomized intervention arms"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076034",
+            "page": 9,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 26/300/2/99.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0014",
+      "source_record_key": "076035",
+      "article_id": "a_076035",
+      "study_id": "s_076035",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0014_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "omega-3 carboxylic acid versus olive oil",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.0,
+            "ci_lower": 0.27811,
+            "ci_upper": 3.595705,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 5,
+            "intervention_total": 81,
+            "control_events": 5,
+            "control_total": 81,
+            "outcome_unit": "participants",
+            "source_note": "All treatment-emergent diarrhea events were used, not the drug-related subset."
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076035",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 3",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 5/81/5/81.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0015",
+      "source_record_key": "076079",
+      "article_id": "a_076079",
+      "study_id": "s_076079",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "48 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0015_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "ethyl-eicosapentaenoate versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.901299,
+            "ci_lower": 0.698835,
+            "ci_upper": 5.172808,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 12,
+            "intervention_total": 67,
+            "control_events": 7,
+            "control_total": 68,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076079",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 5",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 12/67/7/68.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0016",
+      "source_record_key": "076080_combined",
+      "article_id": "a_076080",
+      "study_id": "s_076080",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0016_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "combined icosapent ethyl doses versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.47973,
+            "ci_lower": 0.134522,
+            "ci_upper": 1.710805,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 5,
+            "intervention_total": 153,
+            "control_events": 5,
+            "control_total": 76,
+            "outcome_unit": "participants",
+            "component_intervention_arms": [
+              {
+                "arm": "4 g/day",
+                "events": 1,
+                "total": 77
+              },
+              {
+                "arm": "2 g/day",
+                "events": 4,
+                "total": 76
+              }
+            ],
+            "aggregation": "sum events and totals across mutually exclusive randomized intervention arms"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076080",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 5/153/5/76.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0017",
+      "source_record_key": "076083",
+      "article_id": "a_076083",
+      "study_id": "s_076083",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "2 years",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0017_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "n-3 PUFA versus control",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.0,
+            "ci_lower": 0.337838,
+            "ci_upper": 2.959997,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 7,
+            "intervention_total": 103,
+            "control_events": 7,
+            "control_total": 103,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076083",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 7/103/7/103.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0018",
+      "source_record_key": "076086",
+      "article_id": "a_076086",
+      "study_id": "s_076086",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "3 months",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0018_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "n-3 PUFA versus control",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.732026,
+            "ci_lower": 0.393442,
+            "ci_upper": 7.624798,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 5,
+            "intervention_total": 56,
+            "control_events": 3,
+            "control_total": 56,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "dersimonian_laird_random_effects_log_odds_ratio",
+            "selection_exclusion_reason": null
+          },
+          "source_location": {
+            "document_id": "a_076086",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 5/56/3/56.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_diarrhea"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0019",
+      "source_record_key": "076023_crossover",
+      "article_id": "a_076023",
+      "study_id": "s_076023",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_crossover",
+        "label": "Withdrawal or period-specific diarrhea record",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "crossover trial participants exposed to both treatments",
+      "timepoint": "6 weeks per treatment period",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0019_diarrhea",
+          "estimand": "participant_with_diarrhea_during_crossover_period",
+          "comparison": "prescription omega-3 plus simvastatin versus placebo plus simvastatin",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 3.162162,
+            "ci_lower": 0.314672,
+            "ci_upper": 31.776779,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 3,
+            "intervention_total": 40,
+            "control_events": 1,
+            "control_total": 40,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "not_pooled",
+            "selection_exclusion_reason": "crossover_without_paired_event_data"
+          },
+          "source_location": {
+            "document_id": "a_076023",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 5",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 3/40/1/40.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0020",
+      "source_record_key": "076049_withdrawal",
+      "article_id": "a_076049",
+      "study_id": "s_076049",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "withdrawal_due_to_diarrhea",
+        "label": "Withdrawal or period-specific diarrhea record",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "52 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0020_diarrhea",
+          "estimand": "withdrawal_due_to_diarrhea",
+          "comparison": "fish oil versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 4.342857,
+            "ci_lower": 0.462824,
+            "ci_upper": 40.750699,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 4,
+            "intervention_total": 39,
+            "control_events": 1,
+            "control_total": 39,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "not_pooled",
+            "selection_exclusion_reason": "outcome_is_withdrawal_due_to_diarrhea"
+          },
+          "source_location": {
+            "document_id": "a_076049",
+            "page": 2,
+            "source_type": "table",
+            "source_id": "Table 2 and Results",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 4/39/1/39.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0021",
+      "source_record_key": "076058_subgroup",
+      "article_id": "a_076058",
+      "study_id": "s_076058",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea",
+        "label": "Participants with diarrhea",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "women with type 2 diabetes in the ANCHOR trial",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0021_diarrhea",
+          "estimand": "participant_with_at_least_one_diarrhea_event",
+          "comparison": "icosapent ethyl 4 g/day versus placebo",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.530612,
+            "ci_lower": 0.148412,
+            "ci_upper": 1.897083,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 4,
+            "intervention_total": 74,
+            "control_events": 7,
+            "control_total": 72,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "not_pooled",
+            "selection_exclusion_reason": "overlapping_subgroup_of_a_076025"
+          },
+          "source_location": {
+            "document_id": "a_076058",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": "Adverse events results",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 4/74/7/72.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0022",
+      "source_record_key": "076084_withdrawal",
+      "article_id": "a_076084",
+      "study_id": "s_076084",
+      "target_id": "diarrhea",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "withdrawal_due_to_diarrhea",
+        "label": "Withdrawal or period-specific diarrhea record",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "source-defined randomized trial safety population",
+      "timepoint": "12 weeks",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0022_diarrhea",
+          "estimand": "withdrawal_due_to_diarrhea",
+          "comparison": "EPA-enriched food versus control food",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 3.896104,
+            "ci_lower": 0.425572,
+            "ci_upper": 35.668726,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 4,
+            "intervention_total": 81,
+            "control_events": 1,
+            "control_total": 76,
+            "outcome_unit": "participants"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "exact_primary_source_binary_arm_counts",
+            "end_to_end_pooled_scoring_basis": "not_pooled",
+            "selection_exclusion_reason": "outcome_is_withdrawal_due_to_diarrhea"
+          },
+          "source_location": {
+            "document_id": "a_076084",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": "Results",
+            "locator_note": "Exact source values (intervention events/total/control events/total): 4/81/1/76.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0023",
+      "source_record_key": "076001_source_only",
+      "article_id": "a_076001",
+      "study_id": "s_076001",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0024",
+      "source_record_key": "076002_source_only",
+      "article_id": "a_076002",
+      "study_id": "s_076002",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0025",
+      "source_record_key": "076003_source_only",
+      "article_id": "a_076003",
+      "study_id": "s_076003",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0026",
+      "source_record_key": "076004_source_only",
+      "article_id": "a_076004",
+      "study_id": "s_076004",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0027",
+      "source_record_key": "076006_source_only",
+      "article_id": "a_076006",
+      "study_id": "s_076006",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0028",
+      "source_record_key": "076007_source_only",
+      "article_id": "a_076007",
+      "study_id": "s_076007",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0029",
+      "source_record_key": "076010_source_only",
+      "article_id": "a_076010",
+      "study_id": "s_076010",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0030",
+      "source_record_key": "076011_source_only",
+      "article_id": "a_076011",
+      "study_id": "s_076011",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0031",
+      "source_record_key": "076015_source_only",
+      "article_id": "a_076015",
+      "study_id": "s_076015",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0032",
+      "source_record_key": "076016_source_only",
+      "article_id": "a_076016",
+      "study_id": "s_076016",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0033",
+      "source_record_key": "076018_source_only",
+      "article_id": "a_076018",
+      "study_id": "s_076018",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0034",
+      "source_record_key": "076020_source_only",
+      "article_id": "a_076020",
+      "study_id": "s_076020",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0035",
+      "source_record_key": "076021_source_only",
+      "article_id": "a_076021",
+      "study_id": "s_076021",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0036",
+      "source_record_key": "076022_source_only",
+      "article_id": "a_076022",
+      "study_id": "s_076022",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0037",
+      "source_record_key": "076024_source_only",
+      "article_id": "a_076024",
+      "study_id": "s_076024",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0038",
+      "source_record_key": "076027_source_only",
+      "article_id": "a_076027",
+      "study_id": "s_076027",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0039",
+      "source_record_key": "076028_source_only",
+      "article_id": "a_076028",
+      "study_id": "s_076028",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0040",
+      "source_record_key": "076029_source_only",
+      "article_id": "a_076029",
+      "study_id": "s_076029",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0041",
+      "source_record_key": "076030_source_only",
+      "article_id": "a_076030",
+      "study_id": "s_076030",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0042",
+      "source_record_key": "076031_source_only",
+      "article_id": "a_076031",
+      "study_id": "s_076031",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0043",
+      "source_record_key": "076032_source_only",
+      "article_id": "a_076032",
+      "study_id": "s_076032",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0044",
+      "source_record_key": "076036_source_only",
+      "article_id": "a_076036",
+      "study_id": "s_076036",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0045",
+      "source_record_key": "076037_source_only",
+      "article_id": "a_076037",
+      "study_id": "s_076037",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0046",
+      "source_record_key": "076038_source_only",
+      "article_id": "a_076038",
+      "study_id": "s_076038",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0047",
+      "source_record_key": "076039_source_only",
+      "article_id": "a_076039",
+      "study_id": "s_076039",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0048",
+      "source_record_key": "076040_source_only",
+      "article_id": "a_076040",
+      "study_id": "s_076040",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0049",
+      "source_record_key": "076041_source_only",
+      "article_id": "a_076041",
+      "study_id": "s_076041",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0050",
+      "source_record_key": "076042_source_only",
+      "article_id": "a_076042",
+      "study_id": "s_076042",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0051",
+      "source_record_key": "076043_source_only",
+      "article_id": "a_076043",
+      "study_id": "s_076043",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0052",
+      "source_record_key": "076044_source_only",
+      "article_id": "a_076044",
+      "study_id": "s_076044",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0053",
+      "source_record_key": "076045_source_only",
+      "article_id": "a_076045",
+      "study_id": "s_076045",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0054",
+      "source_record_key": "076046_source_only",
+      "article_id": "a_076046",
+      "study_id": "s_076046",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0055",
+      "source_record_key": "076047_source_only",
+      "article_id": "a_076047",
+      "study_id": "s_076047",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0056",
+      "source_record_key": "076048_source_only",
+      "article_id": "a_076048",
+      "study_id": "s_076048",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0057",
+      "source_record_key": "076050_source_only",
+      "article_id": "a_076050",
+      "study_id": "s_076050",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0058",
+      "source_record_key": "076051_source_only",
+      "article_id": "a_076051",
+      "study_id": "s_076051",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0059",
+      "source_record_key": "076052_source_only",
+      "article_id": "a_076052",
+      "study_id": "s_076052",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0060",
+      "source_record_key": "076053_source_only",
+      "article_id": "a_076053",
+      "study_id": "s_076053",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0061",
+      "source_record_key": "076054_source_only",
+      "article_id": "a_076054",
+      "study_id": "s_076054",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0062",
+      "source_record_key": "076055_source_only",
+      "article_id": "a_076055",
+      "study_id": "s_076055",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0063",
+      "source_record_key": "076056_source_only",
+      "article_id": "a_076056",
+      "study_id": "s_076056",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0064",
+      "source_record_key": "076057_source_only",
+      "article_id": "a_076057",
+      "study_id": "s_076057",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0065",
+      "source_record_key": "076059_source_only",
+      "article_id": "a_076059",
+      "study_id": "s_076059",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0066",
+      "source_record_key": "076060_source_only",
+      "article_id": "a_076060",
+      "study_id": "s_076060",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0067",
+      "source_record_key": "076061_source_only",
+      "article_id": "a_076061",
+      "study_id": "s_076061",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0068",
+      "source_record_key": "076062_source_only",
+      "article_id": "a_076062",
+      "study_id": "s_076062",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0069",
+      "source_record_key": "076063_source_only",
+      "article_id": "a_076063",
+      "study_id": "s_076063",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0070",
+      "source_record_key": "076064_source_only",
+      "article_id": "a_076064",
+      "study_id": "s_076064",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0071",
+      "source_record_key": "076065_source_only",
+      "article_id": "a_076065",
+      "study_id": "s_076065",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0072",
+      "source_record_key": "076066_source_only",
+      "article_id": "a_076066",
+      "study_id": "s_076066",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0073",
+      "source_record_key": "076067_source_only",
+      "article_id": "a_076067",
+      "study_id": "s_076067",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0074",
+      "source_record_key": "076068_source_only",
+      "article_id": "a_076068",
+      "study_id": "s_076068",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0075",
+      "source_record_key": "076069_source_only",
+      "article_id": "a_076069",
+      "study_id": "s_076069",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0076",
+      "source_record_key": "076070_source_only",
+      "article_id": "a_076070",
+      "study_id": "s_076070",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0077",
+      "source_record_key": "076071_source_only",
+      "article_id": "a_076071",
+      "study_id": "s_076071",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0078",
+      "source_record_key": "076072_source_only",
+      "article_id": "a_076072",
+      "study_id": "s_076072",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0079",
+      "source_record_key": "076073_source_only",
+      "article_id": "a_076073",
+      "study_id": "s_076073",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0080",
+      "source_record_key": "076074_source_only",
+      "article_id": "a_076074",
+      "study_id": "s_076074",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0081",
+      "source_record_key": "076075_source_only",
+      "article_id": "a_076075",
+      "study_id": "s_076075",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0082",
+      "source_record_key": "076076_source_only",
+      "article_id": "a_076076",
+      "study_id": "s_076076",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0083",
+      "source_record_key": "076077_source_only",
+      "article_id": "a_076077",
+      "study_id": "s_076077",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0084",
+      "source_record_key": "076078_source_only",
+      "article_id": "a_076078",
+      "study_id": "s_076078",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0085",
+      "source_record_key": "076081_source_only",
+      "article_id": "a_076081",
+      "study_id": "s_076081",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0086",
+      "source_record_key": "076082_source_only",
+      "article_id": "a_076082",
+      "study_id": "s_076082",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0087",
+      "source_record_key": "076085_source_only",
+      "article_id": "a_076085",
+      "study_id": "s_076085",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0088",
+      "source_record_key": "076087_source_only",
+      "article_id": "a_076087",
+      "study_id": "s_076087",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0089",
+      "source_record_key": "076088_source_only",
+      "article_id": "a_076088",
+      "study_id": "s_076088",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0090",
+      "source_record_key": "076089_source_only",
+      "article_id": "a_076089",
+      "study_id": "s_076089",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0091",
+      "source_record_key": "076090_source_only",
+      "article_id": "a_076090",
+      "study_id": "s_076090",
+      "target_id": "diarrhea",
+      "data_family": "source_assessment_only",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "omega-3 PUFA supplementation",
+      "outcome": {
+        "code": "diarrhea_source_only",
+        "label": "Diarrhea adverse-event source assessment",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined trial population",
+      "timepoint": "source-defined adverse-event window",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    }
+  ],
+  "supplementary_unscored_source_findings": [
+    {
+      "finding_id": "uf_076004_dropout",
+      "article_id": "a_076004",
+      "study_id": "s_076004",
+      "target_id": "diarrhea",
+      "outcome": "Withdrawal due to diarrhea",
+      "data_family": "incomplete_binary_arm_counts",
+      "source_data": {
+        "intervention_diarrhea_withdrawals": 1,
+        "intervention_total": 21,
+        "control_total": 21
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076004",
+        "page": 3,
+        "source_type": "paragraph",
+        "source_id": "Participant flow and Results",
+        "locator_note": "The comparator diarrhea count is not reported and cannot be inferred as zero.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The comparator diarrhea count is not reported and cannot be inferred as zero."
+    },
+    {
+      "finding_id": "uf_076017_open_label",
+      "article_id": "a_076017",
+      "study_id": "s_076017",
+      "target_id": "diarrhea",
+      "outcome": "Diarrhea in an open-label cohort",
+      "data_family": "single_arm_count",
+      "source_data": {
+        "events": 5,
+        "total": 6
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076017",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 2",
+        "locator_note": "The white cohort was open-label and had no randomized comparator.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The white cohort was open-label and had no randomized comparator."
+    },
+    {
+      "finding_id": "uf_076027_mixed_dropout",
+      "article_id": "a_076027",
+      "study_id": "s_076027",
+      "target_id": "diarrhea",
+      "outcome": "Mixed gastrointestinal dropout reasons",
+      "data_family": "narrative_only",
+      "source_data": {
+        "all_cause_dropouts": 3
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076027",
+        "page": 3,
+        "source_type": "paragraph",
+        "source_id": "Results",
+        "locator_note": "Three dropouts were attributed to several mixed causes; diarrhea-specific allocation is unavailable.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "Three dropouts were attributed to several mixed causes; diarrhea-specific allocation is unavailable."
+    },
+    {
+      "finding_id": "uf_076032_rounded",
+      "article_id": "a_076032",
+      "study_id": "s_076032",
+      "target_id": "diarrhea",
+      "outcome": "Diarrhea",
+      "data_family": "rounded_percentages",
+      "source_data": {
+        "intervention_2g_percent": 3.4,
+        "intervention_2g_total": 206,
+        "intervention_4g_percent": 4.3,
+        "intervention_4g_total": 210,
+        "control_percent": 2.6,
+        "control_total": 195
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076032",
+        "page": 5,
+        "source_type": "paragraph",
+        "source_id": "Safety results",
+        "locator_note": "Only rounded arm percentages are printed for diarrhea; exact participant counts cannot be asserted from them.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "Only rounded arm percentages are printed for diarrhea; exact participant counts cannot be asserted from them."
+    },
+    {
+      "finding_id": "uf_076036_gi_composite",
+      "article_id": "a_076036",
+      "study_id": "s_076036",
+      "target_id": "diarrhea",
+      "outcome": "Gastrointestinal adverse events",
+      "data_family": "composite_binary_arm_counts",
+      "source_data": {
+        "intervention_any_adverse_event": 18,
+        "intervention_total": 25,
+        "control_any_adverse_event": 8,
+        "control_total": 26
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076036",
+        "page": 9,
+        "source_type": "paragraph",
+        "source_id": "Adverse events",
+        "locator_note": "Diarrhea is listed only as one component of a gastrointestinal category and has no separate count.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "Diarrhea is listed only as one component of a gastrointestinal category and has no separate count."
+    },
+    {
+      "finding_id": "uf_076040_gi_composite",
+      "article_id": "a_076040",
+      "study_id": "s_076040",
+      "target_id": "diarrhea",
+      "outcome": "Gastrointestinal disturbance including diarrhea",
+      "data_family": "composite_binary_arm_counts",
+      "source_data": {
+        "intervention_events": 352,
+        "intervention_total": 9326,
+        "control_events": 155,
+        "control_total": 9319
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076040",
+        "page": 9,
+        "source_type": "table",
+        "source_id": "Common adverse experiences table",
+        "locator_note": "The count combines nausea, diarrhea, and epigastric discomfort.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The count combines nausea, diarrhea, and epigastric discomfort."
+    },
+    {
+      "finding_id": "uf_076042_event_level",
+      "article_id": "a_076042",
+      "study_id": "s_076042",
+      "target_id": "diarrhea",
+      "outcome": "Gastrointestinal adverse-event episodes",
+      "data_family": "event_counts",
+      "source_data": {
+        "intervention_gastrointestinal_events": 146,
+        "control_gastrointestinal_events": 85
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076042",
+        "page": 1,
+        "source_type": "paragraph",
+        "source_id": "Abstract adverse-event summary",
+        "locator_note": "The report summarizes event episodes rather than participants with diarrhea; event counts cannot be used as binary participant counts.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The report summarizes event episodes rather than participants with diarrhea; event counts cannot be used as binary participant counts."
+    },
+    {
+      "finding_id": "uf_076044_combined_symptom",
+      "article_id": "a_076044",
+      "study_id": "s_076044",
+      "target_id": "diarrhea",
+      "outcome": "Diarrhea or nausea",
+      "data_family": "composite_binary_arm_counts",
+      "source_data": {
+        "intervention_events": 3,
+        "control_events": 2
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076044",
+        "page": 6,
+        "source_type": "paragraph",
+        "source_id": "Adverse effects",
+        "locator_note": "Diarrhea and nausea are combined and cannot be separated.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "Diarrhea and nausea are combined and cannot be separated."
+    },
+    {
+      "finding_id": "uf_076047_combined_withdrawal",
+      "article_id": "a_076047",
+      "study_id": "s_076047",
+      "target_id": "diarrhea",
+      "outcome": "Withdrawal due to nausea or diarrhea",
+      "data_family": "composite_withdrawal_counts",
+      "source_data": {
+        "intervention_withdrawals": 0,
+        "control_withdrawals": 5
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076047",
+        "page": 4,
+        "source_type": "paragraph",
+        "source_id": "Safety results",
+        "locator_note": "The outcome is a combined withdrawal endpoint, not participants with diarrhea.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The outcome is a combined withdrawal endpoint, not participants with diarrhea."
+    },
+    {
+      "finding_id": "uf_076051_gi_composite",
+      "article_id": "a_076051",
+      "study_id": "s_076051",
+      "target_id": "diarrhea",
+      "outcome": "Gastrointestinal adverse drug reaction",
+      "data_family": "composite_binary_arm_counts",
+      "source_data": {
+        "intervention_events": 200,
+        "control_events": 186
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076051",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 3 and adverse events",
+        "locator_note": "The category combines abdominal pain, nausea, diarrhea, and other symptoms.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The category combines abdominal pain, nausea, diarrhea, and other symptoms."
+    },
+    {
+      "finding_id": "uf_076055_rounded",
+      "article_id": "a_076055",
+      "study_id": "s_076055",
+      "target_id": "diarrhea",
+      "outcome": "Diarrhea",
+      "data_family": "rounded_percentages",
+      "source_data": {
+        "intervention_percent": 9.0,
+        "intervention_total": 4089,
+        "control_percent": 11.1,
+        "control_total": 4090
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076055",
+        "page": 9,
+        "source_type": "paragraph",
+        "source_id": "Safety results; exact counts deferred to unavailable Table S7",
+        "locator_note": "Only rounded percentages are present in the supplied report; exact participant counts cannot be recovered without the unavailable supplement.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "Only rounded percentages are present in the supplied report; exact participant counts cannot be recovered without the unavailable supplement."
+    },
+    {
+      "finding_id": "uf_076070_gi_composite",
+      "article_id": "a_076070",
+      "study_id": "s_076070",
+      "target_id": "diarrhea",
+      "outcome": "Gastrointestinal discomfort",
+      "data_family": "composite_binary_arm_counts",
+      "source_data": {
+        "intervention_events": 17,
+        "intervention_total": 66,
+        "control_events": 21,
+        "control_total": 66
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076070",
+        "page": 5,
+        "source_type": "paragraph",
+        "source_id": "Adverse events and Table 4",
+        "locator_note": "The source reports gastrointestinal discomfort, not diarrhea separately.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The source reports gastrointestinal discomfort, not diarrhea separately."
+    },
+    {
+      "finding_id": "uf_076077_gi_composite",
+      "article_id": "a_076077",
+      "study_id": "s_076077",
+      "target_id": "diarrhea",
+      "outcome": "Mild gastrointestinal adverse effect",
+      "data_family": "composite_binary_arm_counts",
+      "source_data": {
+        "intervention_events": 9,
+        "control_events": 6
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076077",
+        "page": 5,
+        "source_type": "paragraph",
+        "source_id": "Adverse events",
+        "locator_note": "The source reports a gastrointestinal composite; only two placebo withdrawals mention nausea and diarrhea together.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "The source reports a gastrointestinal composite; only two placebo withdrawals mention nausea and diarrhea together."
+    },
+    {
+      "finding_id": "uf_076081_narrative",
+      "article_id": "a_076081",
+      "study_id": "s_076081",
+      "target_id": "diarrhea",
+      "outcome": "Gastrointestinal adverse effects including diarrhea",
+      "data_family": "narrative_only",
+      "source_data": {
+        "all_adverse_events": 20,
+        "treatment_related_adverse_events": 5
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_076081",
+        "page": 6,
+        "source_type": "paragraph",
+        "source_id": "Adverse events",
+        "locator_note": "Diarrhea is named but no separate arm-level diarrhea count is reported.",
+        "locator_status": "verified",
+        "locator_method": "local_pdf_markdown_source_adjudication"
+      },
+      "reason_not_scored": "Diarrhea is named but no separate arm-level diarrhea count is reported."
+    }
+  ]
+}

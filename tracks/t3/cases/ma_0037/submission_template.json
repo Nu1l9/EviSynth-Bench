@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0037",
+  "task_id": "ma_0037_analysis_adequacy_v1_1_expanded_full_corpus_draft",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_adequate_sampling_with_rose",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

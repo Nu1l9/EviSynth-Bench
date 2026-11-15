@@ -1,0 +1,138 @@
+{
+  "task": "t3",
+  "case_count": 22,
+  "cases": [
+    {
+      "case_id": "ma_0001",
+      "task": "cases/ma_0001/tasks/analysis_main_outcomes.json",
+      "candidates": 189,
+      "gold": "../../evaluation/t3_gold/ma_0001/analysis.json"
+    },
+    {
+      "case_id": "ma_0005",
+      "task": "cases/ma_0005/tasks/analysis_main_outcomes.json",
+      "candidates": 9,
+      "gold": "../../evaluation/t3_gold/ma_0005/analysis.json"
+    },
+    {
+      "case_id": "ma_0010",
+      "task": "cases/ma_0010/tasks/analysis_main_outcomes.json",
+      "candidates": 28,
+      "gold": "../../evaluation/t3_gold/ma_0010/analysis.json"
+    },
+    {
+      "case_id": "ma_0011",
+      "task": "cases/ma_0011/tasks/analysis_main_outcomes.json",
+      "candidates": 23,
+      "gold": "../../evaluation/t3_gold/ma_0011/analysis.json"
+    },
+    {
+      "case_id": "ma_0012",
+      "task": "cases/ma_0012/tasks/analysis_main_outcomes.json",
+      "candidates": 17,
+      "gold": "../../evaluation/t3_gold/ma_0012/analysis.json"
+    },
+    {
+      "case_id": "ma_0017",
+      "task": "cases/ma_0017/tasks/analysis_main_outcomes.json",
+      "candidates": 20,
+      "gold": "../../evaluation/t3_gold/ma_0017/analysis.json"
+    },
+    {
+      "case_id": "ma_0024",
+      "task": "cases/ma_0024/tasks/analysis_main_outcomes.json",
+      "candidates": 4,
+      "gold": "../../evaluation/t3_gold/ma_0024/analysis.json"
+    },
+    {
+      "case_id": "ma_0025",
+      "task": "cases/ma_0025/tasks/analysis_main_outcomes.json",
+      "candidates": 17,
+      "gold": "../../evaluation/t3_gold/ma_0025/analysis.json"
+    },
+    {
+      "case_id": "ma_0026",
+      "task": "cases/ma_0026/tasks/analysis_main_outcomes.json",
+      "candidates": 252,
+      "gold": "../../evaluation/t3_gold/ma_0026/analysis.json"
+    },
+    {
+      "case_id": "ma_0028",
+      "task": "cases/ma_0028/tasks/analysis_main_outcomes.json",
+      "candidates": 44,
+      "gold": "../../evaluation/t3_gold/ma_0028/analysis.json"
+    },
+    {
+      "case_id": "ma_0032",
+      "task": "cases/ma_0032/tasks/analysis_main_outcomes.json",
+      "candidates": 29,
+      "gold": "../../evaluation/t3_gold/ma_0032/analysis.json"
+    },
+    {
+      "case_id": "ma_0034",
+      "task": "cases/ma_0034/tasks/analysis_main_outcomes.json",
+      "candidates": 44,
+      "gold": "../../evaluation/t3_gold/ma_0034/analysis.json"
+    },
+    {
+      "case_id": "ma_0037",
+      "task": "cases/ma_0037/tasks/analysis_main_outcomes.json",
+      "candidates": 46,
+      "gold": "../../evaluation/t3_gold/ma_0037/analysis.json"
+    },
+    {
+      "case_id": "ma_0041",
+      "task": "cases/ma_0041/tasks/analysis_main_outcomes.json",
+      "candidates": 89,
+      "gold": "../../evaluation/t3_gold/ma_0041/analysis.json"
+    },
+    {
+      "case_id": "ma_0044",
+      "task": "cases/ma_0044/tasks/analysis_main_outcomes.json",
+      "candidates": 48,
+      "gold": "../../evaluation/t3_gold/ma_0044/analysis.json"
+    },
+    {
+      "case_id": "ma_0046",
+      "task": "cases/ma_0046/tasks/analysis_main_outcomes.json",
+      "candidates": 25,
+      "gold": "../../evaluation/t3_gold/ma_0046/analysis.json"
+    },
+    {
+      "case_id": "ma_0054",
+      "task": "cases/ma_0054/tasks/analysis_main_outcomes.json",
+      "candidates": 20,
+      "gold": "../../evaluation/t3_gold/ma_0054/analysis.json"
+    },
+    {
+      "case_id": "ma_0055",
+      "task": "cases/ma_0055/tasks/analysis_main_outcomes.json",
+      "candidates": 12,
+      "gold": "../../evaluation/t3_gold/ma_0055/analysis.json"
+    },
+    {
+      "case_id": "ma_0056",
+      "task": "cases/ma_0056/tasks/analysis_main_outcomes.json",
+      "candidates": 52,
+      "gold": "../../evaluation/t3_gold/ma_0056/analysis.json"
+    },
+    {
+      "case_id": "ma_0064",
+      "task": "cases/ma_0064/tasks/analysis_main_outcomes.json",
+      "candidates": 37,
+      "gold": "../../evaluation/t3_gold/ma_0064/analysis.json"
+    },
+    {
+      "case_id": "ma_0076",
+      "task": "cases/ma_0076/tasks/analysis_main_outcomes.json",
+      "candidates": 53,
+      "gold": "../../evaluation/t3_gold/ma_0076/analysis.json"
+    },
+    {
+      "case_id": "ma_0086",
+      "task": "cases/ma_0086/tasks/analysis_main_outcomes.json",
+      "candidates": 11,
+      "gold": "../../evaluation/t3_gold/ma_0086/analysis.json"
+    }
+  ]
+}

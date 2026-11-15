@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../../schemas/analysis-extensions.schema.json",
+  "case_id": "ma_0044",
+  "extension_profile_id": "ma_0044_review_derived_extensions_v1",
+  "source_basis": "Target review statistical methods and Results: review_ma_0044/full.md reports subgroup analyses by surgical indication, MIVS gauge, and retinal-break type.",
+  "blindness_policy": "Participant inputs define analysis questions and eligibility rules; reference selections and pooled values are distributed separately.",
+  "candidate_subgroup_policy": "Candidate subgroup questions simulate prospective user requests. The agent must use only protocol and extracted source fields to decide whether a question is feasible, insufficiently supported, or should be blocked; it must not manufacture a result.",
+  "scoring_status": "declared_numeric_result_coverage",
+  "subgroup_analyses": [
+    {
+      "analysis_id": "subgroup_surgical_indication",
+      "label": "Intraoperative retinal-break risk by surgical indication",
+      "parent_analysis_ids": [
+        "main_pr_intraoperative_iatrogenic_retinal_break"
+      ],
+      "grouping_variable": "surgical_indication",
+      "levels": [
+        {
+          "level_id": "macular_surgery",
+          "label": "Macular surgery",
+          "source_definition": "Source-defined macular surgery indication."
+        },
+        {
+          "level_id": "nonmacular_surgery",
+          "label": "Non-macular surgery",
+          "source_definition": "Source-defined non-macular surgery indication."
+        }
+      ],
+      "required_extraction_fields": [
+        "surgical_indication",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "The target review reports subgroup analyses based on macular surgery."
+    },
+    {
+      "analysis_id": "subgroup_mivs_gauge",
+      "label": "Intraoperative retinal-break risk by MIVS gauge",
+      "parent_analysis_ids": [
+        "main_pr_intraoperative_iatrogenic_retinal_break"
+      ],
+      "grouping_variable": "mivs_gauge",
+      "levels": [
+        {
+          "level_id": "23g",
+          "label": "23-gauge MIVS",
+          "source_definition": "20G vitrectomy versus 23G MIVS."
+        },
+        {
+          "level_id": "25g",
+          "label": "25-gauge MIVS",
+          "source_definition": "20G vitrectomy versus 25G MIVS."
+        }
+      ],
+      "required_extraction_fields": [
+        "mivs_gauge",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "The target review reports subgroup estimates by MIVS type (23G or 25G)."
+    },
+    {
+      "analysis_id": "subgroup_retinal_break_mechanism",
+      "label": "Retinal-break risk by intraoperative break mechanism",
+      "parent_analysis_ids": [
+        "main_pr_intraoperative_iatrogenic_retinal_break"
+      ],
+      "grouping_variable": "retinal_break_mechanism",
+      "levels": [
+        {
+          "level_id": "sclerotomy_related",
+          "label": "Sclerotomy-related retinal breaks",
+          "source_definition": "Source-defined entry-site or sclerotomy-related break."
+        },
+        {
+          "level_id": "pvd_related",
+          "label": "PVD-related retinal breaks",
+          "source_definition": "Source-defined break related to surgically induced posterior vitreous detachment."
+        }
+      ],
+      "required_extraction_fields": [
+        "retinal_break_mechanism",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "The target review reports subgroup estimates by retinal-break type."
+    }
+  ],
+  "candidate_subgroup_analyses": [],
+  "meta_regression_analyses": []
+}

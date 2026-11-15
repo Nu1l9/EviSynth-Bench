@@ -1,0 +1,76 @@
+{
+  "case_id": "ma_0044",
+  "task_type": "analysis",
+  "screening_stage": "not_applicable",
+  "extraction_protocol": "../inputs/extraction_protocol.json",
+  "allowed_inputs": {
+    "document_ids": [
+      "a_044001",
+      "a_044002",
+      "a_044003",
+      "a_044004",
+      "a_044005",
+      "a_044006",
+      "a_044007",
+      "a_044008",
+      "a_044009",
+      "a_044010",
+      "a_044011",
+      "a_044012",
+      "a_044013",
+      "a_044014",
+      "a_044015",
+      "a_044016",
+      "a_044017",
+      "a_044018",
+      "a_044019",
+      "a_044020",
+      "a_044021",
+      "a_044022",
+      "a_044023",
+      "a_044024",
+      "a_044025",
+      "a_044026",
+      "a_044027",
+      "a_044028",
+      "a_044029",
+      "a_044030",
+      "a_044031",
+      "a_044032"
+    ],
+    "representations": [],
+    "forbidden_document_ids": [
+      "review_ma_0044"
+    ]
+  },
+  "target_scope": {
+    "analysis_profile_id": "ma_0044_main_analysis_profile_v1"
+  },
+  "evaluation": {
+    "metrics": [
+      "selection_precision",
+      "selection_recall",
+      "selection_f1",
+      "pooled_numeric_accuracy",
+      "pooled_composition_accuracy",
+      "pooled_direction_accuracy"
+    ],
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    }
+  },
+  "submission_contract": {
+    "schema": "../../../../../schemas/submission.schema.json",
+    "task_type": "analysis"
+  },
+  "$schema": "../../../../../schemas/task.schema.json",
+  "task_id": "ma_0044_analysis_main_outcomes_v1",
+  "task_definition": "Use the public PICO declarations and evidence candidates to identify eligible independent evidence, then produce a justified quantitative synthesis where possible.",
+  "input_files": [
+    "../inputs/extraction_protocol.json",
+    "../inputs/analysis_profile.json",
+    "../inputs/analysis_extensions.json",
+    "../inputs/analysis_evidence_candidates.json"
+  ]
+}

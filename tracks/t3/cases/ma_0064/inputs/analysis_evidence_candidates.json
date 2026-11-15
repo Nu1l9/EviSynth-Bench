@@ -1,0 +1,1404 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0064",
+  "candidate_set_id": "ma_0064_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0064_27",
+      "study_id": "s_0064_piedimonte",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Low-volume nodal metastasis (ITC or MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Progression-free survival (PFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with ITC/MM compared with matched LN-negative patients",
+      "timepoint": "Within 5 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source states that progression-free survival rates within 5 years were similar between ITC/MM and LN-negative patients, but provides no numeric rates in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_27",
+        "source_type": "figure",
+        "source_id": "Figure 2",
+        "content_list_item_index": 52
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Micrometastasis (MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival (recurrence-free survival, RFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrioid endometrial cancer undergoing sentinel lymph-node mapping",
+      "timepoint": "3 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 3-year RFS of 92 % (±7.4) for endometrioid endometrial cancer patients with MM versus 93 % (±1.4) for node-negative patients, using Kaplan–Meier analysis."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 39
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "ITC patients in a prospectively collected single-center cohort of surgically staged endometrial cancer",
+      "timepoint": "Median follow-up 29 months; 36-month PFS also reported",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "One recurrence occurred among 31 ITC patients; a corresponding node-negative recurrence count was not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0064_26",
+      "study_id": "s_0064_ignatov",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Untreated micrometastasis versus untreated node-negative",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival event",
+        "outcome_class": "time_to_event"
+      },
+      "population_or_subgroup": "Untreated endometrial-cancer cohort",
+      "timepoint": "Median follow-up 84.8 months",
+      "data_family": "adjusted_time_to_event_effect",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "adjusted_time_to_event_effect",
+        "intervention_group_n": 31,
+        "comparator_group_n": 302,
+        "outcome_definition": "Disease-free survival event"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.23,
+        "ci_lower": 1.26,
+        "ci_upper": 3.95,
+        "log_value": 0.8020015854720274,
+        "variance": null,
+        "direction": "HR_greater_than_1_indicates_higher_disease_event_hazard_with_micrometastasis"
+      },
+      "source_location": {
+        "document_id": "a_0064_26",
+        "page": 1,
+        "source_type": "abstract_and_results",
+        "source_id": "Abstract and Table 2"
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival (recurrence-free survival, RFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Surgically treated endometrial cancer patients undergoing sentinel lymph-node mapping; all histologies",
+      "timepoint": "3 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 3-year RFS of 86 % (±9.4) for patients with ITCs versus 90 % (±1.5) for node-negative patients, using Kaplan–Meier analysis."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 39
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0064_27",
+      "study_id": "s_0064_piedimonte",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Low-volume nodal metastasis versus pathologically node-negative",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Median follow-up approximately 2.8 years in matched comparison",
+      "data_family": "binary_exposure_outcome_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_exposure_outcome_counts",
+        "intervention_arm": {
+          "role": "low_volume_metastasis",
+          "events": 2,
+          "n": 23
+        },
+        "comparator_arm": {
+          "role": "node_negative",
+          "events": 0,
+          "n": 18
+        },
+        "contributing_source_arms": [
+          "isolated_tumor_cells",
+          "micrometastasis",
+          "matched_node_negative"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 3.9361702127659575,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 1.3702082233682662,
+        "variance": null,
+        "direction": "RR_greater_than_1_indicates_higher_recurrence_risk_with_low_volume_nodal_metastasis"
+      },
+      "source_location": {
+        "document_id": "a_0064_27",
+        "page": 3,
+        "source_type": "table_or_results",
+        "source_id": "Results and Table 2, Treatment and outcomes ITC versus MM"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Micrometastasis (MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival (recurrence-free survival, RFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Surgically treated endometrial cancer patients undergoing sentinel lymph-node mapping; all histologies",
+      "timepoint": "3 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 3-year RFS of 86 % (±9.5) for patients with MM versus 90 % (±1.5) for node-negative patients, using Kaplan–Meier analysis."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 39
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0064_19",
+      "study_id": "s_0064_kim_low_risk",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Low-volume nodal metastasis (MMs or ITCs) detected by sentinel-node ultrastaging",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "425 presumed low-risk endometrioid endometrial cancer patients with preoperative grade 1/2 tumors and <50% final depth of myometrial invasion undergoing surgical staging with attempted sentinel-node mapping",
+      "timepoint": "Median follow-up 18.4 months (range 0.9–70.3)",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 12 patients with ultrastage-detected low-volume nodal metastasis. The follow-up section reports 11 total recurrences, including 3 patients with only ultrastage-detected metastatic disease (1 MM and 2 ITC cases). The source does not provide complete recurrence events and denominators for a binary low-volume-versus-node-negative contrast."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_19",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 65
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0064_20",
+      "study_id": "s_0064_kim_ultrastaging",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Low-volume nodal metastasis (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrial cancer and low-volume, ultrastage-detected metastases in sentinel lymph nodes; both reported recurrences were in patients with isolated tumor cells",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports two recurrences among 23 patients with low-volume, ultrastage-detected sentinel-node disease, but does not report the corresponding recurrence count for the node-negative comparator group."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_20",
+        "source_type": "table",
+        "source_id": "table 4",
+        "content_list_item_index": 63
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0064_19",
+      "study_id": "s_0064_kim_low_risk",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Micrometastasis (MM) detected by sentinel-node ultrastaging",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "425 presumed low-risk endometrioid endometrial cancer patients with preoperative grade 1/2 tumors and <50% final depth of myometrial invasion undergoing surgical staging with attempted sentinel-node mapping; MM subgroup",
+      "timepoint": "Median follow-up 18.4 months (range 0.9–70.3)",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 3 patients with ultrastage-detected MMs and identifies 1 of these patients as having recurrence approximately 18 months after surgery. A complete binary contrast with the pathologically node-negative group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_19",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "ITC patients with endometrioid carcinoma",
+      "timepoint": "Follow-up not specified for this subgroup",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "No recurrences occurred among 28 ITC patients with endometrioid carcinoma; a corresponding node-negative recurrence count was not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0064_20",
+      "study_id": "s_0064_kim_ultrastaging",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrial cancer and isolated tumor cells in sentinel lymph nodes; two reported recurrence cases",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source specifically states that both recurrences among patients with low-volume disease occurred in patients with ITCs, but it does not report the node-negative comparator recurrence count or a comparative effect."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_20",
+        "source_type": "table",
+        "source_id": "table 4",
+        "content_list_item_index": 63
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Low-volume nodal metastasis versus pathologically node-negative",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Source follow-up for recurrence analysis",
+      "data_family": "binary_exposure_outcome_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_exposure_outcome_counts",
+        "intervention_arm": {
+          "role": "low_volume_metastasis",
+          "events": 4,
+          "n": 9
+        },
+        "comparator_arm": {
+          "role": "node_negative",
+          "events": 8,
+          "n": 52
+        },
+        "contributing_source_arms": [
+          "ITC_or_micrometastasis",
+          "node_negative"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 2.888888888888889,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 1.0608719606852626,
+        "variance": null,
+        "direction": "RR_greater_than_1_indicates_higher_recurrence_risk_with_low_volume_nodal_metastasis"
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "page": 6,
+        "source_type": "table_or_results",
+        "source_id": "Table 4, Logistic regression analyses of risk factors relating to recurrence"
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "disease recurrence / disease-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "ITC patients receiving adjuvant chemotherapy and/or external-beam radiotherapy",
+      "timepoint": "36 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "One recurrence occurred among 21 ITC patients receiving chemotherapy and/or external-beam radiotherapy, with 36-month PFS of 95.5%; no node-negative comparator count was reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells or micrometastasis (ITC/MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with FIGO stage I–II endometrial carcinoma with at least one adverse risk factor, including grade 3 tumor, serous/clear cell histology, deep myoinvasion, cervical involvement, lymphovascular space invasion, or positive peritoneal washings",
+      "timepoint": "",
+      "data_family": "adjusted_ratio_effect",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 17.9,
+        "ci_lower": 1.4,
+        "ci_upper": 232.2,
+        "exposure_unit": "ITC/MM-positive nodal status",
+        "adjustment_set": "Adjusted analysis reported as an independent risk factor; adjustment covariates not specified in located excerpt"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 17.9,
+        "ci_lower": 1.4,
+        "ci_upper": 232.2,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "figure",
+        "source_id": "fig. 2",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0064_19",
+      "study_id": "s_0064_kim_low_risk",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) detected by sentinel-node ultrastaging",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "425 presumed low-risk endometrioid endometrial cancer patients with preoperative grade 1/2 tumors and <50% final depth of myometrial invasion undergoing surgical staging with attempted sentinel-node mapping; ITC subgroup",
+      "timepoint": "Median follow-up 18.4 months (range 0.9–70.3)",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 9 patients with ITCs and identifies 2 ITC patients among the 3 recurrent patients with ultrastage-detected disease; recurrence occurred at approximately 27 and 16 months after surgery. A complete binary contrast with the pathologically node-negative group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_19",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0064_27",
+      "study_id": "s_0064_piedimonte",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Low-volume nodal metastasis (ITC or MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "FIGO stage I, grade 1 or 2 endometrioid endometrial cancer patients treated with adjuvant therapy; ITC/MM group n=23 versus matched LN-negative group n=18",
+      "timepoint": "Median follow-up 2.79 years for ITC/MM and 2 years for LN-negative group",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 2,
+        "intervention_total": 23,
+        "control_events": 0,
+        "control_total": 18,
+        "outcome_unit": "Patients with pathologically confirmed recurrence"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_27",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "ITC/MM (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "61 patients with intermediate-risk FIGO stage I to II endometrial cancer who underwent surgical staging and ultrastaging",
+      "timepoint": "",
+      "data_family": "adjusted_ratio_effect",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_rr_effect",
+        "effect_value": 3.63,
+        "ci_lower": 0.47,
+        "ci_upper": 27.9,
+        "exposure_unit": "ultrastaging nodal status",
+        "adjustment_set": "Adjusted analysis; specific covariate set not fully specified in the located excerpt"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 3.63,
+        "ci_lower": 0.47,
+        "ci_upper": 27.9,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 74
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0064_27",
+      "study_id": "s_0064_piedimonte",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Low-volume nodal metastasis (ITC or MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Progression-free survival (PFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "FIGO stage 1, grade 1 or 2 endometrial cancer patients with ITC/MM compared with age, BMI, grade, myometrial-invasion, and LVI-matched LN-negative patients",
+      "timepoint": "Median follow-up 2.79 years for ITC/MM and 2 years for LN-negative group",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports PFS of 29.65 (1.2-114.6) versus 25 (10.27-47.1), with P = 0.828, for ITC/MM versus LN-negative patients; these are not reported as an accepted RR or HR with confidence interval."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_27",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0064_19",
+      "study_id": "s_0064_kim_low_risk",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Low-volume nodal metastasis versus pathologically node-negative",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Median follow-up 18.4 months",
+      "data_family": "binary_exposure_outcome_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_exposure_outcome_counts",
+        "intervention_arm": {
+          "role": "low_volume_metastasis",
+          "events": 3,
+          "n": 12
+        },
+        "comparator_arm": {
+          "role": "node_negative",
+          "events": 8,
+          "n": 400
+        },
+        "contributing_source_arms": [
+          "isolated_tumor_cells",
+          "micrometastasis",
+          "node_negative"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 12.500000000000002,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 2.5257286443082556,
+        "variance": null,
+        "direction": "RR_greater_than_1_indicates_higher_recurrence_risk_with_low_volume_nodal_metastasis"
+      },
+      "source_location": {
+        "document_id": "a_0064_19",
+        "page": 6,
+        "source_type": "table_or_results",
+        "source_id": "Results, Table 5 recurrence roster, and nodal-status tables"
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival (recurrence-free survival, RFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrioid endometrial cancer undergoing sentinel lymph-node mapping",
+      "timepoint": "3 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 3-year RFS of 94 % (±6.1) for endometrioid endometrial cancer patients with ITCs versus 93 % (±1.4) for node-negative patients, using Kaplan–Meier analysis."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 39
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0064_27",
+      "study_id": "s_0064_piedimonte",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Low-volume nodal metastasis (ITC or MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Progression-free survival (PFS)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Grade 1 to 2 stage I endometrioid endometrial cancer patients with nodal ITC/MM compared with matched lymph-node-negative patients",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports PFS of 29.2 versus 25 months for ITC/MM versus the comparator group, with P = 0.828; it does not report a hazard ratio or confidence interval."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_27",
+        "source_type": "paragraph",
+        "source_id": "content_0012",
+        "content_list_item_index": 12
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Micrometastasis (MM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Surgically treated endometrial cancer patients undergoing sentinel lymph-node mapping; all histologies and stages except intraperitoneal stage IV disease",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 2,
+        "intervention_total": 21,
+        "control_events": 47,
+        "control_total": 753,
+        "outcome_unit": "Disease recurrence"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "table",
+        "source_id": "TABLE 3",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "ITC/MM (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "recurrence-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with intermediate-risk FIGO stage I to II endometrial cancer who underwent surgical staging and ultrastaging",
+      "timepoint": "8 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 8-year recurrence-free survival rates of 55.6% in the ITC/MM group versus 84.0% in the node-negative group; no event counts or comparative HR/RR were reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "source_type": "figure",
+        "source_id": "Fig. 1",
+        "content_list_item_index": 84
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "ITC/MM (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "extrapelvic recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "61 patients with intermediate-risk FIGO stage I to II endometrial cancer who underwent surgical staging and ultrastaging",
+      "timepoint": "",
+      "data_family": "adjusted_ratio_effect",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_rr_effect",
+        "effect_value": 17.9,
+        "ci_lower": 1.37,
+        "ci_upper": 232.2,
+        "exposure_unit": "ultrastaging nodal status",
+        "adjustment_set": "Adjusted analysis; specific covariate set not fully specified in the located excerpt"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 17.9,
+        "ci_lower": 1.37,
+        "ci_upper": 232.2,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Micrometastasis in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "disease-free survival / progression-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "519 patients with early-stage endometrial cancer undergoing surgical staging and sentinel lymph-node mapping; micrometastasis subgroup n=11",
+      "timepoint": "36 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 36 months, PFS was 85.5% for micrometastasis patients versus 87.6% for node-negative patients. The source reports percentages but does not provide recurrence-event counts for both groups or an RR/HR."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "ITC/MM (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "time to recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with intermediate-risk FIGO stage I to II endometrial cancer who underwent surgical staging and ultrastaging",
+      "timepoint": "Median time to recurrence",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports median time to recurrence of 49 months in the ITC/MM group versus 16.5 months in the node-negative group; no comparative HR was reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "source_type": "figure",
+        "source_id": "Fig. 1",
+        "content_list_item_index": 84
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Micrometastasis detected by retrospective ultrastaging",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "recurrence / disease-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "47 patients whose previously considered negative lymph nodes underwent retrospective ultrastaging; 7 had micrometastases, predominantly high-risk patients",
+      "timepoint": "Not reported",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Among 47 previously considered node-negative patients, 7 (14.9%) had micrometastases after ultrastaging, and the source states that recurrence rate and DFS were significantly worse in patients with micrometastases. No numeric effect estimate or complete two-arm recurrence counts were reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "paragraph",
+        "source_id": "content_0097",
+        "content_list_item_index": 97
+      }
+    },
+    {
+      "candidate_id": "cand_0029",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "ITC/MM (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "61 patients with intermediate-risk FIGO stage I to II endometrial cancer who underwent surgical staging and ultrastaging",
+      "timepoint": "Follow-up median 107 months (range 22 to 190 months)",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 4,
+        "intervention_total": 9,
+        "control_events": 8,
+        "control_total": 52,
+        "outcome_unit": "recurrence events"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 75
+      }
+    },
+    {
+      "candidate_id": "cand_0030",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Surgically treated endometrial cancer patients undergoing sentinel lymph-node mapping; all histologies and stages except intraperitoneal stage IV disease",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 2,
+        "intervention_total": 23,
+        "control_events": 47,
+        "control_total": 753,
+        "outcome_unit": "Disease recurrence"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "source_type": "table",
+        "source_id": "TABLE 3",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0031",
+      "article_id": "a_0064_26",
+      "study_id": "s_0064_ignatov",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Nodal micrometastases with adjuvant therapy",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrial cancer and nodal micrometastases receiving adjuvant therapy versus node-negative disease without adjuvant therapy",
+      "timepoint": "During the follow-up period; median follow-up 84.8 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported DFS rates of 73.2% for node-negative patients without adjuvant treatment and 78.9% for patients with micrometastases receiving adjuvant therapy; source-reported DFS rates were not provided as recurrence event counts with denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_26",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 55
+      }
+    },
+    {
+      "candidate_id": "cand_0032",
+      "article_id": "a_0064_26",
+      "study_id": "s_0064_ignatov",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Nodal micrometastases without adjuvant therapy",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrial cancer and nodal micrometastases versus node-negative disease, both without adjuvant therapy",
+      "timepoint": "During the follow-up period; median follow-up 84.8 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported DFS rates of 32.3% for patients with micrometastases and 73.2% for patients without micrometastases during follow-up; source-reported DFS rates were not provided as recurrence event counts with denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_26",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 55
+      }
+    },
+    {
+      "candidate_id": "cand_0033",
+      "article_id": "a_0064_26",
+      "study_id": "s_0064_ignatov",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Nodal micrometastases without adjuvant therapy",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Disease-free survival / disease events",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with endometrial cancer and nodal micrometastases versus node-negative disease, both without adjuvant therapy",
+      "timepoint": "Median follow-up 84.8 months; follow-up period",
+      "data_family": "adjusted_ratio_effect",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.23,
+        "ci_lower": 1.26,
+        "ci_upper": 3.95,
+        "exposure_unit": "Patients with nodal micrometastases",
+        "adjustment_set": "Age at diagnosis, myometrial invasion, histological grade and type, and performance status"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.23,
+        "ci_lower": 1.26,
+        "ci_upper": 3.95,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_26",
+        "source_type": "paragraph",
+        "source_id": "content_0018",
+        "content_list_item_index": 18
+      }
+    },
+    {
+      "candidate_id": "cand_0034",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Low-volume nodal metastasis versus pathologically node-negative",
+      "outcome": {
+        "code": null,
+        "label": "Source-defined recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Median follow-up 26 months",
+      "data_family": "binary_exposure_outcome_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_exposure_outcome_counts",
+        "intervention_arm": {
+          "role": "low_volume_metastasis",
+          "events": 4,
+          "n": 44
+        },
+        "comparator_arm": {
+          "role": "node_negative",
+          "events": 47,
+          "n": 753
+        },
+        "contributing_source_arms": [
+          "isolated_tumor_cells",
+          "micrometastasis",
+          "node_negative"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.4564796905222437,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.37602235329146444,
+        "variance": null,
+        "direction": "RR_greater_than_1_indicates_higher_recurrence_risk_with_low_volume_nodal_metastasis"
+      },
+      "source_location": {
+        "document_id": "a_0064_22",
+        "page": 4,
+        "source_type": "table_or_results",
+        "source_id": "Results and Table 3, Disease recurrence by lymph-node status"
+      }
+    },
+    {
+      "candidate_id": "cand_0035",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "disease recurrence / disease-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "ITC patients receiving either no adjuvant therapy or vaginal brachytherapy only; all were stage IA or IB, grade 1 or 2, endometrioid carcinoma, and had negative peritoneal cytology",
+      "timepoint": "36 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "No recurrences occurred among 10 ITC patients receiving no adjuvant therapy or vaginal brachytherapy only; no node-negative comparator count was reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0036",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Isolated tumor cells (ITCs) in sentinel lymph nodes",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "disease-free survival / progression-free survival",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "519 patients with early-stage endometrial cancer undergoing surgical staging and sentinel lymph-node mapping; ITC subgroup n=31",
+      "timepoint": "36 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 36 months, PFS was 95.5% for ITC patients versus 87.6% for node-negative patients. The source reports percentages but does not provide recurrence-event counts for both groups or an RR/HR."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_24",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0037",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "ITC/MM (isolated tumor cells or micrometastasis)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "extrapelvic recurrence",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "61 patients with intermediate-risk FIGO stage I to II endometrial cancer who underwent surgical staging and ultrastaging",
+      "timepoint": "Follow-up median 107 months (range 22 to 190 months)",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 4,
+        "intervention_total": 9,
+        "control_events": 3,
+        "control_total": 52,
+        "outcome_unit": "extrapelvic recurrence events"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0064_23",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 75
+      }
+    }
+  ]
+}

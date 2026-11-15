@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T2 submission envelope (record fields follow case protocol)",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_id",
+    "task_type",
+    "predictions"
+  ],
+  "properties": {
+    "case_id": {
+      "enum": [
+        "ma_0001",
+        "ma_0005",
+        "ma_0010",
+        "ma_0011",
+        "ma_0012",
+        "ma_0017",
+        "ma_0024",
+        "ma_0025",
+        "ma_0026",
+        "ma_0028",
+        "ma_0032",
+        "ma_0034",
+        "ma_0037",
+        "ma_0041",
+        "ma_0044",
+        "ma_0046",
+        "ma_0054",
+        "ma_0055",
+        "ma_0056",
+        "ma_0064",
+        "ma_0076",
+        "ma_0086"
+      ]
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "task_type": {
+      "const": "extraction"
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

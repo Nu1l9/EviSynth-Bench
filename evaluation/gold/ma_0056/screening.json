@@ -1,0 +1,178 @@
+{
+  "case_id": "ma_0056",
+  "positive_count": 9,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0056_01",
+      "title": "Remdesivir for the Treatment of Covid-19 — Final Report",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_002.pdf",
+      "source_filename": "a_0056_01.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1056/nejmoa2007764"
+    },
+    {
+      "candidate_id": "a_0056_02",
+      "title": "Remdesivir in adults with severe COVID-19: a randomised, double-blind, placebo-controlled, multicentre trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_008.pdf",
+      "source_filename": "a_0056_02.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1016/s0140-6736(20)31022-9"
+    },
+    {
+      "candidate_id": "a_0056_03",
+      "title": "Effect of Remdesivir vs Standard Care on Clinical Status at 11 Days in Patients With Moderate COVID-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_010.pdf",
+      "source_filename": "a_0056_03.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1001/jama.2020.16349"
+    },
+    {
+      "candidate_id": "a_0056_04",
+      "title": "Repurposed Antiviral Drugs for Covid-19 — Interim WHO Solidarity Trial Results",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_017.pdf",
+      "source_filename": "a_0056_04.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1056/nejmoa2023184"
+    },
+    {
+      "candidate_id": "a_0056_05",
+      "title": "Remdesivir plus standard of care versus standard of care alone for the treatment of patients admitted to hospital with COVID-19 (DisCoVeRy): a phase 3, randomised, controlled, open-label trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_014.pdf",
+      "source_filename": "a_0056_05.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1016/s1473-3099(21)00485-0"
+    },
+    {
+      "candidate_id": "a_0056_06",
+      "title": "Remdesivir for 5 or 10 Days in Patients with Severe Covid-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_012.pdf",
+      "source_filename": "a_0056_06.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1056/nejmoa2015301"
+    },
+    {
+      "candidate_id": "a_0056_07",
+      "title": "Clinical outcomes of using remdesivir in patients with moderate to severe COVID-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_003.pdf",
+      "source_filename": "a_0056_07.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.4103/ija.ija_149_21"
+    },
+    {
+      "candidate_id": "a_0056_08",
+      "title": "RETRACTED: Remdesivir Efficacy in COVID-19 Treatment: A Randomized Controlled Trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_013.pdf",
+      "source_filename": "a_0056_08.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.4269/ajtmh.21-0606"
+    },
+    {
+      "candidate_id": "a_0056_09",
+      "title": "Evaluation of the Effects of Remdesivir and Hydroxychloroquine on Viral Clearance in COVID-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0056/candidate_001.pdf",
+      "source_filename": "a_0056_09.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.7326/m21-0653"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Dexamethasone in Hospitalized Patients with Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_004.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1056/nejmoa2021436"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "A Trial of Lopinavir–Ritonavir in Adults Hospitalized with Severe Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_016.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.1056/nejmoa2001282"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "In Vitro Antiviral Activity and Projection of Optimized Dosing Design of Hydroxychloroquine for the Treatment of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2)",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_018.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.1093/cid/ciaa237"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Observational Study of Hydroxychloroquine in Hospitalized Patients with Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_006.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1056/nejmoa2012410"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Oral Nirmatrelvir for High-Risk, Nonhospitalized Adults with Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_009.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1056/nejmoa2118542"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Compassionate Use of Remdesivir for Patients with Severe Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_007.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1056/nejmoa2007016"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Baricitinib plus Remdesivir for Hospitalized Adults with Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_005.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1056/nejmoa2031994"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Effectiveness of convalescent plasma therapy in severe COVID-19 patients",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_019.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1073/pnas.2004168117"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Observational Study of Hydroxychloroquine in Hospitalized Patients with Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_015.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1056/nejmoa2012410"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Remdesivir for 5 or 10 Days in Patients with Severe Covid-19",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0056/candidate_011.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1056/nejmoa2015301"
+    }
+  ]
+}

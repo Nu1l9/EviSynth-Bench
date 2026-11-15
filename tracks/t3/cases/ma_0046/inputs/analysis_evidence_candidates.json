@@ -1,0 +1,977 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0046",
+  "candidate_set_id": "ma_0046_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_046017",
+      "study_id": "s_046017",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 5,
+        "new_ppm_total": 19,
+        "no_new_ppm_deaths": 9,
+        "no_new_ppm_total": 37,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.081871,
+        "ci_lower": 0.421366,
+        "ci_upper": 2.777743,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046017",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_046003",
+      "study_id": "s_046003",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 41,
+        "new_ppm_total": 252,
+        "no_new_ppm_deaths": 98,
+        "no_new_ppm_total": 581,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.964569,
+        "ci_lower": 0.691217,
+        "ci_upper": 1.346023,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046003",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_046009",
+      "study_id": "s_046009",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 19,
+        "new_ppm_total": 98,
+        "no_new_ppm_deaths": 37,
+        "no_new_ppm_total": 207,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.084666,
+        "ci_lower": 0.659032,
+        "ci_upper": 1.785195,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046009",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_046013",
+      "study_id": "s_046013",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation within 30 days after TAVI",
+      "comparison": "No new permanent pacemaker after TAVI; no PPM within 30 days",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death after TAVI",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing TAVI; 128 included after exclusion of patients with pre-existing PPM and other exclusions",
+      "timepoint": "Entire follow-up; median 1387 days (range 691–2335 days)",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 7,
+        "new_ppm_total": 41,
+        "no_new_ppm_deaths": 0,
+        "no_new_ppm_total": 87
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 31.428571428571427,
+        "ci_lower": 1.8379522362569953,
+        "ci_upper": 537.4215295455049,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_046013",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 4
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_046006",
+      "study_id": "s_046006",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 6,
+        "new_ppm_total": 66,
+        "no_new_ppm_deaths": 16,
+        "no_new_ppm_total": 209,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.1875,
+        "ci_lower": 0.484476,
+        "ci_upper": 2.910683,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046006",
+        "page": 4,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_046016",
+      "study_id": "s_046016",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 12,
+        "new_ppm_total": 28,
+        "no_new_ppm_deaths": 57,
+        "no_new_ppm_total": 132,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.992481,
+        "ci_lower": 0.620087,
+        "ci_upper": 1.588516,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046016",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_046010",
+      "study_id": "s_046010",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation within 30 days after TAVR",
+      "comparison": "No new PPM implantation within 30 days post-TAVR",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality after TAVR",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing TAVR for symptomatic severe aortic stenosis, excluding prior pacemaker or ICD implantation, intraprocedural pacemaker implantation, and other specified exclusions; overall cohort",
+      "timepoint": "30 days after TAVR",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 39,
+        "new_ppm_total": 651,
+        "no_new_ppm_deaths": 507,
+        "no_new_ppm_total": 9134
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.0792863050927566,
+        "ci_lower": 0.7869859000069698,
+        "ci_upper": 1.480152221723996,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_046010",
+        "source_type": "table",
+        "source_id": "TABLE 5",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_046004",
+      "study_id": "s_046004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation within 30 days after TAVR",
+      "comparison": "No new permanent pacemaker implantation after TAVR",
+      "outcome": {
+        "code": null,
+        "label": "1-year all-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing TAVR with a balloon-expandable Edwards SAPIEN valve in the PARTNER trial and continued access registry; patients with prior PPM excluded; new PPM n = 173, no PPM n = 1,800",
+      "timepoint": "1 year",
+      "data_family": "percentage_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_percent": 26.3,
+        "control_percent": 20.8,
+        "intervention_total": 173,
+        "control_total": 1800,
+        "outcome_unit": "Percent mortality at 1 year"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_046004",
+        "source_type": "table",
+        "source_id": "TABLE 5",
+        "content_list_item_index": 5
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_046005",
+      "study_id": "s_046005",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 13,
+        "new_ppm_total": 69,
+        "no_new_ppm_deaths": 85,
+        "no_new_ppm_total": 565,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.252344,
+        "ci_lower": 0.739001,
+        "ci_upper": 2.12228,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046005",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_046002",
+      "study_id": "s_046002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 47,
+        "new_ppm_total": 164,
+        "no_new_ppm_deaths": 171,
+        "no_new_ppm_total": 783,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.312259,
+        "ci_lower": 0.99631,
+        "ci_upper": 1.728402,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046002",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_046019",
+      "study_id": "s_046019",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 62,
+        "new_ppm_total": 239,
+        "no_new_ppm_deaths": 364,
+        "no_new_ppm_total": 1317,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.938595,
+        "ci_lower": 0.744736,
+        "ci_upper": 1.182916,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046019",
+        "page": 2,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_046001",
+      "study_id": "s_046001",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 11,
+        "new_ppm_total": 39,
+        "no_new_ppm_deaths": 30,
+        "no_new_ppm_total": 178,
+        "outcome_unit": "patients with all-cause death",
+        "timepoint_adjudication": "The target-review-compatible 36-42 month risk-set count is used; the report also gives a later survival-curve summary with a different risk set."
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.673504,
+        "ci_lower": 0.920584,
+        "ci_upper": 3.042216,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046001",
+        "page": 5,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_046009",
+      "study_id": "s_046009",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR (PPM after TAVI group)",
+      "comparison": "No new permanent pacemaker implantation after TAVR (no PPM group)",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death after TAVR",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing transfemoral TAVI; PPM after TAVI versus no PPM, excluding the prior-PPM group",
+      "timepoint": "30 days after TAVI",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 7,
+        "new_ppm_total": 98,
+        "no_new_ppm_deaths": 14,
+        "no_new_ppm_total": 207
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.056122448979592,
+        "ci_lower": 0.4403034948747054,
+        "ci_upper": 2.53324045850704,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_046009",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 5
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_046013",
+      "study_id": "s_046013",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 6,
+        "new_ppm_total": 41,
+        "no_new_ppm_deaths": 2,
+        "no_new_ppm_total": 87,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 6.365854,
+        "ci_lower": 1.342161,
+        "ci_upper": 30.193164,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046013",
+        "page": 2,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_046008",
+      "study_id": "s_046008",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 35,
+        "new_ppm_total": 145,
+        "no_new_ppm_deaths": 99,
+        "no_new_ppm_total": 469,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.143504,
+        "ci_lower": 0.815982,
+        "ci_upper": 1.602488,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046008",
+        "page": 4,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_046004",
+      "study_id": "s_046004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 45,
+        "new_ppm_total": 173,
+        "no_new_ppm_deaths": 374,
+        "no_new_ppm_total": 1800,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.251893,
+        "ci_lower": 0.95852,
+        "ci_upper": 1.635059,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046004",
+        "page": 5,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_046020",
+      "study_id": "s_046020",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 3,
+        "new_ppm_total": 20,
+        "no_new_ppm_deaths": 51,
+        "no_new_ppm_total": 302,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.888235,
+        "ci_lower": 0.303798,
+        "ci_upper": 2.596996,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046020",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_046015",
+      "study_id": "s_046015",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 4,
+        "new_ppm_total": 37,
+        "no_new_ppm_deaths": 34,
+        "no_new_ppm_total": 118,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.375199,
+        "ci_lower": 0.142518,
+        "ci_upper": 0.987766,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046015",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_046011",
+      "study_id": "s_046011",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 156,
+        "new_ppm_total": 322,
+        "no_new_ppm_deaths": 560,
+        "no_new_ppm_total": 1307,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.130723,
+        "ci_lower": 0.993973,
+        "ci_upper": 1.286288,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046011",
+        "page": 6,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_046001",
+      "study_id": "s_046001",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation immediately after TAVI",
+      "comparison": "No new permanent pacemaker implantation after TAVI",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death after TAVI",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing CoreValve TAVI, excluding pre-existing PPM, PPM implanted during follow-up, and hospital deaths; PPM after TAVI versus no PPM after TAVI",
+      "timepoint": "Long-term study follow-up; mean 37 ± 25 months (range 3–99 months), with mortality comparison reported at 98 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 14,
+        "new_ppm_total": 39,
+        "no_new_ppm_deaths": 36,
+        "no_new_ppm_total": 178
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.774928774928775,
+        "ci_lower": 1.064870020708032,
+        "ci_upper": 2.958456989873261,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_046001",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_046018",
+      "study_id": "s_046018",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 20,
+        "new_ppm_total": 118,
+        "no_new_ppm_deaths": 140,
+        "no_new_ppm_total": 679,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.822034,
+        "ci_lower": 0.536991,
+        "ci_upper": 1.258383,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046018",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_046007",
+      "study_id": "s_046007",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 11,
+        "new_ppm_total": 58,
+        "no_new_ppm_deaths": 27,
+        "no_new_ppm_total": 172,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.208174,
+        "ci_lower": 0.640394,
+        "ci_upper": 2.279354,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046007",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_046014",
+      "study_id": "s_046014",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 2,
+        "new_ppm_total": 29,
+        "no_new_ppm_deaths": 20,
+        "no_new_ppm_total": 165,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.568966,
+        "ci_lower": 0.140449,
+        "ci_upper": 2.304903,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046014",
+        "page": 1,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_046010",
+      "study_id": "s_046010",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 114,
+        "new_ppm_total": 651,
+        "no_new_ppm_deaths": 1536,
+        "no_new_ppm_total": 9134,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.041343,
+        "ci_lower": 0.876043,
+        "ci_upper": 1.237833,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046010",
+        "page": 5,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_046012",
+      "study_id": "s_046012",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "New permanent pacemaker implantation after TAVR",
+      "comparison": "new PPM after TAVR versus no new PPM",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TAVR recipients without pre-existing PPM",
+      "timepoint": "study-specific follow-up at least 10 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "new_ppm_deaths": 36,
+        "new_ppm_total": 145,
+        "no_new_ppm_deaths": 96,
+        "no_new_ppm_total": 711,
+        "outcome_unit": "patients with all-cause death"
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.838793,
+        "ci_lower": 1.310282,
+        "ci_upper": 2.580483,
+        "log_value": null,
+        "variance": null,
+        "direction": "higher_all_cause_death_risk_with_new_ppm"
+      },
+      "source_location": {
+        "document_id": "a_046012",
+        "page": 4,
+        "source_type": "main_text_or_table",
+        "source_id": "locally adjudicated all-cause mortality comparison"
+      }
+    }
+  ]
+}

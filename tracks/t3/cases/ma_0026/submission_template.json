@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0026",
+  "task_id": "ma_0026_full_analysis_main_outcomes_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "rt_pcr_hcw_prevalence_main",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

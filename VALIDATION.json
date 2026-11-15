@@ -1,0 +1,46 @@
+{
+  "release_version": "1.0.1",
+  "date": "2026-11-15",
+  "cases_per_track": {
+    "t1": 22,
+    "t2": 22,
+    "t3": 22,
+    "t4": 22
+  },
+  "unique_cases": 22,
+  "candidate_document_occurrences": 562,
+  "t2_document_occurrences": 342,
+  "t2_supplementary_file_placeholders": 21,
+  "t3_evidence_candidates": 1069,
+  "extraction_numeric_targets": 288,
+  "numeric_matcher_supported_targets": 288,
+  "screening_positive_entries": 342,
+  "screening_negative_entries": 220,
+  "main_analyses": {
+    "t3": 30,
+    "t4": 30
+  },
+  "selection_reference_units": {
+    "t3": 253,
+    "t4": 253
+  },
+  "extension_analyses": {
+    "total": 47,
+    "by_kind": {
+      "secondary_outcome": 9,
+      "subgroup": 34,
+      "sensitivity": 4
+    }
+  },
+  "blind_exports": {
+    "t1": "passed",
+    "t2": "passed",
+    "t3": "passed",
+    "t4": "passed"
+  },
+  "titles": 562,
+  "dois": 557,
+  "data_boundaries": "passed",
+  "issues": [],
+  "unit_tests_passed": 43
+}

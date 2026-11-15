@@ -1,0 +1,76 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0044",
+  "source_case_id": "ma_0044",
+  "task_id": "ma_0044_extraction_all_reports_v1",
+  "task_type": "extraction",
+  "task_definition": "Extract source-grounded intraoperative iatrogenic-retinal-break arm counts from known included reports.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_044001",
+    "a_044002",
+    "a_044003",
+    "a_044004",
+    "a_044005",
+    "a_044006",
+    "a_044007",
+    "a_044008",
+    "a_044009",
+    "a_044010",
+    "a_044011",
+    "a_044012",
+    "a_044013",
+    "a_044014",
+    "a_044015",
+    "a_044016",
+    "a_044017",
+    "a_044018",
+    "a_044019",
+    "a_044020",
+    "a_044021",
+    "a_044022",
+    "a_044023",
+    "a_044024",
+    "a_044025",
+    "a_044026",
+    "a_044027",
+    "a_044028",
+    "a_044029",
+    "a_044030",
+    "a_044031",
+    "a_044032"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0044"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

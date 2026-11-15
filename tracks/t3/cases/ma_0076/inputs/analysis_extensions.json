@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../../schemas/analysis-extensions.schema.json",
+  "case_id": "ma_0076",
+  "extension_profile_id": "ma_0076_review_derived_extensions_v1",
+  "source_basis": "Target review Results: review_ma_0076/full.md reports subgroup analyses by omega-3 product type, dose, and routine adverse-event assessment.",
+  "blindness_policy": "Participant inputs define analysis questions and eligibility rules; reference selections and pooled values are distributed separately.",
+  "candidate_subgroup_policy": "Candidate subgroup questions simulate prospective user requests. The agent must use only protocol and extracted source fields to decide whether a question is feasible, insufficiently supported, or should be blocked; it must not manufacture a result.",
+  "scoring_status": "declared_numeric_result_coverage",
+  "subgroup_analyses": [
+    {
+      "analysis_id": "subgroup_omega3_product_class",
+      "label": "Adverse-event association by omega-3 product class",
+      "parent_analysis_ids": [
+        "main_diarrhea"
+      ],
+      "grouping_variable": "omega3_product_class",
+      "levels": [
+        {
+          "level_id": "rxomega3fa",
+          "label": "Prescription omega-3 product",
+          "source_definition": "RxOME3FA as classified by the source review."
+        },
+        {
+          "level_id": "omega3fa",
+          "label": "Non-prescription omega-3 product",
+          "source_definition": "OME3FA as classified by the source review."
+        }
+      ],
+      "required_extraction_fields": [
+        "omega3_product_class",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "The target review reports subgroup analyses by RxOME3FA versus OME3FA."
+    },
+    {
+      "analysis_id": "subgroup_omega3_daily_dose",
+      "label": "Adverse-event association by daily omega-3 dose",
+      "parent_analysis_ids": [
+        "main_diarrhea"
+      ],
+      "grouping_variable": "omega3_daily_dose_mg",
+      "levels": [
+        {
+          "level_id": "at_least_3000mg",
+          "label": "At least 3000 mg/day",
+          "source_definition": "Daily omega-3 dose at least 3000 mg/day."
+        },
+        {
+          "level_id": "less_than_3000mg",
+          "label": "Less than 3000 mg/day",
+          "source_definition": "Daily omega-3 dose below 3000 mg/day."
+        }
+      ],
+      "required_extraction_fields": [
+        "omega3_daily_dose_mg",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "The target review reports subgroup analyses using the 3000 mg/day dose threshold."
+    },
+    {
+      "analysis_id": "subgroup_routine_adverse_event_assessment",
+      "label": "Adverse-event association by routine adverse-event assessment",
+      "parent_analysis_ids": [
+        "main_diarrhea"
+      ],
+      "grouping_variable": "routine_adverse_event_assessment",
+      "levels": [
+        {
+          "level_id": "routine_standard_assessment",
+          "label": "Routine standard assessment",
+          "source_definition": "Periodic adverse-event assessment using scales or another routine standard method."
+        },
+        {
+          "level_id": "no_routine_standard_assessment",
+          "label": "No routine standard assessment",
+          "source_definition": "No source-reported routine standard adverse-event assessment."
+        }
+      ],
+      "required_extraction_fields": [
+        "routine_adverse_event_assessment",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "The target review reports subgroup analyses by whether routine standard adverse-event assessment was performed."
+    }
+  ],
+  "candidate_subgroup_analyses": [],
+  "meta_regression_analyses": []
+}

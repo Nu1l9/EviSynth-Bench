@@ -1,0 +1,325 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0017",
+  "topic": "Among source-defined acute or ischemic stroke cohorts, did the odds of receiving endovascular thrombectomy differ during the COVID-19 pandemic relative to the source-defined pre-pandemic reference period?",
+  "protocol": {
+    "protocol_id": "ma_0017_evt_utilization_protocol_v1",
+    "case_id": "ma_0017",
+    "pico": {
+      "population": "Source-defined acute or ischemic stroke cohorts",
+      "intervention_or_exposure": "COVID-19 pandemic period",
+      "comparison": "Source-defined pre-pandemic reference period",
+      "outcome": "Receipt of endovascular thrombectomy"
+    },
+    "eligible_study_designs": [
+      "before-after observational cohort"
+    ],
+    "targets": [
+      {
+        "target_id": "endovascular_thrombectomy_during_covid19",
+        "outcome": "Receipt of endovascular thrombectomy",
+        "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+        "population_or_subgroup": "Source-defined acute or ischemic stroke cohort",
+        "timepoint_policy": {
+          "rule": "Use each report's explicitly named COVID-19 and pre-pandemic time periods; retain the text of both periods."
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "OR"
+        ],
+        "estimands": [
+          "odds_of_receiving_endovascular_thrombectomy_in_the_source_defined_acute_stroke_cohort"
+        ],
+        "candidate_capture_policy": {
+          "record_scope": "One source-defined pandemic versus reference cohort contrast per report",
+          "selection_deferred": true
+        },
+        "extraction_notes": []
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_evt_utilization",
+      "pooled_result_id": "pr_0017_primary_evt_utilization",
+      "outcome_group": "Odds of receiving endovascular thrombectomy during the COVID-19 pandemic",
+      "target_id": "endovascular_thrombectomy_during_covid19",
+      "eligible_outcome_codes": [
+        "endovascular_thrombectomy_receipt"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "odds_of_receiving_endovascular_thrombectomy_in_the_source_defined_acute_stroke_cohort"
+      ],
+      "selection_rules": [
+        "Select one report-level contrast with explicit EVT event and cohort counts for COVID-19 and a pre-pandemic reference period.",
+        "The denominator may be an acute-stroke or ischemic-stroke cohort only when that cohort is expressly defined by the primary report.",
+        "Do not use review forest estimates, percentage-only values, or a contrast lacking both group totals.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use each report's explicitly named COVID-19 and pre-pandemic time periods; retain the text of both periods."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_odds_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Odds of receiving endovascular thrombectomy during the COVID-19 pandemic"
+      ],
+      "exposure": {
+        "terms": [
+          "COVID-19 pandemic period"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "COVID-19 pandemic period versus the source-defined pre-pandemic reference period"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Source-defined acute or ischemic stroke cohort"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use each report's explicitly named COVID-19 and pre-pandemic time periods; retain the text of both periods.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "title": "Long-term cardiovascular outcomes of COVID-19",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_001.pdf"
+      },
+      "doi": "10.1038/s41591-022-01689-3"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "title": "The stroke mothership model survived during COVID-19 era: an observational single-center study in Emilia-Romagna, Italy",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_002.pdf"
+      },
+      "doi": "10.1007/s10072-020-04754-2"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "title": "Microbiota in health and diseases",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_003.pdf"
+      },
+      "doi": "10.1038/s41392-022-00974-4"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "title": "Impact of COVID-19 on Acute Stroke Presentation at a Comprehensive Stroke Center",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_004.pdf"
+      },
+      "doi": "10.3389/fneur.2020.00850"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "title": "Epidemiology, clinical course, and outcomes of critically ill adults with COVID-19 in New York City: a prospective cohort study",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_005.pdf"
+      },
+      "doi": "10.1016/S0140-6736(20)31189-2"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "title": "Impact of the COVID-19 Epidemic on Stroke Care and Potential Solutions",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_006.pdf"
+      },
+      "doi": "10.1161/strokeaha.120.030225"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "title": "Safety and efficacy of an rAd26 and rAd5 vector-based heterologous prime-boost COVID-19 vaccine: an interim analysis of a randomised controlled phase 3 trial in Russia",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_007.pdf"
+      },
+      "doi": "10.1016/s0140-6736(21)00234-8"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "title": "The impact of the COVID-19 pandemic on a stroke center in Latin America",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_008.pdf"
+      },
+      "doi": "10.1177/1747493020941637"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "title": "OpenSAFELY: factors associated with COVID-19 death in 17 million patients",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_009.pdf"
+      },
+      "doi": "10.1038/s41586-020-2521-4"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "title": "Delay or Avoidance of Medical Care Because of COVID-19–Related Concerns — United States, June 2020",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_010.pdf"
+      },
+      "doi": "10.15585/mmwr.mm6936a4"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "title": "Neuropathology of patients with COVID-19 in Germany: a post-mortem case series",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_011.pdf"
+      },
+      "doi": "10.1016/s1474-4422(20)30308-2"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "title": "Acute Stroke Care Is at Risk in the Era of COVID-19",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_012.pdf"
+      },
+      "doi": "10.1161/strokeaha.120.030329"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "title": "Impact of the COVID-19 outbreak on acute stroke care",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_013.pdf"
+      },
+      "doi": "10.1007/s00415-020-10069-1"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "title": "Delays in Stroke Onset to Hospital Arrival Time During COVID-19",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_014.pdf"
+      },
+      "doi": "10.1161/strokeaha.120.030105"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "title": "Global, regional, and national burden of stroke and its risk factors, 1990–2021: a systematic analysis for the Global Burden of Disease Study 2021",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_015.pdf"
+      },
+      "doi": "10.1016/s1474-4422(24)00369-7"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "title": "A multinational, multicentre study on the psychological outcomes and associated physical symptoms amongst healthcare workers during COVID-19 outbreak",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_016.pdf"
+      },
+      "doi": "10.1016/j.bbi.2020.04.049"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "title": "Early Impact of the COVID-19 Pandemic on Acute Stroke Treatment Delays",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_017.pdf"
+      },
+      "doi": "10.1017/cjn.2020.160"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "title": "Psychiatric and neuropsychiatric presentations associated with severe coronavirus infections: a systematic review and meta-analysis with comparison to the COVID-19 pandemic",
+      "role": "candidate_article",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0017/candidate_018.pdf"
+      },
+      "doi": "10.1016/s2215-0366(20)30203-0"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

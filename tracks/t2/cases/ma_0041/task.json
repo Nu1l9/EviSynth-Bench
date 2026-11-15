@@ -1,0 +1,53 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0041",
+  "source_case_id": "ma_0041_full",
+  "task_id": "ma_0041_full_extraction_all_reports_v2",
+  "task_type": "extraction",
+  "task_definition": "Extract every source-reported glenoid positioning summary with its measurement semantics and source locator from the nine known included primary reports.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_0041_01_verborgt",
+    "a_0041_02_kircher",
+    "a_0041_03_lau_keith",
+    "a_0041_04_gauci",
+    "a_0041_05_dallalana",
+    "a_0041_06_throckmorton",
+    "a_0041_07_suero",
+    "a_0041_08_hendel",
+    "a_0041_09_gregory"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0041"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

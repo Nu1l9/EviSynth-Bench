@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../../schemas/analysis-extensions.schema.json",
+  "case_id": "ma_0012",
+  "extension_profile_id": "ma_0012_review_derived_extensions_v1",
+  "source_basis": "Target review Results: review_ma_0012/full.md describes subgroup analyses performed by some included primary studies.",
+  "blindness_policy": "Participant inputs define analysis questions and eligibility rules; reference selections and pooled values are distributed separately.",
+  "candidate_subgroup_policy": "Candidate subgroup questions simulate prospective user requests. The agent must use only protocol and extracted source fields to decide whether a question is feasible, insufficiently supported, or should be blocked; it must not manufacture a result.",
+  "scoring_status": "declared_numeric_result_coverage",
+  "subgroup_analyses": [],
+  "candidate_subgroup_analyses": [
+    {
+      "analysis_id": "candidate_subgroup_child_age_band",
+      "label": "IPD association by child age band",
+      "parent_analysis_ids": [
+        "main_pr_invasive_pneumococcal_disease"
+      ],
+      "grouping_variable": "child_age_band",
+      "levels": [
+        {
+          "level_id": "under_5_years",
+          "label": "Younger than 5 years",
+          "source_definition": "Source-reported age stratum younger than 5 years."
+        },
+        {
+          "level_id": "5_to_17_years",
+          "label": "5 to 17 years",
+          "source_definition": "Source-reported age stratum from 5 through 17 years."
+        }
+      ],
+      "required_extraction_fields": [
+        "child_age_band",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "Predefined from age strata described in the target review; these strata were not combined as a target-review subgroup meta-analysis."
+    },
+    {
+      "analysis_id": "candidate_subgroup_asthma_severity",
+      "label": "IPD association by asthma severity",
+      "parent_analysis_ids": [
+        "main_pr_invasive_pneumococcal_disease"
+      ],
+      "grouping_variable": "asthma_severity",
+      "levels": [
+        {
+          "level_id": "mild",
+          "label": "Mild asthma",
+          "source_definition": "Source-defined mild asthma severity."
+        },
+        {
+          "level_id": "moderate_or_severe",
+          "label": "Moderate or severe asthma",
+          "source_definition": "Source-defined moderate or severe asthma severity."
+        }
+      ],
+      "required_extraction_fields": [
+        "asthma_severity",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "Predefined from asthma-severity strata described in the target review; not reported as a combined review subgroup result."
+    }
+  ],
+  "meta_regression_analyses": [],
+  "notes": [
+    "Age, asthma-severity, and pneumococcal-serotype strata were reported within individual primary studies, not combined as target-review subgroup meta-analyses; they are not benchmark subgroup tasks."
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "case_id": "ma_0026",
+  "positive_count": 46,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0026_r015",
+      "title": "SARS-CoV-2 infection in health care workers: a retrospective analysis and model study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_021.pdf",
+      "source_filename": "a_0026_r015.pdf",
+      "runtime_article_id": "candidate_021",
+      "doi": "10.1101/2020.03.29.20047159"
+    },
+    {
+      "candidate_id": "a_0026_r016",
+      "title": "Prevalence of SARS-CoV-2 infection in previously undiagnosed health care workers at the onset of the U.S. COVID-19 epidemic",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_012.pdf",
+      "source_filename": "a_0026_r016.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1101/2020.04.20.20072470"
+    },
+    {
+      "candidate_id": "a_0026_r018",
+      "title": "Resident physician exposure to novel coronavirus (2019-nCoV, SARS-CoV-2) within New York City during exponential phase of COVID-19 pandemic: Report of the New York City Residency Program Directors COVID-19 Research Group",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_023.pdf",
+      "source_filename": "a_0026_r018.pdf",
+      "runtime_article_id": "candidate_023",
+      "doi": "10.1101/2020.04.23.20074310"
+    },
+    {
+      "candidate_id": "a_0026_r022",
+      "title": "SARS-CoV-2 infection in Health Care Workers in a large public hospital in Madrid, Spain, during March 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_047.pdf",
+      "source_filename": "a_0026_r022.pdf",
+      "runtime_article_id": "candidate_047",
+      "doi": "10.1101/2020.04.07.20055723"
+    },
+    {
+      "candidate_id": "a_0026_r024",
+      "title": "Seroprevalence of antibodies against SARS-CoV-2 among health care workers in a large Spanish reference hospital",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_043.pdf",
+      "source_filename": "a_0026_r024.pdf",
+      "runtime_article_id": "candidate_043",
+      "doi": "10.1038/s41467-020-17318-x"
+    },
+    {
+      "candidate_id": "a_0026_r026",
+      "title": "First experience of COVID-19 screening of health-care workers in England",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_050.pdf",
+      "source_filename": "a_0026_r026.pdf",
+      "runtime_article_id": "candidate_050",
+      "doi": "10.1016/s0140-6736(20)30970-3"
+    },
+    {
+      "candidate_id": "a_0026_r028",
+      "title": "Roll-out of SARS-CoV-2 testing for healthcare workers at a large NHS Foundation Trust in the United Kingdom, March 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_046.pdf",
+      "source_filename": "a_0026_r028.pdf",
+      "runtime_article_id": "candidate_046",
+      "doi": "10.2807/1560-7917.es.2020.25.14.2000433"
+    },
+    {
+      "candidate_id": "a_0026_r030",
+      "title": "SARS-CoV-2 infection in 86 healthcare workers in two Dutch hospitals in March 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_042.pdf",
+      "source_filename": "a_0026_r030.pdf",
+      "runtime_article_id": "candidate_042",
+      "doi": "10.1101/2020.03.23.20041913"
+    },
+    {
+      "candidate_id": "a_0026_r034",
+      "title": "Risk Factors of Healthcare Workers With Coronavirus Disease 2019: A Retrospective Cohort Study in a Designated Hospital of Wuhan in China",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_029.pdf",
+      "source_filename": "a_0026_r034.pdf",
+      "runtime_article_id": "candidate_029",
+      "doi": "10.1093/cid/ciaa287"
+    },
+    {
+      "candidate_id": "a_0026_r035",
+      "title": "Rapid assessment of regional SARS-CoV-2 community transmission through a convenience sample of healthcare workers, the Netherlands, March 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_004.pdf",
+      "source_filename": "a_0026_r035.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.2807/1560-7917.es.2020.25.12.2000334"
+    },
+    {
+      "candidate_id": "a_0026_r037",
+      "title": "Limited effectiveness of systematic screening by nasopharyngeal RT-PCR of medicalized nursing home staff after a first case of COVID-19 in a resident",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_005.pdf",
+      "source_filename": "a_0026_r037.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1016/j.medmal.2020.04.020"
+    },
+    {
+      "candidate_id": "a_0026_r038",
+      "title": "Detection of SARS-CoV-2 Among Residents and Staff Members of an Independent and Assisted Living Community for Older Adults — Seattle, Washington, 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_056.pdf",
+      "source_filename": "a_0026_r038.pdf",
+      "runtime_article_id": "candidate_056",
+      "doi": "10.15585/mmwr.mm6914e2"
+    },
+    {
+      "candidate_id": "a_0026_r039",
+      "title": "Lower detection rates of SARS-COV2 antibodies in cancer patients versus health care workers after symptomatic COVID-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_035.pdf",
+      "source_filename": "a_0026_r039.pdf",
+      "runtime_article_id": "candidate_035",
+      "doi": "10.1016/j.annonc.2020.04.475"
+    },
+    {
+      "candidate_id": "a_0026_r041",
+      "title": "COVID-19: PCR screening of asymptomatic health-care workers at London hospital",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_013.pdf",
+      "source_filename": "a_0026_r041.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1016/s0140-6736(20)31100-4"
+    },
+    {
+      "candidate_id": "a_0026_r043",
+      "title": "Severe Acute Respiratory Syndrome Coronavirus 2 Serology in Asymptomatic Healthcare Professionals: Preliminary Experience of a Tertiary Italian Academic Center",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_054.pdf",
+      "source_filename": "a_0026_r043.pdf",
+      "runtime_article_id": "candidate_054",
+      "doi": "10.1101/2020.04.27.20073858"
+    },
+    {
+      "candidate_id": "a_0026_r044",
+      "title": "Strong associations and moderate predictive value of early symptoms for SARS-CoV-2 test positivity among healthcare workers, the Netherlands, March 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_040.pdf",
+      "source_filename": "a_0026_r044.pdf",
+      "runtime_article_id": "candidate_040",
+      "doi": "10.2807/1560-7917.es.2020.25.16.2000508"
+    },
+    {
+      "candidate_id": "a_0026_r050",
+      "title": "Coronavirus Disease 2019 (COVID-2019) Infection Among Health Care Workers and Implications for Prevention Measures in a Tertiary Hospital in Wuhan, China",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_020.pdf",
+      "source_filename": "a_0026_r050.pdf",
+      "runtime_article_id": "candidate_020",
+      "doi": "10.1001/jamanetworkopen.2020.9666"
+    },
+    {
+      "candidate_id": "a_0026_r051",
+      "title": "COVID-19 screening of health-care workers in a London maternity hospital",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_001.pdf",
+      "source_filename": "a_0026_r051.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1016/s1473-3099(20)30403-5"
+    },
+    {
+      "candidate_id": "a_0026_r052",
+      "title": "Comparing dynamics and determinants of SARS-CoV-2 transmissions among health care workers of adult and pediatric settings in central Paris",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_026.pdf",
+      "source_filename": "a_0026_r052.pdf",
+      "runtime_article_id": "candidate_026",
+      "doi": "10.1101/2020.05.19.20106427"
+    },
+    {
+      "candidate_id": "a_0026_r053",
+      "title": "SARS-CoV-2 infection, clinical features and outcome of COVID-19 in United Kingdom nursing homes",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_014.pdf",
+      "source_filename": "a_0026_r053.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1016/j.jinf.2020.05.073"
+    },
+    {
+      "candidate_id": "a_0026_r054",
+      "title": "Prevalence of SARS-CoV-2 Infection Among Asymptomatic Health Care Workers in the Greater Houston, Texas, Area",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_016.pdf",
+      "source_filename": "a_0026_r054.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.1001/jamanetworkopen.2020.16451"
+    },
+    {
+      "candidate_id": "a_0026_r057",
+      "title": "Symptom-based screening for COVID-19 in healthcare workers: the importance of fever",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_052.pdf",
+      "source_filename": "a_0026_r057.pdf",
+      "runtime_article_id": "candidate_052",
+      "doi": "10.1016/j.jhin.2020.05.028"
+    },
+    {
+      "candidate_id": "a_0026_r058",
+      "title": "Search for asymptomatic carriers of SARS-CoV-2 in healthcare workers during the pandemic: a Spanish experience",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_038.pdf",
+      "source_filename": "a_0026_r058.pdf",
+      "runtime_article_id": "candidate_038",
+      "doi": "10.1101/2020.05.18.20103283"
+    },
+    {
+      "candidate_id": "a_0026_r059",
+      "title": "Assessing the burden of COVID-19 amongst healthcare workers in Mexico City: A data-driven call to action",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_025.pdf",
+      "source_filename": "a_0026_r059.pdf",
+      "runtime_article_id": "candidate_025",
+      "doi": "10.1101/2020.07.02.20145169"
+    },
+    {
+      "candidate_id": "a_0026_r062",
+      "title": "Asymptomatic SARS-CoV-2 Infection in Nursing Homes, Barcelona, Spain, April 2020",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_030.pdf",
+      "source_filename": "a_0026_r062.pdf",
+      "runtime_article_id": "candidate_030",
+      "doi": "10.3201/eid2609.202603"
+    },
+    {
+      "candidate_id": "a_0026_r064",
+      "title": "Hemodialysis with Cohort Isolation to Prevent Secondary Transmission during a COVID-19 Outbreak in Korea",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_017.pdf",
+      "source_filename": "a_0026_r064.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1681/asn.2020040461"
+    },
+    {
+      "candidate_id": "a_0026_r065",
+      "title": "Symptom Criteria for COVID‐19 Testing of Heath Care Workers",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_015.pdf",
+      "source_filename": "a_0026_r065.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1111/acem.14009"
+    },
+    {
+      "candidate_id": "a_0026_r066",
+      "title": "COVID-19 among healthcare workers in a specialist infectious diseases setting in Naples, Southern Italy: results of a cross-sectional surveillance study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_049.pdf",
+      "source_filename": "a_0026_r066.pdf",
+      "runtime_article_id": "candidate_049",
+      "doi": "10.1016/j.jhin.2020.06.021"
+    },
+    {
+      "candidate_id": "a_0026_r067",
+      "title": "SARS-CoV-2 Seroprevalence Among All Workers in a Teaching Hospital in Spain: Unmasking The Risk",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_053.pdf",
+      "source_filename": "a_0026_r067.pdf",
+      "runtime_article_id": "candidate_053",
+      "doi": "10.1101/2020.05.29.20116731"
+    },
+    {
+      "candidate_id": "a_0026_r068",
+      "title": "Alta prevalencia de COVID-19 asintomático en hemodiálisis. Aprendiendo día a día el primer mes de pandemia de COVID-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_044.pdf",
+      "source_filename": "a_0026_r068.pdf",
+      "runtime_article_id": "candidate_044",
+      "doi": "10.1016/j.nefro.2020.04.005"
+    },
+    {
+      "candidate_id": "a_0026_r070",
+      "title": "Pre exposure Hydroxychloroquine use is associated with reduced COVID19 risk in healthcare workers",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_041.pdf",
+      "source_filename": "a_0026_r070.pdf",
+      "runtime_article_id": "candidate_041",
+      "doi": "10.1101/2020.06.09.20116806"
+    },
+    {
+      "candidate_id": "a_0026_r071",
+      "title": "Symptoms and immunoglobulin development in hospital staff exposed to a SARS‐CoV‐2 outbreak",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_034.pdf",
+      "source_filename": "a_0026_r071.pdf",
+      "runtime_article_id": "candidate_034",
+      "doi": "10.1111/pai.13278"
+    },
+    {
+      "candidate_id": "a_0026_r074",
+      "title": "SARS-CoV-2 virus and antibodies in front-line Health Care Workers in an acute hospital in London: preliminary results from a longitudinal study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_018.pdf",
+      "source_filename": "a_0026_r074.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.1101/2020.06.08.20120584"
+    },
+    {
+      "candidate_id": "a_0026_r078",
+      "title": "Prevalence of Sars-Cov-2 Infection in Health Workers (HWs) and Diagnostic Test Performance: The Experience of a Teaching Hospital in Central Italy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_007.pdf",
+      "source_filename": "a_0026_r078.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.3390/ijerph17124417"
+    },
+    {
+      "candidate_id": "a_0026_r079",
+      "title": "COVID-19 symptoms predictive of healthcare workers’ SARS-CoV-2 PCR results",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_031.pdf",
+      "source_filename": "a_0026_r079.pdf",
+      "runtime_article_id": "candidate_031",
+      "doi": "10.1371/journal.pone.0235460"
+    },
+    {
+      "candidate_id": "a_0026_r080",
+      "title": "Characteristics of 1573 healthcare workers who underwent nasopharyngeal swab testing for SARS-CoV-2 in Milan, Lombardy, Italy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_032.pdf",
+      "source_filename": "a_0026_r080.pdf",
+      "runtime_article_id": "candidate_032",
+      "doi": "10.1016/j.cmi.2020.06.013"
+    },
+    {
+      "candidate_id": "a_0026_r081",
+      "title": "Epidemiological, Clinical, and Immunological Features of a Cluster of COVID-19–Contracted Hemodialysis Patients",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_010.pdf",
+      "source_filename": "a_0026_r081.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1016/j.ekir.2020.06.003"
+    },
+    {
+      "candidate_id": "a_0026_r082",
+      "title": "Prevalence of COVID-19 Infection and Outcomes Among Symptomatic Healthcare Workers in Seattle, Washington",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_037.pdf",
+      "source_filename": "a_0026_r082.pdf",
+      "runtime_article_id": "candidate_037",
+      "doi": "10.1093/cid/ciaa761"
+    },
+    {
+      "candidate_id": "a_0026_r083",
+      "title": "Effective control of SARS-CoV-2 transmission between healthcare workers during a period of diminished community prevalence of COVID-19",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_024.pdf",
+      "source_filename": "a_0026_r083.pdf",
+      "runtime_article_id": "candidate_024",
+      "doi": "10.7554/elife.59391"
+    },
+    {
+      "candidate_id": "a_0026_r084",
+      "title": "Dynamics of SARS-CoV-2 RT-PCR positivity and seroprevalence among high-risk healthcare workers and hospital staff",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_022.pdf",
+      "source_filename": "a_0026_r084.pdf",
+      "runtime_article_id": "candidate_022",
+      "doi": "10.1016/j.jhin.2020.06.028"
+    },
+    {
+      "candidate_id": "a_0026_r086",
+      "title": "SARS‐CoV‐2 Infection in Health Care Workers: Cross‐sectional Analysis of an Otolaryngology Unit",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_033.pdf",
+      "source_filename": "a_0026_r086.pdf",
+      "runtime_article_id": "candidate_033",
+      "doi": "10.1177/0194599820932162"
+    },
+    {
+      "candidate_id": "a_0026_r087",
+      "title": "Drive-through testing for SARS-CoV-2 in symptomatic health and social care workers and household members: an observational cohort study in Tayside, Scotland",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_048.pdf",
+      "source_filename": "a_0026_r087.pdf",
+      "runtime_article_id": "candidate_048",
+      "doi": "10.1101/2020.05.08.20078386"
+    },
+    {
+      "candidate_id": "a_0026_r092",
+      "title": "SARS-CoV-2 seroconversion in health care workers",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_006.pdf",
+      "source_filename": "a_0026_r092.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1101/2020.05.18.20105197"
+    },
+    {
+      "candidate_id": "a_0026_r093",
+      "title": "COVID-19 in health-care workers in three hospitals in the south of the Netherlands: a cross-sectional study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_011.pdf",
+      "source_filename": "a_0026_r093.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1016/s1473-3099(20)30527-2"
+    },
+    {
+      "candidate_id": "a_0026_r094",
+      "title": "High SARS-CoV-2 infection rates in respiratory staff nurses and correlation of COVID-19 symptom patterns with PCR positivity and relative viral loads",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_003.pdf",
+      "source_filename": "a_0026_r094.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1016/j.jinf.2020.06.035"
+    },
+    {
+      "candidate_id": "a_0026_r095",
+      "title": "Containment of COVID-19 cases amongst healthcare workers: the role of surveillance, early detection and outbreak management",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0026/candidate_019.pdf",
+      "source_filename": "a_0026_r095.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1017/ice.2020.219"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Clinical Characteristics of Coronavirus Disease 2019 in China",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_008.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1056/nejmoa2002032"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Safety and efficacy of an rAd26 and rAd5 vector-based heterologous prime-boost COVID-19 vaccine: an interim analysis of a randomised controlled phase 3 trial in Russia",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_028.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_028",
+      "doi": "10.1016/s0140-6736(21)00234-8"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Characterizing long COVID in an international cohort: 7 months of symptoms and their impact",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_045.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_045",
+      "doi": "10.1016/j.eclinm.2021.101019"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "COVID-19 and Thrombotic or Thromboembolic Disease: Implications for Prevention, Antithrombotic Therapy, and Follow-Up",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_002.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1016/j.jacc.2020.04.031"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "More than 50 long-term effects of COVID-19: a systematic review and meta-analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_055.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_055",
+      "doi": "10.1038/s41598-021-95565-8"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Risk of COVID-19 among front-line health-care workers and the general community: a prospective cohort study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_027.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_027",
+      "doi": "10.1016/S2468-2667(20)30164-X"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Effectiveness of convalescent plasma therapy in severe COVID-19 patients",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_009.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1073/pnas.2004168117"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "A rapid advice guideline for the diagnosis and treatment of 2019 novel coronavirus (2019-nCoV) infected pneumonia (standard version)",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_039.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_039",
+      "doi": "10.1186/s40779-020-0233-6"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "A multinational, multicentre study on the psychological outcomes and associated physical symptoms amongst healthcare workers during COVID-19 outbreak",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_036.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_036",
+      "doi": "10.1016/j.bbi.2020.04.049"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Risk factors for severity and mortality in adult COVID-19 inpatients in Wuhan",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0026/candidate_051.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_051",
+      "doi": "10.1016/j.jaci.2020.04.006"
+    }
+  ]
+}

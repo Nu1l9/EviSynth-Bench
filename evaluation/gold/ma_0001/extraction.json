@@ -1,0 +1,4766 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0001",
+  "task_type": "extraction",
+  "gold_id": "ma_0001_extraction_gold_v1",
+  "applies_to_task_ids": [
+    "ma_0001_extraction_all_reports_v1",
+    "ma_0001_end_to_end_main_outcomes_v1"
+  ],
+  "provenance": {
+    "target_review_document_id": "review_ma_0001",
+    "target_supplement_document_id": "review_ma_0001_supplement",
+    "annotation_status": "adjudicated",
+    "source_figures": [
+      "Main Figure 2",
+      "Main Figure 3",
+      "Supplement Figure S1a",
+      "Supplement Figure S1b",
+      "Supplement Figure S2a",
+      "Supplement Table S3"
+    ]
+  },
+  "unit_definition": "One included article by outcome by population/subgroup. Reappearance in sensitivity or subgroup analyses is represented as analysis membership, not a duplicate unit.",
+  "report_units": [
+    {
+      "report_unit_id": "ru_0001",
+      "article_id": "a_27466237",
+      "study_id": "s_27466237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "cerebrovascular_disease",
+        "label": "Cerebrovascular disease",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0001_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.11,
+            "ci_lower": 0.51,
+            "ci_upper": 2.42,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.11,
+            "ci_lower": 0.51,
+            "ci_upper": 2.42,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.11,
+              "ci_lower": 0.51,
+              "ci_upper": 2.42
+            },
+            "analysis_n_or_events_as_shown_in_review": 1536,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_27466237",
+            "page": 11,
+            "source_type": "table",
+            "source_id": "Table 4 Continued",
+            "locator_note": "Exact estimate 1.11 (0.51-2.42); hint: cerebrovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 142,
+            "content_list_segment_index": 7,
+            "bbox": [
+              119,
+              64,
+              357,
+              921
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0002",
+      "article_id": "a_27466237",
+      "study_id": "s_27466237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "heart_failure",
+        "label": "Heart failure",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0002_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 2.23,
+            "ci_lower": 1.26,
+            "ci_upper": 3.96,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 2.23,
+            "ci_lower": 1.26,
+            "ci_upper": 3.95,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 2.23,
+              "ci_lower": 1.26,
+              "ci_upper": 3.96
+            },
+            "analysis_n_or_events_as_shown_in_review": 1536,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_27466237",
+            "page": 11,
+            "source_type": "table",
+            "source_id": "Table 4 Continued",
+            "locator_note": "Exact estimate 2.23 (1.26-3.96); hint: heart failure.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 142,
+            "content_list_segment_index": 7,
+            "bbox": [
+              119,
+              64,
+              357,
+              921
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0003",
+      "article_id": "a_27466237",
+      "study_id": "s_27466237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0003_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.99,
+            "ci_lower": 0.54,
+            "ci_upper": 1.84,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.99,
+            "ci_lower": 0.54,
+            "ci_upper": 1.83,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.99,
+              "ci_lower": 0.54,
+              "ci_upper": 1.84
+            },
+            "analysis_n_or_events_as_shown_in_review": 1536,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_27466237",
+            "page": 11,
+            "source_type": "table",
+            "source_id": "Table 4 Continued",
+            "locator_note": "Exact estimate 0.99 (0.54-1.84); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 142,
+            "content_list_segment_index": 7,
+            "bbox": [
+              119,
+              64,
+              357,
+              921
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0004",
+      "article_id": "a_27466237",
+      "study_id": "s_27466237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "peripheral_vascular_disease",
+        "label": "Peripheral vascular disease",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0004_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 2.08,
+            "ci_lower": 1.06,
+            "ci_upper": 4.08,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 2.08,
+            "ci_lower": 1.06,
+            "ci_upper": 4.08,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 2.08,
+              "ci_lower": 1.06,
+              "ci_upper": 4.08
+            },
+            "analysis_n_or_events_as_shown_in_review": 1536,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_27466237",
+            "page": 11,
+            "source_type": "table",
+            "source_id": "Table 4 Continued",
+            "locator_note": "Exact estimate 2.08 (1.06-4.08); hint: peripheral.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 142,
+            "content_list_segment_index": 7,
+            "bbox": [
+              119,
+              64,
+              357,
+              921
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0005",
+      "article_id": "a_28379800",
+      "study_id": "s_28379800",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0005_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 2.17,
+            "ci_lower": 1.59,
+            "ci_upper": 2.97,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 2.17,
+            "ci_lower": 1.59,
+            "ci_upper": 2.97,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 2.17,
+              "ci_lower": 1.59,
+              "ci_upper": 2.97
+            },
+            "analysis_n_or_events_as_shown_in_review": 1902,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_28379800",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 3. Multivariable Models and Risk of Outcomes in the Highest versus the Lowest Quintile of Variability in Body Weight.",
+            "locator_note": "Exact estimate 2.17 (1.59-2.97); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 97,
+            "content_list_segment_index": 4,
+            "bbox": [
+              52,
+              654,
+              525,
+              808
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0005_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.04,
+            "ci_lower": 0.99,
+            "ci_upper": 1.1,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.04,
+            "ci_lower": 0.99,
+            "ci_upper": 1.1,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.04,
+              "ci_lower": 0.99,
+              "ci_upper": 1.1
+            },
+            "analysis_n_or_events_as_shown_in_review": 1902,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_28379800",
+            "page": 5,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.04 (0.99-1.1); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 61,
+            "content_list_segment_index": 6,
+            "bbox": [
+              132,
+              70,
+              396,
+              892
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0006",
+      "article_id": "a_28379800",
+      "study_id": "s_28379800",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0006_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 2.36,
+            "ci_lower": 1.56,
+            "ci_upper": 3.58,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 2.36,
+            "ci_lower": 1.56,
+            "ci_upper": 3.58,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 2.36,
+              "ci_lower": 1.56,
+              "ci_upper": 3.58
+            },
+            "analysis_n_or_events_as_shown_in_review": 1902,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_28379800",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 3. Multivariable Models and Risk of Outcomes in the Highest versus the Lowest Quintile of Variability in Body Weight.",
+            "locator_note": "Exact estimate 2.36 (1.56-3.58); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 97,
+            "content_list_segment_index": 5,
+            "bbox": [
+              52,
+              654,
+              525,
+              808
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0006_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.05,
+            "ci_lower": 0.97,
+            "ci_upper": 1.13,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.05,
+            "ci_lower": 0.97,
+            "ci_upper": 1.13,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.05,
+              "ci_lower": 0.97,
+              "ci_upper": 1.13
+            },
+            "analysis_n_or_events_as_shown_in_review": 1902,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_28379800",
+            "page": 5,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.05 (0.97-1.13); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 61,
+            "content_list_segment_index": 7,
+            "bbox": [
+              132,
+              70,
+              396,
+              892
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0007",
+      "article_id": "a_30571333",
+      "study_id": "s_30571333",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0007_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.01,
+            "ci_lower": 0.63,
+            "ci_upper": 1.63,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.01,
+            "ci_lower": 0.63,
+            "ci_upper": 1.62,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.01,
+              "ci_lower": 0.63,
+              "ci_upper": 1.63
+            },
+            "analysis_n_or_events_as_shown_in_review": 1282,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30571333",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 3. Risk of Outcomes in the Highest vs the Lowest Quintile of Variability in Body Weight",
+            "locator_note": "Exact estimate 1.01 (0.63-1.63); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 91,
+            "content_list_segment_index": 5,
+            "bbox": [
+              512,
+              690,
+              916,
+              846
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0007_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.13,
+            "ci_lower": 1.03,
+            "ci_upper": 1.25,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.13,
+            "ci_lower": 1.03,
+            "ci_upper": 1.24,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.13,
+              "ci_lower": 1.03,
+              "ci_upper": 1.25
+            },
+            "analysis_n_or_events_as_shown_in_review": 1282,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30571333",
+            "page": 4,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.13 (1.03-1.25); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 59,
+            "content_list_segment_index": 0,
+            "bbox": [
+              80,
+              595,
+              483,
+              762
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_cardiovascular_death",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0008",
+      "article_id": "a_30571333",
+      "study_id": "s_30571333",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0008_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.99,
+            "ci_lower": 1.33,
+            "ci_upper": 2.97,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.99,
+            "ci_lower": 1.33,
+            "ci_upper": 2.97,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.99,
+              "ci_lower": 1.33,
+              "ci_upper": 2.97
+            },
+            "analysis_n_or_events_as_shown_in_review": 1282,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30571333",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 3. Risk of Outcomes in the Highest vs the Lowest Quintile of Variability in Body Weight",
+            "locator_note": "Exact estimate 1.99 (1.33-2.97); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 91,
+            "content_list_segment_index": 6,
+            "bbox": [
+              512,
+              690,
+              916,
+              846
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0009",
+      "article_id": "a_30571333",
+      "study_id": "s_30571333",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0009_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.92,
+            "ci_lower": 1.15,
+            "ci_upper": 3.2,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.92,
+            "ci_lower": 1.15,
+            "ci_upper": 3.2,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.92,
+              "ci_lower": 1.15,
+              "ci_upper": 3.2
+            },
+            "analysis_n_or_events_as_shown_in_review": 1282,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30571333",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 3. Risk of Outcomes in the Highest vs the Lowest Quintile of Variability in Body Weight",
+            "locator_note": "Exact estimate 1.92 (1.15-3.2); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 91,
+            "content_list_segment_index": 7,
+            "bbox": [
+              512,
+              690,
+              916,
+              846
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0010",
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "coronary_artery_bypass",
+        "label": "Coronary artery bypass",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0010_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.9,
+            "ci_lower": 0.74,
+            "ci_upper": 1.09,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.9,
+            "ci_lower": 0.74,
+            "ci_upper": 1.09,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.9,
+              "ci_lower": 0.74,
+              "ci_upper": 1.09
+            },
+            "analysis_n_or_events_as_shown_in_review": 25144,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34446018",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2 Hazard ratios for each of the assessed outcome considering the entire cohort and separately males/females, along with the p for trend among quartiles for each outcome and the relative p for interaction for the sex-based subgroup analysis",
+            "locator_note": "Exact estimate 0.9 (0.74-1.09); hint: coronary.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 68,
+            "content_list_segment_index": 22,
+            "bbox": [
+              159,
+              107,
+              847,
+              917
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0011",
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "heart_failure",
+        "label": "Heart failure",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0011_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.43,
+            "ci_lower": 1.32,
+            "ci_upper": 1.55,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.43,
+            "ci_lower": 1.32,
+            "ci_upper": 1.55,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.43,
+              "ci_lower": 1.32,
+              "ci_upper": 1.55
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34446018",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.43 (1.32-1.55); hint: heart failure.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 49,
+            "content_list_segment_index": 0,
+            "bbox": [
+              504,
+              668,
+              907,
+              912
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0012",
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0012_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.12,
+            "ci_lower": 1.02,
+            "ci_upper": 1.23,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.12,
+            "ci_lower": 1.02,
+            "ci_upper": 1.23,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.12,
+              "ci_lower": 1.02,
+              "ci_upper": 1.23
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34446018",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2 Hazard ratios for each of the assessed outcome considering the entire cohort and separately males/females, along with the p for trend among quartiles for each outcome and the relative p for interaction for the sex-based subgroup analysis",
+            "locator_note": "Exact estimate 1.12 (1.02-1.23); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 68,
+            "content_list_segment_index": 13,
+            "bbox": [
+              159,
+              107,
+              847,
+              917
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0013",
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "peripheral_artery_disease",
+        "label": "Peripheral artery disease",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0013_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.55,
+            "ci_lower": 1.33,
+            "ci_upper": 1.81,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.55,
+            "ci_lower": 1.33,
+            "ci_upper": 1.81,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.55,
+              "ci_lower": 1.33,
+              "ci_upper": 1.81
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34446018",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.55 (1.33-1.81); hint: peripheral.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 49,
+            "content_list_segment_index": 0,
+            "bbox": [
+              504,
+              668,
+              907,
+              912
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0014",
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "percutaneous_coronary_intervention",
+        "label": "Percutaneous coronary intervention",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0014_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.0,
+            "ci_lower": 0.89,
+            "ci_upper": 1.12,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.0,
+            "ci_lower": 0.89,
+            "ci_upper": 1.12,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.0,
+              "ci_lower": 0.89,
+              "ci_upper": 1.12
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34446018",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2 Hazard ratios for each of the assessed outcome considering the entire cohort and separately males/females, along with the p for trend among quartiles for each outcome and the relative p for interaction for the sex-based subgroup analysis",
+            "locator_note": "Exact estimate 1 (0.89-1.12); hint: percutaneous.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 68,
+            "content_list_segment_index": 19,
+            "bbox": [
+              159,
+              107,
+              847,
+              917
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0015",
+      "article_id": "a_34446018",
+      "study_id": "s_34446018",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0015_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.24,
+            "ci_lower": 1.13,
+            "ci_upper": 1.37,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.24,
+            "ci_lower": 1.13,
+            "ci_upper": 1.37,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.24,
+              "ci_lower": 1.13,
+              "ci_upper": 1.37
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34446018",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.24 (1.13-1.37); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 49,
+            "content_list_segment_index": 0,
+            "bbox": [
+              504,
+              668,
+              907,
+              912
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0016",
+      "article_id": "a_33980955",
+      "study_id": "s_33980955",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "coronary_heart_disease",
+        "label": "Coronary heart disease",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0016_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.83,
+            "ci_lower": 0.7,
+            "ci_upper": 0.99,
+            "direction": "decreased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.83,
+            "ci_lower": 0.7,
+            "ci_upper": 0.99,
+            "direction": "decreased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.83,
+              "ci_lower": 0.7,
+              "ci_upper": 0.99
+            },
+            "analysis_n_or_events_as_shown_in_review": 1253,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33980955",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 0.83 (0.7-0.99); hint: coronary.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 38,
+            "content_list_segment_index": 11,
+            "bbox": [
+              67,
+              62,
+              929,
+              466
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0017",
+      "article_id": "a_33980955",
+      "study_id": "s_33980955",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0017_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.78,
+            "ci_lower": 0.32,
+            "ci_upper": 1.91,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.78,
+            "ci_lower": 0.32,
+            "ci_upper": 1.91,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.78,
+              "ci_lower": 0.32,
+              "ci_upper": 1.91
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33980955",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 0.78 (0.32-1.91); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 38,
+            "content_list_segment_index": 23,
+            "bbox": [
+              67,
+              62,
+              929,
+              466
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_cardiovascular_death"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0018",
+      "article_id": "a_33980955",
+      "study_id": "s_33980955",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0018_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.05,
+            "ci_lower": 0.91,
+            "ci_upper": 1.21,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.05,
+            "ci_lower": 0.91,
+            "ci_upper": 1.21,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.05,
+              "ci_lower": 0.91,
+              "ci_upper": 1.21
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33980955",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.05 (0.91-1.21); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 38,
+            "content_list_segment_index": 17,
+            "bbox": [
+              67,
+              62,
+              929,
+              466
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0019",
+      "article_id": "a_33397045",
+      "study_id": "s_33397045",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0019_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.17,
+            "ci_lower": 1.12,
+            "ci_upper": 1.22,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.17,
+            "ci_lower": 1.12,
+            "ci_upper": 1.22,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.17,
+              "ci_lower": 1.12,
+              "ci_upper": 1.22
+            },
+            "analysis_n_or_events_as_shown_in_review": 106115,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33397045",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.17 (1.12-1.22); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 5,
+            "content_list_segment_index": 0,
+            "bbox": [
+              63,
+              567,
+              931,
+              680
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0020",
+      "article_id": "a_33397045",
+      "study_id": "s_33397045",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0020_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.2,
+            "ci_lower": 1.16,
+            "ci_upper": 1.25,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.2,
+            "ci_lower": 1.16,
+            "ci_upper": 1.25,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.2,
+              "ci_lower": 1.16,
+              "ci_upper": 1.25
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33397045",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.2 (1.16-1.25); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 5,
+            "content_list_segment_index": 0,
+            "bbox": [
+              63,
+              567,
+              931,
+              680
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0021",
+      "article_id": "a_33911167",
+      "study_id": "s_33911167",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0021_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.09,
+            "ci_lower": 1.04,
+            "ci_upper": 1.15,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.09,
+            "ci_lower": 1.04,
+            "ci_upper": 1.15,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.09,
+              "ci_lower": 1.04,
+              "ci_upper": 1.15
+            },
+            "analysis_n_or_events_as_shown_in_review": 181677,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33911167",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 1. Baseline characteristics of study population according to VIM for body weight category. Data are presented as mean ± SD or number (percentage). aCentral obesity was defined as waist circumference ≥90 cm in men and ≥85 cm in women. bObesity was defined as BMI ≥25 kg/m².",
+            "locator_note": "Exact estimate 1.09 (1.04-1.15); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 63,
+            "content_list_segment_index": 5,
+            "bbox": [
+              258,
+              157,
+              870,
+              460
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0022",
+      "article_id": "a_33911167",
+      "study_id": "s_33911167",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0022_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.22,
+            "ci_lower": 1.17,
+            "ci_upper": 1.28,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.22,
+            "ci_lower": 1.17,
+            "ci_upper": 1.28,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.22,
+              "ci_lower": 1.17,
+              "ci_upper": 1.28
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33911167",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": "Table 2",
+            "locator_note": "Exact estimate 1.22 (1.17-1.28); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 50,
+            "content_list_segment_index": 0,
+            "bbox": [
+              260,
+              684,
+              931,
+              864
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0023",
+      "article_id": "a_31585180",
+      "study_id": "s_31585180",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "atrial_fibrillation",
+        "label": "Atrial fibrillation",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0023_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.14,
+            "ci_lower": 1.12,
+            "ci_upper": 1.15,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.14,
+            "ci_lower": 1.13,
+            "ci_upper": 1.16,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.14,
+              "ci_lower": 1.12,
+              "ci_upper": 1.15
+            },
+            "analysis_n_or_events_as_shown_in_review": 2022850,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31585180",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": "Figure 3",
+            "locator_note": "Exact estimate 1.14 (1.12-1.15); hint: atrial fibrillation.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 42,
+            "content_list_segment_index": 0,
+            "bbox": [
+              57,
+              516,
+              480,
+              685
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0023_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.049,
+            "ci_lower": 1.044,
+            "ci_upper": 1.053,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.05,
+            "ci_lower": 1.04,
+            "ci_upper": 1.05,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.049,
+              "ci_lower": 1.044,
+              "ci_upper": 1.053
+            },
+            "analysis_n_or_events_as_shown_in_review": 2022850,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31585180",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.049 (1.044-1.053); hint: atrial fibrillation.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 41,
+            "content_list_segment_index": 0,
+            "bbox": [
+              57,
+              439,
+              480,
+              514
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0024",
+      "article_id": "a_32534567",
+      "study_id": "s_32534567",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "atrial_fibrillation",
+        "label": "Atrial fibrillation",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0024_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.16,
+            "ci_lower": 1.12,
+            "ci_upper": 1.2,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.16,
+            "ci_lower": 1.12,
+            "ci_upper": 1.2,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.16,
+              "ci_lower": 1.12,
+              "ci_upper": 1.2
+            },
+            "analysis_n_or_events_as_shown_in_review": 134338,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_32534567",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.16 (1.12-1.2); hint: atrial fibrillation.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 8,
+            "content_list_segment_index": 0,
+            "bbox": [
+              97,
+              511,
+              892,
+              618
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0025",
+      "article_id": "a_34195237",
+      "study_id": "s_34195237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "atrial_fibrillation",
+        "label": "Atrial fibrillation",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0025_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.21,
+            "ci_lower": 0.79,
+            "ci_upper": 1.84,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.21,
+            "ci_lower": 0.79,
+            "ci_upper": 1.85,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.21,
+              "ci_lower": 0.79,
+              "ci_upper": 1.84
+            },
+            "analysis_n_or_events_as_shown_in_review": 849,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.21 (0.79-1.84); hint: atrial fibrillation.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 86,
+            "content_list_segment_index": 7,
+            "bbox": [
+              139,
+              323,
+              855,
+              514
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0025_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.09,
+            "ci_lower": 0.92,
+            "ci_upper": 1.29,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.09,
+            "ci_lower": 0.92,
+            "ci_upper": 1.29,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.09,
+              "ci_lower": 0.92,
+              "ci_upper": 1.29
+            },
+            "analysis_n_or_events_as_shown_in_review": 849,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "TABLE 2 | Risk of outcomes in per 1-SD change of body-weight variability.",
+            "locator_note": "Exact estimate 1.09 (0.92-1.29); hint: atrial fibrillation.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 85,
+            "content_list_segment_index": 7,
+            "bbox": [
+              70,
+              94,
+              927,
+              242
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0026",
+      "article_id": "a_34195237",
+      "study_id": "s_34195237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0026_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.02,
+            "ci_lower": 0.89,
+            "ci_upper": 1.61,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.02,
+            "ci_lower": 0.76,
+            "ci_upper": 1.37,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.02,
+              "ci_lower": 0.89,
+              "ci_upper": 1.61
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "material_target_review_discrepancy",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.02 (0.89-1.61); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 86,
+            "content_list_segment_index": 2,
+            "bbox": [
+              139,
+              323,
+              855,
+              514
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0026_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.0,
+            "ci_lower": 0.88,
+            "ci_upper": 1.14,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.0,
+            "ci_lower": 0.88,
+            "ci_upper": 1.14,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.0,
+              "ci_lower": 0.88,
+              "ci_upper": 1.14
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "TABLE 2 | Risk of outcomes in per 1-SD change of body-weight variability.",
+            "locator_note": "Exact estimate 1 (0.88-1.14); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 85,
+            "content_list_segment_index": 3,
+            "bbox": [
+              70,
+              94,
+              927,
+              242
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_cardiovascular_death",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0027",
+      "article_id": "a_34195237",
+      "study_id": "s_34195237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "heart_failure",
+        "label": "Heart failure",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0027_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.65,
+            "ci_lower": 1.33,
+            "ci_upper": 2.06,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.65,
+            "ci_lower": 1.33,
+            "ci_upper": 2.05,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.65,
+              "ci_lower": 1.33,
+              "ci_upper": 2.06
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.65 (1.33-2.06); hint: heart failure.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 86,
+            "content_list_segment_index": 4,
+            "bbox": [
+              139,
+              323,
+              855,
+              514
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0027_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.28,
+            "ci_lower": 1.19,
+            "ci_upper": 1.38,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.28,
+            "ci_lower": 1.19,
+            "ci_upper": 1.38,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.28,
+              "ci_lower": 1.19,
+              "ci_upper": 1.38
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "TABLE 2 | Risk of outcomes in per 1-SD change of body-weight variability.",
+            "locator_note": "Exact estimate 1.28 (1.19-1.38); hint: heart failure.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 85,
+            "content_list_segment_index": 5,
+            "bbox": [
+              70,
+              94,
+              927,
+              242
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028",
+      "article_id": "a_34195237",
+      "study_id": "s_34195237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.65,
+            "ci_lower": 1.06,
+            "ci_upper": 2.45,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.65,
+            "ci_lower": 1.09,
+            "ci_upper": 2.51,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.65,
+              "ci_lower": 1.06,
+              "ci_upper": 2.45
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "material_target_review_discrepancy",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.65 (1.06-2.45); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 86,
+            "content_list_segment_index": 3,
+            "bbox": [
+              139,
+              323,
+              855,
+              514
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0028_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.3,
+            "ci_lower": 1.09,
+            "ci_upper": 1.55,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.3,
+            "ci_lower": 1.09,
+            "ci_upper": 1.55,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.3,
+              "ci_lower": 1.09,
+              "ci_upper": 1.55
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "TABLE 2 | Risk of outcomes in per 1-SD change of body-weight variability.",
+            "locator_note": "Exact estimate 1.3 (1.09-1.55); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 85,
+            "content_list_segment_index": 4,
+            "bbox": [
+              70,
+              94,
+              927,
+              242
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction",
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0029",
+      "article_id": "a_2041550",
+      "study_id": "s_2041550",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "coronary_heart_disease",
+        "label": "Coronary heart disease",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "male",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0029_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.93,
+            "ci_lower": 1.35,
+            "ci_upper": 2.77,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.93,
+            "ci_lower": 1.35,
+            "ci_upper": 2.76,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.93,
+              "ci_lower": 1.35,
+              "ci_upper": 2.77
+            },
+            "analysis_n_or_events_as_shown_in_review": 456,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_2041550",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 4. Age-Adjusted Relative Risk of Each Outcome for the Subjects with the Highest Degree of Variability of Weight, as Compared with Those with the Least Variable Weights.*",
+            "locator_note": "Exact estimate 1.93 (1.35-2.77); hint: coronary.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 67,
+            "content_list_segment_index": 5,
+            "bbox": [
+              494,
+              128,
+              879,
+              354
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_cardiovascular_death"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0030",
+      "article_id": "a_2041550",
+      "study_id": "s_2041550",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "coronary_heart_disease",
+        "label": "Coronary heart disease",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "female",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0030_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.55,
+            "ci_lower": 1.09,
+            "ci_upper": 2.21,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.55,
+            "ci_lower": 1.09,
+            "ci_upper": 2.21,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.55,
+              "ci_lower": 1.09,
+              "ci_upper": 2.21
+            },
+            "analysis_n_or_events_as_shown_in_review": 601,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_2041550",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 4. Age-Adjusted Relative Risk of Each Outcome for the Subjects with the Highest Degree of Variability of Weight, as Compared with Those with the Least Variable Weights.*",
+            "locator_note": "Exact estimate 1.55 (1.09-2.21); hint: coronary.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 67,
+            "content_list_segment_index": 10,
+            "bbox": [
+              494,
+              128,
+              879,
+              354
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_cardiovascular_death"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0031",
+      "article_id": "a_29777238",
+      "study_id": "s_29777238",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0031_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.29,
+            "ci_lower": 1.06,
+            "ci_upper": 1.56,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.29,
+            "ci_lower": 1.06,
+            "ci_upper": 1.56,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.29,
+              "ci_lower": 1.06,
+              "ci_upper": 1.56
+            },
+            "analysis_n_or_events_as_shown_in_review": 31318,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_29777238",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.29 (1.06-1.56); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 11,
+            "content_list_segment_index": 0,
+            "bbox": [
+              80,
+              456,
+              915,
+              596
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_cardiovascular_death"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0032",
+      "article_id": "a_32641375",
+      "study_id": "s_32641375",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "myocardial_infarction",
+        "label": "Myocardial infarction",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0032_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.15,
+            "ci_lower": 1.1,
+            "ci_upper": 1.2,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.15,
+            "ci_lower": 1.1,
+            "ci_upper": 1.2,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.15,
+              "ci_lower": 1.1,
+              "ci_upper": 1.2
+            },
+            "analysis_n_or_events_as_shown_in_review": 156060,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_32641375",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.15 (1.1-1.2); hint: myocardial infarction.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 16,
+            "content_list_segment_index": 0,
+            "bbox": [
+              74,
+              677,
+              618,
+              783
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_myocardial_infarction"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0033",
+      "article_id": "a_32641375",
+      "study_id": "s_32641375",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "stroke",
+        "label": "Stroke",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0033_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.22,
+            "ci_lower": 1.18,
+            "ci_upper": 1.26,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.22,
+            "ci_lower": 1.18,
+            "ci_upper": 1.26,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.22,
+              "ci_lower": 1.18,
+              "ci_upper": 1.26
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_32641375",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.22 (1.18-1.26); hint: stroke.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 16,
+            "content_list_segment_index": 0,
+            "bbox": [
+              74,
+              677,
+              618,
+              783
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_any_cardiovascular_event",
+        "main_stroke"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0034",
+      "article_id": "a_10968377",
+      "study_id": "s_10968377",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.17,
+            "ci_lower": 1.08,
+            "ci_upper": 1.28,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.17,
+            "ci_lower": 1.07,
+            "ci_upper": 1.27,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.17,
+              "ci_lower": 1.08,
+              "ci_upper": 1.28
+            },
+            "analysis_n_or_events_as_shown_in_review": 256,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_10968377",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "TABLE 4. Relative risks of mortality from all causes and from cardiovascular disease, by follow-up period and by quintile of the standard deviation about the regression of body mass index, among 1,281 men aged 48-66 years in 1965-1966, Chicago Western Electric Company Study, 1958-1966",
+            "locator_note": "Exact estimate 1.17 (1.08-1.28); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 62,
+            "content_list_segment_index": 15,
+            "bbox": [
+              150,
+              123,
+              844,
+              434
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0035",
+      "article_id": "a_30553512",
+      "study_id": "s_30553512",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "heart_failure",
+        "label": "Heart failure",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0035_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.59,
+            "ci_lower": 1.45,
+            "ci_upper": 1.75,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.59,
+            "ci_lower": 1.45,
+            "ci_upper": 1.75,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.59,
+              "ci_lower": 1.45,
+              "ci_upper": 1.75
+            },
+            "analysis_n_or_events_as_shown_in_review": 2563,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30553512",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 3 Continuous body weight variability (per unit SD) and risk of outcomes",
+            "locator_note": "Exact estimate 1.59 (1.45-1.75); hint: heart failure.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 51,
+            "content_list_segment_index": 2,
+            "bbox": [
+              57,
+              107,
+              937,
+              197
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "sensitivity_per_sd_singular"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0036",
+      "article_id": "a_30507935",
+      "study_id": "s_30507935",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0036_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.62,
+            "ci_lower": 0.4,
+            "ci_upper": 0.95,
+            "direction": "decreased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.62,
+            "ci_lower": 0.4,
+            "ci_upper": 0.96,
+            "direction": "decreased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "OR",
+            "reported_effect": {
+              "effect_type": "OR",
+              "value": 0.62,
+              "ci_lower": 0.4,
+              "ci_upper": 0.95
+            },
+            "analysis_n_or_events_as_shown_in_review": 224,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30507935",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 5. Significant independent predictors of adverse cardiovascular outcome (all-cause death, non-fatal myocardial infarction, non-fatal stroke, heart failure hospitalization).",
+            "locator_note": "Exact estimate 0.62 (0.4-0.95); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 104,
+            "content_list_segment_index": 1,
+            "bbox": [
+              321,
+              691,
+              942,
+              832
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0037",
+      "article_id": "a_2041550",
+      "study_id": "s_2041550",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "female",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0037_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.38,
+            "ci_lower": 0.98,
+            "ci_upper": 1.94,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.78,
+            "ci_lower": 1.42,
+            "ci_upper": 2.22,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.38,
+              "ci_lower": 0.98,
+              "ci_upper": 1.94
+            },
+            "analysis_n_or_events_as_shown_in_review": 601,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "material_target_review_discrepancy",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_2041550",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 4. Age-Adjusted Relative Risk of Each Outcome for the Subjects with the Highest Degree of Variability of Weight, as Compared with Those with the Least Variable Weights.*",
+            "locator_note": "Exact estimate 1.38 (0.98-1.94); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 67,
+            "content_list_segment_index": 9,
+            "bbox": [
+              494,
+              128,
+              879,
+              354
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0038",
+      "article_id": "a_2041550",
+      "study_id": "s_2041550",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "male",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0038_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.78,
+            "ci_lower": 1.32,
+            "ci_upper": 2.39,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.38,
+            "ci_lower": 0.98,
+            "ci_upper": 1.94,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.78,
+              "ci_lower": 1.32,
+              "ci_upper": 2.39
+            },
+            "analysis_n_or_events_as_shown_in_review": 456,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "material_target_review_discrepancy",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_2041550",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 4. Age-Adjusted Relative Risk of Each Outcome for the Subjects with the Highest Degree of Variability of Weight, as Compared with Those with the Least Variable Weights.*",
+            "locator_note": "Exact estimate 1.78 (1.32-2.39); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 67,
+            "content_list_segment_index": 4,
+            "bbox": [
+              494,
+              128,
+              879,
+              354
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0039",
+      "article_id": "a_34195237",
+      "study_id": "s_34195237",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0039_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.62,
+            "ci_lower": 1.34,
+            "ci_upper": 1.96,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.62,
+            "ci_lower": 1.34,
+            "ci_upper": 1.96,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.62,
+              "ci_lower": 1.34,
+              "ci_upper": 1.96
+            },
+            "analysis_n_or_events_as_shown_in_review": 849,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.62 (1.34-1.96); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 86,
+            "content_list_segment_index": 1,
+            "bbox": [
+              139,
+              323,
+              855,
+              514
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0039_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.23,
+            "ci_lower": 1.15,
+            "ci_upper": 1.33,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.23,
+            "ci_lower": 1.14,
+            "ci_upper": 1.32,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.23,
+              "ci_lower": 1.15,
+              "ci_upper": 1.33
+            },
+            "analysis_n_or_events_as_shown_in_review": 849,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_34195237",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "TABLE 2 | Risk of outcomes in per 1-SD change of body-weight variability.",
+            "locator_note": "Exact estimate 1.23 (1.15-1.33); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 85,
+            "content_list_segment_index": 2,
+            "bbox": [
+              70,
+              94,
+              927,
+              242
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome",
+        "sensitivity_per_sd_composite"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0040",
+      "article_id": "a_33980955",
+      "study_id": "s_33980955",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0040_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.95,
+            "ci_lower": 0.85,
+            "ci_upper": 1.06,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.95,
+            "ci_lower": 0.85,
+            "ci_upper": 1.06,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.95,
+              "ci_lower": 0.85,
+              "ci_upper": 1.06
+            },
+            "analysis_n_or_events_as_shown_in_review": 1253,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33980955",
+            "page": 4,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 0.95 (0.85-1.06); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 38,
+            "content_list_segment_index": 5,
+            "bbox": [
+              67,
+              62,
+              929,
+              466
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0041",
+      "article_id": "a_31266987",
+      "study_id": "s_31266987",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.31,
+            "ci_lower": 1.12,
+            "ci_upper": 1.53,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.31,
+            "ci_lower": 1.12,
+            "ci_upper": 1.53,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.31,
+              "ci_lower": 1.12,
+              "ci_upper": 1.53
+            },
+            "analysis_n_or_events_as_shown_in_review": 48128,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31266987",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.31 (1.12-1.53); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 7,
+            "content_list_segment_index": 0,
+            "bbox": [
+              253,
+              337,
+              934,
+              521
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0042",
+      "article_id": "a_30571333",
+      "study_id": "s_30571333",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0042_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.75,
+            "ci_lower": 1.44,
+            "ci_upper": 2.13,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.75,
+            "ci_lower": 1.44,
+            "ci_upper": 2.13,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.75,
+              "ci_lower": 1.44,
+              "ci_upper": 2.13
+            },
+            "analysis_n_or_events_as_shown_in_review": 1282,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30571333",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 3. Risk of Outcomes in the Highest vs the Lowest Quintile of Variability in Body Weight",
+            "locator_note": "Exact estimate 1.75 (1.44-2.13); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 91,
+            "content_list_segment_index": 3,
+            "bbox": [
+              512,
+              690,
+              916,
+              846
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0042_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.08,
+            "ci_lower": 1.03,
+            "ci_upper": 1.14,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.08,
+            "ci_lower": 1.03,
+            "ci_upper": 1.14,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.08,
+              "ci_lower": 1.03,
+              "ci_upper": 1.14
+            },
+            "analysis_n_or_events_as_shown_in_review": 1282,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30571333",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.08 (1.03-1.14); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 3,
+            "content_list_segment_index": 0,
+            "bbox": [
+              78,
+              367,
+              680,
+              685
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome",
+        "sensitivity_per_sd_composite"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0043",
+      "article_id": "a_28379800",
+      "study_id": "s_28379800",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0043_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.85,
+            "ci_lower": 1.62,
+            "ci_upper": 2.11,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.85,
+            "ci_lower": 1.62,
+            "ci_upper": 2.11,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.85,
+              "ci_lower": 1.62,
+              "ci_upper": 2.11
+            },
+            "analysis_n_or_events_as_shown_in_review": 1902,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_28379800",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 3. Multivariable Models and Risk of Outcomes in the Highest versus the Lowest Quintile of Variability in Body Weight.",
+            "locator_note": "Exact estimate 1.85 (1.62-2.11); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 97,
+            "content_list_segment_index": 2,
+            "bbox": [
+              52,
+              654,
+              525,
+              808
+            ]
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0043_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.04,
+            "ci_lower": 1.02,
+            "ci_upper": 1.07,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.04,
+            "ci_lower": 1.02,
+            "ci_upper": 1.07,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.04,
+              "ci_lower": 1.02,
+              "ci_upper": 1.07
+            },
+            "analysis_n_or_events_as_shown_in_review": 1902,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_28379800",
+            "page": 5,
+            "source_type": "table",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.04 (1.02-1.07); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 61,
+            "content_list_segment_index": 4,
+            "bbox": [
+              132,
+              70,
+              396,
+              892
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_composite_cardiovascular_outcome",
+        "sensitivity_per_sd_composite"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0044",
+      "article_id": "a_30553512",
+      "study_id": "s_30553512",
+      "exposure_measure": "body_weight_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0044_sd",
+          "estimand": "per_1_sd_variability",
+          "comparison": "per 1 standard-deviation increase in variability",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.25,
+            "ci_lower": 1.15,
+            "ci_upper": 1.36,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.25,
+            "ci_lower": 1.15,
+            "ci_upper": 1.36,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.25,
+              "ci_lower": 1.15,
+              "ci_upper": 1.36
+            },
+            "analysis_n_or_events_as_shown_in_review": 2563,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30553512",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.25 (1.15-1.36); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 3,
+            "content_list_segment_index": 0,
+            "bbox": [
+              164,
+              169,
+              833,
+              468
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "sensitivity_per_sd_composite"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0045",
+      "article_id": "a_29216261",
+      "study_id": "s_29216261",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0045_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.08,
+            "ci_lower": 0.97,
+            "ci_upper": 1.21,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.08,
+            "ci_lower": 0.97,
+            "ci_upper": 1.21,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.08,
+              "ci_lower": 0.97,
+              "ci_upper": 1.21
+            },
+            "analysis_n_or_events_as_shown_in_review": 137926,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_29216261",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 5. Adjusted hazard ratios for all-cause, cardiovascular, and non-cardiovascular mortality according to weight change category.",
+            "locator_note": "Exact estimate 1.08 (0.97-1.21); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 95,
+            "content_list_segment_index": 13,
+            "bbox": [
+              53,
+              109,
+              942,
+              474
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0046",
+      "article_id": "a_30874785",
+      "study_id": "s_30874785",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cerebrovascular_death",
+        "label": "Cerebrovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0046_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.02,
+            "ci_lower": 0.61,
+            "ci_upper": 1.73,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.02,
+            "ci_lower": 0.61,
+            "ci_upper": 1.72,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.02,
+              "ci_lower": 0.61,
+              "ci_upper": 1.73
+            },
+            "analysis_n_or_events_as_shown_in_review": 756,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30874785",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4. Relative Risks (95% CIs) From Cox Proportional Hazards Regression Model Fits to Quintiles of Residual BMI Variability (RMSE) From Linear-Quadratic-Cubic Baseline BMI Trajectories",
+            "locator_note": "Exact estimate 1.02 (0.61-1.73); hint: cerebrovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 111,
+            "content_list_segment_index": 4,
+            "bbox": [
+              73,
+              723,
+              921,
+              852
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0047",
+      "article_id": "a_30874785",
+      "study_id": "s_30874785",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0047_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.75,
+            "ci_lower": 1.03,
+            "ci_upper": 3.0,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.75,
+            "ci_lower": 1.03,
+            "ci_upper": 2.99,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.75,
+              "ci_lower": 1.03,
+              "ci_upper": 3.0
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30874785",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4. Relative Risks (95% CIs) From Cox Proportional Hazards Regression Model Fits to Quintiles of Residual BMI Variability (RMSE) From Linear-Quadratic-Cubic Baseline BMI Trajectories",
+            "locator_note": "Exact estimate 1.75 (1.03-3); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 111,
+            "content_list_segment_index": 5,
+            "bbox": [
+              73,
+              723,
+              921,
+              852
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0048",
+      "article_id": "a_30874785",
+      "study_id": "s_30874785",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "ischemic_heart_disease_death",
+        "label": "Ischemic heart disease death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0048_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 3.27,
+            "ci_lower": 1.47,
+            "ci_upper": 7.31,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 3.27,
+            "ci_lower": 1.47,
+            "ci_upper": 7.29,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 3.27,
+              "ci_lower": 1.47,
+              "ci_upper": 7.31
+            },
+            "analysis_n_or_events_as_shown_in_review": null,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "rounding_or_transcription_difference",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_30874785",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4. Relative Risks (95% CIs) From Cox Proportional Hazards Regression Model Fits to Quintiles of Residual BMI Variability (RMSE) From Linear-Quadratic-Cubic Baseline BMI Trajectories",
+            "locator_note": "Exact estimate 3.27 (1.47-7.31); hint: ischemic.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 111,
+            "content_list_segment_index": 3,
+            "bbox": [
+              73,
+              723,
+              921,
+              852
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0049",
+      "article_id": "a_15847242",
+      "study_id": "s_15847242",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0049_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.48,
+            "ci_lower": 1.0,
+            "ci_upper": 2.19,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.48,
+            "ci_lower": 1.0,
+            "ci_upper": 2.19,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.48,
+              "ci_lower": 1.0,
+              "ci_upper": 2.19
+            },
+            "analysis_n_or_events_as_shown_in_review": 1026,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_15847242",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "TABLE 3 Hazards Ratios for Cardiovascular Mortality",
+            "locator_note": "Exact estimate 1.48 (1-2.19); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 48,
+            "content_list_segment_index": 7,
+            "bbox": [
+              242,
+              145,
+              797,
+              884
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0050",
+      "article_id": "a_29777238",
+      "study_id": "s_29777238",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "overall",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0050_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.21,
+            "ci_lower": 1.0,
+            "ci_upper": 1.47,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.21,
+            "ci_lower": 1.0,
+            "ci_upper": 1.47,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.21,
+              "ci_lower": 1.0,
+              "ci_upper": 1.47
+            },
+            "analysis_n_or_events_as_shown_in_review": 31318,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_29777238",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.21 (1-1.47); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 11,
+            "content_list_segment_index": 0,
+            "bbox": [
+              80,
+              456,
+              915,
+              596
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0051",
+      "article_id": "a_31025893",
+      "study_id": "s_31025893",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "incident_hypertension",
+        "label": "Incident hypertension",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "variable_non_obese",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0051_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.74,
+            "ci_lower": 1.29,
+            "ci_upper": 2.34,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.74,
+            "ci_lower": 1.29,
+            "ci_upper": 2.34,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.74,
+              "ci_lower": 1.29,
+              "ci_upper": 2.34
+            },
+            "analysis_n_or_events_as_shown_in_review": 308,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31025893",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4. Associations of Obesity, Metabolic Health Status, and Variability of BMI and Metabolic Health With Risk of Incident Diabetes Mellitus and Hypertension: Framingham Offspring Examination Cycle 4-Examination Cycle 9",
+            "locator_note": "Exact estimate 1.74 (1.29-2.34); hint: hypertension.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 105,
+            "content_list_segment_index": 4,
+            "bbox": [
+              71,
+              604,
+              919,
+              832
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0052",
+      "article_id": "a_31025893",
+      "study_id": "s_31025893",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "incident_hypertension",
+        "label": "Incident hypertension",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "variable_obese",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0052_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 2.31,
+            "ci_lower": 1.45,
+            "ci_upper": 3.68,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 2.31,
+            "ci_lower": 1.45,
+            "ci_upper": 3.68,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 2.31,
+              "ci_lower": 1.45,
+              "ci_upper": 3.68
+            },
+            "analysis_n_or_events_as_shown_in_review": 156,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31025893",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4. Associations of Obesity, Metabolic Health Status, and Variability of BMI and Metabolic Health With Risk of Incident Diabetes Mellitus and Hypertension: Framingham Offspring Examination Cycle 4-Examination Cycle 9",
+            "locator_note": "Exact estimate 2.31 (1.45-3.68); hint: hypertension.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 105,
+            "content_list_segment_index": 6,
+            "bbox": [
+              71,
+              604,
+              919,
+              832
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0053",
+      "article_id": "a_12456229",
+      "study_id": "s_12456229",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "gain_then_loss",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0053_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.44,
+            "ci_lower": 1.02,
+            "ci_upper": 2.04,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.44,
+            "ci_lower": 1.02,
+            "ci_upper": 2.04,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.44,
+              "ci_lower": 1.02,
+              "ci_upper": 2.04
+            },
+            "analysis_n_or_events_as_shown_in_review": 361,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_12456229",
+            "page": 3,
+            "source_type": "table",
+            "source_id": "Table 2. Age-Adjusted Rates and Adjusted RRs for Mortality in 5608 Middle-aged Men According to Weight Change Category*",
+            "locator_note": "Exact estimate 1.44 (1.02-2.04); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 53,
+            "content_list_segment_index": 13,
+            "bbox": [
+              117,
+              272,
+              879,
+              551
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0054",
+      "article_id": "a_12456229",
+      "study_id": "s_12456229",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "loss_then_gain",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0054_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 1.45,
+            "ci_lower": 0.98,
+            "ci_upper": 2.15,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.45,
+            "ci_lower": 0.98,
+            "ci_upper": 2.15,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "RR",
+            "reported_effect": {
+              "effect_type": "RR",
+              "value": 1.45,
+              "ci_lower": 0.98,
+              "ci_upper": 2.15
+            },
+            "analysis_n_or_events_as_shown_in_review": 479,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_12456229",
+            "page": 3,
+            "source_type": "table",
+            "source_id": "Table 2. Age-Adjusted Rates and Adjusted RRs for Mortality in 5608 Middle-aged Men According to Weight Change Category*",
+            "locator_note": "Exact estimate 1.45 (0.98-2.15); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 53,
+            "content_list_segment_index": 12,
+            "bbox": [
+              117,
+              272,
+              879,
+              551
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0055",
+      "article_id": "a_33355207",
+      "study_id": "s_33355207",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "without_diabetes",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0055_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.93,
+            "ci_lower": 0.81,
+            "ci_upper": 1.06,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.93,
+            "ci_lower": 0.81,
+            "ci_upper": 1.06,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.93,
+              "ci_lower": 0.81,
+              "ci_upper": 1.06
+            },
+            "analysis_n_or_events_as_shown_in_review": 498,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33355207",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2 The effect of variability level on CVD incidence",
+            "locator_note": "Exact estimate 0.93 (0.81-1.06); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 88,
+            "content_list_segment_index": 19,
+            "bbox": [
+              67,
+              79,
+              929,
+              491
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056",
+      "article_id": "a_33355207",
+      "study_id": "s_33355207",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "cardiovascular_death",
+        "label": "Cardiovascular death",
+        "outcome_class": "singular"
+      },
+      "population_or_subgroup": "with_diabetes",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.51,
+            "ci_lower": 1.04,
+            "ci_upper": 2.2,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.51,
+            "ci_lower": 1.04,
+            "ci_upper": 2.2,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.51,
+              "ci_lower": 1.04,
+              "ci_upper": 2.2
+            },
+            "analysis_n_or_events_as_shown_in_review": 13827,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_33355207",
+            "page": 4,
+            "source_type": "paragraph",
+            "source_id": null,
+            "locator_note": "Exact estimate 1.51 (1.04-2.2); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 81,
+            "content_list_segment_index": 0,
+            "bbox": [
+              507,
+              828,
+              929,
+              935
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_singular_figure_s2a"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0057",
+      "article_id": "a_31025893",
+      "study_id": "s_31025893",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "variable_non_obese",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0057_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 0.87,
+            "ci_lower": 0.61,
+            "ci_upper": 1.24,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.87,
+            "ci_lower": 0.61,
+            "ci_upper": 1.24,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 0.87,
+              "ci_lower": 0.61,
+              "ci_upper": 1.24
+            },
+            "analysis_n_or_events_as_shown_in_review": 37,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31025893",
+            "page": 9,
+            "source_type": "table",
+            "source_id": "Table 5. Associations of Obesity, Metabolic Health Status, and Variability of BMI and Metabolic Health With Risk of Incident CVD and CKD: Framingham Offspring Examination Cycle 4-Examination Cycle 9",
+            "locator_note": "Exact estimate 0.87 (0.61-1.24); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 111,
+            "content_list_segment_index": 4,
+            "bbox": [
+              71,
+              104,
+              919,
+              333
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_composite_unpooled"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0058",
+      "article_id": "a_31025893",
+      "study_id": "s_31025893",
+      "exposure_measure": "bmi_variability",
+      "outcome": {
+        "code": "composite_cardiovascular_outcome",
+        "label": "Composite cardiovascular outcome",
+        "outcome_class": "composite"
+      },
+      "population_or_subgroup": "variable_obese",
+      "timepoint": "longest eligible follow-up reported",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0058_hvl",
+          "estimand": "highest_vs_lowest_variability",
+          "comparison": "highest versus lowest variability category",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.33,
+            "ci_lower": 0.97,
+            "ci_upper": 1.83,
+            "direction": "no_clear_difference"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 1.33,
+            "ci_lower": 0.97,
+            "ci_upper": 1.83,
+            "direction": "no_clear_difference"
+          },
+          "source_data": {
+            "data_type": "adjusted_effect_estimate",
+            "reported_effect_type": "HR",
+            "reported_effect": {
+              "effect_type": "HR",
+              "value": 1.33,
+              "ci_lower": 0.97,
+              "ci_upper": 1.83
+            },
+            "analysis_n_or_events_as_shown_in_review": 50,
+            "selection_rule": "most-adjusted eligible model used by target review"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "used_effect_from_source_article",
+            "end_to_end_pooled_scoring_basis": "published_target_review_result"
+          },
+          "source_location": {
+            "document_id": "a_31025893",
+            "page": 9,
+            "source_type": "table",
+            "source_id": "Table 5. Associations of Obesity, Metabolic Health Status, and Variability of BMI and Metabolic Health With Risk of Incident CVD and CKD: Framingham Offspring Examination Cycle 4-Examination Cycle 9",
+            "locator_note": "Exact estimate 1.33 (0.97-1.83); hint: cardiovascular.",
+            "locator_status": "verified",
+            "locator_method": "content_list_exact_numbers_item_match",
+            "content_list_item_index": 111,
+            "content_list_segment_index": 6,
+            "bbox": [
+              71,
+              104,
+              919,
+              333
+            ]
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "bmi_composite_unpooled"
+      ]
+    }
+  ],
+  "summary": {
+    "included_articles": 23,
+    "report_units": 58,
+    "singular_report_units": 47,
+    "composite_report_units": 11,
+    "effect_estimates": 69
+  }
+}

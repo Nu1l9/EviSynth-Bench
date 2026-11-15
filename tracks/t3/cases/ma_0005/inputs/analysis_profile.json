@@ -1,0 +1,36 @@
+{
+  "case_id": "ma_0005",
+  "analysis_profile_id": "ma_0005_preterm_birth_lt35_analysis_profile_v1",
+  "scope": "Single pre-specified primary aggregate-data synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_preterm_birth_lt35_weeks",
+      "pooled_result_id": "pr_0005_primary_preterm_birth_lt35_weeks",
+      "outcome_group": "Preterm birth before 35 weeks after adjuvant 17-OHPC plus ultrasound-indicated cerclage",
+      "target_id": "preterm_birth_lt35_weeks",
+      "eligible_outcome_codes": [
+        "preterm_birth_lt35_weeks"
+      ],
+      "eligible_data_families": [
+        "binary_arm_outcome"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "adjuvant_17_ohpc_plus_uic_vs_uic_alone_preterm_birth_risk_ratio"
+      ],
+      "timepoint_policy": "Select delivery before 35 completed weeks. Do not invert a source endpoint that reports delivery at or after 35 weeks, and do not substitute another gestational threshold.",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select a candidate only when its source-reported population is specifically ultrasound-indicated cerclage, its binary outcome is preterm birth before 35 completed weeks, and its required numeric fields are complete.",
+          "Exclude records for a different endpoint direction, a different gestational threshold, or an outcome table that combines ultrasound-indicated and physical-examination-indicated cerclage populations.",
+          "Do not use target-review forest rows, review totals, article-specific labels, or target combined effects."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

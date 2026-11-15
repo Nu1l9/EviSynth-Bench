@@ -1,0 +1,262 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0011",
+  "task_type": "extraction",
+  "gold_id": "ma_0011_extraction_gold_v1",
+  "applies_to_task_ids": [
+    "ma_0011_extraction_all_reports_v1",
+    "ma_0011_end_to_end_extraction_analysis_v1"
+  ],
+  "provenance": {
+    "target_review_document_id": "review_ma_0011",
+    "target_supplement_document_id": null,
+    "annotation_status": "adjudicated",
+    "source_figures": [
+      "Figure 1"
+    ]
+  },
+  "unit_definition": "One source-supported, adjudicated continuous time-to-event effect per included report. The reported effect retains the source exposure scale and adjustment set; no unit standardization is performed.",
+  "report_units": [
+    {
+      "report_unit_id": "ru_011001_cardiac_event",
+      "article_id": "a_011001",
+      "study_id": "s_011001",
+      "target_id": "adverse_cardiac_event",
+      "data_family": "time_to_event",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "NAFLD fibrosis score",
+      "outcome": {
+        "code": "adverse_cardiac_event",
+        "label": "Cardiovascular death or rehospitalization for worsening heart failure",
+        "outcome_class": "composite_time_to_event"
+      },
+      "population_or_subgroup": "516 hospitalized patients with chronic heart failure",
+      "timepoint": "median follow-up 464 days (IQR 108 to 962 days)",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_011001_adjusted_nfs",
+          "estimand": "adjusted_continuous_exposure_association",
+          "comparison": "Per one-unit increase in NAFLD fibrosis score",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.124,
+            "ci_lower": 1.012,
+            "ci_upper": 1.249,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "HR",
+            "value": 1.12,
+            "ci_lower": 1.01,
+            "ci_upper": 1.25,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_hazard_ratio",
+            "effect_value": 1.124,
+            "ci_lower": 1.012,
+            "ci_upper": 1.249,
+            "exposure_unit": "per one-unit increase in NAFLD fibrosis score",
+            "adjustment_set": "NYHA functional class, hemoglobin, estimated glomerular filtration rate, and log BNP"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent_after_rounding",
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "random_effects_log_hr_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_011001",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Multivariate NFS HR 1.124 (95% CI 1.012 to 1.249).",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_adverse_cardiac_events"
+      ]
+    },
+    {
+      "report_unit_id": "ru_011002_cardiac_event",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "adverse_cardiac_event",
+      "data_family": "time_to_event",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "liver stiffness by transient elastography",
+      "outcome": {
+        "code": "adverse_cardiac_event",
+        "label": "Cardiac death or heart-failure rehospitalization",
+        "outcome_class": "composite_time_to_event"
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure assessed before discharge",
+      "timepoint": "median follow-up 203 days (IQR 67 to 429 days)",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_011002_adjusted_ls",
+          "estimand": "adjusted_continuous_exposure_association",
+          "comparison": "Per 1-kPa increase in liver stiffness",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.12,
+            "ci_lower": 1.08,
+            "ci_upper": 1.16,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "HR",
+            "value": 1.12,
+            "ci_lower": 1.08,
+            "ci_upper": 1.16,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_hazard_ratio",
+            "effect_value": 1.12,
+            "ci_lower": 1.08,
+            "ci_upper": 1.16,
+            "exposure_unit": "per 1-kPa increase in liver stiffness",
+            "adjustment_set": "age, sex, systemic organ functions: estimated glomerular filtration rate and total bilirubin (Model 5)"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "random_effects_log_hr_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_011002",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Model 5, liver stiffness per 1-kPa: HR 1.12 (95% CI 1.08 to 1.16).",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_adverse_cardiac_events"
+      ]
+    },
+    {
+      "report_unit_id": "ru_011003_all_cause_mortality",
+      "article_id": "a_011003",
+      "study_id": "s_011003",
+      "target_id": "all_cause_mortality",
+      "data_family": "time_to_event",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "fibrosis-4 index",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "time_to_event"
+      },
+      "population_or_subgroup": "1,058 patients with heart failure",
+      "timepoint": "source follow-up; exact duration not used in the main analysis",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_011003_adjusted_fib4",
+          "estimand": "adjusted_continuous_exposure_association",
+          "comparison": "Per one-unit increase in fibrosis-4 index",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.127,
+            "ci_lower": 1.018,
+            "ci_upper": 1.253,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "reported_adjusted_hazard_ratio",
+            "effect_value": 1.127,
+            "ci_lower": 1.018,
+            "ci_upper": 1.253,
+            "exposure_unit": "per one-unit increase in fibrosis-4 index",
+            "adjustment_set": "sex, body mass index, NYHA class, ischemic etiology, hypertension, diabetes, dyslipidemia, atrial fibrillation, hemoglobin, estimated glomerular filtration rate, sodium, B-type natriuretic peptide, left ventricular ejection fraction, renin-angiotensin-aldosterone inhibitors, beta-blockers, diuretics, and inotropic agents"
+          },
+          "adjudication": {
+            "source_vs_target_review": "not_part_of_adverse_cardiac_event_pool",
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "not_pooled"
+          },
+          "source_location": {
+            "document_id": "a_011003",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 3",
+            "locator_note": "Adjusted continuous fibrosis-4 index HR 1.127 (95% CI 1.018 to 1.253) for all-cause mortality.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_011004_cardiac_event",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "adverse_cardiac_event",
+      "data_family": "time_to_event",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "natural-log liver stiffness by transient elastography",
+      "outcome": {
+        "code": "adverse_cardiac_event",
+        "label": "Death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": "composite_time_to_event"
+      },
+      "population_or_subgroup": "105 patients with acute decompensated heart failure",
+      "timepoint": "median follow-up 153 days (IQR 83 to 231 days)",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_011004_adjusted_ln_ls",
+          "estimand": "adjusted_continuous_exposure_association",
+          "comparison": "Per 1.0 increase in natural-log liver stiffness",
+          "used_effect": {
+            "effect_type": "HR",
+            "value": 1.71,
+            "ci_lower": 1.18,
+            "ci_upper": 2.5,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "HR",
+            "value": 1.71,
+            "ci_lower": 1.18,
+            "ci_upper": 2.48,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_hazard_ratio",
+            "effect_value": 1.71,
+            "ci_lower": 1.18,
+            "ci_upper": 2.5,
+            "exposure_unit": "per 1.0 increase in natural-log liver stiffness",
+            "adjustment_set": "age, sex, and natural-log NT-proBNP (Model 1)"
+          },
+          "adjudication": {
+            "source_vs_target_review": "minor_target_review_ci_transcription_difference",
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "random_effects_log_hr_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_011004",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 4",
+            "locator_note": "Model 1 ln(liver stiffness) HR 1.71 (95% CI 1.18 to 2.50).",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_adverse_cardiac_events"
+      ]
+    }
+  ],
+  "supplementary_unscored_source_findings": []
+}

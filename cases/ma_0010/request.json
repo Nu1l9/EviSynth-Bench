@@ -1,0 +1,345 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0010",
+  "topic": "Among case-control genetic association studies, is the IL17F rs763780 heterozygote associated with rheumatoid arthritis case status relative to the study's common homozygote?",
+  "protocol": {
+    "protocol_id": "ma_0010_rs763780_heterozygote_protocol_v1",
+    "case_id": "ma_0010",
+    "pico": {
+      "population": "Rheumatoid arthritis cases and healthy controls",
+      "intervention_or_exposure": "IL17F rs763780 heterozygote genotype",
+      "comparison": "Source-reported common homozygote genotype",
+      "outcome": "Rheumatoid arthritis case status"
+    },
+    "eligible_study_designs": [
+      "case-control genetic association study"
+    ],
+    "targets": [
+      {
+        "target_id": "il17f_rs763780_heterozygote_vs_common_homozygote",
+        "outcome": "Rheumatoid arthritis case status",
+        "comparison": "IL17F rs763780 heterozygote versus the source-reported common homozygote",
+        "population_or_subgroup": "Rheumatoid arthritis cases and healthy controls",
+        "timepoint_policy": {
+          "rule": "Use the genotype distribution reported for the study case and control samples; preserve the source's nucleotide nomenclature."
+        },
+        "accepted_data_families": [
+          "complete_genotype_case_control_counts"
+        ],
+        "preferred_effect_measures": [
+          "OR"
+        ],
+        "estimands": [
+          "rheumatoid_arthritis_odds_for_rs763780_heterozygote_vs_source_common_homozygote"
+        ],
+        "effect_selection_rule": null,
+        "extraction_notes": []
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_rs763780_heterozygote",
+      "outcome_group": "Rheumatoid arthritis odds for IL17F rs763780 heterozygote versus source-common homozygote",
+      "target_id": "il17f_rs763780_heterozygote_vs_common_homozygote",
+      "eligible_outcome_codes": [
+        "rheumatoid_arthritis_case_status"
+      ],
+      "eligible_data_families": [
+        "complete_genotype_case_control_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "rheumatoid_arthritis_odds_for_rs763780_heterozygote_vs_source_common_homozygote"
+      ],
+      "selection_rules": [
+        "Select one complete case/control rs763780 genotype distribution when it compares a heterozygote with the source-reported common homozygote and provides calculator-complete counts.",
+        "Preserve source nucleotide labels; selection is based on rsid and genotype role, not an assumed universal A/G or T/C label.",
+        "Do not use target-review forest estimates or source studies without a complete genotype distribution for this contrast.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use the genotype distribution reported for the study case and control samples; preserve the source's nucleotide nomenclature."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_odds_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Rheumatoid arthritis odds for IL17F rs763780 heterozygote versus source-common homozygote"
+      ],
+      "exposure": {
+        "terms": [
+          "IL17F rs763780 heterozygote genotype"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "IL17F rs763780 heterozygote versus the source-reported common homozygote"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Rheumatoid arthritis cases and healthy controls"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use the genotype distribution reported for the study case and control samples; preserve the source's nucleotide nomenclature.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "A Comprehensive Review and Update on the Pathogenesis of Inflammatory Bowel Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_001.pdf"
+      },
+      "doi": "10.1155/2019/7247238"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Association study of single nucleotide polymorphisms of IL23R and IL17 in rheumatoid arthritis in the Algerian population",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_002.pdf"
+      },
+      "doi": null
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Interleukin (IL)-23 Receptor, IL-17A and IL-17F Gene Polymorphisms in Brazilian Patients with Rheumatoid Arthritis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_003.pdf"
+      },
+      "genotype_contrast": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "source_note": "The supplied source table reports the prespecified rs763780 contrast as AG heterozygote versus AA common homozygote; role labels are retained from the source protocol, not inferred from counts."
+      },
+      "doi": "10.1007/s00005-017-0473-7"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Cytokines in Systemic Lupus Erythematosus—Focus on TNF-α and IL-17",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_004.pdf"
+      },
+      "doi": "10.3390/ijms241914413"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "IL-17A, IL-17F and IL-23R Gene Polymorphisms in Polish Patients with Rheumatoid Arthritis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_005.pdf"
+      },
+      "genotype_contrast": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "source_note": "The supplied source table reports the prespecified rs763780 contrast as AG heterozygote versus AA common homozygote; role labels are retained from the source protocol, not inferred from counts."
+      },
+      "doi": "10.1007/s00005-014-0319-5"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Role of the IL-23/IL-17 Pathway in Rheumatic Diseases: An Overview",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_006.pdf"
+      },
+      "doi": "10.3389/fimmu.2021.637829"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "IL17A and IL17F gene polymorphisms in patients with rheumatoid arthritis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_007.pdf"
+      },
+      "genotype_contrast": {
+        "rsid": "rs763780",
+        "heterozygote_label": "CT",
+        "common_homozygote_label": "TT",
+        "source_note": "The supplied source table reports the prespecified rs763780 contrast as CT heterozygote versus TT common homozygote; role labels are retained from the source protocol, not inferred from counts."
+      },
+      "doi": "10.1186/s12891-016-1064-1"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "T cell self-reactivity forms a cytokine milieu for spontaneous development of IL-17+ Th cells that cause autoimmune arthritis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_008.pdf"
+      },
+      "doi": "10.1084/jem.20062259"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "The cytokine network involved in the host immune response to periodontitis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_009.pdf"
+      },
+      "doi": "10.1038/s41368-019-0064-z"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "The IL-17 family in diseases: from bench to bedside",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_010.pdf"
+      },
+      "doi": "10.1038/s41392-023-01620-3"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "IL-17A and IL-17F polymorphisms in rheumatoid arthritis and Sjögren’s syndrome",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_011.pdf"
+      },
+      "genotype_contrast": {
+        "rsid": "rs763780",
+        "heterozygote_label": "CT",
+        "common_homozygote_label": "TT",
+        "source_note": "The supplied source table reports the prespecified rs763780 contrast as CT heterozygote versus TT common homozygote; role labels are retained from the source protocol, not inferred from counts."
+      },
+      "doi": "10.1007/s00784-015-1540-2"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Association of IL17A and IL17F genes with rheumatoid arthritis disease and the impact of genetic polymorphisms on response to treatment",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_012.pdf"
+      },
+      "genotype_contrast": {
+        "rsid": "rs763780",
+        "heterozygote_label": "A/G",
+        "common_homozygote_label": "A/A",
+        "source_note": "The supplied source table reports the prespecified rs763780 contrast as A/G heterozygote versus A/A common homozygote; role labels are retained from the source protocol, not inferred from counts."
+      },
+      "doi": "10.1016/j.imlet.2017.01.013"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "IL-17 and IL-17-producing cells in protection versus pathology",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_013.pdf"
+      },
+      "doi": "10.1038/s41577-022-00746-9"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Association Analysis of IL-17A and IL-17F Polymorphisms in Chinese Han Women with Breast Cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_014.pdf"
+      },
+      "doi": "10.1371/journal.pone.0034400"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Cells of the synovium in rheumatoid arthritis. T lymphocytes",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_015.pdf"
+      },
+      "doi": "10.1186/ar2107"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "The IL-17 Family of Cytokines in Psoriasis: IL-17A and Beyond",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_016.pdf"
+      },
+      "doi": "10.3389/fimmu.2018.01682"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Association between IL‐17F Gene Polymorphisms and Susceptibility to and Severity of Rheumatoid Arthritis (RA)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0010/candidate_017.pdf"
+      },
+      "genotype_contrast": {
+        "rsid": "rs763780",
+        "heterozygote_label": "AG",
+        "common_homozygote_label": "AA",
+        "source_note": "The supplied source table reports the prespecified rs763780 contrast as AG heterozygote versus AA common homozygote; role labels are retained from the source protocol, not inferred from counts."
+      },
+      "doi": "10.1111/j.1365-3083.2010.02411.x"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

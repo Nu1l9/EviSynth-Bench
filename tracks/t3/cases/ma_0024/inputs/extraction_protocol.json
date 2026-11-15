@@ -1,0 +1,107 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "case_id": "ma_0024",
+  "protocol_id": "ma_0024_dr_diagnostic_accuracy_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "How accurately do computer-aided fundus-photo classifiers identify diabetic retinopathy relative to expert ophthalmologist classification?",
+  "pico": {
+    "population": {
+      "description": "Retinal fundus images",
+      "aliases": []
+    },
+    "intervention_or_exposure": {
+      "description": "Computer-aided retinal image classifier",
+      "aliases": []
+    },
+    "comparator": {
+      "description": "Expert ophthalmologist classification",
+      "aliases": []
+    },
+    "outcome": {
+      "description": "Diabetic retinopathy detection",
+      "aliases": []
+    }
+  },
+  "eligible_study_designs": [
+    "diagnostic accuracy evaluation"
+  ],
+  "targets": [
+    {
+      "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+      "outcome": {
+        "description": "Diabetic retinopathy detection",
+        "aliases": [
+          "DR classification",
+          "NPDR or PDR versus normal"
+        ]
+      },
+      "comparison": "Computer-aided classification versus expert ophthalmologist reference classification",
+      "population_or_subgroup": "Held-out retinal fundus image test set",
+      "timepoint_policy": {
+        "rule": "Use the held-out/test-set evaluation explicitly reported by the source, not training performance."
+      },
+      "accepted_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "preferred_effect_measures": [
+        "sensitivity",
+        "specificity"
+      ],
+      "estimands": [
+        "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "One image-level diagnostic 2x2 table per report",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract TP, FP, FN, and TN from a primary-report test-set table. Recompute sensitivity and specificity from counts. Do not accept a percentage alone or use a review forest value.",
+      "extraction_notes": []
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "one report-level diagnostic 2x2 test set",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "source_location"
+    ]
+  },
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0024",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+        "status": "unsupported",
+        "original_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "recommended_v1_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "unsupported_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "reason": "No existing seven-case v1 template has the same data contract."
+      }
+    ]
+  }
+}

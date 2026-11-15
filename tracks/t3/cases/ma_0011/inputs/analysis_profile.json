@@ -1,0 +1,35 @@
+{
+  "case_id": "ma_0011",
+  "analysis_profile_id": "ma_0011_main_analysis_profile_v1",
+  "analyses": [
+    {
+      "analysis_id": "main_pr_adverse_cardiac_events",
+      "pooled_result_id": "pr_adverse_cardiac_events",
+      "outcome_group": "Adverse cardiac events",
+      "target_id": "adverse_cardiac_event",
+      "eligible_outcome_codes": [
+        "adverse_cardiac_event"
+      ],
+      "eligible_data_families": [
+        "time_to_event"
+      ],
+      "accepted_effect_types": [
+        "HR"
+      ],
+      "estimands": [
+        "adjusted_continuous_exposure_association"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "ma_0010",
+  "analysis_profile_id": "ma_0010_full_rs763780_heterozygote_v_common_homozygote_v2",
+  "selection": {
+    "rsid": "rs763780",
+    "study_design": "case_control",
+    "phenotype": "rheumatoid arthritis case status",
+    "data_family": "complete_genotype_case_control_counts",
+    "genotype_role": "heterozygote versus source-reported common homozygote",
+    "one_effect_per_study": true
+  },
+  "analyses": [
+    {
+      "analysis_id": "rs763780_heterozygote_vs_common_homozygote",
+      "pooled_result_id": "rs763780_heterozygote_vs_common_homozygote",
+      "outcome_group": "Rheumatoid arthritis case status",
+      "target_id": "rs763780_heterozygote_vs_common_homozygote_ra_case_control",
+      "eligible_data_families": [
+        "complete_genotype_case_control_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "odds_ratio_ra_case_status_rs763780_heterozygote_vs_common_homozygote"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Match the public selection fields: rsid=rs763780; study_design=case_control; phenotype=rheumatoid arthritis case status; data_family=complete_genotype_case_control_counts; genotype_role=heterozygote versus source-reported common homozygote."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

@@ -1,0 +1,639 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0044",
+  "topic": "Among patients undergoing pars plana vitrectomy, does conventional 20-gauge surgery versus microincision vitrectomy surgery change the risks of intraoperative iatrogenic retinal breaks or postoperative retinal detachment?",
+  "protocol": {
+    "protocol_id": "ma_0044_extraction_protocol_v1",
+    "case_id": "ma_0044",
+    "pico": {
+      "population": "Patients undergoing pars plana vitrectomy",
+      "intervention_or_exposure": "Conventional 20-gauge vitrectomy",
+      "comparison": "Microincision vitrectomy surgery (23-gauge or 25-gauge)",
+      "outcome": "Intraoperative iatrogenic retinal break or tear detected during vitrectomy"
+    },
+    "eligible_study_designs": [
+      "comparative case series",
+      "prospective comparative study",
+      "randomized controlled trial"
+    ],
+    "targets": [
+      {
+        "target_id": "intraoperative_iatrogenic_retinal_break",
+        "outcome": "Intraoperative iatrogenic retinal break or tear detected during vitrectomy",
+        "comparison": "20-gauge vitrectomy versus 23-gauge and/or 25-gauge microincision vitrectomy",
+        "population_or_subgroup": "Source-defined surgical indication; preserve it rather than restricting to a disease subgroup.",
+        "timepoint_policy": {
+          "rule": "Use the intraoperative outcome only. Do not substitute postoperative retinal detachment or delayed retinal breaks.",
+          "preferred": "intraoperative",
+          "allowed": [
+            "during surgery",
+            "intraoperative"
+          ]
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "OR"
+        ],
+        "estimands": [
+          "20g_vs_mivs_intraoperative_iatrogenic_break_odds"
+        ],
+        "effect_selection_rule": "Retain one arm-level result per independent report for the intraoperative target. Prefer all eligible surgical indications combined when the source reports that aggregate. Do not select a postoperative retinal-detachment result.",
+        "extraction_notes": [
+          "The unit is an eye/procedure as reported by the source; preserve the reported denominator.",
+          "An included report lacking the intraoperative target remains visible as source-only evidence, not a zero-event study."
+        ],
+        "source_constraints": [
+          "every numeric field must have primary source support",
+          "outcome must be intraoperative",
+          "20g and mivs totals must be arm specific",
+          "do not replace events with number of breaks if one eye has multiple breaks",
+          "The 23-gauge and 25-gauge arms are disjoint arms in the same report and use the same intraoperative outcome definition.",
+          "Do not merge participants across different reports.",
+          "Do not merge postoperative outcomes with intraoperative outcomes."
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "main_pr_intraoperative_iatrogenic_retinal_break",
+      "outcome_group": "Intraoperative iatrogenic retinal breaks",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "eligible_outcome_codes": [
+        "intraoperative_iatrogenic_retinal_break"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "20g_vs_mivs_intraoperative_iatrogenic_break_odds"
+      ],
+      "selection_rules": [
+        "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+        "Select no more than one eligible estimate from each independent study for an analysis.",
+        "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+        "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use the intraoperative outcome only. Do not substitute postoperative retinal detachment or delayed retinal breaks.; Preferred timepoint: intraoperative; Allowed timepoints: during surgery; intraoperative",
+        "Source selection: Retain one arm-level result per independent report for the intraoperative target. Prefer all eligible surgical indications combined when the source reports that aggregate. Do not select a postoperative retinal-detachment result.",
+        "every numeric field must have primary source support",
+        "outcome must be intraoperative",
+        "20g and mivs totals must be arm specific",
+        "do not replace events with number of breaks if one eye has multiple breaks",
+        "The 23-gauge and 25-gauge arms are disjoint arms in the same report and use the same intraoperative outcome definition.",
+        "Do not merge participants across different reports.",
+        "Do not merge postoperative outcomes with intraoperative outcomes.",
+        "The unit is an eye/procedure as reported by the source; preserve the reported denominator.",
+        "An included report lacking the intraoperative target remains visible as source-only evidence, not a zero-event study."
+      ],
+      "pooling": {
+        "model": "fixed_effect",
+        "scale": "mantel_haenszel_odds_ratio",
+        "heterogeneity_estimator": "cochrane_q_i2",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Intraoperative iatrogenic retinal breaks"
+      ],
+      "exposure": {
+        "terms": [
+          "Conventional 20-gauge vitrectomy"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "20-gauge vitrectomy versus 23-gauge and/or 25-gauge microincision vitrectomy"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Source-defined surgical indication; preserve it rather than restricting to a disease subgroup."
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use the intraoperative outcome only. Do not substitute postoperative retinal detachment or delayed retinal breaks.; Preferred timepoint: intraoperative; Allowed timepoints: during surgery; intraoperative",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Intra- and Postoperative Risks and Complications of Small-Gauge (23-G) versus Conventional (20-G) Vitrectomy for Macular Surgery",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_001.pdf"
+      },
+      "doi": "10.5301/ejo.5000461"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "25-, 23-, and 20-gauge vitrectomy in epiretinal membrane surgery: a comparative study of 553 cases",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_002.pdf"
+      },
+      "doi": "10.1007/s00417-011-1752-3"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Pars Plana Vitrectomy with 25-Gauge Instruments in the Treatment of Idiopathic Epiretinal Membranes",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_003.pdf"
+      },
+      "doi": "10.1055/s-2007-962957"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Comparison of microinsicion vitrectomy and conventional 20-gauge vitrectomy for severe proliferative diabetic retinopathy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_004.pdf"
+      },
+      "doi": "10.1007/s10384-015-0396-y"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Release and extraction of retained subfoveal perfluorocarbon liquid facilitated by subretinal BSS, vibration, and gravity: a case report",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_005.pdf"
+      },
+      "doi": "10.1186/s12886-020-01698-1"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Comparison of retinal breaks observed during 23 gauge transconjunctival vitrectomy versus conventional 20 gauge surgery for proliferative diabetic retinopathy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_006.pdf"
+      },
+      "doi": "10.2147/opth.s16414"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "A pilot randomised controlled trial comparing the post-operative pain experience following vitrectomy with a 20-gauge system and the 25-gauge transconjunctival system",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_007.pdf"
+      },
+      "doi": "10.1136/bjo.2008.153411"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Comparative Study of 27-Gauge versus 25-Gauge Vitrectomy for the Treatment of Primary Rhegmatogenous Retinal Detachment",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_008.pdf"
+      },
+      "doi": "10.1155/2017/6384985"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "20-gauge and 23-gauge phacovitrectomy for idiopathic macular holes: comparison of complications and long-term outcomes",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_009.pdf"
+      },
+      "doi": "10.1038/eye.2012.227"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "The Incidence of Rhegmatogenous Retinal Complications in Macular Surgery After Prophylactic Preoperative Laser Retinopexy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_010.pdf"
+      },
+      "doi": "10.1097/md.0000000000003283"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Iatrogenic retinal breaks in 20-G versus 23-G pars plana vitrectomy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_011.pdf"
+      },
+      "doi": "10.1007/s00417-013-2299-2"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "INCIDENCE OF RETINAL DETACHMENT AFTER SMALL-INCISION, SUTURELESS PARS PLANA VITRECTOMY COMPARED WITH CONVENTIONAL 20-GAUGE VITRECTOMY IN MACULAR HOLE AND EPIRETINAL MEMBRANE SURGERY",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_012.pdf"
+      },
+      "doi": "10.1097/iae.0b013e3181cd48b0"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Intraoperative Complications of Patients Undergoing Small-Gauge and 20-Gauge Vitrectomy: A Database Study of 4,274 Procedures",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_013.pdf"
+      },
+      "doi": "10.5301/ejo.5000856"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "DOES 23-GAUGE SUTURELESS VITRECTOMY MODIFY THE RISK OF POSTOPERATIVE RETINAL DETACHMENT AFTER MACULAR SURGERY?",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_014.pdf"
+      },
+      "doi": "10.1097/iae.0b013e3182069aa4"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Comparison of One-year Outcomes between 23- and 20-gauge Vitrectomy for Preretinal Membrane",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_015.pdf"
+      },
+      "doi": "10.1016/j.ajo.2008.10.009"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "23-gauge sutureless vitrectomy and 20-gauge vitrectomy: a case series comparison",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_016.pdf"
+      },
+      "doi": "10.1038/eye.2008.175"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Retrospective Comparison of 27-Gauge and 25-Gauge Microincision Vitrectomy Surgery with Silicone Oil for the Treatment of Primary Rhegmatogenous Retinal Detachment",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_017.pdf"
+      },
+      "doi": "10.1155/2018/7535043"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "The incidence and distribution of iatrogenic retinal tears in 20-gauge and 23-gauge vitrectomy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_018.pdf"
+      },
+      "doi": "10.1038/eye.2011.289"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Intraoperative iatrogenic peripheral retinal break in 23-gauge transconjunctival sutureless vitrectomy versus 20-gauge conventional vitrectomy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_019.pdf"
+      },
+      "doi": "10.1007/s00417-013-2302-y"
+    },
+    {
+      "article_id": "candidate_020",
+      "document_id": "candidate_020",
+      "study_id": "study_020",
+      "role": "candidate_article",
+      "title": "COMPARISON OF CLINICAL OUTCOMES AND WOUND DYNAMICS OF SCLEROTOMY PORTS OF 20, 25, AND 23 GAUGE VITRECTOMY",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_020.pdf"
+      },
+      "doi": "10.1097/iae.0b013e3181934908"
+    },
+    {
+      "article_id": "candidate_021",
+      "document_id": "candidate_021",
+      "study_id": "study_021",
+      "role": "candidate_article",
+      "title": "Comparison of outcomes between 20, 23 and 25 gauge vitrectomy for idiopathic macular hole",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_021.pdf"
+      },
+      "doi": "10.1186/s40942-015-0007-6"
+    },
+    {
+      "article_id": "candidate_022",
+      "document_id": "candidate_022",
+      "study_id": "study_022",
+      "role": "candidate_article",
+      "title": "TWENTY-THREE-GAUGE AND 20-GAUGE VITRECTOMY IN EPIRETINAL MEMBRANE SURGERY",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_022.pdf"
+      },
+      "doi": "10.1097/iae.0b013e3181b32ebf"
+    },
+    {
+      "article_id": "candidate_023",
+      "document_id": "candidate_023",
+      "study_id": "study_023",
+      "role": "candidate_article",
+      "title": "Comparison of Clinical Features After 20-Gauge Vitrectomy Versus 23-Gauge Vitrectomy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_023.pdf"
+      },
+      "doi": "10.1097/apo.0000000000000139"
+    },
+    {
+      "article_id": "candidate_024",
+      "document_id": "candidate_024",
+      "study_id": "study_024",
+      "role": "candidate_article",
+      "title": "INCIDENCE OF RETINAL BREAKS IN EYES UNDERGOING 23-GAUGE OR 20-GAUGE VITRECTOMY WITH INDUCTION OF POSTERIOR VITREOUS DETACHMENT",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_024.pdf"
+      },
+      "doi": "10.1097/iae.0b013e3182349449"
+    },
+    {
+      "article_id": "candidate_025",
+      "document_id": "candidate_025",
+      "study_id": "study_025",
+      "role": "candidate_article",
+      "title": "23-gauge versus 20-gauge system for pars plana vitrectomy: a prospective randomised clinical trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_025.pdf"
+      },
+      "doi": "10.1136/bjo.2008.140509"
+    },
+    {
+      "article_id": "candidate_026",
+      "document_id": "candidate_026",
+      "study_id": "study_026",
+      "role": "candidate_article",
+      "title": "SURGICAL OUTCOMES OF 27-GAUGE VITRECTOMY FOR A CONSECUTIVE SERIES OF 163 EYES WITH VARIOUS VITREOUS DISEASES",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_026.pdf"
+      },
+      "doi": "10.1097/iae.0000000000001442"
+    },
+    {
+      "article_id": "candidate_027",
+      "document_id": "candidate_027",
+      "study_id": "study_027",
+      "role": "candidate_article",
+      "title": "COMPARISON OF CLINICAL OUTCOMES BETWEEN 23-GAUGE AND 20-GAUGE VITRECTOMY IN PATIENTS WITH PROLIFERATIVE DIABETIC RETINOPATHY",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_027.pdf"
+      },
+      "doi": "10.1097/iae.0b013e3181d95261"
+    },
+    {
+      "article_id": "candidate_028",
+      "document_id": "candidate_028",
+      "study_id": "study_028",
+      "role": "candidate_article",
+      "title": "23- and 20-Gauge Vitrectomy with Air Tamponade with Combined Phacoemulsification for Idiopathic Macular Hole: A Single-Surgeon Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_028.pdf"
+      },
+      "doi": "10.1016/j.ajo.2011.01.015"
+    },
+    {
+      "article_id": "candidate_029",
+      "document_id": "candidate_029",
+      "study_id": "study_029",
+      "role": "candidate_article",
+      "title": "Comparative study of 23-gauge vitrectomy versus 20-gauge vitrectomy for the treatment of rhegmatogenous retinal detachment",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_029.pdf"
+      },
+      "doi": "10.1007/s00417-011-1645-5"
+    },
+    {
+      "article_id": "candidate_030",
+      "document_id": "candidate_030",
+      "study_id": "study_030",
+      "role": "candidate_article",
+      "title": "Endophthalmitis after pars plana vitrectomy with reused single-use devices: a 13-year retrospective study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_030.pdf"
+      },
+      "doi": "10.1186/s40942-020-00274-5"
+    },
+    {
+      "article_id": "candidate_031",
+      "document_id": "candidate_031",
+      "study_id": "study_031",
+      "role": "candidate_article",
+      "title": "Intravitreal bevacizumab prior to vitrectomy for proliferative diabetic retinopathy: a systematic review",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_031.pdf"
+      },
+      "doi": "10.1177/25158414211059256"
+    },
+    {
+      "article_id": "candidate_032",
+      "document_id": "candidate_032",
+      "study_id": "study_032",
+      "role": "candidate_article",
+      "title": "Treatment outcomes of acute postoperative infectious endophthalmitis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_032.pdf"
+      },
+      "doi": "10.1186/s12886-021-02144-6"
+    },
+    {
+      "article_id": "candidate_033",
+      "document_id": "candidate_033",
+      "study_id": "study_033",
+      "role": "candidate_article",
+      "title": "Intraoperative Retinal Tear Formation and Postoperative Rhegmatogenous Retinal Detachment in Transconjunctival Cannulated Vitrectomy Systems Compared With the Standard 20-Gauge System",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_033.pdf"
+      },
+      "doi": "10.1001/archopthalmol.2011.1378"
+    },
+    {
+      "article_id": "candidate_034",
+      "document_id": "candidate_034",
+      "study_id": "study_034",
+      "role": "candidate_article",
+      "title": "Comparison of 27-Gauge and 25-Gauge Microincision Vitrectomy Surgery for the Treatment of Vitreoretinal Disease: A Systematic Review and Meta-Analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_034.pdf"
+      },
+      "doi": "10.1155/2020/6149692"
+    },
+    {
+      "article_id": "candidate_035",
+      "document_id": "candidate_035",
+      "study_id": "study_035",
+      "role": "candidate_article",
+      "title": "Comparison of Efficacy and Safety between Transconjunctival 23-Gauge and Conventional 20-Gauge Vitrectomy Systems in Macular Surgery",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_035.pdf"
+      },
+      "doi": "10.3341/kjo.2012.26.5.339"
+    },
+    {
+      "article_id": "candidate_036",
+      "document_id": "candidate_036",
+      "study_id": "study_036",
+      "role": "candidate_article",
+      "title": "Visual recovery after vitrectomy for macular hole using 25‐gauge instruments",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_036.pdf"
+      },
+      "doi": "10.1111/j.1600-0420.2007.01000.x"
+    },
+    {
+      "article_id": "candidate_037",
+      "document_id": "candidate_037",
+      "study_id": "study_037",
+      "role": "candidate_article",
+      "title": "27-gauge and 25-gauge vitrectomy day surgery for idiopathic epiretinal membrane",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_037.pdf"
+      },
+      "doi": "10.1186/s12886-017-0585-1"
+    },
+    {
+      "article_id": "candidate_038",
+      "document_id": "candidate_038",
+      "study_id": "study_038",
+      "role": "candidate_article",
+      "title": "Intraoperative Sclerotomy-related Retinal Breaks for Macular Surgery, 20- vs 25-Gauge Vitrectomy Systems",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_038.pdf"
+      },
+      "doi": "10.1016/j.ajo.2006.07.038"
+    },
+    {
+      "article_id": "candidate_039",
+      "document_id": "candidate_039",
+      "study_id": "study_039",
+      "role": "candidate_article",
+      "title": "Intraoperative Retinal Break Formation in 23-/25-Gauge Vitrectomy versus 20-Gauge Vitrectomy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_039.pdf"
+      },
+      "doi": "10.1159/000343710"
+    },
+    {
+      "article_id": "candidate_040",
+      "document_id": "candidate_040",
+      "study_id": "study_040",
+      "role": "candidate_article",
+      "title": "Vitrectomy for endophthalmitis: 5-year study of outcomes and complications",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_040.pdf"
+      },
+      "doi": "10.1136/bmjophth-2019-000423"
+    },
+    {
+      "article_id": "candidate_041",
+      "document_id": "candidate_041",
+      "study_id": "study_041",
+      "role": "candidate_article",
+      "title": "INCIDENCE OF IATROGENIC PERIPHERAL RETINAL BREAKS IN 23-GAUGE VITRECTOMY FOR MACULAR DISEASES",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_041.pdf"
+      },
+      "doi": "10.1097/iae.0b013e31820f49ea"
+    },
+    {
+      "article_id": "candidate_042",
+      "document_id": "candidate_042",
+      "study_id": "study_042",
+      "role": "candidate_article",
+      "title": "Safety of Vitrectomy for Floaters",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0044/candidate_042.pdf"
+      },
+      "doi": "10.1016/j.ajo.2011.01.005"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

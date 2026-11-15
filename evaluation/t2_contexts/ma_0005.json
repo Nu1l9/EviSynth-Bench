@@ -1,0 +1,80 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0005",
+    "task_id": "ma_0005_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among singleton pregnancies with prior spontaneous preterm birth and ultrasound-indicated cerclage, does adjuvant 17-hydroxyprogesterone caproate alter preterm birth before 35 weeks compared with cerclage alone?",
+    "pico": {
+      "population": "Singleton pregnancy with prior spontaneous preterm birth and ultrasound-indicated cerclage",
+      "exposure": "Adjuvant 17-hydroxyprogesterone caproate after ultrasound-indicated cerclage",
+      "comparator": "Ultrasound-indicated cerclage alone",
+      "outcomes": [
+        "Preterm birth before 35 completed weeks",
+        "PTB <35 weeks",
+        "spontaneous PTB <35 weeks",
+        "delivery before 35 weeks"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "adjuvant_17_ohpc_plus_uic_vs_uic_alone_preterm_birth_risk_ratio"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "preterm_birth_lt35_weeks",
+          "outcome": {
+            "description": "Preterm birth before 35 completed weeks",
+            "aliases": [
+              "PTB <35 weeks",
+              "spontaneous PTB <35 weeks",
+              "delivery before 35 weeks"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RR"
+          ],
+          "estimands": [
+            "adjuvant_17_ohpc_plus_uic_vs_uic_alone_preterm_birth_risk_ratio"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "Capture source-reported arm-level binary outcomes relevant to the declared pregnancy and cerclage context; preserve outcome direction and subgroup scope.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "Extract event counts and denominators in both exposure groups, source outcome definition, population or subgroup, delivery threshold, and verified primary-source locator. Do not copy event counts or effects from a review forest plot."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0005_01",
+        "a_0005_02",
+        "a_0005_03",
+        "a_0005_04"
+      ],
+      "study_ids": {
+        "a_0005_01": "s_0005_01",
+        "a_0005_02": "s_0005_02",
+        "a_0005_03": "s_0005_03",
+        "a_0005_04": "s_0005_04"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

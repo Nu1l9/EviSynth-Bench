@@ -1,0 +1,109 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0024",
+  "gold_id": "ma_0024_extraction_gold_v1",
+  "task_type": "extraction",
+  "provenance": {
+    "target_review_document_id": "review_ma_0024",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "applies_to_task_ids": [
+    "ma_0024_extraction_all_reports_v1",
+    "ma_0024_end_to_end_dr_accuracy_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0024_01",
+      "article_id": "a_0024_01",
+      "study_id": "s_0024_01",
+      "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+      "exposure_measure": "Computer-aided classification versus expert ophthalmologist reference classification",
+      "outcome": {
+        "code": "diabetic_retinopathy_detection",
+        "label": "Detection of diabetic retinopathy",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Held-out retinal fundus image test set",
+      "timepoint": "Held-out image-level diagnostic test evaluation",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0024_01",
+          "estimand": "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection",
+          "comparison": "Computer-aided classification versus expert ophthalmologist reference classification",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "retinal fundus image",
+            "target_condition": "diabetic retinopathy (NPDR or PDR) versus normal",
+            "index_test": "computer-aided retinal fundus image classifier",
+            "reference_standard": "expert ophthalmologist classification",
+            "true_positive": 64,
+            "false_positive": 3,
+            "false_negative": 10,
+            "true_negative": 14
+          },
+          "source_location": {
+            "document_id": "a_0024_01",
+            "page": 8,
+            "source_type": "table",
+            "source_id": "Table 4, SVM classifier",
+            "locator_note": "The raw cells imply sensitivity 64/(64+10)=86.49% and specificity 14/(14+3)=82.35%. The source table prints these two percentages under reversed column labels; use counts, not labels.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0024_02",
+      "article_id": "a_0024_02",
+      "study_id": "s_0024_02",
+      "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+      "exposure_measure": "Computer-aided classification versus expert ophthalmologist reference classification",
+      "outcome": {
+        "code": "diabetic_retinopathy_detection",
+        "label": "Detection of diabetic retinopathy",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Held-out retinal fundus image test set",
+      "timepoint": "Held-out image-level diagnostic test evaluation",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0024_02",
+          "estimand": "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection",
+          "comparison": "Computer-aided classification versus expert ophthalmologist reference classification",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "retinal fundus image",
+            "target_condition": "diabetic retinopathy (NPDR or PDR) versus normal",
+            "index_test": "computer-aided retinal fundus image classifier",
+            "reference_standard": "expert ophthalmologist classification",
+            "true_positive": 28,
+            "false_positive": 0,
+            "false_negative": 3,
+            "true_negative": 19
+          },
+          "source_location": {
+            "document_id": "a_0024_02",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 3, ANN classifier",
+            "locator_note": "Three-class normal/NPDR/PDR classifier collapsed to DR-positive (NPDR or PDR) versus normal exactly as the source's 2x2 table reports.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ]
+}

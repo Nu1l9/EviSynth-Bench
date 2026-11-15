@@ -1,0 +1,1661 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0034",
+  "candidate_set_id": "ma_0034_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Youngest adolescents aged younger than 16 years, compared with the age-by-treatment reference pattern",
+      "timepoint": "6-month follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The age-by-treatment interaction for youngest adolescents and advance provision was reported as an odds ratio of 1.411 (95% CI 0.56–3.58) for emergency contraception use; this interaction estimate is preserved without conversion to RR."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 65
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults aged 20–24 years",
+      "timepoint": "6-month follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The follow-up table reported emergency contraception use as 141 (31.5%) in the advance provision group and 24 (14.3%) in the clinic access group among adults aged 20–24 years; source-declared arm denominators were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Sexually active adolescent women aged 15–20 years, predominantly minority and low-income, not using long-acting contraception",
+      "timepoint": "Entire study follow-up",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 26,
+        "intervention_total": 150,
+        "control_events": 20,
+        "control_total": 151,
+        "outcome_unit": "Participants reporting any EC use during the entire study follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_05",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 73
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent women in the randomized study; 1-month follow-up respondents",
+      "timepoint": "1 month after enrollment; past-month EC use",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 1 month, past-month EC use was reported by 15% of the advance EC group versus 8% of the control group. Source-reported percentages lack paired arm-specific denominators in the located excerpt, so participant event counts are not reconstructed."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_05",
+        "source_type": "table",
+        "source_id": "table 2",
+        "content_list_item_index": 66
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0034_02",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use (ECP use)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Swedish-speaking teenage girls aged 15–19 requesting ECP at a local youth clinic; randomized intervention and control groups",
+      "timepoint": "6 months after enrolment; cumulative ECP use reported at 3-month follow-up, 6-month follow-up, or both",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 54,
+        "intervention_total": 172,
+        "control_events": 29,
+        "control_total": 157,
+        "outcome_unit": "Participants reporting ECP use"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_02",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 49
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Ever used emergency contraception during the study",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent women eligible for the adjusted analyses",
+      "timepoint": "During the study",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported an odds ratio of 1.6 (95% CI 0.77 to 3.4; P = 0.20) for advance EC versus the control group. This is an adjusted odds ratio, not the preferred RR, and no arm-level event counts are provided."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_05",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 89
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraception use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women from an inner-city public hospital",
+      "timepoint": "Over 1 year",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Over 1 year, 17% of women in the advance-provision group versus 4% in the control group used emergency contraception; source-reported RR 4.0 (95% CI 1.8, 9.0). Counts paired with outcome-specific denominators are not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0034_02",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": null,
+        "label": "Cumulative emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Swedish teenage girls receiving advance emergency contraceptive pills or standard access",
+      "timepoint": "Cumulative emergency contraceptive pill use by 6-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Participant reported emergency contraceptive pill use at 3 months, 6 months, or both during cumulative 6-month follow-up.",
+        "intervention_arm": {
+          "label": "Advance provision of emergency contraceptive pills",
+          "events": 54,
+          "total": 172
+        },
+        "comparator_arm": {
+          "label": "Standard or on-demand emergency contraceptive pill access",
+          "events": 29,
+          "total": 157
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.6996792301523658,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.5304395451126555,
+        "variance": 0.04081789689924373,
+        "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0034_02",
+        "page": 3,
+        "source_type": "table",
+        "source_id": "Table II, Cumulative emergency contraceptive pill use at 6-month follow-up"
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0034_09",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Women aged 15–24 years receiving contraceptive services in four family-planning clinics in the San Francisco Bay Area; overall randomized study population",
+      "timepoint": "During the 6-month study period after enrollment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports subsequent EC use during six months as 37.4% in the advance-provision arm and 21.0% in the clinic-access comparator arm, with P < .001. The source does not provide paired arm-level event counts and denominators in the located excerpt; percentages are therefore preserved without reconstructing counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_09",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0034_11",
+      "study_id": "s_0034_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer-assisted counseling about EC plus provision of a free sample of EC (advance provision)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Used EC during the study period",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "English-speaking adult women aged 18–45 years recruited from two urgent care clinics in San Francisco; randomized intervention and control groups; women followed during the study period",
+      "timepoint": "During the study period, approximately 7 months after enrollment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The adjusted analysis reported that intervention-group women were more likely to have used EC during the study period than control-group women, with OR = 7.17 (95% CI 1.38–37.21). The reported effect measure was an odds ratio rather than the preferred RR, and arm-level counts were not provided for this model in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_11",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 48
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0034_03",
+      "study_id": "s_0034_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills (increased access)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use during follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Sexually active women aged 14–24 years who did not desire pregnancy; all enrolled randomized participants",
+      "timepoint": "Entire study follow-up, approximately 1 year",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 527,
+        "intervention_total": 746,
+        "control_events": 236,
+        "control_total": 744,
+        "outcome_unit": "Participants with at least one emergency contraceptive pill use during follow-up; events derived as total participants minus participants reporting 0 uses in the same source table"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_03",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "New emergency contraception use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women from an inner-city public hospital; subgroup defined as new users of emergency contraception",
+      "timepoint": "12 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 12 months, the new-user row reports 10% in the advance-provision group versus 2% in the control group; source-reported RR 4.17 (95% CI 1.21, 14.4). The row is identified by its position as the second outcome row in the continuation of Table 2; the table reports percentages rather than participant event counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "table 4",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent women in the randomized study; 6-month follow-up respondents",
+      "timepoint": "6 months after enrollment; past-month EC use",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At the 6-month interview, past-month EC use was reported by 8% of the advance EC group versus 6% of the control group. Source-reported percentages lack paired arm-specific denominators in the located excerpt, so participant event counts are not reconstructed."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_05",
+        "source_type": "table",
+        "source_id": "table 2",
+        "content_list_item_index": 66
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Emergency contraception use among women with any unprotected intercourse",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women reporting any unprotected intercourse during follow-up",
+      "timepoint": "6 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 6 months, among participants with any unprotected intercourse, emergency contraception use was reported by 22% in the advance-provision group versus 3% in the control group; source-reported RR 7.74 (95% CI 1.81, 33.2). The table reports percentages and does not provide subgroup event counts or denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "New emergency contraception use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women from an inner-city public hospital; subgroup defined as new users during follow-up",
+      "timepoint": "Over 1 year",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Over 1 year, there were 23 new emergency contraception users in the advance-provision group versus five in the control group; source-reported RR 4.9 (95% CI 1.9, 12.6). The source does not provide the corresponding outcome-specific denominators, so a binary arm-count record cannot be constructed."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0034_01",
+      "study_id": "s_0034_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills supplied for home use",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use; used at least one course of EC",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Women aged 18–45 years using less effective contraceptive methods; all women completing 12 months of follow-up",
+      "timepoint": "12 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 149,
+        "intervention_total": 499,
+        "control_events": 63,
+        "control_total": 487,
+        "outcome_unit": "Women using at least one course of emergency contraception during 12 months of follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_01",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 52
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0034_03",
+      "study_id": "s_0034_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills (increased access)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Emergency contraceptive pill use in the past month",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Sexually active women aged 14–24 years who did not desire pregnancy; participants providing data at 5–7 months after admission",
+      "timepoint": "5–7 months after admission",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 104,
+        "intervention_total": 624,
+        "control_events": 19,
+        "control_total": 630,
+        "outcome_unit": "Participants reporting emergency contraceptive pill use in the past month"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_03",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 83
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0034_04",
+      "study_id": "s_0034_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent mothers ages 13–20 who were parenting and receiving case management services; longitudinal sample",
+      "timepoint": "12 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At twelve months, the source reports use of study AEC as 14 (64%) in the AEC group and 3 (17%) in the control group. The arm-specific denominators for this outcome are not explicitly source-declared, so complete binary arm counts cannot be extracted without reconstructing denominators from percentages."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 65
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraception use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women from an inner-city public hospital",
+      "timepoint": "12 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 12 months, the first use-of-emergency-contraception row reports 13% in the advance-provision group versus 2% in the control group; source-reported RR 5.21 (95% CI 1.55, 17.5). The table reports percentages rather than participant event counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "table 4",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0034_03",
+      "study_id": "s_0034_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": null,
+        "label": "At least one emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women at risk of pregnancy randomized to increased emergency contraceptive pill access or standard access",
+      "timepoint": "At least one emergency contraceptive pill use during 12-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Participant used emergency contraceptive pills one or more times during the 12-month study follow-up.",
+        "intervention_arm": {
+          "label": "Advance provision of emergency contraceptive pills",
+          "events": 527,
+          "total": 746
+        },
+        "comparator_arm": {
+          "label": "Standard or on-demand emergency contraceptive pill access",
+          "events": 236,
+          "total": 744
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 2.2270641159631026,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.8006841781450833,
+        "variance": 0.003450252747192422,
+        "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0034_03",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 3, Frequency of Emergency Contraceptive Pill Use"
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Ever used emergency contraception during the study",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent women eligible for the adjusted analyses",
+      "timepoint": "During the study",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported an odds ratio of 1.7 (95% CI 0.79 to 3.5; P = 0.18) for advance EC versus the control group. This is an adjusted odds ratio, not the preferred RR, and no arm-level event counts are provided."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_05",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 89
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescents aged 16–17 years",
+      "timepoint": "6-month follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The follow-up table reported emergency contraception use as 74 (47.1%) in the advance provision group and 17 (28.3%) in the clinic access group among participants aged 16–17 years; source-declared arm denominators were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0034_11",
+      "study_id": "s_0034_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer-assisted counseling about EC plus provision of a free sample of EC (advance provision)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Used EC during the study period",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "English-speaking adult women aged 18–45 years recruited from two urgent care clinics in San Francisco; randomized intervention and control groups; follow-up participants",
+      "timepoint": "During the study period, approximately 7 months after enrollment",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 13,
+        "intervention_total": 127,
+        "control_events": 6,
+        "control_total": 138,
+        "outcome_unit": "Participants reporting emergency contraceptive use during the study period"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_11",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 52
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0034_01",
+      "study_id": "s_0034_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills supplied for home use",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use; used at least one course of EC",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Women aged 26 years or older attending the Birth Control Clinic, completing 12 months of follow-up",
+      "timepoint": "12 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 85,
+        "intervention_total": 363,
+        "control_events": 39,
+        "control_total": 359,
+        "outcome_unit": "Women using at least one course of emergency contraception during 12 months of follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_01",
+        "source_type": "table",
+        "source_id": "Table III",
+        "content_list_item_index": 63
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0034_11",
+      "study_id": "s_0034_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer-assisted counseling about EC plus provision of a free sample of EC (advance provision)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Use of EC during the study period",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "All randomized women, including women lost to follow-up, under the study's intention-to-treat analysis",
+      "timepoint": "During the study period, approximately 7 months after enrollment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported use of EC during the study period as 6% versus 3% of women enrolled for the intervention and control groups, respectively, with p = .09. Complete participant event counts and source-declared denominators for this intention-to-treat comparison were not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_11",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 48
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0034_11",
+      "study_id": "s_0034_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": null,
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women attending urban reproductive-health clinics who completed seven-month follow-up",
+      "timepoint": "Any emergency contraceptive pill use during seven-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Participant used emergency contraception at least once during the study follow-up.",
+        "intervention_arm": {
+          "label": "Advance provision of emergency contraceptive pills",
+          "events": 13,
+          "total": 127
+        },
+        "comparator_arm": {
+          "label": "Standard or on-demand emergency contraceptive pill access",
+          "events": 6,
+          "total": 138
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 2.354330708661417,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.8562564869320951,
+        "variance": 0.22846935103011787,
+        "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0034_11",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 5, emergency contraception use during study"
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0034_01",
+      "study_id": "s_0034_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills supplied for home use",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use; used at least one course of EC",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Unmarried women younger than 26 years attending the Youth Health Care Centre, completing 12 months of follow-up",
+      "timepoint": "12 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 64,
+        "intervention_total": 136,
+        "control_events": 24,
+        "control_total": 128,
+        "outcome_unit": "Women using at least one course of emergency contraception during 12 months of follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_01",
+        "source_type": "table",
+        "source_id": "Table III",
+        "content_list_item_index": 63
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0034_07",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use (used emergency contraception 1 or more times over the study period)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Women aged 15 to 24 years attending four California family-planning clinics, not desiring pregnancy, included in the follow-up analysis",
+      "timepoint": "6 months; mean follow-up 6.9 months (SD 1.3)",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 309,
+        "intervention_total": 826,
+        "control_events": 65,
+        "control_total": 310,
+        "outcome_unit": "Participants using emergency contraception 1 or more times over the study period"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_07",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 98
+      }
+    },
+    {
+      "candidate_id": "cand_0029",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescents aged 18–19 years",
+      "timepoint": "6-month follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The follow-up table reported emergency contraception use as 75 (40.5%) in the advance provision group and 19 (27.5%) in the clinic access group among participants aged 18–19 years; source-declared arm denominators were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0030",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Ever used emergency contraception during the study",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent women eligible for the adjusted analyses",
+      "timepoint": "During the study",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported an odds ratio of 1.9 (95% CI 0.87 to 4.1; P = 0.11) for advance EC versus the control group. This is an adjusted odds ratio, not the preferred RR, and no arm-level event counts are provided."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_05",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 89
+      }
+    },
+    {
+      "candidate_id": "cand_0031",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Participants in the age- and treatment-adjusted logistic regression model; reference age group appears to be 16–17 years",
+      "timepoint": "6-month follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The logistic regression reported an odds ratio of 2.250 (95% CI 1.64–3.08) for advance provision versus the reference clinic access group for emergency contraception use; this is an OR and is preserved without conversion to RR."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 65
+      }
+    },
+    {
+      "candidate_id": "cand_0032",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Emergency contraception use among women with any unprotected intercourse",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women reporting any unprotected intercourse during follow-up",
+      "timepoint": "12 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 12 months, the row for emergency contraception use among participants with any unprotected intercourse reports 16% in the advance-provision group versus 3% in the control group; source-reported RR 5.14 (95% CI 1.14, 23.1). The table reports percentages and does not provide subgroup event counts or denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "table 4",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0033",
+      "article_id": "a_0034_04",
+      "study_id": "s_0034_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescent mothers ages 13–20 who were parenting and receiving case management services; longitudinal sample",
+      "timepoint": "6 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At six months, the source reports use of study AEC as 15 (83%) in the AEC group and 2 (11%) in the control group. The arm-specific denominators for this outcome are not explicitly source-declared, so complete binary arm counts cannot be extracted without reconstructing denominators from percentages."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 65
+      }
+    },
+    {
+      "candidate_id": "cand_0034",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "New emergency contraception use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women from an inner-city public hospital; subgroup defined as new users of emergency contraception",
+      "timepoint": "6 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 6 months, 8% in the advance-provision group versus 1% in the control group were new users of emergency contraception; source-reported RR 6.03 (95% CI 1.36, 26.7). The table reports percentages rather than participant event counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0035",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Emergency contraception use among women with any unprotected intercourse",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women reporting at least one episode of unprotected intercourse during the year",
+      "timepoint": "Over 1 year",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Among women reporting at least one episode of unprotected intercourse during the year, 25% in the advance-provision group versus 4% in the control group used emergency contraception; source-reported RR 5.8 (95% CI 2.1, 16.4). Subgroup event counts and denominators are not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0036",
+      "article_id": "a_0034_01",
+      "study_id": "s_0034_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": null,
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women completing 12 months of follow-up at Hong Kong family-planning and youth clinics",
+      "timepoint": "Any emergency contraceptive pill use during 12-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Participant used one or more courses of emergency contraception during the 12-month study follow-up.",
+        "intervention_arm": {
+          "label": "Advance provision of emergency contraceptive pills",
+          "events": 149,
+          "total": 499
+        },
+        "comparator_arm": {
+          "label": "Standard or on-demand emergency contraceptive pill access",
+          "events": 63,
+          "total": 487
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 2.3082037090053125,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.8364696068849977,
+        "variance": 0.01852702916260789,
+        "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0034_01",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table II, Number of courses of emergency contraception taken"
+      }
+    },
+    {
+      "candidate_id": "cand_0037",
+      "article_id": "a_0034_02",
+      "study_id": "s_0034_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use (ECP use)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Swedish-speaking teenage girls aged 15–19 requesting ECP at a local youth clinic; randomized intervention and control groups",
+      "timepoint": "3 months after enrolment",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 37,
+        "intervention_total": 154,
+        "control_events": 20,
+        "control_total": 150,
+        "outcome_unit": "Participants reporting ECP use"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_02",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 49
+      }
+    },
+    {
+      "candidate_id": "cand_0038",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adolescents aged 15–19 years",
+      "timepoint": "6-month follow-up",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 168,
+        "intervention_total": 379,
+        "control_events": 41,
+        "control_total": 142,
+        "outcome_unit": "Participants reporting emergency contraception use during the 6-month follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0039",
+      "article_id": "a_0034_06",
+      "study_id": "s_0034_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Teenage girls aged 15–19 years requesting emergency contraception at a youth clinic in Sweden; intervention group at 12-month follow-up",
+      "timepoint": "12 months after enrolment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 12 months, 57 of 142 intervention-group girls reported using the extra ECP package supplied through advance provision; 64 reported not using it, 11 gave it to a friend, and 10 were unsure. No corresponding control-group event count and denominator for subsequent ECP use were reported in the located source region."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_06",
+        "source_type": "table",
+        "source_id": "table i",
+        "content_list_item_index": 32
+      }
+    },
+    {
+      "candidate_id": "cand_0040",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of 3 emergency contraceptive pill packs",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraceptive pill use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Young adolescents aged younger than 16 years",
+      "timepoint": "6-month follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The follow-up table reported emergency contraception use as 19 (51.3%) in the advance provision group and 5 (38.5%) in the clinic access group among participants younger than 16 years; source-declared arm denominators were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_08",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0041",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Any subsequent emergency contraception use",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Postpartum women from an inner-city public hospital; 370 enrolled, mostly Latina and 18% adolescents",
+      "timepoint": "6 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "At 6 months, use of emergency contraception at least once was reported by 10% in the advance-provision group versus 3% in the control group; source-reported RR 3.56 (95% CI 1.19, 10.7). The table reports percentages rather than participant event counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0042",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": null,
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Postpartum women eligible for six-month follow-up after excluding planned pregnancy or pregnancy attempts",
+      "timepoint": "Any emergency contraceptive pill use during six-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Participant reported using emergency contraception at least once during the preceding six months.",
+        "intervention_arm": {
+          "label": "Advance provision of emergency contraceptive pills",
+          "events": 10,
+          "total": 138
+        },
+        "comparator_arm": {
+          "label": "Standard or on-demand emergency contraceptive pill access",
+          "events": 3,
+          "total": 149
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 3.5990338164251208,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 1.2806654251141905,
+        "variance": 0.41937554712576597,
+        "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0034_10",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 2, six-month follow-up"
+      }
+    },
+    {
+      "candidate_id": "cand_0043",
+      "article_id": "a_0034_03",
+      "study_id": "s_0034_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Advance provision of emergency contraceptive pills (increased access)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Emergency contraceptive pill use in the past month",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Sexually active women aged 14–24 years who did not desire pregnancy; participants providing data at 12–14 months after admission",
+      "timepoint": "12–14 months after admission",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 57,
+        "intervention_total": 569,
+        "control_events": 17,
+        "control_total": 572,
+        "outcome_unit": "Participants reporting emergency contraceptive pill use in the past month"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0034_03",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 83
+      }
+    },
+    {
+      "candidate_id": "cand_0044",
+      "article_id": "a_0034_07",
+      "study_id": "s_0034_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": null,
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women receiving family-planning services in the direct-access randomized trial",
+      "timepoint": "Any emergency contraceptive pill use during mean 6.9-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Participant used emergency contraception at least once during follow-up.",
+        "intervention_arm": {
+          "label": "Advance provision of emergency contraceptive pills",
+          "events": 309,
+          "total": 826
+        },
+        "comparator_arm": {
+          "label": "Standard or on-demand emergency contraceptive pill access",
+          "events": 65,
+          "total": 310
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.7841311231141739,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.5789315309603221,
+        "variance": 0.014184401134668406,
+        "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0034_07",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 2, emergency contraception use"
+      }
+    }
+  ]
+}

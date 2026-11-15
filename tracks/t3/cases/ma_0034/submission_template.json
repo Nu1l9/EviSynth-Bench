@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0034",
+  "task_id": "ma_0034_analysis_ec_use_v1_1_expanded_draft",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_ec_use_after_advance_provision",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

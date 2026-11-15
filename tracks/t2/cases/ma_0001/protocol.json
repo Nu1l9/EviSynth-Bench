@@ -1,0 +1,132 @@
+{
+  "protocol_id": "ma_0001_extraction_protocol_v2",
+  "protocol_version": "2.0.0",
+  "case_id": "ma_0001",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among adults, is longitudinal variability in body weight or BMI associated with subsequent cardiovascular morbidity or cardiovascular mortality?",
+  "pico": {
+    "population": {
+      "description": "Adults aged 18 years or older",
+      "aliases": [
+        "adult participants"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "Longitudinal variability or fluctuation in body weight or body mass index",
+      "aliases": [
+        "body-weight variability",
+        "weight fluctuation",
+        "weight cycling",
+        "BMI variability"
+      ]
+    },
+    "comparator": {
+      "description": "Lower weight or BMI variability, or a per-unit increase in variability",
+      "aliases": [
+        "lowest variability group",
+        "stable weight",
+        "per standard deviation increase"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "longitudinal observational study",
+    "post hoc longitudinal trial analysis"
+  ],
+  "targets": [
+    {
+      "target_id": "cardiovascular_outcomes",
+      "outcome": {
+        "description": "Any source-defined incident cardiovascular morbidity or cardiovascular mortality outcome",
+        "aliases": [
+          "any cardiovascular event",
+          "cardiovascular disease",
+          "cardiovascular death",
+          "coronary heart disease",
+          "myocardial infarction",
+          "stroke",
+          "cerebrovascular disease",
+          "heart failure",
+          "peripheral vascular disease",
+          "atrial fibrillation",
+          "incident hypertension",
+          "coronary artery bypass",
+          "percutaneous coronary intervention",
+          "composite cardiovascular outcome"
+        ]
+      },
+      "comparison": "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference",
+      "population_or_subgroup": "Every source-reported eligible analytic population or subgroup; do not select among them during extraction",
+      "timepoint_policy": {
+        "rule": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+        "preferred": null,
+        "allowed": []
+      },
+      "accepted_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "preferred_effect_measures": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [],
+      "effect_selection_rule": null,
+      "candidate_capture_policy": {
+        "record_scope": "all_source_reported_relevant_candidates",
+        "window_selection": "all_relevant_source_windows",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "source_reported_effect_allowed",
+      "extraction_notes": [
+        "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+        "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+        "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+      ]
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "markdown",
+      "content_list",
+      "layout"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table",
+      "figure",
+      "appendix",
+      "supplement"
+    ],
+    "forbidden_evidence_sources": [
+      "target meta-analysis",
+      "target review supplement",
+      "forest plot"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "source-defined outcome",
+      "exposure measure",
+      "estimand",
+      "population or subgroup",
+      "follow-up",
+      "data family",
+      "reported effect and confidence interval",
+      "adjustment model",
+      "quantitative usability",
+      "source locator"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  },
+  "human_escalation_rules": [
+    "The source reports an effect but its estimand, reference group, model, subgroup, or timepoint is ambiguous: preserve the candidate and flag the ambiguity rather than selecting or discarding it."
+  ]
+}

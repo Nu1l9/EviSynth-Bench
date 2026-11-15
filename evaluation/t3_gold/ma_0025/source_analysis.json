@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0025",
+  "gold_id": "ma_0025_analysis_gold_v1",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0025",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_convalescent_plasma_influenza_mortality",
+      "selected_candidate_ids": [
+        "ce_0025_01",
+        "ce_0025_02",
+        "ce_0025_03",
+        "ce_0025_04"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0025_01",
+        "ee_0025_02",
+        "ee_0025_03",
+        "ee_0025_04"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0025_primary_mortality",
+          "outcome_group": "All-cause mortality in severe influenza",
+          "effect": {
+            "effect_type": "RR",
+            "value": 0.9305358671413262,
+            "ci_lower": 0.4824986371921163,
+            "ci_upper": 1.7946102502496522,
+            "direction": "convalescent_plasma_lower_mortality_when_rr_lt_1"
+          },
+          "member_candidate_ids": [
+            "ce_0025_01",
+            "ce_0025_02",
+            "ce_0025_03",
+            "ce_0025_04"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0025_01",
+            "ee_0025_02",
+            "ee_0025_03",
+            "ee_0025_04"
+          ],
+          "heterogeneity_i2": 0.0,
+          "calculator_run": {
+            "calculator_id": "binary_rr_dl_normal_v1",
+            "pooling": "dersimonian_laird_random_effects_normal",
+            "tau_squared": 0.0,
+            "q_fixed": 2.8838911514936867,
+            "q_random": 2.8838911514936867,
+            "standard_error": 0.33509312506713945
+          }
+        }
+      ]
+    }
+  ]
+}

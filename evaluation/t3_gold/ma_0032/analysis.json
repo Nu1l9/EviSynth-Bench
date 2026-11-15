@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0032",
+  "gold_id": "ma_0032_analysis_gold_v1",
+  "task_type": "analysis",
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_further_bleeding",
+      "selected_candidate_ids": [
+        "ce_0032_01",
+        "ce_0032_02",
+        "ce_0032_03",
+        "ce_0032_04"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0032_01",
+        "ee_0032_02",
+        "ee_0032_03",
+        "ee_0032_04"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0032_primary_further_bleeding",
+          "outcome_group": "further bleeding after early versus elective colonoscopy",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.579597172725717,
+            "ci_lower": 0.7506435303729421,
+            "ci_upper": 3.3239841910626007,
+            "direction": "early_colonoscopy_higher_further_bleeding_risk_when_rr_gt_1"
+          },
+          "member_candidate_ids": [
+            "ce_0032_01",
+            "ce_0032_02",
+            "ce_0032_03",
+            "ce_0032_04"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0032_01",
+            "ee_0032_02",
+            "ee_0032_03",
+            "ee_0032_04"
+          ],
+          "heterogeneity_i2": 54.875890571168995,
+          "calculator_run": {
+            "calculator_id": "binary_rr_log_wald_v1",
+            "pooling": "dersimonian_laird_random_effects_inverse_variance",
+            "tau_squared": 0.30787418691009866,
+            "q": 6.648330655104783
+          }
+        }
+      ]
+    }
+  ]
+}

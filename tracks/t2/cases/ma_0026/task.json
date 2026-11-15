@@ -1,0 +1,90 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0026",
+  "source_case_id": "ma_0026_full",
+  "task_id": "ma_0026_full_extraction_all_reports_v1",
+  "task_type": "extraction",
+  "task_definition": "Extract source-grounded records from the known included reports according to protocol.json.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_0026_r015",
+    "a_0026_r016",
+    "a_0026_r018",
+    "a_0026_r022",
+    "a_0026_r024",
+    "a_0026_r026",
+    "a_0026_r028",
+    "a_0026_r030",
+    "a_0026_r034",
+    "a_0026_r035",
+    "a_0026_r037",
+    "a_0026_r038",
+    "a_0026_r039",
+    "a_0026_r041",
+    "a_0026_r043",
+    "a_0026_r044",
+    "a_0026_r050",
+    "a_0026_r051",
+    "a_0026_r052",
+    "a_0026_r053",
+    "a_0026_r054",
+    "a_0026_r057",
+    "a_0026_r058",
+    "a_0026_r059",
+    "a_0026_r062",
+    "a_0026_r064",
+    "a_0026_r065",
+    "a_0026_r066",
+    "a_0026_r067",
+    "a_0026_r068",
+    "a_0026_r070",
+    "a_0026_r071",
+    "a_0026_r074",
+    "a_0026_r078",
+    "a_0026_r079",
+    "a_0026_r080",
+    "a_0026_r081",
+    "a_0026_r082",
+    "a_0026_r083",
+    "a_0026_r084",
+    "a_0026_r086",
+    "a_0026_r087",
+    "a_0026_r092",
+    "a_0026_r093",
+    "a_0026_r094",
+    "a_0026_r095"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0026"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

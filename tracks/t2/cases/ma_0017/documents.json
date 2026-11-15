@@ -1,0 +1,86 @@
+{
+  "case_id": "ma_0017",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0017_01",
+      "document_id": "a_0017_01",
+      "doi": "10.1017/cjn.2020.160",
+      "title": "Early Impact of the COVID-19 Pandemic on Acute Stroke Treatment Delays",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_01.pdf"
+      },
+      "article_id": "a_0017_01"
+    },
+    {
+      "study_id": "s_0017_02",
+      "document_id": "a_0017_02",
+      "doi": "10.3389/fneur.2020.00850",
+      "title": "Impact of COVID-19 on Acute Stroke Presentation at a Comprehensive Stroke Center",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_02.pdf"
+      },
+      "article_id": "a_0017_02"
+    },
+    {
+      "study_id": "s_0017_03",
+      "document_id": "a_0017_03",
+      "doi": "10.1161/strokeaha.120.030105",
+      "title": "Delays in Stroke Onset to Hospital Arrival Time During COVID-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_03.pdf"
+      },
+      "article_id": "a_0017_03"
+    },
+    {
+      "study_id": "s_0017_04",
+      "document_id": "a_0017_04",
+      "doi": "10.1161/strokeaha.120.030225",
+      "title": "Impact of the COVID-19 Epidemic on Stroke Care and Potential Solutions",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_04.pdf"
+      },
+      "article_id": "a_0017_04"
+    },
+    {
+      "study_id": "s_0017_05",
+      "document_id": "a_0017_05",
+      "doi": "10.1007/s00415-020-10069-1",
+      "title": "Impact of the COVID-19 outbreak on acute stroke care",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_05.pdf"
+      },
+      "article_id": "a_0017_05"
+    },
+    {
+      "study_id": "s_0017_06",
+      "document_id": "a_0017_06",
+      "doi": "10.1161/strokeaha.120.030329",
+      "title": "Acute Stroke Care Is at Risk in the Era of COVID-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_06.pdf"
+      },
+      "article_id": "a_0017_06"
+    },
+    {
+      "study_id": "s_0017_07",
+      "document_id": "a_0017_07",
+      "doi": "10.1007/s10072-020-04754-2",
+      "title": "The stroke mothership model survived during COVID-19 era: an observational single-center study in Emilia-Romagna, Italy",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_07.pdf"
+      },
+      "article_id": "a_0017_07"
+    },
+    {
+      "study_id": "s_0017_08",
+      "document_id": "a_0017_08",
+      "doi": "10.1177/1747493020941637",
+      "title": "The impact of the COVID-19 pandemic on a stroke center in Latin America",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0017/a_0017_08.pdf"
+      },
+      "article_id": "a_0017_08"
+    }
+  ]
+}

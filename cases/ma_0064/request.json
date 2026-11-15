@@ -1,0 +1,345 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0064",
+  "topic": "Among patients with endometrial cancer, is low-volume sentinel-node metastasis associated with recurrence compared with pathologically node-negative status?",
+  "protocol": {
+    "protocol_id": "ma_0064_recurrence_protocol_v1",
+    "case_id": "ma_0064",
+    "pico": {
+      "population": "Patients with surgically staged endometrial cancer",
+      "intervention_or_exposure": "Low-volume sentinel-node metastasis (ITC or micrometastasis)",
+      "comparison": "Pathologically node-negative status",
+      "outcome": "Any source-defined recurrence"
+    },
+    "eligible_study_designs": [
+      "cohort study",
+      "case-control study"
+    ],
+    "targets": [
+      {
+        "target_id": "any_recurrence_low_volume_nodal_metastasis_vs_node_negative",
+        "outcome": "Any source-defined recurrence",
+        "comparison": "Low-volume sentinel-node metastasis (isolated tumor cells or micrometastasis) versus pathologically node-negative status",
+        "population_or_subgroup": "Patients with surgically staged endometrial cancer",
+        "timepoint_policy": {
+          "rule": "Capture any recurrence during each study's stated follow-up; preserve follow-up duration rather than imputing a common timepoint."
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "RR"
+        ],
+        "estimands": [
+          "risk_ratio_any_recurrence_low_volume_nodal_metastasis_vs_node_negative"
+        ],
+        "effect_selection_rule": null,
+        "extraction_notes": [
+          "Extract source counts and denominators, including the explicitly permitted disjoint-stratum aggregation; preserve cohort, outcome, follow-up and derivation provenance. Do not calculate effects."
+        ],
+        "source_constraints": [
+          "For the same cohort, outcome and follow-up, explicitly disjoint ITC and micrometastasis strata may be combined by summing their reported integer events and denominators once. Record each original stratum and the addition in source_quote; never count a combined row and its component rows as independent studies.",
+          "An exhaustive source recurrence roster may support an exact count by nodal status only when every relevant record has an unambiguous group assignment and the matching denominators are reported. State the roster and counting basis; otherwise leave the count unresolved.",
+          "Do not infer recurrence counts from percentages, Kaplan-Meier survival, hazard ratios, disease-free counts or review tables. Preserve incomplete arm counts and their missing fields in unresolved_items; never fill missing counts with zero.",
+          "Preserve true zero-event arms as zero. Continuity correction and RR calculation belong to the downstream calculator."
+        ]
+      },
+      {
+        "target_id": "source_reported_disease_event_hazard_low_volume_nodal_metastasis",
+        "outcome": "Source-defined recurrence or disease-free survival event; preserve composite components",
+        "comparison": "Low-volume sentinel-node metastasis (isolated tumor cells or micrometastasis) versus pathologically node-negative status",
+        "population_or_subgroup": "Patients with surgically staged endometrial cancer",
+        "timepoint_policy": {
+          "rule": "Capture any recurrence during each study's stated follow-up; preserve follow-up duration rather than imputing a common timepoint."
+        },
+        "accepted_data_families": [
+          "adjusted_ratio_effect"
+        ],
+        "preferred_effect_measures": [
+          "HR"
+        ],
+        "estimands": [
+          "source_reported_adjusted_disease_event_hazard_ratio"
+        ],
+        "extraction_notes": [
+          "Capture source-reported adjusted HR, confidence interval, reference group, treatment subgroup, outcome definition and adjustment set as supporting evidence. No HR synthesis is requested; never convert HR into RR or binary recurrence counts."
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_low_volume_nodal_metastasis_recurrence",
+      "outcome_group": "Any recurrence in endometrial cancer",
+      "target_id": "any_recurrence_low_volume_nodal_metastasis_vs_node_negative",
+      "eligible_outcome_codes": [
+        "any_recurrence_low_volume_nodal_metastasis_vs_node_negative"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_any_recurrence_low_volume_nodal_metastasis_vs_node_negative"
+      ],
+      "selection_rules": [
+        "Select one complete ITC/MM versus node-negative recurrence record per independent study.",
+        "Require source-reported recurrence counts and denominators in both groups.",
+        "Allow source-documented combination of ITC and micrometastasis strata; exclude survival-curve-only outcomes, review rows, and target pooled effects.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Capture any recurrence during each study's stated follow-up; preserve follow-up duration rather than imputing a common timepoint.",
+        "For the same cohort, outcome and follow-up, explicitly disjoint ITC and micrometastasis strata may be combined by summing their reported integer events and denominators once. Record each original stratum and the addition in source_quote; never count a combined row and its component rows as independent studies.",
+        "An exhaustive source recurrence roster may support an exact count by nodal status only when every relevant record has an unambiguous group assignment and the matching denominators are reported. State the roster and counting basis; otherwise leave the count unresolved.",
+        "Do not infer recurrence counts from percentages, Kaplan-Meier survival, hazard ratios, disease-free counts or review tables. Preserve incomplete arm counts and their missing fields in unresolved_items; never fill missing counts with zero.",
+        "Preserve true zero-event arms as zero. Continuity correction and RR calculation belong to the downstream calculator.",
+        "Extract source counts and denominators, including the explicitly permitted disjoint-stratum aggregation; preserve cohort, outcome, follow-up and derivation provenance. Do not calculate effects."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_risk_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "confidence_interval": "normal_approximation",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Any recurrence in endometrial cancer"
+      ],
+      "exposure": {
+        "terms": [
+          "Low-volume sentinel-node metastasis (ITC or micrometastasis)"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Low-volume sentinel-node metastasis (isolated tumor cells or micrometastasis) versus pathologically node-negative status"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Patients with surgically staged endometrial cancer"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Capture any recurrence during each study's stated follow-up; preserve follow-up duration rather than imputing a common timepoint.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Pathologic Prognostic Factors in Endometrial Carcinoma (Other Than Tumor Type and Grade)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_001.pdf"
+      },
+      "doi": "10.1097/pgp.0000000000000524"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Radiomics of the primary tumour as a tool to improve 18F-FDG-PET sensitivity in detecting nodal metastases in endometrial cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_002.pdf"
+      },
+      "doi": "10.1186/s13550-018-0441-1"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Clinical significance of isolated tumor cells and micrometastasis in low‐grade, stage I endometrial cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_003.pdf"
+      },
+      "doi": "10.1002/jso.25259"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "ESMO-ESGO-ESTRO Consensus Conference on Endometrial Cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_004.pdf"
+      },
+      "doi": "10.1097/igc.0000000000000609"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Isolated tumor cells identified by sentinel lymph node mapping in endometrial cancer: Does adjuvant treatment matter?",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_005.pdf"
+      },
+      "doi": "10.1016/j.ygyno.2017.05.024"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Sentinel Lymph Node Mapping in Endometrial Cancer: A Comprehensive Review",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_006.pdf"
+      },
+      "doi": "10.3389/fonc.2021.701758"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Performance of sentinel lymph node biopsy in high-risk endometrial cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_007.pdf"
+      },
+      "doi": "10.1016/j.gore.2016.04.002"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Emerging role of deep learning‐based artificial intelligence in tumor pathology",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_008.pdf"
+      },
+      "doi": "10.1002/cac2.12012"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Sentinel lymph node mapping with pathologic ultrastaging: A valuable tool for assessing nodal metastasis in low-grade endometrial cancer with superficial myoinvasion",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_009.pdf"
+      },
+      "doi": "10.1016/j.ygyno.2013.09.027"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Isolated tumor cells and micrometastases in regional lymph nodes in stage I to II endometrial cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_010.pdf"
+      },
+      "doi": "10.3802/jgo.2016.27.e1"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Recent Advances in Endometrial Cancer Management",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_011.pdf"
+      },
+      "doi": "10.3390/jcm12062241"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Low-Volume Lymph Node Metastasis Discovered During Sentinel Lymph Node Mapping for Endometrial Carcinoma",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_012.pdf"
+      },
+      "doi": "10.1245/s10434-015-5040-z"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Impact of Indocyanine Green for Sentinel Lymph Node Mapping in Early Stage Endometrial and Cervical Cancer: Comparison with Conventional Radiotracer 99mTc and/or Blue Dye",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_013.pdf"
+      },
+      "doi": "10.1245/s10434-015-5022-1"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Laparoscopic Indocyanine Green Sentinel Lymph Node Mapping in Endometrial Cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_014.pdf"
+      },
+      "doi": "10.1245/s10434-016-5090-x"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Pathologic Ultrastaging Improves Micrometastasis Detection in Sentinel Lymph Nodes During Endometrial Cancer Staging",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_015.pdf"
+      },
+      "doi": "10.1097/igc.0b013e3182954da8"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Lymph node micrometastases and outcome of endometrial cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_016.pdf"
+      },
+      "doi": "10.1016/j.ygyno.2019.07.018"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Metastatic disease in head & neck oncology La malattia metastatica in oncologia testa-collo",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0064/candidate_017.pdf"
+      },
+      "doi": "10.14639/0392-100x-suppl.1-40-2020"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

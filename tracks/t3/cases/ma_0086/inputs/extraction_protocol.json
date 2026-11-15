@@ -1,0 +1,270 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "protocol_id": "ma_0086_extraction_protocol_v1",
+  "protocol_version": "1.0.0",
+  "case_id": "ma_0086",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "In children with PFAPA syndrome, does tonsillectomy, with or without adenoidectomy, compared with non-surgical management reduce PFAPA symptoms and episode frequency?",
+  "pico": {
+    "population": {
+      "description": "Children with periodic fever, aphthous stomatitis, pharyngitis and cervical adenitis (PFAPA) syndrome",
+      "aliases": [
+        "children with PFAPA",
+        "pediatric PFAPA"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "Tonsillectomy, with or without adenoidectomy",
+      "aliases": [
+        "tonsillectomy",
+        "adenotonsillectomy",
+        "adenoidectomy and tonsillectomy",
+        "surgery group"
+      ]
+    },
+    "comparator": {
+      "description": "Expectant or non-surgical management",
+      "aliases": [
+        "follow-up alone",
+        "expectant management",
+        "control group"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "randomized controlled trial"
+  ],
+  "targets": [
+    {
+      "target_id": "pfapa_symptom_resolution",
+      "outcome": {
+        "description": "Immediate and persistent resolution of PFAPA symptoms",
+        "aliases": [
+          "complete resolution",
+          "free of PFAPA symptoms",
+          "symptom-free"
+        ]
+      },
+      "comparison": "Surgical intervention versus non-surgical management",
+      "population_or_subgroup": "All randomized children",
+      "timepoint_policy": {
+        "rule": "Preserve each eligible source-reported randomized follow-up timepoint",
+        "preferred": null,
+        "allowed": []
+      },
+      "accepted_data_families": [
+        "binary_arm_counts",
+        "percentage_only"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "surgery_vs_control"
+      ],
+      "effect_selection_rule": "Prefer exact randomized arm counts when the source report makes them recoverable.",
+      "data_contract": {
+        "raw_data_fields": [
+          "intervention_events",
+          "intervention_total",
+          "control_events",
+          "control_total"
+        ],
+        "field_definitions": {
+          "intervention_events": "Number of analyzed participants in the intervention arm with the target outcome during the source-defined follow-up.",
+          "intervention_total": "Number of analyzed participants in the intervention arm for the target outcome.",
+          "control_events": "Number of analyzed participants in the comparator arm with the target outcome during the source-defined follow-up.",
+          "control_total": "Number of analyzed participants in the comparator arm for the target outcome."
+        },
+        "poolability_required_fields": [
+          "intervention_events",
+          "intervention_total",
+          "control_events",
+          "control_total"
+        ],
+        "allowed_source_derivations": [],
+        "derivation_preconditions": [],
+        "derivation_instructions": [],
+        "source_aggregation_rules": [],
+        "integrity_checks": [
+          "counts_must_be_source_reported"
+        ]
+      },
+      "quantitative_use_policy": "source_only_when_not_exact",
+      "extraction_notes": [
+        "Preserve the source definition of resolution and its follow-up window."
+      ]
+    },
+    {
+      "target_id": "pfapa_episode_rate",
+      "outcome": {
+        "description": "PFAPA episode frequency or rate during randomized follow-up",
+        "aliases": [
+          "number of PFAPA episodes",
+          "episode rate",
+          "episodes per person-time"
+        ]
+      },
+      "comparison": "Surgical intervention versus non-surgical management",
+      "population_or_subgroup": "All randomized children",
+      "timepoint_policy": {
+        "rule": "Preserve the complete randomized follow-up interval reported by each source",
+        "preferred": null,
+        "allowed": []
+      },
+      "accepted_data_families": [
+        "event_counts_with_person_time"
+      ],
+      "preferred_effect_measures": [
+        "IRR"
+      ],
+      "estimands": [
+        "surgery_vs_control"
+      ],
+      "effect_selection_rule": "Preserve source-reported event counts, arm sizes, follow-up, and person-time or rates when available.",
+      "data_contract": {
+        "raw_data_fields": [
+          "intervention_episodes",
+          "intervention_total",
+          "control_episodes",
+          "control_total",
+          "follow_up_months",
+          "reported_rates_per_person_month"
+        ],
+        "field_definitions": {
+          "intervention_episodes": "Total number of target events accrued by all analyzed participants in the intervention arm during the source-defined follow-up.",
+          "intervention_total": "Number of analyzed participants in the intervention arm contributing the stated follow-up.",
+          "control_episodes": "Total number of target events accrued by all analyzed participants in the comparator arm during the source-defined follow-up.",
+          "control_total": "Number of analyzed participants in the comparator arm contributing the stated follow-up.",
+          "follow_up_months": "Duration in months of the source-defined follow-up shared by the analyzed arm participants.",
+          "reported_rates_per_person_month": "Source-reported arm-specific event rates per person-month, only when explicitly printed."
+        },
+        "poolability_required_fields": [
+          "intervention_episodes",
+          "intervention_total",
+          "control_episodes",
+          "control_total",
+          "follow_up_months"
+        ],
+        "allowed_source_derivations": [
+          "derive_person_time_from_arm_size_times_complete_follow_up"
+        ],
+        "derivation_preconditions": [
+          "arm-specific totals are source reported",
+          "the stated follow-up applies to all analyzed participants",
+          "the source reports no loss of follow-up or otherwise confirms complete follow-up"
+        ],
+        "derivation_instructions": [
+          "When the preconditions are met, retain exact arm-level event totals, participant totals, and follow-up even when the source does not print a rate or person-time; downstream may derive person-time from participant total multiplied by follow-up."
+        ],
+        "source_aggregation_rules": [
+          "When a source states that N participants each experienced M target events, record the arm total as N multiplied by M rather than M alone."
+        ],
+        "integrity_checks": [
+          "reported_rate_must_agree_with_counts_and_follow_up",
+          "participant_level_event_statements_must_be_aggregated_to_total_events"
+        ]
+      },
+      "quantitative_use_policy": "exact_source_data_required",
+      "extraction_notes": []
+    },
+    {
+      "target_id": "corticosteroid_use_during_follow_up",
+      "outcome": {
+        "description": "Corticosteroid treatment during randomized follow-up",
+        "aliases": [
+          "corticosteroid use",
+          "corticosteroid treatment"
+        ]
+      },
+      "comparison": "Surgical intervention versus non-surgical management",
+      "population_or_subgroup": "Preserve the source-defined randomized subgroup",
+      "timepoint_policy": {
+        "rule": "Preserve the source-reported follow-up interval",
+        "preferred": null,
+        "allowed": []
+      },
+      "accepted_data_families": [
+        "binary_arm_counts",
+        "percentage_only"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "surgery_vs_control"
+      ],
+      "effect_selection_rule": "Do not reconstruct exact arm counts from rounded percentages.",
+      "data_contract": {
+        "raw_data_fields": [
+          "intervention_events",
+          "intervention_total",
+          "control_events",
+          "control_total"
+        ],
+        "field_definitions": {
+          "intervention_events": "Number of analyzed intervention-arm participants with the target outcome during the source-defined follow-up, when exact source counts are reported.",
+          "intervention_total": "Number of analyzed intervention-arm participants for the target outcome, when exact source counts are reported.",
+          "control_events": "Number of analyzed comparator-arm participants with the target outcome during the source-defined follow-up, when exact source counts are reported.",
+          "control_total": "Number of analyzed comparator-arm participants for the target outcome, when exact source counts are reported."
+        },
+        "poolability_required_fields": [
+          "intervention_events",
+          "intervention_total",
+          "control_events",
+          "control_total"
+        ],
+        "allowed_source_derivations": [],
+        "derivation_preconditions": [],
+        "derivation_instructions": [],
+        "source_aggregation_rules": [],
+        "integrity_checks": [
+          "counts_must_not_be_reconstructed_from_rounded_percentages"
+        ]
+      },
+      "quantitative_use_policy": "source_only_when_not_exact",
+      "extraction_notes": []
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "markdown"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table",
+      "figure"
+    ],
+    "forbidden_evidence_sources": [
+      "target meta-analysis",
+      "forest plot",
+      "unpublished author correspondence"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "source-defined outcome",
+      "comparison",
+      "population or subgroup",
+      "follow-up",
+      "data family",
+      "raw source data",
+      "reported effect when present",
+      "derivation status",
+      "quantitative usability",
+      "source locator"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  },
+  "human_escalation_rules": [
+    "Source text and table values conflict",
+    "An exact effect is requested but the source provides only rounded or incomplete data"
+  ]
+}

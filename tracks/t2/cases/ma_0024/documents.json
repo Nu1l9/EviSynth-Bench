@@ -1,0 +1,26 @@
+{
+  "case_id": "ma_0024",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0024_01",
+      "document_id": "a_0024_01",
+      "doi": "10.1243/09544119jeim486",
+      "title": "Computer-based detection of diabetes retinopathy stages using digital fundus images",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0024/a_0024_01.pdf"
+      },
+      "article_id": "a_0024_01"
+    },
+    {
+      "study_id": "s_0024_02",
+      "document_id": "a_0024_02",
+      "doi": "10.1007/s10916-007-9113-9",
+      "title": "Automated Identification of Diabetic Retinopathy Stages Using Digital Fundus Images",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0024/a_0024_02.pdf"
+      },
+      "article_id": "a_0024_02"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../../../schemas/task.schema.json",
+  "case_id": "ma_0054",
+  "task_id": "ma_0054_analysis_main_outcomes_v1",
+  "task_type": "analysis",
+  "task_definition": "Use the public PICO declarations and evidence candidates to identify eligible independent evidence, then produce a justified quantitative synthesis where possible.",
+  "input_files": [
+    "../inputs/extraction_protocol.json",
+    "../inputs/analysis_profile.json",
+    "../inputs/analysis_extensions.json",
+    "../inputs/analysis_evidence_candidates.json"
+  ],
+  "evaluation": {
+    "metrics": [
+      "candidate_selection_f1",
+      "pooled_effect_accuracy",
+      "pooled_ci_accuracy",
+      "heterogeneity_accuracy"
+    ],
+    "numerical_tolerance": {
+      "absolute": 1e-06,
+      "relative": 1e-06
+    }
+  },
+  "analysis_profile": "../inputs/analysis_profile.json",
+  "screening_stage": "not_applicable",
+  "extraction_protocol": "../inputs/extraction_protocol.json",
+  "allowed_inputs": {
+    "document_ids": [
+      "a_0054_28",
+      "a_0054_29",
+      "a_0054_30",
+      "a_0054_31",
+      "a_0054_32",
+      "a_0054_33",
+      "a_0054_34",
+      "a_0054_35",
+      "a_0054_36",
+      "a_0054_37"
+    ],
+    "representations": [],
+    "forbidden_document_ids": []
+  },
+  "target_scope": {
+    "analysis_profile_id": "ma_0054_all_cause_mortality_analysis_profile_v1",
+    "analysis_ids": [
+      "primary_all_cause_mortality"
+    ]
+  },
+  "submission_contract": {
+    "schema": "../../../../../schemas/submission.schema.json",
+    "task_type": "analysis"
+  }
+}

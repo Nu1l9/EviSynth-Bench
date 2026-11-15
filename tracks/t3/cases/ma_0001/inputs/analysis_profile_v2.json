@@ -1,0 +1,284 @@
+{
+  "case_id": "ma_0001",
+  "profile_version": "2.0.0",
+  "plan_id": "ma_0001_primary_secondary_subgroup_v2",
+  "primary_analysis_spec": {
+    "analysis_id": "primary_any_cv",
+    "title": "Any cardiovascular event: primary analysis",
+    "target_id": "cardiovascular_outcomes",
+    "outcome_group": "any cardiovascular event",
+    "eligible_outcome_codes": [
+      "atrial_fibrillation",
+      "cardiovascular_death",
+      "cerebrovascular_disease",
+      "coronary_artery_bypass",
+      "coronary_heart_disease",
+      "heart_failure",
+      "myocardial_infarction",
+      "percutaneous_coronary_intervention",
+      "peripheral_artery_disease",
+      "peripheral_vascular_disease",
+      "stroke"
+    ],
+    "eligible_data_families": [
+      "adjusted_ratio_effect"
+    ],
+    "accepted_effect_types": [
+      "HR",
+      "RR",
+      "OR"
+    ],
+    "estimands": [
+      "highest_vs_lowest_variability"
+    ],
+    "exposure": {
+      "terms": [
+        "body weight variability",
+        "body mass index variability",
+        "BMI variability",
+        "weight fluctuation"
+      ]
+    },
+    "comparison": {
+      "terms": [
+        "highest versus lowest variability category",
+        "highest variability vs lowest variability",
+        "highest quartile vs lowest quartile",
+        "quartile 4 vs quartile 1",
+        "Q4 vs Q1",
+        "higher variability vs lower variability"
+      ]
+    },
+    "population": {
+      "policy": "overall_only",
+      "terms": [
+        "overall",
+        "all participants",
+        "full cohort",
+        "total cohort",
+        "entire cohort"
+      ]
+    },
+    "timepoint_policy": "longest_eligible",
+    "model_policy": "Prefer the most fully adjusted eligible model within the same study/outcome/comparison/population/timepoint context.",
+    "dependence_policy": "one_effect_per_study_outcome",
+    "selection_rules": [
+      "Do not mix subgroup-only estimates into the primary overall-population analysis.",
+      "Select one competing model within the same analysis context.",
+      "Retain distinct prespecified cardiovascular outcomes from the same study as separate study-outcome units."
+    ],
+    "minimum_independent_studies": 2
+  },
+  "secondary_outcomes": [
+    {
+      "analysis_id": "secondary_cv_death",
+      "title": "Cardiovascular death",
+      "outcome_group": "cardiovascular death",
+      "eligible_outcome_codes": [
+        "cardiovascular_death",
+        "coronary_heart_disease"
+      ],
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "secondary_mi",
+      "title": "Myocardial infarction",
+      "outcome_group": "myocardial infarction",
+      "eligible_outcome_codes": [
+        "myocardial_infarction"
+      ],
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "secondary_stroke",
+      "title": "Stroke",
+      "outcome_group": "stroke",
+      "eligible_outcome_codes": [
+        "stroke",
+        "cerebrovascular_disease"
+      ],
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "secondary_heart_failure",
+      "title": "Heart failure",
+      "outcome_group": "heart failure",
+      "eligible_outcome_codes": [
+        "heart_failure"
+      ],
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "secondary_atrial_fibrillation",
+      "title": "Atrial fibrillation",
+      "outcome_group": "atrial fibrillation",
+      "eligible_outcome_codes": [
+        "atrial_fibrillation"
+      ],
+      "minimum_independent_studies": 2
+    }
+  ],
+  "candidate_subgroup_dimensions": [
+    {
+      "dimension_id": "sex",
+      "label": "Sex subgroup",
+      "field": "population_or_subgroup",
+      "minimum_studies_per_level": 2,
+      "exploratory": false,
+      "levels": [
+        {
+          "value_id": "female",
+          "label": "Female",
+          "terms": [
+            "female",
+            "women"
+          ]
+        },
+        {
+          "value_id": "male",
+          "label": "Male",
+          "terms": [
+            "male",
+            "men"
+          ]
+        }
+      ]
+    },
+    {
+      "dimension_id": "diabetes_status",
+      "label": "Diabetes-status subgroup",
+      "field": "population_or_subgroup",
+      "minimum_studies_per_level": 2,
+      "exploratory": false,
+      "levels": [
+        {
+          "value_id": "with_diabetes",
+          "label": "With diabetes",
+          "terms": [
+            "with diabetes",
+            "type 2 diabetes"
+          ]
+        },
+        {
+          "value_id": "without_diabetes",
+          "label": "Without diabetes",
+          "terms": [
+            "without diabetes",
+            "no diabetes"
+          ]
+        }
+      ]
+    },
+    {
+      "dimension_id": "obesity_status",
+      "label": "Obesity-status subgroup",
+      "field": "population_or_subgroup",
+      "minimum_studies_per_level": 2,
+      "exploratory": true,
+      "levels": [
+        {
+          "value_id": "obese",
+          "label": "Obese",
+          "terms": [
+            "obese",
+            "with obesity"
+          ]
+        },
+        {
+          "value_id": "non_obese",
+          "label": "Non-obese",
+          "terms": [
+            "non-obese",
+            "without obesity"
+          ]
+        }
+      ]
+    },
+    {
+      "dimension_id": "fibrosis_status",
+      "label": "Fibrosis-status subgroup",
+      "field": "population_or_subgroup",
+      "minimum_studies_per_level": 2,
+      "exploratory": true,
+      "levels": [
+        {
+          "value_id": "advanced",
+          "label": "Advanced fibrosis",
+          "terms": [
+            "advanced liver fibrosis",
+            "significant liver fibrosis"
+          ]
+        },
+        {
+          "value_id": "not_advanced",
+          "label": "No advanced fibrosis",
+          "terms": [
+            "without advanced liver fibrosis",
+            "no advanced liver fibrosis"
+          ]
+        }
+      ]
+    }
+  ],
+  "candidate_sensitivity_dimensions": [
+    {
+      "dimension_id": "effect_measure",
+      "label": "Effect-measure sensitivity",
+      "field": "reported_effect_type",
+      "minimum_studies_per_level": 2,
+      "exploratory": false,
+      "levels": [
+        {
+          "value_id": "hr_only",
+          "label": "HR only",
+          "terms": [
+            "HR"
+          ]
+        },
+        {
+          "value_id": "rr_only",
+          "label": "RR only",
+          "terms": [
+            "RR"
+          ]
+        },
+        {
+          "value_id": "or_only",
+          "label": "OR only",
+          "terms": [
+            "OR"
+          ]
+        }
+      ]
+    },
+    {
+      "dimension_id": "per_sd_estimand",
+      "label": "Continuous estimand sensitivity",
+      "field": "comparator",
+      "minimum_studies_per_level": 2,
+      "exploratory": false,
+      "levels": [
+        {
+          "value_id": "per_1_sd",
+          "label": "Per 1-SD increase",
+          "terms": [
+            "per 1 standard-deviation",
+            "per 1 SD"
+          ],
+          "analysis_overrides": {
+            "estimands": [
+              "per_1_sd_variability"
+            ],
+            "comparison": {
+              "terms": [
+                "per 1 standard-deviation",
+                "per 1 SD"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

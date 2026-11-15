@@ -1,0 +1,762 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0001",
+  "topic": "Among adults, is longitudinal variability in body weight or BMI associated with subsequent cardiovascular morbidity or cardiovascular mortality?",
+  "protocol": {
+    "protocol_id": "ma_0001_extraction_protocol_v2",
+    "case_id": "ma_0001",
+    "pico": {
+      "population": "Adults aged 18 years or older",
+      "intervention_or_exposure": "Longitudinal variability or fluctuation in body weight or body mass index",
+      "comparison": "Lower weight or BMI variability, or a per-unit increase in variability",
+      "outcome": "Any source-defined incident cardiovascular morbidity or cardiovascular mortality outcome"
+    },
+    "eligible_study_designs": [
+      "longitudinal observational study",
+      "post hoc longitudinal trial analysis"
+    ],
+    "targets": [
+      {
+        "target_id": "cardiovascular_outcomes",
+        "outcome": "Any source-defined incident cardiovascular morbidity or cardiovascular mortality outcome",
+        "comparison": "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference",
+        "population_or_subgroup": "Every source-reported eligible analytic population or subgroup; do not select among them during extraction",
+        "timepoint_policy": {
+          "rule": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "adjusted_ratio_effect"
+        ],
+        "preferred_effect_measures": [
+          "HR",
+          "RR",
+          "OR"
+        ],
+        "estimands": [],
+        "effect_selection_rule": null,
+        "extraction_notes": [
+          "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+          "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+          "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "main_pr_any_cv",
+      "outcome_group": "any_cardiovascular_event",
+      "target_id": "cardiovascular_outcomes",
+      "eligible_outcome_codes": [
+        "atrial_fibrillation",
+        "cardiovascular_death",
+        "cerebrovascular_disease",
+        "coronary_artery_bypass",
+        "coronary_heart_disease",
+        "heart_failure",
+        "myocardial_infarction",
+        "percutaneous_coronary_intervention",
+        "peripheral_artery_disease",
+        "peripheral_vascular_disease",
+        "stroke"
+      ],
+      "eligible_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [
+        "highest_vs_lowest_variability"
+      ],
+      "selection_rules": [
+        "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+        "Select no more than one eligible estimate from each independent study for an analysis.",
+        "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+        "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+        "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+        "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+        "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "any cardiovascular event"
+      ],
+      "exposure": {
+        "terms": [
+          "Longitudinal variability or fluctuation in body weight or body mass index"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Every source-reported eligible analytic population or subgroup; do not select among them during extraction"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": [
+      {
+        "analysis_id": "main_pr_cv_death",
+        "outcome_group": "cardiovascular_death",
+        "target_id": "cardiovascular_outcomes",
+        "eligible_outcome_codes": [
+          "cardiovascular_death",
+          "coronary_heart_disease"
+        ],
+        "eligible_data_families": [
+          "adjusted_ratio_effect"
+        ],
+        "accepted_effect_types": [
+          "HR",
+          "RR",
+          "OR"
+        ],
+        "estimands": [
+          "highest_vs_lowest_variability"
+        ],
+        "selection_rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Timepoint eligibility: Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+          "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+          "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+          "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "log_ratio_inverse_variance",
+          "heterogeneity_estimator": "dersimonian_laird",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "cardiovascular death"
+        ],
+        "exposure": {
+          "terms": [
+            "Longitudinal variability or fluctuation in body weight or body mass index"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Every source-reported eligible analytic population or subgroup; do not select among them during extraction"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      },
+      {
+        "analysis_id": "main_pr_mi",
+        "outcome_group": "myocardial_infarction",
+        "target_id": "cardiovascular_outcomes",
+        "eligible_outcome_codes": [
+          "myocardial_infarction"
+        ],
+        "eligible_data_families": [
+          "adjusted_ratio_effect"
+        ],
+        "accepted_effect_types": [
+          "HR",
+          "RR",
+          "OR"
+        ],
+        "estimands": [
+          "highest_vs_lowest_variability"
+        ],
+        "selection_rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Timepoint eligibility: Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+          "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+          "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+          "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "log_ratio_inverse_variance",
+          "heterogeneity_estimator": "dersimonian_laird",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "myocardial infarction"
+        ],
+        "exposure": {
+          "terms": [
+            "Longitudinal variability or fluctuation in body weight or body mass index"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Every source-reported eligible analytic population or subgroup; do not select among them during extraction"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      },
+      {
+        "analysis_id": "main_pr_stroke",
+        "outcome_group": "stroke",
+        "target_id": "cardiovascular_outcomes",
+        "eligible_outcome_codes": [
+          "stroke"
+        ],
+        "eligible_data_families": [
+          "adjusted_ratio_effect"
+        ],
+        "accepted_effect_types": [
+          "HR",
+          "RR",
+          "OR"
+        ],
+        "estimands": [
+          "highest_vs_lowest_variability"
+        ],
+        "selection_rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Timepoint eligibility: Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+          "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+          "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+          "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "log_ratio_inverse_variance",
+          "heterogeneity_estimator": "dersimonian_laird",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "stroke"
+        ],
+        "exposure": {
+          "terms": [
+            "Longitudinal variability or fluctuation in body weight or body mass index"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Every source-reported eligible analytic population or subgroup; do not select among them during extraction"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      },
+      {
+        "analysis_id": "main_pr_composite",
+        "outcome_group": "composite_cardiovascular_outcome",
+        "target_id": "cardiovascular_outcomes",
+        "eligible_outcome_codes": [
+          "composite_cardiovascular_outcome"
+        ],
+        "eligible_data_families": [
+          "adjusted_ratio_effect"
+        ],
+        "accepted_effect_types": [
+          "HR",
+          "RR",
+          "OR"
+        ],
+        "estimands": [
+          "highest_vs_lowest_variability"
+        ],
+        "selection_rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Timepoint eligibility: Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+          "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+          "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+          "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "log_ratio_inverse_variance",
+          "heterogeneity_estimator": "dersimonian_laird",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "composite cardiovascular outcome"
+        ],
+        "exposure": {
+          "terms": [
+            "Longitudinal variability or fluctuation in body weight or body mass index"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "Any directly reported body-weight or BMI variability comparison or continuous exposure scale, preserving its source-defined reference"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Every source-reported eligible analytic population or subgroup; do not select among them during extraction"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Preserve every source-reported eligible follow-up or time window; do not select a final timepoint during extraction",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Weight cycling and cardiovascular outcome in women with suspected ischemia: A report from the NHLBI-sponsored WISE Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_001.pdf"
+      },
+      "doi": "10.1371/journal.pone.0207223"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Patterns of weight change after the diagnosis of type 2 diabetes in Scotland and their relationship with glycaemic control, mortality and cardiovascular outcomes: a retrospective cohort study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_002.pdf"
+      },
+      "doi": "10.1136/bmjopen-2015-010836"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Association of Weight Fluctuation With Mortality in Japanese Adults",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_003.pdf"
+      },
+      "doi": "10.1001/jamanetworkopen.2019.0731"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Comparing conventional and modified Seldinger techniques using a micro-insertion kit for PICC placement in neonates: a retrospective cohort study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_004.pdf"
+      },
+      "doi": "10.3389/fped.2024.1395395"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "THE ASSOCIATION BETWEEN WEIGHT FLUCTUATION AND MORTALITY: RESULTS FROM A POPULATION-BASED COHORT STUDY",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_005.pdf"
+      },
+      "doi": "10.1007/s10900-004-1955-1"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Impact of body mass index and body weight variabilities on mortality: a nationwide cohort study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_006.pdf"
+      },
+      "doi": "10.1038/s41366-018-0079-0"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Body weight variability and the risk of cardiovascular outcomes in patients with nonalcoholic fatty liver disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_007.pdf"
+      },
+      "doi": "10.1038/s41598-021-88733-3"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Impact of weight variability on mortality among Korean men and women: a population based study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_008.pdf"
+      },
+      "doi": "10.1038/s41598-019-46037-7"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Associations of changes in body mass index with all-cause and cardiovascular mortality in healthy middle-aged adults",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_009.pdf"
+      },
+      "doi": "10.1371/journal.pone.0189180"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Effects of BMI and LDL-cholesterol change pattern on cardiovascular disease in normal adults and diabetics",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_010.pdf"
+      },
+      "doi": "10.1136/bmjdrc-2020-001340"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Central venous catheter insertion profile and complications among neonates in Saudi Arabia: a cross-sectional study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_011.pdf"
+      },
+      "doi": "10.1136/bmjopen-2024-089554"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Association of weight fluctuation with cardiovascular disease risk among initially obese adults",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_012.pdf"
+      },
+      "doi": "10.1038/s41598-021-89666-7"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Assessment of the Complications of Peripherally Inserted Central Catheter in Neonates Admitted to the Intensive Care Unit",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_013.pdf"
+      },
+      "doi": "10.4103/ijnmr.ijnmr_20_21"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "An accuracy study of the Intracavitary Electrocardiogram (IC-ECG) guided peripherally inserted central catheter tip placement among neonates",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_014.pdf"
+      },
+      "doi": "10.1515/med-2017-0019"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "A review of neonatal peripherally inserted central venous catheters in extremely or very low birthweight infants based on a 3-year clinical practice: Complication incidences and risk factors",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_015.pdf"
+      },
+      "doi": "10.3389/fped.2022.987512"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "From skin to syndrome: The progression of primary cutaneous aspergillosis to extremity compartment syndrome in a premature infant. Case report and review of the literature",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_016.pdf"
+      },
+      "doi": "10.1016/j.ijscr.2024.109658"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Body-Weight Fluctuations and Outcomes in Coronary Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_017.pdf"
+      },
+      "doi": "10.1056/nejmoa1606148"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "Body Weight Variability and Cardiovascular Outcomes in Patients With Type 2 Diabetes Mellitus",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_018.pdf"
+      },
+      "doi": "10.1161/circoutcomes.118.004724"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Elaboration and development of a realistic 3D printed model for training in ultrasound-guided placement of peripheral central venous catheter in children",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_019.pdf"
+      },
+      "doi": "10.1177/11297298231187005"
+    },
+    {
+      "article_id": "candidate_020",
+      "document_id": "candidate_020",
+      "study_id": "study_020",
+      "role": "candidate_article",
+      "title": "Variability of Body Weight and Health Outcomes in the Framingham Population",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_020.pdf"
+      },
+      "doi": "10.1056/nejm199106273242602"
+    },
+    {
+      "article_id": "candidate_021",
+      "document_id": "candidate_021",
+      "study_id": "study_021",
+      "role": "candidate_article",
+      "title": "High variability in bodyweight is associated with an increased risk of atrial fibrillation in patients with type 2 diabetes mellitus: a nationwide cohort study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_021.pdf"
+      },
+      "doi": "10.1186/s12933-020-01059-8"
+    },
+    {
+      "article_id": "candidate_022",
+      "document_id": "candidate_022",
+      "study_id": "study_022",
+      "role": "candidate_article",
+      "title": "Body Mass Index, Change in Weight, Body Weight Variability and Outcomes in Type 2 Diabetes Mellitus (from the ACCORD Trial)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_022.pdf"
+      },
+      "doi": "10.1016/j.amjcard.2018.11.016"
+    },
+    {
+      "article_id": "candidate_023",
+      "document_id": "candidate_023",
+      "study_id": "study_023",
+      "role": "candidate_article",
+      "title": "Variabilities in Weight and Waist Circumference and Risk of Myocardial Infarction, Stroke, and Mortality: A Nationwide Cohort Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_023.pdf"
+      },
+      "doi": "10.3803/enm.2020.871"
+    },
+    {
+      "article_id": "candidate_024",
+      "document_id": "candidate_024",
+      "study_id": "study_024",
+      "role": "candidate_article",
+      "title": "Weight Change, Weight Fluctuation, and Mortality",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_024.pdf"
+      },
+      "doi": "10.1001/archinte.162.22.2575"
+    },
+    {
+      "article_id": "candidate_025",
+      "document_id": "candidate_025",
+      "study_id": "study_025",
+      "role": "candidate_article",
+      "title": "Variability in body weight and the risk of cardiovascular complications in type 2 diabetes: results from the Swedish National Diabetes Register",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_025.pdf"
+      },
+      "doi": "10.1186/s12933-021-01360-0"
+    },
+    {
+      "article_id": "candidate_026",
+      "document_id": "candidate_026",
+      "study_id": "study_026",
+      "role": "candidate_article",
+      "title": "Association of Variability in Body Mass Index and Metabolic Health With Cardiometabolic Disease Risk",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_026.pdf"
+      },
+      "doi": "10.1161/jaha.118.010793"
+    },
+    {
+      "article_id": "candidate_027",
+      "document_id": "candidate_027",
+      "study_id": "study_027",
+      "role": "candidate_article",
+      "title": "Efficacy and safety of intracavitary electrocardiography-guided peripherally inserted central catheters in pediatric patients: a systematic review and meta-analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_027.pdf"
+      },
+      "doi": "10.7717/peerj.18274"
+    },
+    {
+      "article_id": "candidate_028",
+      "document_id": "candidate_028",
+      "study_id": "study_028",
+      "role": "candidate_article",
+      "title": "Predictors of venous thromboembolism among infants in children’s hospitals in the United States: a retrospective Pediatric Health Information Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_028.pdf"
+      },
+      "doi": "10.1038/s41372-021-01232-1"
+    },
+    {
+      "article_id": "candidate_029",
+      "document_id": "candidate_029",
+      "study_id": "study_029",
+      "role": "candidate_article",
+      "title": "Clinical significance of intracavitary electrocardiographic localization in the prevention of PICC heterotopia in children with tumor",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_029.pdf"
+      },
+      "doi": "10.1111/anec.12934"
+    },
+    {
+      "article_id": "candidate_030",
+      "document_id": "candidate_030",
+      "study_id": "study_030",
+      "role": "candidate_article",
+      "title": "Body Weight Variability and the Risk of Cardiovascular Outcomes and Mortality in Patients With Type 2 Diabetes: A Nationwide Cohort Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_030.pdf"
+      },
+      "doi": "10.2337/dc19-2552"
+    },
+    {
+      "article_id": "candidate_031",
+      "document_id": "candidate_031",
+      "study_id": "study_031",
+      "role": "candidate_article",
+      "title": "Associations of Weight Change and Weight Variability with Cardiovascular and All-Cause Mortality in the Chicago Western Electric Company Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_031.pdf"
+      },
+      "doi": "10.1093/aje/152.4.324"
+    },
+    {
+      "article_id": "candidate_032",
+      "document_id": "candidate_032",
+      "study_id": "study_032",
+      "role": "candidate_article",
+      "title": "Association of Body-Weight Fluctuation With Outcomes in Heart Failure With Preserved Ejection Fraction",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_032.pdf"
+      },
+      "doi": "10.3389/fcvm.2021.689591"
+    },
+    {
+      "article_id": "candidate_033",
+      "document_id": "candidate_033",
+      "study_id": "study_033",
+      "role": "candidate_article",
+      "title": "Bodyweight fluctuation is associated with increased risk of incident atrial fibrillation",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0001/candidate_033.pdf"
+      },
+      "doi": "10.1016/j.hrthm.2019.09.029"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

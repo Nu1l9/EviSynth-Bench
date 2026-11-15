@@ -1,0 +1,35 @@
+{
+  "description": "Records with DOI unavailable; use the listed title for literature retrieval.",
+  "articles": [
+    {
+      "case_id": "ma_0010",
+      "article_id": "candidate_002",
+      "doi": null,
+      "title": "Association study of single nucleotide polymorphisms of IL23R and IL17 in rheumatoid arthritis in the Algerian population"
+    },
+    {
+      "case_id": "ma_0028",
+      "article_id": "candidate_018",
+      "doi": null,
+      "title": "Paediatric infections"
+    },
+    {
+      "case_id": "ma_0037",
+      "article_id": "candidate_028",
+      "doi": null,
+      "title": "Endobronchial Ultrasound-Guided Transbronchial Needle Aspiration for the Diagnosis of Central Intrapulmonary Lesions not Visible by Conventional Bronchoscopy"
+    },
+    {
+      "case_id": "ma_0037",
+      "article_id": "candidate_037",
+      "doi": null,
+      "title": "Efficacy and cost effectiveness of rapid on site examination (ROSE) in management of patients with mediastinal lymphadenopathies"
+    },
+    {
+      "case_id": "ma_0076",
+      "article_id": "candidate_052",
+      "doi": null,
+      "title": "The effect of n–3 PUFA/γ-cyclodextrin complex on serum lipids in healthy volunteers - a randomized, placebo-controlled, double-blind trial"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0011",
+    "task_id": "ma_0011_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among patients hospitalized with heart failure, is higher liver stiffness or a validated liver-fibrosis score associated with subsequent adverse cardiac events?",
+    "pico": {
+      "population": "Patients hospitalized with heart failure",
+      "exposure": "Liver stiffness or a validated liver-fibrosis score",
+      "comparator": "Source-defined higher versus lower exposure, or a one-unit exposure increase",
+      "outcomes": [
+        "Composite cardiovascular death or heart-failure hospitalization/readmission",
+        "adverse cardiac event",
+        "cardiac event",
+        "cardiac death",
+        "cardiovascular death",
+        "rehospitalization for heart failure",
+        "readmission for heart failure",
+        "All-cause mortality",
+        "all cause death",
+        "death from any cause"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "HR"
+      ],
+      "estimands": [
+        "adjusted_continuous_exposure_association"
+      ],
+      "targets": [
+        {
+          "target_id": "adverse_cardiac_event",
+          "outcome": {
+            "description": "Composite cardiovascular death or heart-failure hospitalization/readmission",
+            "aliases": [
+              "adverse cardiac event",
+              "cardiac event",
+              "cardiac death",
+              "cardiovascular death",
+              "rehospitalization for heart failure",
+              "readmission for heart failure"
+            ]
+          },
+          "accepted_data_families": [
+            "time_to_event"
+          ],
+          "preferred_effect_measures": [
+            "HR"
+          ],
+          "estimands": [
+            "adjusted_continuous_exposure_association"
+          ],
+          "effect_selection_rule": "For each report, retain the adjudicated source-reported adjusted continuous hazard ratio for the source-defined liver-stiffness-related exposure. Preserve its exposure unit and adjustment set verbatim.",
+          "data_contract": {
+            "raw_data_fields": [
+              "effect_value",
+              "ci_lower",
+              "ci_upper",
+              "exposure_unit",
+              "adjustment_set"
+            ],
+            "field_definitions": {
+              "effect_value": "Source-reported adjusted hazard ratio.",
+              "ci_lower": "Lower 95% confidence bound reported by the source.",
+              "ci_upper": "Upper 95% confidence bound reported by the source.",
+              "exposure_unit": "Source-defined continuous increase, retained without rescaling.",
+              "adjustment_set": "Covariates stated for the selected source model."
+            },
+            "poolability_required_fields": [
+              "effect_value",
+              "ci_lower",
+              "ci_upper",
+              "exposure_unit"
+            ],
+            "allowed_source_derivations": [],
+            "derivation_preconditions": [],
+            "derivation_instructions": [],
+            "source_aggregation_rules": [],
+            "integrity_checks": [
+              "effect_and_confidence_interval_must_be_primary_source_reported",
+              "exposure_unit_must_not_be_silently_rescaled",
+              "outcome_must_match_target"
+            ]
+          },
+          "quantitative_use_policy": "source_reported_effect_allowed",
+          "quantitative_usability": "poolable",
+          "extraction_notes": [
+            "Keep categorical exposure effects separate from the selected continuous effect.",
+            "Record a source-only finding if the endpoint is all-cause mortality rather than the target composite cardiac event."
+          ]
+        },
+        {
+          "target_id": "all_cause_mortality",
+          "outcome": {
+            "description": "All-cause mortality",
+            "aliases": [
+              "all-cause mortality",
+              "all cause death",
+              "death from any cause"
+            ]
+          },
+          "accepted_data_families": [
+            "time_to_event"
+          ],
+          "preferred_effect_measures": [
+            "HR"
+          ],
+          "estimands": [
+            "adjusted_continuous_exposure_association"
+          ],
+          "effect_selection_rule": "Retain the source-reported adjusted continuous hazard ratio, with its source-defined exposure unit and adjustment set.",
+          "data_contract": {
+            "raw_data_fields": [
+              "effect_value",
+              "ci_lower",
+              "ci_upper",
+              "exposure_unit",
+              "adjustment_set"
+            ],
+            "field_definitions": {
+              "effect_value": "Source-reported adjusted hazard ratio.",
+              "ci_lower": "Lower 95% confidence bound reported by the source.",
+              "ci_upper": "Upper 95% confidence bound reported by the source.",
+              "exposure_unit": "Source-defined continuous increase, retained without rescaling.",
+              "adjustment_set": "Covariates stated for the selected source model."
+            },
+            "poolability_required_fields": [
+              "effect_value",
+              "ci_lower",
+              "ci_upper",
+              "exposure_unit"
+            ],
+            "allowed_source_derivations": [],
+            "derivation_preconditions": [],
+            "derivation_instructions": [],
+            "source_aggregation_rules": [],
+            "integrity_checks": [
+              "effect_and_confidence_interval_must_be_primary_source_reported",
+              "exposure_unit_must_not_be_silently_rescaled",
+              "outcome_must_match_target"
+            ]
+          },
+          "quantitative_use_policy": "source_only_for_main_analysis",
+          "quantitative_usability": "source_only",
+          "extraction_notes": [
+            "This target is retained as a plausible but ineligible record for the prespecified adverse-cardiac-event main analysis."
+          ]
+        }
+      ],
+      "model_selection_policy": "For each report, retain the adjudicated source-reported adjusted continuous hazard ratio for the source-defined liver-stiffness-related exposure. Preserve its exposure unit and adjustment set verbatim. Retain the source-reported adjusted continuous hazard ratio, with its source-defined exposure unit and adjustment set.",
+      "exclusion_concepts": "Keep categorical exposure effects separate from the selected continuous effect. Record a source-only finding if the endpoint is all-cause mortality rather than the target composite cardiac event. This target is retained as a plausible but ineligible record for the prespecified adverse-cardiac-event main analysis.",
+      "evidence_requirements": "Every extracted record must retain exact source evidence, page, source-defined effect scale, exposure unit, adjustment set, and missingness."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_011001",
+        "a_011002",
+        "a_011003",
+        "a_011004"
+      ],
+      "study_ids": {
+        "a_011001": "s_011001",
+        "a_011002": "s_011002",
+        "a_011003": "s_011003",
+        "a_011004": "s_011004"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

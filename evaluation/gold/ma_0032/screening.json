@@ -1,0 +1,133 @@
+{
+  "case_id": "ma_0032",
+  "positive_count": 4,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0032_01",
+      "title": "Urgent Colonoscopy for Evaluation and Management of Acute Lower Gastrointestinal Hemorrhage: A Randomized Controlled Trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0032/candidate_002.pdf",
+      "source_filename": "a_0032_01.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1111/j.1572-0241.2005.00306.x"
+    },
+    {
+      "candidate_id": "a_0032_02",
+      "title": "Randomized Trial of Urgent vs. Elective Colonoscopy in Patients Hospitalized With Lower GI Bleeding",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0032/candidate_007.pdf",
+      "source_filename": "a_0032_02.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1038/ajg.2010.277"
+    },
+    {
+      "candidate_id": "a_0032_03",
+      "title": "Early Versus Standard Colonoscopy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0032/candidate_012.pdf",
+      "source_filename": "a_0032_03.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1097/mcg.0000000000001048"
+    },
+    {
+      "candidate_id": "a_0032_04",
+      "title": "Efficacy and Safety of Early vs Elective Colonoscopy for Acute Lower Gastrointestinal Bleeding",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0032/candidate_001.pdf",
+      "source_filename": "a_0032_04.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1053/j.gastro.2019.09.010"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "The role of early colonoscopy in patients presenting with acute lower gastrointestinal bleeding: a systematic review and meta-analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_013.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1177/1756283x18757184"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Rare Colonic Dieulafoy Lesions: A Case Series",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_006.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.7759/cureus.62446"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Angiography versus colonoscopy in patients with severe lower gastrointestinal bleeding: a nation‐wide observational study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_009.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1002/ams2.533"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Prior appendectomy and cerebral infarction as potential risk factors for recurrent ischemic colitis: A retrospective observational study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_010.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1002/jgh3.12948"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Histopathological Outcome of Colonoscopic Biopsies in a Tertiary Hospital in Southwestern Nigeria: A 7-Year Retrospective Study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_004.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.4103/aam.aam_43_23"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "The Time of Endoscopy for Nonvariceal Upper Gastrointestinal Bleeding: An Observational Study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_011.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.7704/kjhugr.2024.0028"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "The impact of early gastroscopy examination on cardiovascular event-related indices in elderly patients with acute upper gastrointestinal bleeding",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_014.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1097/md.0000000000037378"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Outcomes of Upper Gastrointestinal Bleeding at United States Teaching and Non-teaching Hospitals: A National Inpatient Sample Analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_008.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.7759/cureus.61793"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Acute Hemorrhagic Rectal Ulcer Presenting With Severe Lower Gastrointestinal Bleeding: A Case Report of an Emerging Entity",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_003.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.7759/cureus.73465"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Utility of early colonoscopy for acute lower gastrointestinal bleeding: a retrospective cohort study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0032/candidate_005.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1177/17562848221147757"
+    }
+  ]
+}

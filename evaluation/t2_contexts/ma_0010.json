@@ -1,0 +1,77 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0010",
+    "task_id": "ma_0010_full_extraction_all_reports_v2",
+    "task_type": "extraction",
+    "topic": "Extract every source-reported rs763780 genotype distribution or, if genotype data are absent, the allele-level distribution. Preserve source allele labels and do not infer genotype counts from allele frequencies.",
+    "pico": {
+      "population": "rheumatoid arthritis cases and healthy controls",
+      "exposure": "IL17F rs763780 genotype",
+      "comparator": "",
+      "outcomes": [
+        "Rheumatoid arthritis case status",
+        "RA case status"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [],
+      "estimands": [],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "rs763780_source_distribution",
+          "outcome": {
+            "description": "Rheumatoid arthritis case status",
+            "aliases": [
+              "RA case status"
+            ]
+          },
+          "accepted_data_families": [
+            "complete_genotype_case_control_counts",
+            "allele_frequency_summary_only"
+          ],
+          "preferred_effect_measures": [],
+          "estimands": [],
+          "effect_selection_rule": null,
+          "data_contract": {
+            "template": "rs763780 genotype counts or allele-frequency summary",
+            "calculation": "forbidden_in_extraction"
+          },
+          "quantitative_usability": null,
+          "extraction_notes": [
+            "Copy source genotype or allele-frequency data; do not infer missing genotype counts or calculate an OR."
+          ],
+          "candidate_capture_policy": {},
+          "quantitative_use_policy": null
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "Copy source genotype or allele-frequency data; do not infer missing genotype counts or calculate an OR.",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0010_01_gomes",
+        "a_0010_02_marwa",
+        "a_0010_03_louahchi",
+        "a_0010_04_pawlik",
+        "a_0010_05_carvalho",
+        "a_0010_06_bogunia_kubik",
+        "a_0010_07_paradowska_gorycka"
+      ],
+      "study_ids": {
+        "a_0010_01_gomes": "s_a_0010_01_gomes",
+        "a_0010_02_marwa": "s_a_0010_02_marwa",
+        "a_0010_03_louahchi": "s_a_0010_03_louahchi",
+        "a_0010_04_pawlik": "s_a_0010_04_pawlik",
+        "a_0010_05_carvalho": "s_a_0010_05_carvalho",
+        "a_0010_06_bogunia_kubik": "s_a_0010_06_bogunia_kubik",
+        "a_0010_07_paradowska_gorycka": "s_a_0010_07_paradowska_gorycka"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

@@ -1,0 +1,811 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0054",
+  "candidate_set_id": "ma_0054_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Ivermectin-containing arm(s) versus eligible non-ivermectin control arm(s)",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "Source-reported trial follow-up",
+      "data_family": "binary_arm_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_event_counts",
+        "intervention_arm": {
+          "role": "ivermectin_intervention",
+          "events": 4,
+          "n": 120
+        },
+        "comparator_arm": {
+          "role": "eligible_non_ivermectin_control",
+          "events": 11,
+          "n": 60
+        },
+        "contributing_source_arms": [
+          "standard_care",
+          "placebo_plus_standard_care",
+          "ivermectin_200_single_dose",
+          "ivermectin_200_three_doses",
+          "ivermectin_400_single_dose",
+          "ivermectin_400_three_doses"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.18181818181818182,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -1.7047480922384253,
+        "variance": null,
+        "direction": "RR_less_than_1_favors_ivermectin"
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "page": 5,
+        "source_type": "table_or_results",
+        "source_id": "Table 3 and Results mortality row"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0054_36",
+      "study_id": "s_0054_lopez_medina",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Ivermectin-containing arm(s) versus eligible non-ivermectin control arm(s)",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "21-day primary analysis follow-up",
+      "data_family": "binary_arm_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_event_counts",
+        "intervention_arm": {
+          "role": "ivermectin_intervention",
+          "events": 0,
+          "n": 200
+        },
+        "comparator_arm": {
+          "role": "eligible_non_ivermectin_control",
+          "events": 1,
+          "n": 198
+        },
+        "contributing_source_arms": [
+          "ivermectin",
+          "placebo"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.33000831255195345,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -1.1086374352874884,
+        "variance": null,
+        "direction": "RR_less_than_1_favors_ivermectin"
+      },
+      "source_location": {
+        "document_id": "a_0054_36",
+        "page": 7,
+        "source_type": "table_or_results",
+        "source_id": "Table 2, Outcomes in the Primary Analysis Population"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Three-dose ivermectin 400, 200, 200 µg/kg (Arm 4)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 1,
+        "intervention_total": 30,
+        "control_events": 5,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0054_28",
+      "study_id": "s_0054_chachar",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin-containing treatment arm",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "COVID-19 patients in the study conducted by Rajter JC; overall study population",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The located report describes mortality as 15% versus 25% between an ivermectin-treated group and a conventional-treatment group, but does not provide arm-level death counts and outcome denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_28",
+        "source_type": "paragraph",
+        "source_id": "content_0077",
+        "content_list_item_index": 77
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Three-dose ivermectin 200 µg/kg (Arm 2)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 3,
+        "intervention_total": 30,
+        "control_events": 5,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0054_33",
+      "study_id": "s_0054_beltran",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Ivermectin-containing arm(s) versus eligible non-ivermectin control arm(s)",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "In-hospital follow-up",
+      "data_family": "binary_arm_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_event_counts",
+        "intervention_arm": {
+          "role": "ivermectin_intervention",
+          "events": 5,
+          "n": 36
+        },
+        "comparator_arm": {
+          "role": "eligible_non_ivermectin_control",
+          "events": 6,
+          "n": 37
+        },
+        "contributing_source_arms": [
+          "ivermectin",
+          "placebo"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.8564814814814815,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.15492258260584016,
+        "variance": null,
+        "direction": "RR_less_than_1_favors_ivermectin"
+      },
+      "source_location": {
+        "document_id": "a_0054_33",
+        "page": 20,
+        "source_type": "table_or_results",
+        "source_id": "Table 6, Outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0054_36",
+      "study_id": "s_0054_lopez_medina",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin-containing randomized treatment arm",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Deaths (all-cause mortality)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults with mild, laboratory-confirmed COVID-19, including patients at home or hospitalized but not receiving high-flow nasal oxygen or mechanical ventilation; primary analysis population",
+      "timepoint": "During the 21-day follow-up period",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 0,
+        "intervention_total": 200,
+        "control_events": 1,
+        "control_total": 198,
+        "outcome_unit": "patients with deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_36",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 128
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0054_28",
+      "study_id": "s_0054_chachar",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin-containing treatment arm",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "COVID-19 patients with severe pulmonary disease in the study conducted by Rajter JC",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The located report describes lower mortality in the severe pulmonary disease subgroup, 38.8% versus 80.7%, but does not provide arm-level death counts and outcome denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_28",
+        "source_type": "paragraph",
+        "source_id": "content_0077",
+        "content_list_item_index": 77
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Single-dose ivermectin 200 µg/kg (Arm 1)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 0,
+        "intervention_total": 30,
+        "control_events": 5,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0054_33",
+      "study_id": "s_0054_beltran",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin-containing randomized treatment arm",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Death (all-cause mortality)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Non-critically ill hospitalized patients with pneumonia secondary to COVID-19; randomized ivermectin and placebo arms",
+      "timepoint": "During hospitalization/follow-up; source-defined timing not otherwise specified",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 5,
+        "intervention_total": 36,
+        "control_events": 6,
+        "control_total": 37,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_33",
+        "source_type": "table",
+        "source_id": "table 4",
+        "content_list_item_index": 134
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0054_37",
+      "study_id": "s_0054_ravikirti",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin 12 mg on days 1 and 2",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "In-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults with mild to moderate COVID-19 admitted to a tertiary care hospital",
+      "timepoint": "In-hospital follow-up; source-defined follow-up not otherwise specified",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 0,
+        "intervention_total": 55,
+        "control_events": 4,
+        "control_total": 57,
+        "outcome_unit": "Deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_37",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 74
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0054_34",
+      "study_id": "s_0054_chaccour",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin-containing randomized treatment arm",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality explicitly reported for a randomized arm at a source-defined follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with non-severe COVID-19 and no risk factors for complicated or severe disease; 24 randomized participants, 12 per arm",
+      "timepoint": "During the trial; all patients completed 28 days of follow-up",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Death was listed as part of a prespecified secondary outcome concerning progression to severe disease or death during the trial. The located source does not provide explicit arm-level death counts or mortality outcome denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_34",
+        "source_type": "paragraph",
+        "source_id": "content_0057",
+        "content_list_item_index": 57
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Three-dose ivermectin 200 µg/kg (Arm 2)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 3,
+        "intervention_total": 30,
+        "control_events": 6,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Three-dose ivermectin 400, 200, 200 µg/kg (Arm 4)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 1,
+        "intervention_total": 30,
+        "control_events": 6,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0054_37",
+      "study_id": "s_0054_ravikirti",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Ivermectin-containing arm(s) versus eligible non-ivermectin control arm(s)",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "Hospital discharge",
+      "data_family": "binary_arm_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_event_counts",
+        "intervention_arm": {
+          "role": "ivermectin_intervention",
+          "events": 0,
+          "n": 55
+        },
+        "comparator_arm": {
+          "role": "eligible_non_ivermectin_control",
+          "events": 4,
+          "n": 57
+        },
+        "contributing_source_arms": [
+          "ivermectin",
+          "placebo"
+        ]
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.11511511511511509,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -2.1618226502853037,
+        "variance": null,
+        "direction": "RR_less_than_1_favors_ivermectin"
+      },
+      "source_location": {
+        "document_id": "a_0054_37",
+        "page": 10,
+        "source_type": "table_or_results",
+        "source_id": "Table 3, Final outcome"
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0054_32",
+      "study_id": "s_0054_ahmed",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Ivermectin plus doxycycline randomized treatment arm (12 mg ivermectin single dose with doxycycline)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults aged 18–65 years with mild COVID-19/SARS-CoV-2 infection in a randomized, double-blind, placebo-controlled trial; 24 participants randomized to each arm",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "All-cause mortality was listed as a secondary outcome for the randomized ivermectin-plus-doxycycline versus placebo comparison, but the located source regions do not report arm-level death counts or outcome denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_32",
+        "source_type": "paragraph",
+        "source_id": "content_0048",
+        "content_list_item_index": 48
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Single-dose ivermectin 400 µg/kg (Arm 3)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 0,
+        "intervention_total": 30,
+        "control_events": 6,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Single-dose ivermectin 200 µg/kg (Arm 1)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 0,
+        "intervention_total": 30,
+        "control_events": 6,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Single-dose ivermectin 400 µg/kg (Arm 3)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19; study described participants as having mild infection",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 0,
+        "intervention_total": 30,
+        "control_events": 5,
+        "control_total": 30,
+        "outcome_unit": "deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_30",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 70
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0054_32",
+      "study_id": "s_0054_ahmed",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "5-day oral ivermectin 12 mg once daily randomized treatment arm",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults aged 18–65 years with mild COVID-19/SARS-CoV-2 infection in a randomized, double-blind, placebo-controlled trial; 24 participants randomized to each arm",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "All-cause mortality was listed as a secondary outcome for the randomized 5-day ivermectin versus placebo comparison, but the located source regions do not report arm-level death counts or outcome denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0054_32",
+        "source_type": "paragraph",
+        "source_id": "content_0048",
+        "content_list_item_index": 48
+      }
+    }
+  ]
+}

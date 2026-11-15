@@ -1,0 +1,96 @@
+{
+  "case_id": "ma_0055",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0055_cheong",
+      "document_id": "a_0055_07",
+      "doi": "10.1161/circulationaha.109.852517",
+      "title": "Prognostic Significance of Delayed-Enhancement Magnetic Resonance Imaging",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_07.pdf"
+      },
+      "article_id": "a_0055_07"
+    },
+    {
+      "study_id": "s_0055_cho",
+      "document_id": "a_0055_08",
+      "doi": "10.1253/circj.cj-09-0446",
+      "title": "Delayed Enhancement Magnetic Resonance Imaging Is a Significant Prognostic Factor in Patients With Non-Ischemic Cardiomyopathy",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_08.pdf"
+      },
+      "article_id": "a_0055_08"
+    },
+    {
+      "study_id": "s_0055_gao",
+      "document_id": "a_0055_09",
+      "doi": "10.1161/circimaging.111.971549",
+      "title": "Prediction of Arrhythmic Events in Ischemic and Dilated Cardiomyopathy Patients Referred for Implantable Cardiac Defibrillator",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_09.pdf"
+      },
+      "article_id": "a_0055_09"
+    },
+    {
+      "study_id": "s_0055_gulati",
+      "document_id": "a_0055_10",
+      "doi": "10.1001/jama.2013.1363",
+      "title": "Association of Fibrosis With Mortality and Sudden Cardiac Death in Patients With Nonischemic Dilated Cardiomyopathy",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_10.pdf"
+      },
+      "article_id": "a_0055_10"
+    },
+    {
+      "study_id": "s_0055_iles",
+      "document_id": "a_0055_11",
+      "doi": "10.1016/j.jacc.2010.06.062",
+      "title": "Myocardial Fibrosis Predicts Appropriate Device Therapy in Patients With Implantable Cardioverter-Defibrillators for Primary Prevention of Sudden Cardiac Death",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_11.pdf"
+      },
+      "article_id": "a_0055_11"
+    },
+    {
+      "study_id": "s_0055_lehrke",
+      "document_id": "a_0055_12",
+      "doi": "10.1136/hrt.2010.205542",
+      "title": "Use of cardiovascular magnetic resonance for risk stratification in chronic heart failure: prognostic value of late gadolinium enhancement in patients with non-ischaemic dilated cardiomyopathy",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_12.pdf"
+      },
+      "article_id": "a_0055_12"
+    },
+    {
+      "study_id": "s_0055_muller",
+      "document_id": "a_0055_13",
+      "doi": "10.1371/journal.pone.0057077",
+      "title": "Prognostic Value of Contrast-enhanced Cardiac Magnetic Resonance Imaging in Patients with Newly Diagnosed Non-Ischemic Cardiomyopathy: Cohort Study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_13.pdf"
+      },
+      "article_id": "a_0055_13"
+    },
+    {
+      "study_id": "s_0055_neilan",
+      "document_id": "a_0055_14",
+      "doi": "10.1016/j.jcmg.2013.05.013",
+      "title": "CMR Quantification of Myocardial Scar Provides Additive Prognostic Information in Nonischemic Cardiomyopathy",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_14.pdf"
+      },
+      "article_id": "a_0055_14"
+    },
+    {
+      "study_id": "s_0055_wu",
+      "document_id": "a_0055_15",
+      "doi": "10.1016/j.jacc.2008.03.018",
+      "title": "Late Gadolinium Enhancement by Cardiovascular Magnetic Resonance Heralds an Adverse Prognosis in Nonischemic Cardiomyopathy",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0055/a_0055_15.pdf"
+      },
+      "article_id": "a_0055_15"
+    }
+  ]
+}

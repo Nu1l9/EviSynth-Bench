@@ -1,0 +1,138 @@
+{
+  "case_id": "ma_0056",
+  "protocol_id": "ma_0056_remdesivir_all_source_mortality_protocol_v2",
+  "protocol_version": "2.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among adults hospitalized with COVID-19, what source-reported all-cause mortality data are available for intravenous remdesivir plus standard care compared with placebo or standard care without remdesivir?",
+  "pico": {
+    "population": {
+      "description": "Adults hospitalized with COVID-19",
+      "aliases": [
+        "COVID-19",
+        "SARS-CoV-2"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "Intravenous remdesivir plus standard care",
+      "aliases": [
+        "remdesivir",
+        "GS-5734"
+      ]
+    },
+    "comparator": {
+      "description": "Placebo or standard care without remdesivir for the primary contrast",
+      "aliases": [
+        "placebo",
+        "standard care",
+        "usual care",
+        "control"
+      ]
+    },
+    "outcome": {
+      "description": "All-cause mortality",
+      "aliases": [
+        "death",
+        "deaths",
+        "died",
+        "mortality"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "randomized controlled trial"
+  ],
+  "targets": [
+    {
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "outcome": {
+        "description": "All-cause mortality",
+        "aliases": [
+          "death",
+          "deaths",
+          "died",
+          "mortality"
+        ]
+      },
+      "comparison": "Intravenous remdesivir plus standard care versus placebo or standard care without remdesivir",
+      "population_or_subgroup": "Adults hospitalized with COVID-19",
+      "timepoint_policy": {
+        "rule": "Capture every final source-reported all-cause mortality window, preserving exact duration and in-hospital or post-randomization scope."
+      },
+      "accepted_data_families": [
+        "binary_arm_outcome"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "For every supplied primary report, capture each source-supported arm-level mortality record that mentions remdesivir. Retain planned remdesivir duration, the actual comparator identity, the analysis population, and follow-up. Do not discard a complete source record merely because later analysis may reject its comparator, duration, overlap, or post-randomization analysis population.",
+        "selection_deferred": true
+      },
+      "data_contract": {
+        "raw_data_fields": [
+          "intervention_arm.events",
+          "intervention_arm.total",
+          "comparator_arm.events",
+          "comparator_arm.total",
+          "outcome_definition",
+          "analysis_population"
+        ],
+        "poolability_required_fields": [
+          "intervention_arm.events",
+          "intervention_arm.total",
+          "comparator_arm.events",
+          "comparator_arm.total"
+        ],
+        "integrity_checks": [
+          "Do not substitute values from the target review.",
+          "Do not silently relabel a remdesivir-duration comparison as a no-remdesivir comparison.",
+          "Do not silently replace an analysis denominator with the randomized denominator.",
+          "Preserve a possible overlap with WHO Solidarity as an explicit provenance field; overlap resolution belongs to analysis."
+        ]
+      },
+      "quantitative_use_policy": "exact_source_data_required",
+      "extraction_notes": [
+        "Extraction records source numbers and metadata only. Effect calculation belongs to the calculator and selection belongs to the analysis task."
+      ]
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table",
+      "figure",
+      "appendix"
+    ],
+    "forbidden_evidence_sources": [
+      "target review",
+      "target review table",
+      "target review forest plot"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "population_or_subgroup",
+      "timepoint",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "quantitative_usability",
+      "source_location"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "case_id": "ma_0028",
+  "positive_count": 9,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0028_01",
+      "title": "Lateral-Flow Assay for Rapid Serodiagnosis of Human Leptospirosis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_007.pdf",
+      "source_filename": "a_0028_01.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1128/cdli.8.1.166-169.2001"
+    },
+    {
+      "candidate_id": "a_0028_02",
+      "title": "Evaluation of the clinical utility of a rapid blood test for human leptospirosis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_009.pdf",
+      "source_filename": "a_0028_02.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1016/s0732-8893(01)00361-3"
+    },
+    {
+      "candidate_id": "a_0028_03",
+      "title": "Field application of Lepto lateral flow for rapid diagnosis of leptospirosis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_019.pdf",
+      "source_filename": "a_0028_03.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1099/jmm.0.05064-0"
+    },
+    {
+      "candidate_id": "a_0028_04",
+      "title": "Prospective Evaluation of Three Rapid Diagnostic Tests for Diagnosis of Human Leptospirosis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_003.pdf",
+      "source_filename": "a_0028_04.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1371/journal.pntd.0002290"
+    },
+    {
+      "candidate_id": "a_0028_05",
+      "title": "Evaluation of the immunochromatographic (Leptocheck) test for detection of specific antibodies against leptospires",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_001.pdf",
+      "source_filename": "a_0028_05.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1007/s00508-015-0853-0"
+    },
+    {
+      "candidate_id": "a_0028_06",
+      "title": "Evaluation of two immunodiagnostic tests for early rapid diagnosis of leptospirosis in Sri Lanka: a preliminary study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_005.pdf",
+      "source_filename": "a_0028_06.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1186/s12879-015-1080-z"
+    },
+    {
+      "candidate_id": "a_0028_07",
+      "title": "Diagnosis of Leptospirosis: Comparison between Microscopic Agglutination Test, IgM-ELISA and IgM Rapid Immunochromatography Test",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_012.pdf",
+      "source_filename": "a_0028_07.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1371/journal.pone.0129236"
+    },
+    {
+      "candidate_id": "a_0028_08",
+      "title": "Efficiency of two commercial kits in serodiagnosis of leptospiral uveitis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_016.pdf",
+      "source_filename": "a_0028_08.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.4103/0255-0857.103762"
+    },
+    {
+      "candidate_id": "a_0028_09",
+      "title": "Fool's Gold: Why Imperfect Reference Tests Are Undermining the Evaluation of Novel Diagnostics: A Reevaluation of 5 Diagnostic Tests for Leptospirosis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0028/candidate_002.pdf",
+      "source_filename": "a_0028_09.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1093/cid/cis403"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "C-Reactive Protein: Pathophysiology, Diagnosis, False Test Results and a Novel Diagnostic Algorithm for Clinicians",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_014.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.3390/diseases11040132"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Leptospiral Infection, Pathogenesis and Its Diagnosis—A Review",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_004.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.3390/pathogens10020145"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Role of Diagnostics in Epidemiology, Management, Surveillance, and Control of Leptospirosis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_006.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.3390/pathogens11040395"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Updated ACVIM consensus statement on leptospirosis in dogs",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_010.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1111/jvim.16903"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Rapid and sensitive point-of-care detection of Leptospira by RPA-CRISPR/Cas12a targeting lipL32",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_015.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1371/journal.pntd.0010112"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Scrub typhus",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_013.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.4103/0019-5049.111835"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Identification of Seroreactive Proteins of Leptospira interrogans Serovar Copenhageni Using a High-Density Protein Microarray Approach",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_008.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1371/journal.pntd.0002499"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Strategies for Diagnosis and Treatment of Suspected Leptospirosis: A Cost-Benefit Analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_011.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1371/journal.pntd.0000610"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Paediatric infections",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_018.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": null
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Optimizing the microscopic agglutination test (MAT) panel for the diagnosis of Leptospirosis in a low resource, hyper-endemic setting with varied microgeographic variation in reactivity",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0028/candidate_017.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1371/journal.pntd.0009565"
+    }
+  ]
+}

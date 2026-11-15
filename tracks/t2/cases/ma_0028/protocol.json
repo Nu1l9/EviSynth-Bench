@@ -1,0 +1,70 @@
+{
+  "case_id": "ma_0028",
+  "protocol_id": "ma_0028_lfa_diagnostic_accuracy_protocol_v1_1_expanded_draft",
+  "protocol_version": "1.1.0-expanded-draft",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "How accurately do Patoc-antigen lateral-flow IgM assays identify acute human leptospirosis relative to each source-defined reference standard?",
+  "pico": {
+    "population": "Patients with suspected acute human leptospirosis",
+    "intervention_or_exposure": "Patoc-antigen lateral-flow IgM assay",
+    "comparator": "Source-defined reference standard (MAT, IgM ELISA, culture, or their prespecified combination)",
+    "outcome": "Acute human leptospirosis diagnosis"
+  },
+  "eligible_study_designs": [
+    "diagnostic accuracy evaluation"
+  ],
+  "targets": [
+    {
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "outcome": {
+        "description": "Acute human leptospirosis diagnosis",
+        "aliases": [
+          "Leptospira lateral-flow diagnosis",
+          "acute leptospirosis versus no leptospirosis"
+        ]
+      },
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "population_or_subgroup": "Source-defined patient diagnostic evaluation cohort",
+      "timepoint_policy": {
+        "rule": "Capture every complete source-supported 2x2 table and retain its index-test and reference-standard timepoint. Do not collapse alternative reference-standard timepoints from the same cohort during extraction."
+      },
+      "accepted_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "preferred_effect_measures": [
+        "sensitivity",
+        "specificity"
+      ],
+      "estimands": [
+        "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "One complete source-supported Patoc-antigen LFA 2x2 table per index-test/reference-standard timepoint.",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract source-supported TP, FP, FN, and TN for a Patoc-antigen LFA and the study-defined reference standard. Recompute sensitivity and specificity from counts. Do not derive counts from percentages or use a review forest value."
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "docx"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "one source-supported diagnostic 2x2 test set, with explicit index-test and reference-standard timepoint",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "quantitative_usability",
+      "source_location"
+    ]
+  }
+}

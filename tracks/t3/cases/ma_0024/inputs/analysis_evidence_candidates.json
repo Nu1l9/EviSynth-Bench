@@ -1,0 +1,171 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0024",
+  "candidate_set_id": "ma_0024_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0024_02",
+      "study_id": "s_0024_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer-aided retinal image classifier (artificial neural network)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Diabetic retinopathy detection (NPDR or PDR versus normal)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Retinal fundus images of normal, NPDR, and PDR cases; 50-image testing set from 140 total fundus images, age 24–57 years",
+      "timepoint": "",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 28,
+        "false_positive": 0,
+        "false_negative": 3,
+        "true_negative": 19,
+        "test_set_label": "ANN testing set; normal, NPDR, and PDR retinal images; 50 images"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0024_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 97
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0024_01",
+      "study_id": "s_0024_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Computer-aided classification versus expert ophthalmologist reference classification",
+      "outcome": {
+        "code": null,
+        "label": "Detection of diabetic retinopathy",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Held-out retinal fundus image test set",
+      "timepoint": "Held-out image-level diagnostic test evaluation",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "retinal fundus image",
+        "target_condition": "diabetic retinopathy (NPDR or PDR) versus normal",
+        "index_test": "computer-aided retinal fundus image classifier",
+        "reference_standard": "expert ophthalmologist classification",
+        "true_positive": 64,
+        "false_positive": 3,
+        "false_negative": 10,
+        "true_negative": 14
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0024_01",
+        "page": 8,
+        "source_type": "table",
+        "source_id": "Table 4, SVM classifier"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0024_01",
+      "study_id": "s_0024_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer-aided retinal image classifier using a support vector machine (SVM)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Diabetic retinopathy detection / DR classification (DR versus normal)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "331 retinal photographs comprising normal, mild DR, moderate DR, severe DR, and PDR classes; 91 images used for testing",
+      "timepoint": "",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 64,
+        "false_positive": 3,
+        "false_negative": 10,
+        "true_negative": 14,
+        "test_set_label": "SVM test set; 91 images, five DR classification classes"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0024_01",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 136
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0024_02",
+      "study_id": "s_0024_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Computer-aided classification versus expert ophthalmologist reference classification",
+      "outcome": {
+        "code": null,
+        "label": "Detection of diabetic retinopathy",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Held-out retinal fundus image test set",
+      "timepoint": "Held-out image-level diagnostic test evaluation",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "retinal fundus image",
+        "target_condition": "diabetic retinopathy (NPDR or PDR) versus normal",
+        "index_test": "computer-aided retinal fundus image classifier",
+        "reference_standard": "expert ophthalmologist classification",
+        "true_positive": 28,
+        "false_positive": 0,
+        "false_negative": 3,
+        "true_negative": 19
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0024_02",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 3, ANN classifier"
+      }
+    }
+  ]
+}

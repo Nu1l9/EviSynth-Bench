@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../../../schemas/task.schema.json",
+  "case_id": "ma_0034",
+  "task_id": "ma_0034_analysis_ec_use_v1_1_expanded_draft",
+  "task_type": "analysis",
+  "screening_stage": "not_applicable",
+  "task_definition": "Use the public PICO declarations and evidence candidates to identify eligible independent evidence, then produce a justified quantitative synthesis where possible.",
+  "input_files": [
+    "../inputs/extraction_protocol.json",
+    "../inputs/analysis_profile.json",
+    "../inputs/analysis_extensions.json",
+    "../inputs/analysis_evidence_candidates.json"
+  ],
+  "allowed_inputs": {
+    "document_ids": [
+      "a_0034_01",
+      "a_0034_02",
+      "a_0034_03",
+      "a_0034_04",
+      "a_0034_05",
+      "a_0034_06",
+      "a_0034_07",
+      "a_0034_08",
+      "a_0034_09",
+      "a_0034_10",
+      "a_0034_11"
+    ],
+    "representations": [],
+    "forbidden_document_ids": [
+      "review_ma_0034"
+    ]
+  },
+  "evaluation": {
+    "metrics": [
+      "selection_f1",
+      "pooled_numeric_accuracy",
+      "pooled_composition_accuracy"
+    ],
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    }
+  },
+  "submission_contract": {
+    "schema": "../../../../../schemas/submission.schema.json",
+    "task_type": "analysis"
+  },
+  "extraction_protocol": "../inputs/extraction_protocol.json",
+  "target_scope": {
+    "analysis_profile_id": "ma_0034_emergency_contraception_use_analysis_profile_v1_1_expanded_draft",
+    "analysis_ids": [
+      "primary_ec_use_after_advance_provision"
+    ]
+  }
+}

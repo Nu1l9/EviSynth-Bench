@@ -1,0 +1,94 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0034",
+    "task_id": "ma_0034_extraction_all_reports_v1_1_expanded_draft",
+    "task_type": "extraction",
+    "topic": "Among women and adolescents receiving contraceptive services, does advance provision of emergency contraceptive pills increase subsequent emergency contraceptive pill use compared with standard or on-demand access?",
+    "pico": {
+      "population": "Women or adolescents at risk of pregnancy receiving contraceptive services",
+      "exposure": "Advance provision of emergency contraceptive pills",
+      "comparator": "Standard or on-demand emergency contraceptive pill access",
+      "outcomes": [
+        "Any subsequent emergency contraceptive pill use",
+        "emergency contraception use",
+        "ECP use",
+        "ever used emergency contraception"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "emergency_contraception_use_after_advance_provision",
+          "outcome": {
+            "description": "Any subsequent emergency contraceptive pill use",
+            "aliases": [
+              "emergency contraception use",
+              "ECP use",
+              "ever used emergency contraception"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RR"
+          ],
+          "estimands": [
+            "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "Capture complete source-supported arm-level binary records, including linked reports where the source has one; defer cohort de-duplication and record choice to analysis.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "Extract only participant event counts paired with source-declared denominators in both groups, the outcome definition, cohort, follow-up duration, and verified primary-source locator. Do not reconstruct counts from rounded percentages, use a subgroup denominator as an all-randomized denominator, or copy a review forest-plot value. A total-minus-zero-use derivation is permitted only where both cells come from the same source table."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0034_01",
+        "a_0034_02",
+        "a_0034_03",
+        "a_0034_04",
+        "a_0034_05",
+        "a_0034_06",
+        "a_0034_07",
+        "a_0034_08",
+        "a_0034_09",
+        "a_0034_10",
+        "a_0034_11"
+      ],
+      "study_ids": {
+        "a_0034_01": "s_0034_03",
+        "a_0034_02": "s_0034_04",
+        "a_0034_03": "s_0034_06",
+        "a_0034_04": "s_0034_01",
+        "a_0034_05": "s_0034_02",
+        "a_0034_06": "s_0034_04",
+        "a_0034_07": "s_0034_05",
+        "a_0034_08": "s_0034_05",
+        "a_0034_09": "s_0034_05",
+        "a_0034_10": "s_0034_07",
+        "a_0034_11": "s_0034_08"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

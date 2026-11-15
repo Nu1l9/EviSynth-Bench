@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/analysis-profile-v2.schema.json",
+  "title": "Meta-analysis primary, secondary, subgroup and sensitivity plan",
+  "type": "object",
+  "required": [
+    "case_id",
+    "profile_version",
+    "plan_id",
+    "primary_analysis_spec",
+    "secondary_outcomes",
+    "candidate_subgroup_dimensions",
+    "candidate_sensitivity_dimensions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "profile_version": {
+      "type": "string",
+      "pattern": "^2\\."
+    },
+    "plan_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primary_analysis_spec": {
+      "$ref": "#/$defs/analysisSpec"
+    },
+    "secondary_outcomes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/secondaryOutcome"
+      }
+    },
+    "candidate_subgroup_dimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dimension"
+      }
+    },
+    "candidate_sensitivity_dimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dimension"
+      }
+    }
+  },
+  "$defs": {
+    "termSet": {
+      "type": "object",
+      "required": [
+        "terms"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "population": {
+      "type": "object",
+      "required": [
+        "policy",
+        "terms"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "policy": {
+          "enum": [
+            "overall_only",
+            "any",
+            "dimension_level"
+          ]
+        },
+        "terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "pooling": {
+      "type": "object",
+      "required": [
+        "model",
+        "minimum_studies"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "enum": [
+            "fixed_effect",
+            "random_effects",
+            "unspecified"
+          ]
+        },
+        "minimum_studies": {
+          "type": "integer",
+          "minimum": 2
+        }
+      }
+    },
+    "analysisSpec": {
+      "type": "object",
+      "required": [
+        "analysis_id",
+        "title",
+        "target_id",
+        "outcome_group",
+        "eligible_outcome_codes",
+        "eligible_data_families",
+        "accepted_effect_types",
+        "estimands",
+        "exposure",
+        "comparison",
+        "population",
+        "timepoint_policy",
+        "model_policy",
+        "dependence_policy",
+        "pooling"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "analysis_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pooled_result_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome_group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "eligible_outcome_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "eligible_data_families": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "accepted_effect_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "estimands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exposure": {
+          "$ref": "#/$defs/termSet"
+        },
+        "comparison": {
+          "$ref": "#/$defs/termSet"
+        },
+        "population": {
+          "$ref": "#/$defs/population"
+        },
+        "timepoint_policy": {
+          "enum": [
+            "longest_eligible",
+            "all_eligible",
+            "source_defined"
+          ]
+        },
+        "model_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dependence_policy": {
+          "enum": [
+            "one_effect_per_study",
+            "one_effect_per_study_outcome",
+            "correlated_effects_not_implemented"
+          ]
+        },
+        "selection_rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pooling": {
+          "$ref": "#/$defs/pooling"
+        }
+      }
+    },
+    "secondaryOutcome": {
+      "type": "object",
+      "required": [
+        "analysis_id",
+        "title",
+        "outcome_group",
+        "eligible_outcome_codes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "analysis_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome_group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "eligible_outcome_codes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "dimensionLevel": {
+      "type": "object",
+      "required": [
+        "value_id",
+        "label",
+        "terms"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "value_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "analysis_overrides": {
+          "type": "object"
+        }
+      }
+    },
+    "dimension": {
+      "type": "object",
+      "required": [
+        "dimension_id",
+        "label",
+        "field",
+        "minimum_studies_per_level",
+        "exploratory",
+        "levels"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "dimension_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field": {
+          "enum": [
+            "population_or_subgroup",
+            "outcome_code",
+            "reported_effect_type",
+            "comparator",
+            "adjustment_model",
+            "intervention_or_exposure",
+            "follow_up"
+          ]
+        },
+        "minimum_studies_per_level": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "exploratory": {
+          "type": "boolean"
+        },
+        "levels": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/dimensionLevel"
+          }
+        }
+      }
+    }
+  }
+}

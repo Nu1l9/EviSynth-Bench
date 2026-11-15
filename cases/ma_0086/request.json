@@ -1,0 +1,321 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0086",
+  "topic": "In children with PFAPA syndrome, does tonsillectomy, with or without adenoidectomy, compared with non-surgical management reduce PFAPA symptoms and episode frequency?",
+  "protocol": {
+    "protocol_id": "ma_0086_extraction_protocol_v1",
+    "case_id": "ma_0086",
+    "pico": {
+      "population": "Children with periodic fever, aphthous stomatitis, pharyngitis and cervical adenitis (PFAPA) syndrome",
+      "intervention_or_exposure": "Tonsillectomy, with or without adenoidectomy",
+      "comparison": "Expectant or non-surgical management",
+      "outcome": "Immediate and persistent resolution of PFAPA symptoms; PFAPA episode frequency or rate during randomized follow-up; Corticosteroid treatment during randomized follow-up"
+    },
+    "eligible_study_designs": [
+      "randomized controlled trial"
+    ],
+    "targets": [
+      {
+        "target_id": "pfapa_symptom_resolution",
+        "outcome": "Immediate and persistent resolution of PFAPA symptoms",
+        "comparison": "Surgical intervention versus non-surgical management",
+        "population_or_subgroup": "All randomized children",
+        "timepoint_policy": {
+          "rule": "Preserve each eligible source-reported randomized follow-up timepoint",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "binary_arm_counts",
+          "percentage_only"
+        ],
+        "preferred_effect_measures": [
+          "RR"
+        ],
+        "estimands": [
+          "surgery_vs_control"
+        ],
+        "effect_selection_rule": "Prefer exact randomized arm counts when the source report makes them recoverable.",
+        "extraction_notes": [
+          "Preserve the source definition of resolution and its follow-up window."
+        ],
+        "source_constraints": [
+          "counts must be source reported"
+        ]
+      },
+      {
+        "target_id": "pfapa_episode_rate",
+        "outcome": "PFAPA episode frequency or rate during randomized follow-up",
+        "comparison": "Surgical intervention versus non-surgical management",
+        "population_or_subgroup": "All randomized children",
+        "timepoint_policy": {
+          "rule": "Preserve the complete randomized follow-up interval reported by each source",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "event_counts_with_person_time"
+        ],
+        "preferred_effect_measures": [
+          "IRR"
+        ],
+        "estimands": [
+          "surgery_vs_control"
+        ],
+        "effect_selection_rule": "Preserve source-reported event counts, arm sizes, follow-up, and person-time or rates when available.",
+        "extraction_notes": [],
+        "source_constraints": [
+          "reported rate must agree with counts and follow up",
+          "participant level event statements must be aggregated to total events",
+          "arm-specific totals are source reported",
+          "the stated follow-up applies to all analyzed participants",
+          "the source reports no loss of follow-up or otherwise confirms complete follow-up",
+          "When a source states that N participants each experienced M target events, record the arm total as N multiplied by M rather than M alone."
+        ]
+      },
+      {
+        "target_id": "corticosteroid_use_during_follow_up",
+        "outcome": "Corticosteroid treatment during randomized follow-up",
+        "comparison": "Surgical intervention versus non-surgical management",
+        "population_or_subgroup": "Preserve the source-defined randomized subgroup",
+        "timepoint_policy": {
+          "rule": "Preserve the source-reported follow-up interval",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "binary_arm_counts",
+          "percentage_only"
+        ],
+        "preferred_effect_measures": [
+          "RR"
+        ],
+        "estimands": [
+          "surgery_vs_control"
+        ],
+        "effect_selection_rule": "Do not reconstruct exact arm counts from rounded percentages.",
+        "extraction_notes": [],
+        "source_constraints": [
+          "counts must not be reconstructed from rounded percentages"
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "main_pr_pfapa_episode_rate",
+      "outcome_group": "PFAPA episode rate",
+      "target_id": "pfapa_episode_rate",
+      "eligible_outcome_codes": [
+        "pfapa_episode_rate"
+      ],
+      "eligible_data_families": [
+        "event_counts_with_person_time"
+      ],
+      "accepted_effect_types": [
+        "IRR"
+      ],
+      "estimands": [
+        "surgery_vs_control"
+      ],
+      "selection_rules": [
+        "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+        "Select no more than one eligible estimate from each independent study for an analysis.",
+        "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+        "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Preserve the complete randomized follow-up interval reported by each source",
+        "Source selection: Preserve source-reported event counts, arm sizes, follow-up, and person-time or rates when available.",
+        "reported rate must agree with counts and follow up",
+        "participant level event statements must be aggregated to total events",
+        "arm-specific totals are source reported",
+        "the stated follow-up applies to all analyzed participants",
+        "the source reports no loss of follow-up or otherwise confirms complete follow-up",
+        "When a source states that N participants each experienced M target events, record the arm total as N multiplied by M rather than M alone."
+      ],
+      "pooling": {
+        "model": "fixed_effect",
+        "scale": "log_ratio_inverse_variance",
+        "heterogeneity_estimator": null,
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "PFAPA episode rate"
+      ],
+      "exposure": {
+        "terms": [
+          "Tonsillectomy, with or without adenoidectomy"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Surgical intervention versus non-surgical management"
+        ]
+      },
+      "population": {
+        "terms": [
+          "All randomized children"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Preserve the complete randomized follow-up interval reported by each source",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "A Randomized, Controlled Trial of Tonsillectomy in Periodic Fever, Aphthous Stomatitis, Pharyngitis, and Adenitis Syndrome",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_001.pdf"
+      },
+      "doi": "10.1016/j.jpeds.2007.03.015"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Epidemiology and clinical features of PFAPA: a retrospective cohort study of 336 patients in western Sweden",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_002.pdf"
+      },
+      "doi": "10.1186/s12969-022-00737-z"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Colchicine Effectiveness and Safety in Periodic Fever, Aphthous Stomatitis, Pharyngitis, and Adenitis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_003.pdf"
+      },
+      "doi": "10.3389/fped.2021.759664"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Periodic fever, aphthous stomatitis, pharyngitis, and adenitis (PFAPA) syndrome and IgA nephropathy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_004.pdf"
+      },
+      "doi": "10.1007/s00467-012-2295-5"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Effectiveness of Adenotonsillectomy in PFAPA Syndrome: A Randomized Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_005.pdf"
+      },
+      "doi": "10.1016/j.jpeds.2009.02.038"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Clinical observation of soft palate-pharyngoplasty in the treatment of obstructive sleep apnea hypopnea syndrome in children",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_006.pdf"
+      },
+      "doi": "10.12998/wjcc.v8.i4.679"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Does having MEFV gene sequence variants affect the clinical course and colchicine response in children with PFAPA syndrome?",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_007.pdf"
+      },
+      "doi": "10.1007/s00431-022-04709-z"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Partial intracapsular tonsillectomy in the treatment of pediatric obstructive sleep apnea/hypopnea syndrome: a prospective study with 5-year follow-up",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_008.pdf"
+      },
+      "doi": "10.1007/s00405-021-07119-3"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "PFAPA syndrome: a review on treatment and outcome",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_009.pdf"
+      },
+      "doi": "10.1186/s12969-016-0101-9"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Colchicine treatment in children with periodic fever, aphthous stomatitis, pharyngitis, and cervical adenitis (PFAPA) syndrome: A multicenter study in Spain",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_010.pdf"
+      },
+      "doi": "10.5152/eurjrheum.2020.20102"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "PFAPA Syndrome: Clinical, Laboratory and Therapeutic Features in a Single-Centre Cohort",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_011.pdf"
+      },
+      "doi": "10.2147/ijgm.s373942"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Adenotonsillectomy Versus Watchful Waiting for Children with Obstructive Sleep Apnea Syndrome: A Systematic Review with Meta-Analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0086/candidate_012.pdf"
+      },
+      "doi": "10.1007/s12070-024-04738-0"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0028",
+  "gold_id": "ma_0028_analysis_gold_v1_1_expanded_draft",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0028",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_lfa_diagnosis_sensitivity",
+      "selected_candidate_ids": [
+        "ce_0028_01",
+        "ce_0028_02",
+        "ce_0028_03",
+        "ce_0028_04",
+        "ce_0028_05",
+        "ce_0028_06",
+        "ce_0028_07"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0028_01",
+        "ee_0028_02",
+        "ee_0028_03",
+        "ee_0028_04",
+        "ee_0028_05",
+        "ee_0028_06",
+        "ee_0028_07"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0028_primary_sensitivity",
+          "outcome_group": "Sensitivity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis",
+          "effect": {
+            "effect_type": "proportion",
+            "value": 0.8084570764223137,
+            "ci_lower": 0.6959752141384151,
+            "ci_upper": 0.8861320465341073,
+            "direction": "higher_is_better"
+          },
+          "member_candidate_ids": [
+            "ce_0028_01",
+            "ce_0028_02",
+            "ce_0028_03",
+            "ce_0028_04",
+            "ce_0028_05",
+            "ce_0028_06",
+            "ce_0028_07"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0028_01",
+            "ee_0028_02",
+            "ee_0028_03",
+            "ee_0028_04",
+            "ee_0028_05",
+            "ee_0028_06",
+            "ee_0028_07"
+          ],
+          "heterogeneity_i2": 87.75363622879358,
+          "calculator_run": {
+            "calculator_id": "diagnostic_accuracy_from_2x2_v1",
+            "pooling": "dersimonian_laird_random_effects_logit",
+            "tau_squared": 0.5304411317829721,
+            "q": 48.994135010974986
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "primary_lfa_diagnosis_specificity",
+      "selected_candidate_ids": [
+        "ce_0028_01",
+        "ce_0028_02",
+        "ce_0028_03",
+        "ce_0028_04",
+        "ce_0028_05",
+        "ce_0028_06",
+        "ce_0028_07"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0028_01",
+        "ee_0028_02",
+        "ee_0028_03",
+        "ee_0028_04",
+        "ee_0028_05",
+        "ee_0028_06",
+        "ee_0028_07"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0028_primary_specificity",
+          "outcome_group": "Specificity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis",
+          "effect": {
+            "effect_type": "proportion",
+            "value": 0.9087217568892658,
+            "ci_lower": 0.80344370680456,
+            "ci_upper": 0.9603914032693972,
+            "direction": "higher_is_better"
+          },
+          "member_candidate_ids": [
+            "ce_0028_01",
+            "ce_0028_02",
+            "ce_0028_03",
+            "ce_0028_04",
+            "ce_0028_05",
+            "ce_0028_06",
+            "ce_0028_07"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0028_01",
+            "ee_0028_02",
+            "ee_0028_03",
+            "ee_0028_04",
+            "ee_0028_05",
+            "ee_0028_06",
+            "ee_0028_07"
+          ],
+          "heterogeneity_i2": 97.30471919962177,
+          "calculator_run": {
+            "calculator_id": "diagnostic_accuracy_from_2x2_v1",
+            "pooling": "dersimonian_laird_random_effects_logit",
+            "tau_squared": 1.344355423555722,
+            "q": 222.61131378808537
+          }
+        }
+      ]
+    }
+  ]
+}

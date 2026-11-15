@@ -1,0 +1,51 @@
+{
+  "case_id": "ma_0026",
+  "analysis_profile_id": "ma_0026_full_rt_pcr_hcw_prevalence_main_v1",
+  "eligibility": {
+    "population": "source-defined healthcare, health-and-social-care, or facility staff cohort",
+    "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+    "data_family": "single_arm_event_counts",
+    "requires": [
+      "integer events",
+      "integer tested denominator",
+      "source-defined RT-PCR cohort"
+    ],
+    "excludes": [
+      "serology-only outcome",
+      "combined serology-or-PCR outcome",
+      "rounded percentage without exact events"
+    ]
+  },
+  "candidate_resolution": {
+    "unit_of_analysis": "one independent source-defined screening or diagnostic cohort",
+    "retain": "parallel source-defined cohorts only when their recruitment arms are explicitly independent",
+    "prefer": "whole source-defined cohort over an overlapping respondent subset",
+    "serial_measurements": "retain the first study-defined timepoint and do not pool later measures from the same cohort",
+    "serial_programmes": "retain the first source-defined period when overlap between later programme periods cannot be excluded"
+  },
+  "analyses": [
+    {
+      "analysis_id": "rt_pcr_hcw_prevalence_main",
+      "pooled_result_id": "rt_pcr_hcw_prevalence_main",
+      "outcome_group": "RT-PCR-confirmed SARS-CoV-2 infection",
+      "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+      "eligible_data_families": [
+        "single_arm_event_counts"
+      ],
+      "accepted_effect_types": [
+        "proportion"
+      ],
+      "estimands": [
+        "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Apply the declared eligibility requirements and exclusions in this profile."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

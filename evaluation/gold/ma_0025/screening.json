@@ -1,0 +1,133 @@
+{
+  "case_id": "ma_0025",
+  "positive_count": 4,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0025_01",
+      "title": "Hyperimmune IV Immunoglobulin Treatment",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0025/candidate_009.pdf",
+      "source_filename": "a_0025_01.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1378/chest.12-2907"
+    },
+    {
+      "candidate_id": "a_0025_02",
+      "title": "Immune plasma for the treatment of severe influenza: an open-label, multicentre, phase 2 randomised study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0025/candidate_005.pdf",
+      "source_filename": "a_0025_02.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1016/s2213-2600(17)30174-1"
+    },
+    {
+      "candidate_id": "a_0025_03",
+      "title": "Anti-influenza hyperimmune intravenous immunoglobulin for adults with influenza A or B infection (FLU-IVIG): a double-blind, randomised, placebo-controlled trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0025/candidate_010.pdf",
+      "source_filename": "a_0025_03.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1016/s2213-2600(19)30253-x"
+    },
+    {
+      "candidate_id": "a_0025_04",
+      "title": "Anti-influenza immune plasma for the treatment of patients with severe influenza A: a randomised, double-blind, phase 3 trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0025/candidate_004.pdf",
+      "source_filename": "a_0025_04.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1016/s2213-2600(19)30199-7"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "The Use of Ebola Convalescent Plasma to Treat Ebola Virus Disease in Resource-Constrained Settings: A Perspective From the Field",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_006.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1093/cid/civ680"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Study protocol: A randomized, double-blind, placebo-controlled trial of isavuconazole prophylaxis for the prevention of covid-19-associated pulmonary aspergillosis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_001.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1016/j.conctc.2024.101310"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Teclistamab impairs humoral immunity in patients with heavily pretreated myeloma: importance of immunoglobulin supplementation",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_007.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1182/bloodadvances.2023011658"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Migratory Pulmonary Infiltrates in a B-Cell-Depleted COVID-19 Patient",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_003.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.2147/idr.s439795"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Efficacy of Convalescent Plasma to Treat Long-Standing COVID-19 in Patients with B-Cell Depletion",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_002.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.3390/life13061266"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Your Outpatient has Coronavirus Disease 2019: What Are the Treatment Options in the Current Severe Acute Respiratory Syndrome Coronavirus 2 Variant Climate?",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_014.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1093/cid/ciad178"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Tixagevimab/Cilgavimab for COVID-19 Pre-Exposure Prophylaxis in Hematologic Patients—A Tailored Approach Based on SARS-CoV-2 Vaccine Response",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_013.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.3390/vaccines12080871"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Design and analysis considerations in the Ebola_Tx trial evaluating convalescent plasma in the treatment of Ebola virus disease in Guinea during the 2014–2015 outbreak",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_011.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1177/1740774515621056"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Cross-Neutralisation of Novel Bombali Virus by Ebola Virus Antibodies and Convalescent Plasma Using an Optimised Pseudotype-Based Neutralisation Assay",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_012.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.3390/tropicalmed6030155"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Real-world use of multiplex point-of-care molecular testing or laboratory-based molecular testing for influenza-like illness in a 2021 to 2022 US outpatient sample",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0025/candidate_008.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1371/journal.pone.0313660"
+    }
+  ]
+}

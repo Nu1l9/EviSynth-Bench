@@ -1,0 +1,108 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "case_id": "ma_0054",
+  "protocol_id": "ma_0054_all_cause_mortality_extraction_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among randomized trials in people with COVID-19, what is the effect of ivermectin-containing treatment compared with placebo or standard care on all-cause mortality?",
+  "pico": {
+    "population": {
+      "description": "People with COVID-19 enrolled in randomized controlled trials",
+      "aliases": []
+    },
+    "intervention_or_exposure": {
+      "description": "An ivermectin-containing randomized treatment arm",
+      "aliases": []
+    },
+    "comparator": {
+      "description": "Placebo, standard care, or no additional experimental treatment",
+      "aliases": []
+    },
+    "outcome": {
+      "description": "All-cause mortality at the source-reported trial follow-up",
+      "aliases": []
+    }
+  },
+  "eligible_study_designs": [
+    "randomized controlled trial"
+  ],
+  "targets": [
+    {
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "description": "All-cause mortality explicitly reported for a randomized arm at a source-defined follow-up",
+        "aliases": [
+          "death",
+          "deaths",
+          "mortality",
+          "all-cause mortality",
+          "in-hospital mortality"
+        ]
+      },
+      "comparison": "Ivermectin-containing arm versus placebo, standard care, or no additional experimental treatment",
+      "population_or_subgroup": "Randomized trial population; preserve source-reported analysis population when the mortality table specifies it",
+      "timepoint_policy": {
+        "rule": "Use the mortality table's explicitly reported trial follow-up. Do not infer a death count from an adjacent composite outcome, absence of disease progression, or discussion text."
+      },
+      "accepted_data_families": [
+        "binary_arm_counts"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "ivermectin_vs_eligible_non_ivermectin_control_all_cause_mortality"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "Record every source-supported randomized arm with explicit mortality events and outcome denominators; preserve multi-arm studies without manual aggregation.",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract explicit deaths and the outcome-table denominator for each randomized arm. A report that does not explicitly provide arm-level death counts is not quantitative extraction gold for this target.",
+      "extraction_notes": []
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "text"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "source-reported arm-level all-cause mortality data",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "source_location"
+    ]
+  },
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0054",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "all_cause_mortality",
+        "status": "mapped",
+        "original_families": [
+          "binary_arm_event_counts"
+        ],
+        "recommended_v1_families": [
+          "binary_arm_counts"
+        ],
+        "unsupported_families": [],
+        "reason": "All target families have an existing v1 template."
+      }
+    ]
+  }
+}

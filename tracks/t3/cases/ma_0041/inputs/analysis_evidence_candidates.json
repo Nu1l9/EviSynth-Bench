@@ -1,0 +1,4285 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0041",
+  "candidate_set_id": "ma_0041_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version",
+          "measurement_semantics": "postoperative_alignment_relative_to_bone_stock",
+          "unit": "degrees of retroversion",
+          "intervention_class": "navigation",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "20 human total shoulder arthroplasty patients",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "navigation",
+          "n": 10,
+          "mean": 3.7,
+          "sd": 6.3
+        },
+        "comparator_arm": {
+          "label": "standard",
+          "n": 10,
+          "mean": 10.9,
+          "sd": 6.8
+        },
+        "source_reported_arms": {
+          "navigation": {
+            "n": 10,
+            "mean": 3.7,
+            "sd": 6.3
+          },
+          "standard": {
+            "n": 10,
+            "mean": 10.9,
+            "sd": 6.8
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -7.2,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 8.593,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_02_kircher",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, Results, 'From preoperatively to postoperatively...'"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Arthritic cadaver shoulders receiving reverse total shoulder arthroplasty (RTSA)",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Version",
+        "measurement_semantics": "Absolute/deviation from anatomic position",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Custom patient-specific targeting guide",
+          "n": 17,
+          "mean": 6.0,
+          "sd": 7.0
+        },
+        "comparator_arm": {
+          "label": "Standard instrumentation",
+          "n": 17,
+          "mean": 6.0,
+          "sd": 7.4
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid positioning deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing shoulder arthroplasty; Hendel study; n=31 reported for the study, arm-specific n not provided",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The Hendel randomized trial reported PSI-group deviations from planned position of 4.3° retroversion and 2.9° inclination, significantly reduced versus standard TSA, but SDs and arm-specific sample sizes are not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "paragraph",
+        "source_id": "content_0051",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "position",
+          "measurement_semantics": "planned_minus_achieved_difference",
+          "unit": "mm",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "17 human anatomic total shoulder arthroplasty patients",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "position",
+        "measurement_semantics": "planned_minus_achieved_difference",
+        "unit": "mm",
+        "n": 17,
+        "reported_summary": {
+          "lateral": {
+            "mean": 0.4,
+            "sd": 0.9
+          },
+          "anterior": {
+            "mean": -0.1,
+            "sd": 1.4
+          },
+          "superior": {
+            "mean": -0.8,
+            "sd": 1.3
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, Table II"
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version",
+          "measurement_semantics": "planned_versus_actual_deviation_as_reported",
+          "unit": "degrees",
+          "intervention_class": "patient_specific_instrument",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "31 human total shoulder arthroplasty patients; 15 patient-specific system and 16 standard instruments",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "patient_specific_system",
+          "n": 15,
+          "mean": 4.3,
+          "sd": 4.5
+        },
+        "comparator_arm": {
+          "label": "standard_instrumentation",
+          "n": 16,
+          "mean": 6.9,
+          "sd": 4.4
+        },
+        "source_reported_arms": {
+          "patient_specific_system": {
+            "n": 15,
+            "mean": 4.3,
+            "sd": 4.5
+          },
+          "standard_instrumentation": {
+            "n": 16,
+            "mean": 6.9,
+            "sd": 4.4
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -2.6000000000000005,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 2.5600000000000005,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 5, Table I and Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0041_09_gregory",
+      "study_id": "s_0041_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Surgical implant placement during anatomic TSA; instrumentation type not reported",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid inclination",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic total shoulder arthroplasty; overall series",
+      "timepoint": "Postoperative CT radiological follow-up",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid inclination",
+        "measurement_semantics": "Angle between the superior-inferior line of the glenoid component and the supraspinous fossa line; superior inclination positive and inferior inclination negative",
+        "unit": "degrees",
+        "n": 68,
+        "reported_summary": {
+          "overall": {
+            "mean": 12.0,
+            "sd": 13.0,
+            "min": -21.0,
+            "max": 50.0
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_09_gregory",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 33
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intraoperative navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version (retroversion angle)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with shoulder osteoarthritis, Walch glenoid morphology type B1 or B2, and intact rotator cuff; total shoulder arthroplasty; postoperative assessment",
+      "timepoint": "Six weeks postoperatively",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version in the transverse plane",
+        "measurement_semantics": "Retroversion angle measured on standardized CT scans six weeks after operation according to the Friedman method; reported as an average angle with standard deviation",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Group 1: intraoperative navigation",
+          "n": 10,
+          "mean": 3.7,
+          "sd": 6.3
+        },
+        "comparator_arm": {
+          "label": "Group 2: conventional operation technique without navigation",
+          "n": 10,
+          "mean": 10.9,
+          "sd": 6.8
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_02_kircher",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing reverse shoulder arthroplasty; reverse subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version",
+        "measurement_semantics": "Mean absolute deviation between actual measured component orientation and planned preoperative orientation",
+        "unit": "degrees",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 1.1,
+            "sd": 1.1,
+            "min": 0.1,
+            "max": 4.0
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 60
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "In vivo shoulder arthroplasty; Dallalana study; anatomic subgroup",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The Dallalana study reported anatomic-subgroup variation of 1.0° ± 1.9° for inclination and 2.6° ± 2.2° for retroversion, but the subgroup sample size was not separately reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic shoulder arthroplasty; anatomic subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version",
+        "measurement_semantics": "Mean absolute deviation between actual measured component orientation and planned preoperative orientation",
+        "unit": "degrees",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 2.6,
+            "sd": 2.2,
+            "min": 0.2,
+            "max": 7.3
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 60
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaveric shoulders; Walch study; n=18",
+      "timepoint": "",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component inclination and retroversion",
+        "measurement_semantics": "Variation in inclination and retroversion",
+        "unit": "degrees",
+        "n": 18,
+        "reported_summary": {
+          "inclination": {
+            "mean": 1.42,
+            "sd": 1.37,
+            "min": null,
+            "max": null
+          },
+          "retroversion": {
+            "mean": 1.64,
+            "sd": 1.01,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific glenoid guide (PSG) with pre-operative 3D planning software",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid entry point superior offset",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "17 patients with osteoarthritis awaiting anatomical total shoulder arthroplasty",
+      "timepoint": "Post-operative compared with pre-operative planned position",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Entry point superior offset",
+        "measurement_semantics": "Difference/error between planned and implanted entry-point position; signed mean error",
+        "unit": "millimetres (mm)",
+        "n": 17,
+        "reported_summary": {
+          "mean_error": {
+            "mean": -0.8,
+            "sd": 1.3,
+            "min": -3.6,
+            "max": 1.8
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version_and_inclination",
+          "measurement_semantics": "postoperative_alignment_with_explicit_planned_target",
+          "unit": "degrees",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "11 analysed human shoulders; 7 anatomic and 4 reverse total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "version_and_inclination",
+        "measurement_semantics": "postoperative_alignment_with_explicit_planned_target",
+        "unit": "degrees",
+        "n": 4,
+        "planned_target": {
+          "version": 0.0,
+          "inclination": -10.0
+        },
+        "reported_summary": {
+          "version_retroversion": {
+            "mean": 10.0,
+            "sd": 10.0
+          },
+          "inclination": {
+            "mean": -1.0,
+            "sd": 5.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 2, Methods (reverse targets); PDF page 3, Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "orientation",
+          "measurement_semantics": "absolute_planned_achieved_difference",
+          "unit": "degrees",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "7 analysed human shoulders; 3 conventional and 4 reverse total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "orientation",
+        "measurement_semantics": "absolute_planned_achieved_difference",
+        "unit": "degrees",
+        "n": 4,
+        "reported_summary": {
+          "absolute_angular_difference": {
+            "mean": 9.1,
+            "sd": 6.6
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, Results; explicitly restricted to reverse total shoulder cases"
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "offset_or_position",
+          "measurement_semantics": "planned_versus_actual_deviation_as_reported",
+          "unit": "mm",
+          "intervention_class": "patient_specific_instrument",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "31 human total shoulder arthroplasty patients; 15 patient-specific system and 16 standard instruments",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "patient_specific_system",
+          "n": 15,
+          "mean": 2.4,
+          "sd": 1.6
+        },
+        "comparator_arm": {
+          "label": "standard_instrumentation",
+          "n": 16,
+          "mean": 3.4,
+          "sd": 1.8
+        },
+        "source_reported_arms": {
+          "patient_specific_system": {
+            "n": 15,
+            "mean": 2.4,
+            "sd": 1.6
+          },
+          "standard_instrumentation": {
+            "n": 16,
+            "mean": 3.4,
+            "sd": 1.8
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -1.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.3731666666666667,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 5, Table I and Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version deviation from planned component position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing primary anatomic total shoulder arthroplasty; overall randomized groups",
+      "timepoint": "Postoperative CT within two weeks after surgery",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Version",
+        "measurement_semantics": "Average angular deviation between planned and actual implant orientation in the transverse plane",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Glenoid Positioning System Group",
+          "n": 15,
+          "mean": 4.3,
+          "sd": 4.5
+        },
+        "comparator_arm": {
+          "label": "Standard Surgical Group",
+          "n": 16,
+          "mean": 6.9,
+          "sd": 4.4
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE I",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0041_09_gregory",
+      "study_id": "s_0041_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version_inclination_rotation_offset",
+          "measurement_semantics": "postoperative_alignment_relative_to_scapular_plane",
+          "unit": "degrees_or_mm_as_named",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "68 consecutive human anatomic total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "version_inclination_rotation_offset",
+        "measurement_semantics": "postoperative_alignment_relative_to_scapular_plane",
+        "unit": "degrees_or_mm_as_named",
+        "n": 68,
+        "reported_summary": {
+          "version_degrees": {
+            "mean": 8.0,
+            "sd": 9.0
+          },
+          "inclination_degrees": {
+            "mean": 12.0,
+            "sd": 13.0
+          },
+          "rotation_degrees": {
+            "mean": 7.0,
+            "sd": 14.0
+          },
+          "offset_mm": {
+            "mean": 4.0,
+            "sd": 3.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_09_gregory",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 2, Table 1; definitions on PDF page 3"
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version_and_inclination",
+          "measurement_semantics": "planned_minus_achieved_difference_reported_as_error",
+          "unit": "degrees",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "17 human anatomic total shoulder arthroplasty patients",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "version_and_inclination",
+        "measurement_semantics": "planned_minus_achieved_difference_reported_as_error",
+        "unit": "degrees",
+        "n": 17,
+        "reported_summary": {
+          "version": {
+            "mean": 3.4,
+            "sd": 5.1,
+            "min": -6.9,
+            "max": 14.1
+          },
+          "inclination": {
+            "mean": 1.8,
+            "sd": 5.3,
+            "min": -7.3,
+            "max": 11.8
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, Results and Table II"
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaveric shoulders; Pietrzak study; n=12",
+      "timepoint": "",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component inclination and retroversion",
+        "measurement_semantics": "Variation in inclination and retroversion",
+        "unit": "degrees",
+        "n": 12,
+        "reported_summary": {
+          "inclination": {
+            "mean": 0.9,
+            "sd": 3.4,
+            "min": null,
+            "max": null
+          },
+          "retroversion": {
+            "mean": 1.6,
+            "sd": 3.8,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Tilt error relative to ideal position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaver specimens undergoing reverse shoulder arthroplasty; navigated group versus control group",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component tilt error",
+        "measurement_semantics": "Range of error relative to the ideal position; source reports a summary value with SD",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Navigated group",
+          "n": 7,
+          "mean": 8.0,
+          "sd": 3.6
+        },
+        "comparator_arm": {
+          "label": "Control group",
+          "n": 7,
+          "mean": 16.0,
+          "sd": 6.0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "paragraph",
+        "source_id": "content_0030",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component superior-inferior position difference",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients with glenoid deficiency undergoing conventional or reverse TSA; postoperative CT-evaluable cases, overall cohort",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Superoinferior glenoid component position",
+        "measurement_semantics": "Difference from plan; postoperative component was more superior",
+        "unit": "mm",
+        "n": 7,
+        "reported_summary": {
+          "superoinferior_difference": {
+            "mean": 1.7,
+            "sd": 2.1,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "position",
+          "measurement_semantics": "absolute_planned_achieved_deviation",
+          "unit": "mm",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "20 human shoulders; 10 anatomic and 10 reverse",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "position",
+        "measurement_semantics": "absolute_planned_achieved_deviation",
+        "unit": "mm",
+        "n": 20,
+        "reported_summary": {
+          "anteroposterior": {
+            "mean": 0.5,
+            "sd": 0.3
+          },
+          "superoinferior": {
+            "mean": 0.8,
+            "sd": 0.5
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, Results and Table 2, Total row"
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid inclination variability",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "In vivo shoulder arthroplasty; Heylen study; 6 anatomic and 12 reverse TSAs reported in text",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The Heylen comparative study reported reduced variability in glenoid inclination with PSI versus non-PSI instrumentation; no numeric mean and SD were reported in the located excerpt, and participant counts are inconsistent across excerpts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 52
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intraoperative navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version (retroversion angle)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with shoulder osteoarthritis, Walch glenoid morphology type B1 or B2, and intact rotator cuff; total shoulder arthroplasty; preoperative assessment",
+      "timepoint": "Preoperatively",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version in the transverse plane",
+        "measurement_semantics": "Retroversion angle measured on standardized preoperative CT scans according to the Friedman method; reported as an average angle with standard deviation",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Group 1: intraoperative navigation",
+          "n": 10,
+          "mean": 15.4,
+          "sd": 5.8
+        },
+        "comparator_arm": {
+          "label": "Group 2: conventional operation technique without navigation",
+          "n": 10,
+          "mean": 14.4,
+          "sd": 6.1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_02_kircher",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaveric shoulders; Levy study; n=14",
+      "timepoint": "",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component inclination and retroversion",
+        "measurement_semantics": "Variation in inclination and retroversion",
+        "unit": "degrees",
+        "n": 14,
+        "reported_summary": {
+          "inclination": {
+            "mean": 1.2,
+            "sd": 1.2,
+            "min": null,
+            "max": null
+          },
+          "retroversion": {
+            "mean": 2.6,
+            "sd": 1.7,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "inclination",
+          "measurement_semantics": "planned_versus_actual_deviation_as_reported",
+          "unit": "degrees",
+          "intervention_class": "patient_specific_instrument",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "31 human total shoulder arthroplasty patients; 15 patient-specific system and 16 standard instruments",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "patient_specific_system",
+          "n": 15,
+          "mean": 2.9,
+          "sd": 3.4
+        },
+        "comparator_arm": {
+          "label": "standard_instrumentation",
+          "n": 16,
+          "mean": 11.6,
+          "sd": 7.0
+        },
+        "source_reported_arms": {
+          "patient_specific_system": {
+            "n": 15,
+            "mean": 2.9,
+            "sd": 3.4
+          },
+          "standard_instrumentation": {
+            "n": 16,
+            "mean": 11.6,
+            "sd": 7.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -8.7,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 3.8331666666666666,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 5, Table I and Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation / patient-specific positioning guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Mean correction of glenoid inclination",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Overall final cohort; n=11",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The study reported that inclination was 15° closer to the template inclination, but no SD was reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "paragraph",
+        "source_id": "content_0040",
+        "content_list_item_index": 40
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaver specimens undergoing reverse shoulder arthroplasty; computer navigation group versus standard instrumentation group",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The standard instrumentation group had a mean glenoid component version of 8.7° of anteversion, range −2° to +14°; the computer navigation group had a mean of 3.1° of anteversion, range 0° to +8°. No SD was reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "paragraph",
+        "source_id": "content_0029",
+        "content_list_item_index": 29
+      }
+    },
+    {
+      "candidate_id": "cand_0029",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preoperative glenoid retroversion in least-retroverted subgroup",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Least retroverted subgroup; subgroup-specific sample sizes not reported",
+      "timepoint": "Preoperative",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table II reports preoperative retroversion for the least-retroverted subgroup as mean ± SD of -3.1 ± 4.1 degrees in the Standard Surgical Group and -5.0 ± 6.0 degrees in the Glenoid Positioning System Group; subgroup-specific n is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE II",
+        "content_list_item_index": 81
+      }
+    },
+    {
+      "candidate_id": "cand_0030",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaveric shoulders; Pietrzak study; anatomic and reverse shoulders combined; n=12",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "A cadaveric trial of 12 shoulders, divided equally between anatomic and reverse shoulders, reported mean inclination of 0.9° and mean retroversion of 1.6°; SDs were not reported in this excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "paragraph",
+        "source_id": "content_0050",
+        "content_list_item_index": 50
+      }
+    },
+    {
+      "candidate_id": "cand_0031",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "inclination_or_tilt",
+          "measurement_semantics": "reported_error_from_ideal_position",
+          "unit": "degrees",
+          "intervention_class": "navigation",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "14 paired scapulohumeral cadaver specimens; reverse shoulder prosthesis",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "navigation",
+          "n": 7,
+          "mean": 8.0,
+          "sd": 3.6
+        },
+        "comparator_arm": {
+          "label": "standard",
+          "n": 7,
+          "mean": 16.0,
+          "sd": 6.0
+        },
+        "source_reported_arms": {
+          "navigation": {
+            "n": 7,
+            "mean": 8.0,
+            "sd": 3.6
+          },
+          "standard": {
+            "n": 7,
+            "mean": 16.0,
+            "sd": 6.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -8.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 6.994285714285715,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "table_or_results",
+        "source_id": "Primary PDF page 1, abstract Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0032",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Total offset deviation from planned component position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing primary anatomic total shoulder arthroplasty; overall randomized groups",
+      "timepoint": "Postoperative CT within two weeks after surgery",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Total offset",
+        "measurement_semantics": "Average deviation between planned and actual implant position; total offset is displacement of the implant centroid",
+        "unit": "mm",
+        "intervention_arm": {
+          "label": "Glenoid Positioning System Group",
+          "n": 15,
+          "mean": 2.4,
+          "sd": 1.6
+        },
+        "comparator_arm": {
+          "label": "Standard Surgical Group",
+          "n": 16,
+          "mean": 3.4,
+          "sd": 1.8
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE I",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0033",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation / patient-specific positioning guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preoperative glenoid version and inclination",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Overall study cohort; final cohort n=11",
+      "timepoint": "Preoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version and inclination",
+        "measurement_semantics": "Preoperative glenoid version and inclination",
+        "unit": "degrees",
+        "n": 11,
+        "reported_summary": {
+          "retroversion": {
+            "mean": 22.0,
+            "sd": 9.0,
+            "min": null,
+            "max": null
+          },
+          "inclination": {
+            "mean": 17.0,
+            "sd": 9.0,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0034",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "inclination",
+          "measurement_semantics": "absolute_deviation_from_intended_position",
+          "unit": "degrees",
+          "intervention_class": "patient_specific_instrument",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "70 arthritic cadaver shoulders; 35 patient-specific guides and 35 standard instrumentation",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "patient_specific_guide",
+          "n": 35,
+          "mean": 3.0,
+          "sd": 2.8
+        },
+        "comparator_arm": {
+          "label": "standard_instrumentation",
+          "n": 35,
+          "mean": 6.0,
+          "sd": 4.3
+        },
+        "source_reported_arms": {
+          "patient_specific_guide": {
+            "n": 35,
+            "mean": 3.0,
+            "sd": 2.8
+          },
+          "standard_instrumentation": {
+            "n": 35,
+            "mean": 6.0,
+            "sd": 4.3
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -3.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.7522857142857142,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 5, Table I, TSA + RTSA rows"
+      }
+    },
+    {
+      "candidate_id": "cand_0035",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific glenoid guide (PSG) with pre-operative 3D planning software",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid inclination error",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "17 patients with osteoarthritis awaiting anatomical total shoulder arthroplasty",
+      "timepoint": "Post-operative compared with pre-operative planned position",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Inclination error",
+        "measurement_semantics": "Difference/error between planned and implanted glenoid component orientation; signed mean error",
+        "unit": "degrees (°)",
+        "n": 17,
+        "reported_summary": {
+          "mean_error": {
+            "mean": 1.8,
+            "sd": 5.3,
+            "min": -7.3,
+            "max": 11.8
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0036",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Medial-lateral offset deviation from planned component position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing primary anatomic total shoulder arthroplasty; overall randomized groups",
+      "timepoint": "Postoperative CT within two weeks after surgery",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Medial-lateral offset",
+        "measurement_semantics": "Component of total offset in the coronal plane",
+        "unit": "mm",
+        "intervention_arm": {
+          "label": "Glenoid Positioning System Group",
+          "n": 15,
+          "mean": 1.0,
+          "sd": 0.9
+        },
+        "comparator_arm": {
+          "label": "Standard Surgical Group",
+          "n": 16,
+          "mean": 1.9,
+          "sd": 1.0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE I",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0037",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation / patient-specific positioning guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Mean correction of glenoid version",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Overall final cohort; n=11",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The study reported a mean correction of retroversion of 14° toward less retroversion, but no SD was reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "paragraph",
+        "source_id": "content_0040",
+        "content_list_item_index": 40
+      }
+    },
+    {
+      "candidate_id": "cand_0038",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component anteroposterior position deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic or reverse shoulder arthroplasty; total cohort",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position, anteroposterior plane",
+        "measurement_semantics": "Mean absolute deviation between actual and planned position on the glenoid face",
+        "unit": "mm",
+        "n": 20,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 0.5,
+            "sd": 0.3,
+            "min": 0.0,
+            "max": 1.3
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0039",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component anteroposterior position deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic shoulder arthroplasty; anatomic subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position, anteroposterior plane",
+        "measurement_semantics": "Mean absolute deviation between actual and planned position on the glenoid face",
+        "unit": "mm",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 0.5,
+            "sd": 0.4,
+            "min": 0.0,
+            "max": 1.3
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0040",
+      "article_id": "a_0041_09_gregory",
+      "study_id": "s_0041_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Surgical implant placement during anatomic TSA; instrumentation type not reported",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic total shoulder arthroplasty; overall series",
+      "timepoint": "Postoperative CT radiological follow-up",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version",
+        "measurement_semantics": "Angle between the plane of the glenoid component surface and the plane of the scapula; retroversion positive and anteversion negative",
+        "unit": "degrees",
+        "n": 68,
+        "reported_summary": {
+          "overall": {
+            "mean": 8.0,
+            "sd": 9.0,
+            "min": -17.0,
+            "max": 32.0
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_09_gregory",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 33
+      }
+    },
+    {
+      "candidate_id": "cand_0041",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "position",
+          "measurement_semantics": "absolute_planned_achieved_difference",
+          "unit": "mm",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "7 analysed human shoulders; 3 conventional and 4 reverse total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "position",
+        "measurement_semantics": "absolute_planned_achieved_difference",
+        "unit": "mm",
+        "n": 7,
+        "reported_summary": {
+          "three_dimensional_distance": {
+            "mean": 3.4,
+            "sd": 1.0
+          },
+          "anteroposterior": {
+            "mean": 0.0,
+            "sd": 1.7
+          },
+          "superoinferior": {
+            "mean": 1.7,
+            "sd": 2.1
+          },
+          "lateral": {
+            "mean": 1.3,
+            "sd": 1.4
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "table_or_results",
+        "source_id": "PDF pages 3-4, Postoperative evaluation and Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0042",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Anteroposterior offset deviation from planned component position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing primary anatomic total shoulder arthroplasty; overall randomized groups",
+      "timepoint": "Postoperative CT within two weeks after surgery",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Anteroposterior offset",
+        "measurement_semantics": "Component of total offset in the sagittal plane",
+        "unit": "mm",
+        "intervention_arm": {
+          "label": "Glenoid Positioning System Group",
+          "n": 15,
+          "mean": 1.0,
+          "sd": 0.9
+        },
+        "comparator_arm": {
+          "label": "Standard Surgical Group",
+          "n": 16,
+          "mean": 1.9,
+          "sd": 1.4
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE I",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0043",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component superoinferior position deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic or reverse shoulder arthroplasty; total cohort",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position, superoinferior plane",
+        "measurement_semantics": "Mean absolute deviation between actual and planned position on the glenoid face",
+        "unit": "mm",
+        "n": 20,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 0.8,
+            "sd": 0.5,
+            "min": 0.0,
+            "max": 1.9
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0044",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version deviation from plan in least-retroverted subgroup",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Least retroverted subgroup; subgroup-specific sample sizes not reported",
+      "timepoint": "Postoperative",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table II reports deviation from plan for the least-retroverted subgroup as mean ± SD of 3.2 ± 2.1 degrees in the Standard Surgical Group and 7.0 ± 5.4 degrees in the Glenoid Positioning System Group; subgroup-specific n is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE II",
+        "content_list_item_index": 81
+      }
+    },
+    {
+      "candidate_id": "cand_0045",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version deviation from plan in most-retroverted subgroup",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Most retroverted subgroup; subgroup-specific sample sizes not reported",
+      "timepoint": "Postoperative",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table II reports deviation from plan for the most-retroverted subgroup as mean ± SD of 10.0 ± 4.4 degrees in the Standard Surgical Group and 1.2 ± 2.0 degrees in the Glenoid Positioning System Group; subgroup-specific n is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE II",
+        "content_list_item_index": 81
+      }
+    },
+    {
+      "candidate_id": "cand_0046",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation in shoulders with <10° glenoid wear",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Remaining 52 arthritic cadaver shoulders with <10° glenoid wear; TSA + RTSA",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For shoulders with <10° glenoid wear, the source reported average version deviation of 5° with patient-specific guides and 6° with standard instrumentation, but no arm-specific n or SD was reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "paragraph",
+        "source_id": "content_0055",
+        "content_list_item_index": 55
+      }
+    },
+    {
+      "candidate_id": "cand_0047",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation / patient-specific positioning guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Postoperative glenoid version and inclination",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing reverse total shoulder arthroplasty; n=4",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version and inclination",
+        "measurement_semantics": "Postoperative glenoid component retroversion and inclination; version defined as deviation from the Friedman line and inclination as deviation from the specified scapular reference line",
+        "unit": "degrees",
+        "n": 4,
+        "reported_summary": {
+          "retroversion": {
+            "mean": 10.0,
+            "sd": 10.0,
+            "min": null,
+            "max": null
+          },
+          "inclination": {
+            "mean": -1.0,
+            "sd": 5.0,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0048",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component starting-point deviation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Arthritic cadaver shoulders receiving reverse total shoulder arthroplasty (RTSA)",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Starting point",
+        "measurement_semantics": "Absolute/deviation from intended inferior starting point",
+        "unit": "mm",
+        "intervention_arm": {
+          "label": "Custom patient-specific targeting guide",
+          "n": 17,
+          "mean": 2.0,
+          "sd": 1.0
+        },
+        "comparator_arm": {
+          "label": "Standard instrumentation",
+          "n": 17,
+          "mean": 2.0,
+          "sd": 1.0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0049",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid inclination and retroversion",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "In vivo shoulder arthroplasty; Suero study; 4 anatomic and 3 reverse TSAs reported in text",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The Suero study reported mean glenoid inclination of 0.2° and mean retroversion of 3.4°; SDs were not reported, and the located excerpts contain discrepant participant counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 52
+      }
+    },
+    {
+      "candidate_id": "cand_0050",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component superoinferior position deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing reverse shoulder arthroplasty; reverse subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position, superoinferior plane",
+        "measurement_semantics": "Mean absolute deviation between actual and planned position on the glenoid face",
+        "unit": "mm",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 1.0,
+            "sd": 0.5,
+            "min": 0.4,
+            "max": 1.9
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0051",
+      "article_id": "a_0041_09_gregory",
+      "study_id": "s_0041_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Surgical implant placement during anatomic TSA; instrumentation type not reported",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid offset",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic total shoulder arthroplasty; overall series",
+      "timepoint": "Postoperative CT radiological follow-up",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid offset",
+        "measurement_semantics": "Shortest distance between the centre of the glenoid and the scapular plane; reported as anterior to the scapular plane",
+        "unit": "mm",
+        "n": 68,
+        "reported_summary": {
+          "overall": {
+            "mean": 4.0,
+            "sd": 3.0,
+            "min": -7.0,
+            "max": 15.0
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_09_gregory",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 33
+      }
+    },
+    {
+      "candidate_id": "cand_0052",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific glenoid guide (PSG) with pre-operative 3D planning software",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid version error",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "17 patients with osteoarthritis awaiting anatomical total shoulder arthroplasty",
+      "timepoint": "Post-operative compared with pre-operative planned position",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Version error",
+        "measurement_semantics": "Difference/error between planned and implanted glenoid component orientation; signed mean error",
+        "unit": "degrees (°)",
+        "n": 17,
+        "reported_summary": {
+          "mean_error": {
+            "mean": 3.4,
+            "sd": 5.1,
+            "min": -6.9,
+            "max": 14.1
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0053",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Arthritic cadaver shoulders receiving anatomic total shoulder arthroplasty (TSA)",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Version",
+        "measurement_semantics": "Absolute/deviation from intended anatomic position",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Custom patient-specific targeting guide",
+          "n": 18,
+          "mean": 5.0,
+          "sd": 4.8
+        },
+        "comparator_arm": {
+          "label": "Standard instrumentation",
+          "n": 18,
+          "mean": 8.0,
+          "sd": 8.2
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0054",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component lateral placement",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients with glenoid deficiency undergoing conventional or reverse TSA; postoperative CT-evaluable cases, overall cohort",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Lateral glenoid component placement",
+        "measurement_semantics": "Mean lateral placement of the metaglene relative to the plan",
+        "unit": "mm",
+        "n": 7,
+        "reported_summary": {
+          "lateral_placement": {
+            "mean": 1.3,
+            "sd": 1.4,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0055",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Absolute angular difference between planned and final glenoid position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing reverse total shoulder arthroplasty; reverse TSA subgroup",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position angular difference",
+        "measurement_semantics": "Absolute angular difference between planned and final glenoid position",
+        "unit": "degrees",
+        "n": 4,
+        "reported_summary": {
+          "absolute_angular_difference": {
+            "mean": 9.1,
+            "sd": 6.6,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "paragraph",
+        "source_id": "content_0053",
+        "content_list_item_index": 53
+      }
+    },
+    {
+      "candidate_id": "cand_0056",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component superoinferior position deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic shoulder arthroplasty; anatomic subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position, superoinferior plane",
+        "measurement_semantics": "Mean absolute deviation between actual and planned position on the glenoid face",
+        "unit": "mm",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 0.5,
+            "sd": 0.4,
+            "min": 0.0,
+            "max": 0.9
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0057",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preoperative glenoid retroversion in most-retroverted subgroup",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Most retroverted subgroup; subgroup-specific sample sizes not reported",
+      "timepoint": "Preoperative",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table II reports preoperative retroversion for the most-retroverted subgroup as mean ± SD of -19.0 ± 19 degrees in the Standard Surgical Group and -24.9 ± 2.9 degrees in the Glenoid Positioning System Group; subgroup-specific n is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE II",
+        "content_list_item_index": 81
+      }
+    },
+    {
+      "candidate_id": "cand_0058",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version_and_inclination",
+          "measurement_semantics": "postoperative_alignment_with_explicit_planned_target",
+          "unit": "degrees",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "11 analysed human shoulders; 7 anatomic and 4 reverse total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "version_and_inclination",
+        "measurement_semantics": "postoperative_alignment_with_explicit_planned_target",
+        "unit": "degrees",
+        "n": 7,
+        "planned_target": {
+          "version": 0.0,
+          "inclination": 0.0
+        },
+        "reported_summary": {
+          "version_retroversion": {
+            "mean": 8.0,
+            "sd": 10.0
+          },
+          "inclination": {
+            "mean": 1.0,
+            "sd": 4.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 2, Methods (anatomic targets); PDF page 3, Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0059",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component retroversion angle",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing reverse total shoulder arthroplasty; reverse TSA subgroup",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version",
+        "measurement_semantics": "Postoperative mean retroversion angle",
+        "unit": "degrees",
+        "n": 4,
+        "reported_summary": {
+          "retroversion_angle": {
+            "mean": 1.8,
+            "sd": 11.1,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "paragraph",
+        "source_id": "content_0065",
+        "content_list_item_index": 65
+      }
+    },
+    {
+      "candidate_id": "cand_0060",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intraoperative navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination or tilt",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing total shoulder arthroplasty",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The located source discusses glenoid inclination/component tilting and the rationale for navigation, but does not report a numeric n, mean, and SD for inclination or tilt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_02_kircher",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0061",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component anteroposterior position difference",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients with glenoid deficiency undergoing conventional or reverse TSA; postoperative CT-evaluable cases, overall cohort",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Anteroposterior glenoid component position",
+        "measurement_semantics": "Difference between planned alignment and postoperative placement",
+        "unit": "mm",
+        "n": 7,
+        "reported_summary": {
+          "anteroposterior_difference": {
+            "mean": 0.0,
+            "sd": 1.7,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0062",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version",
+          "measurement_semantics": "absolute_deviation_from_intended_position",
+          "unit": "degrees",
+          "intervention_class": "patient_specific_instrument",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "70 arthritic cadaver shoulders; 35 patient-specific guides and 35 standard instrumentation",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "patient_specific_guide",
+          "n": 35,
+          "mean": 5.0,
+          "sd": 4.5
+        },
+        "comparator_arm": {
+          "label": "standard_instrumentation",
+          "n": 35,
+          "mean": 7.0,
+          "sd": 5.5
+        },
+        "source_reported_arms": {
+          "patient_specific_guide": {
+            "n": 35,
+            "mean": 5.0,
+            "sd": 4.5
+          },
+          "standard_instrumentation": {
+            "n": 35,
+            "mean": 7.0,
+            "sd": 5.5
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -2.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 1.442857142857143,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 5, Table I, TSA + RTSA rows"
+      }
+    },
+    {
+      "candidate_id": "cand_0063",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaveric shoulders; Throckmorton study; n=70",
+      "timepoint": "",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component inclination and retroversion",
+        "measurement_semantics": "Variation in inclination and retroversion",
+        "unit": "degrees",
+        "n": 70,
+        "reported_summary": {
+          "inclination": {
+            "mean": 3.0,
+            "sd": 2.8,
+            "min": null,
+            "max": null
+          },
+          "retroversion": {
+            "mean": 5.0,
+            "sd": 4.5,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0064",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing reverse shoulder arthroplasty; reverse subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid inclination",
+        "measurement_semantics": "Mean absolute deviation between actual measured component orientation and planned preoperative orientation",
+        "unit": "degrees",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 1.6,
+            "sd": 1.1,
+            "min": 0.2,
+            "max": 4.5
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 60
+      }
+    },
+    {
+      "candidate_id": "cand_0065",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "offset_or_starting_point",
+          "measurement_semantics": "absolute_deviation_from_intended_position",
+          "unit": "mm",
+          "intervention_class": "patient_specific_instrument",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "70 arthritic cadaver shoulders; 35 patient-specific guides and 35 standard instrumentation",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "patient_specific_guide",
+          "n": 35,
+          "mean": 2.0,
+          "sd": 1.0
+        },
+        "comparator_arm": {
+          "label": "standard_instrumentation",
+          "n": 35,
+          "mean": 3.0,
+          "sd": 1.0
+        },
+        "source_reported_arms": {
+          "patient_specific_guide": {
+            "n": 35,
+            "mean": 2.0,
+            "sd": 1.0
+          },
+          "standard_instrumentation": {
+            "n": 35,
+            "mean": 3.0,
+            "sd": 1.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -1.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.05714285714285714,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 5, Table I, TSA + RTSA rows"
+      }
+    },
+    {
+      "candidate_id": "cand_0066",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination deviation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Arthritic cadaver shoulders receiving reverse total shoulder arthroplasty (RTSA)",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Inclination/tilt",
+        "measurement_semantics": "Absolute/deviation from intended 10° inferior tilt",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Custom patient-specific targeting guide",
+          "n": 17,
+          "mean": 4.0,
+          "sd": 4.6
+        },
+        "comparator_arm": {
+          "label": "Standard instrumentation",
+          "n": 17,
+          "mean": 5.0,
+          "sd": 6.3
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0067",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid inclination deviation from planned component position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing primary anatomic total shoulder arthroplasty; overall randomized groups",
+      "timepoint": "Postoperative CT within two weeks after surgery",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Inclination",
+        "measurement_semantics": "Average angular deviation between planned and actual implant orientation in the coronal plane",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Glenoid Positioning System Group",
+          "n": 15,
+          "mean": 2.9,
+          "sd": 3.4
+        },
+        "comparator_arm": {
+          "label": "Standard Surgical Group",
+          "n": 16,
+          "mean": 11.6,
+          "sd": 7.0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE I",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0068",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation / patient-specific positioning guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Postoperative glenoid version and inclination",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing anatomic total shoulder arthroplasty; n=7",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version and inclination",
+        "measurement_semantics": "Postoperative glenoid component retroversion and inclination; version defined as deviation from the Friedman line and inclination as deviation from the specified scapular reference line",
+        "unit": "degrees",
+        "n": 7,
+        "reported_summary": {
+          "retroversion": {
+            "mean": 8.0,
+            "sd": 10.0,
+            "min": null,
+            "max": null
+          },
+          "inclination": {
+            "mean": 1.0,
+            "sd": 4.0,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0069",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation in shoulders with preimplantation glenoid retroversion ≥10°",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "18 of 70 arthritic cadaver shoulders with >10° preimplantation glenoid retroversion; TSA + RTSA",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For shoulders with ≥10° preimplantation deformity, the source reported lower average version deviation with patient-specific guides than with standard instrumentation, but no SD was reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0070",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Native glenoid version",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Fresh frozen cadaver scapulothoracic specimens undergoing reverse shoulder arthroplasty; 7 navigated and 7 control specimens",
+      "timepoint": "Preoperative",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version",
+        "measurement_semantics": "Native glenoid version measured preoperatively relative to the study's reported axis; source reports mean ± SD",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Navigated group",
+          "n": 7,
+          "mean": -5.6,
+          "sd": 5.2
+        },
+        "comparator_arm": {
+          "label": "Control group",
+          "n": 7,
+          "mean": -5.2,
+          "sd": 5.0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "paragraph",
+        "source_id": "content_0028",
+        "content_list_item_index": 28
+      }
+    },
+    {
+      "candidate_id": "cand_0071",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component three-dimensional positional difference",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients with glenoid deficiency undergoing conventional or reverse TSA; postoperative CT-evaluable cases, overall cohort",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Three-dimensional glenoid component position",
+        "measurement_semantics": "Absolute difference between planned alignment and postoperative placement",
+        "unit": "mm",
+        "n": 7,
+        "reported_summary": {
+          "absolute_difference": {
+            "mean": 3.4,
+            "sd": 1.0,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0072",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version",
+          "measurement_semantics": "reported_error_from_ideal_position",
+          "unit": "degrees",
+          "intervention_class": "navigation",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "14 paired scapulohumeral cadaver specimens; reverse shoulder prosthesis",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "navigation",
+          "n": 7,
+          "mean": 8.0,
+          "sd": 3.3
+        },
+        "comparator_arm": {
+          "label": "standard",
+          "n": 7,
+          "mean": 12.0,
+          "sd": 4.1
+        },
+        "source_reported_arms": {
+          "navigation": {
+            "n": 7,
+            "mean": 8.0,
+            "sd": 3.3
+          },
+          "standard": {
+            "n": 7,
+            "mean": 12.0,
+            "sd": 4.1
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": -4.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 3.957142857142857,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "table_or_results",
+        "source_id": "Primary PDF page 1, abstract Results; independently cross-checked against the supplied secondary review"
+      }
+    },
+    {
+      "candidate_id": "cand_0073",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component retroversion difference",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients with glenoid deficiency undergoing conventional or reverse TSA; postoperative CT-evaluable cases, overall cohort",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component version",
+        "measurement_semantics": "Difference from plan; postoperative component had more retroversion",
+        "unit": "degrees",
+        "n": 7,
+        "reported_summary": {
+          "retroversion_difference": {
+            "mean": 3.4,
+            "sd": 7.2,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "paragraph",
+        "source_id": "content_0053",
+        "content_list_item_index": 53
+      }
+    },
+    {
+      "candidate_id": "cand_0074",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination and retroversion variation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "In vivo shoulder arthroplasty; Dallalana study; reverse subgroup",
+      "timepoint": "Postoperative assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The Dallalana study reported reverse-subgroup variation of 1.6° ± 1.1° for inclination and 1.1° ± 1.1° for retroversion, but the subgroup sample size was not separately reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_03_lau_keith",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0075",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "CT-based custom glenoid alignment guide (patient-specific instrument)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component superior inclination difference",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients with glenoid deficiency undergoing conventional or reverse TSA; postoperative CT-evaluable cases, overall cohort",
+      "timepoint": "1 month postoperatively",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component inclination",
+        "measurement_semantics": "Difference from plan; postoperative component had more superior inclination",
+        "unit": "degrees",
+        "n": 7,
+        "reported_summary": {
+          "superior_inclination_difference": {
+            "mean": 0.2,
+            "sd": 8.2,
+            "min": null,
+            "max": null
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_07_suero",
+        "source_type": "paragraph",
+        "source_id": "content_0053",
+        "content_list_item_index": 53
+      }
+    },
+    {
+      "candidate_id": "cand_0076",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination deviation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Arthritic cadaver shoulders receiving anatomic total shoulder arthroplasty (TSA)",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Inclination",
+        "measurement_semantics": "Absolute/deviation from intended anatomic inclination",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Custom patient-specific targeting guide",
+          "n": 18,
+          "mean": 3.0,
+          "sd": 4.3
+        },
+        "comparator_arm": {
+          "label": "Standard instrumentation",
+          "n": 18,
+          "mean": 7.0,
+          "sd": 7.9
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0077",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "reported independent-arm comparison",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version",
+          "measurement_semantics": "preoperative_alignment_relative_to_bone_stock",
+          "unit": "degrees of retroversion",
+          "intervention_class": "navigation",
+          "comparator_class": "standard_instrumentation"
+        }
+      },
+      "population_or_subgroup": "20 human total shoulder arthroplasty patients",
+      "timepoint": "as reported in the source study",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm": {
+          "label": "navigation",
+          "n": 10,
+          "mean": 15.4,
+          "sd": 5.8
+        },
+        "comparator_arm": {
+          "label": "standard",
+          "n": 10,
+          "mean": 14.4,
+          "sd": 6.1
+        },
+        "source_reported_arms": {
+          "navigation": {
+            "n": 10,
+            "mean": 15.4,
+            "sd": 5.8
+          },
+          "standard": {
+            "n": 10,
+            "mean": 14.4,
+            "sd": 6.1
+          }
+        }
+      },
+      "effect": {
+        "effect_type": "MD",
+        "value": 1.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 7.084999999999999,
+        "direction": "intervention_minus_standard"
+      },
+      "source_location": {
+        "document_id": "a_0041_02_kircher",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, same Results sentence"
+      }
+    },
+    {
+      "candidate_id": "cand_0078",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component anteroposterior position deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing reverse shoulder arthroplasty; reverse subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid position, anteroposterior plane",
+        "measurement_semantics": "Mean absolute deviation between actual and planned position on the glenoid face",
+        "unit": "mm",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 0.6,
+            "sd": 0.3,
+            "min": 0.0,
+            "max": 1.0
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 61
+      }
+    },
+    {
+      "candidate_id": "cand_0079",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "single-arm summary",
+      "outcome": {
+        "code": null,
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous",
+        "analysis_semantics": {
+          "outcome_axis": "version_and_inclination",
+          "measurement_semantics": "absolute_planned_achieved_deviation",
+          "unit": "degrees",
+          "intervention_class": "single_arm_or_noncomparative_summary"
+        }
+      },
+      "population_or_subgroup": "20 human shoulders; 10 anatomic and 10 reverse",
+      "timepoint": "as reported in the source study",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "single_arm_continuous_summary",
+        "outcome_axis": "version_and_inclination",
+        "measurement_semantics": "absolute_planned_achieved_deviation",
+        "unit": "degrees",
+        "n": 20,
+        "reported_summary": {
+          "version": {
+            "mean": 1.8,
+            "sd": 1.9
+          },
+          "inclination": {
+            "mean": 1.3,
+            "sd": 1.0
+          }
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table_or_results",
+        "source_id": "PDF page 4, Results and Table 1, Total row"
+      }
+    },
+    {
+      "candidate_id": "cand_0080",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic shoulder arthroplasty; anatomic subgroup",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid inclination",
+        "measurement_semantics": "Mean absolute deviation between actual measured component orientation and planned preoperative orientation",
+        "unit": "degrees",
+        "n": 10,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 1.0,
+            "sd": 0.7,
+            "min": 0.3,
+            "max": 2.7
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 60
+      }
+    },
+    {
+      "candidate_id": "cand_0081",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific glenoid guide (PSG) with pre-operative 3D planning software",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid entry point anterior offset",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "17 patients with osteoarthritis awaiting anatomical total shoulder arthroplasty",
+      "timepoint": "Post-operative compared with pre-operative planned position",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Entry point anterior offset",
+        "measurement_semantics": "Difference/error between planned and implanted entry-point position; signed mean error",
+        "unit": "millimetres (mm)",
+        "n": 17,
+        "reported_summary": {
+          "mean_error": {
+            "mean": -0.1,
+            "sd": 1.4,
+            "min": -2.1,
+            "max": 3.2
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0082",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific glenoid guide (PSG) with pre-operative 3D planning software",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid entry point lateral offset",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "17 patients with osteoarthritis awaiting anatomical total shoulder arthroplasty",
+      "timepoint": "Post-operative compared with pre-operative planned position",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Entry point lateral offset",
+        "measurement_semantics": "Difference/error between planned and implanted entry-point position; signed mean error",
+        "unit": "millimetres (mm)",
+        "n": 17,
+        "reported_summary": {
+          "mean_error": {
+            "mean": 0.4,
+            "sd": 0.9,
+            "min": -1.0,
+            "max": 1.7
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_04_gauci",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0083",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation with three-dimensional preoperative planning (glenoid positioning system)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Superoinferior offset deviation from planned component position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing primary anatomic total shoulder arthroplasty; overall randomized groups",
+      "timepoint": "Postoperative CT within two weeks after surgery",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Superoinferior offset",
+        "measurement_semantics": "Component of total offset in the coronal plane",
+        "unit": "mm",
+        "intervention_arm": {
+          "label": "Glenoid Positioning System Group",
+          "n": 15,
+          "mean": 2.0,
+          "sd": 1.5
+        },
+        "comparator_arm": {
+          "label": "Standard Surgical Group",
+          "n": 16,
+          "mean": 2.3,
+          "sd": 2.1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_08_hendel",
+        "source_type": "table",
+        "source_id": "TABLE I",
+        "content_list_item_index": 71
+      }
+    },
+    {
+      "candidate_id": "cand_0084",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific targeting guides",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component starting-point deviation",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Arthritic cadaver shoulders receiving anatomic total shoulder arthroplasty (TSA)",
+      "timepoint": "Postimplantation CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Starting point",
+        "measurement_semantics": "Absolute/deviation from intended center point",
+        "unit": "mm",
+        "intervention_arm": {
+          "label": "Custom patient-specific targeting guide",
+          "n": 18,
+          "mean": 2.0,
+          "sd": 1.0
+        },
+        "comparator_arm": {
+          "label": "Standard instrumentation",
+          "n": 18,
+          "mean": 3.0,
+          "sd": 2.0
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_06_throckmorton",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0085",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Version error relative to ideal position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaver specimens undergoing reverse shoulder arthroplasty; navigated group versus control group",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "independent_continuous_arms",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid component version error",
+        "measurement_semantics": "Range of error relative to the ideal position; source reports a summary value with SD",
+        "unit": "degrees",
+        "intervention_arm": {
+          "label": "Navigated group",
+          "n": 7,
+          "mean": 8.0,
+          "sd": 3.3
+        },
+        "comparator_arm": {
+          "label": "Control group",
+          "n": 7,
+          "mean": 12.0,
+          "sd": 4.1
+        }
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "paragraph",
+        "source_id": "content_0030",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0086",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Computer navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component tilt",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Cadaver specimens undergoing reverse shoulder arthroplasty; computer navigation group versus standard instrumentation group",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The standard instrumentation group had a mean glenoid component tilt of 0.9°; the computer navigation group had a mean of 5.4° of inferior tilt. The source also reports ranges, but no SD for these means."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_01_verborgt",
+        "source_type": "paragraph",
+        "source_id": "content_0030",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0087",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intraoperative navigation",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Postoperative difference between glenoid bone-stock retroversion and glenoid-component retroversion",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing total shoulder arthroplasty; group 1 navigation and group 2 conventional technique",
+      "timepoint": "Postoperatively",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports postoperative mean ± SD differences between glenoid bone-stock and implant retroversion of 0.4° ± 0.7° in the navigation group and 0.6° ± 0.9° in the conventional group. The excerpt does not provide a directly calculable independent-arm contrast because these are bone-stock-versus-implant differences within groups."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_02_kircher",
+        "source_type": "paragraph",
+        "source_id": "content_0047",
+        "content_list_item_index": 47
+      }
+    },
+    {
+      "candidate_id": "cand_0088",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component inclination deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic or reverse shoulder arthroplasty; total cohort",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid inclination",
+        "measurement_semantics": "Mean absolute deviation between actual measured component orientation and planned preoperative orientation",
+        "unit": "degrees",
+        "n": 20,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 1.3,
+            "sd": 1.0,
+            "min": 0.2,
+            "max": 4.5
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 60
+      }
+    },
+    {
+      "candidate_id": "cand_0089",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patient-specific instrumentation (PSI)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Glenoid component version deviation from planned position",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Human patients undergoing anatomic or reverse shoulder arthroplasty; total cohort",
+      "timepoint": "Postoperative CT assessment",
+      "data_family": "single_arm_continuous_summary",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "outcome_axis": "Glenoid version",
+        "measurement_semantics": "Mean absolute deviation between actual measured component orientation and planned preoperative orientation",
+        "unit": "degrees",
+        "n": 20,
+        "reported_summary": {
+          "mean_deviation": {
+            "mean": 1.8,
+            "sd": 1.9,
+            "min": 0.1,
+            "max": 7.3
+          }
+        },
+        "planned_target": null
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0041_05_dallalana",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 60
+      }
+    }
+  ]
+}

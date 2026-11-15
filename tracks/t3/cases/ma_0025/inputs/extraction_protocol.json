@@ -1,0 +1,150 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "case_id": "ma_0025",
+  "protocol_id": "ma_0025_influenza_mortality_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among patients hospitalized with severe influenza, do convalescent plasma or hyperimmune immunoglobulin products reduce all-cause mortality versus a control product or placebo?",
+  "pico": {
+    "population": {
+      "description": "Adults or children hospitalized with severe influenza",
+      "aliases": [
+        "influenza",
+        "H1N1",
+        "H3N2"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "Convalescent plasma or hyperimmune intravenous immunoglobulin",
+      "aliases": [
+        "convalescent plasma",
+        "immune plasma",
+        "H-IVIG",
+        "hIVIG"
+      ]
+    },
+    "comparator": {
+      "description": "Control plasma, intravenous immunoglobulin, or placebo",
+      "aliases": [
+        "placebo",
+        "control plasma",
+        "standard IVIG",
+        "standard care"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "randomized controlled trial"
+  ],
+  "targets": [
+    {
+      "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+      "outcome": {
+        "description": "All-cause mortality",
+        "aliases": [
+          "death",
+          "deaths",
+          "mortality"
+        ]
+      },
+      "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "population_or_subgroup": "Adults or children hospitalized with severe influenza",
+      "timepoint_policy": {
+        "rule": "Capture the source-defined mortality window and retain its duration and analysis population."
+      },
+      "accepted_data_families": [
+        "binary_arm_counts"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "Capture source-reported mortality events and denominators for an eligible immune-product versus control contrast; selection is deferred.",
+        "selection_deferred": true
+      },
+      "data_contract": {
+        "raw_data_fields": [
+          "intervention_arm.events",
+          "intervention_arm.total",
+          "comparator_arm.events",
+          "comparator_arm.total",
+          "outcome_definition"
+        ],
+        "poolability_required_fields": [
+          "intervention_arm.events",
+          "intervention_arm.total",
+          "comparator_arm.events",
+          "comparator_arm.total"
+        ],
+        "integrity_checks": [
+          "Do not use target-review forest counts or effects.",
+          "Do not mix randomised and post-randomisation analysis populations within a study.",
+          "Preserve source-reported numeric values and metadata without altering them."
+        ]
+      },
+      "quantitative_use_policy": "exact_source_data_required",
+      "extraction_notes": [
+        "Preserve source-reported numeric values and metadata without altering them."
+      ]
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table"
+    ],
+    "forbidden_evidence_sources": [
+      "target review",
+      "target review table",
+      "target review forest plot"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "population_or_subgroup",
+      "timepoint",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "source_location"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  },
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0025",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+        "status": "mapped",
+        "original_families": [
+          "binary_arm_outcome"
+        ],
+        "recommended_v1_families": [
+          "binary_arm_counts"
+        ],
+        "unsupported_families": [],
+        "reason": "All target families have an existing v1 template."
+      }
+    ]
+  }
+}

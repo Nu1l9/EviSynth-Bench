@@ -1,0 +1,35 @@
+{
+  "case_id": "ma_0032",
+  "analysis_profile_id": "ma_0032_further_bleeding_analysis_profile_v1",
+  "scope": "single pre-specified primary aggregate-data synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_further_bleeding",
+      "pooled_result_id": "pr_0032_primary_further_bleeding",
+      "outcome_group": "further bleeding after early versus elective colonoscopy",
+      "target_id": "further_bleeding",
+      "eligible_outcome_codes": [
+        "further_bleeding"
+      ],
+      "eligible_data_families": [
+        "binary_arm_outcome"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "early_vs_elective_colonoscopy_further_bleeding_risk_ratio"
+      ],
+      "timepoint_policy": "Accept each study's source-reported post-index-examination follow-up window, from in-hospital through 30 days; retain its definition in the evidence record.",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select a candidate when it is a randomized early-versus-elective colonoscopy comparison, has the declared binary outcome and estimand, and its required numeric fields are complete.",
+          "Do not use article-specific selection notes, target-review row labels, or target combined effects."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

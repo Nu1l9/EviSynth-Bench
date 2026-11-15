@@ -1,0 +1,16 @@
+EviSynth-Bench annotations and task definitions
+Copyright (c) 2026 EviSynth-Bench contributors
+
+The benchmark annotations, structured reference data, task definitions and
+associated dataset documentation are licensed under the Creative Commons
+Attribution 4.0 International license (SPDX: CC-BY-4.0).
+
+License: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: EviSynth-Bench contributors, EviSynth-Bench v1.0.0,
+https://github.com/Nu1l9/EviSynth-Bench
+
+When redistributing or adapting these materials, credit the benchmark,
+include the license link, and indicate changes. Original publications are
+retrieved separately under their respective terms.

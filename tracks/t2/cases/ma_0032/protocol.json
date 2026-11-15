@@ -1,0 +1,71 @@
+{
+  "case_id": "ma_0032",
+  "protocol_id": "ma_0032_binary_further_bleeding_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "In adults hospitalized with acute lower gastrointestinal bleeding, does colonoscopy within 24 hours reduce persistent or recurrent bleeding compared with elective colonoscopy after 24 hours?",
+  "pico": {
+    "population": "Adults hospitalized with acute lower gastrointestinal bleeding or hematochezia",
+    "intervention_or_exposure": "Colonoscopy within 24 hours of presentation or admission",
+    "comparator": "Elective or standard colonoscopy after 24 hours, with permitted standard diagnostic management",
+    "outcome": "Persistent or recurrent bleeding after index examination"
+  },
+  "eligible_study_designs": [
+    "randomized controlled trial"
+  ],
+  "targets": [
+    {
+      "target_id": "further_bleeding",
+      "outcome": {
+        "description": "Source-reported persistent or recurrent lower gastrointestinal bleeding after the index examination",
+        "aliases": [
+          "further bleeding",
+          "rebleeding",
+          "recurrent bleeding"
+        ]
+      },
+      "comparison": "Elective or standard colonoscopy after 24 hours, with permitted standard diagnostic management",
+      "population_or_subgroup": "Adults hospitalized with acute lower gastrointestinal bleeding or hematochezia",
+      "timepoint_policy": {
+        "rule": "Preserve each trial's reported post-index-examination follow-up window; do not replace it with a target-review value."
+      },
+      "accepted_data_families": [
+        "binary_arm_outcome"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "early_vs_elective_colonoscopy_further_bleeding_risk_ratio"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "one source-reported eligible arm-level outcome per report",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract events and denominators in both randomized arms, the source definition, follow-up window, and a verified source location. Do not copy an RR from a review forest plot."
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "text"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "one randomized trial arm-level further-bleeding comparison",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "timepoint",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "quantitative_usability",
+      "source_location"
+    ]
+  }
+}

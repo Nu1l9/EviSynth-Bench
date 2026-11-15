@@ -1,0 +1,356 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0054",
+  "topic": "Among adults with COVID-19, does ivermectin reduce all-cause mortality compared with placebo or non-ivermectin standard-care control?",
+  "protocol": {
+    "protocol_id": "ma_0054_ivermectin_mortality_protocol_v1",
+    "case_id": "ma_0054",
+    "pico": {
+      "population": "Adults with COVID-19",
+      "intervention_or_exposure": {
+        "description": "Ivermectin-containing treatment regimen"
+      },
+      "comparison": {
+        "description": "Placebo or non-ivermectin standard-care control"
+      },
+      "outcome": "All-cause mortality"
+    },
+    "eligible_study_designs": [
+      "randomized controlled trial"
+    ],
+    "targets": [
+      {
+        "target_id": "all_cause_mortality_ivermectin_for_covid19",
+        "outcome": "All-cause mortality",
+        "comparison": "Ivermectin-containing treatment regimen versus placebo or non-ivermectin standard-care control",
+        "population_or_subgroup": "Adults with COVID-19",
+        "timepoint_policy": {
+          "rule": "Capture the source-defined trial follow-up for all-cause mortality and preserve the exact analysis cohort and duration."
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "RR"
+        ],
+        "estimands": [
+          "risk_ratio_all_cause_mortality_ivermectin_vs_control"
+        ],
+        "effect_selection_rule": null,
+        "extraction_notes": [
+          "Retain all original arms, including multiple ivermectin dosing arms and multiple controls.",
+          "Do not calculate RR in extraction; arm aggregation and zero-event correction belong to the calculator."
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "method_selection_policy": "prespecified",
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_ivermectin_all_cause_mortality",
+      "outcome_group": "All-cause mortality in COVID-19",
+      "target_id": "all_cause_mortality_ivermectin_for_covid19",
+      "eligible_outcome_codes": [
+        "all_cause_mortality_ivermectin_for_covid19"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_ivermectin_vs_control"
+      ],
+      "selection_rules": [
+        "Select one calculator-complete all-cause mortality record per independent randomized trial when it compares ivermectin-containing treatment with placebo or non-ivermectin standard-care control.",
+        "Require source-defined event counts and denominators for both sides; permit calculator-side merging of explicitly disjoint matching arms.",
+        "Do not treat a hydroxychloroquine-only arm as the ivermectin intervention. A non-ivermectin standard-care arm, including source-reported hydroxychloroquine standard care, may serve as a comparator. Exclude composite deterioration/death outcomes, review rows, and target pooled effects.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Capture the source-defined trial follow-up for all-cause mortality and preserve the exact analysis cohort and duration.",
+        "Retain all original arms, including multiple ivermectin dosing arms and multiple controls.",
+        "Do not calculate RR in extraction; arm aggregation and zero-event correction belong to the calculator."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_risk_ratio_inverse_variance",
+        "heterogeneity_estimator": "paule_mandel",
+        "confidence_interval": "hartung_knapp",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "All-cause mortality in COVID-19"
+      ],
+      "exposure": {
+        "terms": [
+          "Ivermectin-containing treatment regimen"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Ivermectin-containing treatment regimen versus placebo or non-ivermectin standard-care control"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Adults with COVID-19"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Capture the source-defined trial follow-up for all-cause mortality and preserve the exact analysis cohort and duration.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Effect of early treatment with fluvoxamine on risk of emergency care and hospitalisation among patients with COVID-19: the TOGETHER randomised, platform clinical trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_001.pdf"
+      },
+      "doi": "10.1016/s2214-109x(21)00448-4"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Drug treatments for covid-19: living systematic review and network meta-analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_002.pdf"
+      },
+      "doi": "10.1136/bmj.m2980"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "The effect of early treatment with ivermectin on viral load, symptoms and humoral response in patients with non-severe COVID-19: A pilot, double-blind, placebo-controlled, randomized clinical trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_003.pdf"
+      },
+      "doi": "10.1016/j.eclinm.2020.100720"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Effectiveness of Ivermectin in SARS-CoV-2/COVID-19 Patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_004.pdf"
+      },
+      "doi": "10.18483/ijsci.2378"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Antiviral effect of high-dose ivermectin in adults with COVID-19: a pilot randomised, controlled, open label, multicentre trial.",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_005.pdf"
+      },
+      "doi": "10.2139/ssrn.3714649"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Ivermectin as an adjunct treatment for hospitalized adult COVID-19 patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_006.pdf"
+      },
+      "doi": "10.4103/1995-7645.318304"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "A Randomized Trial of Convalescent Plasma in Covid-19 Severe Pneumonia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_007.pdf"
+      },
+      "doi": "10.1056/nejmoa2031304"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Efficacy of Ivermectin in COVID-19 Patients with Mild to Moderate Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_008.pdf"
+      },
+      "doi": "10.1101/2021.02.02.21250840"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Diagnosis of severe respiratory infections in immunocompromised patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_009.pdf"
+      },
+      "doi": "10.1007/s00134-019-05906-5"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "A five-day course of ivermectin for the treatment of COVID-19 may reduce the duration of illness",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_010.pdf"
+      },
+      "doi": "10.1016/j.ijid.2020.11.191"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "The signal pathways and treatment of cytokine storm in COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_011.pdf"
+      },
+      "doi": "10.1038/s41392-021-00679-0"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Efficacy and safety of Ivermectin and Hydroxychloroquine in patients with severe COVID-19. A randomized controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_012.pdf"
+      },
+      "doi": "10.1101/2021.02.18.21252037"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Therapeutic strategies for COVID-19: progress and lessons learned",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_013.pdf"
+      },
+      "doi": "10.1038/s41573-023-00672-y"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2): a global pandemic and treatment strategies",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_014.pdf"
+      },
+      "doi": "10.1016/j.ijantimicag.2020.106054"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Nanotechnology’s frontier in combatting infectious and inflammatory diseases: prevention and treatment",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_015.pdf"
+      },
+      "doi": "10.1038/s41392-024-01745-z"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Effect of Ivermectin on Time to Resolution of Symptoms Among Adults With Mild COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_016.pdf"
+      },
+      "doi": "10.1001/jama.2021.3071"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Ivermectin as a potential treatment for mild to moderate COVID-19 – A double blind randomized placebo-controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_017.pdf"
+      },
+      "doi": "10.1101/2021.01.05.21249310"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "Drug repurposing approach to fight COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_018.pdf"
+      },
+      "doi": "10.1007/s43440-020-00155-6"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Coronavirus Disease 2019–COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_019.pdf"
+      },
+      "doi": "10.1128/CMR.00028-20"
+    },
+    {
+      "article_id": "candidate_020",
+      "document_id": "candidate_020",
+      "study_id": "study_020",
+      "role": "candidate_article",
+      "title": "Outcome of ivermectin treated mild to moderate COVID-19 cases: a single-centre, open-label, randomised controlled study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0054/candidate_020.pdf"
+      },
+      "doi": "10.3329/imcjms.v14i2.52826"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

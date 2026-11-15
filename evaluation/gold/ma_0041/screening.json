@@ -1,0 +1,178 @@
+{
+  "case_id": "ma_0041",
+  "positive_count": 9,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0041_01_verborgt",
+      "title": "Accuracy of placement of the glenoid component in reversed shoulder arthroplasty with and without navigation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_004.pdf",
+      "source_filename": "a_0041_01_verborgt.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1016/j.jse.2010.07.014"
+    },
+    {
+      "candidate_id": "a_0041_02_kircher",
+      "title": "Improved accuracy of glenoid positioning in total shoulder arthroplasty with intraoperative navigation: A prospective-randomized clinical study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_006.pdf",
+      "source_filename": "a_0041_02_kircher.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1016/j.jse.2009.03.014"
+    },
+    {
+      "candidate_id": "a_0041_03_lau_keith",
+      "title": "Patient-specific instrumentation for total shoulder arthroplasty: not as accurate as it would seem",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_003.pdf",
+      "source_filename": "a_0041_03_lau_keith.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1016/j.jse.2017.07.004"
+    },
+    {
+      "candidate_id": "a_0041_04_gauci",
+      "title": "Patient-specific glenoid guides provide accuracy and reproducibility in total shoulder arthroplasty",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_018.pdf",
+      "source_filename": "a_0041_04_gauci.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.1302/0301-620x.98b8.37257"
+    },
+    {
+      "candidate_id": "a_0041_05_dallalana",
+      "title": "Accuracy of patient-specific instrumentation in anatomic and reverse total shoulder arthroplasty",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_014.pdf",
+      "source_filename": "a_0041_05_dallalana.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.4103/0973-6042.180717"
+    },
+    {
+      "candidate_id": "a_0041_06_throckmorton",
+      "title": "Patient-specific targeting guides compared with traditional instrumentation for glenoid component placement in shoulder arthroplasty: a multi-surgeon study in 70 arthritic cadaver specimens",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_009.pdf",
+      "source_filename": "a_0041_06_throckmorton.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1016/j.jse.2014.10.013"
+    },
+    {
+      "candidate_id": "a_0041_07_suero",
+      "title": "Use of a custom alignment guide to improve glenoid component position in total shoulder arthroplasty",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_002.pdf",
+      "source_filename": "a_0041_07_suero.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1007/s00167-012-2177-1"
+    },
+    {
+      "candidate_id": "a_0041_08_hendel",
+      "title": "Comparison of Patient-Specific Instruments with Standard Surgical Instruments in Determining Glenoid Component Position",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_017.pdf",
+      "source_filename": "a_0041_08_hendel.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.2106/jbjs.k.01209"
+    },
+    {
+      "candidate_id": "a_0041_09_gregory",
+      "title": "Accuracy of Glenoid Component Placement in Total Shoulder Arthroplasty and Its Effect on Clinical and Radiological Outcome in a Retrospective, Longitudinal, Monocentric Open Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0041/candidate_001.pdf",
+      "source_filename": "a_0041_09_gregory.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1371/journal.pone.0075791"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "The use of preoperative planning to decrease costs and increase efficiency in the OR",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_008.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1016/j.jseint.2022.02.004"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Computer modeling and validation testing for glenoid component rotation and optimal glenoid screw angles for reverse shoulder arthroplasty in an Asian population",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_010.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1007/s00264-024-06340-z"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Augmented-Reality-Assisted K-Wire Placement for Glenoid Component Positioning in Reversed Shoulder Arthroplasty: A Proof-of-Concept Study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_012.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.3390/jpm11080777"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Augmented reality through head-mounted display for navigation of baseplate component placement in reverse total shoulder arthroplasty: a cadaveric study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_007.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1007/s00402-021-04025-5"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Image-derived instrumentation vs. conventional instrumentation with 3D planning for glenoid component placement in reverse total shoulder replacements: a randomized controlled trial",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_019.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1016/j.jseint.2023.03.004"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Intraoperative Navigation in Reverse Shoulder Arthroplasty: Advantages and Future Prospects",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_005.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.4055/cios23407"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Glenoid Component Placement Assisted by Augmented Reality Through a Head‐Mounted Display During Reverse Shoulder Arthroplasty",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_016.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.1016/j.eats.2021.12.046"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Custom, 3‐Dimensional Patient‐Specific Instrumentation in Anatomic Total Shoulder Arthroplasty: Part 1—Preoperative Assessment, Preoperative Planning, and Guide Design",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_011.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1016/j.eats.2023.07.003"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Mixed reality visualization in shoulder arthroplasty: is it better than traditional preoperative planning software?",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_015.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.5397/cise.2022.01326"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "A Systematic Review of the Utility of Intraoperative Navigation During Total Shoulder Arthroplasty",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0041/candidate_013.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.7759/cureus.33087"
+    }
+  ]
+}

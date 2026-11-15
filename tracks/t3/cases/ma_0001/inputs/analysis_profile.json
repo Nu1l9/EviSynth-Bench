@@ -1,0 +1,168 @@
+{
+  "case_id": "ma_0001",
+  "analysis_profile_id": "ma_0001_main_analysis_profile_v1",
+  "analyses": [
+    {
+      "analysis_id": "main_pr_any_cv",
+      "pooled_result_id": "pr_any_cv",
+      "outcome_group": "any_cardiovascular_event",
+      "target_id": "cardiovascular_outcomes",
+      "eligible_outcome_codes": [
+        "atrial_fibrillation",
+        "cardiovascular_death",
+        "cerebrovascular_disease",
+        "coronary_artery_bypass",
+        "coronary_heart_disease",
+        "heart_failure",
+        "myocardial_infarction",
+        "percutaneous_coronary_intervention",
+        "peripheral_artery_disease",
+        "peripheral_vascular_disease",
+        "stroke"
+      ],
+      "eligible_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [
+        "highest_vs_lowest_variability"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "main_pr_cv_death",
+      "pooled_result_id": "pr_cv_death",
+      "outcome_group": "cardiovascular_death",
+      "target_id": "cardiovascular_outcomes",
+      "eligible_outcome_codes": [
+        "cardiovascular_death",
+        "coronary_heart_disease"
+      ],
+      "eligible_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [
+        "highest_vs_lowest_variability"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "main_pr_mi",
+      "pooled_result_id": "pr_mi",
+      "outcome_group": "myocardial_infarction",
+      "target_id": "cardiovascular_outcomes",
+      "eligible_outcome_codes": [
+        "myocardial_infarction"
+      ],
+      "eligible_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [
+        "highest_vs_lowest_variability"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "main_pr_stroke",
+      "pooled_result_id": "pr_stroke",
+      "outcome_group": "stroke",
+      "target_id": "cardiovascular_outcomes",
+      "eligible_outcome_codes": [
+        "stroke"
+      ],
+      "eligible_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [
+        "highest_vs_lowest_variability"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "main_pr_composite",
+      "pooled_result_id": "pr_composite",
+      "outcome_group": "composite_cardiovascular_outcome",
+      "target_id": "cardiovascular_outcomes",
+      "eligible_outcome_codes": [
+        "composite_cardiovascular_outcome"
+      ],
+      "eligible_data_families": [
+        "adjusted_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [
+        "highest_vs_lowest_variability"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

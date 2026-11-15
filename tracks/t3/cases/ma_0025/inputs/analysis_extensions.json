@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../../../schemas/analysis-extensions.schema.json",
+  "case_id": "ma_0025",
+  "extension_profile_id": "ma_0025_analysis_extensions_v1",
+  "source_basis": "No scored downstream extension is declared for this participant package.",
+  "blindness_policy": "Participant inputs define analysis questions and eligibility rules; reference selections and pooled values are distributed separately.",
+  "candidate_subgroup_policy": "No extension is required for the main-analysis submission. Do not manufacture an extension result when evidence is insufficient.",
+  "scoring_status": "declared_numeric_result_coverage",
+  "subgroup_analyses": [],
+  "candidate_subgroup_analyses": [],
+  "meta_regression_analyses": [],
+  "notes": [
+    "No review-level subgroup or meta-regression analysis is exposed."
+  ]
+}

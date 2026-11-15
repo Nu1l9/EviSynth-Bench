@@ -1,0 +1,142 @@
+{
+  "task": "t2",
+  "case_count": 22,
+  "cases": [
+    {
+      "case_id": "ma_0001",
+      "task": "cases/ma_0001/task.json",
+      "documents": 23,
+      "gold": "../../evaluation/gold/ma_0001/extraction.json"
+    },
+    {
+      "case_id": "ma_0005",
+      "task": "cases/ma_0005/task.json",
+      "documents": 4,
+      "gold": "../../evaluation/gold/ma_0005/extraction.json"
+    },
+    {
+      "case_id": "ma_0010",
+      "task": "cases/ma_0010/task.json",
+      "documents": 7,
+      "gold": "../../evaluation/gold/ma_0010/extraction.json"
+    },
+    {
+      "case_id": "ma_0011",
+      "task": "cases/ma_0011/task.json",
+      "documents": 4,
+      "gold": "../../evaluation/gold/ma_0011/extraction.json"
+    },
+    {
+      "case_id": "ma_0012",
+      "task": "cases/ma_0012/task.json",
+      "documents": 5,
+      "gold": "../../evaluation/gold/ma_0012/extraction.json"
+    },
+    {
+      "case_id": "ma_0017",
+      "task": "cases/ma_0017/task.json",
+      "documents": 8,
+      "gold": "../../evaluation/gold/ma_0017/extraction.json"
+    },
+    {
+      "case_id": "ma_0024",
+      "task": "cases/ma_0024/task.json",
+      "documents": 2,
+      "gold": "../../evaluation/gold/ma_0024/extraction.json"
+    },
+    {
+      "case_id": "ma_0025",
+      "task": "cases/ma_0025/task.json",
+      "documents": 4,
+      "gold": "../../evaluation/gold/ma_0025/extraction.json"
+    },
+    {
+      "case_id": "ma_0026",
+      "task": "cases/ma_0026/task.json",
+      "documents": 46,
+      "gold": "../../evaluation/gold/ma_0026/extraction.json"
+    },
+    {
+      "case_id": "ma_0028",
+      "task": "cases/ma_0028/task.json",
+      "documents": 9,
+      "gold": "../../evaluation/gold/ma_0028/extraction.json"
+    },
+    {
+      "case_id": "ma_0032",
+      "task": "cases/ma_0032/task.json",
+      "documents": 4,
+      "gold": "../../evaluation/gold/ma_0032/extraction.json"
+    },
+    {
+      "case_id": "ma_0034",
+      "task": "cases/ma_0034/task.json",
+      "documents": 11,
+      "gold": "../../evaluation/gold/ma_0034/extraction.json"
+    },
+    {
+      "case_id": "ma_0037",
+      "task": "cases/ma_0037/task.json",
+      "documents": 27,
+      "gold": "../../evaluation/gold/ma_0037/extraction.json"
+    },
+    {
+      "case_id": "ma_0041",
+      "task": "cases/ma_0041/task.json",
+      "documents": 9,
+      "gold": "../../evaluation/gold/ma_0041/extraction.json"
+    },
+    {
+      "case_id": "ma_0044",
+      "task": "cases/ma_0044/task.json",
+      "documents": 32,
+      "gold": "../../evaluation/gold/ma_0044/extraction.json"
+    },
+    {
+      "case_id": "ma_0046",
+      "task": "cases/ma_0046/task.json",
+      "documents": 20,
+      "gold": "../../evaluation/gold/ma_0046/extraction.json"
+    },
+    {
+      "case_id": "ma_0054",
+      "task": "cases/ma_0054/task.json",
+      "documents": 10,
+      "gold": "../../evaluation/gold/ma_0054/extraction.json"
+    },
+    {
+      "case_id": "ma_0055",
+      "task": "cases/ma_0055/task.json",
+      "documents": 9,
+      "gold": "../../evaluation/gold/ma_0055/extraction.json"
+    },
+    {
+      "case_id": "ma_0056",
+      "task": "cases/ma_0056/task.json",
+      "documents": 9,
+      "gold": "../../evaluation/gold/ma_0056/extraction.json"
+    },
+    {
+      "case_id": "ma_0064",
+      "task": "cases/ma_0064/task.json",
+      "documents": 7,
+      "gold": "../../evaluation/gold/ma_0064/extraction.json"
+    },
+    {
+      "case_id": "ma_0076",
+      "task": "cases/ma_0076/task.json",
+      "documents": 90,
+      "gold": "../../evaluation/gold/ma_0076/extraction.json"
+    },
+    {
+      "case_id": "ma_0086",
+      "task": "cases/ma_0086/task.json",
+      "documents": 2,
+      "gold": "../../evaluation/gold/ma_0086/extraction.json"
+    }
+  ],
+  "evaluator": "../../evaluate_t2.py",
+  "evaluator_documentation": "../../evaluation/t2_v1_3/README.md",
+  "scoring_version": "1.0.0",
+  "documentation": "../../OUTPUT_CONTRACT.md"
+}

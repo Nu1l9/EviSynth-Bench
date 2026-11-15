@@ -1,0 +1,150 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "protocol_id": "ma_0012_extraction_protocol_v1",
+  "protocol_version": "1.0.0",
+  "case_id": "ma_0012",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among children vaccinated in the pneumococcal-conjugate-vaccine era, is asthma associated with invasive pneumococcal disease?",
+  "pico": {
+    "population": {
+      "description": "Children receiving pneumococcal conjugate vaccine",
+      "aliases": [
+        "children",
+        "pediatric",
+        "PCV",
+        "PCV7",
+        "PCV13"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "Asthma",
+      "aliases": [
+        "asthma",
+        "asthmatic"
+      ]
+    },
+    "comparator": {
+      "description": "Children without asthma or without known risk factors",
+      "aliases": [
+        "without asthma",
+        "healthy controls",
+        "no known risk factors"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "retrospective cohort study",
+    "case-control study"
+  ],
+  "targets": [
+    {
+      "target_id": "invasive_pneumococcal_disease",
+      "outcome": {
+        "description": "Invasive pneumococcal disease confirmed from a normally sterile site",
+        "aliases": [
+          "IPD",
+          "invasive pneumococcal disease",
+          "pneumococcal infection"
+        ]
+      },
+      "comparison": "Children with asthma versus children without asthma or without known risk factors",
+      "population_or_subgroup": "Children; preserve source age stratum and calendar year",
+      "timepoint_policy": {
+        "rule": "Preserve source-reported age stratum and calendar year; do not pool overlapping cohorts twice.",
+        "preferred": null,
+        "allowed": []
+      },
+      "accepted_data_families": [
+        "reported_ratio_effect"
+      ],
+      "preferred_effect_measures": [
+        "OR",
+        "RR"
+      ],
+      "estimands": [
+        "adjusted_asthma_vs_no_known_risk_factor"
+      ],
+      "effect_selection_rule": "Retain each source-reported adjusted effect for the target outcome and its explicitly defined age stratum or year. Mark overlapping-cohort effects as quantitative but not independently poolable.",
+      "data_contract": {
+        "raw_data_fields": [
+          "effect_value",
+          "ci_lower",
+          "ci_upper",
+          "effect_measure",
+          "age_stratum_or_year",
+          "adjustment_set"
+        ],
+        "field_definitions": {
+          "effect_value": "Reported adjusted ratio effect.",
+          "ci_lower": "Reported lower 95% confidence bound.",
+          "ci_upper": "Reported upper 95% confidence bound.",
+          "effect_measure": "Source-reported odds or rate ratio.",
+          "age_stratum_or_year": "Source-defined subgroup or calendar year.",
+          "adjustment_set": "Source-reported adjustment variables."
+        },
+        "poolability_required_fields": [
+          "effect_value",
+          "ci_lower",
+          "ci_upper",
+          "age_stratum_or_year"
+        ],
+        "allowed_source_derivations": [],
+        "derivation_preconditions": [],
+        "derivation_instructions": [],
+        "source_aggregation_rules": [],
+        "integrity_checks": [
+          "do_not_count_overlapping_cohorts_twice",
+          "preserve_source_effect_measure",
+          "outcome_must_match_IPD"
+        ]
+      },
+      "quantitative_use_policy": "source_reported_effect_allowed",
+      "extraction_notes": [
+        "Do not create arm counts from reported rates or ratios.",
+        "A record lacking an asthma-versus-control ratio is retained only as source-only evidence."
+      ]
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "markdown"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table",
+      "figure",
+      "appendix",
+      "supplement"
+    ],
+    "forbidden_evidence_sources": [
+      "target meta-analysis",
+      "forest plot",
+      "unpublished author correspondence"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "source-defined outcome",
+      "comparison",
+      "population or subgroup",
+      "timepoint",
+      "data family",
+      "raw source data",
+      "reported effect",
+      "quantitative usability",
+      "source locator"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  },
+  "human_escalation_rules": [
+    "Two reports use an overlapping participant cohort.",
+    "The source does not report a recoverable asthma-versus-control effect."
+  ]
+}

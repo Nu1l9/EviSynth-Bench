@@ -1,0 +1,96 @@
+{
+  "case_id": "ma_0056",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0056_01",
+      "document_id": "a_0056_01",
+      "doi": "10.1056/nejmoa2007764",
+      "title": "Remdesivir for the Treatment of Covid-19 — Final Report",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_01.pdf"
+      },
+      "article_id": "a_0056_01"
+    },
+    {
+      "study_id": "s_0056_02",
+      "document_id": "a_0056_02",
+      "doi": "10.1016/s0140-6736(20)31022-9",
+      "title": "Remdesivir in adults with severe COVID-19: a randomised, double-blind, placebo-controlled, multicentre trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_02.pdf"
+      },
+      "article_id": "a_0056_02"
+    },
+    {
+      "study_id": "s_0056_03",
+      "document_id": "a_0056_03",
+      "doi": "10.1001/jama.2020.16349",
+      "title": "Effect of Remdesivir vs Standard Care on Clinical Status at 11 Days in Patients With Moderate COVID-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_03.pdf"
+      },
+      "article_id": "a_0056_03"
+    },
+    {
+      "study_id": "s_0056_04",
+      "document_id": "a_0056_04",
+      "doi": "10.1056/nejmoa2023184",
+      "title": "Repurposed Antiviral Drugs for Covid-19 — Interim WHO Solidarity Trial Results",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_04.pdf"
+      },
+      "article_id": "a_0056_04"
+    },
+    {
+      "study_id": "s_0056_05",
+      "document_id": "a_0056_05",
+      "doi": "10.1016/s1473-3099(21)00485-0",
+      "title": "Remdesivir plus standard of care versus standard of care alone for the treatment of patients admitted to hospital with COVID-19 (DisCoVeRy): a phase 3, randomised, controlled, open-label trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_05.pdf"
+      },
+      "article_id": "a_0056_05"
+    },
+    {
+      "study_id": "s_0056_06",
+      "document_id": "a_0056_06",
+      "doi": "10.1056/nejmoa2015301",
+      "title": "Remdesivir for 5 or 10 Days in Patients with Severe Covid-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_06.pdf"
+      },
+      "article_id": "a_0056_06"
+    },
+    {
+      "study_id": "s_0056_07",
+      "document_id": "a_0056_07",
+      "doi": "10.4103/ija.ija_149_21",
+      "title": "Clinical outcomes of using remdesivir in patients with moderate to severe COVID-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_07.pdf"
+      },
+      "article_id": "a_0056_07"
+    },
+    {
+      "study_id": "s_0056_08",
+      "document_id": "a_0056_08",
+      "doi": "10.4269/ajtmh.21-0606",
+      "title": "RETRACTED: Remdesivir Efficacy in COVID-19 Treatment: A Randomized Controlled Trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_08.pdf"
+      },
+      "article_id": "a_0056_08"
+    },
+    {
+      "study_id": "s_0056_09",
+      "document_id": "a_0056_09",
+      "doi": "10.7326/m21-0653",
+      "title": "Evaluation of the Effects of Remdesivir and Hydroxychloroquine on Viral Clearance in COVID-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0056/a_0056_09.pdf"
+      },
+      "article_id": "a_0056_09"
+    }
+  ]
+}

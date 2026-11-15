@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0010",
+  "task_id": "ma_0010_full_analysis_main_outcomes_v2",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "rs763780_heterozygote_vs_common_homozygote",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

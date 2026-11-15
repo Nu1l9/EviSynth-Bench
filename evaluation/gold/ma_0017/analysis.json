@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0017",
+  "gold_id": "ma_0017_analysis_gold_v1",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0017",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_evt_utilization",
+      "selected_candidate_ids": [
+        "ce_0017_01",
+        "ce_0017_02",
+        "ce_0017_03",
+        "ce_0017_04",
+        "ce_0017_05",
+        "ce_0017_06",
+        "ce_0017_07",
+        "ce_0017_08"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0017_01",
+        "ee_0017_02",
+        "ee_0017_03",
+        "ee_0017_04",
+        "ee_0017_05",
+        "ee_0017_06",
+        "ee_0017_07",
+        "ee_0017_08"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0017_primary_evt_utilization",
+          "outcome_group": "Odds of receiving endovascular thrombectomy during the COVID-19 pandemic",
+          "effect": {
+            "effect_type": "OR",
+            "value": 1.1539898448513537,
+            "ci_lower": 0.802125205270053,
+            "ci_upper": 1.660205356059978,
+            "direction": "higher_odds_during_pandemic"
+          },
+          "member_candidate_ids": [
+            "ce_0017_01",
+            "ce_0017_02",
+            "ce_0017_03",
+            "ce_0017_04",
+            "ce_0017_05",
+            "ce_0017_06",
+            "ce_0017_07",
+            "ce_0017_08"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0017_01",
+            "ee_0017_02",
+            "ee_0017_03",
+            "ee_0017_04",
+            "ee_0017_05",
+            "ee_0017_06",
+            "ee_0017_07",
+            "ee_0017_08"
+          ],
+          "heterogeneity_i2": 59.46544815393119,
+          "calculator_run": {
+            "calculator_id": "binary_event_log_or_wald_v1",
+            "pooling": "dersimonian_laird_random_effects_inverse_variance",
+            "tau_squared": 0.12716063199391225,
+            "q": 17.269217695024018
+          }
+        }
+      ]
+    }
+  ]
+}

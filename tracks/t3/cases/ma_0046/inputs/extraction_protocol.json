@@ -1,0 +1,151 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "protocol_id": "ma_0046_extraction_protocol_v1",
+  "protocol_version": "1.0.0",
+  "case_id": "ma_0046",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among patients undergoing transcatheter aortic valve replacement, is a new permanent pacemaker implantation associated with all-cause death compared with no new permanent pacemaker implantation?",
+  "pico": {
+    "population": {
+      "description": "Patients undergoing transcatheter aortic valve replacement or implantation",
+      "aliases": [
+        "TAVR",
+        "TAVI",
+        "transcatheter aortic valve"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "New permanent pacemaker implantation after TAVR",
+      "aliases": [
+        "new PPM",
+        "new PPI",
+        "postprocedural pacemaker"
+      ]
+    },
+    "comparator": {
+      "description": "No new permanent pacemaker implantation after TAVR",
+      "aliases": [
+        "no PPM",
+        "no PPI",
+        "without pacemaker"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "comparative cohort study",
+    "registry study"
+  ],
+  "targets": [
+    {
+      "target_id": "long_term_all_cause_death",
+      "outcome": {
+        "description": "All-cause death after TAVR",
+        "aliases": [
+          "all-cause death",
+          "all-cause mortality",
+          "total mortality",
+          "death"
+        ]
+      },
+      "comparison": "New PPM after TAVR versus no new PPM after TAVR; exclude pre-existing PPM from both groups.",
+      "population_or_subgroup": "Source-defined TAVR cohort without pre-existing PPM.",
+      "timepoint_policy": {
+        "rule": "Use a source-reported post-TAVR cumulative all-cause-death comparison with at least 10 months of follow-up. Preserve the actual source timepoint and risk set. Do not substitute a hazard ratio for arm counts.",
+        "preferred": "at least 10 months post-TAVR",
+        "allowed": [
+          "12 months",
+          "study-specific long-term follow-up"
+        ]
+      },
+      "accepted_data_families": [
+        "binary_arm_counts"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "new_ppm_vs_no_new_ppm_all_cause_death_risk"
+      ],
+      "effect_selection_rule": "Retain one all-cause-death arm-count comparison per independent report. Prefer the directly tabulated study-specific long-term comparison. Keep alternative timepoints as non-selected candidates when the report exposes incompatible risk sets.",
+      "data_contract": {
+        "raw_data_fields": [
+          "new_ppm_deaths",
+          "new_ppm_total",
+          "no_new_ppm_deaths",
+          "no_new_ppm_total"
+        ],
+        "field_definitions": {
+          "new_ppm_deaths": "All-cause deaths in the new post-TAVR PPM group.",
+          "new_ppm_total": "Participants in the new PPM group.",
+          "no_new_ppm_deaths": "All-cause deaths in the no-new-PPM group.",
+          "no_new_ppm_total": "Participants in the no-new-PPM group."
+        },
+        "poolability_required_fields": [
+          "new_ppm_deaths",
+          "new_ppm_total",
+          "no_new_ppm_deaths",
+          "no_new_ppm_total"
+        ],
+        "allowed_source_derivations": [],
+        "derivation_preconditions": [],
+        "derivation_instructions": [],
+        "source_aggregation_rules": [],
+        "integrity_checks": [
+          "exclude_pre_existing_ppm",
+          "outcome_must_be_all_cause_death",
+          "follow_up_must_be_at_least_10_months",
+          "do_not_convert_hazard_ratio_to_arm_counts"
+        ]
+      },
+      "quantitative_use_policy": "exact_source_data_required",
+      "extraction_notes": [
+        "Do not use mortality plus hospitalization composite endpoints.",
+        "Do not replace raw death counts with adjusted hazard ratios.",
+        "The source corpus contains timepoint-selection ambiguity; preserve each source timepoint in the extraction record."
+      ]
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "markdown"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table",
+      "figure",
+      "appendix",
+      "supplement"
+    ],
+    "forbidden_evidence_sources": [
+      "target meta-analysis",
+      "forest plot",
+      "unpublished author correspondence"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "source-defined outcome",
+      "comparison",
+      "population or subgroup",
+      "timepoint",
+      "data family",
+      "raw source data",
+      "derived effect",
+      "quantitative usability",
+      "source locator"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  },
+  "human_escalation_rules": [
+    "A report gives several all-cause-death timepoints with changing risk sets.",
+    "A report includes pre-existing PPM in either comparison arm.",
+    "Only an adjusted hazard ratio is reported without recoverable arm counts."
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "case_id": "ma_0037",
+  "positive_count": 27,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0037_01",
+      "title": "CT-Guided Fine-Needle Aspiration Cytology of Solitary Pulmonary Nodules*",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_001.pdf",
+      "source_filename": "a_0037_01.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1378/chest.112.2.423"
+    },
+    {
+      "candidate_id": "a_0037_02",
+      "title": "Computed tomography‐guided transthoracic fine‐needle aspiration in diagnosis of lung cancer: A comparison of single‐pass needle and multiple‐pass coaxial needle systems and the value of immediate cytological assessment",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_017.pdf",
+      "source_filename": "a_0037_02.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1111/j.1440-1843.2004.00607.x"
+    },
+    {
+      "candidate_id": "a_0037_03",
+      "title": "A Randomized Prospective Trial of the Utility of Rapid On-Site Evaluation of Transbronchial Needle Aspirate Specimens",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_010.pdf",
+      "source_filename": "a_0037_03.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1097/lbr.0b013e31821707ee"
+    },
+    {
+      "candidate_id": "a_0037_04",
+      "title": "The value of rapid on-site evaluation during EBUS-TBNA",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_024.pdf",
+      "source_filename": "a_0037_04.pdf",
+      "runtime_article_id": "candidate_024",
+      "doi": "10.1016/j.rppnen.2015.02.003"
+    },
+    {
+      "candidate_id": "a_0037_05",
+      "title": "Value of C-ROSE During EBUS-TBNA to Obtain the Tissue Sample in the Diagnosis of Lung Cancer",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_027.pdf",
+      "source_filename": "a_0037_05.pdf",
+      "runtime_article_id": "candidate_027",
+      "doi": "10.3779/j.issn.1009-3419.2018.11.05"
+    },
+    {
+      "candidate_id": "a_0037_06",
+      "title": "Conventional Transbronchial Needle Aspiration Versus Endobronchial Ultrasound–guided Transbronchial Needle Aspiration, With or Without Rapid On-Site Evaluation, for the Diagnosis of Sarcoidosis: A Randomized Controlled Trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_013.pdf",
+      "source_filename": "a_0037_06.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1097/lbr.0000000000000339"
+    },
+    {
+      "candidate_id": "a_0037_07",
+      "title": "Rapid On-Site Cytologic Evaluation during Endobronchial Ultrasound-Guided Transbronchial Needle Aspiration for Diagnosing Lung Cancer: A Randomized Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_011.pdf",
+      "source_filename": "a_0037_07.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1159/000346987"
+    },
+    {
+      "candidate_id": "a_0037_08",
+      "title": "Randomized Trial of Endobronchial Ultrasound-Guided Transbronchial Needle Aspiration With and Without Rapid On-site Evaluation for Lung Cancer Genotyping",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_033.pdf",
+      "source_filename": "a_0037_08.pdf",
+      "runtime_article_id": "candidate_033",
+      "doi": "10.1378/chest.15-0583"
+    },
+    {
+      "candidate_id": "a_0037_09",
+      "title": "Rapid On-site Evaluation of Transbronchial Aspirates in the Diagnosis of Hilar and Mediastinal Adenopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_007.pdf",
+      "source_filename": "a_0037_09.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1378/chest.10-1521"
+    },
+    {
+      "candidate_id": "a_0037_10",
+      "title": "Endobronchial ultrasound-guided transbronchial needle aspiration in the diagnosis of small cell lung cancer",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_014.pdf",
+      "source_filename": "a_0037_10.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1016/j.resinv.2013.11.004"
+    },
+    {
+      "candidate_id": "a_0037_11",
+      "title": "The Value of Transbronchial Needle Aspiration Combined with Rapid On-site Evaluation of Cytology in the Diagnosis of Lung Cancer",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_018.pdf",
+      "source_filename": "a_0037_11.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.3779/j.issn.1009-3419.2014.03.06"
+    },
+    {
+      "candidate_id": "a_0037_12",
+      "title": "Transbronchial Needle Aspiration in Diagnosing and Staging Lung Cancer: How Many Aspirates Are Needed?",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_004.pdf",
+      "source_filename": "a_0037_12.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1164/rccm.2106153"
+    },
+    {
+      "candidate_id": "a_0037_13",
+      "title": "Efficacy and cost effectiveness of rapid on site examination (ROSE) in management of patients with mediastinal lymphadenopathies",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_037.pdf",
+      "source_filename": "a_0037_13.pdf",
+      "runtime_article_id": "candidate_037",
+      "doi": null
+    },
+    {
+      "candidate_id": "a_0037_14",
+      "title": "Utility of Rapid On-Site Cytologic Evaluation during Endobronchial Ultrasound-Guided Transbronchial Needle Aspiration in Malignant and Nonmalignant Disease",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_036.pdf",
+      "source_filename": "a_0037_14.pdf",
+      "runtime_article_id": "candidate_036",
+      "doi": "10.1159/000493334"
+    },
+    {
+      "candidate_id": "a_0037_15",
+      "title": "Rapid On-Site Evaluation Improves Needle Aspiration Sensitivity in the Diagnosis of Central Lung Cancers: A Randomized Trial",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_029.pdf",
+      "source_filename": "a_0037_15.pdf",
+      "runtime_article_id": "candidate_029",
+      "doi": "10.1159/000346998"
+    },
+    {
+      "candidate_id": "a_0037_16",
+      "title": "Impact of Rapid On-Site Cytologic Evaluation During Transbronchial Needle Aspiration",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_025.pdf",
+      "source_filename": "a_0037_16.pdf",
+      "runtime_article_id": "candidate_025",
+      "doi": "10.1378/chest.128.2.869"
+    },
+    {
+      "candidate_id": "a_0037_17",
+      "title": "Improved diagnostic yield of bronchoscopy in peripheral pulmonary lesions: combination of radial probe endobronchial ultrasound and rapid on-site evaluation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_016.pdf",
+      "source_filename": "a_0037_17.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.3978/j.issn.2072-1439.2015.12.13"
+    },
+    {
+      "candidate_id": "a_0037_18",
+      "title": "Utility of On-Site Cytopathology Assessment for Bronchoscopic Evaluation of Lung Masses and Adenopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_008.pdf",
+      "source_filename": "a_0037_18.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1378/chest.117.4.1186"
+    },
+    {
+      "candidate_id": "a_0037_19",
+      "title": "Value of having a cytopathologist present during percutaneous fine-needle aspiration biopsy of lung: report of 55 cancer patients and metaanalysis of the literature.",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_035.pdf",
+      "source_filename": "a_0037_19.pdf",
+      "runtime_article_id": "candidate_035",
+      "doi": "10.2214/ajr.160.1.8416620"
+    },
+    {
+      "candidate_id": "a_0037_20",
+      "title": "Positive Economic and Diagnostic Accuracy Impacts of On-Site Evaluation of Fine Needle Aspiration Biopsies by Pathologists",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_032.pdf",
+      "source_filename": "a_0037_20.pdf",
+      "runtime_article_id": "candidate_032",
+      "doi": "10.1159/000333985"
+    },
+    {
+      "candidate_id": "a_0037_21",
+      "title": "Rapid On-Site Evaluation of Transbronchial Aspirates",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_019.pdf",
+      "source_filename": "a_0037_21.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1378/chest.98.1.59"
+    },
+    {
+      "candidate_id": "a_0037_22",
+      "title": "Improved laboratory resource utilization and patient care with the use of rapid on‐site evaluation for endobronchial ultrasound fine‐needle aspiration biopsy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_009.pdf",
+      "source_filename": "a_0037_22.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1002/cncy.21320"
+    },
+    {
+      "candidate_id": "a_0037_23",
+      "title": "Utility of on-site evaluation of endobronchial ultrasound-guided transbronchial needle aspiration specimens",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_030.pdf",
+      "source_filename": "a_0037_23.pdf",
+      "runtime_article_id": "candidate_030",
+      "doi": "10.4103/1742-6413.90081"
+    },
+    {
+      "candidate_id": "a_0037_24",
+      "title": "Rapid on-site evaluation during endobronchial ultrasound-guided transbronchial needle aspiration for the diagnosis of hilar and mediastinal lymphadenopathy in patients with lung cancer",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_020.pdf",
+      "source_filename": "a_0037_24.pdf",
+      "runtime_article_id": "candidate_020",
+      "doi": "10.1016/j.canlet.2015.11.038"
+    },
+    {
+      "candidate_id": "a_0037_25",
+      "title": "Endobronchial Ultrasound-Guided Transbronchial Needle Aspiration for the Diagnosis of Central Intrapulmonary Lesions not Visible by Conventional Bronchoscopy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_028.pdf",
+      "source_filename": "a_0037_25.pdf",
+      "runtime_article_id": "candidate_028",
+      "doi": null
+    },
+    {
+      "candidate_id": "a_0037_26",
+      "title": "The Utility of Rapid On-Site Evaluation on Endobronchial Ultrasound Guided Transbronchial Needle Aspiration: Does It Make a Difference?",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_022.pdf",
+      "source_filename": "a_0037_26.pdf",
+      "runtime_article_id": "candidate_022",
+      "doi": "10.1155/2014/245974"
+    },
+    {
+      "candidate_id": "a_0037_27",
+      "title": "Telecytology for rapid assessment of cytological specimens",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0037/candidate_034.pdf",
+      "source_filename": "a_0037_27.pdf",
+      "runtime_article_id": "candidate_034",
+      "doi": "10.1258/jtt.2011.110418"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Robotic Bronchoscopy for Peripheral Pulmonary Lesions",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_006.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1016/j.chest.2020.08.2047"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Electromagnetic navigation bronchoscopy to access lung lesions in 1,000 subjects: first results of the prospective, multicenter NAVIGATE study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_026.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_026",
+      "doi": "10.1186/s12890-017-0403-9"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Utility of on-site evaluation of endobronchial ultrasound-guided transbronchial needle aspiration specimens",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_023.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_023",
+      "doi": "10.4103/1742-6413.90081"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Endobronchial ultrasound-guided transbronchial mediastinal cryobiopsy in the diagnosis of mediastinal lesions: safety, feasibility and diagnostic yield – experience in 50 cases",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_002.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1183/23120541.00448-2022"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Cone-Beam CT Image Guidance With and Without Electromagnetic Navigation Bronchoscopy for Biopsy of Peripheral Pulmonary Lesions",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_021.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_021",
+      "doi": "10.1097/lbr.0000000000000697"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Endobronchial ultrasound‐guided transbronchial cryo‐nodal biopsy: a novel approach for mediastinal lymph node sampling",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_012.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1002/rcr2.808"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "International Society of Paediatric Surgical Oncology (IPSO) Surgical Practice Guidelines",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_005.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.3332/ecancer.2022.1356"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Effectiveness of the Benign and Malignant Diagnosis of Mediastinal and Hilar Lymph Nodes by Endobronchial Ultrasound Elastography",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_015.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.7150/jca.19819"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "EBUS versus EUS‐B for diagnosing sarcoidosis: The International Sarcoidosis Assessment ( ISA ) randomized clinical trial",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_003.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1111/resp.14182"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Endoscopic ultrasound fine needle aspiration vs fine needle biopsy for pancreatic masses, subepithelial lesions, and lymph nodes",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0037/candidate_031.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_031",
+      "doi": "10.3748/wjg.v27.i26.4194"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "case_id": "ma_0005",
+  "protocol_id": "ma_0005_preterm_birth_lt35_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among singleton pregnancies with prior spontaneous preterm birth and ultrasound-indicated cerclage, does adjuvant 17-hydroxyprogesterone caproate alter preterm birth before 35 weeks compared with cerclage alone?",
+  "pico": {
+    "population": "Singleton pregnancy with prior spontaneous preterm birth and ultrasound-indicated cerclage",
+    "intervention_or_exposure": "Adjuvant 17-hydroxyprogesterone caproate after ultrasound-indicated cerclage",
+    "comparator": "Ultrasound-indicated cerclage alone",
+    "outcome": "Preterm birth before 35 completed weeks"
+  },
+  "eligible_study_designs": [
+    "comparative cohort study"
+  ],
+  "targets": [
+    {
+      "target_id": "preterm_birth_lt35_weeks",
+      "outcome": {
+        "description": "Preterm birth before 35 completed weeks",
+        "aliases": [
+          "PTB <35 weeks",
+          "spontaneous PTB <35 weeks",
+          "delivery before 35 weeks"
+        ]
+      },
+      "comparison": "Adjuvant 17-hydroxyprogesterone caproate plus ultrasound-indicated cerclage versus ultrasound-indicated cerclage alone",
+      "population_or_subgroup": "Singleton pregnancy with prior spontaneous preterm birth and ultrasound-indicated cerclage",
+      "timepoint_policy": {
+        "rule": "Extract the source-reported delivery threshold and preserve whether it denotes birth before or at/after the threshold."
+      },
+      "accepted_data_families": [
+        "binary_arm_outcome"
+      ],
+      "preferred_effect_measures": [
+        "RR"
+      ],
+      "estimands": [
+        "adjuvant_17_ohpc_plus_uic_vs_uic_alone_preterm_birth_risk_ratio"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "Capture source-reported arm-level binary outcomes relevant to the declared pregnancy and cerclage context; preserve outcome direction and subgroup scope.",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract event counts and denominators in both exposure groups, source outcome definition, population or subgroup, delivery threshold, and verified primary-source locator. Do not copy event counts or effects from a review forest plot."
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "one source-reported arm-level binary pregnancy outcome",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "population_or_subgroup",
+      "timepoint",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "quantitative_usability",
+      "source_location"
+    ]
+  }
+}

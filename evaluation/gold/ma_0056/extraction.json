@@ -1,0 +1,515 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0056",
+  "gold_id": "ma_0056_full_extraction_gold_v2",
+  "task_type": "extraction",
+  "provenance": {
+    "target_review_document_id": "review_ma_0056",
+    "target_supplement_document_id": null,
+    "annotation_status": "adjudicated",
+    "numeric_source_policy": "Every number below is anchored in a supplied primary report. The target review supplied neither an input nor a numeric value."
+  },
+  "applies_to_task_ids": [
+    "ma_0056_full_extraction_all_reports_v2",
+    "ma_0056_full_end_to_end_mortality_v2"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0056_01",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Planned 10-day remdesivir plus standard care versus placebo",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19 and lower respiratory tract infection",
+      "timepoint": "All-cause mortality through day 29",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_01",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Planned 10-day remdesivir plus standard care versus placebo",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Death through day 29 in the intention-to-treat population.",
+            "analysis_population": "541 randomized to remdesivir and 521 randomized to placebo",
+            "planned_remdesivir_duration_days": 10,
+            "intervention_arm": {
+              "label": "Remdesivir",
+              "events": 59,
+              "total": 541
+            },
+            "comparator_arm": {
+              "label": "Placebo",
+              "events": 77,
+              "total": 521
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_01",
+            "page": 9,
+            "source_type": "table",
+            "source_id": "Table 2, mortality over entire study period",
+            "locator_note": "The table reports 59 deaths by day 29 in 541 remdesivir participants and 77 in 521 placebo participants.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_02",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Planned 10-day remdesivir plus standard care versus placebo",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19 in Hubei, China",
+      "timepoint": "All-cause mortality at day 28",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_02",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Planned 10-day remdesivir plus standard care versus placebo",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause mortality at day 28 in the intention-to-treat population.",
+            "analysis_population": "158 randomized to remdesivir and 78 randomized to placebo",
+            "planned_remdesivir_duration_days": 10,
+            "intervention_arm": {
+              "label": "Remdesivir",
+              "events": 22,
+              "total": 158
+            },
+            "comparator_arm": {
+              "label": "Placebo",
+              "events": 10,
+              "total": 78
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_02",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 3, Day 28 mortality",
+            "locator_note": "The table reports day-28 mortality of 22/158 with remdesivir and 10/78 with placebo.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_03",
+      "article_id": "a_0056_03",
+      "study_id": "s_0056_03",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Five-day and 10-day remdesivir regimens versus standard care",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with moderate COVID-19 pneumonia",
+      "timepoint": "All-cause mortality through day 28",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_03_10_day",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Planned 10-day remdesivir plus standard care versus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause death through day 28.",
+            "analysis_population": "Primary analysis population",
+            "planned_remdesivir_duration_days": 10,
+            "intervention_arm": {
+              "label": "10-day remdesivir",
+              "events": 3,
+              "total": 193
+            },
+            "comparator_arm": {
+              "label": "Standard care",
+              "events": 4,
+              "total": 200
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_03",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2, clinical outcomes",
+            "locator_note": "Table 2 reports 3/193 deaths in the 10-day group and 4/200 with standard care.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0056_03_5_day",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Planned 5-day remdesivir plus standard care versus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause death through day 28.",
+            "analysis_population": "Primary analysis population",
+            "planned_remdesivir_duration_days": 5,
+            "intervention_arm": {
+              "label": "5-day remdesivir",
+              "events": 2,
+              "total": 191
+            },
+            "comparator_arm": {
+              "label": "Standard care",
+              "events": 4,
+              "total": 200
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_03",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2, clinical outcomes",
+            "locator_note": "Table 2 reports 2/191 deaths in the 5-day group and 4/200 with standard care.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_04",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Planned 10-day remdesivir plus standard care versus concurrent standard care",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "In-hospital all-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19 in the WHO Solidarity trial",
+      "timepoint": "In-hospital mortality during source trial follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_04",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Planned 10-day remdesivir plus standard care versus concurrent standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Any in-hospital death in the randomized remdesivir comparison.",
+            "analysis_population": "2743 remdesivir and 2708 concurrent controls",
+            "planned_remdesivir_duration_days": 10,
+            "overlap_group": "who_solidarity_parent",
+            "intervention_arm": {
+              "label": "Remdesivir",
+              "events": 301,
+              "total": 2743
+            },
+            "comparator_arm": {
+              "label": "Concurrent standard care",
+              "events": 303,
+              "total": 2708
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_04",
+            "page": 1,
+            "source_type": "paragraph",
+            "source_id": "Abstract, mortality results",
+            "locator_note": "The abstract reports death in 301/2743 remdesivir participants and 303/2708 concurrent controls.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_05",
+      "article_id": "a_0056_05",
+      "study_id": "s_0056_05",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19 in the DisCoVeRy trial",
+      "timepoint": "Death within 28 days",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_05",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Remdesivir plus standard care versus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Death within 28 days in the intention-to-treat population.",
+            "analysis_population": "414 remdesivir and 418 control participants",
+            "planned_remdesivir_duration_days": 10,
+            "overlap_group": "who_solidarity_parent",
+            "overlap_note": "This is a WHO Solidarity subtrial record and therefore overlaps the supplied WHO Solidarity parent comparison.",
+            "intervention_arm": {
+              "label": "Remdesivir",
+              "events": 34,
+              "total": 414
+            },
+            "comparator_arm": {
+              "label": "Standard care",
+              "events": 38,
+              "total": 418
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_05",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 2, death within 28 days",
+            "locator_note": "The all-patient row reports 34/414 deaths with remdesivir and 38/418 with standard care.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_06",
+      "article_id": "a_0056_06",
+      "study_id": "s_0056_06",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Five-day remdesivir versus 10-day remdesivir",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with severe COVID-19",
+      "timepoint": "Day-14 clinical status",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "quantitative_not_pooled",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_06",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_duration_comparison",
+          "comparison": "Five-day remdesivir versus 10-day remdesivir",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "quantitative_not_pooled",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Death on the day-14 seven-point ordinal scale.",
+            "analysis_population": "200 in the 5-day group and 197 in the 10-day group",
+            "intervention_arm": {
+              "label": "5-day remdesivir",
+              "events": 16,
+              "total": 200
+            },
+            "comparator_arm": {
+              "label": "10-day remdesivir",
+              "events": 21,
+              "total": 197
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_06",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2, clinical outcomes",
+            "locator_note": "Both arms received remdesivir, so the exact source counts are retained but the comparison cannot meet the primary no-remdesivir comparator rule.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_07",
+      "article_id": "a_0056_07",
+      "study_id": "s_0056_07",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Remdesivir versus standard care",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with moderate to severe COVID-19 in a single-centre trial",
+      "timepoint": "Clinical status assessed from days 12 to 24",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "quantitative_not_pooled",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_07",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Remdesivir versus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "quantitative_not_pooled",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Death in the final clinical-status table.",
+            "analysis_population": "Post-randomization final analysis groups of 34 remdesivir and 36 standard care participants after discontinuations, withdrawals, and a control-to-remdesivir switch.",
+            "planned_remdesivir_duration_days": 5,
+            "intervention_arm": {
+              "label": "Remdesivir final analysis group",
+              "events": 5,
+              "total": 34
+            },
+            "comparator_arm": {
+              "label": "Standard care final analysis group",
+              "events": 3,
+              "total": 36
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_07",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 4, clinical outcomes",
+            "locator_note": "The source reports 5/34 and 3/36, but these are altered post-randomization analysis groups rather than the 41/41 randomized arms.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_08",
+      "article_id": "a_0056_08",
+      "study_id": "s_0056_08",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Planned 10-day remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized Egyptian adults with mild to moderate COVID-19",
+      "timepoint": "Mortality during source hospital follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_08",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Planned 10-day remdesivir plus standard care versus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Fate reported as died in the clinical outcomes table.",
+            "analysis_population": "100 remdesivir and 100 control participants",
+            "planned_remdesivir_duration_days": 10,
+            "intervention_arm": {
+              "label": "Remdesivir",
+              "events": 9,
+              "total": 100
+            },
+            "comparator_arm": {
+              "label": "Control",
+              "events": 7,
+              "total": 100
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_08",
+            "page": 2,
+            "source_type": "table",
+            "source_id": "Table 2, clinical outcomes",
+            "locator_note": "The fate rows report 9/100 deaths with remdesivir and 7/100 in controls.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0056_09",
+      "article_id": "a_0056_09",
+      "study_id": "s_0056_09",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "exposure_measure": "Remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19 in NOR-Solidarity",
+      "timepoint": "Mortality during hospitalization",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0056_09",
+          "estimand": "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "comparison": "Remdesivir plus standard care versus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause mortality during hospitalization.",
+            "analysis_population": "42 remdesivir and 57 concurrent standard-care participants",
+            "planned_remdesivir_duration_days": 10,
+            "overlap_group": "who_solidarity_parent",
+            "overlap_note": "NOR-Solidarity is an add-on study to WHO Solidarity; this record cannot be combined with the parent comparison.",
+            "derivation": "The source table reports 7.1% and 7.0% with arm totals 42 and 57, respectively; the unambiguous integer counts are 3 and 4.",
+            "intervention_arm": {
+              "label": "Remdesivir plus standard care",
+              "events": 3,
+              "total": 42
+            },
+            "comparator_arm": {
+              "label": "Standard care",
+              "events": 4,
+              "total": 57
+            }
+          },
+          "source_location": {
+            "document_id": "a_0056_09",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2, mortality during hospitalization",
+            "locator_note": "The table reports 7.1% in 42 remdesivir participants and 7.0% in 57 controls; the integer counts are derived directly from these source values.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ]
+}

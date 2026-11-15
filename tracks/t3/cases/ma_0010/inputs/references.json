@@ -1,0 +1,40 @@
+{
+  "case_id": "ma_0010",
+  "articles": [
+    {
+      "article_id": "a_0010_01_gomes",
+      "doi": "10.1007/s00005-017-0473-7",
+      "title": "Interleukin (IL)-23 Receptor, IL-17A and IL-17F Gene Polymorphisms in Brazilian Patients with Rheumatoid Arthritis"
+    },
+    {
+      "article_id": "a_0010_02_marwa",
+      "doi": "10.1016/j.imlet.2017.01.013",
+      "title": "Association of IL17A and IL17F genes with rheumatoid arthritis disease and the impact of genetic polymorphisms on response to treatment"
+    },
+    {
+      "article_id": "a_0010_03_louahchi",
+      "doi": null,
+      "title": "Association study of single nucleotide polymorphisms of IL23R and IL17 in rheumatoid arthritis in the Algerian population"
+    },
+    {
+      "article_id": "a_0010_04_pawlik",
+      "doi": "10.1186/s12891-016-1064-1",
+      "title": "IL17A and IL17F gene polymorphisms in patients with rheumatoid arthritis"
+    },
+    {
+      "article_id": "a_0010_05_carvalho",
+      "doi": "10.1007/s00784-015-1540-2",
+      "title": "IL-17A and IL-17F polymorphisms in rheumatoid arthritis and Sjögren’s syndrome"
+    },
+    {
+      "article_id": "a_0010_06_bogunia_kubik",
+      "doi": "10.1007/s00005-014-0319-5",
+      "title": "IL-17A, IL-17F and IL-23R Gene Polymorphisms in Polish Patients with Rheumatoid Arthritis"
+    },
+    {
+      "article_id": "a_0010_07_paradowska_gorycka",
+      "doi": "10.1111/j.1365-3083.2010.02411.x",
+      "title": "Association between IL‐17F Gene Polymorphisms and Susceptibility to and Severity of Rheumatoid Arthritis (RA)"
+    }
+  ]
+}

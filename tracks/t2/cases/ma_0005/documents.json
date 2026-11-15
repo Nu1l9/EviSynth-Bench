@@ -1,0 +1,46 @@
+{
+  "case_id": "ma_0005",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0005_01",
+      "document_id": "a_0005_01",
+      "doi": "10.1016/j.ajog.2010.02.019",
+      "title": "17-alpha-hydroxyprogesterone caproate for the prevention of preterm birth in women with prior preterm birth and a short cervical length",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0005/a_0005_01.pdf"
+      },
+      "article_id": "a_0005_01"
+    },
+    {
+      "study_id": "s_0005_02",
+      "document_id": "a_0005_02",
+      "doi": "10.1055/s-0031-1272967",
+      "title": "The Effect of 17α-Hydroxyprogesterone Caproate on Preterm Birth in Women with an Ultrasound-Indicated Cerclage",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0005/a_0005_02.pdf"
+      },
+      "article_id": "a_0005_02"
+    },
+    {
+      "study_id": "s_0005_03",
+      "document_id": "a_0005_03",
+      "doi": "10.1080/14767058.2017.1280019",
+      "title": "Does adjunctive use of progesterone in women with cerclage improve prevention of preterm birth?",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0005/a_0005_03.pdf"
+      },
+      "article_id": "a_0005_03"
+    },
+    {
+      "study_id": "s_0005_04",
+      "document_id": "a_0005_04",
+      "doi": "10.1097/aog.0000000000001681",
+      "title": "Outcomes With Cerclage Alone Compared With Cerclage Plus 17α-Hydroxyprogesterone Caproate",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0005/a_0005_04.pdf"
+      },
+      "article_id": "a_0005_04"
+    }
+  ]
+}

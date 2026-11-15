@@ -1,0 +1,160 @@
+{
+  "case_id": "ma_0010",
+  "positive_count": 7,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0010_01_gomes",
+      "title": "Interleukin (IL)-23 Receptor, IL-17A and IL-17F Gene Polymorphisms in Brazilian Patients with Rheumatoid Arthritis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_003.pdf",
+      "source_filename": "a_0010_01_gomes.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1007/s00005-017-0473-7"
+    },
+    {
+      "candidate_id": "a_0010_02_marwa",
+      "title": "Association of IL17A and IL17F genes with rheumatoid arthritis disease and the impact of genetic polymorphisms on response to treatment",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_012.pdf",
+      "source_filename": "a_0010_02_marwa.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1016/j.imlet.2017.01.013"
+    },
+    {
+      "candidate_id": "a_0010_03_louahchi",
+      "title": "Association study of single nucleotide polymorphisms of IL23R and IL17 in rheumatoid arthritis in the Algerian population",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_002.pdf",
+      "source_filename": "a_0010_03_louahchi.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": null
+    },
+    {
+      "candidate_id": "a_0010_04_pawlik",
+      "title": "IL17A and IL17F gene polymorphisms in patients with rheumatoid arthritis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_007.pdf",
+      "source_filename": "a_0010_04_pawlik.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1186/s12891-016-1064-1"
+    },
+    {
+      "candidate_id": "a_0010_05_carvalho",
+      "title": "IL-17A and IL-17F polymorphisms in rheumatoid arthritis and Sjögren’s syndrome",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_011.pdf",
+      "source_filename": "a_0010_05_carvalho.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1007/s00784-015-1540-2"
+    },
+    {
+      "candidate_id": "a_0010_06_bogunia_kubik",
+      "title": "IL-17A, IL-17F and IL-23R Gene Polymorphisms in Polish Patients with Rheumatoid Arthritis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_005.pdf",
+      "source_filename": "a_0010_06_bogunia_kubik.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1007/s00005-014-0319-5"
+    },
+    {
+      "candidate_id": "a_0010_07_paradowska_gorycka",
+      "title": "Association between IL‐17F Gene Polymorphisms and Susceptibility to and Severity of Rheumatoid Arthritis (RA)",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0010/candidate_017.pdf",
+      "source_filename": "a_0010_07_paradowska_gorycka.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1111/j.1365-3083.2010.02411.x"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "IL-17 and IL-17-producing cells in protection versus pathology",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_013.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1038/s41577-022-00746-9"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "A Comprehensive Review and Update on the Pathogenesis of Inflammatory Bowel Disease",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_001.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1155/2019/7247238"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "The cytokine network involved in the host immune response to periodontitis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_009.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1038/s41368-019-0064-z"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "T cell self-reactivity forms a cytokine milieu for spontaneous development of IL-17+ Th cells that cause autoimmune arthritis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_008.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1084/jem.20062259"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "The IL-17 Family of Cytokines in Psoriasis: IL-17A and Beyond",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_016.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.3389/fimmu.2018.01682"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "The IL-17 family in diseases: from bench to bedside",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_010.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1038/s41392-023-01620-3"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Role of the IL-23/IL-17 Pathway in Rheumatic Diseases: An Overview",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_006.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.3389/fimmu.2021.637829"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Cells of the synovium in rheumatoid arthritis. T lymphocytes",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_015.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1186/ar2107"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Association Analysis of IL-17A and IL-17F Polymorphisms in Chinese Han Women with Breast Cancer",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_014.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1371/journal.pone.0034400"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Cytokines in Systemic Lupus Erythematosus—Focus on TNF-α and IL-17",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0010/candidate_004.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.3390/ijms241914413"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0024",
+  "gold_id": "ma_0024_analysis_gold_v1",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0024",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_dr_detection_sensitivity",
+      "selected_candidate_ids": [
+        "ce_0024_01",
+        "ce_0024_02"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0024_01",
+        "ee_0024_02"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0024_primary_sensitivity",
+          "outcome_group": "Sensitivity of computer-aided diabetic retinopathy detection",
+          "effect": {
+            "effect_type": "proportion",
+            "value": 0.8750433411421683,
+            "ci_lower": 0.7965290905247696,
+            "ci_upper": 0.9260728210606163,
+            "direction": "higher_is_better"
+          },
+          "member_candidate_ids": [
+            "ce_0024_01",
+            "ce_0024_02"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0024_01",
+            "ee_0024_02"
+          ],
+          "heterogeneity_i2": 0.0,
+          "calculator_run": {
+            "calculator_id": "diagnostic_accuracy_from_2x2_v1",
+            "pooling": "dersimonian_laird_random_effects_logit",
+            "tau_squared": 0.0,
+            "q": 0.29370534100389284
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "primary_dr_detection_specificity",
+      "selected_candidate_ids": [
+        "ce_0024_01",
+        "ce_0024_02"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0024_01",
+        "ee_0024_02"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0024_primary_specificity",
+          "outcome_group": "Specificity of computer-aided diabetic retinopathy detection",
+          "effect": {
+            "effect_type": "proportion",
+            "value": 0.9015212801824425,
+            "ci_lower": 0.5688994640356165,
+            "ci_upper": 0.9844974064191657,
+            "direction": "higher_is_better"
+          },
+          "member_candidate_ids": [
+            "ce_0024_01",
+            "ce_0024_02"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0024_01",
+            "ee_0024_02"
+          ],
+          "heterogeneity_i2": 45.51355900369642,
+          "calculator_run": {
+            "calculator_id": "diagnostic_accuracy_from_2x2_v1",
+            "pooling": "dersimonian_laird_random_effects_logit",
+            "tau_squared": 1.0257900815788472,
+            "q": 1.8353189926055935
+          }
+        }
+      ]
+    }
+  ]
+}

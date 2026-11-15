@@ -1,0 +1,333 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0054",
+  "gold_id": "ma_0054_extraction_gold_v1",
+  "task_type": "extraction",
+  "applies_to_task_ids": [
+    "ma_0054_extraction_all_reports_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0054_28",
+      "article_id": "a_0054_28",
+      "study_id": "s_0054_chachar",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The primary report does not provide arm-level all-cause mortality counts. A mortality percentage in discussion text concerns an external study and is not trial data."
+    },
+    {
+      "report_unit_id": "ru_0054_29",
+      "article_id": "a_0054_29",
+      "study_id": "s_0054_krolewiecki",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The available primary report does not provide an arm-level all-cause mortality outcome suitable for extraction."
+    },
+    {
+      "report_unit_id": "ru_0054_30",
+      "article_id": "a_0054_30",
+      "study_id": "s_0054_niaee",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "Source-reported trial follow-up",
+      "data_family": "binary_arm_event_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0054_30",
+          "estimand": "ivermectin_vs_eligible_non_ivermectin_control_all_cause_mortality",
+          "comparison": "Preserved source randomized arms; role-valid contrasts are delegated to calculator and analysis",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_arm_event_counts",
+            "outcome_definition": "All-cause mortality",
+            "arms": [
+              {
+                "label": "standard_care",
+                "role": "standard_care_control",
+                "events": 5,
+                "n": 30
+              },
+              {
+                "label": "placebo_plus_standard_care",
+                "role": "placebo_control",
+                "events": 6,
+                "n": 30
+              },
+              {
+                "label": "ivermectin_200_single_dose",
+                "role": "ivermectin_intervention",
+                "events": 0,
+                "n": 30
+              },
+              {
+                "label": "ivermectin_200_three_doses",
+                "role": "ivermectin_intervention",
+                "events": 3,
+                "n": 30
+              },
+              {
+                "label": "ivermectin_400_single_dose",
+                "role": "ivermectin_intervention",
+                "events": 0,
+                "n": 30
+              },
+              {
+                "label": "ivermectin_400_three_doses",
+                "role": "ivermectin_intervention",
+                "events": 1,
+                "n": 30
+              }
+            ]
+          },
+          "source_location": {
+            "document_id": "a_0054_30",
+            "page": 5,
+            "source_type": "table_or_results",
+            "source_id": "Table 3 and Results mortality row",
+            "locator_note": "Explicit arm-level mortality count and its source outcome denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0054_31",
+      "article_id": "a_0054_31",
+      "study_id": "s_0054_podder",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The available primary report does not provide an arm-level all-cause mortality outcome suitable for extraction."
+    },
+    {
+      "report_unit_id": "ru_0054_32",
+      "article_id": "a_0054_32",
+      "study_id": "s_0054_ahmed",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The available primary report names mortality in methods but does not provide arm-level mortality counts."
+    },
+    {
+      "report_unit_id": "ru_0054_33",
+      "article_id": "a_0054_33",
+      "study_id": "s_0054_beltran",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "In-hospital all-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "In-hospital follow-up",
+      "data_family": "binary_arm_event_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0054_33",
+          "estimand": "ivermectin_vs_eligible_non_ivermectin_control_all_cause_mortality",
+          "comparison": "Preserved source randomized arms; role-valid contrasts are delegated to calculator and analysis",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_arm_event_counts",
+            "outcome_definition": "In-hospital all-cause mortality",
+            "arms": [
+              {
+                "label": "hydroxychloroquine",
+                "role": "active_non_ivermectin_comparator",
+                "events": 2,
+                "n": 33
+              },
+              {
+                "label": "ivermectin",
+                "role": "ivermectin_intervention",
+                "events": 5,
+                "n": 36
+              },
+              {
+                "label": "placebo",
+                "role": "placebo_control",
+                "events": 6,
+                "n": 37
+              }
+            ]
+          },
+          "source_location": {
+            "document_id": "a_0054_33",
+            "page": 20,
+            "source_type": "table_or_results",
+            "source_id": "Table 6, Outcomes",
+            "locator_note": "Explicit arm-level mortality count and its source outcome denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0054_34",
+      "article_id": "a_0054_34",
+      "study_id": "s_0054_chaccour",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The report states no progression to severe disease and completed follow-up, but does not explicitly provide arm-level death counts. Do not infer deaths from that adjacent outcome."
+    },
+    {
+      "report_unit_id": "ru_0054_35",
+      "article_id": "a_0054_35",
+      "study_id": "s_0054_bukhari",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The available primary report does not provide an arm-level all-cause mortality outcome suitable for extraction."
+    },
+    {
+      "report_unit_id": "ru_0054_36",
+      "article_id": "a_0054_36",
+      "study_id": "s_0054_lopez_medina",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "21-day primary analysis follow-up",
+      "data_family": "binary_arm_event_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0054_36",
+          "estimand": "ivermectin_vs_eligible_non_ivermectin_control_all_cause_mortality",
+          "comparison": "Preserved source randomized arms; role-valid contrasts are delegated to calculator and analysis",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_arm_event_counts",
+            "outcome_definition": "All-cause mortality",
+            "arms": [
+              {
+                "label": "ivermectin",
+                "role": "ivermectin_intervention",
+                "events": 0,
+                "n": 200
+              },
+              {
+                "label": "placebo",
+                "role": "placebo_control",
+                "events": 1,
+                "n": 198
+              }
+            ]
+          },
+          "source_location": {
+            "document_id": "a_0054_36",
+            "page": 7,
+            "source_type": "table_or_results",
+            "source_id": "Table 2, Outcomes in the Primary Analysis Population",
+            "locator_note": "Explicit arm-level mortality count and its source outcome denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0054_37",
+      "article_id": "a_0054_37",
+      "study_id": "s_0054_ravikirti",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "In-hospital mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-reported mortality analysis population",
+      "timepoint": "Hospital discharge",
+      "data_family": "binary_arm_event_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0054_37",
+          "estimand": "ivermectin_vs_eligible_non_ivermectin_control_all_cause_mortality",
+          "comparison": "Preserved source randomized arms; role-valid contrasts are delegated to calculator and analysis",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_arm_event_counts",
+            "outcome_definition": "In-hospital mortality",
+            "arms": [
+              {
+                "label": "ivermectin",
+                "role": "ivermectin_intervention",
+                "events": 0,
+                "n": 55
+              },
+              {
+                "label": "placebo",
+                "role": "placebo_control",
+                "events": 4,
+                "n": 57
+              }
+            ]
+          },
+          "source_location": {
+            "document_id": "a_0054_37",
+            "page": 10,
+            "source_type": "table_or_results",
+            "source_id": "Table 3, Final outcome",
+            "locator_note": "Explicit arm-level mortality count and its source outcome denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ]
+}

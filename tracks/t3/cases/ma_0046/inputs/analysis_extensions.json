@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../schemas/analysis-extensions.schema.json",
+  "case_id": "ma_0046",
+  "extension_profile_id": "ma_0046_review_derived_extensions_v1",
+  "source_basis": "Target review statistical methods and Results: review_ma_0046/full.md.",
+  "blindness_policy": "Participant inputs define analysis questions and eligibility rules; reference selections and pooled values are distributed separately.",
+  "candidate_subgroup_policy": "Candidate subgroup questions simulate prospective user requests. The agent must use only protocol and extracted source fields to decide whether a question is feasible, insufficiently supported, or should be blocked; it must not manufacture a result.",
+  "scoring_status": "declared_numeric_result_coverage",
+  "subgroup_analyses": [],
+  "candidate_subgroup_analyses": [
+    {
+      "analysis_id": "candidate_subgroup_mortality_follow_up_horizon",
+      "label": "Long-term all-cause mortality by follow-up horizon",
+      "parent_analysis_ids": [
+        "main_pr_long_term_all_cause_death"
+      ],
+      "grouping_variable": "follow_up_horizon",
+      "levels": [
+        {
+          "level_id": "up_to_1_year",
+          "label": "Up to 1 year",
+          "source_definition": "Source-reported mortality follow-up of 1 year or less."
+        },
+        {
+          "level_id": "beyond_1_year",
+          "label": "Beyond 1 year",
+          "source_definition": "Source-reported mortality follow-up longer than 1 year."
+        }
+      ],
+      "required_extraction_fields": [
+        "follow_up",
+        "follow_up_horizon",
+        "study_id"
+      ],
+      "minimum_independent_studies": 2,
+      "source_basis": "Exploratory clinical time-horizon question prespecified from the long-term mortality outcome; not reported as a target-review subgroup result."
+    }
+  ],
+  "meta_regression_analyses": [],
+  "notes": [
+    "The target review reports leave-one-out sensitivity analysis, not a review-level subgroup or meta-regression analysis."
+  ]
+}

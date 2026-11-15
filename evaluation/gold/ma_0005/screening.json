@@ -1,0 +1,133 @@
+{
+  "case_id": "ma_0005",
+  "positive_count": 4,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0005_01",
+      "title": "17-alpha-hydroxyprogesterone caproate for the prevention of preterm birth in women with prior preterm birth and a short cervical length",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0005/candidate_008.pdf",
+      "source_filename": "a_0005_01.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1016/j.ajog.2010.02.019"
+    },
+    {
+      "candidate_id": "a_0005_02",
+      "title": "The Effect of 17α-Hydroxyprogesterone Caproate on Preterm Birth in Women with an Ultrasound-Indicated Cerclage",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0005/candidate_011.pdf",
+      "source_filename": "a_0005_02.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1055/s-0031-1272967"
+    },
+    {
+      "candidate_id": "a_0005_03",
+      "title": "Does adjunctive use of progesterone in women with cerclage improve prevention of preterm birth?",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0005/candidate_006.pdf",
+      "source_filename": "a_0005_03.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1080/14767058.2017.1280019"
+    },
+    {
+      "candidate_id": "a_0005_04",
+      "title": "Outcomes With Cerclage Alone Compared With Cerclage Plus 17α-Hydroxyprogesterone Caproate",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0005/candidate_012.pdf",
+      "source_filename": "a_0005_04.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1097/aog.0000000000001681"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Cervicovaginal microbiota and local immune response modulate the risk of spontaneous preterm delivery",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_002.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1038/s41467-019-09285-9"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Low dose aspirin in the prevention of recurrent spontaneous preterm labour – the APRIL study: a multicenter randomized placebo controlled trial",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_014.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1186/s12884-017-1338-0"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Vaginal progesterone decreases preterm birth and neonatal morbidity and mortality in women with a twin gestation and a short cervix: an updated meta‐analysis of individual patient data",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_005.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1002/uog.17397"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Cervical pessaries for prevention of spontaneous preterm birth: past, present and future",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_009.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1002/uog.12540"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Vaginal progesterone on the prevention of preterm birth and neonatal complications in high risk women: A randomized placebo-controlled double-blind study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_003.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.29252/ijrm.14.5.309"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Vaginal progesterone pessaries for pregnant women with a previous preterm birth to prevent neonatal respiratory distress syndrome (the PROGRESS Study): A multicentre, randomised, placebo-controlled trial",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_007.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1371/journal.pmed.1002390"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Weekly 17 alpha-hydroxyprogesterone caproate to prevent preterm birth among women living with HIV: a randomised, double-blind, placebo-controlled trial",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_013.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1016/s2352-3018(21)00150-8"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Progesterone, cerclage, pessary, or acetylsalicylic acid for prevention of preterm birth in singleton and multifetal pregnancies – A systematic review and meta-analyses",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_004.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.3389/fmed.2023.1111315"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Adjunctive Therapies to Cerclage for the Prevention of Preterm Birth: A Systematic Review",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_001.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1155/2013/528158"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Effectiveness and perinatal outcomes of history-indicated, ultrasound-indicated and physical examination-indicated cerclage: a retrospective study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0005/candidate_010.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1186/s12884-022-04557-7"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "case_id": "ma_0046",
+  "analysis_profile_id": "ma_0046_main_analysis_profile_v1",
+  "analyses": [
+    {
+      "analysis_id": "main_pr_long_term_all_cause_death",
+      "pooled_result_id": "pr_long_term_all_cause_death",
+      "outcome_group": "Long-term all-cause death",
+      "target_id": "long_term_all_cause_death",
+      "eligible_outcome_codes": [
+        "long_term_all_cause_death"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "new_ppm_vs_no_new_ppm_all_cause_death_risk"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Select no more than one eligible estimate from each independent study for an analysis.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively non-poolable candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

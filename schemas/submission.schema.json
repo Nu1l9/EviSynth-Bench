@@ -1,0 +1,576 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/submission.schema.json",
+  "title": "Meta-analysis bench submission",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_id",
+    "task_type",
+    "predictions"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "type": "string",
+      "enum": [
+        "screening",
+        "extraction",
+        "analysis",
+        "end_to_end"
+      ]
+    },
+    "predictions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/$defs/screening_prediction"
+          },
+          {
+            "$ref": "#/$defs/extraction_prediction"
+          },
+          {
+            "$ref": "#/$defs/analysis_prediction"
+          },
+          {
+            "$ref": "#/$defs/end_to_end_prediction"
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "screening_prediction": {
+      "type": "object",
+      "required": [
+        "article_id",
+        "decision"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "article_id": {
+          "type": "string",
+          "pattern": "^a_[0-9]{4,}$"
+        },
+        "study_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^s_[0-9]{4,}$"
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "include",
+            "exclude",
+            "unsure"
+          ]
+        },
+        "exclusion_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "extraction_prediction": {
+      "type": "object",
+      "required": [
+        "article_id",
+        "outcome",
+        "source_location"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "report_unit_id",
+            "effect_estimate_id",
+            "used_effect"
+          ]
+        },
+        {
+          "required": [
+            "prediction_id",
+            "target_id",
+            "data_family",
+            "raw_data",
+            "quantitative_usability"
+          ]
+        }
+      ],
+      "properties": {
+        "prediction_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "report_unit_id": {
+          "type": "string",
+          "pattern": "^ru_[0-9]{4,}$"
+        },
+        "effect_estimate_id": {
+          "type": "string",
+          "pattern": "^ee_[0-9]{4,}_[a-z0-9_]+$"
+        },
+        "article_id": {
+          "type": "string",
+          "pattern": "^a_[0-9]{4,}$"
+        },
+        "study_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^s_[0-9]{4,}$"
+        },
+        "outcome": {
+          "type": "string"
+        },
+        "target_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "data_family": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "estimand": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "population_or_subgroup": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "timepoint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "used_effect": {
+          "$ref": "#/$defs/used_effect"
+        },
+        "raw_data": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "source_data": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "derivation_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "quantitative_usability": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "poolable",
+            "quantitative_not_pooled",
+            "source_only"
+          ]
+        },
+        "source_location": {
+          "$ref": "#/$defs/source_location"
+        }
+      }
+    },
+    "end_to_end_prediction": {
+      "type": "object",
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "included_article_ids"
+          ]
+        },
+        {
+          "required": [
+            "evidence_records",
+            "analysis_results"
+          ]
+        }
+      ],
+      "properties": {
+        "included_article_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^a_[0-9]{4,}$"
+          }
+        },
+        "extractions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/extraction_prediction"
+          }
+        },
+        "pooled_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pooled_result_prediction"
+          }
+        },
+        "evidence_records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/extraction_prediction"
+          }
+        },
+        "analysis_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/end_to_end_analysis_result"
+          }
+        }
+      }
+    },
+    "end_to_end_analysis_result": {
+      "type": "object",
+      "required": [
+        "analysis_id",
+        "selected_evidence_ids",
+        "pooled_results"
+      ],
+      "properties": {
+        "analysis_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selected_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "pooled_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/end_to_end_pooled_result_prediction"
+          }
+        }
+      }
+    },
+    "end_to_end_pooled_result_prediction": {
+      "type": "object",
+      "required": [
+        "pooled_result_id",
+        "outcome_group",
+        "effect",
+        "member_evidence_ids"
+      ],
+      "properties": {
+        "pooled_result_id": {
+          "type": "string"
+        },
+        "outcome_group": {
+          "type": "string"
+        },
+        "effect": {
+          "$ref": "#/$defs/used_effect"
+        },
+        "member_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "heterogeneity_i2": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "analysis_prediction": {
+      "type": "object",
+      "required": [
+        "analysis_id",
+        "selected_candidate_ids",
+        "pooled_results"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "analysis_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selected_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "excluded_candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "candidate_id",
+              "reason_code"
+            ],
+            "properties": {
+              "candidate_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason_code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "pooled_results": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/analysis_pooled_result_prediction"
+          }
+        }
+      }
+    },
+    "analysis_pooled_result_prediction": {
+      "type": "object",
+      "required": [
+        "pooled_result_id",
+        "outcome_group",
+        "effect",
+        "member_candidate_ids"
+      ],
+      "properties": {
+        "pooled_result_id": {
+          "type": "string"
+        },
+        "outcome_group": {
+          "type": "string"
+        },
+        "effect": {
+          "$ref": "#/$defs/used_effect"
+        },
+        "member_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "heterogeneity_i2": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "pooled_result_prediction": {
+      "type": "object",
+      "required": [
+        "pooled_result_id",
+        "outcome_group",
+        "effect",
+        "member_effect_estimate_ids"
+      ],
+      "properties": {
+        "pooled_result_id": {
+          "type": "string"
+        },
+        "outcome_group": {
+          "type": "string"
+        },
+        "effect": {
+          "$ref": "#/$defs/used_effect"
+        },
+        "member_effect_estimate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "used_effect": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "effect_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "OR",
+            "RR",
+            "HR",
+            "IRR",
+            "MD",
+            "SMD",
+            "RD",
+            "COR",
+            "BETA",
+            "OTHER"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ci_lower": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ci_upper": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "standard_error": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "direction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "source_location": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "document_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^a_[0-9]{4,}$"
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "source_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            null,
+            "table",
+            "figure",
+            "paragraph",
+            "supplement",
+            "appendix",
+            "other"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locator_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "content_list_item_index": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "content_list_segment_index": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "bbox": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    }
+  }
+}

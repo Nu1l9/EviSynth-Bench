@@ -1,0 +1,76 @@
+{
+  "case_id": "ma_0064",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0064_kim_low_risk",
+      "document_id": "a_0064_19",
+      "doi": "10.1016/j.ygyno.2013.09.027",
+      "title": "Sentinel lymph node mapping with pathologic ultrastaging: A valuable tool for assessing nodal metastasis in low-grade endometrial cancer with superficial myoinvasion",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_19.pdf"
+      },
+      "article_id": "a_0064_19"
+    },
+    {
+      "study_id": "s_0064_kim_ultrastaging",
+      "document_id": "a_0064_20",
+      "doi": "10.1097/igc.0b013e3182954da8",
+      "title": "Pathologic Ultrastaging Improves Micrometastasis Detection in Sentinel Lymph Nodes During Endometrial Cancer Staging",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_20.pdf"
+      },
+      "article_id": "a_0064_20"
+    },
+    {
+      "study_id": "s_0064_st_clair",
+      "document_id": "a_0064_22",
+      "doi": "10.1245/s10434-015-5040-z",
+      "title": "Low-Volume Lymph Node Metastasis Discovered During Sentinel Lymph Node Mapping for Endometrial Carcinoma",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_22.pdf"
+      },
+      "article_id": "a_0064_22"
+    },
+    {
+      "study_id": "s_0064_todo",
+      "document_id": "a_0064_23",
+      "doi": "10.3802/jgo.2016.27.e1",
+      "title": "Isolated tumor cells and micrometastases in regional lymph nodes in stage I to II endometrial cancer",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_23.pdf"
+      },
+      "article_id": "a_0064_23"
+    },
+    {
+      "study_id": "s_0064_plante",
+      "document_id": "a_0064_24",
+      "doi": "10.1016/j.ygyno.2017.05.024",
+      "title": "Isolated tumor cells identified by sentinel lymph node mapping in endometrial cancer: Does adjuvant treatment matter?",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_24.pdf"
+      },
+      "article_id": "a_0064_24"
+    },
+    {
+      "study_id": "s_0064_ignatov",
+      "document_id": "a_0064_26",
+      "doi": "10.1016/j.ygyno.2019.07.018",
+      "title": "Lymph node micrometastases and outcome of endometrial cancer",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_26.pdf"
+      },
+      "article_id": "a_0064_26"
+    },
+    {
+      "study_id": "s_0064_piedimonte",
+      "document_id": "a_0064_27",
+      "doi": "10.1002/jso.25259",
+      "title": "Clinical significance of isolated tumor cells and micrometastasis in low‐grade, stage I endometrial cancer",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0064/a_0064_27.pdf"
+      },
+      "article_id": "a_0064_27"
+    }
+  ]
+}

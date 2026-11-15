@@ -1,0 +1,357 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0034",
+  "topic": "Among women and adolescents receiving contraceptive services, does advance provision of emergency contraceptive pills increase subsequent emergency contraceptive pill use compared with standard or on-demand access?",
+  "protocol": {
+    "protocol_id": "ma_0034_emergency_contraception_use_protocol_v1",
+    "case_id": "ma_0034",
+    "pico": {
+      "population": "Women or adolescents at risk of pregnancy receiving contraceptive services",
+      "intervention_or_exposure": "Advance provision of emergency contraceptive pills",
+      "comparison": "Standard or on-demand emergency contraceptive pill access",
+      "outcome": "Any subsequent emergency contraceptive pill use"
+    },
+    "eligible_study_designs": [
+      "randomized controlled trial"
+    ],
+    "targets": [
+      {
+        "target_id": "emergency_contraception_use_after_advance_provision",
+        "outcome": "Any subsequent emergency contraceptive pill use",
+        "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+        "population_or_subgroup": "Women or adolescents at risk of pregnancy receiving contraceptive services",
+        "timepoint_policy": {
+          "rule": "Capture source-defined participant-level emergency contraceptive pill use at follow-up from 6 through 12 months; preserve the precise cohort and cumulative follow-up wording."
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "RR"
+        ],
+        "estimands": [
+          "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access"
+        ],
+        "effect_selection_rule": null,
+        "extraction_notes": []
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_ec_use_after_advance_provision",
+      "outcome_group": "Any emergency contraceptive pill use after advance provision",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "eligible_outcome_codes": [
+        "emergency_contraception_use_after_advance_provision"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access"
+      ],
+      "selection_rules": [
+        "Select one complete binary record per randomized trial when it compares advance emergency contraceptive pill provision with standard or on-demand access and reports participants with one or more emergency contraceptive pill uses.",
+        "Require source-defined 6- to 12-month follow-up, complete group denominators, and a calculator-generated RR.",
+        "Do not use target-review forest rows, review totals, article-specific labels, or target pooled effects.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Capture source-defined participant-level emergency contraceptive pill use at follow-up from 6 through 12 months; preserve the precise cohort and cumulative follow-up wording."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_risk_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Any emergency contraceptive pill use after advance provision"
+      ],
+      "exposure": {
+        "terms": [
+          "Advance provision of emergency contraceptive pills"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Advance provision of emergency contraceptive pills versus standard or on-demand access"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Women or adolescents at risk of pregnancy receiving contraceptive services"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Capture source-defined participant-level emergency contraceptive pill use at follow-up from 6 through 12 months; preserve the precise cohort and cumulative follow-up wording.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Improving Adolescent Sexual and Reproductive Health: A Systematic Review of Potential Interventions",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_001.pdf"
+      },
+      "doi": "10.1016/j.jadohealth.2016.05.022"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Impact of Increased Access to Emergency Contraceptive Pills",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_002.pdf"
+      },
+      "doi": "10.1097/01.aog.0000235708.91572.db"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Preconception care: closing the gap in the continuum of care to accelerate improvements in maternal, newborn and child health",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_003.pdf"
+      },
+      "doi": "10.1186/1742-4755-11-s3-s1"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "U.S. Medical Eligibility Criteria for Contraceptive Use, 2024",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_004.pdf"
+      },
+      "doi": "10.15585/mmwr.rr7304a1"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Direct Access to Emergency Contraception Through Pharmacies and Effect on Unintended Pregnancy and STIs: A Randomized Controlled Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_005.pdf"
+      },
+      "doi": "10.1001/jama.293.1.54"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Advance Supply of Emergency Contraception: A Randomized Trial in Adolescent Mothers",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_006.pdf"
+      },
+      "doi": "10.1016/j.jpag.2005.06.007"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Advance provision of emergency contraceptive pills reduces treatment delay: a randomised controlled trial among Swedish teenage girls",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_007.pdf"
+      },
+      "doi": "10.1080/00016340801936024"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Computer-assisted Provision of Emergency Contraception a Randomized Controlled Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_008.pdf"
+      },
+      "doi": "10.1007/s11606-008-0609-x"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "The effects of advance provision of emergency contraception on adolescent women's sexual and contraceptive behaviors",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_009.pdf"
+      },
+      "doi": "10.1016/j.jpag.2003.11.018"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "A systematic review of sexual and reproductive health interventions for young people in humanitarian and lower-and-middle-income country settings",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_010.pdf"
+      },
+      "doi": "10.1186/s12889-020-08818-y"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Effects of sixty six adolescent tobacco use cessation trials and seventeen prospective studies of self-initiated quitting",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_011.pdf"
+      },
+      "doi": "10.1186/1617-9625-1-1-35"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Advance supply of emergency contraception effect on use and usual contraception—a randomized trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_012.pdf"
+      },
+      "doi": "10.1016/s0029-7844(03)00478-2"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Twelve-month follow-up of advance provision of emergency contraception among teenage girls in Sweden—a randomized controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_013.pdf"
+      },
+      "doi": "10.3109/03009734.2013.841308"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "School Based Sex Education and HIV Prevention in Low- and Middle-Income Countries: A Systematic Review and Meta-Analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_014.pdf"
+      },
+      "doi": "10.1371/journal.pone.0089692"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Beyond access: Acceptability, use and nonuse of emergency contraception among young women",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_015.pdf"
+      },
+      "doi": "10.1016/j.ajog.2006.08.024"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Community Health Workers and Mobile Technology: A Systematic Review of the Literature",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_016.pdf"
+      },
+      "doi": "10.1371/journal.pone.0065772"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Integrating preexposure prophylaxis delivery in routine family planning clinics: A feasibility programmatic evaluation in Kenya",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_017.pdf"
+      },
+      "doi": "10.1371/journal.pmed.1002885"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "Effect of advanced provision of emergency contraception on women's contraceptive behaviour: a randomized controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_018.pdf"
+      },
+      "doi": "10.1093/humrep/deh425"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "An Empiric HIV Risk Scoring Tool to Predict HIV-1 Acquisition in African Women",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_019.pdf"
+      },
+      "doi": "10.1097/qai.0000000000000974"
+    },
+    {
+      "article_id": "candidate_020",
+      "document_id": "candidate_020",
+      "study_id": "study_020",
+      "role": "candidate_article",
+      "title": "The Effect of Increased Access to Emergency Contraception Among Young Adolescents",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_020.pdf"
+      },
+      "doi": "10.1097/01.aog.0000174000.37962.a1"
+    },
+    {
+      "article_id": "candidate_021",
+      "document_id": "candidate_021",
+      "study_id": "study_021",
+      "role": "candidate_article",
+      "title": "International consensus statement on the diagnosis and management of autosomal dominant polycystic kidney disease in children and young people",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0034/candidate_021.pdf"
+      },
+      "doi": "10.1038/s41581-019-0155-2"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

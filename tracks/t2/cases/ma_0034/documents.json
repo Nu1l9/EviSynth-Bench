@@ -1,0 +1,116 @@
+{
+  "case_id": "ma_0034",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0034_03",
+      "document_id": "a_0034_01",
+      "doi": "10.1093/humrep/deh425",
+      "title": "Effect of advanced provision of emergency contraception on women's contraceptive behaviour: a randomized controlled trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_01.pdf"
+      },
+      "article_id": "a_0034_01"
+    },
+    {
+      "study_id": "s_0034_04",
+      "document_id": "a_0034_02",
+      "doi": "10.1080/00016340801936024",
+      "title": "Advance provision of emergency contraceptive pills reduces treatment delay: a randomised controlled trial among Swedish teenage girls",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_02.pdf"
+      },
+      "article_id": "a_0034_02"
+    },
+    {
+      "study_id": "s_0034_06",
+      "document_id": "a_0034_03",
+      "doi": "10.1097/01.aog.0000235708.91572.db",
+      "title": "Impact of Increased Access to Emergency Contraceptive Pills",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_03.pdf"
+      },
+      "article_id": "a_0034_03"
+    },
+    {
+      "study_id": "s_0034_01",
+      "document_id": "a_0034_04",
+      "doi": "10.1016/j.jpag.2005.06.007",
+      "title": "Advance Supply of Emergency Contraception: A Randomized Trial in Adolescent Mothers",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_04.pdf"
+      },
+      "article_id": "a_0034_04"
+    },
+    {
+      "study_id": "s_0034_02",
+      "document_id": "a_0034_05",
+      "doi": "10.1016/j.jpag.2003.11.018",
+      "title": "The effects of advance provision of emergency contraception on adolescent women's sexual and contraceptive behaviors",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_05.pdf"
+      },
+      "article_id": "a_0034_05"
+    },
+    {
+      "study_id": "s_0034_04",
+      "document_id": "a_0034_06",
+      "doi": "10.3109/03009734.2013.841308",
+      "title": "Twelve-month follow-up of advance provision of emergency contraception among teenage girls in Sweden—a randomized controlled trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_06.pdf"
+      },
+      "article_id": "a_0034_06"
+    },
+    {
+      "study_id": "s_0034_05",
+      "document_id": "a_0034_07",
+      "doi": "10.1001/jama.293.1.54",
+      "title": "Direct Access to Emergency Contraception Through Pharmacies and Effect on Unintended Pregnancy and STIs: A Randomized Controlled Trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_07.pdf"
+      },
+      "article_id": "a_0034_07"
+    },
+    {
+      "study_id": "s_0034_05",
+      "document_id": "a_0034_08",
+      "doi": "10.1097/01.aog.0000174000.37962.a1",
+      "title": "The Effect of Increased Access to Emergency Contraception Among Young Adolescents",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_08.pdf"
+      },
+      "article_id": "a_0034_08"
+    },
+    {
+      "study_id": "s_0034_05",
+      "document_id": "a_0034_09",
+      "doi": "10.1016/j.ajog.2006.08.024",
+      "title": "Beyond access: Acceptability, use and nonuse of emergency contraception among young women",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_09.pdf"
+      },
+      "article_id": "a_0034_09"
+    },
+    {
+      "study_id": "s_0034_07",
+      "document_id": "a_0034_10",
+      "doi": "10.1016/s0029-7844(03)00478-2",
+      "title": "Advance supply of emergency contraception effect on use and usual contraception—a randomized trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_10.pdf"
+      },
+      "article_id": "a_0034_10"
+    },
+    {
+      "study_id": "s_0034_08",
+      "document_id": "a_0034_11",
+      "doi": "10.1007/s11606-008-0609-x",
+      "title": "Computer-assisted Provision of Emergency Contraception a Randomized Controlled Trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0034/a_0034_11.pdf"
+      },
+      "article_id": "a_0034_11"
+    }
+  ]
+}

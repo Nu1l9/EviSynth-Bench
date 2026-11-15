@@ -1,0 +1,927 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0011",
+  "candidate_set_id": "ma_0011_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness or a validated liver-fibrosis score",
+      "comparison": "Per 1-kPa increase in liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Cardiac death or heart-failure rehospitalization",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure assessed before discharge",
+      "timepoint": "median follow-up 203 days (IQR 67 to 429 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_adjusted_hazard_ratio",
+        "effect_value": 1.12,
+        "ci_lower": 1.08,
+        "ci_upper": 1.16,
+        "exposure_unit": "per 1-kPa increase in liver stiffness",
+        "adjustment_set": "age, sex, systemic organ functions: estimated glomerular filtration rate and total bilirubin (Model 5)"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.12,
+        "ci_lower": 1.08,
+        "ci_upper": 1.16,
+        "log_value": null,
+        "variance": null,
+        "direction": "increased_risk"
+      },
+      "source_location": {
+        "document_id": "a_011002",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 2"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_011001",
+      "study_id": "s_011001",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness or a validated liver-fibrosis score",
+      "comparison": "Per one-unit increase in NAFLD fibrosis score",
+      "outcome": {
+        "code": null,
+        "label": "Cardiovascular death or rehospitalization for worsening heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "516 hospitalized patients with chronic heart failure",
+      "timepoint": "median follow-up 464 days (IQR 108 to 962 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_adjusted_hazard_ratio",
+        "effect_value": 1.124,
+        "ci_lower": 1.012,
+        "ci_upper": 1.249,
+        "exposure_unit": "per one-unit increase in NAFLD fibrosis score",
+        "adjustment_set": "NYHA functional class, hemoglobin, estimated glomerular filtration rate, and log BNP"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.124,
+        "ci_lower": 1.012,
+        "ci_upper": 1.249,
+        "log_value": null,
+        "variance": null,
+        "direction": "increased_risk"
+      },
+      "source_location": {
+        "document_id": "a_011001",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 2"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness measured by transient elastography",
+      "comparison": "Not applicable; continuous ln(LS) association",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.56,
+        "ci_lower": 1.07,
+        "ci_upper": 2.26,
+        "exposure_unit": "per 1.0 increase in ln[LS]",
+        "adjustment_set": "Age, sex, and total bilirubin"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.56,
+        "ci_lower": 1.07,
+        "ci_upper": 2.26,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_011001",
+      "study_id": "s_011001",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Non-alcoholic fatty liver disease fibrosis score (NFS)",
+      "comparison": "Higher versus lower NFS represented as a continuous exposure association; source-defined unit not explicitly stated",
+      "outcome": {
+        "code": null,
+        "label": "Cardiovascular events: cardiovascular death due to progressive heart failure, myocardial infarction, stroke, or sudden cardiac death, and rehospitalization due to worsening heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "516 patients with chronic heart failure admitted to Yamagata University Hospital",
+      "timepoint": "Median follow-up 464 days",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.126,
+        "ci_lower": 1.014,
+        "ci_upper": 1.25,
+        "exposure_unit": null,
+        "adjustment_set": "NYHA functional class, hemoglobin, eGFR, and log BNP"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.126,
+        "ci_lower": 1.014,
+        "ci_upper": 1.25,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011001",
+        "source_type": "figure",
+        "source_id": "Fig. 3",
+        "content_list_item_index": 3
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness measured by transient elastography",
+      "comparison": "Not applicable; continuous ln(LS) association",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.55,
+        "ci_lower": 1.07,
+        "ci_upper": 2.23,
+        "exposure_unit": "per 1.0 increase in ln[LS]",
+        "adjustment_set": "Age, sex, and GGT"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.55,
+        "ci_lower": 1.07,
+        "ci_upper": 2.23,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness at discharge measured by transient elastography",
+      "comparison": "Per 1-kPa increase in liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Composite of cardiac death or rehospitalization for treatment of heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure; overall cohort",
+      "timepoint": "Liver stiffness measured before discharge; median follow-up 203 days",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.18,
+        "ci_lower": 1.06,
+        "ci_upper": 1.3,
+        "exposure_unit": "per 1-kPa increase",
+        "adjustment_set": "age, sex, and LV function variables (LV ejection fraction, left atrial diameter, and E/e0)"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.18,
+        "ci_lower": 1.06,
+        "ci_upper": 1.3,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011002",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness measured by transient elastography",
+      "comparison": "Not applicable; continuous ln(LS) association",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.57,
+        "ci_lower": 1.1,
+        "ci_upper": 2.25,
+        "exposure_unit": "per 1.0 increase in ln[LS]",
+        "adjustment_set": "Age, sex, and eGFR"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.57,
+        "ci_lower": 1.1,
+        "ci_upper": 2.25,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness measured by transient elastography",
+      "comparison": "Not applicable; continuous ln(LS) association",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.57,
+        "ci_lower": 1.11,
+        "ci_upper": 2.21,
+        "exposure_unit": "per 1.0 increase in ln[LS]",
+        "adjustment_set": "Unadjusted; univariate Cox proportional hazards model"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.57,
+        "ci_lower": 1.11,
+        "ci_upper": 2.21,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness measured by transient elastography",
+      "comparison": "Not applicable; continuous ln(LS) association",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.35,
+        "ci_lower": 0.93,
+        "ci_upper": 1.96,
+        "exposure_unit": "per 1.0 increase in ln[LS]",
+        "adjustment_set": "Age, sex, and BUN"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.35,
+        "ci_lower": 0.93,
+        "ci_upper": 1.96,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.66,
+        "ci_lower": 1.35,
+        "ci_upper": 5.49,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Age, sex, and GGT"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.66,
+        "ci_lower": 1.35,
+        "ci_upper": 5.49,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.42,
+        "ci_lower": 1.24,
+        "ci_upper": 4.98,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Age, sex, and BUN"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.42,
+        "ci_lower": 1.24,
+        "ci_upper": 4.98,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.76,
+        "ci_lower": 1.41,
+        "ci_upper": 5.66,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Age, sex, and total bilirubin"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.76,
+        "ci_lower": 1.41,
+        "ci_upper": 5.66,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness at discharge measured by transient elastography",
+      "comparison": "Per 1-kPa increase in liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Cardiac events; prespecified composite of cardiac death or rehospitalization for treatment of heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure; overall cohort",
+      "timepoint": "Liver stiffness measured before discharge; median follow-up 203 days",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.12,
+        "ci_lower": 1.07,
+        "ci_upper": 1.16,
+        "exposure_unit": "per 1-kPa increase",
+        "adjustment_set": "age, sex, eGFR, and ln (BNP)"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.12,
+        "ci_lower": 1.07,
+        "ci_upper": 1.16,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011002",
+        "source_type": "figure",
+        "source_id": "FIGURE 4",
+        "content_list_item_index": 7
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.89,
+        "ci_lower": 1.5,
+        "ci_upper": 5.89,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Age, sex, and eGFR"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.89,
+        "ci_lower": 1.5,
+        "ci_upper": 5.89,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness at discharge measured by transient elastography",
+      "comparison": "Per 1-kPa increase in liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Composite of cardiac death or rehospitalization for treatment of heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure; overall cohort",
+      "timepoint": "Liver stiffness measured before discharge; median follow-up 203 days",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.07,
+        "ci_lower": 1.02,
+        "ci_upper": 1.12,
+        "exposure_unit": "per 1-kPa increase",
+        "adjustment_set": "age, sex, and volume status variables (hematocrit and serum sodium level)"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.07,
+        "ci_lower": 1.02,
+        "ci_upper": 1.12,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011002",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.95,
+        "ci_lower": 1.54,
+        "ci_upper": 5.95,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Age, sex, and ln[NT-proBNP]"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.95,
+        "ci_lower": 1.54,
+        "ci_upper": 5.95,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness at discharge measured by transient elastography",
+      "comparison": "Per 1-kPa increase in liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Composite of cardiac death or rehospitalization for treatment of heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure; overall cohort",
+      "timepoint": "Liver stiffness measured before discharge; median follow-up 203 days",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.11,
+        "ci_lower": 1.06,
+        "ci_upper": 1.16,
+        "exposure_unit": "per 1-kPa increase",
+        "adjustment_set": "age, sex, and RV function variables (RV diameter, tricuspid annular plane systolic excursion, and tricuspid regurgitation [moderate or severe])"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.11,
+        "ci_lower": 1.06,
+        "ci_upper": 1.16,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011002",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.57,
+        "ci_lower": 1.08,
+        "ci_upper": 5.99,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Age, sex, and estimated RAP"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.57,
+        "ci_lower": 1.08,
+        "ci_upper": 5.99,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_011002",
+      "study_id": "s_011002",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness at discharge measured by transient elastography",
+      "comparison": "Per 1-kPa increase in liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Composite of cardiac death or rehospitalization for treatment of heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "171 hospitalized patients with heart failure; overall cohort",
+      "timepoint": "Liver stiffness measured before discharge; median follow-up 203 days",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.1,
+        "ci_lower": 1.05,
+        "ci_upper": 1.14,
+        "exposure_unit": "per 1-kPa increase",
+        "adjustment_set": "age, sex, and severity of HF (New York Heart Association functional class [III or IV] and systolic blood pressure)"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.1,
+        "ci_lower": 1.05,
+        "ci_upper": 1.14,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011002",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "High liver stiffness measured by transient elastography",
+      "comparison": "Low LS <8.8 kPa versus high LS ≥8.8 kPa",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 2.71,
+        "ci_lower": 1.43,
+        "ci_upper": 5.43,
+        "exposure_unit": "High LS ≥8.8 kPa versus low LS <8.8 kPa; median-defined categories",
+        "adjustment_set": "Unadjusted; univariate Cox proportional hazards model"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 2.71,
+        "ci_lower": 1.43,
+        "ci_upper": 5.43,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness or a validated liver-fibrosis score",
+      "comparison": "Per 1.0 increase in natural-log liver stiffness",
+      "outcome": {
+        "code": null,
+        "label": "Death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "105 patients with acute decompensated heart failure",
+      "timepoint": "median follow-up 153 days (IQR 83 to 231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_adjusted_hazard_ratio",
+        "effect_value": 1.71,
+        "ci_lower": 1.18,
+        "ci_upper": 2.5,
+        "exposure_unit": "per 1.0 increase in natural-log liver stiffness",
+        "adjustment_set": "age, sex, and natural-log NT-proBNP (Model 1)"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.71,
+        "ci_lower": 1.18,
+        "ci_upper": 2.5,
+        "log_value": null,
+        "variance": null,
+        "direction": "increased_risk"
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 4"
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_011004",
+      "study_id": "s_011004",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness measured by transient elastography",
+      "comparison": "Not applicable; continuous ln(LS) association",
+      "outcome": {
+        "code": null,
+        "label": "Composite cardiac event: death from cardiovascular disease or readmission for heart failure",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute decompensated heart failure (ADHF), n=105",
+      "timepoint": "Median follow-up 153 days (IQR 83–231 days)",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_hr_effect",
+        "effect_value": 1.63,
+        "ci_lower": 0.94,
+        "ci_upper": 2.84,
+        "exposure_unit": "per 1.0 increase in ln[LS]",
+        "adjustment_set": "Age, sex, and estimated RAP"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.63,
+        "ci_lower": 0.94,
+        "ci_upper": 2.84,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_011004",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_011003",
+      "study_id": "s_011003",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Liver stiffness or a validated liver-fibrosis score",
+      "comparison": "Per one-unit increase in fibrosis-4 index",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "1,058 patients with heart failure",
+      "timepoint": "source follow-up; exact duration not used in the main analysis",
+      "data_family": "time_to_event",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "reported_adjusted_hazard_ratio",
+        "effect_value": 1.127,
+        "ci_lower": 1.018,
+        "ci_upper": 1.253,
+        "exposure_unit": "per one-unit increase in fibrosis-4 index",
+        "adjustment_set": "sex, body mass index, NYHA class, ischemic etiology, hypertension, diabetes, dyslipidemia, atrial fibrillation, hemoglobin, estimated glomerular filtration rate, sodium, B-type natriuretic peptide, left ventricular ejection fraction, renin-angiotensin-aldosterone inhibitors, beta-blockers, diuretics, and inotropic agents"
+      },
+      "effect": {
+        "effect_type": "HR",
+        "value": 1.127,
+        "ci_lower": 1.018,
+        "ci_upper": 1.253,
+        "log_value": null,
+        "variance": null,
+        "direction": "increased_risk"
+      },
+      "source_location": {
+        "document_id": "a_011003",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0086",
+  "candidate_set_id": "ma_0086_minimal_public_candidate_pool_20261115",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy, with or without adenoidectomy",
+      "comparison": "adenotonsillectomy versus expectant management",
+      "outcome": {
+        "code": null,
+        "label": "Immediate and persistent resolution of PFAPA symptoms",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "all randomized children",
+      "timepoint": "18 months after randomization",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_counts",
+        "intervention_events": 12,
+        "intervention_total": 19,
+        "control_events": 1,
+        "control_total": 20
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 12.63,
+        "ci_lower": 1.81,
+        "ci_upper": 87.98,
+        "log_value": null,
+        "variance": null,
+        "direction": "increased_risk"
+      },
+      "source_location": {
+        "document_id": "a_200902",
+        "page": 2,
+        "source_type": "table",
+        "source_id": "Table II"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy",
+      "comparison": "Follow-up alone / expectant management",
+      "outcome": {
+        "code": null,
+        "label": "Corticosteroid treatment during randomized follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children with PFAPA syndrome",
+      "timepoint": "Not reported",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The report describes corticosteroid treatment generally but does not provide arm-specific corticosteroid use during randomized follow-up."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200701",
+        "source_type": "paragraph",
+        "source_id": "content_0000",
+        "content_list_item_index": 0
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy, with or without adenoidectomy",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Corticosteroid treatment during follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "data_family": "percentage_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_percent": 50,
+        "control_percent": 88
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200902",
+        "page": 2,
+        "source_type": "table",
+        "source_id": "Table II"
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy, with or without adenoidectomy",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Symptom-free at six months",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 14,
+        "intervention_total": 14,
+        "control_events": 6,
+        "control_total": 12
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200701",
+        "page": 3,
+        "source_type": "paragraph",
+        "source_id": "Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy, with or without adenoidectomy",
+      "comparison": "adenotonsillectomy versus expectant management",
+      "outcome": {
+        "code": null,
+        "label": "PFAPA episode rate",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "all randomized children",
+      "timepoint": "18 months after randomization",
+      "data_family": "event_counts_with_person_time",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "episode_counts_with_equal_follow_up",
+        "intervention_episodes": 12,
+        "intervention_total": 19,
+        "control_episodes": 179,
+        "control_total": 20,
+        "follow_up_months": 18
+      },
+      "effect": {
+        "effect_type": "IRR",
+        "value": 0.07,
+        "ci_lower": 0.04,
+        "ci_upper": 0.13,
+        "log_value": null,
+        "variance": null,
+        "direction": "decreased_risk"
+      },
+      "source_location": {
+        "document_id": "a_200902",
+        "page": 2,
+        "source_type": "table",
+        "source_id": "Table II"
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy, with or without adenoidectomy",
+      "comparison": "tonsillectomy versus follow-up alone",
+      "outcome": {
+        "code": null,
+        "label": "PFAPA episode rate",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "all randomized children",
+      "timepoint": "6 months after randomization",
+      "data_family": "event_counts_with_person_time",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "episode_counts_with_equal_follow_up",
+        "intervention_episodes": 4,
+        "intervention_total": 14,
+        "control_episodes": 34,
+        "control_total": 12,
+        "follow_up_months": 6,
+        "reported_rates_per_person_month": {
+          "intervention": 0.05,
+          "control": 0.44
+        }
+      },
+      "effect": {
+        "effect_type": "IRR",
+        "value": 0.1,
+        "ci_lower": 0.04,
+        "ci_upper": 0.28,
+        "log_value": null,
+        "variance": null,
+        "direction": "decreased_risk"
+      },
+      "source_location": {
+        "document_id": "a_200701",
+        "page": 3,
+        "source_type": "paragraph",
+        "source_id": "Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adenotonsillectomy (tonsillectomy with adenoidectomy)",
+      "comparison": "Expectant management",
+      "outcome": {
+        "code": null,
+        "label": "Immediate and persistent complete resolution of PFAPA symptoms during 18-month follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children with PFAPA syndrome; randomized surgery and expectant-management groups",
+      "timepoint": "18 months after randomization",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 12,
+        "intervention_total": 19,
+        "control_events": 1,
+        "control_total": 20
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 12.63157894736842,
+        "ci_lower": 1.8134014929565334,
+        "ci_upper": 87.98756774125232,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200902",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 0
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy",
+      "comparison": "Follow-up alone / expectant management",
+      "outcome": {
+        "code": null,
+        "label": "Free of PFAPA symptoms at 6 months",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children with PFAPA syndrome; randomized tonsillectomy versus follow-up-alone groups",
+      "timepoint": "6 months after randomization",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 14,
+        "intervention_total": 14,
+        "control_events": 6,
+        "control_total": 12
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.9333333333333333,
+        "ci_lower": 1.113575915947955,
+        "ci_upper": 3.3565540743541638,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200701",
+        "source_type": "paragraph",
+        "source_id": "content_0000",
+        "content_list_item_index": 0
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adenotonsillectomy (tonsillectomy with adenoidectomy)",
+      "comparison": "Expectant management",
+      "outcome": {
+        "code": null,
+        "label": "Corticosteroid treatment during randomized follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children with PFAPA syndrome who experienced new episodes after study entry; randomized surgery and expectant-management groups",
+      "timepoint": "During the 18-month study period; among patients experiencing new episodes after study entry",
+      "data_family": "percentage_only",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_percent": 50.0,
+        "control_percent": 88.0,
+        "intervention_total": null,
+        "control_total": null,
+        "outcome_unit": "Percentage receiving corticosteroid treatment among patients experiencing new episodes after study entry"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200902",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 0
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Tonsillectomy",
+      "comparison": "Follow-up alone / expectant management",
+      "outcome": {
+        "code": null,
+        "label": "PFAPA fever episodes during follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children with PFAPA syndrome; randomized tonsillectomy versus follow-up-alone groups",
+      "timepoint": "6 months after randomization",
+      "data_family": "event_counts_with_person_time",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_episodes": 4,
+        "intervention_total": 14,
+        "control_episodes": 34,
+        "control_total": 12,
+        "follow_up_months": 6.0,
+        "reported_rates_per_person_month": {
+          "control": 0.44,
+          "intervention": 0.05,
+          "unit rate": 0.05,
+          "rate_unit_and_denominator_source_text": 0.05
+        }
+      },
+      "effect": {
+        "effect_type": "IRR",
+        "value": 0.10084033613445377,
+        "ci_lower": 0.035783751494618335,
+        "ci_upper": 0.2841729267329319,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200701",
+        "source_type": "paragraph",
+        "source_id": "content_0000",
+        "content_list_item_index": 0
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adenotonsillectomy (tonsillectomy with adenoidectomy)",
+      "comparison": "Expectant management",
+      "outcome": {
+        "code": null,
+        "label": "Number of PFAPA episodes during randomized follow-up",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Children with PFAPA syndrome; randomized surgery and expectant-management groups",
+      "timepoint": "18 months after randomization",
+      "data_family": "event_counts_with_person_time",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_episodes": 12,
+        "intervention_total": 19,
+        "control_episodes": 179,
+        "control_total": 20,
+        "follow_up_months": 18.0,
+        "reported_rates_per_person_month": null
+      },
+      "effect": {
+        "effect_type": "IRR",
+        "value": 0.07056748015289621,
+        "ci_lower": 0.03933474834808016,
+        "ci_upper": 0.12659974867673085,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_200902",
+        "source_type": "table",
+        "source_id": "Table II",
+        "content_list_item_index": 0
+      }
+    }
+  ]
+}

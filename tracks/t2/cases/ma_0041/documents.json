@@ -1,0 +1,96 @@
+{
+  "case_id": "ma_0041",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0041_01",
+      "document_id": "a_0041_01_verborgt",
+      "doi": "10.1016/j.jse.2010.07.014",
+      "title": "Accuracy of placement of the glenoid component in reversed shoulder arthroplasty with and without navigation",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_01_verborgt.pdf"
+      },
+      "article_id": "a_0041_01_verborgt"
+    },
+    {
+      "study_id": "s_0041_02",
+      "document_id": "a_0041_02_kircher",
+      "doi": "10.1016/j.jse.2009.03.014",
+      "title": "Improved accuracy of glenoid positioning in total shoulder arthroplasty with intraoperative navigation: A prospective-randomized clinical study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_02_kircher.pdf"
+      },
+      "article_id": "a_0041_02_kircher"
+    },
+    {
+      "study_id": "s_0041_03",
+      "document_id": "a_0041_03_lau_keith",
+      "doi": "10.1016/j.jse.2017.07.004",
+      "title": "Patient-specific instrumentation for total shoulder arthroplasty: not as accurate as it would seem",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_03_lau_keith.pdf"
+      },
+      "article_id": "a_0041_03_lau_keith"
+    },
+    {
+      "study_id": "s_0041_04",
+      "document_id": "a_0041_04_gauci",
+      "doi": "10.1302/0301-620x.98b8.37257",
+      "title": "Patient-specific glenoid guides provide accuracy and reproducibility in total shoulder arthroplasty",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_04_gauci.pdf"
+      },
+      "article_id": "a_0041_04_gauci"
+    },
+    {
+      "study_id": "s_0041_05",
+      "document_id": "a_0041_05_dallalana",
+      "doi": "10.4103/0973-6042.180717",
+      "title": "Accuracy of patient-specific instrumentation in anatomic and reverse total shoulder arthroplasty",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_05_dallalana.pdf"
+      },
+      "article_id": "a_0041_05_dallalana"
+    },
+    {
+      "study_id": "s_0041_06",
+      "document_id": "a_0041_06_throckmorton",
+      "doi": "10.1016/j.jse.2014.10.013",
+      "title": "Patient-specific targeting guides compared with traditional instrumentation for glenoid component placement in shoulder arthroplasty: a multi-surgeon study in 70 arthritic cadaver specimens",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_06_throckmorton.pdf"
+      },
+      "article_id": "a_0041_06_throckmorton"
+    },
+    {
+      "study_id": "s_0041_07",
+      "document_id": "a_0041_07_suero",
+      "doi": "10.1007/s00167-012-2177-1",
+      "title": "Use of a custom alignment guide to improve glenoid component position in total shoulder arthroplasty",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_07_suero.pdf"
+      },
+      "article_id": "a_0041_07_suero"
+    },
+    {
+      "study_id": "s_0041_08",
+      "document_id": "a_0041_08_hendel",
+      "doi": "10.2106/jbjs.k.01209",
+      "title": "Comparison of Patient-Specific Instruments with Standard Surgical Instruments in Determining Glenoid Component Position",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_08_hendel.pdf"
+      },
+      "article_id": "a_0041_08_hendel"
+    },
+    {
+      "study_id": "s_0041_09",
+      "document_id": "a_0041_09_gregory",
+      "doi": "10.1371/journal.pone.0075791",
+      "title": "Accuracy of Glenoid Component Placement in Total Shoulder Arthroplasty and Its Effect on Clinical and Radiological Outcome in a Retrospective, Longitudinal, Monocentric Open Study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0041/a_0041_09_gregory.pdf"
+      },
+      "article_id": "a_0041_09_gregory"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0017",
+  "source_case_id": "ma_0017",
+  "task_id": "ma_0017_extraction_all_reports_v1",
+  "task_type": "extraction",
+  "task_definition": "Extract the source-defined COVID-19 and reference period EVT event counts and denominators from each report.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_0017_01",
+    "a_0017_02",
+    "a_0017_03",
+    "a_0017_04",
+    "a_0017_05",
+    "a_0017_06",
+    "a_0017_07",
+    "a_0017_08"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0017"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

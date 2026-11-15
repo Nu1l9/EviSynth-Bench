@@ -1,0 +1,835 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0017",
+  "candidate_set_id": "ma_0017_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0017_02",
+      "study_id": "s_0017_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period: March 1–April 30, 2020",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients presenting with acute stroke symptoms at University of California Irvine Medical Center; source-defined cohorts",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 9,
+        "intervention_total": 48,
+        "control_events": 4,
+        "control_total": 64,
+        "outcome_unit": "patients receiving thrombectomy"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_02",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 27
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0017_01",
+      "study_id": "s_0017_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Ischemic stroke patients in a comprehensive stroke center cohort",
+      "timepoint": "March 30-May 31, 2020 versus corresponding period in 2019",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 38,
+        "intervention_total": 104,
+        "control_events": 51,
+        "control_total": 93,
+        "outcome_unit": "Patients receiving thrombectomy; pandemic ischemic stroke patients versus reference ischemic stroke patients"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_01",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 54
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0017_03",
+      "study_id": "s_0017_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period (January 23, 2020–March 24, 2020)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy (mechanical thrombectomy)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with ischemic stroke admitted through the acute stroke pathway; the table cohort also included TIA and hemorrhagic stroke patients, but the mechanical thrombectomy row was restricted to ischemic stroke patients",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 4,
+        "intervention_total": 47,
+        "control_events": 7,
+        "control_total": 52,
+        "outcome_unit": "Patients receiving mechanical thrombectomy; denominators are patients with ischemic stroke"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_03",
+        "source_type": "table",
+        "source_id": "content_0043",
+        "content_list_item_index": 43
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0017_04",
+      "study_id": "s_0017_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period (February 2020)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Undesignated hospitals; stroke-related admissions in the survey results from 227 hospitals",
+      "timepoint": "February 2019 versus February 2020",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 336,
+        "intervention_total": 10928,
+        "control_events": 445,
+        "control_total": 17618,
+        "outcome_unit": "stroke-related admissions receiving thrombectomy"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0017_06",
+      "study_id": "s_0017_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Ischemic-stroke patients eligible for reperfusion after stroke-code activation in Barcelona",
+      "timepoint": "March 2020 versus March 2019",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 16,
+          "total": 42
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 21,
+          "total": 53
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 0.9377289377289377,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.06429435070539725,
+        "variance": 0.17983058608058608,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_06",
+        "page": 4,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 2, Reperfusion therapy in eligible patients, Thrombectomy"
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0017_04",
+      "study_id": "s_0017_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period (February 2020)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "All hospitals; stroke-related admissions in the survey results from 227 hospitals",
+      "timepoint": "February 2019 versus February 2020",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 727,
+        "intervention_total": 21581,
+        "control_events": 941,
+        "control_total": 34725,
+        "outcome_unit": "stroke-related admissions receiving thrombectomy"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0017_08",
+      "study_id": "s_0017_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period: Mar-May 2020",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Acute stroke patients admitted to a single comprehensive stroke center in Niteroi, Rio de Janeiro, Brazil",
+      "timepoint": "Mar-May 2019 versus Mar-May 2020",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 2,
+        "intervention_total": 25,
+        "control_events": 3,
+        "control_total": 45,
+        "outcome_unit": "patients receiving thrombectomy"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_08",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0017_04",
+      "study_id": "s_0017_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period (February 2020)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Designated hospitals; stroke-related admissions in the survey results from 227 hospitals",
+      "timepoint": "February 2019 versus February 2020",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 391,
+        "intervention_total": 10653,
+        "control_events": 496,
+        "control_total": 17107,
+        "outcome_unit": "stroke-related admissions receiving thrombectomy"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0017_05",
+      "study_id": "s_0017_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Ischemic-stroke patients in Amsterdam-area hospitals",
+      "timepoint": "COVID-19 cohort versus pre-COVID-19 cohort",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 20,
+          "total": 180
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 23,
+          "total": 194
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 0.9293478260869565,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.07327220110632575,
+        "variance": 0.10557621408593948,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_05",
+        "page": 4,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 3, Endovascular thrombectomy"
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0017_05",
+      "study_id": "s_0017_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with ischemic strokes in three Amsterdam hospitals; reperfusion-therapy data restricted to ischemic stroke patients",
+      "timepoint": "During the respective 7-week study period",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 20,
+        "intervention_total": 180,
+        "control_events": 23,
+        "control_total": 194,
+        "outcome_unit": "Receipt of endovascular thrombectomy; n/ischemic stroke patients"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_05",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 39
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0017_07",
+      "study_id": "s_0017_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period, cohort-2020 (1 March 2020–30 April 2020)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy (EVT)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients admitted with acute ischemic stroke at the Bologna Metropolitan Stroke Center",
+      "timepoint": "March–April comparison",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 42,
+        "intervention_total": 118,
+        "control_events": 21,
+        "control_total": 97,
+        "outcome_unit": "Patients receiving all EVT"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_07",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0017_04",
+      "study_id": "s_0017_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Stroke admissions across 227 Chinese stroke centers",
+      "timepoint": "February 2020 versus February 2019",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 727,
+          "total": 21581
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 941,
+          "total": 34725
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 1.2516026864368612,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.2244248792123808,
+        "variance": 0.002515767316291906,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_04",
+        "page": 3,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Text reporting Table 3, thrombectomy treatment rate"
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0017_01",
+      "study_id": "s_0017_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Confirmed ischemic-stroke patients at a Canadian comprehensive stroke center",
+      "timepoint": "2020 pandemic cohort versus 2019 reference cohort",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 38,
+          "total": 104
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 51,
+          "total": 93
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 0.47415329768270953,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.7462245967409971,
+        "variance": 0.08488467157197807,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_01",
+        "page": 10,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 1, Ischemic stroke treatment, Thrombectomy"
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0017_08",
+      "study_id": "s_0017_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Ischemic-stroke patients admitted to a Brazilian hospital",
+      "timepoint": "March-May 2020 versus March-May 2019",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 2,
+          "total": 21
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 3,
+          "total": 36
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 1.157894736842105,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.14660347419187525,
+        "variance": 0.9162679425837319,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_08",
+        "page": 5,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 1, Thrombectomy"
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0017_01",
+      "study_id": "s_0017_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients transferred from another institution for thrombectomy referral",
+      "timepoint": "March 30-May 31, 2020 versus corresponding period in 2019",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported that the pandemic period was inversely associated with referral from another institution for thrombectomy, with an adjusted odds ratio of 0.40 (95% CI 0.19-0.82)."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_01",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 26
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0017_02",
+      "study_id": "s_0017_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Acute stroke cohort at a United States center",
+      "timepoint": "2020 COVID-19 period versus matched 2019 period",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 9,
+          "total": 48
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 4,
+          "total": 64
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 3.4615384615384617,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 1.241713132308783,
+        "variance": 0.4034188034188034,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_02",
+        "page": 3,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 1, Thrombolysis, Thrombectomy"
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0017_03",
+      "study_id": "s_0017_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Ischemic-stroke patients at a Hong Kong acute stroke service",
+      "timepoint": "COVID-19 period versus pre-COVID-19 period",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 7,
+          "total": 52
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 4,
+          "total": 47
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 1.6722222222222223,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.5141534138586654,
+        "variance": 0.4383351790328534,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_03",
+        "page": 3,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table, Stroke treatment, Mechanical thrombectomy"
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0017_01",
+      "study_id": "s_0017_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Ischemic stroke patients in a comprehensive stroke center cohort",
+      "timepoint": "March 30-May 31, 2020 versus corresponding period in 2019",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported that, after controlling for confounders, the pandemic period was associated with thrombectomy with an adjusted odds ratio of 0.70 (95% CI 0.26-1.86)."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_01",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 26
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0017_06",
+      "study_id": "s_0017_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "COVID-19 pandemic period",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy (thrombectomy)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with acute ischemic stroke admitted through Stroke Code activation and eligible for reperfusion therapy; hemorrhagic strokes and stroke mimics excluded from the denominator",
+      "timepoint": "March 2020 versus March 2019",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 16,
+        "intervention_total": 42,
+        "control_events": 21,
+        "control_total": 53,
+        "outcome_unit": "patients receiving thrombectomy among eligible acute ischemic stroke patients"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0017_06",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 52
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0017_07",
+      "study_id": "s_0017_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "outcome": {
+        "code": null,
+        "label": "Receipt of endovascular thrombectomy",
+        "outcome_class": "binary_treatment_utilization"
+      },
+      "population_or_subgroup": "Consecutively enrolled ischemic-stroke patients in an Italian stroke network",
+      "timepoint": "March-April 2020 versus March-April 2019",
+      "data_family": "two_group_event_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "two_group_event_counts",
+        "outcome_definition": "Receipt of endovascular thrombectomy in the source-defined acute or ischemic stroke cohort.",
+        "pandemic_group": {
+          "label": "COVID-19 pandemic period",
+          "events": 42,
+          "total": 118
+        },
+        "reference_group": {
+          "label": "Source-defined pre-pandemic reference period",
+          "events": 21,
+          "total": 97
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 2.0,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.6931471805599453,
+        "variance": 0.09774436090225563,
+        "direction": "higher_odds_in_pandemic_when_or_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0017_07",
+        "page": 4,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 2, All EVT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0032",
+  "task_id": "ma_0032_analysis_further_bleeding_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_further_bleeding",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

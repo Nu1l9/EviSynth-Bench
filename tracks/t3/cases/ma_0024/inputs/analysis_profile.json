@@ -1,0 +1,61 @@
+{
+  "case_id": "ma_0024",
+  "analysis_profile_id": "ma_0024_dr_diagnostic_accuracy_analysis_profile_v1",
+  "scope": "Single pre-specified strict diagnostic-accuracy synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_dr_detection_sensitivity",
+      "pooled_result_id": "pr_0024_primary_sensitivity",
+      "outcome_group": "Sensitivity of computer-aided diabetic retinopathy detection",
+      "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+      "eligible_outcome_codes": [
+        "diabetic_retinopathy_detection"
+      ],
+      "eligible_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "accepted_effect_types": [
+        "diagnostic_accuracy_pair"
+      ],
+      "estimands": [
+        "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select one held-out image-level 2x2 diagnostic table per source.",
+          "Select only an expert-referenced DR-positive (NPDR/PDR) versus normal contrast with TP, FP, FN, and TN.",
+          "Use counts, not potentially mislabeled sensitivity/specificity columns or review forest values."
+        ]
+      },
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "primary_dr_detection_specificity",
+      "pooled_result_id": "pr_0024_primary_specificity",
+      "outcome_group": "Specificity of computer-aided diabetic retinopathy detection",
+      "target_id": "fundus_photo_cad_detection_of_diabetic_retinopathy",
+      "eligible_outcome_codes": [
+        "diabetic_retinopathy_detection"
+      ],
+      "eligible_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "accepted_effect_types": [
+        "diagnostic_accuracy_pair"
+      ],
+      "estimands": [
+        "image_level_diagnostic_accuracy_for_diabetic_retinopathy_detection"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Apply the same complete image-level 2x2 eligibility rules as the paired sensitivity analysis.",
+          "Preserve source-reported numeric values and metadata without altering them."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

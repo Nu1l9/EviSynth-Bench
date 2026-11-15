@@ -1,0 +1,114 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0012",
+    "task_id": "ma_0012_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among children vaccinated in the pneumococcal-conjugate-vaccine era, is asthma associated with invasive pneumococcal disease?",
+    "pico": {
+      "population": "Children receiving pneumococcal conjugate vaccine",
+      "exposure": "Asthma",
+      "comparator": "Children without asthma or without known risk factors",
+      "outcomes": [
+        "Invasive pneumococcal disease confirmed from a normally sterile site",
+        "IPD",
+        "invasive pneumococcal disease",
+        "pneumococcal infection"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "OR",
+        "RR"
+      ],
+      "estimands": [
+        "adjusted_asthma_vs_no_known_risk_factor"
+      ],
+      "targets": [
+        {
+          "target_id": "invasive_pneumococcal_disease",
+          "outcome": {
+            "description": "Invasive pneumococcal disease confirmed from a normally sterile site",
+            "aliases": [
+              "IPD",
+              "invasive pneumococcal disease",
+              "pneumococcal infection"
+            ]
+          },
+          "accepted_data_families": [
+            "reported_ratio_effect"
+          ],
+          "preferred_effect_measures": [
+            "OR",
+            "RR"
+          ],
+          "estimands": [
+            "adjusted_asthma_vs_no_known_risk_factor"
+          ],
+          "effect_selection_rule": "Retain each source-reported adjusted effect for the target outcome and its explicitly defined age stratum or year. Mark overlapping-cohort effects as quantitative but not independently poolable.",
+          "data_contract": {
+            "raw_data_fields": [
+              "effect_value",
+              "ci_lower",
+              "ci_upper",
+              "effect_measure",
+              "age_stratum_or_year",
+              "adjustment_set"
+            ],
+            "field_definitions": {
+              "effect_value": "Reported adjusted ratio effect.",
+              "ci_lower": "Reported lower 95% confidence bound.",
+              "ci_upper": "Reported upper 95% confidence bound.",
+              "effect_measure": "Source-reported odds or rate ratio.",
+              "age_stratum_or_year": "Source-defined subgroup or calendar year.",
+              "adjustment_set": "Source-reported adjustment variables."
+            },
+            "poolability_required_fields": [
+              "effect_value",
+              "ci_lower",
+              "ci_upper",
+              "age_stratum_or_year"
+            ],
+            "allowed_source_derivations": [],
+            "derivation_preconditions": [],
+            "derivation_instructions": [],
+            "source_aggregation_rules": [],
+            "integrity_checks": [
+              "do_not_count_overlapping_cohorts_twice",
+              "preserve_source_effect_measure",
+              "outcome_must_match_IPD"
+            ]
+          },
+          "quantitative_use_policy": "source_reported_effect_allowed",
+          "quantitative_usability": "poolable",
+          "extraction_notes": [
+            "Do not create arm counts from reported rates or ratios.",
+            "A record lacking an asthma-versus-control ratio is retained only as source-only evidence."
+          ]
+        }
+      ],
+      "model_selection_policy": "Retain each source-reported adjusted effect for the target outcome and its explicitly defined age stratum or year. Mark overlapping-cohort effects as quantitative but not independently poolable.",
+      "exclusion_concepts": "Do not create arm counts from reported rates or ratios. A record lacking an asthma-versus-control ratio is retained only as source-only evidence.",
+      "evidence_requirements": "Every extracted record must retain exact source evidence, page, source-defined effect scale, exposure unit, adjustment set, and missingness."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_012001",
+        "a_012002",
+        "a_012003",
+        "a_012004",
+        "a_012005"
+      ],
+      "study_ids": {
+        "a_012001": "s_012001",
+        "a_012002": "s_012002",
+        "a_012003": "s_012003",
+        "a_012004": "s_012004",
+        "a_012005": "s_012005"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

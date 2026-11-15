@@ -1,0 +1,373 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0064",
+  "gold_id": "ma_0064_extraction_gold_v1",
+  "task_type": "extraction",
+  "applies_to_task_ids": [
+    "ma_0064_extraction_all_archived_reports_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0064_19",
+      "article_id": "a_0064_19",
+      "study_id": "s_0064_kim_low_risk",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "recurrence",
+        "label": "Recurrence in presumed low-risk endometrial cancer",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Median follow-up 18.4 months",
+      "data_family": "binary_exposure_outcome_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_19",
+          "estimand": "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+          "comparison": "ITC and/or micrometastasis versus node-negative",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_exposure_outcome_counts",
+            "outcome_definition": "Recurrence in presumed low-risk endometrial cancer",
+            "arms": [
+              {
+                "label": "isolated_tumor_cells",
+                "role": "low_volume_metastasis",
+                "events": 2,
+                "n": 9
+              },
+              {
+                "label": "micrometastasis",
+                "role": "low_volume_metastasis",
+                "events": 1,
+                "n": 3
+              },
+              {
+                "label": "node_negative",
+                "role": "node_negative",
+                "events": 8,
+                "n": 400
+              }
+            ],
+            "source_derivation_note": "The 3 low-volume recurrences are individually identifiable in the source recurrence roster (2 ITC, 1 micrometastasis). The 8 node-negative recurrences are the remaining source recurrence records after those low-volume records; the calculator combines ITC and micrometastasis arms."
+          },
+          "source_location": {
+            "document_id": "a_0064_19",
+            "page": 6,
+            "source_type": "table_or_results",
+            "source_id": "Results, Table 5 recurrence roster, and nodal-status tables",
+            "locator_note": "Source recurrence events and denominators by nodal-status stratum.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0064_20",
+      "article_id": "a_0064_20",
+      "study_id": "s_0064_kim_ultrastaging",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "recurrence",
+        "label": "Source-defined recurrence",
+        "outcome_class": "binary"
+      },
+      "data_family": "partial_binary_exposure_outcome_counts",
+      "quantitative_usability": "partial_source_data_not_calculable_for_binary_effect",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_20",
+          "estimand": "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+          "comparison": "Source partial low-volume versus node-negative record",
+          "effect": null,
+          "effect_status": "partial_source_data",
+          "quantitative_usability": "partial_source_data_not_calculable_for_binary_effect",
+          "source_data": {
+            "data_type": "partial_binary_exposure_outcome_counts",
+            "low_volume_arm": {
+              "events": 2,
+              "n": 23
+            },
+            "node_negative_arm": {
+              "events": null,
+              "n": null
+            }
+          },
+          "source_location": {
+            "document_id": "a_0064_20",
+            "page": 5,
+            "source_type": "results",
+            "source_id": "Results, ultrastage-detected low-volume metastasis follow-up",
+            "locator_note": "The source reports 23 low-volume cases and two recurrences among them, but it provides no paired node-negative recurrence numerator. It is also a potentially overlapping institutional cohort with the low-risk Kim report.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0064_22",
+      "article_id": "a_0064_22",
+      "study_id": "s_0064_st_clair",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "recurrence",
+        "label": "Disease recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Median follow-up 26 months",
+      "data_family": "binary_exposure_outcome_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_22",
+          "estimand": "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+          "comparison": "ITC and/or micrometastasis versus node-negative",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_exposure_outcome_counts",
+            "outcome_definition": "Disease recurrence",
+            "arms": [
+              {
+                "label": "isolated_tumor_cells",
+                "role": "low_volume_metastasis",
+                "events": 2,
+                "n": 23
+              },
+              {
+                "label": "micrometastasis",
+                "role": "low_volume_metastasis",
+                "events": 2,
+                "n": 21
+              },
+              {
+                "label": "node_negative",
+                "role": "node_negative",
+                "events": 47,
+                "n": 753
+              }
+            ],
+            "source_derivation_note": "The calculator combines the mutually exclusive ITC and micrometastasis arms once."
+          },
+          "source_location": {
+            "document_id": "a_0064_22",
+            "page": 4,
+            "source_type": "table_or_results",
+            "source_id": "Results and Table 3, Disease recurrence by lymph-node status",
+            "locator_note": "Source recurrence events and denominators by nodal-status stratum.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0064_23",
+      "article_id": "a_0064_23",
+      "study_id": "s_0064_todo",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "recurrence",
+        "label": "Recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Source follow-up for recurrence analysis",
+      "data_family": "binary_exposure_outcome_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_23",
+          "estimand": "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+          "comparison": "ITC and/or micrometastasis versus node-negative",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_exposure_outcome_counts",
+            "outcome_definition": "Recurrence",
+            "arms": [
+              {
+                "label": "ITC_or_micrometastasis",
+                "role": "low_volume_metastasis",
+                "events": 4,
+                "n": 9
+              },
+              {
+                "label": "node_negative",
+                "role": "node_negative",
+                "events": 8,
+                "n": 52
+              }
+            ],
+            "source_derivation_note": "The source itself supplies the combined ITC/MM arm."
+          },
+          "source_location": {
+            "document_id": "a_0064_23",
+            "page": 6,
+            "source_type": "table_or_results",
+            "source_id": "Table 4, Logistic regression analyses of risk factors relating to recurrence",
+            "locator_note": "Source recurrence events and denominators by nodal-status stratum.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0064_24",
+      "article_id": "a_0064_24",
+      "study_id": "s_0064_plante",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "recurrence",
+        "label": "Source-defined recurrence",
+        "outcome_class": "binary"
+      },
+      "data_family": "partial_binary_exposure_outcome_counts",
+      "quantitative_usability": "partial_source_data_not_calculable_for_binary_effect",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_24",
+          "estimand": "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+          "comparison": "Source partial low-volume versus node-negative record",
+          "effect": null,
+          "effect_status": "partial_source_data",
+          "quantitative_usability": "partial_source_data_not_calculable_for_binary_effect",
+          "source_data": {
+            "data_type": "partial_binary_exposure_outcome_counts",
+            "isolated_tumor_cells_arm": {
+              "events": 1,
+              "n": 31
+            },
+            "node_negative_arm": {
+              "events": null,
+              "n": 434
+            }
+          },
+          "source_location": {
+            "document_id": "a_0064_24",
+            "page": 4,
+            "source_type": "results",
+            "source_id": "Results, metastatic SLN recurrence and survival",
+            "locator_note": "The source reports one recurrence among 31 ITC patients and node-negative group size 434, but only a 36-month node-negative PFS percentage rather than a node-negative recurrence numerator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0064_26",
+      "article_id": "a_0064_26",
+      "study_id": "s_0064_ignatov",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "disease_free_survival_event",
+        "label": "Disease-free survival event",
+        "outcome_class": "time_to_event"
+      },
+      "population_or_subgroup": "Untreated micrometastasis versus untreated node-negative cohort",
+      "timepoint": "Median follow-up 84.8 months",
+      "data_family": "adjusted_time_to_event_effect",
+      "quantitative_usability": "source_supported_time_to_event_effect_not_binary_main_analysis",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_26",
+          "estimand": "micrometastasis_vs_node_negative_adjusted_disease_event_hazard",
+          "comparison": "Untreated micrometastasis versus untreated node-negative",
+          "effect": {
+            "effect_type": "HR",
+            "value": 2.23,
+            "ci_lower": 1.26,
+            "ci_upper": 3.95,
+            "adjusted": true
+          },
+          "effect_status": "source_reported_effect",
+          "quantitative_usability": "source_supported_time_to_event_effect_not_binary_main_analysis",
+          "source_data": {
+            "data_type": "adjusted_time_to_event_effect",
+            "intervention_group_n": 31,
+            "comparator_group_n": 302,
+            "outcome_definition": "Disease-free survival event: local/regional recurrence, distant metastasis, or death from disease."
+          },
+          "source_location": {
+            "document_id": "a_0064_26",
+            "page": 1,
+            "source_type": "abstract_and_results",
+            "source_id": "Abstract and Table 2",
+            "locator_note": "Source-reported adjusted HR and 95% CI for disease events; no binary event counts are provided.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0064_27",
+      "article_id": "a_0064_27",
+      "study_id": "s_0064_piedimonte",
+      "target_id": "recurrence",
+      "outcome": {
+        "code": "recurrence",
+        "label": "Pathologically confirmed recurrence",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined endometrial-cancer cohort",
+      "timepoint": "Median follow-up approximately 2.8 years in matched comparison",
+      "data_family": "binary_exposure_outcome_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0064_27",
+          "estimand": "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+          "comparison": "ITC and/or micrometastasis versus node-negative",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_exposure_outcome_counts",
+            "outcome_definition": "Pathologically confirmed recurrence",
+            "arms": [
+              {
+                "label": "isolated_tumor_cells",
+                "role": "low_volume_metastasis",
+                "events": 0,
+                "n": 11
+              },
+              {
+                "label": "micrometastasis",
+                "role": "low_volume_metastasis",
+                "events": 2,
+                "n": 12
+              },
+              {
+                "label": "matched_node_negative",
+                "role": "node_negative",
+                "events": 0,
+                "n": 18
+              }
+            ],
+            "source_derivation_note": "The calculator combines ITC and micrometastasis arms and applies its generic zero-event correction."
+          },
+          "source_location": {
+            "document_id": "a_0064_27",
+            "page": 3,
+            "source_type": "table_or_results",
+            "source_id": "Results and Table 2, Treatment and outcomes ITC versus MM",
+            "locator_note": "Source recurrence events and denominators by nodal-status stratum.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ]
+}

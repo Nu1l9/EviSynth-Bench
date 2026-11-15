@@ -1,0 +1,36 @@
+{
+  "case_id": "ma_0076",
+  "analysis_profile_id": "ma_0076_analysis_profile_v1",
+  "analyses": [
+    {
+      "analysis_id": "main_diarrhea",
+      "pooled_result_id": "pr_diarrhea",
+      "outcome_group": "Participants with at least one diarrhea adverse event",
+      "target_id": "diarrhea",
+      "eligible_outcome_codes": [
+        "diarrhea"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "participant_with_at_least_one_diarrhea_event"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select exact participant-level binary arm counts only.",
+          "Combine mutually exclusive eligible omega-3 dose arms before effect calculation when they share a comparator.",
+          "Keep independent trials separate, but collapse mutually exclusive factorial strata to one treatment main-effect comparison.",
+          "Exclude crossover records without paired event data, withdrawal-only outcomes, overlapping subgroup reports, composite outcomes, event-level records, rounded percentages, and narrative-only records.",
+          "Never count a participant or shared comparator twice."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "ma_0012",
+  "articles": [
+    {
+      "article_id": "a_012001",
+      "doi": "10.1093/cid/ciu348",
+      "title": "Risk of Pneumococcal Disease in Children With Chronic Medical Conditions in the Era of Pneumococcal Conjugate Vaccine"
+    },
+    {
+      "article_id": "a_012003",
+      "doi": "10.1186/s12913-016-1432-4",
+      "title": "Rates and costs of invasive pneumococcal disease and pneumonia in persons with underlying medical conditions"
+    },
+    {
+      "article_id": "a_012004",
+      "doi": "10.1542/peds.2009-2150",
+      "title": "Risk Factors for Invasive Pneumococcal Disease in Children in the Era of Conjugate Vaccine Use"
+    },
+    {
+      "article_id": "a_012005",
+      "doi": "10.3346/jkms.2015.30.1.60",
+      "title": "The Association between Asthma and Invasive Pneumococcal Disease: A Nationwide Study in Korea"
+    }
+  ]
+}

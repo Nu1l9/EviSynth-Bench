@@ -1,0 +1,127 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0041_full",
+  "gold_id": "ma_0041_full_psi_vs_standard_analysis_gold_v3",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0041",
+    "annotation_status": "source_adjudicated",
+    "numeric_source_policy": "Candidate effects and pooled values are recalculated from primary-source arm-level data. Target-review numerical values are not analysis inputs."
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "psi_vs_standard_version",
+      "selected_candidate_ids": [
+        "ce_0041_full_06_06_all_version_deviation",
+        "ce_0041_full_08_08_version_deviation"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0041_full_06_06_all_version_deviation",
+        "ee_0041_full_08_08_version_deviation"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0041_full_psi_vs_standard_version",
+          "outcome_group": "Absolute deviation from intended glenoid version",
+          "effect": {
+            "effect_type": "MD_degrees",
+            "value": -2.2162740899,
+            "ci_lower": -4.0990329286,
+            "ci_upper": -0.3335152513,
+            "direction": "patient_specific_instrument_lower_deviation_when_md_lt_0"
+          },
+          "member_candidate_ids": [
+            "ce_0041_full_06_06_all_version_deviation",
+            "ce_0041_full_08_08_version_deviation"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0041_full_06_06_all_version_deviation",
+            "ee_0041_full_08_08_version_deviation"
+          ],
+          "heterogeneity_i2": 0.0,
+          "calculator_run": {
+            "calculator_id": "independent_continuous_md_reml_v1",
+            "pooling": "reml_random_effects_inverse_variance",
+            "tau_squared": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "psi_vs_standard_inclination",
+      "selected_candidate_ids": [
+        "ce_0041_full_06_06_all_inclination_deviation",
+        "ce_0041_full_08_08_inclination_deviation"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0041_full_06_06_all_inclination_deviation",
+        "ee_0041_full_08_08_inclination_deviation"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0041_full_psi_vs_standard_inclination",
+          "outcome_group": "Absolute deviation from intended glenoid inclination",
+          "effect": {
+            "effect_type": "MD_degrees",
+            "value": -5.5797472946,
+            "ci_lower": -11.1404741879,
+            "ci_upper": -0.0190204013,
+            "direction": "patient_specific_instrument_lower_deviation_when_md_lt_0"
+          },
+          "member_candidate_ids": [
+            "ce_0041_full_06_06_all_inclination_deviation",
+            "ce_0041_full_08_08_inclination_deviation"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0041_full_06_06_all_inclination_deviation",
+            "ee_0041_full_08_08_inclination_deviation"
+          ],
+          "heterogeneity_i2": 85.886573,
+          "calculator_run": {
+            "calculator_id": "independent_continuous_md_reml_v1",
+            "pooling": "reml_random_effects_inverse_variance",
+            "tau_squared": 13.9522743951
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "psi_vs_standard_offset",
+      "selected_candidate_ids": [
+        "ce_0041_full_06_06_all_starting_point_deviation",
+        "ce_0041_full_08_08_total_offset_deviation"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0041_full_06_06_all_starting_point_deviation",
+        "ee_0041_full_08_08_total_offset_deviation"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0041_full_psi_vs_standard_offset",
+          "outcome_group": "Deviation from intended glenoid starting point or offset",
+          "effect": {
+            "effect_type": "MD_mm",
+            "value": -1.0,
+            "ci_lower": -1.4363048184,
+            "ci_upper": -0.5636951816,
+            "direction": "patient_specific_instrument_lower_deviation_when_md_lt_0"
+          },
+          "member_candidate_ids": [
+            "ce_0041_full_06_06_all_starting_point_deviation",
+            "ce_0041_full_08_08_total_offset_deviation"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0041_full_06_06_all_starting_point_deviation",
+            "ee_0041_full_08_08_total_offset_deviation"
+          ],
+          "heterogeneity_i2": 0.0,
+          "calculator_run": {
+            "calculator_id": "independent_continuous_md_reml_v1",
+            "pooling": "reml_random_effects_inverse_variance",
+            "tau_squared": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}

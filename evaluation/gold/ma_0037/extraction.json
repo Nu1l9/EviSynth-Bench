@@ -1,0 +1,658 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0037",
+  "gold_id": "ma_0037_extraction_gold_v1_1_expanded_full_corpus_draft",
+  "task_type": "extraction",
+  "provenance": {
+    "target_review_document_id": "review_ma_0037",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "applies_to_task_ids": [
+    "ma_0037_extraction_all_reports_v1_1_expanded_full_corpus_draft",
+    "ma_0037_end_to_end_adequacy_v1_1_expanded_full_corpus_draft"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0037_01",
+      "article_id": "a_0037_01",
+      "study_id": "s_0037_01",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate cytological sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with operable indeterminate solitary pulmonary nodules undergoing CT-guided fine-needle aspiration cytology",
+      "timepoint": "Immediately after CT-guided fine-needle aspiration procedure",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0037_01",
+          "estimand": "risk_difference_adequate_sampling_rose_vs_no_rose",
+          "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Sample considered adequate when rich in cellularity; poor or absent cellularity, necrosis, blood-stained, or perilesional material was inadequate.",
+            "intervention_arm": {
+              "label": "Rapid on-site cytologic evaluation",
+              "events": 110,
+              "total": 110
+            },
+            "comparator_arm": {
+              "label": "No rapid on-site cytologic evaluation",
+              "events": 97,
+              "total": 110
+            }
+          },
+          "source_location": {
+            "document_id": "a_0037_01",
+            "page": 2,
+            "source_type": "table",
+            "source_id": "Table 1, FNAC Diagnosis and Performance Parameter",
+            "locator_note": "The randomized groups are immediate cytologic assessment 110/110 adequate versus no immediate cytologic assessment 97/110 adequate (13 inadequate).",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0037_02",
+      "article_id": "a_0037_02",
+      "study_id": "s_0037_02",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate fine-needle aspiration sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Patients with pulmonary nodules or mass lesions undergoing CT-guided transthoracic fine-needle aspiration",
+      "timepoint": "During the index CT-guided fine-needle aspiration procedure",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0037_02",
+          "estimand": "risk_difference_adequate_sampling_rose_vs_no_rose",
+          "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Sample adequate when it had high cellularity; samples with poor or absent cellularity, necrosis, or blood-stained material were inadequate.",
+            "intervention_arm": {
+              "label": "Rapid on-site cytologic evaluation",
+              "events": 48,
+              "total": 48
+            },
+            "comparator_arm": {
+              "label": "No rapid on-site cytologic evaluation",
+              "events": 41,
+              "total": 48
+            }
+          },
+          "source_location": {
+            "document_id": "a_0037_02",
+            "page": 3,
+            "source_type": "table",
+            "source_id": "Table 3, Results of transthoracic fine-needle aspirations",
+            "locator_note": "Uses the prespecified single-pass contrast only: immediate cytological assessment group B 48/48 adequate versus no assessment group A 41/48 adequate. The separate multiple-pass group C is not used.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0037_03",
+      "article_id": "a_0037_03",
+      "study_id": "s_0037_03",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate TBNA specimen",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with mediastinal or hilar adenopathy undergoing flexible bronchoscopy with transbronchial needle aspiration",
+      "timepoint": "At final pathological review of the index bronchoscopy specimens",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0037_03",
+          "estimand": "risk_difference_adequate_sampling_rose_vs_no_rose",
+          "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Specimen adequacy defined as presence of lymphocytes.",
+            "intervention_arm": {
+              "label": "Rapid on-site cytologic evaluation",
+              "events": 32,
+              "total": 34
+            },
+            "comparator_arm": {
+              "label": "No rapid on-site cytologic evaluation",
+              "events": 30,
+              "total": 34
+            }
+          },
+          "source_location": {
+            "document_id": "a_0037_03",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Results text and Table 3, Main Results",
+            "locator_note": "The randomized trial directly states specimen adequacy of 32/34 with ROSE and 30/34 without ROSE.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0037_04",
+      "article_id": "a_0037_04",
+      "study_id": "s_0037_04",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate EBUS-TBNA cytological sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for hilar or mediastinal lesion investigation or lung cancer staging",
+      "timepoint": "Index EBUS-TBNA procedure",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0037_04",
+          "estimand": "risk_difference_adequate_sampling_rose_vs_no_rose",
+          "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Sample adequate when lymphocytes, anthracosis, or a specific diagnosis was identified.",
+            "intervention_arm": {
+              "label": "Rapid on-site cytologic evaluation",
+              "events": 38,
+              "total": 41
+            },
+            "comparator_arm": {
+              "label": "No rapid on-site cytologic evaluation",
+              "events": 32,
+              "total": 40
+            }
+          },
+          "source_location": {
+            "document_id": "a_0037_04",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 2, Adequacy of cytological samples",
+            "locator_note": "The total-patient row reports 38/41 adequate with ROSE and 32/40 adequate without ROSE.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0037_05",
+      "article_id": "a_0037_05",
+      "study_id": "s_0037_05",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Qualified EBUS-TBNA puncture specimen",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Patients with mediastinal or hilar lesions clinically suspected of primary lung cancer undergoing EBUS-TBNA",
+      "timepoint": "After the index EBUS-TBNA procedure",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0037_05",
+          "estimand": "risk_difference_adequate_sampling_rose_vs_no_rose",
+          "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Qualified puncture specimen under the study's specified specimen-qualification criteria.",
+            "intervention_arm": {
+              "label": "Rapid on-site cytologic evaluation",
+              "events": 80,
+              "total": 81
+            },
+            "comparator_arm": {
+              "label": "No rapid on-site cytologic evaluation",
+              "events": 54,
+              "total": 60
+            }
+          },
+          "source_location": {
+            "document_id": "a_0037_05",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Results section 2.5, puncture specimen qualification analysis",
+            "locator_note": "The report states 1 inadequate of 81 with C-ROSE and 6 inadequate of 60 without C-ROSE, yielding 80/81 and 54/60 qualified specimens.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0037_06",
+      "article_id": "a_0037_06",
+      "study_id": "s_0037_06",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Madan et al. (2017)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_07",
+      "article_id": "a_0037_07",
+      "study_id": "s_0037_07",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Oki et al. (2013)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_08",
+      "article_id": "a_0037_08",
+      "study_id": "s_0037_08",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Trisolini et al. (2015)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_09",
+      "article_id": "a_0037_09",
+      "study_id": "s_0037_09",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Trisolini et al. (2011)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_10",
+      "article_id": "a_0037_10",
+      "study_id": "s_0037_10",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Murakami et al. (2014)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_11",
+      "article_id": "a_0037_11",
+      "study_id": "s_0037_11",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Li et al. (2014)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_12",
+      "article_id": "a_0037_12",
+      "study_id": "s_0037_12",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Chin et al. (2002)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_13",
+      "article_id": "a_0037_13",
+      "study_id": "s_0037_13",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Bruno et al. (2013)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_14",
+      "article_id": "a_0037_14",
+      "study_id": "s_0037_14",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Gianella et al. (2018)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_15",
+      "article_id": "a_0037_15",
+      "study_id": "s_0037_15",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Mondoni et al. (2013)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_16",
+      "article_id": "a_0037_16",
+      "study_id": "s_0037_16",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Baram et al. (2005)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_17",
+      "article_id": "a_0037_17",
+      "study_id": "s_0037_17",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Chen et al. (2015)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_18",
+      "article_id": "a_0037_18",
+      "study_id": "s_0037_18",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Diette et al. (2000)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_19",
+      "article_id": "a_0037_19",
+      "study_id": "s_0037_19",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Austin et al. (1993)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_20",
+      "article_id": "a_0037_20",
+      "study_id": "s_0037_20",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Saleh et al. (1996)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_21",
+      "article_id": "a_0037_21",
+      "study_id": "s_0037_21",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Davenport et al. (1990)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_22",
+      "article_id": "a_0037_22",
+      "study_id": "s_0037_22",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Collins et al. (2013)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_23",
+      "article_id": "a_0037_23",
+      "study_id": "s_0037_23",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Griffin et al. (2011)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_24",
+      "article_id": "a_0037_24",
+      "study_id": "s_0037_24",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Guo et al. (2016)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_25",
+      "article_id": "a_0037_25",
+      "study_id": "s_0037_25",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Chaiyakul (2018)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_26",
+      "article_id": "a_0037_26",
+      "study_id": "s_0037_26",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Wong et al. (2014)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    },
+    {
+      "report_unit_id": "ru_0037_27",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "adequate_sampling_with_rapid_onsite_evaluation",
+      "exposure_measure": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": "adequate_sampling_with_rapid_onsite_evaluation",
+        "label": "Adequate diagnostic sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Kern et al. (2012)",
+      "timepoint": "Index diagnostic procedure or source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": [],
+      "source_only_reason": "This known-included report is retained in the extraction corpus but is not one of the five target-review adequate-sampling contributors. No complete source-supported adequate-sampling record is assigned to the current single primary analysis."
+    }
+  ]
+}

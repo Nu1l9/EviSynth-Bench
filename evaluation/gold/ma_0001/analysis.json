@@ -1,0 +1,385 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0001",
+  "task_type": "analysis",
+  "gold_id": "ma_0001_analysis_gold_v1",
+  "provenance": {
+    "target_review_document_id": "review_ma_0001",
+    "annotation_status": "adjudicated"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "main_pr_any_cv",
+      "selected_candidate_ids": [
+        "ce_0001",
+        "ce_0002",
+        "ce_0003",
+        "ce_0004",
+        "ce_0005",
+        "ce_0007",
+        "ce_0009",
+        "ce_0011",
+        "ce_0012",
+        "ce_0013",
+        "ce_0014",
+        "ce_0015",
+        "ce_0016",
+        "ce_0017",
+        "ce_0018",
+        "ce_0019",
+        "ce_0020",
+        "ce_0021",
+        "ce_0022",
+        "ce_0023",
+        "ce_0024",
+        "ce_0025",
+        "ce_0026",
+        "ce_0028",
+        "ce_0029",
+        "ce_0031",
+        "ce_0033",
+        "ce_0035",
+        "ce_0037",
+        "ce_0038",
+        "ce_0039",
+        "ce_0040",
+        "ce_0041"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0001_hvl",
+        "ee_0002_hvl",
+        "ee_0003_hvl",
+        "ee_0004_hvl",
+        "ee_0005_hvl",
+        "ee_0006_hvl",
+        "ee_0007_hvl",
+        "ee_0008_hvl",
+        "ee_0009_hvl",
+        "ee_0010_hvl",
+        "ee_0011_hvl",
+        "ee_0012_hvl",
+        "ee_0013_hvl",
+        "ee_0014_hvl",
+        "ee_0015_hvl",
+        "ee_0016_hvl",
+        "ee_0017_hvl",
+        "ee_0018_hvl",
+        "ee_0019_hvl",
+        "ee_0020_hvl",
+        "ee_0021_hvl",
+        "ee_0022_hvl",
+        "ee_0023_hvl",
+        "ee_0024_hvl",
+        "ee_0025_hvl",
+        "ee_0026_hvl",
+        "ee_0027_hvl",
+        "ee_0028_hvl",
+        "ee_0029_hvl",
+        "ee_0030_hvl",
+        "ee_0031_hvl",
+        "ee_0032_hvl",
+        "ee_0033_hvl"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_any_cv",
+          "outcome_group": "any_cardiovascular_event",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.27,
+            "ci_lower": 1.17,
+            "ci_upper": 1.38,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0001",
+            "ce_0002",
+            "ce_0003",
+            "ce_0004",
+            "ce_0005",
+            "ce_0007",
+            "ce_0009",
+            "ce_0011",
+            "ce_0012",
+            "ce_0013",
+            "ce_0014",
+            "ce_0015",
+            "ce_0016",
+            "ce_0017",
+            "ce_0018",
+            "ce_0019",
+            "ce_0020",
+            "ce_0021",
+            "ce_0022",
+            "ce_0023",
+            "ce_0024",
+            "ce_0025",
+            "ce_0026",
+            "ce_0028",
+            "ce_0029",
+            "ce_0031",
+            "ce_0033",
+            "ce_0035",
+            "ce_0037",
+            "ce_0038",
+            "ce_0039",
+            "ce_0040",
+            "ce_0041"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0001_hvl",
+            "ee_0002_hvl",
+            "ee_0003_hvl",
+            "ee_0004_hvl",
+            "ee_0005_hvl",
+            "ee_0006_hvl",
+            "ee_0007_hvl",
+            "ee_0008_hvl",
+            "ee_0009_hvl",
+            "ee_0010_hvl",
+            "ee_0011_hvl",
+            "ee_0012_hvl",
+            "ee_0013_hvl",
+            "ee_0014_hvl",
+            "ee_0015_hvl",
+            "ee_0016_hvl",
+            "ee_0017_hvl",
+            "ee_0018_hvl",
+            "ee_0019_hvl",
+            "ee_0020_hvl",
+            "ee_0021_hvl",
+            "ee_0022_hvl",
+            "ee_0023_hvl",
+            "ee_0024_hvl",
+            "ee_0025_hvl",
+            "ee_0026_hvl",
+            "ee_0027_hvl",
+            "ee_0028_hvl",
+            "ee_0029_hvl",
+            "ee_0030_hvl",
+            "ee_0031_hvl",
+            "ee_0032_hvl",
+            "ee_0033_hvl"
+          ],
+          "heterogeneity_i2": 97.28
+        }
+      ]
+    },
+    {
+      "analysis_id": "main_pr_cv_death",
+      "selected_candidate_ids": [
+        "ce_0009",
+        "ce_0020",
+        "ce_0031",
+        "ce_0037",
+        "ce_0038",
+        "ce_0039"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0007_hvl",
+        "ee_0017_hvl",
+        "ee_0026_hvl",
+        "ee_0029_hvl",
+        "ee_0030_hvl",
+        "ee_0031_hvl"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_cv_death",
+          "outcome_group": "cardiovascular_death",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.29,
+            "ci_lower": 1.03,
+            "ci_upper": 1.6,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0009",
+            "ce_0020",
+            "ce_0031",
+            "ce_0037",
+            "ce_0038",
+            "ce_0039"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0007_hvl",
+            "ee_0017_hvl",
+            "ee_0026_hvl",
+            "ee_0029_hvl",
+            "ee_0030_hvl",
+            "ee_0031_hvl"
+          ],
+          "heterogeneity_i2": 55.16
+        }
+      ]
+    },
+    {
+      "analysis_id": "main_pr_mi",
+      "selected_candidate_ids": [
+        "ce_0003",
+        "ce_0005",
+        "ce_0011",
+        "ce_0015",
+        "ce_0022",
+        "ce_0024",
+        "ce_0035",
+        "ce_0040"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0003_hvl",
+        "ee_0005_hvl",
+        "ee_0008_hvl",
+        "ee_0012_hvl",
+        "ee_0019_hvl",
+        "ee_0021_hvl",
+        "ee_0028_hvl",
+        "ee_0032_hvl"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_mi",
+          "outcome_group": "myocardial_infarction",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.32,
+            "ci_lower": 1.09,
+            "ci_upper": 1.59,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0003",
+            "ce_0005",
+            "ce_0011",
+            "ce_0015",
+            "ce_0022",
+            "ce_0024",
+            "ce_0035",
+            "ce_0040"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0003_hvl",
+            "ee_0005_hvl",
+            "ee_0008_hvl",
+            "ee_0012_hvl",
+            "ee_0019_hvl",
+            "ee_0021_hvl",
+            "ee_0028_hvl",
+            "ee_0032_hvl"
+          ],
+          "heterogeneity_i2": 97.14
+        }
+      ]
+    },
+    {
+      "analysis_id": "main_pr_stroke",
+      "selected_candidate_ids": [
+        "ce_0007",
+        "ce_0012",
+        "ce_0018",
+        "ce_0021",
+        "ce_0023",
+        "ce_0025",
+        "ce_0041"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0006_hvl",
+        "ee_0009_hvl",
+        "ee_0015_hvl",
+        "ee_0018_hvl",
+        "ee_0020_hvl",
+        "ee_0022_hvl",
+        "ee_0033_hvl"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_stroke",
+          "outcome_group": "stroke",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.21,
+            "ci_lower": 1.19,
+            "ci_upper": 1.24,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0007",
+            "ce_0012",
+            "ce_0018",
+            "ce_0021",
+            "ce_0023",
+            "ce_0025",
+            "ce_0041"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0006_hvl",
+            "ee_0009_hvl",
+            "ee_0015_hvl",
+            "ee_0018_hvl",
+            "ee_0020_hvl",
+            "ee_0022_hvl",
+            "ee_0033_hvl"
+          ],
+          "heterogeneity_i2": 0.06
+        }
+      ]
+    },
+    {
+      "analysis_id": "main_pr_composite",
+      "selected_candidate_ids": [
+        "ce_0044",
+        "ce_0045",
+        "ce_0046",
+        "ce_0047",
+        "ce_0049",
+        "ce_0050",
+        "ce_0051",
+        "ce_0053"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0036_hvl",
+        "ee_0037_hvl",
+        "ee_0038_hvl",
+        "ee_0039_hvl",
+        "ee_0040_hvl",
+        "ee_0041_hvl",
+        "ee_0042_hvl",
+        "ee_0043_hvl"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_composite",
+          "outcome_group": "composite_cardiovascular_outcome",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.36,
+            "ci_lower": 1.08,
+            "ci_upper": 1.73,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0044",
+            "ce_0045",
+            "ce_0046",
+            "ce_0047",
+            "ce_0049",
+            "ce_0050",
+            "ce_0051",
+            "ce_0053"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0036_hvl",
+            "ee_0037_hvl",
+            "ee_0038_hvl",
+            "ee_0039_hvl",
+            "ee_0040_hvl",
+            "ee_0041_hvl",
+            "ee_0042_hvl",
+            "ee_0043_hvl"
+          ],
+          "heterogeneity_i2": 92.41
+        }
+      ]
+    }
+  ]
+}

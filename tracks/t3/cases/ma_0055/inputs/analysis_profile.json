@@ -1,0 +1,36 @@
+{
+  "case_id": "ma_0055",
+  "analysis_profile_id": "ma_0055_all_cause_mortality_analysis_profile_v1",
+  "scope": "single pre-specified primary prognostic-factor synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_all_cause_mortality",
+      "pooled_result_id": "pr_0055_all_cause_mortality",
+      "outcome_group": "all-cause mortality",
+      "target_id": "all_cause_mortality",
+      "eligible_outcome_codes": [
+        "all_cause_mortality"
+      ],
+      "eligible_data_families": [
+        "binary_exposure_outcome_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "lge_or_source_defined_fibrosis_present_vs_absent_all_cause_mortality"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select a quantitatively complete cohort comparison with explicit all-cause death counts for both source-defined exposure groups.",
+          "Exposure may be LGE or a source-defined myocardial-fibrosis representation; retain its reported definition.",
+          "Do not select a composite endpoint merely because it includes death, transplantation, heart-failure hospitalization, ICD therapy, or arrhythmia.",
+          "Do not use target-review values, annualized event rates, or article-specific curator labels."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

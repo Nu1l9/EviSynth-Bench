@@ -1,0 +1,115 @@
+{
+  "case_id": "ma_0086",
+  "positive_count": 2,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_200701",
+      "title": "A Randomized, Controlled Trial of Tonsillectomy in Periodic Fever, Aphthous Stomatitis, Pharyngitis, and Adenitis Syndrome",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0086/candidate_001.pdf",
+      "source_filename": "a_200701.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1016/j.jpeds.2007.03.015"
+    },
+    {
+      "candidate_id": "a_200902",
+      "title": "Effectiveness of Adenotonsillectomy in PFAPA Syndrome: A Randomized Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0086/candidate_005.pdf",
+      "source_filename": "a_200902.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1016/j.jpeds.2009.02.038"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "PFAPA syndrome: a review on treatment and outcome",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_009.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1186/s12969-016-0101-9"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Clinical observation of soft palate-pharyngoplasty in the treatment of obstructive sleep apnea hypopnea syndrome in children",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_006.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.12998/wjcc.v8.i4.679"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Epidemiology and clinical features of PFAPA: a retrospective cohort study of 336 patients in western Sweden",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_002.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1186/s12969-022-00737-z"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "PFAPA Syndrome: Clinical, Laboratory and Therapeutic Features in a Single-Centre Cohort",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_011.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.2147/ijgm.s373942"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Adenotonsillectomy Versus Watchful Waiting for Children with Obstructive Sleep Apnea Syndrome: A Systematic Review with Meta-Analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_012.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1007/s12070-024-04738-0"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Periodic fever, aphthous stomatitis, pharyngitis, and adenitis (PFAPA) syndrome and IgA nephropathy",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_004.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1007/s00467-012-2295-5"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Colchicine Effectiveness and Safety in Periodic Fever, Aphthous Stomatitis, Pharyngitis, and Adenitis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_003.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.3389/fped.2021.759664"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Partial intracapsular tonsillectomy in the treatment of pediatric obstructive sleep apnea/hypopnea syndrome: a prospective study with 5-year follow-up",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_008.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1007/s00405-021-07119-3"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Colchicine treatment in children with periodic fever, aphthous stomatitis, pharyngitis, and cervical adenitis (PFAPA) syndrome: A multicenter study in Spain",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_010.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.5152/eurjrheum.2020.20102"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Does having MEFV gene sequence variants affect the clinical course and colchicine response in children with PFAPA syndrome?",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0086/candidate_007.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1007/s00431-022-04709-z"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": "ma_0041",
+  "task_id": "ma_0041_full_analysis_main_outcomes_v2",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "psi_vs_standard_version",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "psi_vs_standard_inclination",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "psi_vs_standard_offset",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

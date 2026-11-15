@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0017",
+  "task_id": "ma_0017_analysis_evt_utilization_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_evt_utilization",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

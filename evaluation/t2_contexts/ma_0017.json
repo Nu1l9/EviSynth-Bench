@@ -1,0 +1,88 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0017",
+    "task_id": "ma_0017_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among source-defined acute or ischemic stroke cohorts, did the odds of receiving endovascular thrombectomy differ during the COVID-19 pandemic relative to the source-defined pre-pandemic reference period?",
+    "pico": {
+      "population": "Source-defined acute or ischemic stroke cohorts",
+      "exposure": "COVID-19 pandemic period",
+      "comparator": "Source-defined pre-pandemic reference period",
+      "outcomes": [
+        "Receipt of endovascular thrombectomy",
+        "mechanical thrombectomy",
+        "EVT",
+        "endovascular treatment"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "odds_of_receiving_endovascular_thrombectomy_in_the_source_defined_acute_stroke_cohort"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "endovascular_thrombectomy_during_covid19",
+          "outcome": {
+            "description": "Receipt of endovascular thrombectomy",
+            "aliases": [
+              "mechanical thrombectomy",
+              "EVT",
+              "endovascular treatment"
+            ]
+          },
+          "accepted_data_families": [
+            "two_group_event_counts"
+          ],
+          "preferred_effect_measures": [
+            "OR"
+          ],
+          "estimands": [
+            "odds_of_receiving_endovascular_thrombectomy_in_the_source_defined_acute_stroke_cohort"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "One source-defined pandemic versus reference cohort contrast per report",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "Extract the number receiving EVT and total cohort size for both periods, with a verified table or explicit-results anchor. Do not use target-review forest estimates or infer denominators from percentages."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0017_01",
+        "a_0017_02",
+        "a_0017_03",
+        "a_0017_04",
+        "a_0017_05",
+        "a_0017_06",
+        "a_0017_07",
+        "a_0017_08"
+      ],
+      "study_ids": {
+        "a_0017_01": "s_0017_01",
+        "a_0017_02": "s_0017_02",
+        "a_0017_03": "s_0017_03",
+        "a_0017_04": "s_0017_04",
+        "a_0017_05": "s_0017_05",
+        "a_0017_06": "s_0017_06",
+        "a_0017_07": "s_0017_07",
+        "a_0017_08": "s_0017_08"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

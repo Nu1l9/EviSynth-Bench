@@ -1,0 +1,410 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/extraction-protocol.schema.json",
+  "title": "Extraction-only external protocol",
+  "type": "object",
+  "required": [
+    "protocol_id",
+    "protocol_version",
+    "case_id",
+    "task_scope",
+    "review_question",
+    "pico",
+    "eligible_study_designs",
+    "targets",
+    "source_policy",
+    "output_contract"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "protocol_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "protocol_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "task_scope": {
+      "const": "known_included_report_extraction"
+    },
+    "review_question": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pico": {
+      "type": "object",
+      "required": [
+        "population",
+        "intervention_or_exposure",
+        "comparator"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "population": {
+          "$ref": "#/$defs/concept"
+        },
+        "intervention_or_exposure": {
+          "$ref": "#/$defs/concept"
+        },
+        "comparator": {
+          "$ref": "#/$defs/concept"
+        }
+      }
+    },
+    "eligible_study_designs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "targets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/target"
+      }
+    },
+    "source_policy": {
+      "type": "object",
+      "required": [
+        "allowed_representations",
+        "allowed_source_components",
+        "forbidden_evidence_sources",
+        "external_evidence_allowed",
+        "verbatim_support_required"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "allowed_representations": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "pdf",
+              "html",
+              "markdown",
+              "content_list",
+              "layout"
+            ]
+          }
+        },
+        "allowed_source_components": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "main_text",
+              "table",
+              "figure",
+              "appendix",
+              "supplement"
+            ]
+          }
+        },
+        "forbidden_evidence_sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "external_evidence_allowed": {
+          "type": "boolean"
+        },
+        "verbatim_support_required": {
+          "type": "boolean"
+        }
+      }
+    },
+    "output_contract": {
+      "type": "object",
+      "required": [
+        "required_fields",
+        "preserve_source_units",
+        "preserve_missingness",
+        "allow_unscored_source_findings"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "required_fields": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "preserve_source_units": {
+          "type": "boolean"
+        },
+        "preserve_missingness": {
+          "type": "boolean"
+        },
+        "allow_unscored_source_findings": {
+          "type": "boolean"
+        }
+      }
+    },
+    "human_escalation_rules": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "concept": {
+      "type": "object",
+      "required": [
+        "description",
+        "aliases"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "required": [
+        "target_id",
+        "outcome",
+        "comparison",
+        "population_or_subgroup",
+        "timepoint_policy",
+        "accepted_data_families",
+        "preferred_effect_measures",
+        "quantitative_use_policy"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "target_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "outcome": {
+          "$ref": "#/$defs/concept"
+        },
+        "comparison": {
+          "type": "string",
+          "minLength": 1
+        },
+        "population_or_subgroup": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timepoint_policy": {
+          "type": "object",
+          "required": [
+            "rule"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "rule": {
+              "type": "string",
+              "minLength": 1
+            },
+            "preferred": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "allowed": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "accepted_data_families": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "binary_arm_counts",
+              "continuous_arm_summary",
+              "event_counts_with_person_time",
+              "time_to_event",
+              "adjusted_ratio_effect",
+              "diagnostic_2x2",
+              "proportion",
+              "correlation",
+              "percentage_only",
+              "other"
+            ]
+          }
+        },
+        "preferred_effect_measures": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "OR",
+              "RR",
+              "HR",
+              "IRR",
+              "MD",
+              "SMD",
+              "RD",
+              "COR",
+              "BETA",
+              "OTHER"
+            ]
+          }
+        },
+        "estimands": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "effect_selection_rule": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "candidate_capture_policy": {
+          "type": "object",
+          "required": [
+            "record_scope",
+            "window_selection",
+            "selection_deferred"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "record_scope": {
+              "enum": [
+                "all_source_reported_relevant_candidates"
+              ]
+            },
+            "window_selection": {
+              "enum": [
+                "ranked_relevant_windows",
+                "all_relevant_source_windows"
+              ]
+            },
+            "selection_deferred": {
+              "const": true
+            }
+          }
+        },
+        "data_contract": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "raw_data_fields": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "field_definitions": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "poolability_required_fields": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "allowed_source_derivations": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "derivation_preconditions": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "derivation_instructions": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "source_aggregation_rules": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "integrity_checks": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "quantitative_use_policy": {
+          "enum": [
+            "exact_source_data_required",
+            "source_reported_effect_allowed",
+            "source_only_when_not_exact"
+          ]
+        },
+        "extraction_notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

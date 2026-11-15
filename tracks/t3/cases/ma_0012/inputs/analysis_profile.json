@@ -1,0 +1,39 @@
+{
+  "case_id": "ma_0012",
+  "analysis_profile_id": "ma_0012_main_analysis_profile_adjudicated_v13",
+  "analyses": [
+    {
+      "analysis_id": "main_pr_invasive_pneumococcal_disease",
+      "pooled_result_id": "pr_invasive_pneumococcal_disease",
+      "outcome_group": "Invasive pneumococcal disease",
+      "target_id": "invasive_pneumococcal_disease",
+      "eligible_outcome_codes": [
+        "invasive_pneumococcal_disease"
+      ],
+      "eligible_data_families": [
+        "reported_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "OR",
+        "RR"
+      ],
+      "estimands": [
+        "adjusted_asthma_vs_no_known_risk_factor"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+          "Treat each source-defined population stratum and non-overlapping calendar period as a separate evidence context; within one context, select no more than one competing estimate.",
+          "Age strata may both contribute only when their source-defined populations do not overlap. Separately reported calendar periods may both contribute only when the source does not identify overlapping participants.",
+          "Exclude a candidate from joint quantitative synthesis when its source metadata explicitly identifies an overlapping cohort with another eligible source record.",
+          "Use the source-reported effect representation and do not relabel an odds ratio as a risk or rate ratio, or vice versa.",
+          "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+          "Exclude source-only and quantitatively incomplete candidates from quantitative synthesis."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

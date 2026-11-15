@@ -1,0 +1,101 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0025",
+    "task_id": "ma_0025_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among patients hospitalized with severe influenza, do convalescent plasma or hyperimmune immunoglobulin products reduce all-cause mortality versus a control product or placebo?",
+    "pico": {
+      "population": "Adults or children hospitalized with severe influenza",
+      "exposure": "Convalescent plasma or hyperimmune intravenous immunoglobulin",
+      "comparator": "Control plasma, intravenous immunoglobulin, or placebo",
+      "outcomes": [
+        "All-cause mortality",
+        "death",
+        "deaths",
+        "mortality"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+          "outcome": {
+            "description": "All-cause mortality",
+            "aliases": [
+              "death",
+              "deaths",
+              "mortality"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RR"
+          ],
+          "estimands": [
+            "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {
+            "raw_data_fields": [
+              "intervention_arm.events",
+              "intervention_arm.total",
+              "comparator_arm.events",
+              "comparator_arm.total",
+              "outcome_definition"
+            ],
+            "poolability_required_fields": [
+              "intervention_arm.events",
+              "intervention_arm.total",
+              "comparator_arm.events",
+              "comparator_arm.total"
+            ],
+            "integrity_checks": [
+              "Do not use target-review forest counts or effects.",
+              "Do not mix randomised and post-randomisation analysis populations within a study.",
+              "Use a documented 0.5 correction only when a 2x2 table has a zero cell."
+            ]
+          },
+          "quantitative_usability": null,
+          "extraction_notes": [
+            "Extract counts, denominators, cohort and timepoint only; effect calculation belongs to the calculator."
+          ],
+          "candidate_capture_policy": {
+            "record_scope": "Capture source-reported mortality events and denominators for an eligible immune-product versus control contrast; selection is deferred.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "exact_source_data_required"
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "Extract counts, denominators, cohort and timepoint only; effect calculation belongs to the calculator.",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0025_01",
+        "a_0025_02",
+        "a_0025_03",
+        "a_0025_04"
+      ],
+      "study_ids": {
+        "a_0025_01": "s_0025_01",
+        "a_0025_02": "s_0025_02",
+        "a_0025_03": "s_0025_03",
+        "a_0025_04": "s_0025_04"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

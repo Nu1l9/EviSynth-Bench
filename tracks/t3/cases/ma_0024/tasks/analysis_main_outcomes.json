@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../schemas/task.schema.json",
+  "case_id": "ma_0024",
+  "task_id": "ma_0024_analysis_dr_accuracy_v1",
+  "task_type": "analysis",
+  "screening_stage": "not_applicable",
+  "task_definition": "Use the public PICO declarations and evidence candidates to identify eligible independent evidence, then produce a justified quantitative synthesis where possible.",
+  "input_files": [
+    "../inputs/extraction_protocol.json",
+    "../inputs/analysis_profile.json",
+    "../inputs/analysis_extensions.json",
+    "../inputs/analysis_evidence_candidates.json"
+  ],
+  "allowed_inputs": {
+    "document_ids": [
+      "a_0024_01",
+      "a_0024_02"
+    ],
+    "representations": [],
+    "forbidden_document_ids": [
+      "review_ma_0024"
+    ]
+  },
+  "evaluation": {
+    "metrics": [
+      "selection_f1",
+      "pooled_numeric_accuracy",
+      "pooled_composition_accuracy"
+    ],
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    }
+  },
+  "submission_contract": {
+    "schema": "../../../../../schemas/submission.schema.json",
+    "task_type": "analysis"
+  },
+  "extraction_protocol": "../inputs/extraction_protocol.json",
+  "target_scope": {
+    "analysis_profile_id": "ma_0024_dr_diagnostic_accuracy_analysis_profile_v1",
+    "analysis_ids": [
+      "primary_dr_detection_sensitivity",
+      "primary_dr_detection_specificity"
+    ]
+  }
+}

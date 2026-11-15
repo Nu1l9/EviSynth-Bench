@@ -1,0 +1,413 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/gold.schema.json",
+  "title": "Meta-analysis bench gold answer",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_type",
+    "provenance"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "task_type": {
+      "enum": [
+        "screening",
+        "extraction",
+        "end_to_end"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "target_review_document_id"
+      ],
+      "properties": {
+        "target_review_document_id": {
+          "type": "string"
+        },
+        "target_supplement_document_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "annotation_status": {
+          "enum": [
+            "draft",
+            "adjudicated",
+            "released"
+          ]
+        }
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/screening_decision"
+      }
+    },
+    "report_units": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/report_unit"
+      }
+    },
+    "supplementary_unscored_source_findings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unscored_source_finding"
+      }
+    },
+    "pooled_results": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pooled_result"
+      }
+    }
+  },
+  "$defs": {
+    "screening_decision": {
+      "type": "object",
+      "required": [
+        "article_id",
+        "decision"
+      ],
+      "properties": {
+        "article_id": {
+          "type": "string"
+        },
+        "decision": {
+          "enum": [
+            "include",
+            "exclude"
+          ]
+        },
+        "primary_reason_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "secondary_reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "report_unit": {
+      "type": "object",
+      "required": [
+        "report_unit_id",
+        "article_id",
+        "outcome",
+        "population_or_subgroup",
+        "effect_estimates"
+      ],
+      "properties": {
+        "report_unit_id": {
+          "type": "string",
+          "pattern": "^ru_[0-9]{4,}$"
+        },
+        "article_id": {
+          "type": "string"
+        },
+        "study_id": {
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "data_family": {
+          "type": "string"
+        },
+        "quantitative_usability": {
+          "enum": [
+            "poolable",
+            "quantitative_not_pooled",
+            "source_only"
+          ]
+        },
+        "exposure_measure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome": {
+          "type": "object"
+        },
+        "population_or_subgroup": {
+          "type": "string"
+        },
+        "effect_estimates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/effect_estimate"
+          },
+          "minItems": 0
+        },
+        "analysis_memberships": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "quantitative_usability": {
+                "const": "source_only"
+              }
+            },
+            "required": [
+              "quantitative_usability"
+            ]
+          },
+          "else": {
+            "properties": {
+              "effect_estimates": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "unscored_source_finding": {
+      "type": "object",
+      "required": [
+        "finding_id",
+        "article_id",
+        "target_id",
+        "outcome",
+        "data_family",
+        "source_data",
+        "quantitative_usability",
+        "source_location",
+        "reason_not_scored"
+      ],
+      "properties": {
+        "finding_id": {
+          "type": "string",
+          "pattern": "^uf_[0-9]{4,}_[a-z0-9_]+$"
+        },
+        "article_id": {
+          "type": "string"
+        },
+        "study_id": {
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "outcome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data_family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_data": {
+          "type": "object"
+        },
+        "quantitative_usability": {
+          "const": "source_only"
+        },
+        "source_location": {
+          "$ref": "#/$defs/source_location"
+        },
+        "reason_not_scored": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "effect_estimate": {
+      "type": "object",
+      "required": [
+        "effect_estimate_id",
+        "estimand",
+        "used_effect",
+        "source_location"
+      ],
+      "properties": {
+        "effect_estimate_id": {
+          "type": "string",
+          "pattern": "^ee_[0-9]{4,}_[a-z0-9_]+$"
+        },
+        "estimand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "used_effect": {
+          "$ref": "#/$defs/effect"
+        },
+        "source_data": {
+          "type": "object"
+        },
+        "source_location": {
+          "$ref": "#/$defs/source_location"
+        }
+      }
+    },
+    "pooled_result": {
+      "type": "object",
+      "required": [
+        "pooled_result_id",
+        "outcome_group",
+        "effect",
+        "member_effect_estimate_ids"
+      ],
+      "properties": {
+        "pooled_result_id": {
+          "type": "string"
+        },
+        "outcome_group": {
+          "type": "string"
+        },
+        "effect": {
+          "$ref": "#/$defs/effect"
+        },
+        "member_effect_estimate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "heterogeneity_i2": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "source_location": {
+          "$ref": "#/$defs/source_location"
+        }
+      }
+    },
+    "effect": {
+      "type": "object",
+      "required": [
+        "effect_type",
+        "value",
+        "ci_lower",
+        "ci_upper",
+        "direction"
+      ],
+      "properties": {
+        "effect_type": {
+          "enum": [
+            "OR",
+            "RR",
+            "HR",
+            "IRR",
+            "MD",
+            "SMD",
+            "RD",
+            "COR",
+            "BETA",
+            "OTHER"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "ci_lower": {
+          "type": "number"
+        },
+        "ci_upper": {
+          "type": "number"
+        },
+        "direction": {
+          "enum": [
+            "increased_risk",
+            "decreased_risk",
+            "no_clear_difference"
+          ]
+        }
+      }
+    },
+    "source_location": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "page",
+        "source_type",
+        "locator_status"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_type": {
+          "enum": [
+            "table",
+            "figure",
+            "paragraph",
+            "supplement",
+            "appendix",
+            "other"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locator_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locator_status": {
+          "enum": [
+            "verified",
+            "needs_manual_review"
+          ]
+        },
+        "content_list_item_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "content_list_segment_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bbox": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    }
+  }
+}

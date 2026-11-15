@@ -1,0 +1,277 @@
+{
+  "case_id": "ma_0046",
+  "positive_count": 20,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_046001",
+      "title": "Long-term clinical impact of permanent cardiac pacing after transcatheter aortic valve implantation with the CoreValve prosthesis: a single center experience",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_017.pdf",
+      "source_filename": "a_046001.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1093/europace/eux046"
+    },
+    {
+      "candidate_id": "a_046002",
+      "title": "Impact of permanent pacemaker on mortality after transcatheter aortic valve implantation: the PRAGMATIC (Pooled Rotterdam-Milan-Toulouse in Collaboration) Pacemaker substudy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_016.pdf",
+      "source_filename": "a_046002.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.4244/eijv12i9a192"
+    },
+    {
+      "candidate_id": "a_046003",
+      "title": "Outcomes following pacemaker implantation after transcatheter aortic valve implantation with CoreValve® devices: Results from the FRANCE 2 Registry",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_009.pdf",
+      "source_filename": "a_046003.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1002/ccd.25818"
+    },
+    {
+      "candidate_id": "a_046004",
+      "title": "Predictors and Clinical Outcomes of Permanent Pacemaker Implantation After Transcatheter Aortic Valve Replacement",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_021.pdf",
+      "source_filename": "a_046004.pdf",
+      "runtime_article_id": "candidate_021",
+      "doi": "10.1016/j.jcin.2014.07.022"
+    },
+    {
+      "candidate_id": "a_046005",
+      "title": "Clinical impact of a new left bundle branch block following TAVI implantation: 1-year results of the TAVIK cohort",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_011.pdf",
+      "source_filename": "a_046005.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1007/s00392-014-0791-2"
+    },
+    {
+      "candidate_id": "a_046006",
+      "title": "Safety of a conservative strategy of permanent pacemaker implantation after transcatheter aortic CoreValve implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_008.pdf",
+      "source_filename": "a_046006.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1016/j.ahj.2011.12.009"
+    },
+    {
+      "candidate_id": "a_046007",
+      "title": "Hemodynamic Impact and Outcome of Permanent Pacemaker Implantation Following Transcatheter Aortic Valve Implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_023.pdf",
+      "source_filename": "a_046007.pdf",
+      "runtime_article_id": "candidate_023",
+      "doi": "10.1016/j.amjcard.2013.09.030"
+    },
+    {
+      "candidate_id": "a_046008",
+      "title": "Utility of Invasive Electrophysiology Studies in Patients With Severe Aortic Stenosis Undergoing Transcatheter Aortic Valve Implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_005.pdf",
+      "source_filename": "a_046008.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1016/j.amjcard.2018.02.015"
+    },
+    {
+      "candidate_id": "a_046009",
+      "title": "Impact of Permanent Pacemaker Implantation on Clinical Outcome Among Patients Undergoing Transcatheter Aortic Valve Implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_010.pdf",
+      "source_filename": "a_046009.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1016/j.jacc.2012.03.054"
+    },
+    {
+      "candidate_id": "a_046010",
+      "title": "Incidence, Predictors, and Outcomes of Permanent Pacemaker Implantation Following Transcatheter Aortic Valve Replacement",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_030.pdf",
+      "source_filename": "a_046010.pdf",
+      "runtime_article_id": "candidate_030",
+      "doi": "10.1016/j.jcin.2016.07.026"
+    },
+    {
+      "candidate_id": "a_046011",
+      "title": "Long-Term Outcomes in Patients With New Permanent Pacemaker Implantation Following Transcatheter Aortic Valve Replacement",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_028.pdf",
+      "source_filename": "a_046011.pdf",
+      "runtime_article_id": "candidate_028",
+      "doi": "10.1016/j.jcin.2017.10.032"
+    },
+    {
+      "candidate_id": "a_046012",
+      "title": "Conduction recovery and avoidance of permanent pacing after transcatheter aortic valve implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_022.pdf",
+      "source_filename": "a_046012.pdf",
+      "runtime_article_id": "candidate_022",
+      "doi": "10.1016/j.jjcc.2017.06.007"
+    },
+    {
+      "candidate_id": "a_046013",
+      "title": "Effect of permanent pacemaker on mortality after transcatheter aortic valve replacement",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_019.pdf",
+      "source_filename": "a_046013.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1080/14017431.2016.1236982"
+    },
+    {
+      "candidate_id": "a_046014",
+      "title": "Incidence of new-onset left bundle branch block and predictors of new permanent pacemaker following transcatheter aortic valve replacement with the Portico valve",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_025.pdf",
+      "source_filename": "a_046014.pdf",
+      "runtime_article_id": "candidate_025",
+      "doi": "10.1093/ejcts/ezy078"
+    },
+    {
+      "candidate_id": "a_046015",
+      "title": "Severe conduction defects requiring permanent pacemaker implantation in patients with a new-onset left bundle branch block after transcatheter aortic valve implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_002.pdf",
+      "source_filename": "a_046015.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1093/europace/euw174"
+    },
+    {
+      "candidate_id": "a_046016",
+      "title": "Ventricular Conduction Defects After Transcatheter Aortic Valve Implantation: A Single‐Institute Analysis",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_006.pdf",
+      "source_filename": "a_046016.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1111/aor.12393"
+    },
+    {
+      "candidate_id": "a_046017",
+      "title": "Transcatheter Aortic Valve Implantation and Requirements of Pacing Over Time",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_003.pdf",
+      "source_filename": "a_046017.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1111/pace.12104"
+    },
+    {
+      "candidate_id": "a_046018",
+      "title": "Left Bundle-Branch Block Induced by Transcatheter Aortic Valve Implantation Increases Risk of Death",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_020.pdf",
+      "source_filename": "a_046018.pdf",
+      "runtime_article_id": "candidate_020",
+      "doi": "10.1161/circulationaha.112.101055"
+    },
+    {
+      "candidate_id": "a_046019",
+      "title": "Permanent Pacemaker Implantation Following Transcatheter Aortic Valve Implantation: Impact on Late Clinical Outcomes and Left Ventricular Function",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_029.pdf",
+      "source_filename": "a_046019.pdf",
+      "runtime_article_id": "candidate_029",
+      "doi": "10.1161/CIRCULATIONAHA.113.005479"
+    },
+    {
+      "candidate_id": "a_046020",
+      "title": "Permanent pacemaker implantation after transapical transcatheter aortic valve implantation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0046/candidate_004.pdf",
+      "source_filename": "a_046020.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1510/icvts.2011.274456"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Post-Dilatation of New-Generation Self-Expandable Transcatheter Aortic Valves Does Not Increase Atrioventricular Conduction Abnormalities",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_024.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_024",
+      "doi": "10.3390/diagnostics13030427"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Temporal Incidence and Predictors of High‐Grade Atrioventricular Block After Transcatheter Aortic Valve Replacement",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_015.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1161/jaha.120.020033"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Transcatheter or surgical aortic valve implantation: 10-year outcomes of the NOTION trial",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_018.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.1093/eurheartj/ehae043"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Comparison of outcomes of self-expanding versus balloon-expandable valves for transcatheter aortic valve replacement: a meta-analysis of randomized and propensity-matched studies",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_012.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1186/s12872-023-03397-3"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Late Outcomes of Permanent Pacemaker Implantation After TAVR: Meta-analysis of Reconstructed Time-to-Event Data",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_007.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1016/j.jscai.2022.100434"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Novel predictors of permanent pacemaker implantation following transcatheter aortic valve replacement",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_001.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.4330/wjc.v15.i11.582"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Transcatheter versus surgical aortic valve replacement in patients with aortic regurgitation: A propensity-matched analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_014.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1016/j.heliyon.2023.e16734"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Cusp-overlap view reduces conduction disturbances and permanent pacemaker implantation after transcatheter aortic valve replacement even with balloon-expandable and mechanically-expandable heart valves",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_027.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_027",
+      "doi": "10.3389/fcvm.2023.1269833"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "The Impact of Surgical versus Transcatheter Aortic Valve Replacement on Postprocedural Acute Kidney Injury in Patients with Chronic Kidney Disease",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_013.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.5090/jcs.22.029"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Prediction of conduction disturbances in patients undergoing transcatheter aortic valve replacement",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0046/candidate_026.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_026",
+      "doi": "10.1007/s00392-023-02160-0"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0056",
+  "task_id": "ma_0056_full_analysis_mortality_v2",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_remdesivir_10_day_all_cause_mortality",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

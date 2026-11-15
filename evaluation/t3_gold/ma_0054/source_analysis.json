@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0054",
+  "gold_id": "ma_0054_analysis_gold_v1",
+  "task_type": "analysis",
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_all_cause_mortality",
+      "selected_candidate_ids": [
+        "ce_0054_30",
+        "ce_0054_33",
+        "ce_0054_36",
+        "ce_0054_37"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0054_30",
+        "ee_0054_33",
+        "ee_0054_36",
+        "ee_0054_37"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0054_all_cause_mortality",
+          "outcome_group": "all-cause mortality",
+          "effect": {
+            "effect_type": "RR",
+            "value": 0.35040536666280614,
+            "ci_lower": 0.08195265123546452,
+            "ci_upper": 1.4982300039728496,
+            "pooled_log_rr": -1.048664604218676,
+            "standard_error_log_rr_hartung_knapp": 0.4565509921778846,
+            "study_count": 4,
+            "degrees_of_freedom": 3,
+            "tau_squared_paule_mandel": 0.18320231921657915,
+            "q_fixed_effect": 4.482662811643743,
+            "q_random_effect": 3.0,
+            "i_squared_fixed_effect_percent": 33.07549271367272,
+            "ci_method": "Hartung-Knapp_t_0.975_df_3"
+          },
+          "member_candidate_ids": [
+            "ce_0054_30",
+            "ce_0054_33",
+            "ce_0054_36",
+            "ce_0054_37"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0054_30",
+            "ee_0054_33",
+            "ee_0054_36",
+            "ee_0054_37"
+          ],
+          "calculator_run": {
+            "calculator_id": "binary_rr_paule_mandel_hartung_knapp_v1",
+            "pooling": "random_effects_log_RR_inverse_variance"
+          }
+        }
+      ]
+    }
+  ]
+}

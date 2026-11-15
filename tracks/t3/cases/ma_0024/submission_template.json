@@ -1,0 +1,17 @@
+{
+  "case_id": "ma_0024",
+  "task_id": "ma_0024_analysis_dr_accuracy_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "primary_dr_detection_sensitivity",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    },
+    {
+      "analysis_id": "primary_dr_detection_specificity",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

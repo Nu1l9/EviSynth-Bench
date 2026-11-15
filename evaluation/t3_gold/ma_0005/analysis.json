@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0005",
+  "gold_id": "ma_0005_analysis_gold_v1",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0005",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_preterm_birth_lt35_weeks",
+      "selected_candidate_ids": [
+        "ce_0005_01",
+        "ce_0005_02"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0005_01",
+        "ee_0005_02"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0005_primary_preterm_birth_lt35_weeks",
+          "outcome_group": "Preterm birth before 35 weeks after adjuvant 17-OHPC plus ultrasound-indicated cerclage",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.025427632983943,
+            "ci_lower": 0.6633722549191743,
+            "ci_upper": 1.5850856328249179,
+            "direction": "no_clear_difference"
+          },
+          "member_candidate_ids": [
+            "ce_0005_01",
+            "ce_0005_02"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0005_01",
+            "ee_0005_02"
+          ],
+          "heterogeneity_i2": 1.2486255567307762,
+          "calculator_run": {
+            "calculator_id": "binary_rr_log_wald_v1",
+            "pooling": "dersimonian_laird_random_effects_inverse_variance",
+            "tau_squared": 0.0014524333141597782,
+            "q": 1.0126441334489789
+          }
+        }
+      ]
+    }
+  ]
+}

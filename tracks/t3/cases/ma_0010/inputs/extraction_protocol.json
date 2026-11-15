@@ -1,0 +1,91 @@
+{
+  "case_id": "ma_0010",
+  "protocol_id": "ma_0010_full_rs763780_extraction_v2",
+  "task_scope": "known_included_report_extraction",
+  "pico": {
+    "population": {
+      "description": "rheumatoid arthritis cases and healthy controls",
+      "aliases": []
+    },
+    "intervention_or_exposure": {
+      "description": "IL17F rs763780 genotype",
+      "aliases": []
+    },
+    "comparator": {
+      "description": "",
+      "aliases": []
+    },
+    "outcome": {
+      "description": "rheumatoid arthritis case status",
+      "aliases": []
+    }
+  },
+  "record_policy": "Extract every source-reported rs763780 genotype distribution or, if genotype data are absent, the allele-level distribution. Preserve source allele labels and do not infer genotype counts from allele frequencies.",
+  "source_policy": {
+    "target_review_access": "forbidden",
+    "external_evidence_allowed": false
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "rsid",
+      "genotype_labels",
+      "case_counts",
+      "control_counts",
+      "data_family",
+      "source_location"
+    ]
+  },
+  "targets": [
+    {
+      "target_id": "rs763780_source_distribution",
+      "outcome": {
+        "description": "Rheumatoid arthritis case status",
+        "aliases": [
+          "RA case status"
+        ]
+      },
+      "accepted_data_families": [
+        "complete_genotype_case_control_counts",
+        "allele_frequency_summary_only"
+      ],
+      "preferred_effect_measures": [],
+      "estimands": [],
+      "data_contract": {
+        "template": "rs763780 genotype counts or allele-frequency summary",
+        "calculation": "forbidden_in_extraction"
+      },
+      "extraction_notes": [
+        "Copy source genotype or allele-frequency data; do not infer missing genotype counts or calculate an OR."
+      ]
+    }
+  ],
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0010_full",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "rs763780_source_distribution",
+        "status": "unsupported",
+        "original_families": [
+          "complete_genotype_case_control_counts",
+          "allele_frequency_summary_only"
+        ],
+        "recommended_v1_families": [
+          "complete_genotype_case_control_counts",
+          "allele_frequency_summary_only"
+        ],
+        "unsupported_families": [
+          "allele_frequency_summary_only",
+          "complete_genotype_case_control_counts"
+        ],
+        "reason": "No existing seven-case v1 template has the same data contract."
+      }
+    ]
+  }
+}

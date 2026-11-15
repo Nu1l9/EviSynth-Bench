@@ -1,0 +1,507 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0034",
+  "gold_id": "ma_0034_extraction_gold_v1_1_expanded_draft",
+  "task_type": "extraction",
+  "provenance": {
+    "target_review_document_id": "review_ma_0034",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "applies_to_task_ids": [
+    "ma_0034_extraction_all_reports_v1_1_expanded_draft",
+    "ma_0034_end_to_end_ec_use_v1_1_expanded_draft"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0034_01",
+      "article_id": "a_0034_01",
+      "study_id": "s_0034_01",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women completing 12 months of follow-up at Hong Kong family-planning and youth clinics",
+      "timepoint": "Any emergency contraceptive pill use during 12-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_01",
+          "estimand": "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access",
+          "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Participant used one or more courses of emergency contraception during the 12-month study follow-up.",
+            "intervention_arm": {
+              "label": "Advance provision of emergency contraceptive pills",
+              "events": 149,
+              "total": 499
+            },
+            "comparator_arm": {
+              "label": "Standard or on-demand emergency contraceptive pill access",
+              "events": 63,
+              "total": 487
+            }
+          },
+          "source_location": {
+            "document_id": "a_0034_01",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table II, Number of courses of emergency contraception taken",
+            "locator_note": "The source table reports 149/499 and 63/487 women with one or more courses among women completing 12 months of follow-up.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0034_02",
+      "article_id": "a_0034_02",
+      "study_id": "s_0034_02",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Cumulative emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Swedish teenage girls receiving advance emergency contraceptive pills or standard access",
+      "timepoint": "Cumulative emergency contraceptive pill use by 6-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_02",
+          "estimand": "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access",
+          "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Participant reported emergency contraceptive pill use at 3 months, 6 months, or both during cumulative 6-month follow-up.",
+            "intervention_arm": {
+              "label": "Advance provision of emergency contraceptive pills",
+              "events": 54,
+              "total": 172
+            },
+            "comparator_arm": {
+              "label": "Standard or on-demand emergency contraceptive pill access",
+              "events": 29,
+              "total": 157
+            }
+          },
+          "source_location": {
+            "document_id": "a_0034_02",
+            "page": 3,
+            "source_type": "table",
+            "source_id": "Table II, Cumulative emergency contraceptive pill use at 6-month follow-up",
+            "locator_note": "The source table reports cumulative participants reporting ECP use at 3 months, 6 months, or both: 54/172 versus 29/157.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0034_03",
+      "article_id": "a_0034_03",
+      "study_id": "s_0034_03",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "At least one emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women at risk of pregnancy randomized to increased emergency contraceptive pill access or standard access",
+      "timepoint": "At least one emergency contraceptive pill use during 12-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_03",
+          "estimand": "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access",
+          "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Participant used emergency contraceptive pills one or more times during the 12-month study follow-up.",
+            "intervention_arm": {
+              "label": "Advance provision of emergency contraceptive pills",
+              "events": 527,
+              "total": 746
+            },
+            "comparator_arm": {
+              "label": "Standard or on-demand emergency contraceptive pill access",
+              "events": 236,
+              "total": 744
+            }
+          },
+          "source_location": {
+            "document_id": "a_0034_03",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 3, Frequency of Emergency Contraceptive Pill Use",
+            "locator_note": "Table 3 reports 0 uses for 219/746 increased-access and 508/744 standard-access participants; events are deterministically derived as total minus 0 uses (527 and 236).",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0034_04",
+      "article_id": "a_0034_04",
+      "study_id": "s_0034_01",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adolescent mothers in the randomized advance-supply study",
+      "timepoint": "Six- and 12-month longitudinal subgroup tables",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    },
+    {
+      "report_unit_id": "ru_0034_05",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adolescent women in the randomized advance-supply study",
+      "timepoint": "One- and six-month self-report follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    },
+    {
+      "report_unit_id": "ru_0034_06",
+      "article_id": "a_0034_06",
+      "study_id": "s_0034_04",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Same Swedish randomized cohort as Ekstrand et al. (2008)",
+      "timepoint": "12-month follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    },
+    {
+      "report_unit_id": "ru_0034_07",
+      "article_id": "a_0034_07",
+      "study_id": "s_0034_05",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women receiving family-planning services in the direct-access randomized trial",
+      "timepoint": "Any emergency contraceptive pill use during mean 6.9-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_04",
+          "estimand": "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access",
+          "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Participant used emergency contraception at least once during follow-up.",
+            "intervention_arm": {
+              "label": "Advance provision of emergency contraceptive pills",
+              "events": 309,
+              "total": 826
+            },
+            "comparator_arm": {
+              "label": "Standard or on-demand emergency contraceptive pill access",
+              "events": 65,
+              "total": 310
+            }
+          },
+          "source_location": {
+            "document_id": "a_0034_07",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 2, emergency contraception use",
+            "locator_note": "The advance-provision and clinic-access rows report 309/826 and 65/310 participants with one or more uses.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0034_08",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Young-adolescent subgroup of the Raine et al. randomized cohort",
+      "timepoint": "Source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    },
+    {
+      "report_unit_id": "ru_0034_09",
+      "article_id": "a_0034_09",
+      "study_id": "s_0034_05",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Secondary analysis of the Raine et al. randomized cohort",
+      "timepoint": "Source-reported follow-up",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    },
+    {
+      "report_unit_id": "ru_0034_10",
+      "article_id": "a_0034_10",
+      "study_id": "s_0034_07",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Postpartum women eligible for six-month follow-up after excluding planned pregnancy or pregnancy attempts",
+      "timepoint": "Any emergency contraceptive pill use during six-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_05",
+          "estimand": "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access",
+          "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Participant reported using emergency contraception at least once during the preceding six months.",
+            "intervention_arm": {
+              "label": "Advance provision of emergency contraceptive pills",
+              "events": 10,
+              "total": 138
+            },
+            "comparator_arm": {
+              "label": "Standard or on-demand emergency contraceptive pill access",
+              "events": 3,
+              "total": 149
+            }
+          },
+          "source_location": {
+            "document_id": "a_0034_10",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 2, six-month follow-up",
+            "locator_note": "The source table reports participants with at least one use: 10/138 versus 3/149 in the source-defined eligible follow-up cohort.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0034_11",
+      "article_id": "a_0034_11",
+      "study_id": "s_0034_08",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "exposure_measure": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+      "outcome": {
+        "code": "emergency_contraception_use_after_advance_provision",
+        "label": "Any emergency contraceptive pill use",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Women attending urban reproductive-health clinics who completed seven-month follow-up",
+      "timepoint": "Any emergency contraceptive pill use during seven-month follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0034_06",
+          "estimand": "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access",
+          "comparison": "Advance provision of emergency contraceptive pills versus standard or on-demand access",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Participant used emergency contraception at least once during the study follow-up.",
+            "intervention_arm": {
+              "label": "Advance provision of emergency contraceptive pills",
+              "events": 13,
+              "total": 127
+            },
+            "comparator_arm": {
+              "label": "Standard or on-demand emergency contraceptive pill access",
+              "events": 6,
+              "total": 138
+            }
+          },
+          "source_location": {
+            "document_id": "a_0034_11",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 5, emergency contraception use during study",
+            "locator_note": "The seven-month follow-up table reports 13/127 versus 6/138 participants who used emergency contraception during the study.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ],
+  "supplementary_unscored_source_findings": [
+    {
+      "finding_id": "uf_0034_01",
+      "article_id": "a_0034_04",
+      "study_id": "s_0034_01",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "outcome": "Any emergency contraceptive pill use",
+      "data_family": "not_quantitatively_usable",
+      "source_data": {
+        "observed_table_scope": "post-randomization subgroup with unprotected intercourse",
+        "reported_six_month_percentages": "83% versus 11%"
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_0034_04",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 3, emergency contraception use",
+        "locator_note": "The displayed emergency-contraception-use table is conditioned on a post-randomization subgroup with unprotected intercourse, so its event counts cannot be paired with a source-declared full randomized-arm analysis denominator for the requested participant-level risk ratio.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "The displayed emergency-contraception-use table is conditioned on a post-randomization subgroup with unprotected intercourse, so its event counts cannot be paired with a source-declared full randomized-arm analysis denominator for the requested participant-level risk ratio."
+    },
+    {
+      "finding_id": "uf_0034_02",
+      "article_id": "a_0034_05",
+      "study_id": "s_0034_02",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "outcome": "Any emergency contraceptive pill use",
+      "data_family": "not_quantitatively_usable",
+      "source_data": {
+        "reported_six_month_percentages": "8% versus 6%",
+        "denominator_status": "not explicitly paired to the reported percentage"
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_0034_05",
+        "page": 4,
+        "source_type": "paragraph",
+        "source_id": "Results text on emergency contraception use",
+        "locator_note": "The source reports rounded percentages and aggregate use frequencies but does not provide an unambiguous participant event count paired with the corresponding source-defined analysis denominator; counts are not reconstructed from rounded percentages or randomized totals.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "The source reports rounded percentages and aggregate use frequencies but does not provide an unambiguous participant event count paired with the corresponding source-defined analysis denominator; counts are not reconstructed from rounded percentages or randomized totals."
+    },
+    {
+      "finding_id": "uf_0034_03",
+      "article_id": "a_0034_06",
+      "study_id": "s_0034_04",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "outcome": "Any emergency contraceptive pill use",
+      "data_family": "not_quantitatively_usable",
+      "source_data": {
+        "cohort_relation": "later follow-up of s_0034_04",
+        "reported_users": "57 versus 26"
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_0034_06",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table I, 12-month follow-up",
+        "locator_note": "This is a later follow-up report of the Ekstrand 2008 randomized cohort. The analysis profile permits one record per independent trial, so it is retained as a linked source report rather than a second effect.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "This is a later follow-up report of the Ekstrand 2008 randomized cohort. The analysis profile permits one record per independent trial, so it is retained as a linked source report rather than a second effect."
+    },
+    {
+      "finding_id": "uf_0034_04",
+      "article_id": "a_0034_08",
+      "study_id": "s_0034_05",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "outcome": "Any emergency contraceptive pill use",
+      "data_family": "not_quantitatively_usable",
+      "source_data": {
+        "cohort_relation": "subgroup analysis of s_0034_05"
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_0034_08",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Results tables for young-adolescent subgroup",
+        "locator_note": "This report is a subgroup analysis of the Raine et al. randomized cohort, not an independent trial. The full-cohort Raine report provides the eligible full-cohort effect for one-effect-per-trial analysis.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "This report is a subgroup analysis of the Raine et al. randomized cohort, not an independent trial. The full-cohort Raine report provides the eligible full-cohort effect for one-effect-per-trial analysis."
+    },
+    {
+      "finding_id": "uf_0034_05",
+      "article_id": "a_0034_09",
+      "study_id": "s_0034_05",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "outcome": "Any emergency contraceptive pill use",
+      "data_family": "not_quantitatively_usable",
+      "source_data": {
+        "cohort_relation": "secondary analysis of s_0034_05",
+        "reported_percentages": "37.4%, 24.2%, and 21.0% across trial arms"
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_0034_09",
+        "page": 3,
+        "source_type": "paragraph",
+        "source_id": "Results text for direct-access randomized cohort",
+        "locator_note": "This is a secondary analysis of the Raine et al. randomized cohort. The complete full-cohort arm counts used for the primary effect are taken from Raine et al.; the secondary report is not an independent study.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "This is a secondary analysis of the Raine et al. randomized cohort. The complete full-cohort arm counts used for the primary effect are taken from Raine et al.; the secondary report is not an independent study."
+    }
+  ]
+}

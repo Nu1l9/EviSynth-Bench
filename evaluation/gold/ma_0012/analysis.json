@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0012",
+  "task_type": "analysis",
+  "gold_id": "ma_0012_analysis_gold_v1",
+  "provenance": {
+    "target_review_document_id": "review_ma_0012",
+    "annotation_status": "adjudicated"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "main_pr_invasive_pneumococcal_disease",
+      "selected_candidate_ids": [
+        "ce_0004",
+        "ce_0001",
+        "ce_0002",
+        "ce_0005",
+        "ce_0006"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_012004_pilishvili",
+        "ee_012001_under5",
+        "ee_012001_5to17",
+        "ee_012005_kwak_2010",
+        "ee_012005_kwak_2011"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_invasive_pneumococcal_disease",
+          "outcome_group": "Invasive pneumococcal disease",
+          "effect": {
+            "effect_type": "OR",
+            "value": 1.9,
+            "ci_lower": 1.63,
+            "ci_upper": 2.11,
+            "direction": "increased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0004",
+            "ce_0001",
+            "ce_0002",
+            "ce_0005",
+            "ce_0006"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_012004_pilishvili",
+            "ee_012001_under5",
+            "ee_012001_5to17",
+            "ee_012005_kwak_2010",
+            "ee_012005_kwak_2011"
+          ],
+          "heterogeneity_i2": 1.7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "case_id": "ma_0028",
+  "analysis_profile_id": "ma_0028_lfa_diagnostic_accuracy_analysis_profile_v1_1_expanded_draft",
+  "scope": "Single pre-specified strict diagnostic-accuracy synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_lfa_diagnosis_sensitivity",
+      "pooled_result_id": "pr_0028_primary_sensitivity",
+      "outcome_group": "Sensitivity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "eligible_outcome_codes": [
+        "acute_human_leptospirosis"
+      ],
+      "eligible_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "accepted_effect_types": [
+        "diagnostic_accuracy_pair"
+      ],
+      "estimands": [
+        "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only patient-level acute-leptospirosis versus no-leptospirosis records with source-supported TP, FP, FN, and TN.",
+          "Select at most one diagnostic-accuracy record per independent study cohort.",
+          "When one acute index-test result is evaluated against both a contemporaneous and a later paired-sample reference standard, use the contemporaneous reference-standard record for the primary analysis.",
+          "Use source counts rather than a review forest value or an unlinked percentage."
+        ]
+      },
+      "minimum_independent_studies": 2
+    },
+    {
+      "analysis_id": "primary_lfa_diagnosis_specificity",
+      "pooled_result_id": "pr_0028_primary_specificity",
+      "outcome_group": "Specificity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "eligible_outcome_codes": [
+        "acute_human_leptospirosis"
+      ],
+      "eligible_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "accepted_effect_types": [
+        "diagnostic_accuracy_pair"
+      ],
+      "estimands": [
+        "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select only patient-level acute-leptospirosis versus no-leptospirosis records with source-supported TP, FP, FN, and TN.",
+          "Select at most one diagnostic-accuracy record per independent study cohort.",
+          "When one acute index-test result is evaluated against both a contemporaneous and a later paired-sample reference standard, use the contemporaneous reference-standard record for the primary analysis.",
+          "Use source counts rather than a review forest value or an unlinked percentage."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

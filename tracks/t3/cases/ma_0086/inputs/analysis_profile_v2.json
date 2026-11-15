@@ -1,0 +1,61 @@
+{
+  "case_id": "ma_0086",
+  "profile_version": "2.0.0",
+  "plan_id": "ma_0086_pfapa_episode_rate_v2",
+  "primary_analysis_spec": {
+    "analysis_id": "main_pr_pfapa_episode_rate",
+    "pooled_result_id": "pr_pfapa_episode_rate",
+    "title": "PFAPA episode rate: primary analysis",
+    "target_id": "pfapa_episode_rate",
+    "outcome_group": "PFAPA episode rate",
+    "eligible_outcome_codes": [
+      "pfapa_episode_rate"
+    ],
+    "eligible_data_families": [
+      "event_counts_with_person_time"
+    ],
+    "accepted_effect_types": [
+      "IRR"
+    ],
+    "estimands": [
+      "surgery_vs_control"
+    ],
+    "exposure": {
+      "terms": [
+        "tonsillectomy",
+        "adenotonsillectomy",
+        "surgery"
+      ]
+    },
+    "comparison": {
+      "terms": [
+        "expectant management",
+        "follow-up alone",
+        "non-surgical management",
+        "control"
+      ]
+    },
+    "population": {
+      "policy": "overall_only",
+      "terms": [
+        "all randomized children",
+        "overall",
+        "full randomized cohort"
+      ]
+    },
+    "timepoint_policy": "source_defined",
+    "model_policy": "Use the source-reported episode totals, analyzed arm totals, and complete randomized follow-up for each independent study.",
+    "dependence_policy": "one_effect_per_study",
+    "selection_rules": [
+      "Select only PFAPA episode-rate records with source-reported event totals and complete follow-up.",
+      "Keep one eligible episode-rate estimate per independent randomized study.",
+      "Do not convert symptom-resolution or corticosteroid percentage records into episode rates.",
+      "Do not reconstruct exact arm counts from rounded percentages."
+    ],
+    "minimum_independent_studies": 2
+  },
+  "secondary_outcomes": [],
+  "candidate_subgroup_dimensions": [],
+  "candidate_sensitivity_dimensions": [],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

@@ -1,0 +1,807 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0026",
+  "topic": "What is the prevalence of RT-PCR-confirmed SARS-CoV-2 infection among screened healthcare workers?",
+  "protocol": {
+    "protocol_id": "ma_0026_rt_pcr_prevalence_protocol_v1",
+    "case_id": "ma_0026",
+    "pico": {
+      "population": "Healthcare workers, health-and-social-care workers, or facility staff with source-reported SARS-CoV-2 testing; results must be identifiable for the staff population.",
+      "intervention_or_exposure": "SARS-CoV-2 RT-PCR testing, including routine, symptom-triggered, outbreak-response, or serial testing.",
+      "comparison": "None; single-arm prevalence.",
+      "outcome": "RT-PCR-confirmed SARS-CoV-2 infection among healthcare or facility staff. Retain reports with limited, historical, or mixed PCR testing for full-text source-only assessment; do not treat antibody results as PCR outcomes."
+    },
+    "eligible_study_designs": [
+      "primary cross-sectional, cohort, surveillance, outbreak, serial-testing, or retrospective report with HCW-specific RT-PCR data"
+    ],
+    "targets": [
+      {
+        "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+        "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+        "comparison": "Single-arm prevalence; no comparator.",
+        "population_or_subgroup": "Source-defined healthcare-worker or facility-staff cohort tested by RT-PCR; preserve symptoms and testing indication.",
+        "timepoint_policy": {
+          "rule": "Preserve each source-defined PCR cohort and testing period. Do not combine PCR with antibody results. For serial testing of the same cohort, preserve the first source-defined assessment for primary synthesis."
+        },
+        "accepted_data_families": [
+          "single_arm_event_counts"
+        ],
+        "preferred_effect_measures": [
+          "proportion"
+        ],
+        "estimands": [
+          "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers"
+        ],
+        "effect_selection_rule": "Treat one independent source-defined PCR cohort as one effect unit. Retain parallel cohorts from a report only when source evidence establishes independent recruitment; prefer the whole cohort over an overlapping respondent or symptomatic subset. For serial measurements of the same cohort, use the first source-defined assessment; do not pool later repeat tests as independent.",
+        "extraction_notes": [
+          "Capture the exact PCR-positive count, matching tested denominator, staff population, symptoms/testing indication, and source-defined period.",
+          "Keep RT-PCR and serology separate. A report with potentially relevant PCR findings but no valid cohort denominator remains source-only.",
+          "Do not infer integer counts from rounded percentages or combine nested respondent/subgroup counts with the whole cohort."
+        ],
+        "candidate_capture_policy": {
+          "record_scope": "Capture potentially eligible primary reports and distinct source-defined HCW PCR cohorts, including symptom-triggered, outbreak, retrospective, and mixed serology/PCR reports; defer final quantitative selection.",
+          "selection_deferred": true
+        },
+        "source_constraints": [
+          "preserve separate source-defined cohorts only when recruitment independence is supported",
+          "prefer whole cohort over overlapping respondent or symptomatic subset",
+          "serial testing of the same cohort is not an independent prevalence sample",
+          "do not mix RT-PCR and serology",
+          "do not infer counts from rounded percentages"
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_rt_pcr_prevalence",
+      "outcome_group": "RT-PCR-confirmed SARS-CoV-2 prevalence among healthcare workers",
+      "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+      "eligible_outcome_codes": [
+        "rt_pcr_confirmed_sars_cov_2_infection"
+      ],
+      "eligible_data_families": [
+        "single_arm_event_counts"
+      ],
+      "accepted_effect_types": [
+        "proportion"
+      ],
+      "estimands": [
+        "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers"
+      ],
+      "selection_rules": [
+        "Use the explicit source table if prose and table denominators conflict.",
+        "Use one independent source-defined healthcare-worker PCR cohort as the unit of synthesis; a report may contribute more than one cohort only when the source establishes independent recruitment.",
+        "Prefer a whole source-defined cohort over an overlapping respondent, symptomatic, or other nested subgroup for the same testing period.",
+        "For serial measurements of the same cohort, select the first source-defined assessment. Do not pool later repeat tests as independent observations.",
+        "Keep PCR outcomes separate from serology. Exclude source-only reports and records without exact RT-PCR-positive events and a matching tested HCW denominator from pooling.",
+        "Use explicitly reported source counts; do not infer events from rounded percentages.",
+        "Timepoint eligibility: Preserve each source-defined PCR cohort and testing period. Do not combine PCR with antibody results. For serial testing of the same cohort, preserve the first source-defined assessment for primary synthesis.",
+        "Source selection: Treat one independent source-defined PCR cohort as one effect unit. Retain parallel cohorts from a report only when source evidence establishes independent recruitment; prefer the whole cohort over an overlapping respondent or symptomatic subset. For serial measurements of the same cohort, use the first source-defined assessment; do not pool later repeat tests as independent.",
+        "preserve separate source-defined cohorts only when recruitment independence is supported",
+        "prefer whole cohort over overlapping respondent or symptomatic subset",
+        "serial testing of the same cohort is not an independent prevalence sample",
+        "do not mix RT-PCR and serology",
+        "do not infer counts from rounded percentages",
+        "Capture the exact PCR-positive count, matching tested denominator, staff population, symptoms/testing indication, and source-defined period.",
+        "Keep RT-PCR and serology separate. A report with potentially relevant PCR findings but no valid cohort denominator remains source-only.",
+        "Do not infer integer counts from rounded percentages or combine nested respondent/subgroup counts with the whole cohort."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "freeman_tukey_proportion",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2,
+        "calculator_specification": {
+          "calculator_id": "single_arm_proportion_freeman_tukey_dl_v1"
+        }
+      },
+      "outcome_terms": [
+        "RT-PCR-confirmed SARS-CoV-2 prevalence among healthcare workers"
+      ],
+      "exposure": {
+        "terms": [
+          "SARS-CoV-2 RT-PCR screening"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Single-arm prevalence; no comparator."
+        ]
+      },
+      "population": {
+        "policy": "any",
+        "terms": [
+          "Source-defined healthcare-worker or facility-staff cohort tested by RT-PCR; preserve symptoms and testing indication."
+        ]
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Preserve each source-defined PCR cohort and testing period. Do not combine PCR with antibody results. For serial testing of the same cohort, preserve the first source-defined assessment for primary synthesis.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units.",
+      "dependence_policy": "one_effect_per_study_outcome"
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "COVID-19 screening of health-care workers in a London maternity hospital",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_001.pdf"
+      },
+      "doi": "10.1016/s1473-3099(20)30403-5"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "COVID-19 and Thrombotic or Thromboembolic Disease: Implications for Prevention, Antithrombotic Therapy, and Follow-Up",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_002.pdf"
+      },
+      "doi": "10.1016/j.jacc.2020.04.031"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "High SARS-CoV-2 infection rates in respiratory staff nurses and correlation of COVID-19 symptom patterns with PCR positivity and relative viral loads",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_003.pdf"
+      },
+      "doi": "10.1016/j.jinf.2020.06.035"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Rapid assessment of regional SARS-CoV-2 community transmission through a convenience sample of healthcare workers, the Netherlands, March 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_004.pdf"
+      },
+      "doi": "10.2807/1560-7917.es.2020.25.12.2000334"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Limited effectiveness of systematic screening by nasopharyngeal RT-PCR of medicalized nursing home staff after a first case of COVID-19 in a resident",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_005.pdf"
+      },
+      "doi": "10.1016/j.medmal.2020.04.020"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 seroconversion in health care workers",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_006.pdf"
+      },
+      "doi": "10.1101/2020.05.18.20105197"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Prevalence of Sars-Cov-2 Infection in Health Workers (HWs) and Diagnostic Test Performance: The Experience of a Teaching Hospital in Central Italy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_007.pdf"
+      },
+      "doi": "10.3390/ijerph17124417"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Clinical Characteristics of Coronavirus Disease 2019 in China",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_008.pdf"
+      },
+      "doi": "10.1056/nejmoa2002032"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Effectiveness of convalescent plasma therapy in severe COVID-19 patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_009.pdf"
+      },
+      "doi": "10.1073/pnas.2004168117"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Epidemiological, Clinical, and Immunological Features of a Cluster of COVID-19–Contracted Hemodialysis Patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_010.pdf"
+      },
+      "doi": "10.1016/j.ekir.2020.06.003"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "COVID-19 in health-care workers in three hospitals in the south of the Netherlands: a cross-sectional study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_011.pdf"
+      },
+      "doi": "10.1016/s1473-3099(20)30527-2"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Prevalence of SARS-CoV-2 infection in previously undiagnosed health care workers at the onset of the U.S. COVID-19 epidemic",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_012.pdf"
+      },
+      "doi": "10.1101/2020.04.20.20072470"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "COVID-19: PCR screening of asymptomatic health-care workers at London hospital",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_013.pdf"
+      },
+      "doi": "10.1016/s0140-6736(20)31100-4"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 infection, clinical features and outcome of COVID-19 in United Kingdom nursing homes",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_014.pdf"
+      },
+      "doi": "10.1016/j.jinf.2020.05.073"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Symptom Criteria for COVID‐19 Testing of Heath Care Workers",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_015.pdf"
+      },
+      "doi": "10.1111/acem.14009"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Prevalence of SARS-CoV-2 Infection Among Asymptomatic Health Care Workers in the Greater Houston, Texas, Area",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_016.pdf"
+      },
+      "doi": "10.1001/jamanetworkopen.2020.16451"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Hemodialysis with Cohort Isolation to Prevent Secondary Transmission during a COVID-19 Outbreak in Korea",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_017.pdf"
+      },
+      "doi": "10.1681/asn.2020040461"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 virus and antibodies in front-line Health Care Workers in an acute hospital in London: preliminary results from a longitudinal study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_018.pdf"
+      },
+      "doi": "10.1101/2020.06.08.20120584"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Containment of COVID-19 cases amongst healthcare workers: the role of surveillance, early detection and outbreak management",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_019.pdf"
+      },
+      "doi": "10.1017/ice.2020.219"
+    },
+    {
+      "article_id": "candidate_020",
+      "document_id": "candidate_020",
+      "study_id": "study_020",
+      "role": "candidate_article",
+      "title": "Coronavirus Disease 2019 (COVID-2019) Infection Among Health Care Workers and Implications for Prevention Measures in a Tertiary Hospital in Wuhan, China",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_020.pdf"
+      },
+      "doi": "10.1001/jamanetworkopen.2020.9666"
+    },
+    {
+      "article_id": "candidate_021",
+      "document_id": "candidate_021",
+      "study_id": "study_021",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 infection in health care workers: a retrospective analysis and model study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_021.pdf"
+      },
+      "doi": "10.1101/2020.03.29.20047159"
+    },
+    {
+      "article_id": "candidate_022",
+      "document_id": "candidate_022",
+      "study_id": "study_022",
+      "role": "candidate_article",
+      "title": "Dynamics of SARS-CoV-2 RT-PCR positivity and seroprevalence among high-risk healthcare workers and hospital staff",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_022.pdf"
+      },
+      "doi": "10.1016/j.jhin.2020.06.028"
+    },
+    {
+      "article_id": "candidate_023",
+      "document_id": "candidate_023",
+      "study_id": "study_023",
+      "role": "candidate_article",
+      "title": "Resident physician exposure to novel coronavirus (2019-nCoV, SARS-CoV-2) within New York City during exponential phase of COVID-19 pandemic: Report of the New York City Residency Program Directors COVID-19 Research Group",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_023.pdf"
+      },
+      "doi": "10.1101/2020.04.23.20074310"
+    },
+    {
+      "article_id": "candidate_024",
+      "document_id": "candidate_024",
+      "study_id": "study_024",
+      "role": "candidate_article",
+      "title": "Effective control of SARS-CoV-2 transmission between healthcare workers during a period of diminished community prevalence of COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_024.pdf"
+      },
+      "doi": "10.7554/elife.59391"
+    },
+    {
+      "article_id": "candidate_025",
+      "document_id": "candidate_025",
+      "study_id": "study_025",
+      "role": "candidate_article",
+      "title": "Assessing the burden of COVID-19 amongst healthcare workers in Mexico City: A data-driven call to action",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_025.pdf"
+      },
+      "doi": "10.1101/2020.07.02.20145169"
+    },
+    {
+      "article_id": "candidate_026",
+      "document_id": "candidate_026",
+      "study_id": "study_026",
+      "role": "candidate_article",
+      "title": "Comparing dynamics and determinants of SARS-CoV-2 transmissions among health care workers of adult and pediatric settings in central Paris",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_026.pdf"
+      },
+      "doi": "10.1101/2020.05.19.20106427"
+    },
+    {
+      "article_id": "candidate_027",
+      "document_id": "candidate_027",
+      "study_id": "study_027",
+      "role": "candidate_article",
+      "title": "Risk of COVID-19 among front-line health-care workers and the general community: a prospective cohort study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_027.pdf"
+      },
+      "doi": "10.1016/S2468-2667(20)30164-X"
+    },
+    {
+      "article_id": "candidate_028",
+      "document_id": "candidate_028",
+      "study_id": "study_028",
+      "role": "candidate_article",
+      "title": "Safety and efficacy of an rAd26 and rAd5 vector-based heterologous prime-boost COVID-19 vaccine: an interim analysis of a randomised controlled phase 3 trial in Russia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_028.pdf"
+      },
+      "doi": "10.1016/s0140-6736(21)00234-8"
+    },
+    {
+      "article_id": "candidate_029",
+      "document_id": "candidate_029",
+      "study_id": "study_029",
+      "role": "candidate_article",
+      "title": "Risk Factors of Healthcare Workers With Coronavirus Disease 2019: A Retrospective Cohort Study in a Designated Hospital of Wuhan in China",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_029.pdf"
+      },
+      "doi": "10.1093/cid/ciaa287"
+    },
+    {
+      "article_id": "candidate_030",
+      "document_id": "candidate_030",
+      "study_id": "study_030",
+      "role": "candidate_article",
+      "title": "Asymptomatic SARS-CoV-2 Infection in Nursing Homes, Barcelona, Spain, April 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_030.pdf"
+      },
+      "doi": "10.3201/eid2609.202603"
+    },
+    {
+      "article_id": "candidate_031",
+      "document_id": "candidate_031",
+      "study_id": "study_031",
+      "role": "candidate_article",
+      "title": "COVID-19 symptoms predictive of healthcare workers’ SARS-CoV-2 PCR results",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_031.pdf"
+      },
+      "doi": "10.1371/journal.pone.0235460"
+    },
+    {
+      "article_id": "candidate_032",
+      "document_id": "candidate_032",
+      "study_id": "study_032",
+      "role": "candidate_article",
+      "title": "Characteristics of 1573 healthcare workers who underwent nasopharyngeal swab testing for SARS-CoV-2 in Milan, Lombardy, Italy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_032.pdf"
+      },
+      "doi": "10.1016/j.cmi.2020.06.013"
+    },
+    {
+      "article_id": "candidate_033",
+      "document_id": "candidate_033",
+      "study_id": "study_033",
+      "role": "candidate_article",
+      "title": "SARS‐CoV‐2 Infection in Health Care Workers: Cross‐sectional Analysis of an Otolaryngology Unit",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_033.pdf"
+      },
+      "doi": "10.1177/0194599820932162"
+    },
+    {
+      "article_id": "candidate_034",
+      "document_id": "candidate_034",
+      "study_id": "study_034",
+      "role": "candidate_article",
+      "title": "Symptoms and immunoglobulin development in hospital staff exposed to a SARS‐CoV‐2 outbreak",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_034.pdf"
+      },
+      "doi": "10.1111/pai.13278"
+    },
+    {
+      "article_id": "candidate_035",
+      "document_id": "candidate_035",
+      "study_id": "study_035",
+      "role": "candidate_article",
+      "title": "Lower detection rates of SARS-COV2 antibodies in cancer patients versus health care workers after symptomatic COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_035.pdf"
+      },
+      "doi": "10.1016/j.annonc.2020.04.475"
+    },
+    {
+      "article_id": "candidate_036",
+      "document_id": "candidate_036",
+      "study_id": "study_036",
+      "role": "candidate_article",
+      "title": "A multinational, multicentre study on the psychological outcomes and associated physical symptoms amongst healthcare workers during COVID-19 outbreak",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_036.pdf"
+      },
+      "doi": "10.1016/j.bbi.2020.04.049"
+    },
+    {
+      "article_id": "candidate_037",
+      "document_id": "candidate_037",
+      "study_id": "study_037",
+      "role": "candidate_article",
+      "title": "Prevalence of COVID-19 Infection and Outcomes Among Symptomatic Healthcare Workers in Seattle, Washington",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_037.pdf"
+      },
+      "doi": "10.1093/cid/ciaa761"
+    },
+    {
+      "article_id": "candidate_038",
+      "document_id": "candidate_038",
+      "study_id": "study_038",
+      "role": "candidate_article",
+      "title": "Search for asymptomatic carriers of SARS-CoV-2 in healthcare workers during the pandemic: a Spanish experience",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_038.pdf"
+      },
+      "doi": "10.1101/2020.05.18.20103283"
+    },
+    {
+      "article_id": "candidate_039",
+      "document_id": "candidate_039",
+      "study_id": "study_039",
+      "role": "candidate_article",
+      "title": "A rapid advice guideline for the diagnosis and treatment of 2019 novel coronavirus (2019-nCoV) infected pneumonia (standard version)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_039.pdf"
+      },
+      "doi": "10.1186/s40779-020-0233-6"
+    },
+    {
+      "article_id": "candidate_040",
+      "document_id": "candidate_040",
+      "study_id": "study_040",
+      "role": "candidate_article",
+      "title": "Strong associations and moderate predictive value of early symptoms for SARS-CoV-2 test positivity among healthcare workers, the Netherlands, March 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_040.pdf"
+      },
+      "doi": "10.2807/1560-7917.es.2020.25.16.2000508"
+    },
+    {
+      "article_id": "candidate_041",
+      "document_id": "candidate_041",
+      "study_id": "study_041",
+      "role": "candidate_article",
+      "title": "Pre exposure Hydroxychloroquine use is associated with reduced COVID19 risk in healthcare workers",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_041.pdf"
+      },
+      "doi": "10.1101/2020.06.09.20116806"
+    },
+    {
+      "article_id": "candidate_042",
+      "document_id": "candidate_042",
+      "study_id": "study_042",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 infection in 86 healthcare workers in two Dutch hospitals in March 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_042.pdf"
+      },
+      "doi": "10.1101/2020.03.23.20041913"
+    },
+    {
+      "article_id": "candidate_043",
+      "document_id": "candidate_043",
+      "study_id": "study_043",
+      "role": "candidate_article",
+      "title": "Seroprevalence of antibodies against SARS-CoV-2 among health care workers in a large Spanish reference hospital",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_043.pdf"
+      },
+      "doi": "10.1038/s41467-020-17318-x"
+    },
+    {
+      "article_id": "candidate_044",
+      "document_id": "candidate_044",
+      "study_id": "study_044",
+      "role": "candidate_article",
+      "title": "Alta prevalencia de COVID-19 asintomático en hemodiálisis. Aprendiendo día a día el primer mes de pandemia de COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_044.pdf"
+      },
+      "doi": "10.1016/j.nefro.2020.04.005"
+    },
+    {
+      "article_id": "candidate_045",
+      "document_id": "candidate_045",
+      "study_id": "study_045",
+      "role": "candidate_article",
+      "title": "Characterizing long COVID in an international cohort: 7 months of symptoms and their impact",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_045.pdf"
+      },
+      "doi": "10.1016/j.eclinm.2021.101019"
+    },
+    {
+      "article_id": "candidate_046",
+      "document_id": "candidate_046",
+      "study_id": "study_046",
+      "role": "candidate_article",
+      "title": "Roll-out of SARS-CoV-2 testing for healthcare workers at a large NHS Foundation Trust in the United Kingdom, March 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_046.pdf"
+      },
+      "doi": "10.2807/1560-7917.es.2020.25.14.2000433"
+    },
+    {
+      "article_id": "candidate_047",
+      "document_id": "candidate_047",
+      "study_id": "study_047",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 infection in Health Care Workers in a large public hospital in Madrid, Spain, during March 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_047.pdf"
+      },
+      "doi": "10.1101/2020.04.07.20055723"
+    },
+    {
+      "article_id": "candidate_048",
+      "document_id": "candidate_048",
+      "study_id": "study_048",
+      "role": "candidate_article",
+      "title": "Drive-through testing for SARS-CoV-2 in symptomatic health and social care workers and household members: an observational cohort study in Tayside, Scotland",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_048.pdf"
+      },
+      "doi": "10.1101/2020.05.08.20078386"
+    },
+    {
+      "article_id": "candidate_049",
+      "document_id": "candidate_049",
+      "study_id": "study_049",
+      "role": "candidate_article",
+      "title": "COVID-19 among healthcare workers in a specialist infectious diseases setting in Naples, Southern Italy: results of a cross-sectional surveillance study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_049.pdf"
+      },
+      "doi": "10.1016/j.jhin.2020.06.021"
+    },
+    {
+      "article_id": "candidate_050",
+      "document_id": "candidate_050",
+      "study_id": "study_050",
+      "role": "candidate_article",
+      "title": "First experience of COVID-19 screening of health-care workers in England",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_050.pdf"
+      },
+      "doi": "10.1016/s0140-6736(20)30970-3"
+    },
+    {
+      "article_id": "candidate_051",
+      "document_id": "candidate_051",
+      "study_id": "study_051",
+      "role": "candidate_article",
+      "title": "Risk factors for severity and mortality in adult COVID-19 inpatients in Wuhan",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_051.pdf"
+      },
+      "doi": "10.1016/j.jaci.2020.04.006"
+    },
+    {
+      "article_id": "candidate_052",
+      "document_id": "candidate_052",
+      "study_id": "study_052",
+      "role": "candidate_article",
+      "title": "Symptom-based screening for COVID-19 in healthcare workers: the importance of fever",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_052.pdf"
+      },
+      "doi": "10.1016/j.jhin.2020.05.028"
+    },
+    {
+      "article_id": "candidate_053",
+      "document_id": "candidate_053",
+      "study_id": "study_053",
+      "role": "candidate_article",
+      "title": "SARS-CoV-2 Seroprevalence Among All Workers in a Teaching Hospital in Spain: Unmasking The Risk",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_053.pdf"
+      },
+      "doi": "10.1101/2020.05.29.20116731"
+    },
+    {
+      "article_id": "candidate_054",
+      "document_id": "candidate_054",
+      "study_id": "study_054",
+      "role": "candidate_article",
+      "title": "Severe Acute Respiratory Syndrome Coronavirus 2 Serology in Asymptomatic Healthcare Professionals: Preliminary Experience of a Tertiary Italian Academic Center",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_054.pdf"
+      },
+      "doi": "10.1101/2020.04.27.20073858"
+    },
+    {
+      "article_id": "candidate_055",
+      "document_id": "candidate_055",
+      "study_id": "study_055",
+      "role": "candidate_article",
+      "title": "More than 50 long-term effects of COVID-19: a systematic review and meta-analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_055.pdf"
+      },
+      "doi": "10.1038/s41598-021-95565-8"
+    },
+    {
+      "article_id": "candidate_056",
+      "document_id": "candidate_056",
+      "study_id": "study_056",
+      "role": "candidate_article",
+      "title": "Detection of SARS-CoV-2 Among Residents and Staff Members of an Independent and Assisted Living Community for Older Adults — Seattle, Washington, 2020",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0026/candidate_056.pdf"
+      },
+      "doi": "10.15585/mmwr.mm6914e2"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

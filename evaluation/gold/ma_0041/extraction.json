@@ -1,0 +1,839 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0041_full",
+  "gold_id": "ma_0041_full_extraction_gold_v2",
+  "task_type": "extraction",
+  "applies_to_task_ids": [
+    "ma_0041_full_extraction_all_reports_v2"
+  ],
+  "source_policy": "primary_reports_only; target review is gold-only and was not used for numeric source fields",
+  "report_units": [
+    {
+      "report_unit_id": "ru_0041_full_01",
+      "article_id": "a_0041_01_verborgt",
+      "study_id": "s_0041_01",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "14 paired scapulohumeral cadaver specimens; reverse shoulder prosthesis",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_01_01_version_error",
+          "estimand": "source_reported_reported_error_from_ideal_position",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "version",
+            "measurement_semantics": "reported_error_from_ideal_position",
+            "unit": "degrees",
+            "arms": {
+              "navigation": {
+                "n": 7,
+                "mean": 8.0,
+                "sd": 3.3
+              },
+              "standard": {
+                "n": 7,
+                "mean": 12.0,
+                "sd": 4.1
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_01_verborgt",
+            "source_type": "table_or_results",
+            "source_id": "Primary PDF page 1, abstract Results; independently cross-checked against the supplied secondary review",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "The primary abstract also reports achieved component orientation (3.1 versus 8.7 degrees of anteversion). Do not merge orientation and error measures."
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_01_01_tilt_error",
+          "estimand": "source_reported_reported_error_from_ideal_position",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "inclination_or_tilt",
+            "measurement_semantics": "reported_error_from_ideal_position",
+            "unit": "degrees",
+            "arms": {
+              "navigation": {
+                "n": 7,
+                "mean": 8.0,
+                "sd": 3.6
+              },
+              "standard": {
+                "n": 7,
+                "mean": 16.0,
+                "sd": 6.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_01_verborgt",
+            "source_type": "table_or_results",
+            "source_id": "Primary PDF page 1, abstract Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_02",
+      "article_id": "a_0041_02_kircher",
+      "study_id": "s_0041_02",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "20 human total shoulder arthroplasty patients",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_02_02_postoperative_retroversion",
+          "estimand": "source_reported_postoperative_alignment_relative_to_bone_stock",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "version",
+            "measurement_semantics": "postoperative_alignment_relative_to_bone_stock",
+            "unit": "degrees of retroversion",
+            "arms": {
+              "navigation": {
+                "n": 10,
+                "mean": 3.7,
+                "sd": 6.3
+              },
+              "standard": {
+                "n": 10,
+                "mean": 10.9,
+                "sd": 6.8
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_02_kircher",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, Results, 'From preoperatively to postoperatively...'",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "This is an independent-arm postoperative alignment measure. It is not an already absolute planned-versus-achieved error and must retain this semantic label in any benchmark task."
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_02_02_preoperative_retroversion",
+          "estimand": "source_reported_preoperative_alignment_relative_to_bone_stock",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "version",
+            "measurement_semantics": "preoperative_alignment_relative_to_bone_stock",
+            "unit": "degrees of retroversion",
+            "arms": {
+              "navigation": {
+                "n": 10,
+                "mean": 15.4,
+                "sd": 5.8
+              },
+              "standard": {
+                "n": 10,
+                "mean": 14.4,
+                "sd": 6.1
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_02_kircher",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, same Results sentence",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_03",
+      "article_id": "a_0041_03_lau_keith",
+      "study_id": "s_0041_03",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "11 analysed human shoulders; 7 anatomic and 4 reverse total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_03_03_anatomic_postoperative_alignment",
+          "estimand": "source_reported_postoperative_alignment_with_explicit_planned_target",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "version_and_inclination",
+            "measurement_semantics": "postoperative_alignment_with_explicit_planned_target",
+            "unit": "degrees",
+            "n": 7,
+            "planned_target": {
+              "version": 0.0,
+              "inclination": 0.0
+            },
+            "reported_summary": {
+              "version_retroversion": {
+                "mean": 8.0,
+                "sd": 10.0
+              },
+              "inclination": {
+                "mean": 1.0,
+                "sd": 4.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_03_lau_keith",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 2, Methods (anatomic targets); PDF page 3, Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "The report provides signed group summaries. An absolute-error mean cannot be inferred from the signed mean and SD."
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_03_03_reverse_postoperative_alignment",
+          "estimand": "source_reported_postoperative_alignment_with_explicit_planned_target",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "version_and_inclination",
+            "measurement_semantics": "postoperative_alignment_with_explicit_planned_target",
+            "unit": "degrees",
+            "n": 4,
+            "planned_target": {
+              "version": 0.0,
+              "inclination": -10.0
+            },
+            "reported_summary": {
+              "version_retroversion": {
+                "mean": 10.0,
+                "sd": 10.0
+              },
+              "inclination": {
+                "mean": -1.0,
+                "sd": 5.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_03_lau_keith",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 2, Methods (reverse targets); PDF page 3, Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "Retain the signed convention and the separate planned target; do not convert this aggregate summary to an absolute-error record."
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_04",
+      "article_id": "a_0041_04_gauci",
+      "study_id": "s_0041_04",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "17 human anatomic total shoulder arthroplasty patients",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_04_04_component_orientation",
+          "estimand": "source_reported_planned_minus_achieved_difference_reported_as_error",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "version_and_inclination",
+            "measurement_semantics": "planned_minus_achieved_difference_reported_as_error",
+            "unit": "degrees",
+            "n": 17,
+            "reported_summary": {
+              "version": {
+                "mean": 3.4,
+                "sd": 5.1,
+                "min": -6.9,
+                "max": 14.1
+              },
+              "inclination": {
+                "mean": 1.8,
+                "sd": 5.3,
+                "min": -7.3,
+                "max": 11.8
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_04_gauci",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, Results and Table II",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "The Methods describe absolute differences, but Table II reports negative minima. Preserve the article's table values and flag the signed-versus-absolute inconsistency; do not silently relabel it as absolute error."
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_04_04_entry_point_offsets",
+          "estimand": "source_reported_planned_minus_achieved_difference",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "position",
+            "measurement_semantics": "planned_minus_achieved_difference",
+            "unit": "mm",
+            "n": 17,
+            "reported_summary": {
+              "lateral": {
+                "mean": 0.4,
+                "sd": 0.9
+              },
+              "anterior": {
+                "mean": -0.1,
+                "sd": 1.4
+              },
+              "superior": {
+                "mean": -0.8,
+                "sd": 1.3
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_04_gauci",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, Table II",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        }
+      ],
+      "report_adjudication_note": "The target review's Table 1 lists N=28, while this supplied primary report explicitly reports 17 patients. The primary report controls the extraction count; the discrepancy must remain documented."
+    },
+    {
+      "report_unit_id": "ru_0041_full_05",
+      "article_id": "a_0041_05_dallalana",
+      "study_id": "s_0041_05",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "20 human shoulders; 10 anatomic and 10 reverse",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_05_05_total_component_deviation",
+          "estimand": "source_reported_absolute_planned_achieved_deviation",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "version_and_inclination",
+            "measurement_semantics": "absolute_planned_achieved_deviation",
+            "unit": "degrees",
+            "n": 20,
+            "reported_summary": {
+              "version": {
+                "mean": 1.8,
+                "sd": 1.9
+              },
+              "inclination": {
+                "mean": 1.3,
+                "sd": 1.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_05_dallalana",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, Results and Table 1, Total row",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_05_05_total_position_deviation",
+          "estimand": "source_reported_absolute_planned_achieved_deviation",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "position",
+            "measurement_semantics": "absolute_planned_achieved_deviation",
+            "unit": "mm",
+            "n": 20,
+            "reported_summary": {
+              "anteroposterior": {
+                "mean": 0.5,
+                "sd": 0.3
+              },
+              "superoinferior": {
+                "mean": 0.8,
+                "sd": 0.5
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_05_dallalana",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, Results and Table 2, Total row",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_06",
+      "article_id": "a_0041_06_throckmorton",
+      "study_id": "s_0041_06",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "70 arthritic cadaver shoulders; 35 patient-specific guides and 35 standard instrumentation",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_06_06_all_version_deviation",
+          "estimand": "source_reported_absolute_deviation_from_intended_position",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "version",
+            "measurement_semantics": "absolute_deviation_from_intended_position",
+            "unit": "degrees",
+            "arms": {
+              "patient_specific_guide": {
+                "n": 35,
+                "mean": 5.0,
+                "sd": 4.5
+              },
+              "standard_instrumentation": {
+                "n": 35,
+                "mean": 7.0,
+                "sd": 5.5
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_06_throckmorton",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 5, Table I, TSA + RTSA rows",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_06_06_all_inclination_deviation",
+          "estimand": "source_reported_absolute_deviation_from_intended_position",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "inclination",
+            "measurement_semantics": "absolute_deviation_from_intended_position",
+            "unit": "degrees",
+            "arms": {
+              "patient_specific_guide": {
+                "n": 35,
+                "mean": 3.0,
+                "sd": 2.8
+              },
+              "standard_instrumentation": {
+                "n": 35,
+                "mean": 6.0,
+                "sd": 4.3
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_06_throckmorton",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 5, Table I, TSA + RTSA rows",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_06_06_all_starting_point_deviation",
+          "estimand": "source_reported_absolute_deviation_from_intended_position",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "offset_or_starting_point",
+            "measurement_semantics": "absolute_deviation_from_intended_position",
+            "unit": "mm",
+            "arms": {
+              "patient_specific_guide": {
+                "n": 35,
+                "mean": 2.0,
+                "sd": 1.0
+              },
+              "standard_instrumentation": {
+                "n": 35,
+                "mean": 3.0,
+                "sd": 1.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_06_throckmorton",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 5, Table I, TSA + RTSA rows",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "The target review calls this offset error. The primary report calls it deviation from the intended starting point; retain both the primary label and the review mapping in the analysis profile."
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_07",
+      "article_id": "a_0041_07_suero",
+      "study_id": "s_0041_07",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "7 analysed human shoulders; 3 conventional and 4 reverse total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_07_07_total_3d_position_difference",
+          "estimand": "source_reported_absolute_planned_achieved_difference",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "position",
+            "measurement_semantics": "absolute_planned_achieved_difference",
+            "unit": "mm",
+            "n": 7,
+            "reported_summary": {
+              "three_dimensional_distance": {
+                "mean": 3.4,
+                "sd": 1.0
+              },
+              "anteroposterior": {
+                "mean": 0.0,
+                "sd": 1.7
+              },
+              "superoinferior": {
+                "mean": 1.7,
+                "sd": 2.1
+              },
+              "lateral": {
+                "mean": 1.3,
+                "sd": 1.4
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_07_suero",
+            "source_type": "table_or_results",
+            "source_id": "PDF pages 3-4, Postoperative evaluation and Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_07_07_reverse_absolute_angular_difference",
+          "estimand": "source_reported_absolute_planned_achieved_difference",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "orientation",
+            "measurement_semantics": "absolute_planned_achieved_difference",
+            "unit": "degrees",
+            "n": 4,
+            "reported_summary": {
+              "absolute_angular_difference": {
+                "mean": 9.1,
+                "sd": 6.6
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_07_suero",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 4, Results; explicitly restricted to reverse total shoulder cases",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_08",
+      "article_id": "a_0041_08_hendel",
+      "study_id": "s_0041_08",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "31 human total shoulder arthroplasty patients; 15 patient-specific system and 16 standard instruments",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_08_08_version_deviation",
+          "estimand": "source_reported_planned_versus_actual_deviation_as_reported",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "version",
+            "measurement_semantics": "planned_versus_actual_deviation_as_reported",
+            "unit": "degrees",
+            "arms": {
+              "patient_specific_system": {
+                "n": 15,
+                "mean": 4.3,
+                "sd": 4.5
+              },
+              "standard_instrumentation": {
+                "n": 16,
+                "mean": 6.9,
+                "sd": 4.4
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_08_hendel",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 5, Table I and Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "The table range contains negative values despite the heading 'Average Deviation'. Preserve the article's reported field and defer any absolute-value interpretation to explicit calculator/profile rules."
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_08_08_inclination_deviation",
+          "estimand": "source_reported_planned_versus_actual_deviation_as_reported",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "inclination",
+            "measurement_semantics": "planned_versus_actual_deviation_as_reported",
+            "unit": "degrees",
+            "arms": {
+              "patient_specific_system": {
+                "n": 15,
+                "mean": 2.9,
+                "sd": 3.4
+              },
+              "standard_instrumentation": {
+                "n": 16,
+                "mean": 11.6,
+                "sd": 7.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_08_hendel",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 5, Table I and Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        },
+        {
+          "effect_estimate_id": "ee_0041_full_08_08_total_offset_deviation",
+          "estimand": "source_reported_planned_versus_actual_deviation_as_reported",
+          "comparison": "reported independent-arm comparison",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "calculator_eligible",
+          "source_data": {
+            "data_type": "independent_continuous_arms",
+            "outcome_axis": "offset_or_position",
+            "measurement_semantics": "planned_versus_actual_deviation_as_reported",
+            "unit": "mm",
+            "arms": {
+              "patient_specific_system": {
+                "n": 15,
+                "mean": 2.4,
+                "sd": 1.6
+              },
+              "standard_instrumentation": {
+                "n": 16,
+                "mean": 3.4,
+                "sd": 1.8
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_08_hendel",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 5, Table I and Results",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": null
+        }
+      ],
+      "report_adjudication_note": null
+    },
+    {
+      "report_unit_id": "ru_0041_full_09",
+      "article_id": "a_0041_09_gregory",
+      "study_id": "s_0041_09",
+      "target_id": "glenoid_positioning_summary",
+      "outcome": {
+        "code": "source_reported_positioning_summary",
+        "label": "Source-reported glenoid positioning summary",
+        "outcome_class": "continuous"
+      },
+      "population_or_subgroup": "68 consecutive human anatomic total shoulder arthroplasties",
+      "timepoint": "as reported in the source study",
+      "data_family": "mixed_source_summaries",
+      "quantitative_usability": "contains_source_reported_records",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0041_full_09_09_postoperative_position",
+          "estimand": "source_reported_postoperative_alignment_relative_to_scapular_plane",
+          "comparison": "single-arm summary",
+          "effect": null,
+          "effect_status": "source_supported_extraction_only",
+          "quantitative_usability": "requires_analysis_profile",
+          "source_data": {
+            "data_type": "single_arm_continuous_summary",
+            "outcome_axis": "version_inclination_rotation_offset",
+            "measurement_semantics": "postoperative_alignment_relative_to_scapular_plane",
+            "unit": "degrees_or_mm_as_named",
+            "n": 68,
+            "reported_summary": {
+              "version_degrees": {
+                "mean": 8.0,
+                "sd": 9.0
+              },
+              "inclination_degrees": {
+                "mean": 12.0,
+                "sd": 13.0
+              },
+              "rotation_degrees": {
+                "mean": 7.0,
+                "sd": 14.0
+              },
+              "offset_mm": {
+                "mean": 4.0,
+                "sd": 3.0
+              }
+            }
+          },
+          "source_location": {
+            "document_id": "a_0041_09_gregory",
+            "source_type": "table_or_results",
+            "source_id": "PDF page 2, Table 1; definitions on PDF page 3",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          },
+          "adjudication_note": "This report has no individual preoperative plan. It must not be presented as planned-versus-achieved error."
+        }
+      ],
+      "report_adjudication_note": null
+    }
+  ]
+}

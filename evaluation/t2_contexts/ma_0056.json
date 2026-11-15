@@ -1,0 +1,115 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0056",
+    "task_id": "ma_0056_full_extraction_all_reports_v2",
+    "task_type": "extraction",
+    "topic": "Among adults hospitalized with COVID-19, what source-reported all-cause mortality data are available for intravenous remdesivir plus standard care compared with placebo or standard care without remdesivir?",
+    "pico": {
+      "population": "Adults hospitalized with COVID-19",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparator": "Placebo or standard care without remdesivir for the primary contrast",
+      "outcomes": [
+        "All-cause mortality",
+        "death",
+        "deaths",
+        "died",
+        "mortality"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "outcome": {
+            "description": "All-cause mortality",
+            "aliases": [
+              "death",
+              "deaths",
+              "died",
+              "mortality"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RR"
+          ],
+          "estimands": [
+            "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {
+            "raw_data_fields": [
+              "intervention_arm.events",
+              "intervention_arm.total",
+              "comparator_arm.events",
+              "comparator_arm.total",
+              "outcome_definition",
+              "analysis_population"
+            ],
+            "poolability_required_fields": [
+              "intervention_arm.events",
+              "intervention_arm.total",
+              "comparator_arm.events",
+              "comparator_arm.total"
+            ],
+            "integrity_checks": [
+              "Do not substitute values from the target review.",
+              "Do not silently relabel a remdesivir-duration comparison as a no-remdesivir comparison.",
+              "Do not silently replace an analysis denominator with the randomized denominator.",
+              "Preserve a possible overlap with WHO Solidarity as an explicit provenance field; overlap resolution belongs to analysis."
+            ]
+          },
+          "quantitative_usability": null,
+          "extraction_notes": [
+            "Extraction records source numbers and metadata only. Effect calculation belongs to the calculator and selection belongs to the analysis task."
+          ],
+          "candidate_capture_policy": {
+            "record_scope": "For every supplied primary report, capture each source-supported arm-level mortality record that mentions remdesivir. Retain planned remdesivir duration, the actual comparator identity, the analysis population, and follow-up. Do not discard a complete source record merely because later analysis may reject its comparator, duration, overlap, or post-randomization analysis population.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "exact_source_data_required"
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "Extraction records source numbers and metadata only. Effect calculation belongs to the calculator and selection belongs to the analysis task.",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0056_01",
+        "a_0056_02",
+        "a_0056_03",
+        "a_0056_04",
+        "a_0056_05",
+        "a_0056_06",
+        "a_0056_07",
+        "a_0056_08",
+        "a_0056_09"
+      ],
+      "study_ids": {
+        "a_0056_01": "s_0056_01",
+        "a_0056_02": "s_0056_02",
+        "a_0056_03": "s_0056_03",
+        "a_0056_04": "s_0056_04",
+        "a_0056_05": "s_0056_05",
+        "a_0056_06": "s_0056_06",
+        "a_0056_07": "s_0056_07",
+        "a_0056_08": "s_0056_08",
+        "a_0056_09": "s_0056_09"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

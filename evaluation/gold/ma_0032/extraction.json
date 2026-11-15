@@ -1,0 +1,204 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0032",
+  "gold_id": "ma_0032_extraction_gold_v1",
+  "task_type": "extraction",
+  "applies_to_task_ids": [
+    "ma_0032_extraction_all_reports_v1",
+    "ma_0032_end_to_end_further_bleeding_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0032_01",
+      "article_id": "a_0032_01",
+      "study_id": "s_0032_01",
+      "target_id": "further_bleeding",
+      "outcome": {
+        "code": "further_bleeding",
+        "label": "Persistent or recurrent lower gastrointestinal bleeding",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with acute lower gastrointestinal bleeding",
+      "timepoint": "in-hospital early rebleeding after index examination",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0032_01",
+          "estimand": "early_vs_elective_colonoscopy_further_bleeding_risk_ratio",
+          "comparison": "Early colonoscopy within 24 hours versus elective or standard colonoscopy after 24 hours",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Hematochezia after clinical cessation of the index bleeding event, before hospital discharge.",
+            "intervention_arm": {
+              "label": "Early colonoscopy within 24 hours",
+              "events": 11,
+              "total": 50
+            },
+            "comparator_arm": {
+              "label": "Elective or standard colonoscopy after 24 hours",
+              "events": 15,
+              "total": 50
+            }
+          },
+          "source_location": {
+            "document_id": "a_0032_01",
+            "page": 5,
+            "source_type": "table_or_results",
+            "source_id": "Table 3, Early rebleed",
+            "locator_note": "Randomized early versus elective colonoscopy arm-level further-bleeding count and denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0032_02",
+      "article_id": "a_0032_02",
+      "study_id": "s_0032_02",
+      "target_id": "further_bleeding",
+      "outcome": {
+        "code": "further_bleeding",
+        "label": "Persistent or recurrent lower gastrointestinal bleeding",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with acute lower gastrointestinal bleeding",
+      "timepoint": "during index hospitalization",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0032_02",
+          "estimand": "early_vs_elective_colonoscopy_further_bleeding_risk_ratio",
+          "comparison": "Early colonoscopy within 24 hours versus elective or standard colonoscopy after 24 hours",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Persistent hematochezia for more than 24 hours, recurrent hematochezia after resolution, hemodynamic instability after stability, or hemoglobin drop after stable values.",
+            "intervention_arm": {
+              "label": "Early colonoscopy within 24 hours",
+              "events": 8,
+              "total": 36
+            },
+            "comparator_arm": {
+              "label": "Elective or standard colonoscopy after 24 hours",
+              "events": 5,
+              "total": 36
+            }
+          },
+          "source_location": {
+            "document_id": "a_0032_02",
+            "page": 4,
+            "source_type": "table_or_results",
+            "source_id": "Table 2, Patients with further bleeding",
+            "locator_note": "Randomized early versus elective colonoscopy arm-level further-bleeding count and denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0032_03",
+      "article_id": "a_0032_03",
+      "study_id": "s_0032_03",
+      "target_id": "further_bleeding",
+      "outcome": {
+        "code": "further_bleeding",
+        "label": "Persistent or recurrent lower gastrointestinal bleeding",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with acute lower gastrointestinal bleeding",
+      "timepoint": "within one month after colonoscopy",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0032_03",
+          "estimand": "early_vs_elective_colonoscopy_further_bleeding_risk_ratio",
+          "comparison": "Early colonoscopy within 24 hours versus elective or standard colonoscopy after 24 hours",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Recurrent rectal bleeding within one month after colonoscopy.",
+            "intervention_arm": {
+              "label": "Early colonoscopy within 24 hours",
+              "events": 8,
+              "total": 63
+            },
+            "comparator_arm": {
+              "label": "Elective or standard colonoscopy after 24 hours",
+              "events": 2,
+              "total": 69
+            }
+          },
+          "source_location": {
+            "document_id": "a_0032_03",
+            "page": 4,
+            "source_type": "table_or_results",
+            "source_id": "Results, recurrent bleedings",
+            "locator_note": "Randomized early versus elective colonoscopy arm-level further-bleeding count and denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0032_04",
+      "article_id": "a_0032_04",
+      "study_id": "s_0032_04",
+      "target_id": "further_bleeding",
+      "outcome": {
+        "code": "further_bleeding",
+        "label": "Persistent or recurrent lower gastrointestinal bleeding",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with acute lower gastrointestinal bleeding",
+      "timepoint": "30-day follow-up among participants meeting follow-up criteria",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0032_04",
+          "estimand": "early_vs_elective_colonoscopy_further_bleeding_risk_ratio",
+          "comparison": "Early colonoscopy within 24 hours versus elective or standard colonoscopy after 24 hours",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "Significant fresh blood loss after initial colonoscopy plus prespecified clinical, endoscopic, or CT evidence of recurrent lower gastrointestinal bleeding.",
+            "intervention_arm": {
+              "label": "Early colonoscopy within 24 hours",
+              "events": 11,
+              "total": 72
+            },
+            "comparator_arm": {
+              "label": "Elective or standard colonoscopy after 24 hours",
+              "events": 5,
+              "total": 75
+            }
+          },
+          "source_location": {
+            "document_id": "a_0032_04",
+            "page": 13,
+            "source_type": "table_or_results",
+            "source_id": "Results and Table 3, 30-day rebleeding",
+            "locator_note": "Randomized early versus elective colonoscopy arm-level further-bleeding count and denominator.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ]
+}

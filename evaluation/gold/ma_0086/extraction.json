@@ -1,0 +1,259 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0086",
+  "task_type": "extraction",
+  "gold_id": "ma_0086_extraction_gold_v1",
+  "applies_to_task_ids": [
+    "ma_0086_extraction_all_reports_v1",
+    "ma_0086_end_to_end_extraction_analysis_v1"
+  ],
+  "provenance": {
+    "target_review_document_id": "review_ma_0086",
+    "target_supplement_document_id": null,
+    "annotation_status": "adjudicated",
+    "source_figures": [
+      "Data and analyses: Comparison 1"
+    ]
+  },
+  "unit_definition": "One source-supported trial-by-outcome effect that can be computed exactly from the published report. Outcomes lacking source-identifiable exact counts are retained as unscored audit findings rather than numeric gold effects.",
+  "report_units": [
+    {
+      "report_unit_id": "ru_0001",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "pfapa_symptom_resolution",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "adenotonsillectomy_vs_expectant_management",
+      "outcome": {
+        "code": "immediate_persistent_pfapa_resolution",
+        "label": "Immediate and persistent resolution of PFAPA symptoms",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "all randomized children",
+      "timepoint": "18 months after randomization",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0001_resolution",
+          "estimand": "surgery_vs_control",
+          "comparison": "adenotonsillectomy versus expectant management",
+          "used_effect": {
+            "effect_type": "RR",
+            "value": 12.63,
+            "ci_lower": 1.81,
+            "ci_upper": 87.98,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 12.63,
+            "ci_lower": 1.81,
+            "ci_upper": 87.98,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "binary_arm_counts",
+            "intervention_events": 12,
+            "intervention_total": 19,
+            "control_events": 1,
+            "control_total": 20,
+            "calculation": "risk ratio and 95% CI derived from Table II arm counts"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "source_derived_from_published_arm_counts",
+            "end_to_end_pooled_scoring_basis": "not_pooled"
+          },
+          "source_location": {
+            "document_id": "a_200902",
+            "page": 2,
+            "source_type": "table",
+            "source_id": "Table II",
+            "locator_note": "None (complete resolution): 12/19 surgery and 1/20 controls.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_0002",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "pfapa_episode_rate",
+      "data_family": "event_counts_with_person_time",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "adenotonsillectomy_vs_expectant_management",
+      "outcome": {
+        "code": "pfapa_episode_rate",
+        "label": "PFAPA episode rate",
+        "outcome_class": "rate"
+      },
+      "population_or_subgroup": "all randomized children",
+      "timepoint": "18 months after randomization",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0002_episode_rate",
+          "estimand": "surgery_vs_control",
+          "comparison": "adenotonsillectomy versus expectant management",
+          "used_effect": {
+            "effect_type": "IRR",
+            "value": 0.07,
+            "ci_lower": 0.04,
+            "ci_upper": 0.13,
+            "direction": "decreased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.07,
+            "ci_lower": 0.04,
+            "ci_upper": 0.13,
+            "direction": "decreased_risk"
+          },
+          "source_data": {
+            "data_type": "episode_counts_with_equal_follow_up",
+            "intervention_episodes": 12,
+            "intervention_total": 19,
+            "control_episodes": 179,
+            "control_total": 20,
+            "follow_up_months": 18,
+            "calculation": "rate ratio derived from Table II episode totals and equal 18-month follow-up"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "source_derived_from_published_episode_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_rate_ratio"
+          },
+          "source_location": {
+            "document_id": "a_200902",
+            "page": 2,
+            "source_type": "table",
+            "source_id": "Table II",
+            "locator_note": "Total number of episodes: 12 surgery and 179 controls over 18 months.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_pfapa_episode_rate"
+      ]
+    },
+    {
+      "report_unit_id": "ru_0003",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "pfapa_episode_rate",
+      "data_family": "event_counts_with_person_time",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "tonsillectomy_vs_follow_up",
+      "outcome": {
+        "code": "pfapa_episode_rate",
+        "label": "PFAPA episode rate",
+        "outcome_class": "rate"
+      },
+      "population_or_subgroup": "all randomized children",
+      "timepoint": "6 months after randomization",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0003_episode_rate",
+          "estimand": "surgery_vs_control",
+          "comparison": "tonsillectomy versus follow-up alone",
+          "used_effect": {
+            "effect_type": "IRR",
+            "value": 0.1,
+            "ci_lower": 0.04,
+            "ci_upper": 0.28,
+            "direction": "decreased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "RR",
+            "value": 0.1,
+            "ci_lower": 0.04,
+            "ci_upper": 0.28,
+            "direction": "decreased_risk"
+          },
+          "source_data": {
+            "data_type": "episode_counts_with_equal_follow_up",
+            "intervention_episodes": 4,
+            "intervention_total": 14,
+            "control_episodes": 34,
+            "control_total": 12,
+            "follow_up_months": 6,
+            "reported_rates_per_person_month": {
+              "intervention": 0.05,
+              "control": 0.44
+            },
+            "calculation": "rate ratio derived from published episode counts and six-month person-time"
+          },
+          "adjudication": {
+            "source_vs_target_review": "consistent",
+            "module_numeric_scoring_basis": "source_derived_from_published_episode_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_rate_ratio"
+          },
+          "source_location": {
+            "document_id": "a_200701",
+            "page": 3,
+            "source_type": "paragraph",
+            "source_id": "Results",
+            "locator_note": "Four of 14 surgery children had one episode; controls had 34 episodes; reported rates 0.05 and 0.44 per person-month.",
+            "locator_status": "verified",
+            "locator_method": "mineru_paragraph_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_pfapa_episode_rate"
+      ]
+    }
+  ],
+  "supplementary_unscored_source_findings": [
+    {
+      "finding_id": "uf_0001_resolution",
+      "article_id": "a_200701",
+      "study_id": "s_200701",
+      "target_id": "pfapa_symptom_resolution",
+      "outcome": "Symptom-free at six months",
+      "data_family": "binary_arm_counts",
+      "source_data": {
+        "intervention_events": 14,
+        "intervention_total": 14,
+        "control_events": 6,
+        "control_total": 12
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_200701",
+        "page": 3,
+        "source_type": "paragraph",
+        "source_id": "Results",
+        "locator_note": "All 14 surgery children and 6 of 12 controls were symptom-free at six months.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "Target review used author-correspondence data (10/14 versus 4/12), which are unavailable in the published report."
+    },
+    {
+      "finding_id": "uf_0002_corticosteroid",
+      "article_id": "a_200902",
+      "study_id": "s_200902",
+      "target_id": "corticosteroid_use_during_follow_up",
+      "outcome": "Corticosteroid treatment during follow-up",
+      "data_family": "percentage_only",
+      "source_data": {
+        "intervention_percent": 50,
+        "control_percent": 88
+      },
+      "quantitative_usability": "source_only",
+      "source_location": {
+        "document_id": "a_200902",
+        "page": 2,
+        "source_type": "table",
+        "source_id": "Table II",
+        "locator_note": "Corticosteroid treatment: 50% surgery and 88% controls.",
+        "locator_status": "verified"
+      },
+      "reason_not_scored": "Published Table II reports rounded percentages, not exact arm event counts; exact RR and CI cannot be source-reconstructed without importing review data."
+    }
+  ]
+}

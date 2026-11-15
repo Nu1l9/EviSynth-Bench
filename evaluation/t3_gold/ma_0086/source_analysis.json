@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0086",
+  "task_type": "analysis",
+  "gold_id": "ma_0086_analysis_gold_v1",
+  "provenance": {
+    "target_review_document_id": "review_ma_0086",
+    "annotation_status": "adjudicated"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "main_pr_pfapa_episode_rate",
+      "selected_candidate_ids": [
+        "ce_0002",
+        "ce_0003"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0002_episode_rate",
+        "ee_0003_episode_rate"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_pfapa_episode_rate",
+          "outcome_group": "PFAPA episode rate",
+          "effect": {
+            "effect_type": "IRR",
+            "value": 0.08,
+            "ci_lower": 0.05,
+            "ci_upper": 0.13,
+            "direction": "decreased_risk"
+          },
+          "member_candidate_ids": [
+            "ce_0002",
+            "ce_0003"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0002_episode_rate",
+            "ee_0003_episode_rate"
+          ],
+          "heterogeneity_i2": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1732 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0037",
+  "candidate_set_id": "ma_0037_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0037_23",
+      "study_id": "s_0037_23",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (diagnostic specimen obtained)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA sampling of pulmonary mass lesions or lymph nodes; analysis unit was specimen (294 total: 264 lymph-node specimens and 30 lung-mass specimens). The study defined adequacy as site-specific tissue identified or tumor present.",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 132,
+        "intervention_total": 140,
+        "control_events": 138,
+        "control_total": 154,
+        "outcome_unit": "EBUS-TBNA specimen"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_23",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 42
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0037_13",
+      "study_id": "s_0037_13",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during transbronchial needle aspiration (TBNA) sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with mediastinal or hilar lymphadenopathies, with or without endoscopically non-visible parenchymal lung lesions; group A without ROSE versus group B with ROSE; analysis unit: patient",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 48,
+        "intervention_total": 60,
+        "control_events": 39,
+        "control_total": 60,
+        "outcome_unit": "Patients with sampling reported as suitable for diagnosis / diagnosis achieved by TBNA; source reports the complementary failures as unsuitable for diagnosis"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_13",
+        "source_type": "table",
+        "source_id": "Table I",
+        "content_list_item_index": 44
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0037_09",
+      "study_id": "s_0037_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during conventional transbronchial needle aspiration (TBNA)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate samples",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults with enlarged hilar and/or mediastinal lymph nodes undergoing TBNA; analysis conducted per lymph node",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 80,
+        "intervention_total": 102,
+        "control_events": 109,
+        "control_total": 126,
+        "outcome_unit": "Adequate TBNA specimen per lymph node"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 55
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0037_02",
+      "study_id": "s_0037_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during CT-guided transthoracic fine-needle aspiration",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with pulmonary nodules or mass lesions undergoing CT-guided transthoracic fine-needle aspiration; multiple-pass coaxial needle group versus single-pass needle group (group C vs group A)",
+      "timepoint": "During the sampling procedure",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 47,
+        "intervention_total": 47,
+        "control_events": 41,
+        "control_total": 48,
+        "outcome_unit": "patients with adequate sampling"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 34
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0037_05",
+      "study_id": "s_0037_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": null,
+        "label": "Qualified EBUS-TBNA puncture specimen",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Patients with mediastinal or hilar lesions clinically suspected of primary lung cancer undergoing EBUS-TBNA",
+      "timepoint": "After the index EBUS-TBNA procedure",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Qualified puncture specimen under the study's specified specimen-qualification criteria.",
+        "intervention_arm": {
+          "label": "Rapid on-site cytologic evaluation",
+          "events": 80,
+          "total": 81
+        },
+        "comparator_arm": {
+          "label": "No rapid on-site cytologic evaluation",
+          "events": 54,
+          "total": 60
+        }
+      },
+      "effect": {
+        "effect_type": "RD",
+        "value": 0.08765432098765424,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.001650534113852714,
+        "direction": "rose_higher_adequacy_when_rd_gt_0"
+      },
+      "source_location": {
+        "document_id": "a_0037_05",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Results section 2.5, puncture specimen qualification analysis"
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0037_14",
+      "study_id": "s_0037_14",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (representative sample)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "348 consecutive patients undergoing EBUS-TBNA of mediastinal lymph nodes or abnormal tissue; overall population, without adequacy results stratified by ROSE status",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports overall representative-sample failure, corresponding to 335/348 representative samples overall, but does not provide adequate/representative sample counts separately for ROSE and non-ROSE groups. The source defines a lymph node aspiration as representative when the lymphocyte score is 1 or more or when clusters of anthracotic pigment-laden macrophages are present (content_0028)."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_14",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 42
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0037_01",
+      "study_id": "s_0037_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (immediate cytologic study) during CT-guided fine-needle aspiration cytology",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with operable indeterminate solitary pulmonary nodules undergoing CT-guided FNAC; group A versus group B",
+      "timepoint": "Definitive cytologic examination",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 110,
+        "intervention_total": 110,
+        "control_events": 97,
+        "control_total": 110,
+        "outcome_unit": "Patients/samples with adequate cytologic specimen at definitive cytologic examination"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_01",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0037_25",
+      "study_id": "s_0037_25",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with central intrapulmonary lesions not visible by conventional bronchoscopy undergoing EBUS-TBNA",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source describes ROSE as being used to confirm that obtained cytologic material was of adequate quality, with specimens sent to pathology later when ROSE was unavailable. The located source does not report arm-level counts for adequate samples; its available ROSE-versus-non-ROSE counts concern diagnostic yield and were not transcribed as sample adequacy."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_25",
+        "source_type": "figure",
+        "source_id": "Figure C",
+        "content_list_item_index": 28
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0037_26",
+      "study_id": "s_0037_26",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (satisfactory cell block)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for mediastinal or hilar lesions or lung masses; pathology-reviewed cases (53 non-ROSE and 110 ROSE)",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 99,
+        "intervention_total": 110,
+        "control_events": 39,
+        "control_total": 53,
+        "outcome_unit": "Cases with a satisfactory cell block"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_26",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 48
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0037_07",
+      "study_id": "s_0037_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA of hilar/mediastinal lymph nodes or lesions adjacent to the central airway; per-patient analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 3 reports nonrepresentative samples in 7 ROSE patients and 12 non-ROSE patients, but the located source does not explicitly define or report these values as adequate versus inadequate cytological samples. Adequacy counts therefore cannot be derived without inference."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_07",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 45
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0037_05",
+      "study_id": "s_0037_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "C-ROSE during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample / specimen qualified rate",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with mediastinal and/or hilar lesions, including enlarged lymph nodes or masses, clinically suspected of primary lung cancer; sampling modality EBUS-TBNA; analysis unit patient",
+      "timepoint": "Post-EBUS-TBNA sampling",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports patient-level post-EBUS-TBNA specimen adequacy as 98.77% with C-ROSE versus 90.00% without C-ROSE. The adequacy definition was: a specimen was qualified if either histologic or cytologic material showed obvious atypical cells or several lymphocyte clusters; it was unqualified if both showed only few nucleated cells with abundant blood cells or respiratory epithelial cells. Arm-level adequate-event counts are not explicitly reported in the located source region; the source explicitly reports 1 unqualified case in the C-ROSE group and 6 in the No C-ROSE group."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_05",
+        "source_type": "paragraph",
+        "source_id": "content_0049",
+        "content_list_item_index": 49
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0037_03",
+      "study_id": "s_0037_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": null,
+        "label": "Adequate TBNA specimen",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with mediastinal or hilar adenopathy undergoing flexible bronchoscopy with transbronchial needle aspiration",
+      "timepoint": "At final pathological review of the index bronchoscopy specimens",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Specimen adequacy defined as presence of lymphocytes.",
+        "intervention_arm": {
+          "label": "Rapid on-site cytologic evaluation",
+          "events": 32,
+          "total": 34
+        },
+        "comparator_arm": {
+          "label": "No rapid on-site cytologic evaluation",
+          "events": 30,
+          "total": 34
+        }
+      },
+      "effect": {
+        "effect_type": "RD",
+        "value": 0.05882352941176472,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.004681457358029718,
+        "direction": "rose_higher_adequacy_when_rd_gt_0"
+      },
+      "source_location": {
+        "document_id": "a_0037_03",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Results text and Table 3, Main Results"
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Other specimen type; population or sampling modality not further specified; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 0 specimens not assessed, 0 rapidly assessed specimens inadequate, and 1 rapidly assessed specimen adequate. The specimen type and comparator adequacy are not further specified."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0037_20",
+      "study_id": "s_0037_20",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during FNAB sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (source-reported as “Diagnostic”)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "All FNAB cases across reported organ sites",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 129,
+        "intervention_total": 169,
+        "control_events": 123,
+        "control_total": 227,
+        "outcome_unit": "FNAB case"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_20",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0037_21",
+      "study_id": "s_0037_21",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate negative specimen",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing transbronchial needle aspiration of paratracheal, parabronchial, or peripheral lung masses; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 19,
+        "intervention_total": 73,
+        "control_events": 17,
+        "control_total": 134,
+        "outcome_unit": "specimen with an adequate negative cytologic diagnosis"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_21",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 22
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "All specimens: adult patients undergoing image-guided FNAB or TBNA of lung, pleural, mediastinal, or related thoracic lesions; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 99 adequate and 48 inadequate specimens among 147 specimens receiving rapid assessment, while the no-rapid-assessment group contains 238 specimens but no arm-level adequate-sample count is reported. Specimen adequacy was defined separately as sufficient, well-preserved diagnostic cells."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "paragraph",
+        "source_id": "content_0005",
+        "content_list_item_index": 5
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0037_04",
+      "study_id": "s_0037_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "All patients undergoing EBUS-TBNA for lung cancer staging or investigation of hilo-mediastinal lesions; analysis unit was patients",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 38,
+        "intervention_total": 41,
+        "control_events": 32,
+        "control_total": 40,
+        "outcome_unit": "Patients with adequate cytological samples"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_04",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TBNA of lung; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 58 specimens not assessed, 5 rapidly assessed specimens inadequate, and 9 rapidly assessed specimens adequate. Adequacy in the no-rapid-assessment group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0037_06",
+      "study_id": "s_0037_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during endobronchial ultrasound-guided transbronchial needle aspiration (EBUS-TBNA)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults with suspected stage I/II pulmonary sarcoidosis and mediastinal lymphadenopathy undergoing EBUS-TBNA with EBB and TBLB; EBUS-R group versus EBUS-NR group",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For EBUS-TBNA, adequacy on ROSE was reported in 17 of 20 patients (85%) in the ROSE group. A corresponding adequacy count for the EBUS-TBNA without-ROSE group was not reported in the located source region, so a two-arm binary contrast cannot be calculated."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_06",
+        "source_type": "table",
+        "source_id": "content_0080",
+        "content_list_item_index": 80
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0037_22",
+      "study_id": "s_0037_22",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during EBUS fine-needle aspiration sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS FNA biopsy of lung and/or intrathoracic lymph-node sites",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports site-level nondiagnostic results, not adequate-sample event counts: 4 of 709 non-ROSE sites (0.56%) and 19 of 474 ROSE sites (4.01%). The source also describes ROSE as providing intraprocedural information about specimen adequacy, but adequate counts cannot be derived without applying an unstated complement calculation."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_22",
+        "source_type": "table",
+        "source_id": "TABLE 3",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0037_10",
+      "study_id": "s_0037_10",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with small cell lung cancer undergoing EBUS-TBNA of mediastinal or hilar lymph nodes or centrally located parenchymal lesions; analyzed by procedure",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The report describes adequacy-directed sampling in the no-ROSE group and reports that specimen adequacy was assessed by the attending cytotechnologist when ROSE was performed. It does not provide arm-level counts of adequate samples for the ROSE versus no-ROSE groups. The reported 76/77 versus 21/23 values are diagnostic yield, not sample adequacy, and were not transcribed as adequacy counts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_10",
+        "source_type": "paragraph",
+        "source_id": "content_0027",
+        "content_list_item_index": 27
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0037_17",
+      "study_id": "s_0037_17",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during R-EBUS-guided transbronchial biopsy or brushing",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing bronchoscopy with radial probe endobronchial ultrasound for peripheral pulmonary lesions; sampling by transbronchial biopsy or brushing",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The article describes ROSE as improving adequacy rate and reducing the number of passes needed for an adequate sample, but does not report arm-level adequate-sample counts or denominators. The study's reported between-group results concern diagnostic yield, not sample adequacy."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_17",
+        "source_type": "paragraph",
+        "source_id": "content_0017",
+        "content_list_item_index": 17
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Ultrasound-guided FNAB of lung; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 3 specimens not assessed, 4 rapidly assessed specimens inadequate, and 7 rapidly assessed specimens adequate. Adequacy in the no-rapid-assessment group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0037_15",
+      "study_id": "s_0037_15",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during endobronchial needle aspiration sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "125 patients with central lung cancers undergoing endobronchial needle aspiration; randomized to ROSE-EBNA or conventional EBNA",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source describes immediate adequacy evaluation during ROSE-EBNA and no immediate adequacy evaluation during conventional EBNA. It does not report arm-level counts of adequate samples."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_15",
+        "source_type": "figure",
+        "source_id": "fig. 1",
+        "content_list_item_index": 23
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0037_12",
+      "study_id": "s_0037_12",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing transbronchial needle aspiration of mediastinal lymph nodes; adequacy assessment reported during ROSE",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The report states that adequacy was assessed during rapid on-site evaluation, but does not provide arm-level counts or denominators for adequate samples by ROSE versus no ROSE. The reported 71% versus 25% results concern positive diagnosis of cancer, not sample adequacy, and are therefore not transcribed as adequacy data."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_12",
+        "source_type": "paragraph",
+        "source_id": "content_0012",
+        "content_list_item_index": 12
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0037_02",
+      "study_id": "s_0037_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during CT-guided transthoracic fine-needle aspiration",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with pulmonary nodules or mass lesions undergoing CT-guided transthoracic fine-needle aspiration; single-pass needle groups (group B vs group A)",
+      "timepoint": "During the sampling procedure",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 48,
+        "intervention_total": 48,
+        "control_events": 41,
+        "control_total": 48,
+        "outcome_unit": "patients with adequate sampling"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 34
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "TBNA of mediastinal lymph nodes; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 169 specimens not assessed, 25 rapidly assessed specimens inadequate, and 30 rapidly assessed specimens adequate. Adequacy in the no-rapid-assessment group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0037_04",
+      "study_id": "s_0037_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for investigation of mediastinal/hilar lesions etiology; analysis unit was patients",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 27,
+        "intervention_total": 29,
+        "control_events": 24,
+        "control_total": 32,
+        "outcome_unit": "Patients with adequate cytological samples"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_04",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0029",
+      "article_id": "a_0037_24",
+      "study_id": "s_0037_24",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (sufficient tissue for pathological examination)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with suspected hilar and/or mediastinal lymph-node involvement undergoing EBUS-TBNA for diagnosis and staging of lung cancer; analysis reported on a per-lesion basis",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 233,
+        "intervention_total": 252,
+        "control_events": 229,
+        "control_total": 260,
+        "outcome_unit": "Lymph-node lesion/specimen with sufficient tissue for pathological examination"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_24",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 50
+      }
+    },
+    {
+      "candidate_id": "cand_0030",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "CT-guided FNAB of lung; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 2 specimens not assessed, 9 rapidly assessed specimens inadequate, and 40 rapidly assessed specimens adequate. Adequacy in the no-rapid-assessment group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0031",
+      "article_id": "a_0037_08",
+      "study_id": "s_0037_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with nonsquamous non-small cell lung cancer undergoing EBUS-TBNA; subgroup (ROSE n=65, EBUS n=61)",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The study reports EBUS-TBNA adequacy rates of 94.9% with ROSE versus 97.7% without ROSE among patients with nonsquamous NSCLC, with P=.425. The methods specify that adequacy was a secondary end point assessed per lesion. The located source reports percentages but does not provide the corresponding arm-level adequate-lesion counts and denominators needed for the binary_arm_counts template. The sampling modality was EBUS-TBNA of lymph node stations, lung nodules/masses, or both."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_08",
+        "source_type": "table",
+        "source_id": "TABLE 3",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0032",
+      "article_id": "a_0037_11",
+      "study_id": "s_0037_11",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during TBNA sampling (ROSE)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with lung cancer undergoing transbronchial needle aspiration of mediastinal or hilar lymph nodes; analysis at the puncture/needle level",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 98,
+        "intervention_total": 106,
+        "control_events": 154,
+        "control_total": 179,
+        "outcome_unit": "Successful TBNA punctures / total TBNA punctures"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_11",
+        "source_type": "paragraph",
+        "source_id": "content_0032",
+        "content_list_item_index": 32
+      }
+    },
+    {
+      "candidate_id": "cand_0033",
+      "article_id": "a_0037_01",
+      "study_id": "s_0037_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": null,
+        "label": "Adequate cytological sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with operable indeterminate solitary pulmonary nodules undergoing CT-guided fine-needle aspiration cytology",
+      "timepoint": "Immediately after CT-guided fine-needle aspiration procedure",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Sample considered adequate when rich in cellularity; poor or absent cellularity, necrosis, blood-stained, or perilesional material was inadequate.",
+        "intervention_arm": {
+          "label": "Rapid on-site cytologic evaluation",
+          "events": 110,
+          "total": 110
+        },
+        "comparator_arm": {
+          "label": "No rapid on-site cytologic evaluation",
+          "events": 97,
+          "total": 110
+        }
+      },
+      "effect": {
+        "effect_type": "RD",
+        "value": 0.11818181818181817,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.0009474079639368893,
+        "direction": "rose_higher_adequacy_when_rd_gt_0"
+      },
+      "source_location": {
+        "document_id": "a_0037_01",
+        "page": 2,
+        "source_type": "table",
+        "source_id": "Table 1, FNAC Diagnosis and Performance Parameter"
+      }
+    },
+    {
+      "candidate_id": "cand_0034",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "X-ray-guided FNAB of lung; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 4 specimens not assessed, 4 rapidly assessed specimens inadequate, and 7 rapidly assessed specimens adequate. Adequacy in the no-rapid-assessment group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0035",
+      "article_id": "a_0037_04",
+      "study_id": "s_0037_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for lung cancer staging; analysis unit was patients",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 11,
+        "intervention_total": 12,
+        "control_events": 8,
+        "control_total": 8,
+        "outcome_unit": "Patients with adequate cytological samples"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_04",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0036",
+      "article_id": "a_0037_05",
+      "study_id": "s_0037_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "C-ROSE during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample / specimen qualified rate",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for mediastinal and/or lung lesions, including enlarged lymph nodes or masses, with suspected primary lung cancer; analysis unit patient",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The English abstract reports specimen qualified rates of 98.77% with C-ROSE versus 90.00% without C-ROSE. This is a duplicate source-language report of the same study result; no explicit arm-level adequate-event counts are provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_05",
+        "source_type": "paragraph",
+        "source_id": "content_0010",
+        "content_list_item_index": 10
+      }
+    },
+    {
+      "candidate_id": "cand_0037",
+      "article_id": "a_0037_19",
+      "study_id": "s_0037_19",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adult patients undergoing percutaneous CT-guided fine-needle aspiration biopsy of focal lung lesions; cytopathologist present versus absent during biopsy",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The report describes specimen adequacy assessment during percutaneous lung fine-needle aspiration: with a cytopathologist present, immediate microscopic assessment guided additional sampling until the material was accepted as adequate; without a cytopathologist, radiologists assessed adequacy by gross examination. The authors state that specimen adequacy could be assured only when a cytopathologist was present. No arm-level counts or denominators for adequate specimens were reported in the located excerpts."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_19",
+        "source_type": "paragraph",
+        "source_id": "content_0036",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0038",
+      "article_id": "a_0037_18",
+      "study_id": "s_0037_18",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults undergoing fiberoptic bronchoscopy to evaluate lung masses and/or hilar or mediastinal adenopathy; on-site assessment subgroup",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports adequacy among cases receiving on-site cytopathology assessment: 41 of 45 specimens were judged adequate or diagnostic on-site, while 4 were inadequate. It also reports final-review adequacy for the initially adequate cases (37 cases; 85%) and definitive diagnosis among initially inadequate cases (2 cases; 50%). No no-ROSE comparator arm or comparator denominator is reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_18",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 45
+      }
+    },
+    {
+      "candidate_id": "cand_0039",
+      "article_id": "a_0037_20",
+      "study_id": "s_0037_20",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during FNAB sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (source-reported as “Diagnostic”)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "FNAB cases involving lung lesions",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 51,
+        "intervention_total": 62,
+        "control_events": 64,
+        "control_total": 97,
+        "outcome_unit": "FNAB case"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_20",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0040",
+      "article_id": "a_0037_04",
+      "study_id": "s_0037_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": null,
+        "label": "Adequate EBUS-TBNA cytological sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for hilar or mediastinal lesion investigation or lung cancer staging",
+      "timepoint": "Index EBUS-TBNA procedure",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Sample adequate when lymphocytes, anthracosis, or a specific diagnosis was identified.",
+        "intervention_arm": {
+          "label": "Rapid on-site cytologic evaluation",
+          "events": 38,
+          "total": 41
+        },
+        "comparator_arm": {
+          "label": "No rapid on-site cytologic evaluation",
+          "events": 32,
+          "total": 40
+        }
+      },
+      "effect": {
+        "effect_type": "RD",
+        "value": 0.12682926829268293,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.005654067700700801,
+        "direction": "rose_higher_adequacy_when_rd_gt_0"
+      },
+      "source_location": {
+        "document_id": "a_0037_04",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 2, Adequacy of cytological samples"
+      }
+    },
+    {
+      "candidate_id": "cand_0041",
+      "article_id": "a_0037_06",
+      "study_id": "s_0037_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during conventional transbronchial needle aspiration (c-TBNA)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults with suspected stage I/II pulmonary sarcoidosis and mediastinal lymphadenopathy undergoing conventional TBNA with EBB and TBLB; TBNA-R group versus TBNA-NR group",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For c-TBNA, adequacy on ROSE was reported in 17 of 20 patients (85%) in the ROSE group. A corresponding adequacy count for the c-TBNA without-ROSE group was not reported in the located source region, so a two-arm binary contrast cannot be calculated."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_06",
+        "source_type": "table",
+        "source_id": "content_0080",
+        "content_list_item_index": 80
+      }
+    },
+    {
+      "candidate_id": "cand_0042",
+      "article_id": "a_0037_08",
+      "study_id": "s_0037_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during EBUS-TBNA",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients undergoing EBUS-TBNA for suspected or known advanced lung cancer; overall study population (ROSE n=98, EBUS n=99)",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The study reports EBUS-TBNA adequacy rates of 94.3% with ROSE versus 97.1% without ROSE in the overall population, with P=.357. The methods specify that adequacy was a secondary end point assessed per lesion. The located source reports percentages but does not provide the corresponding arm-level adequate-lesion counts and denominators needed for the binary_arm_counts template. The sampling modality was EBUS-TBNA of lymph node stations, lung nodules/masses, or both."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_08",
+        "source_type": "table",
+        "source_id": "TABLE 3",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0043",
+      "article_id": "a_0037_27",
+      "study_id": "s_0037_27",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation using telecytology during sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Imprints of biopsy; specimen-level analysis",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 2 specimens not assessed, 1 rapidly assessed specimen inadequate, and 5 rapidly assessed specimens adequate. Adequacy in the no-rapid-assessment group is not reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_27",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0044",
+      "article_id": "a_0037_02",
+      "study_id": "s_0037_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Rapid on-site cytologic evaluation during diagnostic sampling versus no rapid on-site evaluation",
+      "outcome": {
+        "code": null,
+        "label": "Adequate fine-needle aspiration sample",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Patients with pulmonary nodules or mass lesions undergoing CT-guided transthoracic fine-needle aspiration",
+      "timepoint": "During the index CT-guided fine-needle aspiration procedure",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Sample adequate when it had high cellularity; samples with poor or absent cellularity, necrosis, or blood-stained material were inadequate.",
+        "intervention_arm": {
+          "label": "Rapid on-site cytologic evaluation",
+          "events": 48,
+          "total": 48
+        },
+        "comparator_arm": {
+          "label": "No rapid on-site cytologic evaluation",
+          "events": 41,
+          "total": 48
+        }
+      },
+      "effect": {
+        "effect_type": "RD",
+        "value": 0.14583333333333337,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": 0.0025951244212962968,
+        "direction": "rose_higher_adequacy_when_rd_gt_0"
+      },
+      "source_location": {
+        "document_id": "a_0037_02",
+        "page": 3,
+        "source_type": "table",
+        "source_id": "Table 3, Results of transthoracic fine-needle aspirations"
+      }
+    },
+    {
+      "candidate_id": "cand_0045",
+      "article_id": "a_0037_03",
+      "study_id": "s_0037_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation (ROSE) during transbronchial needle aspiration (TBNA) sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample (specimen adequacy)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adult patients referred for evaluation of mediastinal or hilar adenopathy and scheduled to undergo flexible bronchoscopy with TBNA; analysis unit was patients; sampling modality was TBNA of mediastinal/hilar lymph nodes or airway-abutting pulmonary masses",
+      "timepoint": "During the initial bronchoscopy/TBNA procedure",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 32,
+        "intervention_total": 34,
+        "control_events": 30,
+        "control_total": 34,
+        "outcome_unit": "Patients with adequate TBNA specimens"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_03",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0046",
+      "article_id": "a_0037_10",
+      "study_id": "s_0037_10",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Rapid on-site cytologic evaluation during EBUS-TBNA sampling",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Adequate diagnostic sample",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with small cell lung cancer undergoing EBUS-TBNA; specimens evaluated by cytologic and histologic methods; analysis unit was procedure",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source explicitly describes assessment of specimen adequacy during ROSE, but does not report the number of adequate specimens in either the ROSE or no-ROSE arm. The available comparative numeric result concerns diagnostic yield rather than adequacy."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0037_10",
+        "source_type": "paragraph",
+        "source_id": "content_0030",
+        "content_list_item_index": 30
+      }
+    }
+  ]
+}

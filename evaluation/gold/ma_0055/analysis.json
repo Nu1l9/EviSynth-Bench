@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0055",
+  "gold_id": "ma_0055_analysis_gold_v1",
+  "task_type": "analysis",
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_all_cause_mortality",
+      "selected_candidate_ids": [
+        "ce_0055_10",
+        "ce_0055_13"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0055_10",
+        "ee_0055_13"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0055_all_cause_mortality",
+          "outcome_group": "all-cause mortality",
+          "effect": {
+            "effect_type": "OR",
+            "value": 2.7557736215193946,
+            "ci_lower": 1.6477029705486792,
+            "ci_upper": 4.60901533152741,
+            "pooled_log_or": 1.0136982095452782,
+            "standard_error_log_or": 0.2624109599344292,
+            "study_count": 2,
+            "degrees_of_freedom": 1,
+            "tau_squared_der_simonian_laird": 0.013315698974248382,
+            "q_fixed_effect": 1.0524842457426546,
+            "i_squared_fixed_effect_percent": 4.986701316903862,
+            "ci_method": "normal_approximation_0.975"
+          },
+          "member_candidate_ids": [
+            "ce_0055_10",
+            "ce_0055_13"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0055_10",
+            "ee_0055_13"
+          ],
+          "calculator_run": {
+            "calculator_id": "binary_prognostic_or_der_simonian_laird_v1",
+            "pooling": "random_effects_log_OR_inverse_variance"
+          }
+        }
+      ]
+    }
+  ]
+}

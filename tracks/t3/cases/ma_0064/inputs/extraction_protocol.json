@@ -1,0 +1,115 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "case_id": "ma_0064",
+  "protocol_id": "ma_0064_low_volume_nodal_metastasis_recurrence_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among surgically staged endometrial-cancer cohorts, is low-volume sentinel-node metastasis associated with recurrence compared with pathologically node-negative status?",
+  "pico": {
+    "population": {
+      "description": "Patients with surgically staged endometrial cancer in a cohort reporting sentinel-node pathology and follow-up",
+      "aliases": []
+    },
+    "intervention_or_exposure": {
+      "description": "Low-volume nodal metastasis: isolated tumor cells or micrometastasis",
+      "aliases": []
+    },
+    "comparator": {
+      "description": "Pathologically node-negative status",
+      "aliases": []
+    },
+    "outcome": {
+      "description": "Source-defined recurrence or disease-free survival event at source-reported follow-up",
+      "aliases": []
+    }
+  },
+  "eligible_study_designs": [
+    "observational prognostic cohort",
+    "retrospective case-control cohort"
+  ],
+  "targets": [
+    {
+      "target_id": "recurrence",
+      "outcome": {
+        "description": "Source-defined disease recurrence recorded as binary events, with a secondary capture lane for source-reported time-to-event disease-free-survival effects.",
+        "aliases": [
+          "recurrence",
+          "disease recurrence",
+          "disease-free survival",
+          "disease event"
+        ]
+      },
+      "comparison": "Low-volume sentinel-node metastasis versus pathologically node-negative status",
+      "population_or_subgroup": "Source-defined cohort; preserve adjuvant-treatment status and histology scope when reported",
+      "timepoint_policy": {
+        "rule": "Use the source-reported follow-up. Do not convert Kaplan-Meier survival percentages, disease-free survivor counts, or a review table into binary recurrence events."
+      },
+      "accepted_data_families": [
+        "binary_exposure_outcome_counts",
+        "adjusted_time_to_event_effect"
+      ],
+      "preferred_effect_measures": [
+        "RR",
+        "HR"
+      ],
+      "estimands": [
+        "low_volume_nodal_metastasis_vs_node_negative_recurrence",
+        "micrometastasis_vs_node_negative_adjusted_disease_event_hazard"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "Capture source-supported ITC, micrometastasis, and node-negative arms separately. Preserve partial records and source-reported time-to-event effects instead of fabricating a binary contrast.",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "A binary recurrence effect requires events and a denominator for both comparison groups. An adjusted time-to-event effect may be captured only with its explicitly source-reported estimate and confidence interval; it is not interchangeable with a binary risk ratio.",
+      "extraction_notes": []
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "text"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "source-reported low-volume-metastasis or node-negative outcome record",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "data_family",
+      "estimand",
+      "raw_data_or_reported_effect",
+      "source_location"
+    ]
+  },
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0064",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "recurrence",
+        "status": "unsupported",
+        "original_families": [
+          "binary_exposure_outcome_counts",
+          "adjusted_time_to_event_effect"
+        ],
+        "recommended_v1_families": [
+          "binary_exposure_outcome_counts",
+          "time_to_event"
+        ],
+        "unsupported_families": [
+          "binary_exposure_outcome_counts"
+        ],
+        "reason": "No existing seven-case v1 template has the same data contract."
+      }
+    ]
+  }
+}

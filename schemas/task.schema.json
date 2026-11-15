@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/task.schema.json",
+  "title": "Meta-analysis bench task",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_id",
+    "task_type",
+    "task_definition",
+    "allowed_inputs",
+    "submission_contract"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "enum": [
+        "screening",
+        "extraction",
+        "analysis",
+        "end_to_end"
+      ]
+    },
+    "screening_stage": {
+      "enum": [
+        "title_abstract",
+        "full_text",
+        "not_applicable"
+      ]
+    },
+    "task_definition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "extraction_protocol": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_inputs": {
+      "type": "object",
+      "required": [
+        "document_ids",
+        "representations"
+      ],
+      "properties": {
+        "document_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "representations": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "metadata",
+              "abstract",
+              "pdf",
+              "html",
+              "markdown",
+              "content_list",
+              "layout"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "forbidden_document_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "target_scope": {
+      "type": "object"
+    },
+    "evaluation": {
+      "type": "object"
+    },
+    "submission_contract": {
+      "type": "object"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "task_type": {
+            "const": "extraction"
+          }
+        },
+        "required": [
+          "task_type"
+        ]
+      },
+      "then": {
+        "required": [
+          "extraction_protocol"
+        ]
+      }
+    }
+  ]
+}

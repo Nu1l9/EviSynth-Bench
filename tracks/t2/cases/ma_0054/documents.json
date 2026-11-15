@@ -1,0 +1,106 @@
+{
+  "case_id": "ma_0054",
+  "path_base": "case_directory",
+  "documents": [
+    {
+      "study_id": "s_0054_chachar",
+      "document_id": "a_0054_28",
+      "doi": "10.18483/ijsci.2378",
+      "title": "Effectiveness of Ivermectin in SARS-CoV-2/COVID-19 Patients",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_28.pdf"
+      },
+      "article_id": "a_0054_28"
+    },
+    {
+      "study_id": "s_0054_krolewiecki",
+      "document_id": "a_0054_29",
+      "doi": "10.2139/ssrn.3714649",
+      "title": "Antiviral effect of high-dose ivermectin in adults with COVID-19: a pilot randomised, controlled, open label, multicentre trial.",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_29.pdf"
+      },
+      "article_id": "a_0054_29"
+    },
+    {
+      "study_id": "s_0054_niaee",
+      "document_id": "a_0054_30",
+      "doi": "10.4103/1995-7645.318304",
+      "title": "Ivermectin as an adjunct treatment for hospitalized adult COVID-19 patients",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_30.pdf"
+      },
+      "article_id": "a_0054_30"
+    },
+    {
+      "study_id": "s_0054_podder",
+      "document_id": "a_0054_31",
+      "doi": "10.3329/imcjms.v14i2.52826",
+      "title": "Outcome of ivermectin treated mild to moderate COVID-19 cases: a single-centre, open-label, randomised controlled study",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_31.pdf"
+      },
+      "article_id": "a_0054_31"
+    },
+    {
+      "study_id": "s_0054_ahmed",
+      "document_id": "a_0054_32",
+      "doi": "10.1016/j.ijid.2020.11.191",
+      "title": "A five-day course of ivermectin for the treatment of COVID-19 may reduce the duration of illness",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_32.pdf"
+      },
+      "article_id": "a_0054_32"
+    },
+    {
+      "study_id": "s_0054_beltran",
+      "document_id": "a_0054_33",
+      "doi": "10.1101/2021.02.18.21252037",
+      "title": "Efficacy and safety of Ivermectin and Hydroxychloroquine in patients with severe COVID-19. A randomized controlled trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_33.pdf"
+      },
+      "article_id": "a_0054_33"
+    },
+    {
+      "study_id": "s_0054_chaccour",
+      "document_id": "a_0054_34",
+      "doi": "10.1016/j.eclinm.2020.100720",
+      "title": "The effect of early treatment with ivermectin on viral load, symptoms and humoral response in patients with non-severe COVID-19: A pilot, double-blind, placebo-controlled, randomized clinical trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_34.pdf"
+      },
+      "article_id": "a_0054_34"
+    },
+    {
+      "study_id": "s_0054_bukhari",
+      "document_id": "a_0054_35",
+      "doi": "10.1101/2021.02.02.21250840",
+      "title": "Efficacy of Ivermectin in COVID-19 Patients with Mild to Moderate Disease",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_35.pdf"
+      },
+      "article_id": "a_0054_35"
+    },
+    {
+      "study_id": "s_0054_lopez_medina",
+      "document_id": "a_0054_36",
+      "doi": "10.1001/jama.2021.3071",
+      "title": "Effect of Ivermectin on Time to Resolution of Symptoms Among Adults With Mild COVID-19",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_36.pdf"
+      },
+      "article_id": "a_0054_36"
+    },
+    {
+      "study_id": "s_0054_ravikirti",
+      "document_id": "a_0054_37",
+      "doi": "10.1101/2021.01.05.21249310",
+      "title": "Ivermectin as a potential treatment for mild to moderate COVID-19 – A double blind randomized placebo-controlled trial",
+      "paths": {
+        "pdf": "../../../../documents/t2/ma_0054/a_0054_37.pdf"
+      },
+      "article_id": "a_0054_37"
+    }
+  ]
+}

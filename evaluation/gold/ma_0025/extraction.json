@@ -1,0 +1,213 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0025",
+  "gold_id": "ma_0025_extraction_gold_v1",
+  "task_type": "extraction",
+  "provenance": {
+    "target_review_document_id": "review_ma_0025",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "applies_to_task_ids": [
+    "ma_0025_extraction_all_reports_v1",
+    "ma_0025_end_to_end_mortality_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0025_01",
+      "article_id": "a_0025_01",
+      "study_id": "s_0025_01",
+      "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+      "exposure_measure": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with severe 2009 H1N1 influenza receiving ICU care",
+      "timepoint": "Mortality during source follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0025_01",
+          "estimand": "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+          "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause mortality among randomized H-IVIG versus standard IVIG recipients.",
+            "intervention_arm": {
+              "label": "Convalescent plasma or H-IVIG plus standard care",
+              "events": 5,
+              "total": 17
+            },
+            "comparator_arm": {
+              "label": "Control plasma, IVIG, or placebo plus standard care",
+              "events": 4,
+              "total": 17
+            }
+          },
+          "source_location": {
+            "document_id": "a_0025_01",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 1, Outcome",
+            "locator_note": "Table 1 reports mortality 5/17 in H-IVIG recipients and 4/17 in controls.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0025_02",
+      "article_id": "a_0025_02",
+      "study_id": "s_0025_02",
+      "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+      "exposure_measure": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults and children with PCR-confirmed severe influenza",
+      "timepoint": "Death through 28 days in the primary-efficacy population",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0025_02",
+          "estimand": "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+          "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause death in the PCR-confirmed primary-efficacy population receiving anti-influenza plasma plus standard care versus standard care.",
+            "intervention_arm": {
+              "label": "Convalescent plasma or H-IVIG plus standard care",
+              "events": 0,
+              "total": 42
+            },
+            "comparator_arm": {
+              "label": "Control plasma, IVIG, or placebo plus standard care",
+              "events": 5,
+              "total": 45
+            }
+          },
+          "source_location": {
+            "document_id": "a_0025_02",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2, disposition and ordinal clinical status",
+            "locator_note": "The source's primary-efficacy population is 42 versus 45; Table 2 reports death 0 versus 5. The target review's 5/50 control denominator is not used because the primary source does not support it.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0025_03",
+      "article_id": "a_0025_03",
+      "study_id": "s_0025_03",
+      "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+      "exposure_measure": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with laboratory-confirmed influenza",
+      "timepoint": "Death during source follow-up",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0025_03",
+          "estimand": "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+          "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause death in the primary analysis population receiving H-IVIG versus placebo.",
+            "intervention_arm": {
+              "label": "Convalescent plasma or H-IVIG plus standard care",
+              "events": 6,
+              "total": 156
+            },
+            "comparator_arm": {
+              "label": "Control plasma, IVIG, or placebo plus standard care",
+              "events": 5,
+              "total": 152
+            }
+          },
+          "source_location": {
+            "document_id": "a_0025_03",
+            "page": 10,
+            "source_type": "table",
+            "source_id": "Table 3, Death and adverse events",
+            "locator_note": "Table 3 reports death 6/156 in H-IVIG and 5/152 in placebo recipients.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0025_04",
+      "article_id": "a_0025_04",
+      "study_id": "s_0025_04",
+      "target_id": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+      "exposure_measure": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+      "outcome": {
+        "code": "all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults and children with severe influenza A",
+      "timepoint": "Death through day 28",
+      "data_family": "binary_arm_outcome",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0025_04",
+          "estimand": "risk_ratio_all_cause_mortality_convalescent_plasma_or_hivig_vs_control",
+          "comparison": "Convalescent plasma or hyperimmune intravenous immunoglobulin plus standard care versus control plasma, intravenous immunoglobulin, or placebo plus standard care",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "binary_arm_outcome",
+            "outcome_definition": "All-cause death through day 28 in analyzed high-titre versus low-titre immune-plasma groups.",
+            "intervention_arm": {
+              "label": "Convalescent plasma or H-IVIG plus standard care",
+              "events": 6,
+              "total": 91
+            },
+            "comparator_arm": {
+              "label": "Control plasma, IVIG, or placebo plus standard care",
+              "events": 4,
+              "total": 47
+            }
+          },
+          "source_location": {
+            "document_id": "a_0025_04",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2, clinical status on study days",
+            "locator_note": "At day 28, Table 2 reports death 6/91 in high-titre and 4/47 in low-titre immune-plasma groups.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    }
+  ]
+}

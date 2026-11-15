@@ -1,0 +1,304 @@
+{
+  "case_id": "ma_0001",
+  "positive_count": 23,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_10968377",
+      "title": "Associations of Weight Change and Weight Variability with Cardiovascular and All-Cause Mortality in the Chicago Western Electric Company Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_031.pdf",
+      "source_filename": "a_10968377.pdf",
+      "runtime_article_id": "candidate_031",
+      "doi": "10.1093/aje/152.4.324"
+    },
+    {
+      "candidate_id": "a_12456229",
+      "title": "Weight Change, Weight Fluctuation, and Mortality",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_024.pdf",
+      "source_filename": "a_12456229.pdf",
+      "runtime_article_id": "candidate_024",
+      "doi": "10.1001/archinte.162.22.2575"
+    },
+    {
+      "candidate_id": "a_15847242",
+      "title": "THE ASSOCIATION BETWEEN WEIGHT FLUCTUATION AND MORTALITY: RESULTS FROM A POPULATION-BASED COHORT STUDY",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_005.pdf",
+      "source_filename": "a_15847242.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1007/s10900-004-1955-1"
+    },
+    {
+      "candidate_id": "a_2041550",
+      "title": "Variability of Body Weight and Health Outcomes in the Framingham Population",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_020.pdf",
+      "source_filename": "a_2041550.pdf",
+      "runtime_article_id": "candidate_020",
+      "doi": "10.1056/nejm199106273242602"
+    },
+    {
+      "candidate_id": "a_27466237",
+      "title": "Patterns of weight change after the diagnosis of type 2 diabetes in Scotland and their relationship with glycaemic control, mortality and cardiovascular outcomes: a retrospective cohort study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_002.pdf",
+      "source_filename": "a_27466237.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1136/bmjopen-2015-010836"
+    },
+    {
+      "candidate_id": "a_28379800",
+      "title": "Body-Weight Fluctuations and Outcomes in Coronary Disease",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_017.pdf",
+      "source_filename": "a_28379800.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1056/nejmoa1606148"
+    },
+    {
+      "candidate_id": "a_29216261",
+      "title": "Associations of changes in body mass index with all-cause and cardiovascular mortality in healthy middle-aged adults",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_009.pdf",
+      "source_filename": "a_29216261.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1371/journal.pone.0189180"
+    },
+    {
+      "candidate_id": "a_29777238",
+      "title": "Impact of body mass index and body weight variabilities on mortality: a nationwide cohort study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_006.pdf",
+      "source_filename": "a_29777238.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1038/s41366-018-0079-0"
+    },
+    {
+      "candidate_id": "a_30507935",
+      "title": "Weight cycling and cardiovascular outcome in women with suspected ischemia: A report from the NHLBI-sponsored WISE Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_001.pdf",
+      "source_filename": "a_30507935.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1371/journal.pone.0207223"
+    },
+    {
+      "candidate_id": "a_30553512",
+      "title": "Body Mass Index, Change in Weight, Body Weight Variability and Outcomes in Type 2 Diabetes Mellitus (from the ACCORD Trial)",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_022.pdf",
+      "source_filename": "a_30553512.pdf",
+      "runtime_article_id": "candidate_022",
+      "doi": "10.1016/j.amjcard.2018.11.016"
+    },
+    {
+      "candidate_id": "a_30571333",
+      "title": "Body Weight Variability and Cardiovascular Outcomes in Patients With Type 2 Diabetes Mellitus",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_018.pdf",
+      "source_filename": "a_30571333.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.1161/circoutcomes.118.004724"
+    },
+    {
+      "candidate_id": "a_30874785",
+      "title": "Association of Weight Fluctuation With Mortality in Japanese Adults",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_003.pdf",
+      "source_filename": "a_30874785.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1001/jamanetworkopen.2019.0731"
+    },
+    {
+      "candidate_id": "a_31025893",
+      "title": "Association of Variability in Body Mass Index and Metabolic Health With Cardiometabolic Disease Risk",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_026.pdf",
+      "source_filename": "a_31025893.pdf",
+      "runtime_article_id": "candidate_026",
+      "doi": "10.1161/jaha.118.010793"
+    },
+    {
+      "candidate_id": "a_31266987",
+      "title": "Impact of weight variability on mortality among Korean men and women: a population based study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_008.pdf",
+      "source_filename": "a_31266987.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1038/s41598-019-46037-7"
+    },
+    {
+      "candidate_id": "a_31585180",
+      "title": "Bodyweight fluctuation is associated with increased risk of incident atrial fibrillation",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_033.pdf",
+      "source_filename": "a_31585180.pdf",
+      "runtime_article_id": "candidate_033",
+      "doi": "10.1016/j.hrthm.2019.09.029"
+    },
+    {
+      "candidate_id": "a_32534567",
+      "title": "High variability in bodyweight is associated with an increased risk of atrial fibrillation in patients with type 2 diabetes mellitus: a nationwide cohort study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_021.pdf",
+      "source_filename": "a_32534567.pdf",
+      "runtime_article_id": "candidate_021",
+      "doi": "10.1186/s12933-020-01059-8"
+    },
+    {
+      "candidate_id": "a_32641375",
+      "title": "Body Weight Variability and the Risk of Cardiovascular Outcomes and Mortality in Patients With Type 2 Diabetes: A Nationwide Cohort Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_030.pdf",
+      "source_filename": "a_32641375.pdf",
+      "runtime_article_id": "candidate_030",
+      "doi": "10.2337/dc19-2552"
+    },
+    {
+      "candidate_id": "a_33355207",
+      "title": "Effects of BMI and LDL-cholesterol change pattern on cardiovascular disease in normal adults and diabetics",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_010.pdf",
+      "source_filename": "a_33355207.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1136/bmjdrc-2020-001340"
+    },
+    {
+      "candidate_id": "a_33397045",
+      "title": "Variabilities in Weight and Waist Circumference and Risk of Myocardial Infarction, Stroke, and Mortality: A Nationwide Cohort Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_023.pdf",
+      "source_filename": "a_33397045.pdf",
+      "runtime_article_id": "candidate_023",
+      "doi": "10.3803/enm.2020.871"
+    },
+    {
+      "candidate_id": "a_33911167",
+      "title": "Body weight variability and the risk of cardiovascular outcomes in patients with nonalcoholic fatty liver disease",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_007.pdf",
+      "source_filename": "a_33911167.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1038/s41598-021-88733-3"
+    },
+    {
+      "candidate_id": "a_33980955",
+      "title": "Association of weight fluctuation with cardiovascular disease risk among initially obese adults",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_012.pdf",
+      "source_filename": "a_33980955.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1038/s41598-021-89666-7"
+    },
+    {
+      "candidate_id": "a_34195237",
+      "title": "Association of Body-Weight Fluctuation With Outcomes in Heart Failure With Preserved Ejection Fraction",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_032.pdf",
+      "source_filename": "a_34195237.pdf",
+      "runtime_article_id": "candidate_032",
+      "doi": "10.3389/fcvm.2021.689591"
+    },
+    {
+      "candidate_id": "a_34446018",
+      "title": "Variability in body weight and the risk of cardiovascular complications in type 2 diabetes: results from the Swedish National Diabetes Register",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0001/candidate_025.pdf",
+      "source_filename": "a_34446018.pdf",
+      "runtime_article_id": "candidate_025",
+      "doi": "10.1186/s12933-021-01360-0"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "A review of neonatal peripherally inserted central venous catheters in extremely or very low birthweight infants based on a 3-year clinical practice: Complication incidences and risk factors",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_015.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.3389/fped.2022.987512"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Comparing conventional and modified Seldinger techniques using a micro-insertion kit for PICC placement in neonates: a retrospective cohort study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_004.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.3389/fped.2024.1395395"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Central venous catheter insertion profile and complications among neonates in Saudi Arabia: a cross-sectional study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_011.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1136/bmjopen-2024-089554"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Assessment of the Complications of Peripherally Inserted Central Catheter in Neonates Admitted to the Intensive Care Unit",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_013.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.4103/ijnmr.ijnmr_20_21"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "An accuracy study of the Intracavitary Electrocardiogram (IC-ECG) guided peripherally inserted central catheter tip placement among neonates",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_014.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1515/med-2017-0019"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Elaboration and development of a realistic 3D printed model for training in ultrasound-guided placement of peripheral central venous catheter in children",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_019.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1177/11297298231187005"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Clinical significance of intracavitary electrocardiographic localization in the prevention of PICC heterotopia in children with tumor",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_029.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_029",
+      "doi": "10.1111/anec.12934"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Predictors of venous thromboembolism among infants in children’s hospitals in the United States: a retrospective Pediatric Health Information Study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_028.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_028",
+      "doi": "10.1038/s41372-021-01232-1"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Efficacy and safety of intracavitary electrocardiography-guided peripherally inserted central catheters in pediatric patients: a systematic review and meta-analysis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_027.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_027",
+      "doi": "10.7717/peerj.18274"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "From skin to syndrome: The progression of primary cutaneous aspergillosis to extremity compartment syndrome in a premature infant. Case report and review of the literature",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0001/candidate_016.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.1016/j.ijscr.2024.109658"
+    }
+  ]
+}

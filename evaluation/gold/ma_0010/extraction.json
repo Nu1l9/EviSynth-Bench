@@ -1,0 +1,130 @@
+{
+  "case_id": "ma_0010_full",
+  "gold_id": "ma_0010_full_extraction_gold_v2",
+  "task_type": "extraction",
+  "source_policy": "primary_reports_only",
+  "report_units": [
+    {
+      "article_id": "a_0010_01_gomes",
+      "rsid": "rs763780",
+      "data_family": "complete_genotype_case_control_counts",
+      "case_counts": {
+        "AA": 119,
+        "AG": 8,
+        "GG": 0
+      },
+      "control_counts": {
+        "AA": 120,
+        "AG": 13,
+        "GG": 1
+      },
+      "source_location": "PDF p.4, Table 2",
+      "quantitative_usability": "calculator_eligible"
+    },
+    {
+      "article_id": "a_0010_02_marwa",
+      "rsid": "rs763780",
+      "data_family": "complete_genotype_case_control_counts",
+      "case_counts": {
+        "AA": 68,
+        "AG": 37,
+        "GG": 3
+      },
+      "control_counts": {
+        "AA": 185,
+        "AG": 17,
+        "GG": 0
+      },
+      "source_location": "PDF p.31, Table 3",
+      "quantitative_usability": "calculator_eligible",
+      "adjudication_note": "Primary counts differ from the target-review table; primary PDF controls."
+    },
+    {
+      "article_id": "a_0010_03_louahchi",
+      "rsid": "rs763780",
+      "data_family": "allele_frequency_summary_only",
+      "case_total_n": 343,
+      "control_total_n": 323,
+      "case_allele_percent": {
+        "T": 93.7,
+        "C": 6.2
+      },
+      "control_allele_percent": {
+        "T": 94.0,
+        "C": 6.0
+      },
+      "source_location": "PDF p.4, Table III",
+      "quantitative_usability": "extraction_only",
+      "adjudication_note": "Genotype counts are not reported and must not be inferred."
+    },
+    {
+      "article_id": "a_0010_04_pawlik",
+      "rsid": "rs763780",
+      "data_family": "complete_genotype_case_control_counts",
+      "case_counts": {
+        "TT": 385,
+        "CT": 35,
+        "CC": 2
+      },
+      "control_counts": {
+        "TT": 318,
+        "CT": 19,
+        "CC": 1
+      },
+      "source_location": "PDF p.3, Table 1",
+      "quantitative_usability": "calculator_eligible"
+    },
+    {
+      "article_id": "a_0010_05_carvalho",
+      "rsid": "rs763780",
+      "population_or_subgroup": "RA-only subgroup",
+      "data_family": "complete_genotype_case_control_counts",
+      "case_counts": {
+        "TT": 87,
+        "CT": 10,
+        "CC": 3
+      },
+      "control_counts": {
+        "TT": 69,
+        "CT": 3,
+        "CC": 3
+      },
+      "source_location": "PDF p.5, Table 3",
+      "quantitative_usability": "calculator_eligible"
+    },
+    {
+      "article_id": "a_0010_06_bogunia_kubik",
+      "rsid": "rs763780",
+      "data_family": "complete_genotype_case_control_counts",
+      "case_counts": {
+        "AA": 64,
+        "AG": 16,
+        "GG": 9
+      },
+      "control_counts": {
+        "AA": 114,
+        "AG": 11,
+        "GG": 0
+      },
+      "source_location": "PDF p.4, Table 2",
+      "quantitative_usability": "calculator_eligible"
+    },
+    {
+      "article_id": "a_0010_07_paradowska_gorycka",
+      "rsid": "rs763780",
+      "data_family": "complete_genotype_case_control_counts",
+      "case_counts": {
+        "AA": 195,
+        "AG": 24,
+        "GG": 1
+      },
+      "control_counts": {
+        "AA": 98,
+        "AG": 8,
+        "GG": 0
+      },
+      "source_location": "PDF p.4, Table 2",
+      "quantitative_usability": "calculator_eligible"
+    }
+  ]
+}

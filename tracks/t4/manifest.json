@@ -1,0 +1,138 @@
+{
+  "task": "t4",
+  "case_count": 22,
+  "cases": [
+    {
+      "case_id": "ma_0001",
+      "input": "../../cases/ma_0001/request.json",
+      "documents": 33,
+      "gold": "../../evaluation/gold/ma_0001/"
+    },
+    {
+      "case_id": "ma_0005",
+      "input": "../../cases/ma_0005/request.json",
+      "documents": 14,
+      "gold": "../../evaluation/gold/ma_0005/"
+    },
+    {
+      "case_id": "ma_0010",
+      "input": "../../cases/ma_0010/request.json",
+      "documents": 17,
+      "gold": "../../evaluation/gold/ma_0010/"
+    },
+    {
+      "case_id": "ma_0011",
+      "input": "../../cases/ma_0011/request.json",
+      "documents": 14,
+      "gold": "../../evaluation/gold/ma_0011/"
+    },
+    {
+      "case_id": "ma_0012",
+      "input": "../../cases/ma_0012/request.json",
+      "documents": 15,
+      "gold": "../../evaluation/gold/ma_0012/"
+    },
+    {
+      "case_id": "ma_0017",
+      "input": "../../cases/ma_0017/request.json",
+      "documents": 18,
+      "gold": "../../evaluation/gold/ma_0017/"
+    },
+    {
+      "case_id": "ma_0024",
+      "input": "../../cases/ma_0024/request.json",
+      "documents": 12,
+      "gold": "../../evaluation/gold/ma_0024/"
+    },
+    {
+      "case_id": "ma_0025",
+      "input": "../../cases/ma_0025/request.json",
+      "documents": 14,
+      "gold": "../../evaluation/gold/ma_0025/"
+    },
+    {
+      "case_id": "ma_0026",
+      "input": "../../cases/ma_0026/request.json",
+      "documents": 56,
+      "gold": "../../evaluation/gold/ma_0026/"
+    },
+    {
+      "case_id": "ma_0028",
+      "input": "../../cases/ma_0028/request.json",
+      "documents": 19,
+      "gold": "../../evaluation/gold/ma_0028/"
+    },
+    {
+      "case_id": "ma_0032",
+      "input": "../../cases/ma_0032/request.json",
+      "documents": 14,
+      "gold": "../../evaluation/gold/ma_0032/"
+    },
+    {
+      "case_id": "ma_0034",
+      "input": "../../cases/ma_0034/request.json",
+      "documents": 21,
+      "gold": "../../evaluation/gold/ma_0034/"
+    },
+    {
+      "case_id": "ma_0037",
+      "input": "../../cases/ma_0037/request.json",
+      "documents": 37,
+      "gold": "../../evaluation/gold/ma_0037/"
+    },
+    {
+      "case_id": "ma_0041",
+      "input": "../../cases/ma_0041/request.json",
+      "documents": 19,
+      "gold": "../../evaluation/gold/ma_0041/"
+    },
+    {
+      "case_id": "ma_0044",
+      "input": "../../cases/ma_0044/request.json",
+      "documents": 42,
+      "gold": "../../evaluation/gold/ma_0044/"
+    },
+    {
+      "case_id": "ma_0046",
+      "input": "../../cases/ma_0046/request.json",
+      "documents": 30,
+      "gold": "../../evaluation/gold/ma_0046/"
+    },
+    {
+      "case_id": "ma_0054",
+      "input": "../../cases/ma_0054/request.json",
+      "documents": 20,
+      "gold": "../../evaluation/gold/ma_0054/"
+    },
+    {
+      "case_id": "ma_0055",
+      "input": "../../cases/ma_0055/request.json",
+      "documents": 19,
+      "gold": "../../evaluation/gold/ma_0055/"
+    },
+    {
+      "case_id": "ma_0056",
+      "input": "../../cases/ma_0056/request.json",
+      "documents": 19,
+      "gold": "../../evaluation/gold/ma_0056/"
+    },
+    {
+      "case_id": "ma_0064",
+      "input": "../../cases/ma_0064/request.json",
+      "documents": 17,
+      "gold": "../../evaluation/gold/ma_0064/"
+    },
+    {
+      "case_id": "ma_0076",
+      "input": "../../cases/ma_0076/request.json",
+      "documents": 100,
+      "gold": "../../evaluation/gold/ma_0076/"
+    },
+    {
+      "case_id": "ma_0086",
+      "input": "../../cases/ma_0086/request.json",
+      "documents": 12,
+      "gold": "../../evaluation/gold/ma_0086/"
+    }
+  ]
+}

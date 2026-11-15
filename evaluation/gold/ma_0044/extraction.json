@@ -1,0 +1,1541 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0044",
+  "task_type": "extraction",
+  "gold_id": "ma_0044_extraction_gold_v1",
+  "applies_to_task_ids": [
+    "ma_0044_extraction_all_reports_v1",
+    "ma_0044_end_to_end_main_outcomes_v1"
+  ],
+  "provenance": {
+    "target_review_document_id": "review_ma_0044",
+    "annotation_status": "released",
+    "source_verification": "All 26 quantitative rows were reconciled to the locally supplied primary-report corpus; all 32 report identities and the 26-row total-event checksum were reconciled to the gold-only review."
+  },
+  "unit_definition": "One independent primary report, contributing at most one 20G-versus-MIVS intraoperative iatrogenic-break arm-count record.",
+  "report_units": [
+    {
+      "report_unit_id": "ru_044003_irb",
+      "article_id": "a_044003",
+      "study_id": "s_044003",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044003_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.646465,
+            "ci_lower": 0.101229,
+            "ci_upper": 4.128411,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 2,
+            "20g_total": 35,
+            "mivs_events": 3,
+            "mivs_total": 35,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044003",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Albrieux 2011: local primary-report extraction supporting 2/35 in 20G and 3/35 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044018_irb",
+      "article_id": "a_044018",
+      "study_id": "s_044018",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044018_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 3.966346,
+            "ci_lower": 2.094095,
+            "ci_upper": 7.512506,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 25,
+            "20g_total": 402,
+            "mivs_events": 16,
+            "mivs_total": 973,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044018",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Cha 2013: local primary-report extraction supporting 25/402 in 20G and 16/973 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044016_irb",
+      "article_id": "a_044016",
+      "study_id": "s_044016",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044016_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 7.284501,
+            "ci_lower": 3.024264,
+            "ci_upper": 17.546075,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 47,
+            "20g_total": 204,
+            "mivs_events": 6,
+            "mivs_total": 152,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break",
+            "mivs_aggregation": "23G and 25G disjoint arms summed within this report"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044016",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Covert 2012: local primary-report extraction supporting 47/204 in 20G and 6/152 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044022_irb",
+      "article_id": "a_044022",
+      "study_id": "s_044022",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044022_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 3.579365,
+            "ci_lower": 1.437417,
+            "ci_upper": 8.91311,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 22,
+            "20g_total": 50,
+            "mivs_events": 9,
+            "mivs_total": 50,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044022",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Gosse 2012: local primary-report extraction supporting 22/50 in 20G and 9/50 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044020_irb",
+      "article_id": "a_044020",
+      "study_id": "s_044020",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044020_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 0.734043,
+            "ci_lower": 0.155614,
+            "ci_upper": 3.462529,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 3,
+            "20g_total": 50,
+            "mivs_events": 4,
+            "mivs_total": 50,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044020",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Hikichi 2009: local primary-report extraction supporting 3/50 in 20G and 4/50 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044017_irb",
+      "article_id": "a_044017",
+      "study_id": "s_044017",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044017_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.193798,
+            "ci_lower": 0.37102,
+            "ci_upper": 3.841175,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 7,
+            "20g_total": 50,
+            "mivs_events": 6,
+            "mivs_total": 50,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044017",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Hikichi 2011: local primary-report extraction supporting 7/50 in 20G and 6/50 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044001_irb",
+      "article_id": "a_044001",
+      "study_id": "s_044001",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044001_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.0,
+            "ci_lower": 0.435963,
+            "ci_upper": 2.293772,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 10,
+            "20g_total": 61,
+            "mivs_events": 20,
+            "mivs_total": 122,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044001",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Hikichi 2012: local primary-report extraction supporting 10/61 in 20G and 20/122 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044031_irb",
+      "article_id": "a_044031",
+      "study_id": "s_044031",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044031_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 3.05314,
+            "ci_lower": 1.131863,
+            "ci_upper": 8.23568,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 16,
+            "20g_total": 85,
+            "mivs_events": 6,
+            "mivs_total": 85,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044031",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Issa 2011: local primary-report extraction supporting 16/85 in 20G and 6/85 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044006_irb",
+      "article_id": "a_044006",
+      "study_id": "s_044006",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044006_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.382991,
+            "ci_lower": 1.482876,
+            "ci_upper": 3.829482,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 105,
+            "20g_total": 628,
+            "mivs_events": 23,
+            "mivs_total": 296,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044006",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Jalil 2013: local primary-report extraction supporting 105/628 in 20G and 23/296 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044007_irb",
+      "article_id": "a_044007",
+      "study_id": "s_044007",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044007_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 4.521739,
+            "ci_lower": 1.305685,
+            "ci_upper": 15.659311,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 13,
+            "20g_total": 36,
+            "mivs_events": 4,
+            "mivs_total": 36,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044007",
+            "page": 3,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Krishnan 2013: local primary-report extraction supporting 13/36 in 20G and 4/36 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044021_irb",
+      "article_id": "a_044021",
+      "study_id": "s_044021",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044021_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.193798,
+            "ci_lower": 0.37102,
+            "ci_upper": 3.841175,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 7,
+            "20g_total": 50,
+            "mivs_events": 6,
+            "mivs_total": 50,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044021",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Misra 2009: local primary-report extraction supporting 7/50 in 20G and 6/50 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044008_irb",
+      "article_id": "a_044008",
+      "study_id": "s_044008",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044008_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 8.078571,
+            "ci_lower": 1.793105,
+            "ci_upper": 36.396809,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 13,
+            "20g_total": 153,
+            "mivs_events": 2,
+            "mivs_total": 176,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044008",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Nakano 2011: local primary-report extraction supporting 13/153 in 20G and 2/176 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044010_irb",
+      "article_id": "a_044010",
+      "study_id": "s_044010",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044010_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.037662,
+            "ci_lower": 1.610335,
+            "ci_upper": 2.578386,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 309,
+            "20g_total": 2648,
+            "mivs_events": 99,
+            "mivs_total": 1626,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044010",
+            "page": 4,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Neffendorf 2017: local primary-report extraction supporting 309/2648 in 20G and 99/1626 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044011_irb",
+      "article_id": "a_044011",
+      "study_id": "s_044011",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044011_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.313253,
+            "ci_lower": 1.142289,
+            "ci_upper": 4.684578,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 28,
+            "20g_total": 111,
+            "mivs_events": 14,
+            "mivs_total": 110,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044011",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Neuhann 2013: local primary-report extraction supporting 28/111 in 20G and 14/110 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044004_irb",
+      "article_id": "a_044004",
+      "study_id": "s_044004",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044004_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.904762,
+            "ci_lower": 0.488206,
+            "ci_upper": 7.431536,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 10,
+            "20g_total": 66,
+            "mivs_events": 3,
+            "mivs_total": 35,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044004",
+            "page": 4,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Park 2010: local primary-report extraction supporting 10/66 in 20G and 3/35 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044032_irb",
+      "article_id": "a_044032",
+      "study_id": "s_044032",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044032_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.819242,
+            "ci_lower": 0.662238,
+            "ci_upper": 4.997658,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 12,
+            "20g_total": 61,
+            "mivs_events": 7,
+            "mivs_total": 59,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044032",
+            "page": 3,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Pielen 2014: local primary-report extraction supporting 12/61 in 20G and 7/59 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044027_irb",
+      "article_id": "a_044027",
+      "study_id": "s_044027",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044027_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.264663,
+            "ci_lower": 0.336723,
+            "ci_upper": 4.74981,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 5,
+            "20g_total": 346,
+            "mivs_events": 4,
+            "mivs_total": 349,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044027",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Le Rouic 2011: local primary-report extraction supporting 5/346 in 20G and 4/349 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044002_irb",
+      "article_id": "a_044002",
+      "study_id": "s_044002",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044002_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.996157,
+            "ci_lower": 0.925452,
+            "ci_upper": 4.305616,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 29,
+            "20g_total": 347,
+            "mivs_events": 9,
+            "mivs_total": 206,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break",
+            "mivs_aggregation": "23G and 25G disjoint arms summed within this report"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044002",
+            "page": 4,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Sandali 2011: local primary-report extraction supporting 29/347 in 20G and 9/206 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044019_irb",
+      "article_id": "a_044019",
+      "study_id": "s_044019",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044019_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.117073,
+            "ci_lower": 0.681586,
+            "ci_upper": 6.575833,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 14,
+            "20g_total": 219,
+            "mivs_events": 4,
+            "mivs_total": 128,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044019",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Scartozzi 2007: local primary-report extraction supporting 14/219 in 20G and 4/128 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044028_irb",
+      "article_id": "a_044028",
+      "study_id": "s_044028",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044028_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.533333,
+            "ci_lower": 0.638605,
+            "ci_upper": 10.049676,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 8,
+            "20g_total": 23,
+            "mivs_events": 4,
+            "mivs_total": 23,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044028",
+            "page": 4,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Shinoda 2008: local primary-report extraction supporting 8/23 in 20G and 4/23 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044012_irb",
+      "article_id": "a_044012",
+      "study_id": "s_044012",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044012_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.48495,
+            "ci_lower": 0.507025,
+            "ci_upper": 4.349049,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 6,
+            "20g_total": 29,
+            "mivs_events": 13,
+            "mivs_total": 87,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044012",
+            "page": 3,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Tan 2011: local primary-report extraction supporting 6/29 in 20G and 13/87 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044013_irb",
+      "article_id": "a_044013",
+      "study_id": "s_044013",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044013_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 5.312925,
+            "ci_lower": 1.444594,
+            "ci_upper": 19.539873,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 11,
+            "20g_total": 109,
+            "mivs_events": 3,
+            "mivs_total": 145,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break",
+            "mivs_aggregation": "23G and 25G disjoint arms summed within this report"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044013",
+            "page": 3,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Tosi 2016: local primary-report extraction supporting 11/109 in 20G and 3/145 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044014_irb",
+      "article_id": "a_044014",
+      "study_id": "s_044014",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044014_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 5.3125,
+            "ci_lower": 0.558258,
+            "ci_upper": 50.554894,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 5,
+            "20g_total": 21,
+            "mivs_events": 1,
+            "mivs_total": 18,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044014",
+            "page": 5,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Wickham 2010: local primary-report extraction supporting 5/21 in 20G and 1/18 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044029_irb",
+      "article_id": "a_044029",
+      "study_id": "s_044029",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044029_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.0,
+            "ci_lower": 0.059651,
+            "ci_upper": 16.764176,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 1,
+            "20g_total": 30,
+            "mivs_events": 1,
+            "mivs_total": 30,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044029",
+            "page": 4,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Wimpissinger 2008: local primary-report extraction supporting 1/30 in 20G and 1/30 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044015_irb",
+      "article_id": "a_044015",
+      "study_id": "s_044015",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044015_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.68915,
+            "ci_lower": 1.103932,
+            "ci_upper": 2.584603,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 60,
+            "20g_total": 170,
+            "mivs_events": 62,
+            "mivs_total": 254,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break",
+            "mivs_aggregation": "23G and 25G disjoint arms summed within this report"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044015",
+            "page": 3,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Yokota 2015: local primary-report extraction supporting 60/170 in 20G and 62/254 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044024_irb",
+      "article_id": "a_044024",
+      "study_id": "s_044024",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "binary_arm_counts",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined vitrectomy population; all source-reported surgical indications combined where available.",
+      "timepoint": "intraoperative",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_044024_irb",
+          "estimand": "20g_vs_mivs_intraoperative_iatrogenic_break_odds",
+          "comparison": "20-gauge vitrectomy versus MIVS (23G/25G)",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 6.26087,
+            "ci_lower": 0.6338,
+            "ci_upper": 61.846798,
+            "direction": "higher_iatrogenic_break_odds_with_20g"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "20g_events": 3,
+            "20g_total": 49,
+            "mivs_events": 1,
+            "mivs_total": 97,
+            "outcome_unit": "eyes/procedures with at least one intraoperative iatrogenic retinal break"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_arm_counts",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_mantel_haenszel_odds_ratio"
+          },
+          "source_location": {
+            "document_id": "a_044024",
+            "page": 1,
+            "source_type": "main_text_or_table",
+            "source_id": "locally adjudicated intraoperative complication result",
+            "locator_note": "Zhang 2015: local primary-report extraction supporting 3/49 in 20G and 1/97 in MIVS.",
+            "locator_status": "verified",
+            "locator_method": "local_pdf_markdown_source_adjudication"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_intraoperative_iatrogenic_retinal_break"
+      ]
+    },
+    {
+      "report_unit_id": "ru_044005_no_irb",
+      "article_id": "a_044005",
+      "study_id": "s_044005",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "insufficient_target_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": [],
+      "source_only_reason": "Goncu 2011: the report does not provide a usable iatrogenic-retinal-break arm comparison."
+    },
+    {
+      "report_unit_id": "ru_044009_no_irb",
+      "article_id": "a_044009",
+      "study_id": "s_044009",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "insufficient_target_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": [],
+      "source_only_reason": "Nagpal 2013: reports postoperative retinal detachment but not the prespecified intraoperative break outcome."
+    },
+    {
+      "report_unit_id": "ru_044023_no_irb",
+      "article_id": "a_044023",
+      "study_id": "s_044023",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "insufficient_target_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": [],
+      "source_only_reason": "Valmaggia 2007: reports postoperative retinal detachment but not the prespecified intraoperative break outcome."
+    },
+    {
+      "report_unit_id": "ru_044025_no_irb",
+      "article_id": "a_044025",
+      "study_id": "s_044025",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "insufficient_target_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": [],
+      "source_only_reason": "Haas 2010: reports postoperative retinal detachment but not the prespecified intraoperative break outcome."
+    },
+    {
+      "report_unit_id": "ru_044026_no_irb",
+      "article_id": "a_044026",
+      "study_id": "s_044026",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "insufficient_target_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": [],
+      "source_only_reason": "Rizzo 2010: reports postoperative retinal detachment but not the prespecified intraoperative break outcome."
+    },
+    {
+      "report_unit_id": "ru_044030_no_irb",
+      "article_id": "a_044030",
+      "study_id": "s_044030",
+      "target_id": "intraoperative_iatrogenic_retinal_break",
+      "data_family": "insufficient_target_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "20-gauge vitrectomy",
+      "outcome": {
+        "code": "intraoperative_iatrogenic_retinal_break",
+        "label": "Intraoperative iatrogenic retinal break",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "source-defined",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": [],
+      "source_only_reason": "Dihowm 2015: reports postoperative retinal detachment but not the prespecified intraoperative break outcome."
+    }
+  ],
+  "supplementary_unscored_source_findings": []
+}

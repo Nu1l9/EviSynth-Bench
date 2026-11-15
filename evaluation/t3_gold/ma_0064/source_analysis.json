@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0064",
+  "gold_id": "ma_0064_analysis_gold_v1",
+  "task_type": "analysis",
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_binary_recurrence",
+      "selected_candidate_ids": [
+        "ce_0064_19",
+        "ce_0064_22",
+        "ce_0064_23",
+        "ce_0064_27"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0064_19",
+        "ee_0064_22",
+        "ee_0064_23",
+        "ee_0064_27"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0064_binary_recurrence",
+          "outcome_group": "source-defined recurrence",
+          "effect": {
+            "effect_type": "RR",
+            "value": 3.581604704006783,
+            "ci_lower": 1.3033641307467707,
+            "ci_upper": 9.84214000765365,
+            "pooled_log_rr": 1.2758109413251453,
+            "standard_error_log_rr": 0.5157555110806783,
+            "study_count": 4,
+            "degrees_of_freedom": 3,
+            "tau_squared_der_simonian_laird": 0.5943933415587377,
+            "q_fixed_effect": 7.549829565712962,
+            "i_squared_fixed_effect_percent": 60.26400365878064,
+            "ci_method": "normal_approximation_0.975"
+          },
+          "member_candidate_ids": [
+            "ce_0064_19",
+            "ce_0064_22",
+            "ce_0064_23",
+            "ce_0064_27"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0064_19",
+            "ee_0064_22",
+            "ee_0064_23",
+            "ee_0064_27"
+          ],
+          "calculator_run": {
+            "calculator_id": "binary_rr_and_reported_hr_normalizer_der_simonian_laird_v1",
+            "pooling": "random_effects_log_RR_inverse_variance"
+          }
+        }
+      ]
+    }
+  ]
+}

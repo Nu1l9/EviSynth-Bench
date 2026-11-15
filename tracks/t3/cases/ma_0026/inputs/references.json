@@ -1,0 +1,235 @@
+{
+  "case_id": "ma_0026",
+  "articles": [
+    {
+      "article_id": "a_0026_r015",
+      "doi": "10.1101/2020.03.29.20047159",
+      "title": "SARS-CoV-2 infection in health care workers: a retrospective analysis and model study"
+    },
+    {
+      "article_id": "a_0026_r016",
+      "doi": "10.1101/2020.04.20.20072470",
+      "title": "Prevalence of SARS-CoV-2 infection in previously undiagnosed health care workers at the onset of the U.S. COVID-19 epidemic"
+    },
+    {
+      "article_id": "a_0026_r018",
+      "doi": "10.1101/2020.04.23.20074310",
+      "title": "Resident physician exposure to novel coronavirus (2019-nCoV, SARS-CoV-2) within New York City during exponential phase of COVID-19 pandemic: Report of the New York City Residency Program Directors COVID-19 Research Group"
+    },
+    {
+      "article_id": "a_0026_r022",
+      "doi": "10.1101/2020.04.07.20055723",
+      "title": "SARS-CoV-2 infection in Health Care Workers in a large public hospital in Madrid, Spain, during March 2020"
+    },
+    {
+      "article_id": "a_0026_r024",
+      "doi": "10.1038/s41467-020-17318-x",
+      "title": "Seroprevalence of antibodies against SARS-CoV-2 among health care workers in a large Spanish reference hospital"
+    },
+    {
+      "article_id": "a_0026_r026",
+      "doi": "10.1016/s0140-6736(20)30970-3",
+      "title": "First experience of COVID-19 screening of health-care workers in England"
+    },
+    {
+      "article_id": "a_0026_r028",
+      "doi": "10.2807/1560-7917.es.2020.25.14.2000433",
+      "title": "Roll-out of SARS-CoV-2 testing for healthcare workers at a large NHS Foundation Trust in the United Kingdom, March 2020"
+    },
+    {
+      "article_id": "a_0026_r030",
+      "doi": "10.1101/2020.03.23.20041913",
+      "title": "SARS-CoV-2 infection in 86 healthcare workers in two Dutch hospitals in March 2020"
+    },
+    {
+      "article_id": "a_0026_r034",
+      "doi": "10.1093/cid/ciaa287",
+      "title": "Risk Factors of Healthcare Workers With Coronavirus Disease 2019: A Retrospective Cohort Study in a Designated Hospital of Wuhan in China"
+    },
+    {
+      "article_id": "a_0026_r035",
+      "doi": "10.2807/1560-7917.es.2020.25.12.2000334",
+      "title": "Rapid assessment of regional SARS-CoV-2 community transmission through a convenience sample of healthcare workers, the Netherlands, March 2020"
+    },
+    {
+      "article_id": "a_0026_r037",
+      "doi": "10.1016/j.medmal.2020.04.020",
+      "title": "Limited effectiveness of systematic screening by nasopharyngeal RT-PCR of medicalized nursing home staff after a first case of COVID-19 in a resident"
+    },
+    {
+      "article_id": "a_0026_r038",
+      "doi": "10.15585/mmwr.mm6914e2",
+      "title": "Detection of SARS-CoV-2 Among Residents and Staff Members of an Independent and Assisted Living Community for Older Adults — Seattle, Washington, 2020"
+    },
+    {
+      "article_id": "a_0026_r039",
+      "doi": "10.1016/j.annonc.2020.04.475",
+      "title": "Lower detection rates of SARS-COV2 antibodies in cancer patients versus health care workers after symptomatic COVID-19"
+    },
+    {
+      "article_id": "a_0026_r041",
+      "doi": "10.1016/s0140-6736(20)31100-4",
+      "title": "COVID-19: PCR screening of asymptomatic health-care workers at London hospital"
+    },
+    {
+      "article_id": "a_0026_r043",
+      "doi": "10.1101/2020.04.27.20073858",
+      "title": "Severe Acute Respiratory Syndrome Coronavirus 2 Serology in Asymptomatic Healthcare Professionals: Preliminary Experience of a Tertiary Italian Academic Center"
+    },
+    {
+      "article_id": "a_0026_r044",
+      "doi": "10.2807/1560-7917.es.2020.25.16.2000508",
+      "title": "Strong associations and moderate predictive value of early symptoms for SARS-CoV-2 test positivity among healthcare workers, the Netherlands, March 2020"
+    },
+    {
+      "article_id": "a_0026_r050",
+      "doi": "10.1001/jamanetworkopen.2020.9666",
+      "title": "Coronavirus Disease 2019 (COVID-2019) Infection Among Health Care Workers and Implications for Prevention Measures in a Tertiary Hospital in Wuhan, China"
+    },
+    {
+      "article_id": "a_0026_r051",
+      "doi": "10.1016/s1473-3099(20)30403-5",
+      "title": "COVID-19 screening of health-care workers in a London maternity hospital"
+    },
+    {
+      "article_id": "a_0026_r052",
+      "doi": "10.1101/2020.05.19.20106427",
+      "title": "Comparing dynamics and determinants of SARS-CoV-2 transmissions among health care workers of adult and pediatric settings in central Paris"
+    },
+    {
+      "article_id": "a_0026_r053",
+      "doi": "10.1016/j.jinf.2020.05.073",
+      "title": "SARS-CoV-2 infection, clinical features and outcome of COVID-19 in United Kingdom nursing homes"
+    },
+    {
+      "article_id": "a_0026_r054",
+      "doi": "10.1001/jamanetworkopen.2020.16451",
+      "title": "Prevalence of SARS-CoV-2 Infection Among Asymptomatic Health Care Workers in the Greater Houston, Texas, Area"
+    },
+    {
+      "article_id": "a_0026_r057",
+      "doi": "10.1016/j.jhin.2020.05.028",
+      "title": "Symptom-based screening for COVID-19 in healthcare workers: the importance of fever"
+    },
+    {
+      "article_id": "a_0026_r058",
+      "doi": "10.1101/2020.05.18.20103283",
+      "title": "Search for asymptomatic carriers of SARS-CoV-2 in healthcare workers during the pandemic: a Spanish experience"
+    },
+    {
+      "article_id": "a_0026_r059",
+      "doi": "10.1101/2020.07.02.20145169",
+      "title": "Assessing the burden of COVID-19 amongst healthcare workers in Mexico City: A data-driven call to action"
+    },
+    {
+      "article_id": "a_0026_r062",
+      "doi": "10.3201/eid2609.202603",
+      "title": "Asymptomatic SARS-CoV-2 Infection in Nursing Homes, Barcelona, Spain, April 2020"
+    },
+    {
+      "article_id": "a_0026_r064",
+      "doi": "10.1681/asn.2020040461",
+      "title": "Hemodialysis with Cohort Isolation to Prevent Secondary Transmission during a COVID-19 Outbreak in Korea"
+    },
+    {
+      "article_id": "a_0026_r065",
+      "doi": "10.1111/acem.14009",
+      "title": "Symptom Criteria for COVID‐19 Testing of Heath Care Workers"
+    },
+    {
+      "article_id": "a_0026_r066",
+      "doi": "10.1016/j.jhin.2020.06.021",
+      "title": "COVID-19 among healthcare workers in a specialist infectious diseases setting in Naples, Southern Italy: results of a cross-sectional surveillance study"
+    },
+    {
+      "article_id": "a_0026_r067",
+      "doi": "10.1101/2020.05.29.20116731",
+      "title": "SARS-CoV-2 Seroprevalence Among All Workers in a Teaching Hospital in Spain: Unmasking The Risk"
+    },
+    {
+      "article_id": "a_0026_r068",
+      "doi": "10.1016/j.nefro.2020.04.005",
+      "title": "Alta prevalencia de COVID-19 asintomático en hemodiálisis. Aprendiendo día a día el primer mes de pandemia de COVID-19"
+    },
+    {
+      "article_id": "a_0026_r070",
+      "doi": "10.1101/2020.06.09.20116806",
+      "title": "Pre exposure Hydroxychloroquine use is associated with reduced COVID19 risk in healthcare workers"
+    },
+    {
+      "article_id": "a_0026_r071",
+      "doi": "10.1111/pai.13278",
+      "title": "Symptoms and immunoglobulin development in hospital staff exposed to a SARS‐CoV‐2 outbreak"
+    },
+    {
+      "article_id": "a_0026_r074",
+      "doi": "10.1101/2020.06.08.20120584",
+      "title": "SARS-CoV-2 virus and antibodies in front-line Health Care Workers in an acute hospital in London: preliminary results from a longitudinal study"
+    },
+    {
+      "article_id": "a_0026_r078",
+      "doi": "10.3390/ijerph17124417",
+      "title": "Prevalence of Sars-Cov-2 Infection in Health Workers (HWs) and Diagnostic Test Performance: The Experience of a Teaching Hospital in Central Italy"
+    },
+    {
+      "article_id": "a_0026_r079",
+      "doi": "10.1371/journal.pone.0235460",
+      "title": "COVID-19 symptoms predictive of healthcare workers’ SARS-CoV-2 PCR results"
+    },
+    {
+      "article_id": "a_0026_r080",
+      "doi": "10.1016/j.cmi.2020.06.013",
+      "title": "Characteristics of 1573 healthcare workers who underwent nasopharyngeal swab testing for SARS-CoV-2 in Milan, Lombardy, Italy"
+    },
+    {
+      "article_id": "a_0026_r081",
+      "doi": "10.1016/j.ekir.2020.06.003",
+      "title": "Epidemiological, Clinical, and Immunological Features of a Cluster of COVID-19–Contracted Hemodialysis Patients"
+    },
+    {
+      "article_id": "a_0026_r082",
+      "doi": "10.1093/cid/ciaa761",
+      "title": "Prevalence of COVID-19 Infection and Outcomes Among Symptomatic Healthcare Workers in Seattle, Washington"
+    },
+    {
+      "article_id": "a_0026_r083",
+      "doi": "10.7554/elife.59391",
+      "title": "Effective control of SARS-CoV-2 transmission between healthcare workers during a period of diminished community prevalence of COVID-19"
+    },
+    {
+      "article_id": "a_0026_r084",
+      "doi": "10.1016/j.jhin.2020.06.028",
+      "title": "Dynamics of SARS-CoV-2 RT-PCR positivity and seroprevalence among high-risk healthcare workers and hospital staff"
+    },
+    {
+      "article_id": "a_0026_r086",
+      "doi": "10.1177/0194599820932162",
+      "title": "SARS‐CoV‐2 Infection in Health Care Workers: Cross‐sectional Analysis of an Otolaryngology Unit"
+    },
+    {
+      "article_id": "a_0026_r087",
+      "doi": "10.1101/2020.05.08.20078386",
+      "title": "Drive-through testing for SARS-CoV-2 in symptomatic health and social care workers and household members: an observational cohort study in Tayside, Scotland"
+    },
+    {
+      "article_id": "a_0026_r092",
+      "doi": "10.1101/2020.05.18.20105197",
+      "title": "SARS-CoV-2 seroconversion in health care workers"
+    },
+    {
+      "article_id": "a_0026_r093",
+      "doi": "10.1016/s1473-3099(20)30527-2",
+      "title": "COVID-19 in health-care workers in three hospitals in the south of the Netherlands: a cross-sectional study"
+    },
+    {
+      "article_id": "a_0026_r094",
+      "doi": "10.1016/j.jinf.2020.06.035",
+      "title": "High SARS-CoV-2 infection rates in respiratory staff nurses and correlation of COVID-19 symptom patterns with PCR positivity and relative viral loads"
+    },
+    {
+      "article_id": "a_0026_r095",
+      "doi": "10.1017/ice.2020.219",
+      "title": "Containment of COVID-19 cases amongst healthcare workers: the role of surveillance, early detection and outbreak management"
+    }
+  ]
+}

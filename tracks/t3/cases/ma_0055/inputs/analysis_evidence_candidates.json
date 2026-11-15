@@ -1,0 +1,471 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0055",
+  "candidate_set_id": "ma_0055_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0055_07",
+      "study_id": "s_0055_cheong",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Presence of delayed enhancement (DE) on DE-MRI",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "all-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Entire study cohort of 857 patients referred for DE-MRI; broader cardiac cohort, not restricted to nonischemic cardiomyopathy",
+      "timepoint": "Median follow-up 4.4 years",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports an adjusted hazard ratio for the composite endpoint of death/transplantation comparing any DE present with DE absent in the entire cohort. A death-only count by DE status is not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_07",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 57
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0055_12",
+      "study_id": "s_0055_lehrke",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Late gadolinium enhancement (LGE) present",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Explicit all-cause death counts by source-defined LGE status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "184 consecutive patients with nonischemic dilated cardiomyopathy (DCM) in a prognostic cohort",
+      "timepoint": "During the follow-up period",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 4,
+        "intervention_total": 72,
+        "control_events": 1,
+        "control_total": 112,
+        "outcome_unit": "All-cause deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_12",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 51
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0055_08",
+      "study_id": "s_0055_cho",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Presence of delayed enhancement (DE) on CMR (DE+)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Explicit all-cause death counts by source-defined DE status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "79 patients with nonischemic cardiomyopathy and LV ejection fraction <35%; DE− n=37 and DE+ n=42",
+      "timepoint": "Mean clinical follow-up 33.4±1.7 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 1,
+        "intervention_total": 42,
+        "control_events": 0,
+        "control_total": 37,
+        "outcome_unit": "All-cause deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_08",
+        "source_type": "figure",
+        "source_id": "Figure 5",
+        "content_list_item_index": 59
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0055_10",
+      "study_id": "s_0055_gulati",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Midwall fibrosis present versus absent",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined nonischemic cardiomyopathy cohort",
+      "timepoint": "Follow-up through December 2011; median 5.3 years",
+      "data_family": "binary_exposure_outcome_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_exposure_outcome_counts",
+        "exposed_arm": {
+          "events": 38,
+          "n": 142
+        },
+        "unexposed_arm": {
+          "events": 35,
+          "n": 330
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 3.0796703296703294,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 1.1248225554354192,
+        "variance": null,
+        "direction": "OR_greater_than_1_indicates_higher_mortality_odds_with_LGE_or_fibrosis_present"
+      },
+      "source_location": {
+        "document_id": "a_0055_10",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 2, Study Outcome Data"
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0055_14",
+      "study_id": "s_0055_neilan",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LGE present",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Cardiovascular death reported by LGE status; not explicitly all-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "162 patients with nonischemic dilated cardiomyopathy undergoing ICD implantation for primary prevention of sudden cardiac death",
+      "timepoint": "Mean follow-up 29 ± 18 months; median follow-up 26 months",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 13 cardiovascular deaths among LGE-positive patients and 1 cardiovascular death among LGE-negative patients, but these deaths are reported within the composite MACE event description and are not explicitly identified as all-cause deaths."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_14",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0055_13",
+      "study_id": "s_0055_muller",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "LGE present versus absent",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined nonischemic cardiomyopathy cohort",
+      "timepoint": "Median 21-month follow-up",
+      "data_family": "binary_exposure_outcome_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_exposure_outcome_counts",
+        "exposed_arm": {
+          "events": 6,
+          "n": 94
+        },
+        "unexposed_arm": {
+          "events": 4,
+          "n": 91
+        }
+      },
+      "effect": {
+        "effect_type": "OR",
+        "value": 1.4829545454545454,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.3940364122845416,
+        "variance": null,
+        "direction": "OR_greater_than_1_indicates_higher_mortality_odds_with_LGE_or_fibrosis_present"
+      },
+      "source_location": {
+        "document_id": "a_0055_13",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 4, Clinical outcome during follow-up"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0055_13",
+      "study_id": "s_0055_muller",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LGE present",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "185 patients with newly diagnosed non-ischemic cardiomyopathy; LGE-positive n=94 and LGE-negative n=91; cohort included varied etiologies",
+      "timepoint": "Median follow-up of 21 months",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 6,
+        "intervention_total": 94,
+        "control_events": 4,
+        "control_total": 91,
+        "outcome_unit": "Patients with all-cause death during follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_13",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 79
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0055_10",
+      "study_id": "s_0055_gulati",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Midwall fibrosis present on LGE-CMR",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Explicit all-cause death counts by source-defined fibrosis status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "472 patients with nonischemic dilated cardiomyopathy in a prospective prognostic cohort; fibrosis present n=142 and absent n=330",
+      "timepoint": "During follow-up; median 5.3 years",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 38,
+        "intervention_total": 142,
+        "control_events": 35,
+        "control_total": 330,
+        "outcome_unit": "patients with all-cause mortality during follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_10",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0055_11",
+      "study_id": "s_0055_iles",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "NICM with LGE (regional fibrosis present)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause death",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with nonischemic cardiomyopathy (NICM) undergoing ICD implantation for primary prevention of sudden cardiac death; NICM with LGE versus NICM without LGE",
+      "timepoint": "During follow-up; median 573 days (IQR 379 to 863 days)",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 1,
+        "intervention_total": 31,
+        "control_events": 2,
+        "control_total": 30,
+        "outcome_unit": "Participants who died from any cause during follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_11",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 49
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0055_10",
+      "study_id": "s_0055_gulati",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Midwall fibrosis present on LGE-CMR",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Explicit all-cause death counts by source-defined fibrosis status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "472 patients with nonischemic dilated cardiomyopathy in a prospective prognostic cohort; fibrosis present n=142 and absent n=330",
+      "timepoint": "During follow-up; median 5.3 years",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 38,
+        "intervention_total": 142,
+        "control_events": 35,
+        "control_total": 330,
+        "outcome_unit": "patients with all-cause mortality during follow-up"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_10",
+        "source_type": "table",
+        "source_id": "content_0101",
+        "content_list_item_index": 101
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0055_12",
+      "study_id": "s_0055_lehrke",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Late gadolinium enhancement (LGE) present",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Explicit all-cause death counts by source-defined LGE status",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "184 consecutive patients with nonischemic dilated cardiomyopathy (DCM) in a prognostic cohort",
+      "timepoint": "During the follow-up period",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 4,
+        "intervention_total": 72,
+        "control_events": 1,
+        "control_total": 112,
+        "outcome_unit": "All-cause deaths"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_12",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 58
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0055_07",
+      "study_id": "s_0055_cheong",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Presence of delayed enhancement (DE) on DE-MRI",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "all-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients without documented coronary artery disease (n=215); the source states these patients were treated as having nonischemic cardiomyopathy",
+      "timepoint": "Median follow-up 4.4 years; timepoint not separately stated for subgroup estimate",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Among patients without documented CAD, any DE was associated with an adjusted hazard ratio for the composite endpoint of death/transplantation versus no DE. A death-only count by DE status is not reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0055_07",
+        "source_type": "table",
+        "source_id": "Table 5",
+        "content_list_item_index": 58
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../../../../schemas/analysis-extensions.schema.json",
+  "case_id": "ma_0001",
+  "extension_profile_id": "ma_0001_review_derived_extensions_v1",
+  "source_basis": "The active ma_0001 v5 profile already declares its approved subgroup and sensitivity topics.",
+  "blindness_policy": "Participant inputs define analysis questions and eligibility rules; reference selections and pooled values are distributed separately.",
+  "candidate_subgroup_policy": "No additional prospective subgroup questions are introduced for this case. The agent uses the existing active analysis profile only.",
+  "scoring_status": "declared_numeric_result_coverage",
+  "subgroup_analyses": [],
+  "candidate_subgroup_analyses": [],
+  "meta_regression_analyses": [],
+  "notes": []
+}

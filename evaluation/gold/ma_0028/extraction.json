@@ -1,0 +1,417 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0028",
+  "gold_id": "ma_0028_extraction_gold_v1_1_expanded_draft",
+  "task_type": "extraction",
+  "provenance": {
+    "target_review_document_id": "review_ma_0028",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "applies_to_task_ids": [
+    "ma_0028_extraction_all_reports_v1",
+    "ma_0028_end_to_end_lfa_accuracy_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0028_01",
+      "article_id": "a_0028_01",
+      "study_id": "s_0028_01",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "MAT-defined cases and controls from Hawaii, Indonesia, the Netherlands, and Seychelles",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_01",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Microscopic agglutination test (MAT)",
+            "true_positive": 116,
+            "false_positive": 28,
+            "false_negative": 19,
+            "true_negative": 255
+          },
+          "source_location": {
+            "document_id": "a_0028_01",
+            "page": 2,
+            "source_type": "table_or_explicit_results_text",
+            "source_id": "Results, combined case and control groups",
+            "locator_note": "The report gives 116/135 lateral-flow-positive MAT case patients, 9 false-positive results among 138 controls, and 19 among 145 patients with other diseases. The source counts therefore yield TP=116, FN=19, FP=28, TN=255.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_02",
+      "article_id": "a_0028_02",
+      "study_id": "s_0028_02",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Consecutive patients with suspected leptospirosis in Kerala, India",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_02",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "IgM ELISA at the source-defined titre cutoff",
+            "true_positive": 54,
+            "false_positive": 6,
+            "false_negative": 5,
+            "true_negative": 131
+          },
+          "source_location": {
+            "document_id": "a_0028_02",
+            "page": 2,
+            "source_type": "table_or_explicit_results_text",
+            "source_id": "Table 1, IgM ELISA versus lateral-flow assay",
+            "locator_note": "Table 1 reports 54 lateral-flow-positive of 59 IgM-ELISA-positive patients and six lateral-flow-positive among 137 IgM-ELISA-negative patients, yielding TP=54, FN=5, FP=6, TN=131.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_03",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Suspected leptospirosis patients in the first week of illness in the Andaman Islands",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_03",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Culture, MAT seroconversion or rise, or specified MAT titre",
+            "true_positive": 37,
+            "false_positive": 3,
+            "false_negative": 33,
+            "true_negative": 44
+          },
+          "source_location": {
+            "document_id": "a_0028_03",
+            "page": 1,
+            "source_type": "table_or_explicit_results_text",
+            "source_id": "Abstract, first-week diagnostic accuracy",
+            "locator_note": "The abstract explicitly reports sensitivity 37/70 and specificity 44/47 during the first week; the corresponding four cells are TP=37, FN=33, FP=3, TN=44.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_04",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Participants submitted for leptospirosis testing in the Netherlands, first diagnostic sample",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_04",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Pre-specified MAT, IgM ELISA, and culture case definition",
+            "true_positive": 74,
+            "false_positive": 57,
+            "false_negative": 34,
+            "true_negative": 1235
+          },
+          "source_location": {
+            "document_id": "a_0028_04",
+            "page": 6,
+            "source_type": "table_or_explicit_results_text",
+            "source_id": "Table 3, LeptoTek Lateral Flow first sample",
+            "locator_note": "Table 3 reports 74/108 sensitivity and 1235/1292 specificity, yielding TP=74, FN=34, FP=57, TN=1235. Only this one prespecified index-test/timepoint record is retained from the multi-test report.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_05",
+      "article_id": "a_0028_05",
+      "study_id": "s_0028_05",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Patients with clinically suspected leptospirosis at their first hospital visit in Austria",
+      "timepoint": "First hospital visit; source Table 1",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_05",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Microscopic agglutination test (MAT), titre at least 1:100",
+            "true_positive": 12,
+            "false_positive": 24,
+            "false_negative": 1,
+            "true_negative": 553
+          },
+          "source_location": {
+            "document_id": "a_0028_05",
+            "page": 3,
+            "source_type": "table_or_explicit_results_text",
+            "source_id": "Table 1, Leptocheck versus MAT",
+            "locator_note": "Table 1 gives Leptocheck-positive MAT-positive=12, Leptocheck-positive MAT-negative=24, Leptocheck-negative MAT-positive=1, and Leptocheck-negative MAT-negative=553.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_06",
+      "article_id": "a_0028_06",
+      "study_id": "s_0028_06",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Hospital patients with suspected acute leptospirosis in Martinique",
+      "timepoint": "Acute serum; source Table 1",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_06",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Microscopic agglutination test (MAT), acute-serum titre at least 1:400",
+            "true_positive": 34,
+            "false_positive": 12,
+            "false_negative": 6,
+            "true_negative": 32
+          },
+          "source_location": {
+            "document_id": "a_0028_06",
+            "page": 3,
+            "source_type": "table_or_explicit_results_text",
+            "source_id": "Table 1, Leptocheck-WB versus MAT",
+            "locator_note": "Table 1 categories give TP=27+7=34, FP=4+8=12, FN=2+4=6, and TN=6+26=32 for Leptocheck-WB against the stated MAT reference.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_07",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Patients over 12 years with suspected acute leptospirosis in three Sri Lankan hospitals",
+      "timepoint": "Two source-supported reference-standard timepoints",
+      "data_family": "diagnostic_four_cell_counts",
+      "quantitative_usability": "poolable",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0028_07",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Acute-phase MAT, titre at least 1:400",
+            "true_positive": 248,
+            "false_positive": 159,
+            "false_negative": 45,
+            "true_negative": 436
+          },
+          "source_location": {
+            "document_id": "a_0028_07",
+            "page": null,
+            "source_type": "supplementary_table",
+            "source_id": "S1 Table, acute sample (n=888)",
+            "locator_note": "S1 Table's eight jointly tabulated cells yield TP=221+27=248, FP=67+92=159, FN=31+14=45, and TN=25+411=436 for Leptocheck-WB versus acute MAT.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        },
+        {
+          "effect_estimate_id": "ee_0028_08",
+          "estimand": "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis",
+          "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+          "used_effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "poolable",
+          "source_data": {
+            "data_type": "diagnostic_four_cell_counts",
+            "unit_of_analysis": "patient",
+            "target_condition": "acute human leptospirosis",
+            "index_test": "Patoc-antigen lateral-flow IgM assay",
+            "reference_standard": "Final MAT using acute and paired samples",
+            "true_positive": 286,
+            "false_positive": 121,
+            "false_negative": 76,
+            "true_negative": 405
+          },
+          "source_location": {
+            "document_id": "a_0028_07",
+            "page": null,
+            "source_type": "supplementary_table",
+            "source_id": "S2 Table, acute/paired sample (n=888)",
+            "locator_note": "S2 Table's eight jointly tabulated cells yield TP=245+41=286, FP=43+78=121, FN=40+36=76, and TN=16+389=405 for the same acute Leptocheck-WB result against final MAT.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0028_08",
+      "article_id": "a_0028_08",
+      "study_id": "s_0028_08",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Kannan et al. (2012), leptospiral uveitis",
+      "timepoint": "Source-described diagnostic evaluation",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    },
+    {
+      "report_unit_id": "ru_0028_09",
+      "article_id": "a_0028_09",
+      "study_id": "s_0028_09",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "exposure_measure": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": "acute_human_leptospirosis",
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Limmathurotsakul et al. (2012)",
+      "timepoint": "Source-described diagnostic evaluation",
+      "data_family": "not_quantitatively_usable",
+      "quantitative_usability": "source_only",
+      "effect_estimates": []
+    }
+  ],
+  "supplementary_unscored_source_findings": [
+    {
+      "finding_id": "uf_0028_01",
+      "article_id": "a_0028_08",
+      "study_id": "s_0028_08",
+      "quantitative_usability": "source_only",
+      "reason_not_scored": "Leptospiral uveitis population is outside the pre-specified suspected acute febrile-patient population."
+    },
+    {
+      "finding_id": "uf_0028_02",
+      "article_id": "a_0028_09",
+      "study_id": "s_0028_09",
+      "quantitative_usability": "source_only",
+      "reason_not_scored": "The supplied source gives aggregate rounded accuracy results but no explicit four-cell table; counts are not reconstructed from percentages."
+    }
+  ]
+}

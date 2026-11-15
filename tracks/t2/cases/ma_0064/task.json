@@ -1,0 +1,51 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0064",
+  "source_case_id": "ma_0064",
+  "task_id": "ma_0064_extraction_all_archived_reports_v1",
+  "task_type": "extraction",
+  "task_definition": "Extract all source-supported recurrence or disease-free-survival evidence from each archived known-included report. Preserve incomplete binary records and time-to-event effects; do not fabricate missing binary events.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_0064_19",
+    "a_0064_20",
+    "a_0064_22",
+    "a_0064_23",
+    "a_0064_24",
+    "a_0064_26",
+    "a_0064_27"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0064"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0034",
+  "gold_id": "ma_0034_analysis_gold_v1_1_expanded_draft",
+  "task_type": "analysis",
+  "provenance": {
+    "target_review_document_id": "review_ma_0034",
+    "target_supplement_document_id": null,
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "primary_ec_use_after_advance_provision",
+      "selected_candidate_ids": [
+        "ce_0034_01",
+        "ce_0034_02",
+        "ce_0034_03",
+        "ce_0034_04",
+        "ce_0034_05",
+        "ce_0034_06"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_0034_01",
+        "ee_0034_02",
+        "ee_0034_03",
+        "ee_0034_04",
+        "ee_0034_05",
+        "ee_0034_06"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_0034_primary_ec_use",
+          "outcome_group": "Any emergency contraceptive pill use after advance provision",
+          "effect": {
+            "effect_type": "RR",
+            "value": 2.129981268914741,
+            "ci_lower": 1.9348122510617387,
+            "ci_upper": 2.3448374401382077,
+            "direction": "advance_provision_higher_ec_use_when_rr_gt_1"
+          },
+          "member_candidate_ids": [
+            "ce_0034_01",
+            "ce_0034_02",
+            "ce_0034_03",
+            "ce_0034_04",
+            "ce_0034_05",
+            "ce_0034_06"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_0034_01",
+            "ee_0034_02",
+            "ee_0034_03",
+            "ee_0034_04",
+            "ee_0034_05",
+            "ee_0034_06"
+          ],
+          "heterogeneity_i2": 1.6390519621030206,
+          "calculator_run": {
+            "calculator_id": "binary_rr_log_wald_v1",
+            "pooling": "dersimonian_laird_random_effects_inverse_variance",
+            "tau_squared": 0.00035016117104675004,
+            "q": 5.08331822714191
+          }
+        }
+      ]
+    }
+  ]
+}

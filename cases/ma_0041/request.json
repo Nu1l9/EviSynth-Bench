@@ -1,0 +1,461 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0041",
+  "topic": "How do patient-specific instruments, navigation, and standard instrumentation affect source-reported glenoid positioning accuracy in shoulder arthroplasty?",
+  "protocol": {
+    "protocol_id": "ma_0041_full_glenoid_positioning_protocol_v1",
+    "case_id": "ma_0041",
+    "pico": {
+      "population": "Human patients or cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty with source-reported glenoid positioning measurements",
+      "intervention_or_exposure": {
+        "description": "Patient-specific instruments, navigation, or standard instrumentation for glenoid component positioning"
+      },
+      "comparison": {
+        "description": "Any source-reported glenoid positioning method or comparator"
+      },
+      "outcome": "Planned-versus-achieved glenoid version, inclination, starting-point, or offset deviation"
+    },
+    "eligible_study_designs": [
+      "comparative study",
+      "single-arm study",
+      "cadaveric study"
+    ],
+    "targets": [
+      {
+        "target_id": "glenoid_positioning_summary",
+        "outcome": "Source-reported planned-versus-achieved glenoid version, inclination, starting-point, or offset positioning summary",
+        "comparison": "Any source-reported glenoid positioning method or comparator; preserve arm labels and do not invent a comparator",
+        "population_or_subgroup": "Human patients or cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty",
+        "timepoint_policy": {
+          "rule": "Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method."
+        },
+        "accepted_data_families": [
+          "independent_continuous_arms",
+          "single_arm_continuous_summary"
+        ],
+        "preferred_effect_measures": [],
+        "estimands": [],
+        "effect_selection_rule": "Capture every source-reported glenoid positioning axis, measurement semantics, unit, arm labels, and signed values. Do not calculate MD or SMD during extraction.",
+        "extraction_notes": [
+          "Do not create a comparator for a single-arm summary.",
+          "Do not discard version, inclination, starting-point, or offset data because only downstream analysis decides the eligible axis."
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "psi_vs_standard_version",
+      "outcome_group": "absolute deviation from intended glenoid version",
+      "target_id": "glenoid_positioning_summary",
+      "eligible_outcome_codes": [
+        "glenoid_positioning_summary"
+      ],
+      "eligible_data_families": [
+        "independent_continuous_arms"
+      ],
+      "accepted_effect_types": [
+        "MD_degrees"
+      ],
+      "estimands": [
+        "patient_specific_instrument_minus_standard_instrumentation_version_deviation"
+      ],
+      "selection_rules": [
+        "Select a calculator-complete patient-specific-instrument versus standard-instrumentation comparison.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Do not pool inclination or offset outcomes in this version analysis.",
+        "Timepoint eligibility: Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method.",
+        "Source selection: Capture every source-reported glenoid positioning axis, measurement semantics, unit, arm labels, and signed values. Do not calculate MD or SMD during extraction.",
+        "Do not create a comparator for a single-arm summary.",
+        "Do not discard version, inclination, starting-point, or offset data because only downstream analysis decides the eligible axis."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "mean_difference_inverse_variance",
+        "heterogeneity_estimator": "reml",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "glenoid version deviation",
+        "absolute glenoid version error",
+        "version deviation"
+      ],
+      "exposure": {
+        "terms": [
+          "patient-specific instrument",
+          "patient-specific guide"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "patient-specific instrument versus standard instrumentation"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Human patients or cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty with source-reported glenoid positioning measurements"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": [
+      {
+        "analysis_id": "psi_vs_standard_inclination",
+        "outcome_group": "absolute deviation from intended glenoid inclination",
+        "target_id": "glenoid_positioning_summary",
+        "eligible_outcome_codes": [
+          "glenoid_positioning_summary"
+        ],
+        "eligible_data_families": [
+          "independent_continuous_arms"
+        ],
+        "accepted_effect_types": [
+          "MD_degrees"
+        ],
+        "estimands": [
+          "patient_specific_instrument_minus_standard_instrumentation_inclination_deviation"
+        ],
+        "selection_rules": [
+          "Select a calculator-complete patient-specific-instrument versus standard-instrumentation comparison.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Do not pool version or offset outcomes in this inclination analysis.",
+          "Timepoint eligibility: Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method.",
+          "Source selection: Capture every source-reported glenoid positioning axis, measurement semantics, unit, arm labels, and signed values. Do not calculate MD or SMD during extraction.",
+          "Do not create a comparator for a single-arm summary.",
+          "Do not discard version, inclination, starting-point, or offset data because only downstream analysis decides the eligible axis."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "mean_difference_inverse_variance",
+          "heterogeneity_estimator": "reml",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "glenoid inclination deviation",
+          "absolute glenoid inclination error",
+          "inclination deviation"
+        ],
+        "exposure": {
+          "terms": [
+            "patient-specific instrument",
+            "patient-specific guide"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "patient-specific instrument versus standard instrumentation"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Human patients or cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty with source-reported glenoid positioning measurements"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method.",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      },
+      {
+        "analysis_id": "psi_vs_standard_offset",
+        "outcome_group": "deviation from intended glenoid starting point or offset",
+        "target_id": "glenoid_positioning_summary",
+        "eligible_outcome_codes": [
+          "glenoid_positioning_summary"
+        ],
+        "eligible_data_families": [
+          "independent_continuous_arms"
+        ],
+        "accepted_effect_types": [
+          "MD_mm"
+        ],
+        "estimands": [
+          "patient_specific_instrument_minus_standard_instrumentation_offset_deviation"
+        ],
+        "selection_rules": [
+          "Select a calculator-complete patient-specific-instrument versus standard-instrumentation comparison.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Do not pool version or inclination outcomes in this offset analysis.",
+          "Timepoint eligibility: Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method.",
+          "Source selection: Capture every source-reported glenoid positioning axis, measurement semantics, unit, arm labels, and signed values. Do not calculate MD or SMD during extraction.",
+          "Do not create a comparator for a single-arm summary.",
+          "Do not discard version, inclination, starting-point, or offset data because only downstream analysis decides the eligible axis."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "mean_difference_inverse_variance",
+          "heterogeneity_estimator": "reml",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "glenoid starting point deviation",
+          "glenoid offset deviation",
+          "total offset deviation"
+        ],
+        "exposure": {
+          "terms": [
+            "patient-specific instrument",
+            "patient-specific guide"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "patient-specific instrument versus standard instrumentation"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Human patients or cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty with source-reported glenoid positioning measurements"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Use the report's planned-versus-achieved implant-position assessment and preserve the source-reported measurement method.",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Accuracy of Glenoid Component Placement in Total Shoulder Arthroplasty and Its Effect on Clinical and Radiological Outcome in a Retrospective, Longitudinal, Monocentric Open Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_001.pdf"
+      },
+      "doi": "10.1371/journal.pone.0075791"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Use of a custom alignment guide to improve glenoid component position in total shoulder arthroplasty",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_002.pdf"
+      },
+      "doi": "10.1007/s00167-012-2177-1"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Patient-specific instrumentation for total shoulder arthroplasty: not as accurate as it would seem",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_003.pdf"
+      },
+      "doi": "10.1016/j.jse.2017.07.004"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Accuracy of placement of the glenoid component in reversed shoulder arthroplasty with and without navigation",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_004.pdf"
+      },
+      "doi": "10.1016/j.jse.2010.07.014"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Intraoperative Navigation in Reverse Shoulder Arthroplasty: Advantages and Future Prospects",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_005.pdf"
+      },
+      "doi": "10.4055/cios23407"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Improved accuracy of glenoid positioning in total shoulder arthroplasty with intraoperative navigation: A prospective-randomized clinical study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_006.pdf"
+      },
+      "doi": "10.1016/j.jse.2009.03.014"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Augmented reality through head-mounted display for navigation of baseplate component placement in reverse total shoulder arthroplasty: a cadaveric study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_007.pdf"
+      },
+      "doi": "10.1007/s00402-021-04025-5"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "The use of preoperative planning to decrease costs and increase efficiency in the OR",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_008.pdf"
+      },
+      "doi": "10.1016/j.jseint.2022.02.004"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Patient-specific targeting guides compared with traditional instrumentation for glenoid component placement in shoulder arthroplasty: a multi-surgeon study in 70 arthritic cadaver specimens",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_009.pdf"
+      },
+      "doi": "10.1016/j.jse.2014.10.013"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Computer modeling and validation testing for glenoid component rotation and optimal glenoid screw angles for reverse shoulder arthroplasty in an Asian population",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_010.pdf"
+      },
+      "doi": "10.1007/s00264-024-06340-z"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Custom, 3‐Dimensional Patient‐Specific Instrumentation in Anatomic Total Shoulder Arthroplasty: Part 1—Preoperative Assessment, Preoperative Planning, and Guide Design",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_011.pdf"
+      },
+      "doi": "10.1016/j.eats.2023.07.003"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Augmented-Reality-Assisted K-Wire Placement for Glenoid Component Positioning in Reversed Shoulder Arthroplasty: A Proof-of-Concept Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_012.pdf"
+      },
+      "doi": "10.3390/jpm11080777"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "A Systematic Review of the Utility of Intraoperative Navigation During Total Shoulder Arthroplasty",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_013.pdf"
+      },
+      "doi": "10.7759/cureus.33087"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Accuracy of patient-specific instrumentation in anatomic and reverse total shoulder arthroplasty",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_014.pdf"
+      },
+      "doi": "10.4103/0973-6042.180717"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Mixed reality visualization in shoulder arthroplasty: is it better than traditional preoperative planning software?",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_015.pdf"
+      },
+      "doi": "10.5397/cise.2022.01326"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Glenoid Component Placement Assisted by Augmented Reality Through a Head‐Mounted Display During Reverse Shoulder Arthroplasty",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_016.pdf"
+      },
+      "doi": "10.1016/j.eats.2021.12.046"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Comparison of Patient-Specific Instruments with Standard Surgical Instruments in Determining Glenoid Component Position",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_017.pdf"
+      },
+      "doi": "10.2106/jbjs.k.01209"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "Patient-specific glenoid guides provide accuracy and reproducibility in total shoulder arthroplasty",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_018.pdf"
+      },
+      "doi": "10.1302/0301-620x.98b8.37257"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Image-derived instrumentation vs. conventional instrumentation with 3D planning for glenoid component placement in reverse total shoulder replacements: a randomized controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0041/candidate_019.pdf"
+      },
+      "doi": "10.1016/j.jseint.2023.03.004"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

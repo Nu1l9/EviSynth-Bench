@@ -1,0 +1,37 @@
+{
+  "case_id": "ma_0034",
+  "analysis_profile_id": "ma_0034_emergency_contraception_use_analysis_profile_v1_1_expanded_draft",
+  "scope": "Single pre-specified primary aggregate-data synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_ec_use_after_advance_provision",
+      "pooled_result_id": "pr_0034_primary_ec_use",
+      "outcome_group": "Any emergency contraceptive pill use after advance provision",
+      "target_id": "emergency_contraception_use_after_advance_provision",
+      "eligible_outcome_codes": [
+        "emergency_contraception_use_after_advance_provision"
+      ],
+      "eligible_data_families": [
+        "binary_arm_outcome"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_any_emergency_contraception_use_advance_provision_vs_standard_access"
+      ],
+      "timepoint_policy": "Select participant-level one-or-more emergency-contraception-use records at a source-defined cumulative follow-up from 6 through 12 months. When a randomized cohort has multiple eligible reports or timepoints, retain the earliest complete participant-level follow-up within that window.",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select one complete binary record per independent randomized trial when it compares advance emergency contraceptive pill provision with standard or on-demand access and reports participants with one or more uses.",
+          "Require source-defined 6- to 12-month follow-up, event counts paired with complete group denominators, and a RR.",
+          "When multiple eligible reports arise from one randomized cohort, select the earliest complete participant-level follow-up in the allowed window; do not combine a subgroup, a secondary analysis, or a later report from that cohort.",
+          "Do not use target-review forest rows, review totals, article-specific labels, or target combined effects."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

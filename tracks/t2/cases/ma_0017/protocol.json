@@ -1,0 +1,71 @@
+{
+  "case_id": "ma_0017",
+  "protocol_id": "ma_0017_evt_utilization_protocol_v1",
+  "protocol_version": "1.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among source-defined acute or ischemic stroke cohorts, did the odds of receiving endovascular thrombectomy differ during the COVID-19 pandemic relative to the source-defined pre-pandemic reference period?",
+  "pico": {
+    "population": "Source-defined acute or ischemic stroke cohorts",
+    "intervention_or_exposure": "COVID-19 pandemic period",
+    "comparator": "Source-defined pre-pandemic reference period",
+    "outcome": "Receipt of endovascular thrombectomy"
+  },
+  "eligible_study_designs": [
+    "before-after observational cohort"
+  ],
+  "targets": [
+    {
+      "target_id": "endovascular_thrombectomy_during_covid19",
+      "outcome": {
+        "description": "Receipt of endovascular thrombectomy",
+        "aliases": [
+          "mechanical thrombectomy",
+          "EVT",
+          "endovascular treatment"
+        ]
+      },
+      "comparison": "COVID-19 pandemic period versus the source-defined pre-pandemic reference period",
+      "population_or_subgroup": "Source-defined acute or ischemic stroke cohort",
+      "timepoint_policy": {
+        "rule": "Use each report's explicitly named COVID-19 and pre-pandemic time periods; retain the text of both periods."
+      },
+      "accepted_data_families": [
+        "two_group_event_counts"
+      ],
+      "preferred_effect_measures": [
+        "OR"
+      ],
+      "estimands": [
+        "odds_of_receiving_endovascular_thrombectomy_in_the_source_defined_acute_stroke_cohort"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "One source-defined pandemic versus reference cohort contrast per report",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract the number receiving EVT and total cohort size for both periods, with a verified table or explicit-results anchor. Do not use target-review forest estimates or infer denominators from percentages."
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "one report-level two-period event-count contrast",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "population_or_subgroup",
+      "timepoint",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "quantitative_usability",
+      "source_location"
+    ]
+  }
+}

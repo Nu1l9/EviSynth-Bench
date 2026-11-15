@@ -1,0 +1,2035 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0056",
+  "candidate_set_id": "ma_0056_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; age 50–69 years at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 154,
+        "intervention_arm.total": 1282,
+        "comparator_arm.events": 161,
+        "comparator_arm.total": 1287
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 95
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Planned 10-day remdesivir plus standard care versus placebo",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19 in Hubei, China",
+      "timepoint": "All-cause mortality at day 28",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "158 randomized to remdesivir and 78 randomized to placebo",
+        "intervention_arm": {
+          "label": "Remdesivir",
+          "events": 22,
+          "total": 158
+        },
+        "comparator_arm": {
+          "label": "Placebo",
+          "events": 10,
+          "total": 78
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.0860759493670886,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.08257115402689512,
+        "variance": 0.126304918709982,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 3, Day 28 mortality"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; overall intention-to-treat population",
+      "timepoint": "By day 15",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 35,
+        "intervention_arm.total": 541,
+        "comparator_arm.events": 61,
+        "comparator_arm.total": 521
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0056_05",
+      "study_id": "s_0056_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19; overall trial population",
+      "timepoint": "Day 28",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports no significant difference in the proportion of deaths at day 28 between remdesivir and control, but the located excerpt does not provide arm-level event counts or denominators."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_05",
+        "source_type": "appendix",
+        "source_id": "appendix 2",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0056_09",
+      "study_id": "s_0056_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause, in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with confirmed SARS-CoV-2 infection; NOR-Solidarity full analysis set",
+      "timepoint": "During hospitalization",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports mortality during hospitalization of 7.1% (95% CI 1.8 to 17.5) in the remdesivir + SoC group and 7.0% (95% CI 2.2 to 15.6) in the SoC group, with reported hazard ratio 1.0 (95% CI 0.4 to 2.9). Source-reported arm-level event counts were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir, 200 mg on day 1 followed by 100 mg on days 2–10",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19; patients receiving study treatment within 10 days of symptom onset; intention-to-treat subgroup",
+      "timepoint": "Day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 8,
+        "intervention_arm.total": 71,
+        "comparator_arm.events": 7,
+        "comparator_arm.total": 47
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0056_07",
+      "study_id": "s_0056_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir for 5 days plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality (death)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized adults aged 18–60 years with PCR-confirmed moderate to severe COVID-19, radiographic pneumonia, respiratory rate >24/min, oxygen saturation ≤94%, and not receiving mechanical ventilation",
+      "timepoint": "Day 12 to day 24 clinical status follow-up",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 5,
+        "intervention_arm.total": 34,
+        "comparator_arm.events": 3,
+        "comparator_arm.total": 36
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_07",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 62
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Planned 10-day remdesivir plus standard care versus placebo",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19 and lower respiratory tract infection",
+      "timepoint": "All-cause mortality through day 29",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "541 randomized to remdesivir and 521 randomized to placebo",
+        "intervention_arm": {
+          "label": "Remdesivir",
+          "events": 59,
+          "total": 541
+        },
+        "comparator_arm": {
+          "label": "Placebo",
+          "events": 77,
+          "total": 521
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.7379071944691169,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.3039372150410789,
+        "variance": 0.02616835089735093,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "page": 9,
+        "source_type": "table",
+        "source_id": "Table 2, mortality over entire study period"
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; receiving mechanical ventilation at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 98,
+        "intervention_arm.total": 254,
+        "comparator_arm.events": 71,
+        "comparator_arm.total": 233
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 95
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0056_09",
+      "study_id": "s_0056_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause, in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with confirmed SARS-CoV-2 infection; NOR-Solidarity full analysis set",
+      "timepoint": "During hospitalization",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports mortality during hospitalization of 7.1% (95% CI 1.8 to 17.5) in the remdesivir + SoC group and 7.0% (95% CI 2.2 to 15.6) in the SoC group, with reported relative risk 1.0 (95% CI 0.2 to 4.6). Source-reported arm-level event counts were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0056_03",
+      "study_id": "s_0056_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 5-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized patients with confirmed SARS-CoV-2 infection and moderate COVID-19 pneumonia; patients who began treatment or continued standard care; day-28 follow-up",
+      "timepoint": "Day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 2,
+        "intervention_arm.total": 191,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 200
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_03",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; not receiving mechanical ventilation at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 203,
+        "intervention_arm.total": 2489,
+        "comparator_arm.events": 232,
+        "comparator_arm.total": 2475
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 95
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir, 200 mg on day 1 followed by 100 mg on days 2–10",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19; intention-to-treat population; death category at day 7",
+      "timepoint": "Day 7",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 10,
+        "intervention_arm.total": 154,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 77
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0056_08",
+      "study_id": "s_0056_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized Egyptian adults with mild or moderate COVID-19; treatment-group mortality analysis",
+      "timepoint": "Not stated",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source states that treatment with remdesivir was not significantly associated with patient mortality in the multivariable regression model; no treatment-effect estimate is reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_08",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 26
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 5: hospitalized, requiring supplemental oxygen",
+      "timepoint": "By day 15",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 7,
+        "intervention_arm.total": 232,
+        "comparator_arm.events": 21,
+        "comparator_arm.total": 203
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; age ≥70 years at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 86,
+        "intervention_arm.total": 500,
+        "comparator_arm.events": 83,
+        "comparator_arm.total": 469
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 95
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; overall intention-to-treat population",
+      "timepoint": "By day 29",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 59,
+        "intervention_arm.total": 541,
+        "comparator_arm.events": 77,
+        "comparator_arm.total": 521
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; receiving low-flow or high-flow oxygen at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 192,
+        "intervention_arm.total": 1828,
+        "comparator_arm.events": 219,
+        "comparator_arm.total": 1811
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 4",
+        "content_list_item_index": 119
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0056_03",
+      "study_id": "s_0056_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Planned 5-day remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with moderate COVID-19 pneumonia",
+      "timepoint": "All-cause mortality through day 28",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 5,
+        "analysis_population": "Primary analysis population",
+        "intervention_arm": {
+          "label": "5-day remdesivir",
+          "events": 2,
+          "total": 191
+        },
+        "comparator_arm": {
+          "label": "Standard care",
+          "events": 4,
+          "total": 200
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.5235602094240838,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.6471032420585385,
+        "variance": 0.7397643979057592,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_03",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 2, clinical outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; overall remdesivir versus its control comparison",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 301,
+        "intervention_arm.total": 2743,
+        "comparator_arm.events": 303,
+        "comparator_arm.total": 2708
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "paragraph",
+        "source_id": "content_0009",
+        "content_list_item_index": 9
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0056_07",
+      "study_id": "s_0056_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Remdesivir versus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults with moderate to severe COVID-19 in a single-centre trial",
+      "timepoint": "Clinical status assessed from days 12 to 24",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 5,
+        "analysis_population": "Post-randomization final analysis groups of 34 remdesivir and 36 standard care participants after withdrawals, discontinuations, and a control-to-remdesivir switch",
+        "intervention_arm": {
+          "label": "Remdesivir final analysis group",
+          "events": 5,
+          "total": 34
+        },
+        "comparator_arm": {
+          "label": "Standard care final analysis group",
+          "events": 3,
+          "total": 36
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.7647058823529413,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.5679840376059394,
+        "variance": 0.4761437908496732,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_07",
+        "page": 4,
+        "source_type": "table",
+        "source_id": "Table 4, clinical outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 6: hospitalized, receiving noninvasive ventilation or high-flow oxygen devices",
+      "timepoint": "By day 29",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 19,
+        "intervention_arm.total": 95,
+        "comparator_arm.events": 20,
+        "comparator_arm.total": 98
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir, 200 mg on day 1 followed by 100 mg on days 2–10",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19; patients receiving study treatment more than 10 days after symptom onset; intention-to-treat subgroup",
+      "timepoint": "Day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 12,
+        "intervention_arm.total": 84,
+        "comparator_arm.events": 3,
+        "comparator_arm.total": 31
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Planned 10-day remdesivir plus standard care versus concurrent standard care",
+      "outcome": {
+        "code": null,
+        "label": "In-hospital all-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19 in the WHO Solidarity trial",
+      "timepoint": "In-hospital mortality during source trial follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "2743 remdesivir and 2708 concurrent controls",
+        "overlap_group": "who_solidarity_parent",
+        "intervention_arm": {
+          "label": "Remdesivir",
+          "events": 301,
+          "total": 2743
+        },
+        "comparator_arm": {
+          "label": "Concurrent standard care",
+          "events": 303,
+          "total": 2708
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.9807238106238623,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.019464397665931006,
+        "variance": 0.005888748604997404,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "page": 1,
+        "source_type": "paragraph",
+        "source_id": "Abstract, mortality results"
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 5: hospitalized, requiring supplemental oxygen",
+      "timepoint": "By day 29",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 9,
+        "intervention_arm.total": 232,
+        "comparator_arm.events": 25,
+        "comparator_arm.total": 203
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0056_05",
+      "study_id": "s_0056_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "In-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19; overall trial population",
+      "timepoint": "In-hospital",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source identifies in-hospital mortality as an analysis whose results were to become available after final database lock; no arm-level mortality data are reported in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_05",
+        "source_type": "table",
+        "source_id": "table for",
+        "content_list_item_index": 56
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; no supplemental oxygen at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 11,
+        "intervention_arm.total": 661,
+        "comparator_arm.events": 13,
+        "comparator_arm.total": 664
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 4",
+        "content_list_item_index": 119
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0056_08",
+      "study_id": "s_0056_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Planned 10-day remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized Egyptian adults with mild to moderate COVID-19",
+      "timepoint": "Mortality during source hospital follow-up",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "100 remdesivir and 100 control participants",
+        "intervention_arm": {
+          "label": "Remdesivir",
+          "events": 9,
+          "total": 100
+        },
+        "comparator_arm": {
+          "label": "Control",
+          "events": 7,
+          "total": 100
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.2857142857142856,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.251314428280906,
+        "variance": 0.23396825396825394,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_08",
+        "page": 2,
+        "source_type": "table",
+        "source_id": "Table 2, clinical outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0029",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 7: hospitalized, receiving invasive mechanical ventilation or ECMO",
+      "timepoint": "By day 15",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 14,
+        "intervention_arm.total": 131,
+        "comparator_arm.events": 21,
+        "comparator_arm.total": 154
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0030",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir, 200 mg on day 1 followed by 100 mg on days 2–10",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19; intention-to-treat population; death category at day 28",
+      "timepoint": "Day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 22,
+        "intervention_arm.total": 150,
+        "comparator_arm.events": 10,
+        "comparator_arm.total": 77
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0031",
+      "article_id": "a_0056_08",
+      "study_id": "s_0056_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized Egyptian adults with mild or moderate PCR-confirmed COVID-19, aged 18–80 years; final analysis population, 100 participants per arm",
+      "timepoint": "Study completion/final analysis; exact mortality follow-up not stated",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 9,
+        "intervention_arm.total": 100,
+        "comparator_arm.events": 7,
+        "comparator_arm.total": 100
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_08",
+        "source_type": "table",
+        "source_id": "TABLE 2",
+        "content_list_item_index": 37
+      }
+    },
+    {
+      "candidate_id": "cand_0032",
+      "article_id": "a_0056_03",
+      "study_id": "s_0056_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Planned 10-day remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with moderate COVID-19 pneumonia",
+      "timepoint": "All-cause mortality through day 28",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "Primary analysis population",
+        "intervention_arm": {
+          "label": "10-day remdesivir",
+          "events": 3,
+          "total": 193
+        },
+        "comparator_arm": {
+          "label": "Standard care",
+          "events": 4,
+          "total": 200
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.7772020725388601,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.2520548948086298,
+        "variance": 0.5731519861830742,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_03",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 2, clinical outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0033",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; receiving mechanical ventilation at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 98,
+        "intervention_arm.total": 254,
+        "comparator_arm.events": 71,
+        "comparator_arm.total": 233
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 2",
+        "content_list_item_index": 119
+      }
+    },
+    {
+      "candidate_id": "cand_0034",
+      "article_id": "a_0056_05",
+      "study_id": "s_0056_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned total duration 10 days",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality (death category on WHO seven-point ordinal scale)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with laboratory-confirmed COVID-19; intention-to-treat population",
+      "timepoint": "Day 15",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 21,
+        "intervention_arm.total": 414,
+        "comparator_arm.events": 24,
+        "comparator_arm.total": 418
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_05",
+        "source_type": "paragraph",
+        "source_id": "content_0006",
+        "content_list_item_index": 6
+      }
+    },
+    {
+      "candidate_id": "cand_0035",
+      "article_id": "a_0056_09",
+      "study_id": "s_0056_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with confirmed SARS-CoV-2 infection; NOR-Solidarity full analysis set",
+      "timepoint": "28 days",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 28-day mortality of 2.4% (95% CI 0.1 to 10.1) in the remdesivir + SoC group and 5.3% (95% CI 1.3 to 13.1) in the SoC group. Relative risk and hazard ratio were not reported; estimated marginal risk difference was −2.9 percentage points (95% CI −10.3 to 4.5). Source-reported arm-level event counts were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0036",
+      "article_id": "a_0056_03",
+      "study_id": "s_0056_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized patients with confirmed SARS-CoV-2 infection and moderate COVID-19 pneumonia; patients who began treatment or continued standard care; day-28 follow-up",
+      "timepoint": "Day 28",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 3,
+        "intervention_arm.total": 193,
+        "comparator_arm.events": 4,
+        "comparator_arm.total": 200
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_03",
+        "source_type": "other"
+      }
+    },
+    {
+      "candidate_id": "cand_0037",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 4: hospitalized, not requiring supplemental oxygen, requiring ongoing medical care",
+      "timepoint": "By day 29",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 3,
+        "intervention_arm.total": 75,
+        "comparator_arm.events": 3,
+        "comparator_arm.total": 63
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0038",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; overall Solidarity remdesivir versus its control comparison",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 301,
+        "intervention_arm.total": 2743,
+        "comparator_arm.events": 303,
+        "comparator_arm.total": 2708
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "figure",
+        "source_id": "figure 4",
+        "content_list_item_index": 119
+      }
+    },
+    {
+      "candidate_id": "cand_0039",
+      "article_id": "a_0056_06",
+      "study_id": "s_0056_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Five-day remdesivir versus 10-day remdesivir",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with severe COVID-19",
+      "timepoint": "Day-14 clinical status",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "analysis_population": "200 in the 5-day group and 197 in the 10-day group",
+        "intervention_arm": {
+          "label": "5-day remdesivir",
+          "events": 16,
+          "total": 200
+        },
+        "comparator_arm": {
+          "label": "10-day remdesivir",
+          "events": 21,
+          "total": 197
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.7504761904761905,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.28704735329368986,
+        "variance": 0.10004290548706792,
+        "direction": "five_day_lower_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_06",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 2, clinical outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0040",
+      "article_id": "a_0056_05",
+      "study_id": "s_0056_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19 in the DisCoVeRy trial",
+      "timepoint": "Death within 28 days",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "414 remdesivir and 418 control participants",
+        "overlap_group": "who_solidarity_parent",
+        "intervention_arm": {
+          "label": "Remdesivir",
+          "events": 34,
+          "total": 414
+        },
+        "comparator_arm": {
+          "label": "Standard care",
+          "events": 38,
+          "total": 418
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.9033816425120773,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.10161017641078243,
+        "variance": 0.050919750744760836,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_05",
+        "page": 7,
+        "source_type": "table",
+        "source_id": "Table 2, death within 28 days"
+      }
+    },
+    {
+      "candidate_id": "cand_0041",
+      "article_id": "a_0056_09",
+      "study_id": "s_0056_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Remdesivir plus standard care versus standard care",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Hospitalized adults with COVID-19 in NOR-Solidarity",
+      "timepoint": "Mortality during hospitalization",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "planned_remdesivir_duration_days": 10,
+        "analysis_population": "42 remdesivir and 57 concurrent standard-care participants",
+        "overlap_group": "who_solidarity_parent",
+        "integer_counts_derivation": "Source-reported 7.1% of 42 and 7.0% of 57 correspond unambiguously to 3 and 4 deaths.",
+        "intervention_arm": {
+          "label": "Remdesivir plus standard care",
+          "events": 3,
+          "total": 42
+        },
+        "comparator_arm": {
+          "label": "Standard care",
+          "events": 4,
+          "total": 57
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.0178571428571428,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.017699577099400857,
+        "variance": 0.5419799498746867,
+        "direction": "remdesivir_lower_all_cause_mortality_when_rr_lt_1"
+      },
+      "source_location": {
+        "document_id": "a_0056_09",
+        "page": 6,
+        "source_type": "table",
+        "source_id": "Table 2, mortality during hospitalization"
+      }
+    },
+    {
+      "candidate_id": "cand_0042",
+      "article_id": "a_0056_04",
+      "study_id": "s_0056_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; scheduled 10-day regimen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause in-hospital mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; age <50 years at entry",
+      "timepoint": "During original hospitalization; follow-up ceased at discharge",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 61,
+        "intervention_arm.total": 961,
+        "comparator_arm.events": 59,
+        "comparator_arm.total": 952
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_04",
+        "source_type": "table",
+        "source_id": "content_0095",
+        "content_list_item_index": 95
+      }
+    },
+    {
+      "candidate_id": "cand_0043",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 7: hospitalized, receiving invasive mechanical ventilation or ECMO",
+      "timepoint": "By day 29",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 28,
+        "intervention_arm.total": 131,
+        "comparator_arm.events": 29,
+        "comparator_arm.total": 154
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0044",
+      "article_id": "a_0056_05",
+      "study_id": "s_0056_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned total duration 10 days",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with COVID-19 without mechanical ventilation or ECMO at random assignment; intention-to-treat subgroup",
+      "timepoint": "Day 29",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 24,
+        "intervention_arm.total": 339,
+        "comparator_arm.events": 25,
+        "comparator_arm.total": 344
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_05",
+        "source_type": "appendix",
+        "source_id": "appendix 2",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0045",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19; reported 28-day mortality comparison; denominator not explicitly stated in the excerpt",
+      "timepoint": "Day 28",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports 28-day mortality of 22 deaths (14%) with remdesivir versus 10 deaths (13%) with placebo, with an absolute difference of 1·1% (95% CI –8·1 to 10·3); arm denominators are not explicitly stated in this excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "source_type": "appendix",
+        "source_id": "appendix p",
+        "content_list_item_index": 85
+      }
+    },
+    {
+      "candidate_id": "cand_0046",
+      "article_id": "a_0056_06",
+      "study_id": "s_0056_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir for 5 days plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality (death from any cause)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients receiving mechanical ventilation or ECMO at day 5, analyzed according to original treatment assignment; post hoc subgroup of the hospitalized severe Covid-19 trial population",
+      "timepoint": "Day 14, conditional on mechanical ventilation or ECMO at day 5",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 10,
+        "intervention_arm.total": 25,
+        "comparator_arm.events": 7,
+        "comparator_arm.total": 41
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_06",
+        "source_type": "figure",
+        "source_id": "Fig. 2",
+        "content_list_item_index": 63
+      }
+    },
+    {
+      "candidate_id": "cand_0047",
+      "article_id": "a_0056_02",
+      "study_id": "s_0056_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir, 200 mg on day 1 followed by 100 mg on days 2–10",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with severe COVID-19; intention-to-treat population; death category at day 14",
+      "timepoint": "Day 14",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 15,
+        "intervention_arm.total": 153,
+        "comparator_arm.events": 7,
+        "comparator_arm.total": 78
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_02",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0048",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 6: hospitalized, receiving noninvasive ventilation or high-flow oxygen devices",
+      "timepoint": "By day 15",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 13,
+        "intervention_arm.total": 95,
+        "comparator_arm.events": 17,
+        "comparator_arm.total": 98
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    },
+    {
+      "candidate_id": "cand_0049",
+      "article_id": "a_0056_06",
+      "study_id": "s_0056_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir for 5 days plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality (death from any cause)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized patients with severe Covid-19 pneumonia who did not require mechanical ventilation at baseline; overall treatment population",
+      "timepoint": "Day 14",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 16,
+        "intervention_arm.total": 200,
+        "comparator_arm.events": 21,
+        "comparator_arm.total": 197
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_06",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 79
+      }
+    },
+    {
+      "candidate_id": "cand_0050",
+      "article_id": "a_0056_08",
+      "study_id": "s_0056_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Hospitalized Egyptian adults with mild or moderate COVID-19; treatment-group mortality analysis",
+      "timepoint": "Not stated",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 3 reports treatment group in a univariate logistic regression of patient mortality: P=0.603, OR=0.761, 95% CI 0.272 to 2.130. The source does not explicitly define the treatment-group reference category in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_08",
+        "source_type": "table",
+        "source_id": "TABLE 3",
+        "content_list_item_index": 42
+      }
+    },
+    {
+      "candidate_id": "cand_0051",
+      "article_id": "a_0056_09",
+      "study_id": "s_0056_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with confirmed SARS-CoV-2 infection; NOR-Solidarity full analysis set",
+      "timepoint": "60 days",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 2 reports 60-day mortality of 7.1% (95% CI 1.8 to 17.5) in the remdesivir + SoC group and 5.3% (95% CI 1.3 to 13.1) in the SoC group. Relative risk and hazard ratio were not reported; estimated marginal risk difference was 1.9 percentage points (95% CI −7.8 to 11.6). Source-reported arm-level event counts were not provided in the located excerpt."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0052",
+      "article_id": "a_0056_01",
+      "study_id": "s_0056_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Intravenous remdesivir plus standard care; planned 10-day course",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "All-cause mortality",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adults hospitalized with Covid-19; baseline ordinal score 4: hospitalized, not requiring supplemental oxygen, requiring ongoing medical care",
+      "timepoint": "By day 15",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_arm.events": 1,
+        "intervention_arm.total": 75,
+        "comparator_arm.events": 2,
+        "comparator_arm.total": 63
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0056_01",
+        "source_type": "table",
+        "source_id": "content_0093",
+        "content_list_item_index": 93
+      }
+    }
+  ]
+}

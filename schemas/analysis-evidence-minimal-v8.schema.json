@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/analysis-evidence-minimal-v8.schema.json",
+  "title": "Minimal public evidence candidates for meta-analysis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "candidate_set_id",
+    "candidates"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "candidate_set_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate_id",
+          "article_id",
+          "study_id",
+          "target_id",
+          "exposure",
+          "comparison",
+          "outcome",
+          "population_or_subgroup",
+          "timepoint",
+          "data_family",
+          "estimand",
+          "raw_data",
+          "effect",
+          "source_location"
+        ],
+        "properties": {
+          "candidate_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "article_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "study_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exposure": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "comparison": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "outcome": {
+            "type": "object"
+          },
+          "population_or_subgroup": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "timepoint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "data_family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estimand": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "raw_data": {
+            "type": "object"
+          },
+          "effect": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "source_location": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

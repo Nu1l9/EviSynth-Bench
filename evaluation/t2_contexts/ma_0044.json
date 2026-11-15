@@ -1,0 +1,174 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0044",
+    "task_id": "ma_0044_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among patients undergoing pars plana vitrectomy, does conventional 20-gauge surgery versus microincision vitrectomy surgery change the risks of intraoperative iatrogenic retinal breaks or postoperative retinal detachment?",
+    "pico": {
+      "population": "Patients undergoing pars plana vitrectomy",
+      "exposure": "Conventional 20-gauge vitrectomy",
+      "comparator": "Microincision vitrectomy surgery (23-gauge or 25-gauge)",
+      "outcomes": [
+        "Intraoperative iatrogenic retinal break or tear detected during vitrectomy",
+        "iatrogenic retinal break",
+        "retinal tear",
+        "intraoperative retinal break",
+        "sclerotomy-related break"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "20g_vs_mivs_intraoperative_iatrogenic_break_odds"
+      ],
+      "targets": [
+        {
+          "target_id": "intraoperative_iatrogenic_retinal_break",
+          "outcome": {
+            "description": "Intraoperative iatrogenic retinal break or tear detected during vitrectomy",
+            "aliases": [
+              "iatrogenic retinal break",
+              "retinal tear",
+              "intraoperative retinal break",
+              "sclerotomy-related break"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "OR"
+          ],
+          "estimands": [
+            "20g_vs_mivs_intraoperative_iatrogenic_break_odds"
+          ],
+          "effect_selection_rule": "Retain one arm-level result per independent report for the intraoperative target. Prefer all eligible surgical indications combined when the source reports that aggregate. Do not select a postoperative retinal-detachment result.",
+          "data_contract": {
+            "raw_data_fields": [
+              "20g_events",
+              "20g_total",
+              "mivs_events",
+              "mivs_total"
+            ],
+            "field_definitions": {
+              "20g_events": "Eyes with an intraoperative target break in the conventional 20-gauge arm.",
+              "20g_total": "Eyes analyzed in the 20-gauge arm.",
+              "mivs_events": "Eyes with an intraoperative target break in the MIVS arm.",
+              "mivs_total": "Eyes analyzed in the MIVS arm."
+            },
+            "poolability_required_fields": [
+              "20g_events",
+              "20g_total",
+              "mivs_events",
+              "mivs_total"
+            ],
+            "allowed_source_derivations": [
+              "sum_disjoint_23g_and_25g_arms"
+            ],
+            "derivation_preconditions": [
+              "The 23-gauge and 25-gauge arms are disjoint arms in the same report and use the same intraoperative outcome definition."
+            ],
+            "derivation_instructions": [
+              "When a study presents both eligible 23G and 25G arms, sum events and totals to form one MIVS comparator before the study-level comparison."
+            ],
+            "source_aggregation_rules": [
+              "Do not merge participants across different reports.",
+              "Do not merge postoperative outcomes with intraoperative outcomes."
+            ],
+            "integrity_checks": [
+              "every_numeric_field_must_have_primary_source_support",
+              "outcome_must_be_intraoperative",
+              "20g_and_mivs_totals_must_be_arm_specific",
+              "do_not_replace_events_with_number_of_breaks_if_one_eye_has_multiple_breaks"
+            ]
+          },
+          "quantitative_use_policy": "exact_source_data_required",
+          "quantitative_usability": "poolable",
+          "extraction_notes": [
+            "The unit is an eye/procedure as reported by the source; preserve the reported denominator.",
+            "An included report lacking the intraoperative target remains visible as source-only evidence, not a zero-event study."
+          ]
+        }
+      ],
+      "model_selection_policy": "Retain one arm-level result per independent report for the intraoperative target. Prefer all eligible surgical indications combined when the source reports that aggregate. Do not select a postoperative retinal-detachment result.",
+      "exclusion_concepts": "The unit is an eye/procedure as reported by the source; preserve the reported denominator. An included report lacking the intraoperative target remains visible as source-only evidence, not a zero-event study.",
+      "evidence_requirements": "Every extracted record must retain exact source evidence, page, source-defined effect scale, exposure unit, adjustment set, and missingness."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_044001",
+        "a_044002",
+        "a_044003",
+        "a_044004",
+        "a_044005",
+        "a_044006",
+        "a_044007",
+        "a_044008",
+        "a_044009",
+        "a_044010",
+        "a_044011",
+        "a_044012",
+        "a_044013",
+        "a_044014",
+        "a_044015",
+        "a_044016",
+        "a_044017",
+        "a_044018",
+        "a_044019",
+        "a_044020",
+        "a_044021",
+        "a_044022",
+        "a_044023",
+        "a_044024",
+        "a_044025",
+        "a_044026",
+        "a_044027",
+        "a_044028",
+        "a_044029",
+        "a_044030",
+        "a_044031",
+        "a_044032"
+      ],
+      "study_ids": {
+        "a_044001": "s_044001",
+        "a_044002": "s_044002",
+        "a_044003": "s_044003",
+        "a_044004": "s_044004",
+        "a_044005": "s_044005",
+        "a_044006": "s_044006",
+        "a_044007": "s_044007",
+        "a_044008": "s_044008",
+        "a_044009": "s_044009",
+        "a_044010": "s_044010",
+        "a_044011": "s_044011",
+        "a_044012": "s_044012",
+        "a_044013": "s_044013",
+        "a_044014": "s_044014",
+        "a_044015": "s_044015",
+        "a_044016": "s_044016",
+        "a_044017": "s_044017",
+        "a_044018": "s_044018",
+        "a_044019": "s_044019",
+        "a_044020": "s_044020",
+        "a_044021": "s_044021",
+        "a_044022": "s_044022",
+        "a_044023": "s_044023",
+        "a_044024": "s_044024",
+        "a_044025": "s_044025",
+        "a_044026": "s_044026",
+        "a_044027": "s_044027",
+        "a_044028": "s_044028",
+        "a_044029": "s_044029",
+        "a_044030": "s_044030",
+        "a_044031": "s_044031",
+        "a_044032": "s_044032"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0012",
+  "topic": "Among children in the pneumococcal conjugate vaccine context, is asthma associated with invasive pneumococcal disease (IPD)?",
+  "protocol": {
+    "protocol_id": "ma_0012_extraction_protocol_v1",
+    "case_id": "ma_0012",
+    "pico": {
+      "population": "Children or identifiable pediatric subgroups in primary asthma-IPD reports in the PCV context; record individual PCV and PPSV23 histories when reported, without assuming or requiring them.",
+      "intervention_or_exposure": "Asthma",
+      "comparison": "Children without asthma or without known IPD risk factors when reported. Retain a primary pediatric asthma-IPD report without a comparative ratio as source-only evidence; decide quantitative usability after extraction.",
+      "outcome": "Invasive pneumococcal disease (IPD) as defined by the primary report; preserve whether ascertainment used sterile-site microbiology, surveillance, or administrative records."
+    },
+    "eligible_study_designs": [
+      "Primary cohort, case-control, or population surveillance/descriptive study reporting pediatric asthma and IPD; mixed-age reports qualify when pediatric results are identifiable."
+    ],
+    "targets": [
+      {
+        "target_id": "invasive_pneumococcal_disease",
+        "outcome": "Invasive pneumococcal disease (IPD) as defined by the primary report; preserve whether ascertainment used sterile-site microbiology, surveillance, or administrative records.",
+        "comparison": "Children with asthma versus children without asthma or without known risk factors",
+        "population_or_subgroup": "Children; preserve source age stratum and calendar year",
+        "timepoint_policy": {
+          "rule": "Preserve source-reported age stratum and calendar year; do not pool overlapping cohorts twice.",
+          "preferred": null,
+          "allowed": []
+        },
+        "accepted_data_families": [
+          "reported_ratio_effect"
+        ],
+        "preferred_effect_measures": [
+          "OR",
+          "RR",
+          "rate ratio"
+        ],
+        "estimands": [
+          "adjusted_asthma_vs_no_known_risk_factor",
+          "source_reported_asthma_vs_no_known_risk_factor"
+        ],
+        "effect_selection_rule": "Retain each source-reported comparative OR, RR, or incidence rate ratio for the target outcome and its explicitly defined age stratum or year. Preserve whether adjustment was reported; do not infer adjustment from age stratification. Mark overlapping-cohort effects as quantitative but not independently poolable.",
+        "extraction_notes": [
+          "Do not create arm counts from reported rates or ratios.",
+          "A record lacking an asthma-versus-control ratio is retained only as source-only evidence.",
+          "Preserve source-reported PCV/PPSV23 status and IPD ascertainment; missing individual vaccine status or sterile-site confirmation does not by itself invalidate an asthma-IPD report.",
+          "Preserve each source-reported OR, RR, or incidence rate ratio as its own effect measure; do not relabel a rate ratio as an odds ratio or risk ratio."
+        ],
+        "source_constraints": [
+          "do not count overlapping cohorts twice",
+          "preserve source effect measure",
+          "outcome must match IPD"
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "main_pr_invasive_pneumococcal_disease",
+      "outcome_group": "Invasive pneumococcal disease",
+      "target_id": "invasive_pneumococcal_disease",
+      "eligible_outcome_codes": [
+        "invasive_pneumococcal_disease"
+      ],
+      "eligible_data_families": [
+        "reported_ratio_effect"
+      ],
+      "accepted_effect_types": [
+        "OR",
+        "RR",
+        "rate ratio"
+      ],
+      "estimands": [
+        "adjusted_asthma_vs_no_known_risk_factor",
+        "source_reported_asthma_vs_no_known_risk_factor"
+      ],
+      "selection_rules": [
+        "Select only candidates matching the declared target, outcome group, estimand, and allowed data family.",
+        "Apply the extraction protocol's timepoint and effect-selection rules before synthesis.",
+        "Exclude source-only and quantitatively non-poolable candidates from quantitative pooling.",
+        "Timepoint eligibility: Preserve source-reported age stratum and calendar year; do not pool overlapping cohorts twice.",
+        "Source selection: Retain each source-reported comparative OR, RR, or incidence rate ratio for the target outcome and its explicitly defined age stratum or year. Preserve whether adjustment was reported; do not infer adjustment from age stratification. Mark overlapping-cohort effects as quantitative but not independently poolable.",
+        "do not count overlapping cohorts twice",
+        "preserve source effect measure",
+        "outcome must match IPD",
+        "Do not create arm counts from reported rates or ratios.",
+        "A record lacking an asthma-versus-control ratio is retained only as source-only evidence.",
+        "Retain separately reported, non-overlapping age strata and calendar-year observation periods from the same study as distinct eligible effect units.",
+        "For this mixed log-ratio synthesis, retain source-reported age-stratified incidence rate ratios alongside ORs when the asthma and comparator groups and IPD outcome match; preserve each source measure and its adjustment status, and label the pooled estimate as a generic ratio rather than an OR.",
+        "For the same cohort, outcome, age stratum, and calendar-year period, select only one adjusted model; do not pool overlapping cohorts from different reports twice.",
+        "Preserve source-reported PCV/PPSV23 status and IPD ascertainment; missing individual vaccine status or sterile-site confirmation does not by itself invalidate an asthma-IPD report.",
+        "Preserve each source-reported OR, RR, or incidence rate ratio as its own effect measure; do not relabel a rate ratio as an odds ratio or risk ratio."
+      ],
+      "pooling": {
+        "model": "fixed_effect",
+        "scale": "log_ratio_inverse_variance",
+        "heterogeneity_estimator": null,
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Invasive pneumococcal disease"
+      ],
+      "exposure": {
+        "terms": [
+          "Asthma"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Children with asthma versus children without asthma or without known risk factors"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Children; preserve source age stratum and calendar year"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Preserve source-reported age stratum and calendar year; do not pool overlapping cohorts twice.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units.",
+      "dependence_policy": "one_effect_per_study_outcome"
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Pediatric Asthma Health Care Utilization, Viral Testing, and Air Pollution Changes During the COVID-19 Pandemic",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_001.pdf"
+      },
+      "doi": "10.1016/j.jaip.2020.07.057"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Rates and costs of invasive pneumococcal disease and pneumonia in persons with underlying medical conditions",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_002.pdf"
+      },
+      "doi": "10.1186/s12913-016-1432-4"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "A case series evaluating the serological response of adult asthma patients to the 23-valent pneumococcal polysaccharide vaccine",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_003.pdf"
+      },
+      "doi": "10.1186/s13223-017-0200-2"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Association between asthma and invasive pneumococcal disease risk: a systematic review and meta-analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_004.pdf"
+      },
+      "doi": "10.1186/s13223-020-00492-4"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Risk Factors for Invasive Pneumococcal Disease in Children in the Era of Conjugate Vaccine Use",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_005.pdf"
+      },
+      "doi": "10.1542/peds.2009-2150"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Influenza in Malaysian adult patients hospitalized with community-acquired pneumonia, acute exacerbation of chronic obstructive pulmonary disease or asthma: a multicenter, active surveillance study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_006.pdf"
+      },
+      "doi": "10.1186/s12879-021-06360-9"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "The Association between Asthma and Invasive Pneumococcal Disease: A Nationwide Study in Korea",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_007.pdf"
+      },
+      "doi": "10.3346/jkms.2015.30.1.60"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Pediatric Asthma Exacerbation in Children with Suspected and Confirmed Coronavirus Disease 2019 (COVID-19): An Observational Study from Saudi Arabia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_008.pdf"
+      },
+      "doi": "10.2147/jaa.s326860"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "COVID-19 Pandemic–Related Reductions in Pediatric Asthma Exacerbations Corresponded with an Overall Decrease in Respiratory Viral Infections",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_009.pdf"
+      },
+      "doi": "10.1016/j.jaip.2021.10.067"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Two years follow-up of relapsing eosinophilic pneumonia with concomitant severe asthma successfully treated with benralizumab: A case report and brief review of the literature",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_010.pdf"
+      },
+      "doi": "10.1016/j.rmcr.2022.101795"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Clinical Efficacy and Laboratory Improvement of Bacillus Calmette-Guerin Vaccination on Adult Atopic Asthma: A Cohort Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_011.pdf"
+      },
+      "doi": "10.1097/wox.0b013e31816c8b85"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "UNDERLYING CONDITIONS IN CHILDREN WITH INVASIVE PNEUMOCOCCAL DISEASE IN THE CONJUGATE VACCINE ERA",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_012.pdf"
+      },
+      "doi": "10.1097/inf.0b013e3181fab1cf"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Impact of COVID-19 on Pediatric Asthma: Practice Adjustments and Disease Burden",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_013.pdf"
+      },
+      "doi": "10.1016/j.jaip.2020.06.001"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Risk of Pneumococcal Disease in Children With Chronic Medical Conditions in the Era of Pneumococcal Conjugate Vaccine",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_014.pdf"
+      },
+      "doi": "10.1093/cid/ciu348"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Pediatric asthma control during the COVID‐19 pandemic",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0012/candidate_015.pdf"
+      },
+      "doi": "10.1002/iid3.418"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

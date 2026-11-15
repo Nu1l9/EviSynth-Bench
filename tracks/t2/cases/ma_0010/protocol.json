@@ -1,0 +1,27 @@
+{
+  "case_id": "ma_0010_full",
+  "protocol_id": "ma_0010_full_rs763780_extraction_v2",
+  "task_scope": "known_included_report_extraction",
+  "pico": {
+    "population": "rheumatoid arthritis cases and healthy controls",
+    "exposure": "IL17F rs763780 genotype",
+    "outcome": "rheumatoid arthritis case status"
+  },
+  "record_policy": "Extract every source-reported rs763780 genotype distribution or, if genotype data are absent, the allele-level distribution. Preserve source allele labels and do not infer genotype counts from allele frequencies.",
+  "source_policy": {
+    "target_review_access": "forbidden",
+    "external_evidence_allowed": false
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "rsid",
+      "genotype_labels",
+      "case_counts",
+      "control_counts",
+      "data_family",
+      "quantitative_usability",
+      "source_location"
+    ]
+  }
+}

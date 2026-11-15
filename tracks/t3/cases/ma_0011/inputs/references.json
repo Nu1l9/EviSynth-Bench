@@ -1,0 +1,25 @@
+{
+  "case_id": "ma_0011",
+  "articles": [
+    {
+      "article_id": "a_011001",
+      "doi": "10.1007/s00380-017-1113-1",
+      "title": "The impact of non-alcoholic fatty liver disease fibrosis score on cardiac prognosis in patients with chronic heart failure"
+    },
+    {
+      "article_id": "a_011002",
+      "doi": "10.1016/j.jcmg.2017.10.022",
+      "title": "Liver Stiffness Reflecting Right-Sided Filling Pressure Can Predict Adverse Outcomes in Patients With Heart Failure"
+    },
+    {
+      "article_id": "a_011003",
+      "doi": "10.1136/openhrt-2017-000598",
+      "title": "Liver stiffness assessed by Fibrosis-4 index predicts mortality in patients with heart failure"
+    },
+    {
+      "article_id": "a_011004",
+      "doi": "10.1253/circj.cj-17-1344",
+      "title": "Prognostic Relevance of Liver Stiffness Assessed by Transient Elastography in Patients With Acute Decompensated Heart Failure"
+    }
+  ]
+}

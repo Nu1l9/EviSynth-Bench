@@ -1,0 +1,140 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0001",
+    "task_id": "ma_0001_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among adults, is longitudinal variability in body weight or BMI associated with subsequent cardiovascular morbidity or cardiovascular mortality?",
+    "pico": {
+      "population": "Adults aged 18 years or older",
+      "exposure": "Longitudinal variability or fluctuation in body weight or body mass index",
+      "comparator": "Lower weight or BMI variability, or a per-unit increase in variability",
+      "outcomes": [
+        "Any source-defined incident cardiovascular morbidity or cardiovascular mortality outcome",
+        "any cardiovascular event",
+        "cardiovascular disease",
+        "cardiovascular death",
+        "coronary heart disease",
+        "myocardial infarction",
+        "stroke",
+        "cerebrovascular disease",
+        "heart failure",
+        "peripheral vascular disease",
+        "atrial fibrillation",
+        "incident hypertension",
+        "coronary artery bypass",
+        "percutaneous coronary intervention",
+        "composite cardiovascular outcome"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "HR",
+        "RR",
+        "OR"
+      ],
+      "estimands": [],
+      "targets": [
+        {
+          "target_id": "cardiovascular_outcomes",
+          "outcome": {
+            "description": "Any source-defined incident cardiovascular morbidity or cardiovascular mortality outcome",
+            "aliases": [
+              "any cardiovascular event",
+              "cardiovascular disease",
+              "cardiovascular death",
+              "coronary heart disease",
+              "myocardial infarction",
+              "stroke",
+              "cerebrovascular disease",
+              "heart failure",
+              "peripheral vascular disease",
+              "atrial fibrillation",
+              "incident hypertension",
+              "coronary artery bypass",
+              "percutaneous coronary intervention",
+              "composite cardiovascular outcome"
+            ]
+          },
+          "accepted_data_families": [
+            "adjusted_ratio_effect"
+          ],
+          "preferred_effect_measures": [
+            "HR",
+            "RR",
+            "OR"
+          ],
+          "estimands": [],
+          "effect_selection_rule": null,
+          "data_contract": null,
+          "quantitative_use_policy": "source_reported_effect_allowed",
+          "quantitative_usability": "poolable",
+          "extraction_notes": [
+            "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes.",
+            "Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate.",
+            "Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis."
+          ]
+        }
+      ],
+      "model_selection_policy": "",
+      "exclusion_concepts": "Do not treat baseline characteristics or concurrent cross-sectional associations as longitudinal outcomes. Retain every directly reported eligible model, subgroup, contrast, and follow-up as a separate source candidate. Do not decide which candidate is most adjusted, longest, independent, poolable, or part of a final analysis.",
+      "evidence_requirements": "Every extracted record must retain exact source evidence, page, source-defined effect scale, exposure unit, adjustment set, and missingness.",
+      "estimand_policy": "preserve_source_reported"
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_10968377",
+        "a_12456229",
+        "a_15847242",
+        "a_2041550",
+        "a_27466237",
+        "a_28379800",
+        "a_29216261",
+        "a_29777238",
+        "a_30507935",
+        "a_30553512",
+        "a_30571333",
+        "a_30874785",
+        "a_31025893",
+        "a_31266987",
+        "a_31585180",
+        "a_32534567",
+        "a_32641375",
+        "a_33355207",
+        "a_33397045",
+        "a_33911167",
+        "a_33980955",
+        "a_34195237",
+        "a_34446018"
+      ],
+      "study_ids": {
+        "a_10968377": "s_10968377",
+        "a_12456229": "s_12456229",
+        "a_15847242": "s_15847242",
+        "a_2041550": "s_2041550",
+        "a_27466237": "s_27466237",
+        "a_28379800": "s_28379800",
+        "a_29216261": "s_29216261",
+        "a_29777238": "s_29777238",
+        "a_30507935": "s_30507935",
+        "a_30553512": "s_30553512",
+        "a_30571333": "s_30571333",
+        "a_30874785": "s_30874785",
+        "a_31025893": "s_31025893",
+        "a_31266987": "s_31266987",
+        "a_31585180": "s_31585180",
+        "a_32534567": "s_32534567",
+        "a_32641375": "s_32641375",
+        "a_33355207": "s_33355207",
+        "a_33397045": "s_33397045",
+        "a_33911167": "s_33911167",
+        "a_33980955": "s_33980955",
+        "a_34195237": "s_34195237",
+        "a_34446018": "s_34446018"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

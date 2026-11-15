@@ -1,0 +1,387 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0028",
+  "topic": "How accurately do Patoc-antigen lateral-flow IgM assays identify acute human leptospirosis relative to each source-defined reference standard?",
+  "protocol": {
+    "protocol_id": "ma_0028_lfa_diagnostic_accuracy_protocol_v1",
+    "case_id": "ma_0028",
+    "pico": {
+      "population": "Patients with suspected acute human leptospirosis",
+      "intervention_or_exposure": "Patoc-antigen lateral-flow IgM assay",
+      "comparison": "Source-defined reference standard (MAT, IgM ELISA, culture, or their prespecified combination)",
+      "outcome": "Acute human leptospirosis diagnosis"
+    },
+    "eligible_study_designs": [
+      "diagnostic accuracy evaluation"
+    ],
+    "targets": [
+      {
+        "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+        "outcome": "Acute human leptospirosis diagnosis",
+        "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+        "population_or_subgroup": "Source-defined patient diagnostic evaluation cohort",
+        "timepoint_policy": {
+          "rule": "Use the source-defined diagnostic timepoint. Where a report has multiple assays or timepoints, extract only the one named in that report's input document manifest."
+        },
+        "accepted_data_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "preferred_effect_measures": [
+          "sensitivity",
+          "specificity"
+        ],
+        "estimands": [
+          "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis"
+        ],
+        "effect_selection_rule": null,
+        "extraction_notes": []
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_lfa_diagnosis_sensitivity",
+      "outcome_group": "Sensitivity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis",
+      "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+      "eligible_outcome_codes": [
+        "acute_human_leptospirosis"
+      ],
+      "eligible_data_families": [
+        "diagnostic_four_cell_counts"
+      ],
+      "accepted_effect_types": [
+        "diagnostic_accuracy_pair"
+      ],
+      "estimands": [
+        "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis"
+      ],
+      "selection_rules": [
+        "Select one source-declared Patoc-antigen LFA 2x2 table per report.",
+        "Select only patient-level acute-leptospirosis versus no-leptospirosis records with TP, FP, FN, and TN.",
+        "Use source counts rather than a review forest value or an unlinked percentage.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use the source-defined diagnostic timepoint. Where a report has multiple assays or timepoints, extract only the one named in that report's input document manifest."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "logit_sensitivity",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Sensitivity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis"
+      ],
+      "exposure": {
+        "terms": [
+          "Patoc-antigen lateral-flow IgM assay"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Source-defined patient diagnostic evaluation cohort"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use the source-defined diagnostic timepoint. Where a report has multiple assays or timepoints, extract only the one named in that report's input document manifest.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": [
+      {
+        "analysis_id": "primary_lfa_diagnosis_specificity",
+        "outcome_group": "Specificity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis",
+        "target_id": "patoc_antigen_lfa_diagnosis_of_acute_human_leptospirosis",
+        "eligible_outcome_codes": [
+          "acute_human_leptospirosis"
+        ],
+        "eligible_data_families": [
+          "diagnostic_four_cell_counts"
+        ],
+        "accepted_effect_types": [
+          "diagnostic_accuracy_pair"
+        ],
+        "estimands": [
+          "patient-level_diagnostic_accuracy_for_acute_human_leptospirosis"
+        ],
+        "selection_rules": [
+          "Apply the same complete patient-level LFA 2x2 eligibility rules as the paired sensitivity analysis.",
+          "When a proportion is 0 or 1, apply the calculator's declared 0.5 boundary correction only during logit pooling.",
+          "Select at most one eligible effect per independent study for this analysis.",
+          "Timepoint eligibility: Use the source-defined diagnostic timepoint. Where a report has multiple assays or timepoints, extract only the one named in that report's input document manifest."
+        ],
+        "pooling": {
+          "model": "random_effects",
+          "scale": "logit_specificity",
+          "heterogeneity_estimator": "dersimonian_laird",
+          "minimum_independent_studies": 2,
+          "minimum_studies": 2
+        },
+        "outcome_terms": [
+          "Specificity of Patoc-antigen lateral-flow assay diagnosis of acute human leptospirosis"
+        ],
+        "exposure": {
+          "terms": [
+            "Patoc-antigen lateral-flow IgM assay"
+          ]
+        },
+        "comparison": {
+          "terms": [
+            "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard"
+          ]
+        },
+        "population": {
+          "terms": [
+            "Source-defined patient diagnostic evaluation cohort"
+          ],
+          "policy": "any"
+        },
+        "timepoint_policy": "source_defined",
+        "timepoint_constraints": "Use the source-defined diagnostic timepoint. Where a report has multiple assays or timepoints, extract only the one named in that report's input document manifest.",
+        "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+      }
+    ]
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Evaluation of the immunochromatographic (Leptocheck) test for detection of specific antibodies against leptospires",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_001.pdf"
+      },
+      "doi": "10.1007/s00508-015-0853-0"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Fool's Gold: Why Imperfect Reference Tests Are Undermining the Evaluation of Novel Diagnostics: A Reevaluation of 5 Diagnostic Tests for Leptospirosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_002.pdf"
+      },
+      "doi": "10.1093/cid/cis403"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Prospective Evaluation of Three Rapid Diagnostic Tests for Diagnosis of Human Leptospirosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_003.pdf"
+      },
+      "doi": "10.1371/journal.pntd.0002290"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Leptospiral Infection, Pathogenesis and Its Diagnosis—A Review",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_004.pdf"
+      },
+      "doi": "10.3390/pathogens10020145"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Evaluation of two immunodiagnostic tests for early rapid diagnosis of leptospirosis in Sri Lanka: a preliminary study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_005.pdf"
+      },
+      "doi": "10.1186/s12879-015-1080-z"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Role of Diagnostics in Epidemiology, Management, Surveillance, and Control of Leptospirosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_006.pdf"
+      },
+      "doi": "10.3390/pathogens11040395"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Lateral-Flow Assay for Rapid Serodiagnosis of Human Leptospirosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_007.pdf"
+      },
+      "doi": "10.1128/cdli.8.1.166-169.2001"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Identification of Seroreactive Proteins of Leptospira interrogans Serovar Copenhageni Using a High-Density Protein Microarray Approach",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_008.pdf"
+      },
+      "doi": "10.1371/journal.pntd.0002499"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Evaluation of the clinical utility of a rapid blood test for human leptospirosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_009.pdf"
+      },
+      "doi": "10.1016/s0732-8893(01)00361-3"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Updated ACVIM consensus statement on leptospirosis in dogs",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_010.pdf"
+      },
+      "doi": "10.1111/jvim.16903"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Strategies for Diagnosis and Treatment of Suspected Leptospirosis: A Cost-Benefit Analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_011.pdf"
+      },
+      "doi": "10.1371/journal.pntd.0000610"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Diagnosis of Leptospirosis: Comparison between Microscopic Agglutination Test, IgM-ELISA and IgM Rapid Immunochromatography Test",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_012.pdf"
+      },
+      "doi": "10.1371/journal.pone.0129236"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Scrub typhus",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_013.pdf"
+      },
+      "doi": "10.4103/0019-5049.111835"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "C-Reactive Protein: Pathophysiology, Diagnosis, False Test Results and a Novel Diagnostic Algorithm for Clinicians",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_014.pdf"
+      },
+      "doi": "10.3390/diseases11040132"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Rapid and sensitive point-of-care detection of Leptospira by RPA-CRISPR/Cas12a targeting lipL32",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_015.pdf"
+      },
+      "doi": "10.1371/journal.pntd.0010112"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Efficiency of two commercial kits in serodiagnosis of leptospiral uveitis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_016.pdf"
+      },
+      "doi": "10.4103/0255-0857.103762"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Optimizing the microscopic agglutination test (MAT) panel for the diagnosis of Leptospirosis in a low resource, hyper-endemic setting with varied microgeographic variation in reactivity",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_017.pdf"
+      },
+      "doi": "10.1371/journal.pntd.0009565"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "Paediatric infections",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_018.pdf"
+      },
+      "doi": null
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Field application of Lepto lateral flow for rapid diagnosis of leptospirosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0028/candidate_019.pdf"
+      },
+      "doi": "10.1099/jmm.0.05064-0"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

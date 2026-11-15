@@ -1,0 +1,401 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0012",
+  "task_type": "extraction",
+  "gold_id": "ma_0012_extraction_gold_source_measure_corrected_v1",
+  "applies_to_task_ids": [
+    "ma_0012_extraction_all_reports_v1",
+    "ma_0012_end_to_end_extraction_analysis_v1"
+  ],
+  "provenance": {
+    "target_review_document_id": "review_ma_0012",
+    "annotation_status": "adjudicated"
+  },
+  "unit_definition": "One source-supported adjusted asthma-IPD ratio effect per independent source subgroup or calendar year; source-only reports remain visible without invented numeric effects.",
+  "report_units": [
+    {
+      "report_unit_id": "ru_012001_pelton_under5",
+      "article_id": "a_012001",
+      "study_id": "s_012001",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "reported_ratio_effect",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "children younger than 5 years with asthma versus children without at-risk/high-risk conditions",
+      "timepoint": "2007 to 2010",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_012001_under5",
+          "estimand": "adjusted_asthma_vs_no_known_risk_factor",
+          "comparison": "Asthma versus no at-risk/high-risk conditions",
+          "used_effect": {
+            "effect_type": "rate ratio",
+            "value": 1.6,
+            "ci_lower": 1.0,
+            "ci_upper": 2.4,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "OR",
+            "value": 1.6,
+            "ci_lower": 1.0,
+            "ci_upper": 2.4,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_rate_ratio",
+            "effect_value": 1.6,
+            "ci_lower": 1.0,
+            "ci_upper": 2.4,
+            "effect_measure": "rate ratio",
+            "age_stratum_or_year": "younger than 5 years",
+            "adjustment_set": "source-reported age-stratified cohort comparison"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_log_ratio_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_012001",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 1",
+            "locator_note": "Asthma IPD rate ratios by age group.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_invasive_pneumococcal_disease"
+      ]
+    },
+    {
+      "report_unit_id": "ru_012001_pelton_5to17",
+      "article_id": "a_012001",
+      "study_id": "s_012001",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "reported_ratio_effect",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "children aged 5 to 17 years with asthma versus children without at-risk/high-risk conditions",
+      "timepoint": "2007 to 2010",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_012001_5to17",
+          "estimand": "adjusted_asthma_vs_no_known_risk_factor",
+          "comparison": "Asthma versus no at-risk/high-risk conditions",
+          "used_effect": {
+            "effect_type": "rate ratio",
+            "value": 2.1,
+            "ci_lower": 1.4,
+            "ci_upper": 3.2,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "OR",
+            "value": 2.1,
+            "ci_lower": 1.4,
+            "ci_upper": 3.2,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_rate_ratio",
+            "effect_value": 2.1,
+            "ci_lower": 1.4,
+            "ci_upper": 3.2,
+            "effect_measure": "rate ratio",
+            "age_stratum_or_year": "5 to 17 years",
+            "adjustment_set": "source-reported age-stratified cohort comparison"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_log_ratio_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_012001",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 1",
+            "locator_note": "Asthma IPD rate ratios by age group.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_invasive_pneumococcal_disease"
+      ]
+    },
+    {
+      "report_unit_id": "ru_012003_weycker_overlap",
+      "article_id": "a_012003",
+      "study_id": "s_012003",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "reported_ratio_effect",
+      "quantitative_usability": "quantitative_not_pooled",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "children younger than 18 years with asthma",
+      "timepoint": "2007 to 2010",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_012003_weycker_overlap",
+          "estimand": "adjusted_asthma_vs_no_known_risk_factor",
+          "comparison": "Asthma versus healthy children",
+          "used_effect": {
+            "effect_type": "rate ratio",
+            "value": 1.5,
+            "ci_lower": 1.1,
+            "ci_upper": 2.0,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": null,
+          "source_data": {
+            "data_type": "reported_adjusted_rate_ratio",
+            "effect_value": 1.5,
+            "ci_lower": 1.1,
+            "ci_upper": 2.0,
+            "effect_measure": "rate ratio",
+            "age_stratum_or_year": "younger than 18 years",
+            "adjustment_set": "source-reported cohort comparison",
+            "overlaps_with": "a_012001"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "not_pooled"
+          },
+          "source_location": {
+            "document_id": "a_012003",
+            "page": 4,
+            "source_type": "table",
+            "source_id": "Table 3",
+            "locator_note": "Asthma IPD incidence rate ratio in the pediatric stratum.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": []
+    },
+    {
+      "report_unit_id": "ru_012004_pilishvili",
+      "article_id": "a_012004",
+      "study_id": "s_012004",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "reported_ratio_effect",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "children aged 3 to 59 months with IPD versus matched controls",
+      "timepoint": "2001 to 2004",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_012004_pilishvili",
+          "estimand": "adjusted_asthma_vs_no_known_risk_factor",
+          "comparison": "Asthma versus no asthma",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 1.8,
+            "ci_lower": 1.5,
+            "ci_upper": 2.2,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "OR",
+            "value": 1.8,
+            "ci_lower": 1.5,
+            "ci_upper": 2.2,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_odds_ratio",
+            "effect_value": 1.8,
+            "ci_lower": 1.5,
+            "ci_upper": 2.2,
+            "effect_measure": "OR",
+            "age_stratum_or_year": "3 to 59 months",
+            "adjustment_set": "conditional logistic regression including receipt of at least one PCV7 dose"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_log_ratio_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_012004",
+            "page": 6,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Asthma adjusted OR 1.8 (95% CI 1.5 to 2.2).",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_invasive_pneumococcal_disease"
+      ]
+    },
+    {
+      "report_unit_id": "ru_012005_kwak_2010",
+      "article_id": "a_012005",
+      "study_id": "s_012005",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "reported_ratio_effect",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "children aged 0 to 18 years",
+      "timepoint": "2010",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_012005_kwak_2010",
+          "estimand": "adjusted_asthma_vs_no_known_risk_factor",
+          "comparison": "Asthma versus no asthma",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 2.08,
+            "ci_lower": 1.25,
+            "ci_upper": 3.45,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "OR",
+            "value": 2.08,
+            "ci_lower": 1.25,
+            "ci_upper": 3.45,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_odds_ratio",
+            "effect_value": 2.08,
+            "ci_lower": 1.25,
+            "ci_upper": 3.45,
+            "effect_measure": "OR",
+            "age_stratum_or_year": "2010; ages 0 to 18 years",
+            "adjustment_set": "age and sex"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_log_ratio_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_012005",
+            "page": 3,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Childhood asthma adjusted odds ratios for 2010 and 2011.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_invasive_pneumococcal_disease"
+      ]
+    },
+    {
+      "report_unit_id": "ru_012005_kwak_2011",
+      "article_id": "a_012005",
+      "study_id": "s_012005",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "reported_ratio_effect",
+      "quantitative_usability": "poolable",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "children aged 0 to 18 years",
+      "timepoint": "2011",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_012005_kwak_2011",
+          "estimand": "adjusted_asthma_vs_no_known_risk_factor",
+          "comparison": "Asthma versus no asthma",
+          "used_effect": {
+            "effect_type": "OR",
+            "value": 3.26,
+            "ci_lower": 1.74,
+            "ci_upper": 6.11,
+            "direction": "increased_risk"
+          },
+          "target_review_effect": {
+            "effect_type": "OR",
+            "value": 3.26,
+            "ci_lower": 1.74,
+            "ci_upper": 6.11,
+            "direction": "increased_risk"
+          },
+          "source_data": {
+            "data_type": "reported_adjusted_odds_ratio",
+            "effect_value": 3.26,
+            "ci_lower": 1.74,
+            "ci_upper": 6.11,
+            "effect_measure": "OR",
+            "age_stratum_or_year": "2011; ages 0 to 18 years",
+            "adjustment_set": "age and sex"
+          },
+          "adjudication": {
+            "module_numeric_scoring_basis": "source_reported_effect",
+            "end_to_end_pooled_scoring_basis": "fixed_effect_log_ratio_inverse_variance"
+          },
+          "source_location": {
+            "document_id": "a_012005",
+            "page": 3,
+            "source_type": "table",
+            "source_id": "Table 2",
+            "locator_note": "Childhood asthma adjusted odds ratios for 2010 and 2011.",
+            "locator_status": "verified",
+            "locator_method": "mineru_table_exact_numbers"
+          }
+        }
+      ],
+      "analysis_memberships": [
+        "main_invasive_pneumococcal_disease"
+      ]
+    },
+    {
+      "report_unit_id": "ru_012002_hsu_source_only",
+      "article_id": "a_012002",
+      "study_id": "s_012002",
+      "target_id": "invasive_pneumococcal_disease",
+      "data_family": "insufficient_comparative_data",
+      "quantitative_usability": "source_only",
+      "exposure_measure": "asthma",
+      "outcome": {
+        "code": "invasive_pneumococcal_disease",
+        "label": "Invasive pneumococcal disease",
+        "outcome_class": "source_only"
+      },
+      "population_or_subgroup": "children with IPD surveillance data",
+      "timepoint": "source-defined",
+      "effect_estimates": [],
+      "analysis_memberships": []
+    }
+  ],
+  "supplementary_unscored_source_findings": []
+}

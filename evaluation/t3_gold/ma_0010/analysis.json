@@ -1,0 +1,37 @@
+{
+  "case_id": "ma_0010",
+  "task_type": "analysis",
+  "analysis_decisions": [
+    {
+      "analysis_id": "rs763780_heterozygote_vs_common_homozygote",
+      "selected_candidate_ids": [
+        "cand_0002",
+        "cand_0009",
+        "cand_0012",
+        "cand_0001",
+        "cand_0025",
+        "cand_0008"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "rs763780_heterozygote_vs_common_homozygote",
+          "effect": {
+            "effect_type": "OR",
+            "value": 1.9921652915,
+            "ci_lower": 1.0486305034,
+            "ci_upper": 3.7846720422
+          },
+          "member_candidate_ids": [
+            "cand_0002",
+            "cand_0009",
+            "cand_0012",
+            "cand_0001",
+            "cand_0025",
+            "cand_0008"
+          ],
+          "heterogeneity_i2": 73.8156426115
+        }
+      ]
+    }
+  ]
+}

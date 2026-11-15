@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/analysis-gold.schema.json",
+  "title": "Hidden gold for meta-analysis selection and synthesis",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_type",
+    "provenance",
+    "analysis_decisions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "task_type": {
+      "const": "analysis"
+    },
+    "gold_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "analysis_decisions": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "required": [
+          "analysis_id",
+          "selected_candidate_ids",
+          "pooled_results"
+        ],
+        "properties": {
+          "analysis_id": {
+            "type": "string"
+          },
+          "selected_candidate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "selected_effect_estimate_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "pooled_results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "pooled_result_id",
+                "effect",
+                "member_candidate_ids"
+              ],
+              "properties": {
+                "pooled_result_id": {
+                  "type": "string"
+                },
+                "outcome_group": {
+                  "type": "string"
+                },
+                "effect": {
+                  "type": "object"
+                },
+                "member_candidate_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true
+                },
+                "member_effect_estimate_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true
+                },
+                "heterogeneity_i2": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

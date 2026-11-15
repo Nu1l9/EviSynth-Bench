@@ -1,0 +1,90 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0055",
+    "task_id": "ma_0055_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "Among cohorts with nonischemic cardiomyopathy, is late gadolinium enhancement or source-defined myocardial fibrosis associated with all-cause mortality?",
+    "pico": {
+      "population": "People with nonischemic cardiomyopathy in a prognostic cohort",
+      "exposure": "Late gadolinium enhancement or source-defined myocardial fibrosis present",
+      "comparator": "Late gadolinium enhancement or source-defined myocardial fibrosis absent",
+      "outcomes": [
+        "Explicit all-cause death counts by source-defined LGE or fibrosis status",
+        "all-cause mortality",
+        "all-cause death",
+        "death from any cause"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "lge_or_source_defined_fibrosis_present_vs_absent_all_cause_mortality"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "all_cause_mortality",
+          "outcome": {
+            "description": "Explicit all-cause death counts by source-defined LGE or fibrosis status",
+            "aliases": [
+              "all-cause mortality",
+              "all-cause death",
+              "death from any cause"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_exposure_outcome_counts"
+          ],
+          "preferred_effect_measures": [
+            "OR"
+          ],
+          "estimands": [
+            "lge_or_source_defined_fibrosis_present_vs_absent_all_cause_mortality"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "Capture each source-supported exposed and unexposed all-cause death count. Exposure definitions are preserved as reported.",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "Extract source-confirmed death counts and denominators only. A composite endpoint containing death, transplantation, hospitalization, ICD treatment, or arrhythmia is not all-cause mortality extraction gold."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0055_07",
+        "a_0055_08",
+        "a_0055_09",
+        "a_0055_10",
+        "a_0055_11",
+        "a_0055_12",
+        "a_0055_13",
+        "a_0055_14",
+        "a_0055_15"
+      ],
+      "study_ids": {
+        "a_0055_07": "s_0055_cheong",
+        "a_0055_08": "s_0055_cho",
+        "a_0055_09": "s_0055_gao",
+        "a_0055_10": "s_0055_gulati",
+        "a_0055_11": "s_0055_iles",
+        "a_0055_12": "s_0055_lehrke",
+        "a_0055_13": "s_0055_muller",
+        "a_0055_14": "s_0055_neilan",
+        "a_0055_15": "s_0055_wu"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "ma_0064",
+  "analysis_profile_id": "ma_0064_binary_recurrence_analysis_profile_v1",
+  "scope": "single pre-specified binary recurrence synthesis",
+  "analyses": [
+    {
+      "analysis_id": "primary_binary_recurrence",
+      "pooled_result_id": "pr_0064_binary_recurrence",
+      "outcome_group": "source-defined recurrence",
+      "target_id": "recurrence",
+      "eligible_outcome_codes": [
+        "recurrence"
+      ],
+      "eligible_data_families": [
+        "binary_exposure_outcome_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "low_volume_nodal_metastasis_vs_node_negative_recurrence"
+      ],
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Select quantitatively complete binary records with source-defined recurrence events and denominators for low-volume-nodal-metastasis and node-negative groups.",
+          "Low-volume metastasis may be source-reported ITC, micrometastasis, or their mutually exclusive source-combined groups.",
+          "Do not infer binary events from Kaplan-Meier survival percentages, disease-free survivor counts, a hazard ratio, or a review table.",
+          "Do not pool a time-to-event HR with a binary recurrence RR."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

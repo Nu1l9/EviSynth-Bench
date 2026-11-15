@@ -1,0 +1,178 @@
+{
+  "case_id": "ma_0055",
+  "positive_count": 9,
+  "negative_count": 10,
+  "records": [
+    {
+      "candidate_id": "a_0055_07",
+      "title": "Prognostic Significance of Delayed-Enhancement Magnetic Resonance Imaging",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_004.pdf",
+      "source_filename": "a_0055_07.pdf",
+      "runtime_article_id": "candidate_004",
+      "doi": "10.1161/circulationaha.109.852517"
+    },
+    {
+      "candidate_id": "a_0055_08",
+      "title": "Delayed Enhancement Magnetic Resonance Imaging Is a Significant Prognostic Factor in Patients With Non-Ischemic Cardiomyopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_019.pdf",
+      "source_filename": "a_0055_08.pdf",
+      "runtime_article_id": "candidate_019",
+      "doi": "10.1253/circj.cj-09-0446"
+    },
+    {
+      "candidate_id": "a_0055_09",
+      "title": "Prediction of Arrhythmic Events in Ischemic and Dilated Cardiomyopathy Patients Referred for Implantable Cardiac Defibrillator",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_011.pdf",
+      "source_filename": "a_0055_09.pdf",
+      "runtime_article_id": "candidate_011",
+      "doi": "10.1161/circimaging.111.971549"
+    },
+    {
+      "candidate_id": "a_0055_10",
+      "title": "Association of Fibrosis With Mortality and Sudden Cardiac Death in Patients With Nonischemic Dilated Cardiomyopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_014.pdf",
+      "source_filename": "a_0055_10.pdf",
+      "runtime_article_id": "candidate_014",
+      "doi": "10.1001/jama.2013.1363"
+    },
+    {
+      "candidate_id": "a_0055_11",
+      "title": "Myocardial Fibrosis Predicts Appropriate Device Therapy in Patients With Implantable Cardioverter-Defibrillators for Primary Prevention of Sudden Cardiac Death",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_001.pdf",
+      "source_filename": "a_0055_11.pdf",
+      "runtime_article_id": "candidate_001",
+      "doi": "10.1016/j.jacc.2010.06.062"
+    },
+    {
+      "candidate_id": "a_0055_12",
+      "title": "Use of cardiovascular magnetic resonance for risk stratification in chronic heart failure: prognostic value of late gadolinium enhancement in patients with non-ischaemic dilated cardiomyopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_003.pdf",
+      "source_filename": "a_0055_12.pdf",
+      "runtime_article_id": "candidate_003",
+      "doi": "10.1136/hrt.2010.205542"
+    },
+    {
+      "candidate_id": "a_0055_13",
+      "title": "Prognostic Value of Contrast-enhanced Cardiac Magnetic Resonance Imaging in Patients with Newly Diagnosed Non-Ischemic Cardiomyopathy: Cohort Study",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_009.pdf",
+      "source_filename": "a_0055_13.pdf",
+      "runtime_article_id": "candidate_009",
+      "doi": "10.1371/journal.pone.0057077"
+    },
+    {
+      "candidate_id": "a_0055_14",
+      "title": "CMR Quantification of Myocardial Scar Provides Additive Prognostic Information in Nonischemic Cardiomyopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_002.pdf",
+      "source_filename": "a_0055_14.pdf",
+      "runtime_article_id": "candidate_002",
+      "doi": "10.1016/j.jcmg.2013.05.013"
+    },
+    {
+      "candidate_id": "a_0055_15",
+      "title": "Late Gadolinium Enhancement by Cardiovascular Magnetic Resonance Heralds an Adverse Prognosis in Nonischemic Cardiomyopathy",
+      "role": "positive_candidate",
+      "packaged_path": "ma_0055/candidate_018.pdf",
+      "source_filename": "a_0055_15.pdf",
+      "runtime_article_id": "candidate_018",
+      "doi": "10.1016/j.jacc.2008.03.018"
+    },
+    {
+      "candidate_id": "negative_01",
+      "title": "Dilated cardiomyopathy",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_013.pdf",
+      "source_filename": "negative_01.pdf",
+      "runtime_article_id": "candidate_013",
+      "doi": "10.1038/s41572-019-0084-1"
+    },
+    {
+      "candidate_id": "negative_02",
+      "title": "Immune Checkpoint Inhibitor Myocarditis: Pathophysiological Characteristics, Diagnosis, and Treatment",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_017.pdf",
+      "source_filename": "negative_02.pdf",
+      "runtime_article_id": "candidate_017",
+      "doi": "10.1161/jaha.119.013757"
+    },
+    {
+      "candidate_id": "negative_03",
+      "title": "Myocardial Fibrosis and Cardiac Decompensation in Aortic Stenosis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_010.pdf",
+      "source_filename": "negative_03.pdf",
+      "runtime_article_id": "candidate_010",
+      "doi": "10.1016/j.jcmg.2016.10.007"
+    },
+    {
+      "candidate_id": "negative_04",
+      "title": "Assessment and Treatment of Patients With Type 2 Myocardial Infarction and Acute Nonischemic Myocardial Injury",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_006.pdf",
+      "source_filename": "negative_04.pdf",
+      "runtime_article_id": "candidate_006",
+      "doi": "10.1161/circulationaha.119.040631"
+    },
+    {
+      "candidate_id": "negative_05",
+      "title": "Imaging and Impact of Myocardial Fibrosis in Aortic Stenosis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_015.pdf",
+      "source_filename": "negative_05.pdf",
+      "runtime_article_id": "candidate_015",
+      "doi": "10.1016/j.jcmg.2018.11.026"
+    },
+    {
+      "candidate_id": "negative_06",
+      "title": "Cardiac amyloidosis is prevalent in older patients with aortic stenosis and carries worse prognosis",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_005.pdf",
+      "source_filename": "negative_06.pdf",
+      "runtime_article_id": "candidate_005",
+      "doi": "10.1186/s12968-017-0415-x"
+    },
+    {
+      "candidate_id": "negative_07",
+      "title": "Cardiomyopathies: An Overview",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_016.pdf",
+      "source_filename": "negative_07.pdf",
+      "runtime_article_id": "candidate_016",
+      "doi": "10.3390/ijms22147722"
+    },
+    {
+      "candidate_id": "negative_08",
+      "title": "Screening and diagnosis of cardiovascular disease using artificial intelligence-enabled cardiac magnetic resonance imaging",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_008.pdf",
+      "source_filename": "negative_08.pdf",
+      "runtime_article_id": "candidate_008",
+      "doi": "10.1038/s41591-024-02971-2"
+    },
+    {
+      "candidate_id": "negative_09",
+      "title": "Cardiac MRI Assessment of Nonischemic Myocardial Inflammation: State of the Art Review and Update on Myocarditis Associated with COVID-19 Vaccination",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_007.pdf",
+      "source_filename": "negative_09.pdf",
+      "runtime_article_id": "candidate_007",
+      "doi": "10.1148/ryct.210252"
+    },
+    {
+      "candidate_id": "negative_10",
+      "title": "Markers of Focal and Diffuse Nonischemic Myocardial Fibrosis Are Associated With Adverse Cardiac Remodeling and Prognosis in Patients With Hypertension: The REMODEL Study",
+      "role": "negative_candidate",
+      "packaged_path": "ma_0055/candidate_012.pdf",
+      "source_filename": "negative_10.pdf",
+      "runtime_article_id": "candidate_012",
+      "doi": "10.1161/hypertensionaha.122.19225"
+    }
+  ]
+}

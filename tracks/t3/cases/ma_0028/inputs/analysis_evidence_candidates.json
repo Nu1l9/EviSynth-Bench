@@ -1,0 +1,1637 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0028",
+  "candidate_set_id": "ma_0028_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with non-classifiable infecting serogroups",
+      "timepoint": "First submitted sample",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 51% in first submitted samples among non-classifiable serogroup infections. Specificity and complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "table s3",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0028_01",
+      "study_id": "s_0028_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "90 consecutive patients admitted to an Indian district hospital with clinical suspicion of leptospirosis; samples collected during the first week of hospitalization",
+      "timepoint": "First week of hospitalization",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 39,
+        "false_positive": 6,
+        "false_negative": 4,
+        "true_negative": 41,
+        "test_set_label": "Patients classified by IgM ELISA result: 43 positive and 47 negative"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_01",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 21
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0028_02",
+      "study_id": "s_0028_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Leptospira lateral-flow IgM assay on serum",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Laboratory-confirmed case patients and controls from Hawaii, Indonesia, The Netherlands, and the Seychelles",
+      "timepoint": "Samples collected at a later stage after onset of illness",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports a sensitivity of 80.9% for the lateral-flow assay against MAT among serum samples collected at a later stage after illness onset."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_02",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0028_01",
+      "study_id": "s_0028_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients referred for confirmation because of suspected leptospirosis: laboratory-confirmed case patients and controls from Hawaii, Indonesia, The Netherlands, and the Seychelles",
+      "timepoint": "Overall; one or both samples",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 116,
+        "false_positive": 9,
+        "false_negative": 19,
+        "true_negative": 129,
+        "test_set_label": "One or both samples; 135 case patients versus 138 controls"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_01",
+        "source_type": "paragraph",
+        "source_id": "content_0017",
+        "content_list_item_index": 17
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0028_01",
+      "study_id": "s_0028_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Case patients with laboratory-confirmed leptospirosis, stratified by MAT seroconversion or a fourfold-or-greater rise in titer versus not meeting these criteria",
+      "timepoint": "Disease-course subgroup; seroconversion or fourfold-or-greater MAT titer rise versus other case patients",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_negative": 0,
+        "test_set_label": "Subgroup sensitivities reported only as percentages; four-cell counts not reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_01",
+        "source_type": "paragraph",
+        "source_id": "content_0017",
+        "content_list_item_index": 17
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0028_09",
+      "study_id": "s_0028_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay (article-described lateral flow test, Leptotek)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adult patients (>14 years) with suspected leptospirosis recruited prospectively in four hospital-based studies in Thailand; combined analysis of 1652 patients",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports lateral-flow-test sensitivity of 87.6% (95% CI, 80.9%–92.6%) and specificity of 70.5% (95% CI, 64.2%–76.3%) when culture plus MAT was treated as the perfect gold standard. Source-reported 2x2 cell counts were not located, so TP, FP, FN, and TN cannot be transcribed."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 106
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0028_05",
+      "study_id": "s_0028_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Leptocheck immunochromatographic IgM lateral-flow assay for detection of Leptospira-specific antibodies",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "590 patients with clinical manifestations suggestive of leptospirosis; samples collected at the first visit to the hospital",
+      "timepoint": "First patient visit to the hospital",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 12,
+        "false_positive": 24,
+        "false_negative": 1,
+        "true_negative": 553,
+        "test_set_label": "Leptocheck results at first patient visit compared with MAT"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_05",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 45
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0028_09",
+      "study_id": "s_0028_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay (article-described lateral flow test, Leptotek)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with suspected leptospirosis who had a convalescent-phase sample; 1097 of 1652 patients retained after excluding 555 patients without convalescent-phase samples",
+      "timepoint": "Convalescent-phase sample available",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The sensitivity analysis reports lateral-flow-test sensitivity of 89.7% (95% CrI, 80.3%–97.2%) among patients with a convalescent-phase sample. Specificity and source-reported 2x2 cell counts were not located for this analysis."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_09",
+        "source_type": "appendix",
+        "source_id": "Appendix 4",
+        "content_list_item_index": 87
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Leptocheck-WB Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients over 12 years of age with suspected leptospirosis admitted to medical wards in three hospitals in the Western Province of Sri Lanka; 888 patients included in the final analysis",
+      "timepoint": "Acute samples only",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports Leptocheck-WB sensitivity of 87.4% (83.0–91.3) and specificity of 82.9% (79.1–86.1) using acute samples only. Complete TP, FP, FN, and TN counts are not reported in the located source regions."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_07",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 94
+      }
+    },
+    {
+      "candidate_id": "cand_0010",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis with known days post onset of symptoms",
+      "timepoint": "0–4 days post onset of symptoms (early acute)",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For LeptoTek Lateral Flow at 0–4 days post onset, the source reports sensitivity of 62% (95% CI 41–79) and specificity of 98% (95% CI 93–99). Complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 112
+      }
+    },
+    {
+      "candidate_id": "cand_0011",
+      "article_id": "a_0028_05",
+      "study_id": "s_0028_05",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Patients with clinically suspected leptospirosis at their first hospital visit in Austria",
+      "timepoint": "First hospital visit; source Table 1",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Microscopic agglutination test (MAT), titre at least 1:100",
+        "true_positive": 12,
+        "false_positive": 24,
+        "false_negative": 1,
+        "true_negative": 553
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_05",
+        "page": 3,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 1, Leptocheck versus MAT"
+      }
+    },
+    {
+      "candidate_id": "cand_0012",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with Icterohaemorrhagiae-group infection",
+      "timepoint": "First submitted sample",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 85% in first submitted samples among Icterohaemorrhagiae infections. Specificity and complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "table s3",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0013",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Leptocheck-WB Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients over 12 years of age with suspected leptospirosis admitted to medical wards in three hospitals in the Western Province of Sri Lanka; 888 patients included in the final analysis",
+      "timepoint": "Acute or paired samples; final MAT reference standard",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "Table 3 reports Leptocheck-WB sensitivity of 80.8% (76.2–84.7) and specificity of 76.9% (73.0–80.4) using acute or paired MAT as the gold standard. Complete TP, FP, FN, and TN counts are not reported in the located source regions."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_07",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 92
+      }
+    },
+    {
+      "candidate_id": "cand_0014",
+      "article_id": "a_0028_06",
+      "study_id": "s_0028_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Hospital patients with suspected acute leptospirosis in Martinique",
+      "timepoint": "Acute serum; source Table 1",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Microscopic agglutination test (MAT), acute-serum titre at least 1:400",
+        "true_positive": 34,
+        "false_positive": 12,
+        "false_negative": 6,
+        "true_negative": 32
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_06",
+        "page": 3,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 1, Leptocheck-WB versus MAT"
+      }
+    },
+    {
+      "candidate_id": "cand_0015",
+      "article_id": "a_0028_09",
+      "study_id": "s_0028_09",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay (article-described lateral flow test, Leptotek)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Adult patients (>14 years) with suspected leptospirosis recruited prospectively in four hospital-based studies in Thailand",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports lateral-flow-test sensitivity of 85.6% (95% CrI, 77.5%–93.2%) and specificity of 96.2% (95% CrI, 87.7%–99.8%). Source-reported 2x2 cell counts were not located, so TP, FP, FN, and TN cannot be transcribed."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_09",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 106
+      }
+    },
+    {
+      "candidate_id": "cand_0016",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Lepto lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Reference-standard leptospirosis cases during days 2–3 of illness",
+      "timepoint": "Days 2–3 of illness",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 12 positive Lepto lateral-flow tests among 35 patients (34·3%) on days 2–3 of illness. The source did not provide a complete four-cell diagnostic table for this subgroup."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_03",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 38
+      }
+    },
+    {
+      "candidate_id": "cand_0017",
+      "article_id": "a_0028_08",
+      "study_id": "s_0028_08",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Leptocheck Leptospira IgM dipstick/lateral-flow assay; the located excerpt does not specify Patoc antigen",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Study samples from clinically diagnosed leptospiral uveitis and systemic leptospirosis cases with controls; population is broader and primarily leptospiral uveitis rather than explicitly suspected acute human leptospirosis",
+      "timepoint": "",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 23,
+        "false_positive": 23,
+        "false_negative": 4,
+        "true_negative": 33,
+        "test_set_label": "Leptocheck results cross-tabulated against MAT-positive and MAT-negative samples"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_08",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 30
+      }
+    },
+    {
+      "candidate_id": "cand_0018",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis undergoing diagnostic testing in the Netherlands; any submitted sample at participant level",
+      "timepoint": "Any submitted sample; overall analysis",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 78% and specificity of 95% for any submitted sample, with reported fractions 85/109 and 1229/1295. Complete TP, FP, FN, and TN counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 106
+      }
+    },
+    {
+      "candidate_id": "cand_0019",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis with known days post onset of symptoms",
+      "timepoint": "11–20 days post onset of symptoms",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For LeptoTek Lateral Flow at 11–20 days post onset, the source reports sensitivity of 81% (95% CI 69–90) and specificity of 93% (95% CI 88–96). Complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 112
+      }
+    },
+    {
+      "candidate_id": "cand_0020",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis with known days post onset of symptoms",
+      "timepoint": "5–10 days post onset of symptoms",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For LeptoTek Lateral Flow at 5–10 days post onset, the source reports sensitivity of 75% (95% CI 62–84) and specificity of 94% (95% CI 89–96). Complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 112
+      }
+    },
+    {
+      "candidate_id": "cand_0021",
+      "article_id": "a_0028_02",
+      "study_id": "s_0028_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen LeptoTek lateral-flow IgM assay on whole blood",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "196 consecutive patients with clinical suspicion of leptospirosis admitted to a district hospital in Kerala, India; samples collected on admission or during the first few days of hospitalization",
+      "timepoint": "Admission or first few days of hospitalization",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 54,
+        "false_positive": 6,
+        "false_negative": 5,
+        "true_negative": 131,
+        "test_set_label": "Whole-blood lateral-flow assay dichotomized as negative versus weak positive/positive; IgM ELISA reference standard dichotomized at reciprocal titre ≥1:80"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_02",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 27
+      }
+    },
+    {
+      "candidate_id": "cand_0022",
+      "article_id": "a_0028_02",
+      "study_id": "s_0028_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Consecutive patients with suspected leptospirosis in Kerala, India",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "IgM ELISA at the source-defined titre cutoff",
+        "true_positive": 54,
+        "false_positive": 6,
+        "false_negative": 5,
+        "true_negative": 131
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_02",
+        "page": 2,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 1, IgM ELISA versus lateral-flow assay"
+      }
+    },
+    {
+      "candidate_id": "cand_0023",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Patients over 12 years with suspected acute leptospirosis in three Sri Lankan hospitals",
+      "timepoint": "Acute index sample and acute-or-paired MAT reference",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Final MAT using acute and paired samples",
+        "true_positive": 286,
+        "false_positive": 121,
+        "false_negative": 76,
+        "true_negative": 405
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_07",
+        "source_type": "supplementary_table",
+        "source_id": "S2 Table, acute/paired sample (n=888)"
+      }
+    },
+    {
+      "candidate_id": "cand_0024",
+      "article_id": "a_0028_02",
+      "study_id": "s_0028_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Leptospira lateral-flow IgM assay on serum",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Laboratory-confirmed case patients and controls from Hawaii, Indonesia, The Netherlands, and the Seychelles",
+      "timepoint": "Samples collected during the first 10 days after onset of illness",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports a sensitivity of 65.4% for the lateral-flow assay against MAT among serum samples collected during the first 10 days after illness onset."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_02",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0025",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis with paired serum samples",
+      "timepoint": "Paired samples; positive result in either sample",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 86% and specificity of 84% for paired samples, with reported fractions 56/65 and 116/138. Complete TP, FP, FN, and TN counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 106
+      }
+    },
+    {
+      "candidate_id": "cand_0026",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with Icterohaemorrhagiae-group infection",
+      "timepoint": "Paired samples",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 100% in paired samples among Icterohaemorrhagiae infections. Specificity and complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "table s3",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0027",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Leptocheck-WB Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients over 12 years of age with suspected leptospirosis admitted to medical wards in three hospitals in the Western Province of Sri Lanka; 888 patients included in the final analysis",
+      "timepoint": "Acute and paired samples",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports Leptocheck-WB sensitivity of 86.2% (81.5–90.0) and specificity of 84.3% (80.3–87.7) using acute and paired samples. Complete TP, FP, FN, and TN counts are not reported in the located source regions."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_07",
+        "source_type": "table",
+        "source_id": "table 3",
+        "content_list_item_index": 95
+      }
+    },
+    {
+      "candidate_id": "cand_0028",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Participants submitted for leptospirosis testing in the Netherlands, first diagnostic sample",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Pre-specified MAT, IgM ELISA, and culture case definition",
+        "true_positive": 74,
+        "false_positive": 57,
+        "false_negative": 34,
+        "true_negative": 1235
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "page": 6,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Table 3, LeptoTek Lateral Flow first sample"
+      }
+    },
+    {
+      "candidate_id": "cand_0029",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Suspected leptospirosis patients in the first week of illness in the Andaman Islands",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Culture, MAT seroconversion or rise, or specified MAT titre",
+        "true_positive": 37,
+        "false_positive": 3,
+        "false_negative": 33,
+        "true_negative": 44
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_03",
+        "page": 1,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Abstract, first-week diagnostic accuracy"
+      }
+    },
+    {
+      "candidate_id": "cand_0030",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis; first submitted serum sample",
+      "timepoint": "First submitted sample",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 69% and specificity of 96% for the first submitted sample, with reported fractions 74/108 and 1235/1292. Complete TP, FP, FN, and TN counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 106
+      }
+    },
+    {
+      "candidate_id": "cand_0031",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Lepto lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "117 suspected leptospirosis patients attending a primary health centre on South Andaman; first week of illness",
+      "timepoint": "First week of illness (<7 days)",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For the Lepto lateral-flow assay, the source reported sensitivity 52·9% (37/70), specificity 93·6% (44/47), PPV 92·5%, and NPV 57·1% during the first week of illness. A complete source-reported TP, FP, FN, and TN table was not provided."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_03",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 37
+      }
+    },
+    {
+      "candidate_id": "cand_0032",
+      "article_id": "a_0028_01",
+      "study_id": "s_0028_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "MAT-defined cases and controls from Hawaii, Indonesia, the Netherlands, and Seychelles",
+      "timepoint": "Source-defined diagnostic evaluation timepoint",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Microscopic agglutination test (MAT)",
+        "true_positive": 116,
+        "false_positive": 28,
+        "false_negative": 19,
+        "true_negative": 255
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_01",
+        "page": 2,
+        "source_type": "table_or_explicit_results_text",
+        "source_id": "Results, combined case and control groups"
+      }
+    },
+    {
+      "candidate_id": "cand_0033",
+      "article_id": "a_0028_02",
+      "study_id": "s_0028_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Leptospira lateral-flow IgM assay on serum",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Laboratory-confirmed case patients and controls from Hawaii, Indonesia, The Netherlands, and the Seychelles",
+      "timepoint": "Not specified; prior serum-sample study",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports a specificity of 93.6% for the lateral-flow assay against MAT."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_02",
+        "source_type": "table",
+        "source_id": "table 1",
+        "content_list_item_index": 36
+      }
+    },
+    {
+      "candidate_id": "cand_0034",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis with known days post onset of symptoms",
+      "timepoint": ">20 days post onset of symptoms",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For LeptoTek Lateral Flow at more than 20 days post onset, the source reports sensitivity of 85% (95% CI 75–92) and specificity of 95% (95% CI 91–97). Complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "Table 4",
+        "content_list_item_index": 112
+      }
+    },
+    {
+      "candidate_id": "cand_0035",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Lepto lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Reference-standard leptospirosis cases during days 4–5 of illness",
+      "timepoint": "Days 4–5 of illness",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 14 positive Lepto lateral-flow tests among 22 patients (63·6%) on days 4–5 of illness. The source did not provide a complete four-cell diagnostic table for this subgroup."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_03",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 38
+      }
+    },
+    {
+      "candidate_id": "cand_0036",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients with non-classifiable infecting serogroups",
+      "timepoint": "Paired samples",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports LeptoTek Lateral Flow sensitivity of 63% in paired samples among non-classifiable serogroup infections. Specificity and complete four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "table",
+        "source_id": "table s3",
+        "content_list_item_index": 91
+      }
+    },
+    {
+      "candidate_id": "cand_0037",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis, stratified by year of test completion",
+      "timepoint": "First submitted sample; year-stratified analysis",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports first-sample LeptoTek Lateral Flow sensitivity decreasing from 100% in 2001 to 50% in 2003, with specificity increasing from 87% to 99%. Exact year-specific four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "figure",
+        "source_id": "Figure 3",
+        "content_list_item_index": 94
+      }
+    },
+    {
+      "candidate_id": "cand_0038",
+      "article_id": "a_0028_01",
+      "study_id": "s_0028_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Samples collected during the first 10 days after disease onset and samples collected more than 10 days after disease onset",
+      "timepoint": "≤10 days versus >10 days after disease onset",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_negative": 0,
+        "test_set_label": "Duration-of-disease results reported as percentages only; four-cell counts not reported"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_01",
+        "source_type": "table",
+        "source_id": "TABLE 1",
+        "content_list_item_index": 18
+      }
+    },
+    {
+      "candidate_id": "cand_0039",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Patoc-antigen lateral-flow IgM assay versus the source-defined reference standard",
+      "outcome": {
+        "code": null,
+        "label": "Diagnosis of acute human leptospirosis",
+        "outcome_class": "diagnostic_accuracy"
+      },
+      "population_or_subgroup": "Patients over 12 years with suspected acute leptospirosis in three Sri Lankan hospitals",
+      "timepoint": "Acute index sample and acute MAT reference",
+      "data_family": "diagnostic_four_cell_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "diagnostic_four_cell_counts",
+        "unit_of_analysis": "patient",
+        "target_condition": "acute human leptospirosis",
+        "index_test": "Patoc-antigen lateral-flow IgM assay",
+        "reference_standard": "Acute-phase MAT, titre at least 1:400",
+        "true_positive": 248,
+        "false_positive": 159,
+        "false_negative": 45,
+        "true_negative": 436
+      },
+      "effect": {
+        "effect_type": "diagnostic_accuracy_pair",
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_07",
+        "source_type": "supplementary_table",
+        "source_id": "S1 Table, acute sample (n=888)"
+      }
+    },
+    {
+      "candidate_id": "cand_0040",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Lepto lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Reference-standard leptospirosis cases during days 6–7 of illness",
+      "timepoint": "Days 6–7 of illness",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reported 11 positive Lepto lateral-flow tests among 13 patients (84·6%) on days 6–7 of illness. The source did not provide a complete four-cell diagnostic table for this subgroup."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_03",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 38
+      }
+    },
+    {
+      "candidate_id": "cand_0041",
+      "article_id": "a_0028_03",
+      "study_id": "s_0028_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen Lepto lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Suspected leptospirosis patients attending a primary health centre on South Andaman; weeks 2–4 of illness",
+      "timepoint": "Weeks 2–4 of illness (8–30 days)",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "For the Lepto lateral-flow assay, the source reported sensitivity 86·0% (49/57), specificity 89·4% (42/47), PPV 90·7%, and NPV 84·0% during weeks 2–4 of illness. A complete source-reported TP, FP, FN, and TN table was not provided."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_03",
+        "source_type": "table",
+        "source_id": "Table 1",
+        "content_list_item_index": 37
+      }
+    },
+    {
+      "candidate_id": "cand_0042",
+      "article_id": "a_0028_06",
+      "study_id": "s_0028_06",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Patoc-antigen lateral-flow IgM assay (Leptocheck-WB immunochromatographic test)",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "83 patients clinically suspected to have acute leptospirosis admitted to the National Hospital, Colombo, and Base Hospital, Homagama, Sri Lanka; acute serum samples",
+      "timepoint": "Acute serum sample",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports Leptocheck-WB estimates of 95.0% sensitivity (95% credible interval 79.3–100) and 76.4% specificity (95% credible interval 60.8–93.2) against the modeled combined positivity definition of leptospirosis. The study also states that MAT with an acute-serum titre of ≥400 was considered the reference standard. Leptospira biflexa serovar Patoc strain Patoc-1 was used as antigen in Leptocheck-WB, MAT, and IgM ELISA. No explicit source-reported TP, FP, FN, and TN 2×2 table for Leptocheck-WB versus MAT was located; the joint test-pattern table should not be converted into inferred four-cell counts at this extraction stage."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_06",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 35
+      }
+    },
+    {
+      "candidate_id": "cand_0043",
+      "article_id": "a_0028_07",
+      "study_id": "s_0028_07",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Leptocheck-WB Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients over 12 years of age with suspected leptospirosis admitted to medical wards in three hospitals in the Western Province of Sri Lanka; 888 patients included in the final analysis",
+      "timepoint": "Acute sample; acute MAT reference standard",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports Leptocheck-WB sensitivity of 84.6% and specificity of 73.3% when compared with a single acute MAT reference standard. Complete TP, FP, FN, and TN counts are not reported in the located source regions."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_07",
+        "source_type": "table",
+        "source_id": "Table 3",
+        "content_list_item_index": 84
+      }
+    },
+    {
+      "candidate_id": "cand_0044",
+      "article_id": "a_0028_04",
+      "study_id": "s_0028_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "LeptoTek Lateral Flow, a Patoc-antigen lateral-flow IgM assay",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Acute human leptospirosis diagnosis",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Patients suspected of leptospirosis, stratified by year of test completion",
+      "timepoint": "Paired samples; year-stratified analysis",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports paired-sample LeptoTek Lateral Flow specificity increasing from 60% to 100% across the reported years. Paired-sample sensitivity and exact year-specific four-cell counts were not source-reported."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0028_04",
+        "source_type": "figure",
+        "source_id": "Figure 3",
+        "content_list_item_index": 94
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "task": {
+    "schema_version": "meta_analysis_case/v1",
+    "case_id": "ma_0032",
+    "task_id": "ma_0032_extraction_all_reports_v1",
+    "task_type": "extraction",
+    "topic": "In adults hospitalized with acute lower gastrointestinal bleeding, does colonoscopy within 24 hours reduce persistent or recurrent bleeding compared with elective colonoscopy after 24 hours?",
+    "pico": {
+      "population": "Adults hospitalized with acute lower gastrointestinal bleeding or hematochezia",
+      "exposure": "Colonoscopy within 24 hours of presentation or admission",
+      "comparator": "Elective or standard colonoscopy after 24 hours, with permitted standard diagnostic management",
+      "outcomes": [
+        "Source-reported persistent or recurrent lower gastrointestinal bleeding after the index examination",
+        "further bleeding",
+        "rebleeding",
+        "recurrent bleeding"
+      ]
+    },
+    "extraction": {
+      "allowed_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "early_vs_elective_colonoscopy_further_bleeding_risk_ratio"
+      ],
+      "estimand_policy": "preserve_source_reported",
+      "targets": [
+        {
+          "target_id": "further_bleeding",
+          "outcome": {
+            "description": "Source-reported persistent or recurrent lower gastrointestinal bleeding after the index examination",
+            "aliases": [
+              "further bleeding",
+              "rebleeding",
+              "recurrent bleeding"
+            ]
+          },
+          "accepted_data_families": [
+            "binary_arm_counts"
+          ],
+          "preferred_effect_measures": [
+            "RR"
+          ],
+          "estimands": [
+            "early_vs_elective_colonoscopy_further_bleeding_risk_ratio"
+          ],
+          "effect_selection_rule": null,
+          "data_contract": {},
+          "quantitative_usability": null,
+          "extraction_notes": [],
+          "candidate_capture_policy": {
+            "record_scope": "one source-reported eligible arm-level outcome per report",
+            "selection_deferred": true
+          },
+          "quantitative_use_policy": "Extract events and denominators in both randomized arms, the source definition, follow-up window, and a verified source location. Do not copy an RR from a review forest plot."
+        }
+      ],
+      "model_selection_policy": "Preserve every source-reported candidate; no study or effect selection occurs in extraction.",
+      "exclusion_concepts": "",
+      "evidence_requirements": "Transcribe only source-supported data, preserve exact evidence, and do not calculate, pool, choose an analysis record, or infer missing values."
+    },
+    "inputs": {
+      "included_article_ids": [
+        "a_0032_01",
+        "a_0032_02",
+        "a_0032_03",
+        "a_0032_04"
+      ],
+      "study_ids": {
+        "a_0032_01": "s_0032_01",
+        "a_0032_02": "s_0032_02",
+        "a_0032_03": "s_0032_03",
+        "a_0032_04": "s_0032_04"
+      }
+    },
+    "execution_policy": {
+      "llm_timeout_seconds": 110
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "protocol_id": "ma_0076_extraction_protocol_v1",
+  "protocol_version": "1.0.0",
+  "case_id": "ma_0076",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Among human randomized controlled trials, does omega-3 PUFA supplementation versus placebo or standard treatment affect occurrence of diarrhea as a treatment-emergent adverse event?",
+  "pico": {
+    "population": {
+      "description": "Human participants enrolled in randomized controlled trials",
+      "aliases": [
+        "trial safety population",
+        "randomized participants"
+      ]
+    },
+    "intervention_or_exposure": {
+      "description": "Supplemental long-chain omega-3 polyunsaturated fatty acids",
+      "aliases": [
+        "omega-3 PUFA",
+        "n-3 PUFA",
+        "EPA",
+        "DHA",
+        "fish oil"
+      ]
+    },
+    "comparator": {
+      "description": "Placebo, control oil, or source-defined standard-treatment comparator",
+      "aliases": [
+        "placebo",
+        "control",
+        "olive oil",
+        "corn oil"
+      ]
+    }
+  },
+  "eligible_study_designs": [
+    "parallel-group randomized controlled trial",
+    "factorial randomized controlled trial",
+    "multiple independent randomized trials in one report"
+  ],
+  "targets": [
+    {
+      "target_id": "diarrhea",
+      "outcome": {
+        "description": "Participants with at least one treatment-emergent diarrhea adverse event",
+        "aliases": [
+          "diarrhea",
+          "diarrhoea",
+          "diarrhea NOS"
+        ]
+      },
+      "comparison": "Omega-3 PUFA supplementation versus placebo or a source-defined randomized comparator",
+      "population_or_subgroup": "Source-defined randomized trial safety population",
+      "timepoint_policy": {
+        "rule": "Use the complete source-defined randomized adverse-event observation period. Preserve the reported duration and do not combine repeated windows.",
+        "preferred": "final randomized adverse-event assessment",
+        "allowed": [
+          "source-defined final safety timepoint"
+        ]
+      },
+      "accepted_data_families": [
+        "binary_arm_counts"
+      ],
+      "preferred_effect_measures": [
+        "OR"
+      ],
+      "estimands": [
+        "participant_with_at_least_one_diarrhea_event"
+      ],
+      "effect_selection_rule": "Extract exact participant-level arm counts for each independent randomized comparison. Preserve exact but nonpoolable crossover, withdrawal-only, and overlapping-subgroup records so the downstream analysis task can reject them.",
+      "data_contract": {
+        "raw_data_fields": [
+          "intervention_events",
+          "intervention_total",
+          "control_events",
+          "control_total",
+          "outcome_unit"
+        ],
+        "field_definitions": {
+          "intervention_events": "Participants in eligible omega-3 arms with at least one diarrhea event.",
+          "intervention_total": "Participants in eligible omega-3 safety arms.",
+          "control_events": "Participants in the randomized comparator arm with at least one diarrhea event.",
+          "control_total": "Participants in the randomized comparator safety arm.",
+          "outcome_unit": "Must distinguish participants, events, and withdrawals."
+        },
+        "poolability_required_fields": [
+          "intervention_events",
+          "intervention_total",
+          "control_events",
+          "control_total"
+        ],
+        "allowed_source_derivations": [
+          "sum exact events and totals across mutually exclusive eligible intervention arms sharing one comparator",
+          "derive odds ratio and 95% confidence interval from exact arm counts"
+        ],
+        "derivation_preconditions": [
+          "all component arms are randomized and mutually exclusive",
+          "the comparator is not counted more than once",
+          "the source reports participant-level rather than event-level counts"
+        ],
+        "derivation_instructions": [
+          "For an eligible multi-dose treatment class, sum intervention events and totals before calculating one odds ratio.",
+          "Preserve source-reported numeric values and metadata without altering them."
+        ],
+        "source_aggregation_rules": [
+          "Keep independent trials in one paper separate.",
+          "For a factorial trial, collapse strata to one prespecified treatment main-effect comparison when all strata are mutually exclusive.",
+          "Do not pool a crossover record without paired event information."
+        ],
+        "integrity_checks": [
+          "do_not_infer_unreported_zero_events",
+          "do_not_convert_rounded_percentages_to_exact_counts",
+          "do_not_treat_event_episodes_as_participants",
+          "do_not_treat_withdrawal_due_to_diarrhea_as_any_diarrhea",
+          "do_not_double_count_overlapping_subgroups",
+          "do_not_split_a_shared_control_across_separate_effects"
+        ]
+      },
+      "quantitative_use_policy": "exact_source_data_required",
+      "extraction_notes": [
+        "Loose stools alone are not diarrhea unless the source maps them to the same outcome.",
+        "Composite gastrointestinal outcomes remain source-only findings.",
+        "No target-review forest values may be used to fill missing primary-source numbers."
+      ]
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf",
+      "markdown"
+    ],
+    "allowed_source_components": [
+      "main_text",
+      "table",
+      "figure",
+      "appendix",
+      "supplement"
+    ],
+    "forbidden_evidence_sources": [
+      "target meta-analysis",
+      "target forest plot",
+      "unsupplied external source"
+    ],
+    "external_evidence_allowed": false,
+    "verbatim_support_required": true
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "population_or_subgroup",
+      "timepoint",
+      "data_family",
+      "raw_data",
+      "used_effect",
+      "quantitative_usability",
+      "source_location"
+    ],
+    "preserve_source_units": true,
+    "preserve_missingness": true,
+    "allow_unscored_source_findings": true
+  },
+  "human_escalation_rules": [
+    "The report gives percentages but no exact event counts.",
+    "The source combines diarrhea with other symptoms.",
+    "A multi-arm design has overlapping controls or unclear randomization.",
+    "The only record is event-level, crossover, withdrawal-only, or an overlapping subgroup."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0046",
+  "task_id": "ma_0046_analysis_main_outcomes_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "main_pr_long_term_all_cause_death",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

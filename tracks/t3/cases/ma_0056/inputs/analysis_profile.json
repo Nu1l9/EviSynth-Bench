@@ -1,0 +1,39 @@
+{
+  "case_id": "ma_0056",
+  "analysis_profile_id": "ma_0056_remdesivir_10_day_mortality_analysis_profile_v2",
+  "scope": "One prespecified aggregate-data synthesis from source-derived source-derived candidates",
+  "analyses": [
+    {
+      "analysis_id": "primary_remdesivir_10_day_all_cause_mortality",
+      "pooled_result_id": "pr_0056_primary_remdesivir_10_day_mortality",
+      "outcome_group": "All-cause mortality in hospitalized COVID-19",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "eligible_outcome_codes": [
+        "all_cause_mortality"
+      ],
+      "eligible_data_families": [
+        "binary_arm_outcome"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control"
+      ],
+      "timepoint_policy": "Use each source-defined mortality window without converting in-hospital and fixed-day follow-up into a common artificial timepoint.",
+      "selection_rules": {
+        "one_effect_per_study": true,
+        "rules": [
+          "Require a direct randomized remdesivir versus no-remdesivir comparison with deaths and denominators in both arms.",
+          "For a study that reports multiple planned remdesivir durations against the same eligible control, select the 10-day regimen; retain the other duration as an unselected candidate.",
+          "Exclude an active remdesivir-duration comparison because its comparator receives remdesivir.",
+          "Exclude a record whose final mortality table uses post-randomization arm reassignment or altered arm denominators without a source-reported intention-to-treat mortality record.",
+          "When a parent WHO Solidarity mortality comparison and a constituent Solidarity subtrial both appear, retain the parent comparison and exclude each overlapping subtrial record.",
+          "Do not use target-review effects, target-review counts, or labels that encode these decisions."
+        ]
+      },
+      "minimum_independent_studies": 2
+    }
+  ],
+  "method_selection_policy": "After identifying eligible independent evidence, select and justify a synthesis approach from the study data. The participant package does not prescribe a computation method."
+}

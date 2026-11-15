@@ -1,0 +1,1347 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0076",
+  "topic": "Among human randomized controlled trials, what treatment-emergent adverse effects are associated with omega-3 PUFA supplementation compared with placebo or standard treatment?",
+  "protocol": {
+    "protocol_id": "ma_0076_extraction_protocol_v1",
+    "case_id": "ma_0076",
+    "pico": {
+      "population": "Human participants enrolled in randomized controlled trials",
+      "intervention_or_exposure": "Supplemental long-chain omega-3 polyunsaturated fatty acids",
+      "comparison": "Placebo, control oil, or source-defined standard-treatment comparator",
+      "outcome": "Participants with at least one treatment-emergent diarrhea adverse event"
+    },
+    "eligible_study_designs": [
+      "parallel-group randomized controlled trial",
+      "factorial randomized controlled trial",
+      "multiple independent randomized trials in one report"
+    ],
+    "targets": [
+      {
+        "target_id": "diarrhea",
+        "outcome": "Participants with at least one treatment-emergent diarrhea adverse event",
+        "comparison": "Omega-3 PUFA supplementation versus placebo or a source-defined randomized comparator",
+        "population_or_subgroup": "Source-defined randomized trial safety population",
+        "timepoint_policy": {
+          "rule": "Use the complete source-defined randomized adverse-event observation period. Preserve the reported duration and do not combine repeated windows.",
+          "preferred": "final randomized adverse-event assessment",
+          "allowed": [
+            "source-defined final safety timepoint"
+          ]
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "OR"
+        ],
+        "estimands": [
+          "participant_with_at_least_one_diarrhea_event"
+        ],
+        "effect_selection_rule": "Extract exact participant-level arm counts for each independent randomized comparison. Preserve exact but nonpoolable crossover, withdrawal-only, and overlapping-subgroup records so the downstream analysis task can reject them.",
+        "extraction_notes": [
+          "Loose stools alone are not diarrhea unless the source maps them to the same outcome.",
+          "Composite gastrointestinal outcomes remain source-only findings.",
+          "No target-review forest values may be used to fill missing primary-source numbers."
+        ],
+        "source_constraints": [
+          "do not infer unreported zero events",
+          "do not convert rounded percentages to exact counts",
+          "do not treat event episodes as participants",
+          "do not treat withdrawal due to diarrhea as any diarrhea",
+          "do not double count overlapping subgroups",
+          "do not split a shared control across separate effects",
+          "all component arms are randomized and mutually exclusive",
+          "the comparator is not counted more than once",
+          "the source reports participant-level rather than event-level counts",
+          "Keep independent trials in one paper separate.",
+          "For a factorial trial, collapse strata to one prespecified treatment main-effect comparison when all strata are mutually exclusive.",
+          "Do not pool a crossover record without paired event information."
+        ]
+      }
+    ]
+  },
+  "analysis_profile": {
+    "profile_version": "2.0.0",
+    "primary_analysis_spec": {
+      "analysis_id": "main_diarrhea",
+      "outcome_group": "Participants with at least one diarrhea adverse event",
+      "target_id": "diarrhea",
+      "eligible_outcome_codes": [
+        "diarrhea"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "OR"
+      ],
+      "estimands": [
+        "participant_with_at_least_one_diarrhea_event"
+      ],
+      "selection_rules": [
+        "Select exact participant-level binary arm counts only.",
+        "Combine mutually exclusive eligible omega-3 dose arms before effect calculation when they share a comparator.",
+        "Keep independent trials separate, but collapse mutually exclusive factorial strata to one treatment main-effect comparison.",
+        "Exclude crossover records without paired event data, withdrawal-only outcomes, overlapping subgroup reports, composite outcomes, event-level records, rounded percentages, and narrative-only records.",
+        "Never count a participant or shared comparator twice.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use the complete source-defined randomized adverse-event observation period. Preserve the reported duration and do not combine repeated windows.; Preferred timepoint: final randomized adverse-event assessment; Allowed timepoints: source-defined final safety timepoint",
+        "Source selection: Extract exact participant-level arm counts for each independent randomized comparison. Preserve exact but nonpoolable crossover, withdrawal-only, and overlapping-subgroup records so the downstream analysis task can reject them.",
+        "do not infer unreported zero events",
+        "do not convert rounded percentages to exact counts",
+        "do not treat event episodes as participants",
+        "do not treat withdrawal due to diarrhea as any diarrhea",
+        "do not double count overlapping subgroups",
+        "do not split a shared control across separate effects",
+        "all component arms are randomized and mutually exclusive",
+        "the comparator is not counted more than once",
+        "the source reports participant-level rather than event-level counts",
+        "Keep independent trials in one paper separate.",
+        "For a factorial trial, collapse strata to one prespecified treatment main-effect comparison when all strata are mutually exclusive.",
+        "Do not pool a crossover record without paired event information.",
+        "Loose stools alone are not diarrhea unless the source maps them to the same outcome.",
+        "Composite gastrointestinal outcomes remain source-only findings.",
+        "No target-review forest values may be used to fill missing primary-source numbers."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_odds_ratio_inverse_variance_with_0.5_zero_cell_correction",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "Participants with at least one diarrhea adverse event"
+      ],
+      "exposure": {
+        "terms": [
+          "Supplemental long-chain omega-3 polyunsaturated fatty acids"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Omega-3 PUFA supplementation versus placebo or a source-defined randomized comparator"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Source-defined randomized trial safety population"
+        ],
+        "policy": "any"
+      },
+      "timepoint_policy": "source_defined",
+      "timepoint_constraints": "Use the complete source-defined randomized adverse-event observation period. Preserve the reported duration and do not combine repeated windows.; Preferred timepoint: final randomized adverse-event assessment; Allowed timepoints: source-defined final safety timepoint",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": []
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Effects of Prescription Omega-3-Acid Ethyl Esters on Fasting Lipid Profile in Subjects With Primary Hypercholesterolemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_001.pdf"
+      },
+      "doi": "10.1097/fjc.0b013e318210fca5"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Safety and efficacy of Omacor in severe hypertriglyceridemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_002.pdf"
+      },
+      "doi": "10.1177/174182679700400511"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Efficacy of AI-Guided (GenAISTM) Dietary Supplement Prescriptions versus Traditional Methods for Lowering LDL Cholesterol: A Randomized Parallel-Group Pilot Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_003.pdf"
+      },
+      "doi": "10.3390/nu16132023"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Effect of Fish Oil Supplementation and Aspirin Use on Arteriovenous Fistula Failure in Patients Requiring Hemodialysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_004.pdf"
+      },
+      "doi": "10.1001/jamainternmed.2016.8029"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Safety, Tolerability, and Pharmacokinetics of Single and Multiple Oral Doses of an Omega‐3‐Carboxylic Acid Formulation in Healthy Male Japanese Subjects: A Phase 1 Single‐Blind, Randomized, Placebo‐Controlled Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_005.pdf"
+      },
+      "doi": "10.1002/cpdd.360"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Eicosapentaenoic acid and aspirin, alone and in combination, for the prevention of colorectal adenomas (seAFOod Polyp Prevention trial): a multicentre, randomised, double-blind, placebo-controlled, 2 × 2 factorial trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_006.pdf"
+      },
+      "doi": "10.1016/s0140-6736(18)31775-6"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Ethyl-EPA in Huntington disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_007.pdf"
+      },
+      "doi": "10.1212/01.wnl.0000169025.09670.6d"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Long-term safety and efficacy of TAK-085 in Japanese subjects with hypertriglyceridemia undergoing lifestyle modification: The omega-3 fatty acids randomized long-term (ORL) study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_008.pdf"
+      },
+      "doi": "10.1016/j.jacl.2013.09.002"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "A diet rich in omega-3 fatty acid improves periodontitis and tissue destruction by MMP2- and MMP9-linked inflammation in a murine model",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_009.pdf"
+      },
+      "doi": "10.1007/s10266-023-00831-y"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Effect of an Enteric-Coated Fish-Oil Preparation on Relapses in Crohn's Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_010.pdf"
+      },
+      "doi": "10.1056/nejm199606133342401"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "n-3 Polyunsaturated fatty acids for the prevention of arrhythmia recurrence after electrical cardioversion of chronic persistent atrial fibrillation: a randomized, double-blind, multicentre study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_011.pdf"
+      },
+      "doi": "10.1093/europace/euq386"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Fish Oil Supplementation and Risk of Ventricular Tachycardia and Ventricular Fibrillation in Patients With Implantable Defibrillators",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_012.pdf"
+      },
+      "doi": "10.1001/jama.293.23.2884"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "Cardiovascular Risk Reduction with Icosapent Ethyl for Hypertriglyceridemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_013.pdf"
+      },
+      "doi": "10.1056/nejmoa1812792"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Effect of Dietary Fish Oil on Atrial Fibrillation After Cardiac Surgery",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_014.pdf"
+      },
+      "doi": "10.1016/j.amjcard.2011.04.036"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Effect of n-3 polyunsaturated fatty acids in patients with chronic heart failure (the GISSI-HF trial): a randomised, double-blind, placebo-controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_015.pdf"
+      },
+      "doi": "10.1016/s0140-6736(08)61239-8"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "Effects of eicosapentaenoic acid on major coronary events in hypercholesterolaemic patients (JELIS): a randomised open-label, blinded endpoint analysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_016.pdf"
+      },
+      "doi": "10.1016/s0140-6736(07)60527-3"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Effects of n-3 Polyunsaturated Fatty Acids on Left Ventricular Function and Functional Capacity in Patients With Dilated Cardiomyopathy",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_017.pdf"
+      },
+      "doi": "10.1016/j.jacc.2010.11.017"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "Effects of free omega-3 carboxylic acids and fenofibrate on liver fat content in patients with hypertriglyceridemia and non-alcoholic fatty liver disease: A double-blind, randomized, placebo-controlled study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_018.pdf"
+      },
+      "doi": "10.1016/j.jacl.2018.08.003"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "DHA supplementation and pregnancy outcomes",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_019.pdf"
+      },
+      "doi": "10.3945/ajcn.112.050021"
+    },
+    {
+      "article_id": "candidate_020",
+      "document_id": "candidate_020",
+      "study_id": "study_020",
+      "role": "candidate_article",
+      "title": "May omega-3 fatty acid dietary supplementation help reduce severe complications in Covid-19 patients?",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_020.pdf"
+      },
+      "doi": "10.1016/j.biochi.2020.09.003"
+    },
+    {
+      "article_id": "candidate_021",
+      "document_id": "candidate_021",
+      "study_id": "study_021",
+      "role": "candidate_article",
+      "title": "n–3 Fatty Acids in Patients with Multiple Cardiovascular Risk Factors",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_021.pdf"
+      },
+      "doi": "10.1056/nejmoa1205409"
+    },
+    {
+      "article_id": "candidate_022",
+      "document_id": "candidate_022",
+      "study_id": "study_022",
+      "role": "candidate_article",
+      "title": "RANDOMISED TRIAL OF FISH OIL FOR PREVENTION OF RESTENOSIS AFTER CORONARY ANGIOPLASTY",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_022.pdf"
+      },
+      "doi": "10.1016/s0140-6736(89)90370-x"
+    },
+    {
+      "article_id": "candidate_023",
+      "document_id": "candidate_023",
+      "study_id": "study_023",
+      "role": "candidate_article",
+      "title": "Pharmacokinetic Comparison Between a Fixed-Dose Combination of Atorvastatin/Omega-3-Acid Ethyl Esters and the Corresponding Loose Combination in Healthy Korean Male Subjects",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_023.pdf"
+      },
+      "doi": "10.2147/dddt.s435885"
+    },
+    {
+      "article_id": "candidate_024",
+      "document_id": "candidate_024",
+      "study_id": "study_024",
+      "role": "candidate_article",
+      "title": "Effect of ω-3 Polyunsaturated Fatty Acids in Young People at Ultrahigh Risk for Psychotic Disorders",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_024.pdf"
+      },
+      "doi": "10.1001/jamapsychiatry.2016.2902"
+    },
+    {
+      "article_id": "candidate_025",
+      "document_id": "candidate_025",
+      "study_id": "study_025",
+      "role": "candidate_article",
+      "title": "Renal effects of dietary supplementation with fish oil in cyclosporine-treated liver transplant recipients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_025.pdf"
+      },
+      "doi": "10.1002/hep.1840220613"
+    },
+    {
+      "article_id": "candidate_026",
+      "document_id": "candidate_026",
+      "study_id": "study_026",
+      "role": "candidate_article",
+      "title": "Effect of High-Dose Omega-3 Fatty Acids vs Corn Oil on Major Adverse Cardiovascular Events in Patients at High Cardiovascular Risk",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_026.pdf"
+      },
+      "doi": "10.1001/jama.2020.22258"
+    },
+    {
+      "article_id": "candidate_027",
+      "document_id": "candidate_027",
+      "study_id": "study_027",
+      "role": "candidate_article",
+      "title": "n−3 Fatty Acid Supplementation for the Treatment of Dry Eye Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_027.pdf"
+      },
+      "doi": "10.1056/nejmoa1709691"
+    },
+    {
+      "article_id": "candidate_028",
+      "document_id": "candidate_028",
+      "study_id": "study_028",
+      "role": "candidate_article",
+      "title": "Randomised controlled trial of effect of fish-oil supplementation on pregnancy duration",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_028.pdf"
+      },
+      "doi": "10.1016/0140-6736(92)90533-9"
+    },
+    {
+      "article_id": "candidate_029",
+      "document_id": "candidate_029",
+      "study_id": "study_029",
+      "role": "candidate_article",
+      "title": "Omega-3 free fatty acids for the treatment of severe hypertriglyceridemia: The EpanoVa fOr Lowering Very high triglyceridEs (EVOLVE) trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_029.pdf"
+      },
+      "doi": "10.1016/j.jacl.2013.10.003"
+    },
+    {
+      "article_id": "candidate_030",
+      "document_id": "candidate_030",
+      "study_id": "study_030",
+      "role": "candidate_article",
+      "title": "Triglyceride lowering effect of MaxEPA fish lipid concentrate: A multicentre placebo controlled double blind study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_030.pdf"
+      },
+      "doi": "10.1016/0009-8981(88)90233-1"
+    },
+    {
+      "article_id": "candidate_031",
+      "document_id": "candidate_031",
+      "study_id": "study_031",
+      "role": "candidate_article",
+      "title": "Effects of Moderate-Dose Omega-3 Fish Oil on Cardiovascular Risk Factors and Mood After Ischemic Stroke",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_031.pdf"
+      },
+      "doi": "10.1161/strokeaha.109.555136"
+    },
+    {
+      "article_id": "candidate_032",
+      "document_id": "candidate_032",
+      "study_id": "study_032",
+      "role": "candidate_article",
+      "title": "Failure of Omega-3 Polyunsaturated Fatty Acids in Prevention of Migraine: A Double-Blind Study Versus Placebo",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_032.pdf"
+      },
+      "doi": "10.1046/j.1468-2982.2001.218240.x"
+    },
+    {
+      "article_id": "candidate_033",
+      "document_id": "candidate_033",
+      "study_id": "study_033",
+      "role": "candidate_article",
+      "title": "Using High-Dose Omega-3 Fatty Acid Supplements to Lower Triglyceride Levels in 10- to 19-Year-Olds",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_033.pdf"
+      },
+      "doi": "10.1177/0009922814528032"
+    },
+    {
+      "article_id": "candidate_034",
+      "document_id": "candidate_034",
+      "study_id": "study_034",
+      "role": "candidate_article",
+      "title": "Docosahexaenoic Acid Supplementation and Cognitive Decline in Alzheimer Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_034.pdf"
+      },
+      "doi": "10.1001/jama.2010.1510"
+    },
+    {
+      "article_id": "candidate_035",
+      "document_id": "candidate_035",
+      "study_id": "study_035",
+      "role": "candidate_article",
+      "title": "Lipid Effects of Icosapent Ethyl in Women with Diabetes Mellitus and Persistent High Triglycerides on Statin Treatment: ANCHOR Trial Subanalysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_035.pdf"
+      },
+      "doi": "10.1089/jwh.2017.6757"
+    },
+    {
+      "article_id": "candidate_036",
+      "document_id": "candidate_036",
+      "study_id": "study_036",
+      "role": "candidate_article",
+      "title": "Effects of n−3 Fatty Acid Supplements in Diabetes Mellitus",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_036.pdf"
+      },
+      "doi": "10.1056/nejmoa1804989"
+    },
+    {
+      "article_id": "candidate_037",
+      "document_id": "candidate_037",
+      "study_id": "study_037",
+      "role": "candidate_article",
+      "title": "Effects of Marine n-3 Polyunsaturated Fatty Acids on Heart Rate Variability and Heart Rate in Patients on Chronic Dialysis: A Randomized Controlled Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_037.pdf"
+      },
+      "doi": "10.3390/nu10091313"
+    },
+    {
+      "article_id": "candidate_038",
+      "document_id": "candidate_038",
+      "study_id": "study_038",
+      "role": "candidate_article",
+      "title": "Effects of a high-dose concentrate of n−3 fatty acids or corn oil introduced early after an acute myocardial infarction on serum triacylglycerol and HDL cholesterol",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_038.pdf"
+      },
+      "doi": "10.1093/ajcn/74.1.50"
+    },
+    {
+      "article_id": "candidate_039",
+      "document_id": "candidate_039",
+      "study_id": "study_039",
+      "role": "candidate_article",
+      "title": "Gamma-Tocopherol and Docosahexaenoic Acid Decrease Inflammation in Dialysis Patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_039.pdf"
+      },
+      "doi": "10.1053/j.jrn.2007.05.011"
+    },
+    {
+      "article_id": "candidate_040",
+      "document_id": "candidate_040",
+      "study_id": "study_040",
+      "role": "candidate_article",
+      "title": "Efficacy and Safety of Prescription Omega-3 Fatty Acids for the Prevention of Recurrent Symptomatic Atrial Fibrillation",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_040.pdf"
+      },
+      "doi": "10.1001/jama.2010.1735"
+    },
+    {
+      "article_id": "candidate_041",
+      "document_id": "candidate_041",
+      "study_id": "study_041",
+      "role": "candidate_article",
+      "title": "A new pure ω-3 eicosapentaenoic acid ethyl ester (AMR101) for the management of hypertriglyceridemia: the MARINE trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_041.pdf"
+      },
+      "doi": "10.1586/erc.12.56"
+    },
+    {
+      "article_id": "candidate_042",
+      "document_id": "candidate_042",
+      "study_id": "study_042",
+      "role": "candidate_article",
+      "title": "Omega-3 carboxylic acids in patients with severe hypertriglyceridemia: EVOLVE II, a randomized, placebo-controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_042.pdf"
+      },
+      "doi": "10.1016/j.jacl.2017.10.012"
+    },
+    {
+      "article_id": "candidate_043",
+      "document_id": "candidate_043",
+      "study_id": "study_043",
+      "role": "candidate_article",
+      "title": "Effects of marine n-3 fatty acid supplementation in renal transplantation: A randomized controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_043.pdf"
+      },
+      "doi": "10.1111/ajt.15080"
+    },
+    {
+      "article_id": "candidate_044",
+      "document_id": "candidate_044",
+      "study_id": "study_044",
+      "role": "candidate_article",
+      "title": "Influence of Obesity on Breast Density Reduction by Omega-3 Fatty Acids: Evidence from a Randomized Clinical Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_044.pdf"
+      },
+      "doi": "10.1158/1940-6207.capr-15-0235"
+    },
+    {
+      "article_id": "candidate_045",
+      "document_id": "candidate_045",
+      "study_id": "study_045",
+      "role": "candidate_article",
+      "title": "Research Communication: Plant and Marine Derived (n-3) Polyunsaturated Fatty Acids Do Not Affect Blood Coagulation and Fibrinolytic Factors in Moderately Hyperlipidemic Humans",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_045.pdf"
+      },
+      "doi": "10.1093/jn/133.7.2210"
+    },
+    {
+      "article_id": "candidate_046",
+      "document_id": "candidate_046",
+      "study_id": "study_046",
+      "role": "candidate_article",
+      "title": "Fish Oil for the Reduction of Atrial Fibrillation Recurrence, Inflammation, and Oxidative Stress",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_046.pdf"
+      },
+      "doi": "10.1016/j.jacc.2014.07.956"
+    },
+    {
+      "article_id": "candidate_047",
+      "document_id": "candidate_047",
+      "study_id": "study_047",
+      "role": "candidate_article",
+      "title": "The oral intake of specific Bioactive Collagen Peptides (BCP) improves gait and quality of life in canine osteoarthritis patients—A translational large animal model for a nutritional therapy option",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_047.pdf"
+      },
+      "doi": "10.1371/journal.pone.0308378"
+    },
+    {
+      "article_id": "candidate_048",
+      "document_id": "candidate_048",
+      "study_id": "study_048",
+      "role": "candidate_article",
+      "title": "Double-blind Randomized Placebo-controlled Clinical Trial of Omega 3 Fatty Acids for the Treatment of Diabetic Patients With Nonalcoholic Steatohepatitis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_048.pdf"
+      },
+      "doi": "10.1097/mcg.0000000000000099"
+    },
+    {
+      "article_id": "candidate_049",
+      "document_id": "candidate_049",
+      "study_id": "study_049",
+      "role": "candidate_article",
+      "title": "Fish Oil (n-3) Polyunsaturated Fatty Acids Beneficially Affect Biliary Cholesterol Nucleation Time in Obese Women Losing Weight",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_049.pdf"
+      },
+      "doi": "10.1093/jn/131.9.2300"
+    },
+    {
+      "article_id": "candidate_050",
+      "document_id": "candidate_050",
+      "study_id": "study_050",
+      "role": "candidate_article",
+      "title": "Omega-3 Free Fatty Acids for the Maintenance of Remission in Crohn Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_050.pdf"
+      },
+      "doi": "10.1001/jama.299.14.1690"
+    },
+    {
+      "article_id": "candidate_051",
+      "document_id": "candidate_051",
+      "study_id": "study_051",
+      "role": "candidate_article",
+      "title": "Determinants of restenosis and lack of effect of dietary supplementation with eicosapentaenoic acid on the incidence of coronary artery restenosis after angioplasty",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_051.pdf"
+      },
+      "doi": "10.1016/0735-1097(89)90609-8"
+    },
+    {
+      "article_id": "candidate_052",
+      "document_id": "candidate_052",
+      "study_id": "study_052",
+      "role": "candidate_article",
+      "title": "The effect of n–3 PUFA/γ-cyclodextrin complex on serum lipids in healthy volunteers - a randomized, placebo-controlled, double-blind trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_052.pdf"
+      },
+      "doi": null
+    },
+    {
+      "article_id": "candidate_053",
+      "document_id": "candidate_053",
+      "study_id": "study_053",
+      "role": "candidate_article",
+      "title": "Efficacy and Safety of Eicosapentaenoic Acid Ethyl Ester (AMR101) Therapy in Statin-Treated Patients With Persistent High Triglycerides (from the ANCHOR Study)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_053.pdf"
+      },
+      "doi": "10.1016/j.amjcard.2012.05.031"
+    },
+    {
+      "article_id": "candidate_054",
+      "document_id": "candidate_054",
+      "study_id": "study_054",
+      "role": "candidate_article",
+      "title": "Efficacy of Concentrated n-3 Fatty Acids in Hypertriglyceridaemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_054.pdf"
+      },
+      "doi": "10.2165/00044011-200121030-00003"
+    },
+    {
+      "article_id": "candidate_055",
+      "document_id": "candidate_055",
+      "study_id": "study_055",
+      "role": "candidate_article",
+      "title": "Efficacy and safety of TAK-085 compared with eicosapentaenoic acid in Japanese subjects with hypertriglyceridemia undergoing lifestyle modification: The omega-3 fatty acids randomized double-blind (ORD) study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_055.pdf"
+      },
+      "doi": "10.1016/j.jacl.2013.01.006"
+    },
+    {
+      "article_id": "candidate_056",
+      "document_id": "candidate_056",
+      "study_id": "study_056",
+      "role": "candidate_article",
+      "title": "Docosahexaenoic Acid-Rich Fish Oil Does Not Affect Serum Lipid Concentrations of Normolipidemic Young Adults",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_056.pdf"
+      },
+      "doi": "10.1093/jn/126.11.2784"
+    },
+    {
+      "article_id": "candidate_057",
+      "document_id": "candidate_057",
+      "study_id": "study_057",
+      "role": "candidate_article",
+      "title": "A Comprehensive Review of Chemistry, Sources and Bioavailability of Omega-3 Fatty Acids",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_057.pdf"
+      },
+      "doi": "10.3390/nu10111662"
+    },
+    {
+      "article_id": "candidate_058",
+      "document_id": "candidate_058",
+      "study_id": "study_058",
+      "role": "candidate_article",
+      "title": "The Effect of Dietary ω-3 Fatty Acids on Coronary Atherosclerosis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_058.pdf"
+      },
+      "doi": "10.7326/0003-4819-130-7-199904060-00003"
+    },
+    {
+      "article_id": "candidate_059",
+      "document_id": "candidate_059",
+      "study_id": "study_059",
+      "role": "candidate_article",
+      "title": "The Effects of Eicosapentaenoic Acid-Fortified Food on Inflammatory Markers in Healthy Subjects-A Randomized, Placebo-Controlled, Double-Blind Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_059.pdf"
+      },
+      "doi": "10.3177/jnsv.52.261"
+    },
+    {
+      "article_id": "candidate_060",
+      "document_id": "candidate_060",
+      "study_id": "study_060",
+      "role": "candidate_article",
+      "title": "Effects of n-3 fatty acids and exercise on oxidative stress parameters in type 2 diabetic: a randomized clinical trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_060.pdf"
+      },
+      "doi": "10.1186/s12970-018-0222-2"
+    },
+    {
+      "article_id": "candidate_061",
+      "document_id": "candidate_061",
+      "study_id": "study_061",
+      "role": "candidate_article",
+      "title": "Beneficial effects of docosahexaenoic acid on cognition in age‐related cognitive decline",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_061.pdf"
+      },
+      "doi": "10.1016/j.jalz.2010.01.013"
+    },
+    {
+      "article_id": "candidate_062",
+      "document_id": "candidate_062",
+      "study_id": "study_062",
+      "role": "candidate_article",
+      "title": "Marine n−3 Fatty Acids and Prevention of Cardiovascular Disease and Cancer",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_062.pdf"
+      },
+      "doi": "10.1056/nejmoa1811403"
+    },
+    {
+      "article_id": "candidate_063",
+      "document_id": "candidate_063",
+      "study_id": "study_063",
+      "role": "candidate_article",
+      "title": "A Randomized, Double-Blind, Placebo-Controlled Clinical Trial to Assess the Efficacy and Safety of Ethyl-Ester Omega-3 Fatty Acid in Taiwanese Hypertriglyceridemic Patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_063.pdf"
+      },
+      "doi": "10.5551/jat.34231"
+    },
+    {
+      "article_id": "candidate_064",
+      "document_id": "candidate_064",
+      "study_id": "study_064",
+      "role": "candidate_article",
+      "title": "Synbiotic Bacillus megaterium DSM 32963 and n-3 PUFA Salt Composition Elevates Pro-Resolving Lipid Mediator Levels in Healthy Subjects: A Randomized Controlled Study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_064.pdf"
+      },
+      "doi": "10.3390/nu16091354"
+    },
+    {
+      "article_id": "candidate_065",
+      "document_id": "candidate_065",
+      "study_id": "study_065",
+      "role": "candidate_article",
+      "title": "Effect of dietary omega-3 fatty acid supplementation on frailty-related phenotypes in older adults: a systematic review and meta-analysis protocol",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_065.pdf"
+      },
+      "doi": "10.1136/bmjopen-2017-021344"
+    },
+    {
+      "article_id": "candidate_066",
+      "document_id": "candidate_066",
+      "study_id": "study_066",
+      "role": "candidate_article",
+      "title": "n-3 fatty acids do not prevent restenosis after coronary angioplasty: results from the CART study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_066.pdf"
+      },
+      "doi": "10.1016/s0735-1097(99)00054-6"
+    },
+    {
+      "article_id": "candidate_067",
+      "document_id": "candidate_067",
+      "study_id": "study_067",
+      "role": "candidate_article",
+      "title": "Fish Oil and Postoperative Atrial Fibrillation",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_067.pdf"
+      },
+      "doi": "10.1001/jama.2012.28733"
+    },
+    {
+      "article_id": "candidate_068",
+      "document_id": "candidate_068",
+      "study_id": "study_068",
+      "role": "candidate_article",
+      "title": "N-3 Fatty Acids as Secondary Prevention against Cardiovascular Events in Patients Who Undergo Chronic Hemodialysis",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_068.pdf"
+      },
+      "doi": "10.2215/cjn.00630206"
+    },
+    {
+      "article_id": "candidate_069",
+      "document_id": "candidate_069",
+      "study_id": "study_069",
+      "role": "candidate_article",
+      "title": "Omega-3 Augmentation of Sertraline in Treatment of Depression in Patients With Coronary Heart Disease",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_069.pdf"
+      },
+      "doi": "10.1001/jama.2009.1487"
+    },
+    {
+      "article_id": "candidate_070",
+      "document_id": "candidate_070",
+      "study_id": "study_070",
+      "role": "candidate_article",
+      "title": "Effect of Fish Oil Supplementation on Graft Patency and Cardiovascular Events Among Patients With New Synthetic Arteriovenous Hemodialysis Grafts",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_070.pdf"
+      },
+      "doi": "10.1001/jama.2012.3473"
+    },
+    {
+      "article_id": "candidate_071",
+      "document_id": "candidate_071",
+      "study_id": "study_071",
+      "role": "candidate_article",
+      "title": "Dose-dependent effects of fish oil on cardio-metabolic biomarkers in healthy middle-aged and elderly Chinese people: a double-blind randomized controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_071.pdf"
+      },
+      "doi": "10.1039/c7fo01566f"
+    },
+    {
+      "article_id": "candidate_072",
+      "document_id": "candidate_072",
+      "study_id": "study_072",
+      "role": "candidate_article",
+      "title": "Effects of purified eicosapentaenoic and docosahexaenoic acids in nonalcoholic fatty liver disease: Results from the WELCOME* study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_072.pdf"
+      },
+      "doi": "10.1002/hep.27289"
+    },
+    {
+      "article_id": "candidate_073",
+      "document_id": "candidate_073",
+      "study_id": "study_073",
+      "role": "candidate_article",
+      "title": "The effect of marine n-3 polyunsaturated fatty acids on cardiac autonomic and hemodynamic function in patients with psoriatic arthritis: a randomised, double-blind, placebo-controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_073.pdf"
+      },
+      "doi": "10.1186/s12944-016-0382-5"
+    },
+    {
+      "article_id": "candidate_074",
+      "document_id": "candidate_074",
+      "study_id": "study_074",
+      "role": "candidate_article",
+      "title": "Omega-3 Fatty Acids for the Prevention of Recurrent Symptomatic Atrial Fibrillation",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_074.pdf"
+      },
+      "doi": "10.1016/j.jacc.2012.11.021"
+    },
+    {
+      "article_id": "candidate_075",
+      "document_id": "candidate_075",
+      "study_id": "study_075",
+      "role": "candidate_article",
+      "title": "The effect of docosahexaenoic acid on aggression in young adults. A placebo-controlled double-blind study.",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_075.pdf"
+      },
+      "doi": "10.1172/jci118507"
+    },
+    {
+      "article_id": "candidate_076",
+      "document_id": "candidate_076",
+      "study_id": "study_076",
+      "role": "candidate_article",
+      "title": "The Omega-3 Fatty Acids EPA and DHA, as a Part of a Murine High-Fat Diet, Reduced Lipid Accumulation in Brown and White Adipose Tissues",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_076.pdf"
+      },
+      "doi": "10.3390/ijms20235895"
+    },
+    {
+      "article_id": "candidate_077",
+      "document_id": "candidate_077",
+      "study_id": "study_077",
+      "role": "candidate_article",
+      "title": "Effect of icosapent ethyl on progression of coronary atherosclerosis in patients with elevated triglycerides on statin therapy: a prospective, placebo-controlled randomized trial (EVAPORATE): interim results",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_077.pdf"
+      },
+      "doi": "10.1093/cvr/cvaa184"
+    },
+    {
+      "article_id": "candidate_078",
+      "document_id": "candidate_078",
+      "study_id": "study_078",
+      "role": "candidate_article",
+      "title": "Effect of fish oil on ventricular tachyarrhythmia in three studies in patients with implantable cardioverter defibrillators",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_078.pdf"
+      },
+      "doi": "10.1093/eurheartj/ehp003"
+    },
+    {
+      "article_id": "candidate_079",
+      "document_id": "candidate_079",
+      "study_id": "study_079",
+      "role": "candidate_article",
+      "title": "Effect of Icosapent Ethyl on Gynoid Fat and Bone Mineral Health in the Metabolic Syndrome: A Preliminary Report",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_079.pdf"
+      },
+      "doi": "10.1016/j.clinthera.2020.09.005"
+    },
+    {
+      "article_id": "candidate_080",
+      "document_id": "candidate_080",
+      "study_id": "study_080",
+      "role": "candidate_article",
+      "title": "Effect of ω-3 Fatty Acids and Simvastatin on Hemostatic Risk Factors and Postprandial Hyperlipemia in Patients With Combined Hyperlipemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_080.pdf"
+      },
+      "doi": "10.1161/01.atv.20.1.259"
+    },
+    {
+      "article_id": "candidate_081",
+      "document_id": "candidate_081",
+      "study_id": "study_081",
+      "role": "candidate_article",
+      "title": "Dietary supplementation with marine omega-3 fatty acids improve systemic large artery endothelial function in subjects with hypercholesterolemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_081.pdf"
+      },
+      "doi": "10.1016/s0735-1097(99)00548-3"
+    },
+    {
+      "article_id": "candidate_082",
+      "document_id": "candidate_082",
+      "study_id": "study_082",
+      "role": "candidate_article",
+      "title": "Prescription omega-3 acid ethyl esters plus simvastatin 20 and 80 mg: effects in mixed dyslipidemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_082.pdf"
+      },
+      "doi": "10.1016/j.jacl.2008.12.007"
+    },
+    {
+      "article_id": "candidate_083",
+      "document_id": "candidate_083",
+      "study_id": "study_083",
+      "role": "candidate_article",
+      "title": "Effects of n-3 Polyunsaturated Fatty Acids on Glucose Homeostasis and Blood Pressure in Essential Hypertension",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_083.pdf"
+      },
+      "doi": "10.7326/0003-4819-123-12-199512150-00003"
+    },
+    {
+      "article_id": "candidate_084",
+      "document_id": "candidate_084",
+      "study_id": "study_084",
+      "role": "candidate_article",
+      "title": "Effect of Medium-term Supplementation with a Moderate Dose of n-3 Polyunsaturated Fatty Acids on Blood Pressure in Mild Hypertensive Patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_084.pdf"
+      },
+      "doi": "10.1016/s0049-3848(98)00046-2"
+    },
+    {
+      "article_id": "candidate_085",
+      "document_id": "candidate_085",
+      "study_id": "study_085",
+      "role": "candidate_article",
+      "title": "Can n-3 PUFA reduce cardiac arrhythmias? Results of a clinical trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_085.pdf"
+      },
+      "doi": "10.1016/j.plefa.2004.03.003"
+    },
+    {
+      "article_id": "candidate_086",
+      "document_id": "candidate_086",
+      "study_id": "study_086",
+      "role": "candidate_article",
+      "title": "n–3 Fatty Acids and Cardiovascular Outcomes in Patients with Dysglycemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_086.pdf"
+      },
+      "doi": "10.1056/nejmoa1203859"
+    },
+    {
+      "article_id": "candidate_087",
+      "document_id": "candidate_087",
+      "study_id": "study_087",
+      "role": "candidate_article",
+      "title": "Prevention of postcoronary angioplasty restenosis by omega-3 fatty acids: Main results of the Esapent for Prevention of Restenosis ITalian Study (ESPRIT)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_087.pdf"
+      },
+      "doi": "10.1067/mhj.2002.121805"
+    },
+    {
+      "article_id": "candidate_088",
+      "document_id": "candidate_088",
+      "study_id": "study_088",
+      "role": "candidate_article",
+      "title": "Omega-3 Fatty Acid Supplementation to Prevent Recurrent Preterm Birth",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_088.pdf"
+      },
+      "doi": "10.1097/aog.0b013e3181cbd60e"
+    },
+    {
+      "article_id": "candidate_089",
+      "document_id": "candidate_089",
+      "study_id": "study_089",
+      "role": "candidate_article",
+      "title": "Effect of n-3 fatty acids from fish on electrocardiographic characteristics in patients with frequent premature ventricular complexes",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_089.pdf"
+      },
+      "doi": "10.1079/bjn20051429"
+    },
+    {
+      "article_id": "candidate_090",
+      "document_id": "candidate_090",
+      "study_id": "study_090",
+      "role": "candidate_article",
+      "title": "The Effects of an Omega-3 Ethyl Ester Concentrate on Blood Lipid Concentrations in Patients with Hyperlipidaemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_090.pdf"
+      },
+      "doi": "10.2165/00044011-199815050-00004"
+    },
+    {
+      "article_id": "candidate_091",
+      "document_id": "candidate_091",
+      "study_id": "study_091",
+      "role": "candidate_article",
+      "title": "Effect of Omega-3 Acid Ethyl Esters on Left Ventricular Remodeling After Acute Myocardial Infarction",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_091.pdf"
+      },
+      "doi": "10.1161/circulationaha.115.019949"
+    },
+    {
+      "article_id": "candidate_092",
+      "document_id": "candidate_092",
+      "study_id": "study_092",
+      "role": "candidate_article",
+      "title": "Vitamin D Uptake in Patients Treated with a High-Dosed Purified Omega-3 Compound in a Randomized Clinical Trial Following an Acute Myocardial Infarction",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_092.pdf"
+      },
+      "doi": "10.3389/fcvm.2017.00041"
+    },
+    {
+      "article_id": "candidate_093",
+      "document_id": "candidate_093",
+      "study_id": "study_093",
+      "role": "candidate_article",
+      "title": "Efficacy and tolerability of adding prescription Omega-3 fatty acids 4 g/d to Simvastatin 40 mg/d in hypertriglyceridemic patients: An 8-week, randomized, double-blind, placebo-controlled study",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_093.pdf"
+      },
+      "doi": "10.1016/j.clinthera.2007.07.018"
+    },
+    {
+      "article_id": "candidate_094",
+      "document_id": "candidate_094",
+      "study_id": "study_094",
+      "role": "candidate_article",
+      "title": "Atorvastatin in Factorial with Omega-3 EE90 Risk Reduction in Diabetes (AFORRD): a randomised controlled trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_094.pdf"
+      },
+      "doi": "10.1007/s00125-008-1179-5"
+    },
+    {
+      "article_id": "candidate_095",
+      "document_id": "candidate_095",
+      "study_id": "study_095",
+      "role": "candidate_article",
+      "title": "Effects of Adding Prescription Omega-3 Acid Ethyl Esters to Simvastatin (20 mg/day) on Lipids and Lipoprotein Particles in Men and Women With Mixed Dyslipidemia",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_095.pdf"
+      },
+      "doi": "10.1016/j.amjcard.2008.03.078"
+    },
+    {
+      "article_id": "candidate_096",
+      "document_id": "candidate_096",
+      "study_id": "study_096",
+      "role": "candidate_article",
+      "title": "Enhancing cancer immunotherapy via inhibition of soluble epoxide hydrolase",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_096.pdf"
+      },
+      "doi": "10.1073/pnas.2314085121"
+    },
+    {
+      "article_id": "candidate_097",
+      "document_id": "candidate_097",
+      "study_id": "study_097",
+      "role": "candidate_article",
+      "title": "n-3 fatty acid effects on lipids, lipoproteins, and apolipoproteins at very low doses: results of a randomized controlled trial in hypertriglyceridemic subjects",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_097.pdf"
+      },
+      "doi": "10.1093/ajcn/51.4.599"
+    },
+    {
+      "article_id": "candidate_098",
+      "document_id": "candidate_098",
+      "study_id": "study_098",
+      "role": "candidate_article",
+      "title": "Treatment of Chinese Patients with Hypertriglyceridemia with a Pharmaceutical-Grade Preparation of Highly Purified Omega-3 Polyunsaturated Fatty Acid Ethyl Esters: Main Results of a Randomized, Double-Blind, Controlled Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_098.pdf"
+      },
+      "doi": "10.2147/vhrm.s325217"
+    },
+    {
+      "article_id": "candidate_099",
+      "document_id": "candidate_099",
+      "study_id": "study_099",
+      "role": "candidate_article",
+      "title": "n-3 Fatty acids do not lead to an increased diabetic risk in patients with hyperlipidemia and abnormal glucose tolerance",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_099.pdf"
+      },
+      "doi": "10.1093/ajcn/65.6.1874"
+    },
+    {
+      "article_id": "candidate_100",
+      "document_id": "candidate_100",
+      "study_id": "study_100",
+      "role": "candidate_article",
+      "title": "The efficacy of omega-3 fatty acid supplementation on plasma homocysteine and malondialdehyde levels of type 2 diabetic patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0076/candidate_100.pdf"
+      },
+      "doi": "10.1016/j.numecd.2009.04.002"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

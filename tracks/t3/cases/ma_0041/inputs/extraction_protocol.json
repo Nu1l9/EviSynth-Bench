@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "case_id": "ma_0041",
+  "protocol_id": "ma_0041_full_source_extraction_v2",
+  "protocol_version": "2.0.0",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "Extract every source-reported glenoid positioning summary from the supplied primary reports without forcing semantically different measures into a common effect.",
+  "pico": {
+    "population": {
+      "description": "Human patients or human cadaver shoulders undergoing anatomic or reverse shoulder arthroplasty",
+      "aliases": []
+    },
+    "intervention_or_exposure": {
+      "description": "Surgical navigation, patient-specific instruments, or standard instrumentation",
+      "aliases": []
+    },
+    "comparator": {
+      "description": "Any reported comparator, or none for a single-arm report",
+      "aliases": []
+    },
+    "outcome": {
+      "description": "Glenoid version, inclination or tilt, and offset or starting-point position",
+      "aliases": []
+    }
+  },
+  "targets": [
+    {
+      "target_id": "glenoid_positioning_summary",
+      "accepted_data_families": [
+        "independent_continuous_arms",
+        "single_arm_continuous_summary"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "Capture every overall or explicitly labelled subgroup summary with a reported n, mean and SD; retain outcome axis and measurement semantics.",
+        "selection_deferred": true
+      },
+      "outcome": {
+        "description": "",
+        "aliases": []
+      },
+      "preferred_effect_measures": [],
+      "estimands": [],
+      "extraction_notes": []
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "required_fields": [
+      "article_id",
+      "study_id",
+      "intervention_or_comparator",
+      "subject_type",
+      "arthroplasty_type",
+      "outcome_axis",
+      "measurement_semantics",
+      "unit",
+      "n",
+      "mean",
+      "sd",
+      "source_location"
+    ]
+  },
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0041_full",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "glenoid_positioning_summary",
+        "status": "unsupported",
+        "original_families": [
+          "independent_continuous_arms",
+          "single_arm_continuous_summary"
+        ],
+        "recommended_v1_families": [
+          "independent_continuous_arms",
+          "single_arm_continuous_summary"
+        ],
+        "unsupported_families": [
+          "independent_continuous_arms",
+          "single_arm_continuous_summary"
+        ],
+        "reason": "No existing seven-case v1 template has the same data contract."
+      }
+    ]
+  }
+}

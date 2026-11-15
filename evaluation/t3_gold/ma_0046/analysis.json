@@ -1,0 +1,117 @@
+{
+  "$schema": "../../../schemas/analysis-gold.schema.json",
+  "case_id": "ma_0046",
+  "task_type": "analysis",
+  "gold_id": "ma_0046_analysis_gold_v1",
+  "provenance": {
+    "target_review_document_id": "review_ma_0046",
+    "annotation_status": "released"
+  },
+  "analysis_decisions": [
+    {
+      "analysis_id": "main_pr_long_term_all_cause_death",
+      "selected_candidate_ids": [
+        "ce_0001",
+        "ce_0002",
+        "ce_0003",
+        "ce_0004",
+        "ce_0005",
+        "ce_0006",
+        "ce_0007",
+        "ce_0008",
+        "ce_0009",
+        "ce_0010",
+        "ce_0011",
+        "ce_0012",
+        "ce_0013",
+        "ce_0014",
+        "ce_0015",
+        "ce_0016",
+        "ce_0017",
+        "ce_0018",
+        "ce_0019",
+        "ce_0020"
+      ],
+      "selected_effect_estimate_ids": [
+        "ee_046006_death",
+        "ee_046020_death",
+        "ee_046009_death",
+        "ee_046018_death",
+        "ee_046017_death",
+        "ee_046007_death",
+        "ee_046005_death",
+        "ee_046019_death",
+        "ee_046004_death",
+        "ee_046003_death",
+        "ee_046016_death",
+        "ee_046010_death",
+        "ee_046013_death",
+        "ee_046002_death",
+        "ee_046015_death",
+        "ee_046012_death",
+        "ee_046001_death",
+        "ee_046008_death",
+        "ee_046011_death",
+        "ee_046014_death"
+      ],
+      "pooled_results": [
+        {
+          "pooled_result_id": "pr_long_term_all_cause_death",
+          "outcome_group": "Long-term all-cause death",
+          "effect": {
+            "effect_type": "RR",
+            "value": 1.13,
+            "ci_lower": 1.01,
+            "ci_upper": 1.25,
+            "direction": "higher_all_cause_death_risk_with_new_ppm"
+          },
+          "member_candidate_ids": [
+            "ce_0001",
+            "ce_0002",
+            "ce_0003",
+            "ce_0004",
+            "ce_0005",
+            "ce_0006",
+            "ce_0007",
+            "ce_0008",
+            "ce_0009",
+            "ce_0010",
+            "ce_0011",
+            "ce_0012",
+            "ce_0013",
+            "ce_0014",
+            "ce_0015",
+            "ce_0016",
+            "ce_0017",
+            "ce_0018",
+            "ce_0019",
+            "ce_0020"
+          ],
+          "member_effect_estimate_ids": [
+            "ee_046006_death",
+            "ee_046020_death",
+            "ee_046009_death",
+            "ee_046018_death",
+            "ee_046017_death",
+            "ee_046007_death",
+            "ee_046005_death",
+            "ee_046019_death",
+            "ee_046004_death",
+            "ee_046003_death",
+            "ee_046016_death",
+            "ee_046010_death",
+            "ee_046013_death",
+            "ee_046002_death",
+            "ee_046015_death",
+            "ee_046012_death",
+            "ee_046001_death",
+            "ee_046008_death",
+            "ee_046011_death",
+            "ee_046014_death"
+          ],
+          "heterogeneity_i2": 35.0
+        }
+      ]
+    }
+  ]
+}

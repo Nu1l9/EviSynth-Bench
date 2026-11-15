@@ -1,0 +1,55 @@
+{
+  "package_version": "evisynth-bench-public-1.0",
+  "case_id": "ma_0034",
+  "source_case_id": "ma_0034",
+  "task_id": "ma_0034_extraction_all_reports_v1_1_expanded_draft",
+  "task_type": "extraction",
+  "task_definition": "From the known included reports, extract source-grounded binary arm-level records for any emergency contraceptive pill use after advance provision. Preserve cohort and follow-up scope, and record any deterministic total-minus-zero-use derivation.",
+  "input_files": [
+    "protocol.json",
+    "documents.json"
+  ],
+  "allowed_document_ids": [
+    "a_0034_01",
+    "a_0034_02",
+    "a_0034_03",
+    "a_0034_04",
+    "a_0034_05",
+    "a_0034_06",
+    "a_0034_07",
+    "a_0034_08",
+    "a_0034_09",
+    "a_0034_10",
+    "a_0034_11"
+  ],
+  "forbidden_document_ids": [
+    "review_ma_0034"
+  ],
+  "external_evidence_allowed": false,
+  "source_policy": "Use only listed source documents. Target reviews and evaluator artifacts are forbidden.",
+  "representation_tracks": {
+    "pdf_only": "Obtain the listed publications separately. No PDF, OCR, or parsed text is redistributed."
+  },
+  "submission_schema": "../../../../schemas/t2-submission.schema.json",
+  "evaluation": {
+    "metrics": [
+      "reference_precision",
+      "reference_recall",
+      "reference_f1",
+      "extraction_net_score"
+    ],
+    "reference_unit": "quantitative_reference_record",
+    "reference_targets_full_cohort": 288,
+    "numerical_tolerance": {
+      "absolute": 0.01,
+      "relative": 0.01
+    },
+    "supplementary_group": [
+      "article_id",
+      "target_id",
+      "source_location.source_id"
+    ],
+    "source_support": "Evaluator adjudication with a source quotation",
+    "scorer": "evaluate_t2.py"
+  }
+}

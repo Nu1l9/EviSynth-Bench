@@ -1,0 +1,377 @@
+{
+  "schema_version": "meta_pipeline/1.0",
+  "case_id": "ma_0056",
+  "topic": "Among adults hospitalized with COVID-19, what source-reported all-cause mortality data are available for intravenous remdesivir plus standard care compared with placebo or standard care without remdesivir?",
+  "protocol": {
+    "case_id": "ma_0056",
+    "protocol_id": "ma_0056_remdesivir_all_source_mortality_protocol_v2",
+    "pico": {
+      "population": "Adults hospitalized with COVID-19",
+      "intervention_or_exposure": "Intravenous remdesivir plus standard care",
+      "outcome": "All-cause mortality",
+      "comparison": "Placebo or standard care without remdesivir for the primary contrast"
+    },
+    "eligible_study_designs": [
+      "randomized controlled trial"
+    ],
+    "targets": [
+      {
+        "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+        "outcome": "All-cause mortality",
+        "comparison": "Intravenous remdesivir plus standard care versus placebo or standard care without remdesivir",
+        "population_or_subgroup": "Adults hospitalized with COVID-19",
+        "timepoint_policy": {
+          "rule": "Capture every final source-reported all-cause mortality window, preserving exact duration and in-hospital or post-randomization scope."
+        },
+        "accepted_data_families": [
+          "binary_arm_counts"
+        ],
+        "preferred_effect_measures": [
+          "RR"
+        ],
+        "estimands": [
+          "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control"
+        ],
+        "extraction_notes": [
+          "Extraction records source numbers and metadata only. Effect calculation belongs to the calculator and selection belongs to the analysis task."
+        ],
+        "source_constraints": [
+          "Do not substitute values from the target review.",
+          "Do not silently relabel a remdesivir-duration comparison as a no-remdesivir comparison.",
+          "Do not silently replace an analysis denominator with the randomized denominator.",
+          "Preserve a possible overlap with WHO Solidarity as an explicit provenance field; overlap resolution belongs to analysis."
+        ]
+      }
+    ],
+    "adapter_metadata": {
+      "input_shape": "frozen_v1_portable",
+      "source_case_id": "ma_0056",
+      "family_aliases_applied": {
+        "binary_arm_outcome": "binary_arm_counts",
+        "binary_arm_event_counts": "binary_arm_counts",
+        "adjusted_time_to_event_effect": "time_to_event"
+      },
+      "target_compatibility": [
+        {
+          "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+          "status": "mapped",
+          "original_families": [
+            "binary_arm_outcome"
+          ],
+          "recommended_v1_families": [
+            "binary_arm_counts"
+          ],
+          "unsupported_families": [],
+          "reason": "All target families have an existing v1 template."
+        }
+      ]
+    }
+  },
+  "analysis_profile": {
+    "$schema": "../../schemas/analysis-profile.schema.json",
+    "case_id": "ma_0056",
+    "analysis_profile_id": "ma_0056_remdesivir_10_day_mortality_analysis_profile_v2",
+    "scope": "One prespecified aggregate-data synthesis from source-derived extractor-plus-calculator candidates",
+    "primary_analysis_spec": {
+      "analysis_id": "primary_remdesivir_10_day_all_cause_mortality",
+      "pooled_result_id": "pr_0056_primary_remdesivir_10_day_mortality",
+      "outcome_group": "All-cause mortality in hospitalized COVID-19",
+      "target_id": "all_cause_mortality_remdesivir_vs_nonremdesivir_control",
+      "eligible_outcome_codes": [
+        "all_cause_mortality"
+      ],
+      "eligible_data_families": [
+        "binary_arm_counts"
+      ],
+      "accepted_effect_types": [
+        "RR"
+      ],
+      "estimands": [
+        "risk_ratio_all_cause_mortality_remdesivir_vs_nonremdesivir_control"
+      ],
+      "timepoint_policy": "source_defined",
+      "selection_rules": [
+        "Require a direct randomized remdesivir versus no-remdesivir comparison with deaths and denominators in both arms.",
+        "For a study that reports multiple planned remdesivir durations against the same eligible control, select the 10-day regimen; retain the other duration as an unselected candidate.",
+        "Exclude an active remdesivir-duration comparison because its comparator receives remdesivir.",
+        "Exclude a record whose final mortality table uses post-randomization arm reassignment or altered arm denominators without a source-reported intention-to-treat mortality record.",
+        "When a parent WHO Solidarity mortality comparison and a constituent Solidarity subtrial both appear, retain the parent comparison and exclude each overlapping subtrial record.",
+        "Do not use target-review effects, target-review counts, or labels that encode these decisions.",
+        "Select at most one eligible effect per independent study for this analysis.",
+        "Timepoint eligibility: Use each source-defined mortality window without converting in-hospital and fixed-day follow-up into a common artificial timepoint.",
+        "Do not substitute values from the target review.",
+        "Do not silently relabel a remdesivir-duration comparison as a no-remdesivir comparison.",
+        "Do not silently replace an analysis denominator with the randomized denominator.",
+        "Preserve a possible overlap with WHO Solidarity as an explicit provenance field; overlap resolution belongs to analysis.",
+        "Extraction records source numbers and metadata only. Effect calculation belongs to the calculator and selection belongs to the analysis task."
+      ],
+      "pooling": {
+        "model": "random_effects",
+        "scale": "log_risk_ratio_inverse_variance",
+        "heterogeneity_estimator": "dersimonian_laird",
+        "confidence_interval": "modified_hartung_knapp",
+        "minimum_independent_studies": 2,
+        "minimum_studies": 2
+      },
+      "outcome_terms": [
+        "All-cause mortality in hospitalized COVID-19"
+      ],
+      "exposure": {
+        "terms": [
+          "Intravenous remdesivir plus standard care"
+        ]
+      },
+      "comparison": {
+        "terms": [
+          "Intravenous remdesivir plus standard care versus placebo or standard care without remdesivir"
+        ]
+      },
+      "population": {
+        "terms": [
+          "Adults hospitalized with COVID-19"
+        ],
+        "policy": "any"
+      },
+      "timepoint_constraints": "Use each source-defined mortality window without converting in-hospital and fixed-day follow-up into a common artificial timepoint.",
+      "model_policy": "Prefer a source-reported model compatible with the declared estimand; retain its adjustment and exposure units."
+    },
+    "secondary_outcomes": [],
+    "profile_version": "2.0.0"
+  },
+  "documents": [
+    {
+      "article_id": "candidate_001",
+      "document_id": "candidate_001",
+      "study_id": "study_001",
+      "role": "candidate_article",
+      "title": "Evaluation of the Effects of Remdesivir and Hydroxychloroquine on Viral Clearance in COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_001.pdf"
+      },
+      "doi": "10.7326/m21-0653"
+    },
+    {
+      "article_id": "candidate_002",
+      "document_id": "candidate_002",
+      "study_id": "study_002",
+      "role": "candidate_article",
+      "title": "Remdesivir for the Treatment of Covid-19 — Final Report",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_002.pdf"
+      },
+      "doi": "10.1056/nejmoa2007764"
+    },
+    {
+      "article_id": "candidate_003",
+      "document_id": "candidate_003",
+      "study_id": "study_003",
+      "role": "candidate_article",
+      "title": "Clinical outcomes of using remdesivir in patients with moderate to severe COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_003.pdf"
+      },
+      "doi": "10.4103/ija.ija_149_21"
+    },
+    {
+      "article_id": "candidate_004",
+      "document_id": "candidate_004",
+      "study_id": "study_004",
+      "role": "candidate_article",
+      "title": "Dexamethasone in Hospitalized Patients with Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_004.pdf"
+      },
+      "doi": "10.1056/nejmoa2021436"
+    },
+    {
+      "article_id": "candidate_005",
+      "document_id": "candidate_005",
+      "study_id": "study_005",
+      "role": "candidate_article",
+      "title": "Baricitinib plus Remdesivir for Hospitalized Adults with Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_005.pdf"
+      },
+      "doi": "10.1056/nejmoa2031994"
+    },
+    {
+      "article_id": "candidate_006",
+      "document_id": "candidate_006",
+      "study_id": "study_006",
+      "role": "candidate_article",
+      "title": "Observational Study of Hydroxychloroquine in Hospitalized Patients with Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_006.pdf"
+      },
+      "doi": "10.1056/nejmoa2012410"
+    },
+    {
+      "article_id": "candidate_007",
+      "document_id": "candidate_007",
+      "study_id": "study_007",
+      "role": "candidate_article",
+      "title": "Compassionate Use of Remdesivir for Patients with Severe Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_007.pdf"
+      },
+      "doi": "10.1056/nejmoa2007016"
+    },
+    {
+      "article_id": "candidate_008",
+      "document_id": "candidate_008",
+      "study_id": "study_008",
+      "role": "candidate_article",
+      "title": "Remdesivir in adults with severe COVID-19: a randomised, double-blind, placebo-controlled, multicentre trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_008.pdf"
+      },
+      "doi": "10.1016/s0140-6736(20)31022-9"
+    },
+    {
+      "article_id": "candidate_009",
+      "document_id": "candidate_009",
+      "study_id": "study_009",
+      "role": "candidate_article",
+      "title": "Oral Nirmatrelvir for High-Risk, Nonhospitalized Adults with Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_009.pdf"
+      },
+      "doi": "10.1056/nejmoa2118542"
+    },
+    {
+      "article_id": "candidate_010",
+      "document_id": "candidate_010",
+      "study_id": "study_010",
+      "role": "candidate_article",
+      "title": "Effect of Remdesivir vs Standard Care on Clinical Status at 11 Days in Patients With Moderate COVID-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_010.pdf"
+      },
+      "doi": "10.1001/jama.2020.16349"
+    },
+    {
+      "article_id": "candidate_011",
+      "document_id": "candidate_011",
+      "study_id": "study_011",
+      "role": "candidate_article",
+      "title": "Remdesivir for 5 or 10 Days in Patients with Severe Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_011.pdf"
+      },
+      "doi": "10.1056/nejmoa2015301"
+    },
+    {
+      "article_id": "candidate_012",
+      "document_id": "candidate_012",
+      "study_id": "study_012",
+      "role": "candidate_article",
+      "title": "Remdesivir for 5 or 10 Days in Patients with Severe Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_012.pdf"
+      },
+      "doi": "10.1056/nejmoa2015301"
+    },
+    {
+      "article_id": "candidate_013",
+      "document_id": "candidate_013",
+      "study_id": "study_013",
+      "role": "candidate_article",
+      "title": "RETRACTED: Remdesivir Efficacy in COVID-19 Treatment: A Randomized Controlled Trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_013.pdf"
+      },
+      "doi": "10.4269/ajtmh.21-0606"
+    },
+    {
+      "article_id": "candidate_014",
+      "document_id": "candidate_014",
+      "study_id": "study_014",
+      "role": "candidate_article",
+      "title": "Remdesivir plus standard of care versus standard of care alone for the treatment of patients admitted to hospital with COVID-19 (DisCoVeRy): a phase 3, randomised, controlled, open-label trial",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_014.pdf"
+      },
+      "doi": "10.1016/s1473-3099(21)00485-0"
+    },
+    {
+      "article_id": "candidate_015",
+      "document_id": "candidate_015",
+      "study_id": "study_015",
+      "role": "candidate_article",
+      "title": "Observational Study of Hydroxychloroquine in Hospitalized Patients with Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_015.pdf"
+      },
+      "doi": "10.1056/nejmoa2012410"
+    },
+    {
+      "article_id": "candidate_016",
+      "document_id": "candidate_016",
+      "study_id": "study_016",
+      "role": "candidate_article",
+      "title": "A Trial of Lopinavir–Ritonavir in Adults Hospitalized with Severe Covid-19",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_016.pdf"
+      },
+      "doi": "10.1056/nejmoa2001282"
+    },
+    {
+      "article_id": "candidate_017",
+      "document_id": "candidate_017",
+      "study_id": "study_017",
+      "role": "candidate_article",
+      "title": "Repurposed Antiviral Drugs for Covid-19 — Interim WHO Solidarity Trial Results",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_017.pdf"
+      },
+      "doi": "10.1056/nejmoa2023184"
+    },
+    {
+      "article_id": "candidate_018",
+      "document_id": "candidate_018",
+      "study_id": "study_018",
+      "role": "candidate_article",
+      "title": "In Vitro Antiviral Activity and Projection of Optimized Dosing Design of Hydroxychloroquine for the Treatment of Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2)",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_018.pdf"
+      },
+      "doi": "10.1093/cid/ciaa237"
+    },
+    {
+      "article_id": "candidate_019",
+      "document_id": "candidate_019",
+      "study_id": "study_019",
+      "role": "candidate_article",
+      "title": "Effectiveness of convalescent plasma therapy in severe COVID-19 patients",
+      "source_representation": "local_candidate_pdf",
+      "paths": {
+        "pdf": "../../documents/ma_0056/candidate_019.pdf"
+      },
+      "doi": "10.1073/pnas.2004168117"
+    }
+  ],
+  "options": {
+    "extraction_runtime": "typed",
+    "route_rob": true,
+    "max_retries": 3,
+    "max_workers": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "case_id": "ma_0012",
+  "task_id": "ma_0012_analysis_main_outcomes_v1",
+  "task_type": "analysis",
+  "predictions": [
+    {
+      "analysis_id": "main_pr_invasive_pneumococcal_disease",
+      "selected_candidate_ids": [],
+      "pooled_results": []
+    }
+  ]
+}

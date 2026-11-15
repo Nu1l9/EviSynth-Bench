@@ -1,0 +1,205 @@
+{
+  "$schema": "../../../schemas/gold.schema.json",
+  "case_id": "ma_0055",
+  "gold_id": "ma_0055_extraction_gold_v1",
+  "task_type": "extraction",
+  "applies_to_task_ids": [
+    "ma_0055_extraction_all_reports_v1"
+  ],
+  "report_units": [
+    {
+      "report_unit_id": "ru_0055_7",
+      "article_id": "a_0055_07",
+      "study_id": "s_0055_cheong",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_mismatch",
+      "effect_estimates": [],
+      "source_availability_note": "The report gives transplant-free survival in the non-CAD subgroup. Its specified endpoint is all-cause mortality or cardiac transplantation, so it cannot be relabelled as all-cause mortality."
+    },
+    {
+      "report_unit_id": "ru_0055_8",
+      "article_id": "a_0055_08",
+      "study_id": "s_0055_cho",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The source reports a composite cardiac-event outcome (rehospitalization, transplantation, or death), not all-cause mortality by LGE status."
+    },
+    {
+      "report_unit_id": "ru_0055_9",
+      "article_id": "a_0055_09",
+      "study_id": "s_0055_gao",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The source evaluates arrhythmic events rather than source-reported all-cause mortality by LGE status."
+    },
+    {
+      "report_unit_id": "ru_0055_10",
+      "article_id": "a_0055_10",
+      "study_id": "s_0055_gulati",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined nonischemic cardiomyopathy cohort",
+      "timepoint": "Follow-up through December 2011; median 5.3 years",
+      "data_family": "binary_exposure_outcome_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0055_10",
+          "estimand": "lge_or_source_defined_fibrosis_present_vs_absent_all_cause_mortality",
+          "comparison": "Midwall fibrosis present versus absent",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_exposure_outcome_counts",
+            "outcome_definition": "All-cause mortality",
+            "exposed_arm": {
+              "label": "midwall_fibrosis_present",
+              "events": 38,
+              "n": 142
+            },
+            "unexposed_arm": {
+              "label": "midwall_fibrosis_absent",
+              "events": 35,
+              "n": 330
+            }
+          },
+          "source_location": {
+            "document_id": "a_0055_10",
+            "page": 7,
+            "source_type": "table",
+            "source_id": "Table 2, Study Outcome Data",
+            "locator_note": "Explicit all-cause death events and exposure-group denominators.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0055_11",
+      "article_id": "a_0055_11",
+      "study_id": "s_0055_iles",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The source evaluates device therapy and arrhythmic outcomes rather than source-reported all-cause mortality by LGE status."
+    },
+    {
+      "report_unit_id": "ru_0055_12",
+      "article_id": "a_0055_12",
+      "study_id": "s_0055_lehrke",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The source evaluates a composite cardiac-death, heart-failure-hospitalization, or ICD-discharge endpoint, not all-cause mortality."
+    },
+    {
+      "report_unit_id": "ru_0055_13",
+      "article_id": "a_0055_13",
+      "study_id": "s_0055_muller",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Source-defined nonischemic cardiomyopathy cohort",
+      "timepoint": "Median 21-month follow-up",
+      "data_family": "binary_exposure_outcome_counts",
+      "quantitative_usability": "source_supported_calculator_input",
+      "effect_estimates": [
+        {
+          "effect_estimate_id": "ee_0055_13",
+          "estimand": "lge_or_source_defined_fibrosis_present_vs_absent_all_cause_mortality",
+          "comparison": "LGE present versus absent",
+          "effect": null,
+          "effect_status": "source_supported_calculator_input",
+          "quantitative_usability": "source_supported_calculator_input",
+          "source_data": {
+            "data_type": "binary_exposure_outcome_counts",
+            "outcome_definition": "All-cause mortality",
+            "exposed_arm": {
+              "label": "LGE_present",
+              "events": 6,
+              "n": 94
+            },
+            "unexposed_arm": {
+              "label": "LGE_absent",
+              "events": 4,
+              "n": 91
+            }
+          },
+          "source_location": {
+            "document_id": "a_0055_13",
+            "page": 5,
+            "source_type": "table",
+            "source_id": "Table 4, Clinical outcome during follow-up",
+            "locator_note": "Explicit all-cause death events and exposure-group denominators.",
+            "locator_status": "verified",
+            "locator_method": "manual_primary_source_anchor"
+          }
+        }
+      ]
+    },
+    {
+      "report_unit_id": "ru_0055_14",
+      "article_id": "a_0055_14",
+      "study_id": "s_0055_neilan",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The source evaluates major adverse cardiac events including cardiovascular death and ICD therapy, not all-cause mortality."
+    },
+    {
+      "report_unit_id": "ru_0055_15",
+      "article_id": "a_0055_15",
+      "study_id": "s_0055_wu",
+      "target_id": "all_cause_mortality",
+      "outcome": {
+        "code": "all_cause_mortality",
+        "label": "All-cause mortality",
+        "outcome_class": "binary"
+      },
+      "quantitative_usability": "source_outcome_not_reported",
+      "effect_estimates": [],
+      "source_availability_note": "The source evaluates a composite of heart-failure hospitalization, ICD firing, and cardiac death, not all-cause mortality."
+    }
+  ]
+}

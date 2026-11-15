@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/meta-analysis-bench/analysis-extensions.schema.json",
+  "title": "Review-derived optional analysis extensions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "extension_profile_id",
+    "source_basis",
+    "blindness_policy",
+    "candidate_subgroup_policy",
+    "subgroup_analyses",
+    "meta_regression_analyses",
+    "scoring_status"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^ma_[0-9]{4,}$"
+    },
+    "extension_profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_basis": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blindness_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_subgroup_policy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scoring_status": {
+      "enum": [
+        "declared_numeric_result_coverage"
+      ]
+    },
+    "subgroup_analyses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/subgroupAnalysis"
+      }
+    },
+    "candidate_subgroup_analyses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/subgroupAnalysis"
+      }
+    },
+    "meta_regression_analyses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/metaRegressionAnalysis"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "subgroupAnalysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analysis_id",
+        "label",
+        "parent_analysis_ids",
+        "grouping_variable",
+        "levels",
+        "required_extraction_fields",
+        "minimum_independent_studies",
+        "source_basis"
+      ],
+      "properties": {
+        "analysis_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_analysis_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "grouping_variable": {
+          "type": "string",
+          "minLength": 1
+        },
+        "levels": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "level_id",
+              "label",
+              "source_definition"
+            ],
+            "properties": {
+              "level_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_definition": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "required_extraction_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "minimum_independent_studies": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "source_basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "metaRegressionAnalysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analysis_id",
+        "label",
+        "effect_set_description",
+        "moderators",
+        "required_extraction_fields",
+        "source_basis"
+      ],
+      "properties": {
+        "analysis_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effect_set_description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "moderators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "required_extraction_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source_basis": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

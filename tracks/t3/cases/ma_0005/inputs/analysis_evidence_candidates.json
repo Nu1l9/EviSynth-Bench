@@ -1,0 +1,378 @@
+{
+  "$schema": "../../../../../schemas/analysis-evidence-minimal-v8.schema.json",
+  "case_id": "ma_0005",
+  "candidate_set_id": "ma_0005_minimal_public_candidate_pool_v8",
+  "candidates": [
+    {
+      "candidate_id": "cand_0001",
+      "article_id": "a_0005_02",
+      "study_id": "s_0005_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Adjuvant 17-hydroxyprogesterone caproate plus ultrasound-indicated cerclage versus ultrasound-indicated cerclage alone",
+      "outcome": {
+        "code": null,
+        "label": "Spontaneous preterm birth before 35 completed weeks",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Singleton pregnancy with prior spontaneous preterm birth and ultrasound-indicated cerclage for cervical length below 25 mm",
+      "timepoint": "Delivery before 35 completed weeks of gestation",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Spontaneous preterm birth before 35 completed weeks of gestation.",
+        "intervention_arm": {
+          "label": "Adjuvant 17-hydroxyprogesterone caproate plus cerclage",
+          "events": 6,
+          "total": 15
+        },
+        "comparator_arm": {
+          "label": "Cerclage alone",
+          "events": 12,
+          "total": 43
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 1.4333333333333333,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": 0.36000273403140703,
+        "variance": 0.16007751937984493,
+        "direction": "adjuvant_17_ohpc_higher_event_risk_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0005_02",
+        "page": 3,
+        "source_type": "table",
+        "source_id": "Table 2, Study outcomes"
+      }
+    },
+    {
+      "candidate_id": "cand_0002",
+      "article_id": "a_0005_04",
+      "study_id": "s_0005_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Adjuvant 17-hydroxyprogesterone caproate plus ultrasound-indicated cerclage versus ultrasound-indicated cerclage alone",
+      "outcome": {
+        "code": null,
+        "label": "Preterm delivery before 37 completed weeks",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Combined ultrasonography- and physical-examination-indicated cerclage subgroup",
+      "timepoint": "Delivery before 37 completed weeks of gestation",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Preterm delivery before 37 completed weeks in a combined ultrasonography- and physical-examination-indicated cerclage subgroup.",
+        "intervention_arm": {
+          "label": "Adjuvant 17-hydroxyprogesterone caproate plus cerclage",
+          "events": 16,
+          "total": 29
+        },
+        "comparator_arm": {
+          "label": "Cerclage alone",
+          "events": 29,
+          "total": 44
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.8370986920332937,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.17781330381490568,
+        "variance": 0.03977272727272727,
+        "direction": "adjuvant_17_ohpc_higher_event_risk_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0005_04",
+        "page": 5,
+        "source_type": "table",
+        "source_id": "Table 4, Ultrasonography- and Physical Examination-Indicated Cerclages"
+      }
+    },
+    {
+      "candidate_id": "cand_0003",
+      "article_id": "a_0005_04",
+      "study_id": "s_0005_04",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adjuvant 17-hydroxyprogesterone caproate after transvaginal cerclage",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preterm birth before 35 completed weeks",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Women with a prior spontaneous preterm birth receiving transvaginal cerclage; singleton gestations were included, but the located excerpt reports the overall cohort rather than ultrasound-indicated cerclage alone",
+      "timepoint": "",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source states that there was no difference in overall preterm delivery between cerclage plus 17a-hydroxyprogesterone caproate and cerclage alone, but the located excerpt does not specify whether overall preterm delivery was defined as before 35 weeks or provide arm-level counts for that threshold."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0005_04",
+        "source_type": "paragraph",
+        "source_id": "content_0007",
+        "content_list_item_index": 7
+      }
+    },
+    {
+      "candidate_id": "cand_0004",
+      "article_id": "a_0005_01",
+      "study_id": "s_0005_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adjuvant 17-hydroxyprogesterone caproate after ultrasound-indicated cerclage",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preterm birth before 35 completed weeks",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Singleton women with prior spontaneous preterm birth and short cervical length <25 mm at 16–22 6/7 weeks, randomized to cerclage placement; actual progesterone-use subgroup",
+      "timepoint": "",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 14,
+        "intervention_total": 47,
+        "control_events": 34,
+        "control_total": 101,
+        "outcome_unit": "Women with preterm birth <35 weeks"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0005_01",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 148
+      }
+    },
+    {
+      "candidate_id": "cand_0005",
+      "article_id": "a_0005_03",
+      "study_id": "s_0005_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adjuvant 17-hydroxyprogesterone caproate after ultrasound-indicated cerclage",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preterm birth <35 weeks",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Singleton pregnancies with vaginal cerclage; the source cohort included mixed cerclage indications and does not report the direct PTB rates restricted to prior spontaneous PTB with ultrasound-indicated cerclage.",
+      "timepoint": "Delivery before 35 weeks gestational age",
+      "data_family": "generic_text_evidence",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "evidence_description": "The source reports direct PTB <35-week rates of 29% with cerclage alone and 34% with cerclage plus 17-OHPC, but does not provide source-reported event counts for these direct PTB outcomes."
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0005_03",
+        "source_type": "paragraph",
+        "source_id": "content_0037",
+        "content_list_item_index": 37
+      }
+    },
+    {
+      "candidate_id": "cand_0006",
+      "article_id": "a_0005_01",
+      "study_id": "s_0005_01",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Adjuvant 17-hydroxyprogesterone caproate plus ultrasound-indicated cerclage versus ultrasound-indicated cerclage alone",
+      "outcome": {
+        "code": null,
+        "label": "Preterm birth before 35 completed weeks",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Singleton pregnancy with prior spontaneous preterm birth and ultrasound-indicated cerclage",
+      "timepoint": "Delivery before 35 completed weeks of gestation",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Preterm birth before 35 completed weeks of gestation.",
+        "intervention_arm": {
+          "label": "Adjuvant 17-hydroxyprogesterone caproate plus cerclage",
+          "events": 14,
+          "total": 47
+        },
+        "comparator_arm": {
+          "label": "Cerclage alone",
+          "events": 34,
+          "total": 101
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.8848560700876094,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.12233027986970209,
+        "variance": 0.06966275029076303,
+        "direction": "adjuvant_17_ohpc_higher_event_risk_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0005_01",
+        "page": 11,
+        "source_type": "table",
+        "source_id": "Table 2, Perinatal outcomes by actual progesterone use for women randomized to cerclage"
+      }
+    },
+    {
+      "candidate_id": "cand_0007",
+      "article_id": "a_0005_03",
+      "study_id": "s_0005_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adjuvant 17-hydroxyprogesterone caproate after ultrasound-indicated cerclage",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Prevention of preterm birth <35 weeks (delivery ≥35 weeks gestational age; source-reported complement of PTB <35 weeks)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Singleton pregnancies undergoing vaginal cerclage; cohort included history-, examination-, and ultrasound-indicated cerclages. The source defines ultrasound-indicated cerclage as prior spontaneous PTB <34 weeks plus cervical length <25 mm before 24 weeks, but does not provide this comparison restricted to that subgroup.",
+      "timepoint": "Delivery",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 35,
+        "intervention_total": 53,
+        "control_events": 52,
+        "control_total": 73,
+        "outcome_unit": "Prevention of PTB <35 weeks; delivery ≥35 weeks gestational age"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0005_03",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 105
+      }
+    },
+    {
+      "candidate_id": "cand_0008",
+      "article_id": "a_0005_02",
+      "study_id": "s_0005_02",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "Adjuvant 17-hydroxyprogesterone caproate (17P) after ultrasound-indicated cerclage",
+      "comparison": "",
+      "outcome": {
+        "code": null,
+        "label": "Preterm birth before 35 completed weeks (PTB <35 weeks; spontaneous PTB <35 weeks)",
+        "outcome_class": null
+      },
+      "population_or_subgroup": "Singleton gestation with previous spontaneous preterm birth, current transvaginal ultrasound cervical length <25 mm, ultrasound-indicated cerclage placed between 15 and 23 weeks; asymptomatic at cerclage placement",
+      "timepoint": "Delivery before 35 weeks",
+      "data_family": "binary_arm_counts",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "intervention_events": 6,
+        "intervention_total": 15,
+        "control_events": 12,
+        "control_total": 43,
+        "outcome_unit": "Women with PTB <35 weeks"
+      },
+      "effect": {
+        "effect_type": null,
+        "value": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": null,
+        "variance": null,
+        "direction": null
+      },
+      "source_location": {
+        "document_id": "a_0005_02",
+        "source_type": "table",
+        "source_id": "Table 2",
+        "content_list_item_index": 28
+      }
+    },
+    {
+      "candidate_id": "cand_0009",
+      "article_id": "a_0005_03",
+      "study_id": "s_0005_03",
+      "target_id": "unresolved_candidate_target",
+      "exposure": "",
+      "comparison": "Adjuvant 17-hydroxyprogesterone caproate plus ultrasound-indicated cerclage versus ultrasound-indicated cerclage alone",
+      "outcome": {
+        "code": null,
+        "label": "Delivery at or after 35 completed weeks",
+        "outcome_class": "binary"
+      },
+      "population_or_subgroup": "Singleton pregnancy with vaginal cerclage; indication-specific outcome table not reported",
+      "timepoint": "Delivery at or after 35 completed weeks of gestation",
+      "data_family": "binary_arm_outcome",
+      "estimand": "source_reported_association",
+      "raw_data": {
+        "data_type": "binary_arm_outcome",
+        "outcome_definition": "Prevention of preterm birth before 35 weeks, defined by the source as delivery at or after 35 weeks.",
+        "intervention_arm": {
+          "label": "Adjuvant 17-hydroxyprogesterone caproate plus cerclage",
+          "events": 35,
+          "total": 53
+        },
+        "comparator_arm": {
+          "label": "Cerclage alone",
+          "events": 52,
+          "total": 73
+        }
+      },
+      "effect": {
+        "effect_type": "RR",
+        "value": 0.9270682148040639,
+        "ci_lower": null,
+        "ci_upper": null,
+        "log_value": -0.07572812949574437,
+        "variance": 0.015235643136909616,
+        "direction": "adjuvant_17_ohpc_higher_event_risk_when_rr_gt_1"
+      },
+      "source_location": {
+        "document_id": "a_0005_03",
+        "page": 19,
+        "source_type": "table",
+        "source_id": "Table 2, Prevention of preterm birth before 35 weeks"
+      }
+    }
+  ]
+}

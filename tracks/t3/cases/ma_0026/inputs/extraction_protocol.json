@@ -1,0 +1,108 @@
+{
+  "$schema": "../../../../../schemas/extraction-protocol.schema.json",
+  "case_id": "ma_0026",
+  "protocol_id": "ma_0026_full_rt_pcr_prevalence_protocol_v1",
+  "protocol_version": "1.0.0-source-first-draft",
+  "task_scope": "known_included_report_extraction",
+  "review_question": "What is the prevalence of RT-PCR-confirmed SARS-CoV-2 infection among screened healthcare workers?",
+  "pico": {
+    "population": {
+      "description": "Healthcare workers screened by RT-PCR",
+      "aliases": []
+    },
+    "intervention_or_exposure": {
+      "description": "SARS-CoV-2 RT-PCR screening",
+      "aliases": []
+    },
+    "comparator": {
+      "description": "None",
+      "aliases": []
+    },
+    "outcome": {
+      "description": "RT-PCR-confirmed SARS-CoV-2 infection",
+      "aliases": []
+    }
+  },
+  "eligible_study_designs": [
+    "cross-sectional or cohort screening study"
+  ],
+  "targets": [
+    {
+      "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+      "outcome": {
+        "description": "RT-PCR-confirmed SARS-CoV-2 infection",
+        "aliases": [
+          "PCR positivity",
+          "SARS-CoV-2 infection prevalence"
+        ]
+      },
+      "comparison": "Single-arm prevalence; no comparator",
+      "population_or_subgroup": "Source-defined screened healthcare worker cohort",
+      "timepoint_policy": {
+        "rule": "Use one source-defined RT-PCR screening cohort and its study screening period. Do not mix RT-PCR and antibody results."
+      },
+      "accepted_data_families": [
+        "single_arm_event_counts"
+      ],
+      "preferred_effect_measures": [
+        "proportion"
+      ],
+      "estimands": [
+        "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers"
+      ],
+      "candidate_capture_policy": {
+        "record_scope": "Capture every source-supported RT-PCR screening cohort; analysis selection is deferred.",
+        "selection_deferred": true
+      },
+      "quantitative_use_policy": "Extract positive RT-PCR count, tested healthcare-worker denominator, source-defined population, screening time period, and exact primary-source locator. Never derive a count from the target review.",
+      "extraction_notes": []
+    }
+  ],
+  "source_policy": {
+    "allowed_representations": [
+      "pdf"
+    ],
+    "external_evidence_allowed": false,
+    "target_review_access": "forbidden"
+  },
+  "output_contract": {
+    "effect_unit": "one source-supported report-level RT-PCR screening cohort",
+    "required_fields": [
+      "article_id",
+      "target_id",
+      "outcome",
+      "comparison",
+      "population_or_subgroup",
+      "timepoint",
+      "data_family",
+      "estimand",
+      "raw_data",
+      "source_location"
+    ]
+  },
+  "adapter_metadata": {
+    "input_shape": "frozen_v1_portable",
+    "source_case_id": "ma_0026_full",
+    "family_aliases_applied": {
+      "binary_arm_outcome": "binary_arm_counts",
+      "binary_arm_event_counts": "binary_arm_counts",
+      "adjusted_time_to_event_effect": "time_to_event"
+    },
+    "target_compatibility": [
+      {
+        "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+        "status": "unsupported",
+        "original_families": [
+          "single_arm_event_counts"
+        ],
+        "recommended_v1_families": [
+          "single_arm_event_counts"
+        ],
+        "unsupported_families": [
+          "single_arm_event_counts"
+        ],
+        "reason": "No existing seven-case v1 template has the same data contract."
+      }
+    ]
+  }
+}

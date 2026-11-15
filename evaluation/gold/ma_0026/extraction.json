@@ -1,0 +1,1288 @@
+{
+  "case_id": "ma_0026_full",
+  "gold_id": "ma_0026_full_source_verified_extraction_v1",
+  "task_type": "extraction",
+  "applies_to_task_ids": [
+    "ma_0026_full_extraction_all_reports_v1"
+  ],
+  "source_policy": {
+    "target_review_numeric_data_forbidden": true,
+    "primary_source_values_only": true,
+    "source_only_is_curator_metadata_not_runtime_input": true
+  },
+  "report_units": [
+    {
+      "article_id": "a_0026_r015",
+      "study_id": "s_0026_r015",
+      "citation": "Bai et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r015_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Department staff cohort described in the primary report",
+          "timepoint": "Source-defined retrospective study period",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 14,
+            "total": 171
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "Results and study-population text"
+        },
+        {
+          "candidate_id": "r015_c02",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Questionnaire respondents in the primary report",
+          "timepoint": "Source-defined retrospective study period",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 12,
+            "total": 118
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "respondent_subset",
+          "cohort_relationship": "overlapping_questionnaire_subset",
+          "source_location": "Results and study-population text"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r016",
+      "study_id": "s_0026_r016",
+      "citation": "Barrett et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r016_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Previously undiagnosed healthcare workers screened by oropharyngeal RT-PCR",
+          "timepoint": "Onset of the U.S. COVID-19 epidemic",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 40,
+            "total": 546
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "Results and Table 2 heading"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r018",
+      "study_id": "s_0026_r018",
+      "citation": "Breazzano et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r018_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Resident physicians tested with a result reported",
+          "timepoint": "Source-defined survey period during exponential New York City transmission",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 101,
+            "total": 177
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "Results: tested residents with results reported"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r022",
+      "study_id": "s_0026_r022",
+      "citation": "Folgueira et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r022_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Hospital workers tested during March 1-29",
+          "timepoint": "March 1-29, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 791,
+            "total": 2085
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "Abstract Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r024",
+      "study_id": "s_0026_r024",
+      "citation": "Garcia-Basteiro et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r024_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Randomly recruited Hospital Clinic of Barcelona healthcare workers with a valid recruitment rRT-PCR result",
+          "timepoint": "Study recruitment, March 28 to April 9, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 15,
+            "total": 576
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 3, Results paragraph and Table 2 row 'Positive rRT-PCR at study recruitment'",
+          "source_consistency_note": "Table 2 reports 15/576. Its footnote's stated invalid-test count does not arithmetically reconcile with the table denominator, so the candidate preserves the tabulated numerator and denominator verbatim."
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r026",
+      "study_id": "s_0026_r026",
+      "citation": "Hunter et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r026_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic healthcare workers undergoing SARS-CoV-2 screening at the Newcastle upon Tyne Hospitals NHS Foundation Trust",
+          "timepoint": "March 10 to March 31, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 240,
+            "total": 1654
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Results paragraph"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r028",
+      "study_id": "s_0026_r028",
+      "citation": "Keeley et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r028_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic healthcare workers tested by RT-PCR",
+          "timepoint": "March 2020 rollout",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 282,
+            "total": 1533
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "Abstract"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r030",
+      "study_id": "s_0026_r030",
+      "citation": "Kluytmans et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r030_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers at two Dutch hospitals who reported fever or mild respiratory symptoms and received SARS-CoV-2 testing",
+          "timepoint": "March 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 86,
+            "total": 1353
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 11, Figure 1 recruitment flowchart"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r034",
+      "study_id": "s_0026_r034",
+      "citation": "Ran et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r034_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers with acute respiratory illness in a designated Wuhan hospital, all classified as SARS-CoV-2 infection or non-infection by follow-up end",
+          "timepoint": "Outbreak period through January 28, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 28,
+            "total": 72
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1 Abstract; PDF Table 1 infection column (28 infection, 44 non-infection); Methods case definition"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r035",
+      "study_id": "s_0026_r035",
+      "citation": "Reusken et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r035_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers with mild respiratory symptoms tested across nine hospitals in Noord-Brabant, the Netherlands",
+          "timepoint": "Two-day rapid study, March 6 to 8, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 45,
+            "total": 1097
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1 Abstract; Results text describing 1,097 tested and 45 positive"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r037",
+      "study_id": "s_0026_r037",
+      "citation": "Guery et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r037_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Staff members of medicalized nursing homes screened after the first resident case",
+          "timepoint": "Two screening days, with five additional staff tested 48 hours later",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 3,
+            "total": 136
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 2, Results paragraph and Table 1"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r038",
+      "study_id": "s_0026_r038",
+      "citation": "Roxby et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r038_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Staff members, excluding residents, at an independent and assisted living community",
+          "timepoint": "Initial SARS-CoV-2 test round, March 10 to 11, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 2,
+            "total": 62
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, investigation summary and Results paragraph"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r039",
+      "study_id": "s_0026_r039",
+      "citation": "Solodky et al. (2020)",
+      "source_disposition": "source_only",
+      "source_only_reason": "The report starts from a voluntary antibody-testing cohort and only notes historical PCR diagnoses. It does not describe a uniform RT-PCR screen of all 244 workers, so 14/244 is not a valid contemporaneous PCR prevalence.",
+      "source_location": "PDF pp. 1-2, Methods and Results",
+      "candidates": []
+    },
+    {
+      "article_id": "a_0026_r041",
+      "study_id": "s_0026_r041",
+      "citation": "Treibel et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r041_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Asymptomatic, healthy self-declared healthcare workers at Barts Health NHS Trust",
+          "timepoint": "Week 1 of serial testing beginning March 23, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 28,
+            "total": 396
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, serial-testing Results paragraph"
+        },
+        {
+          "candidate_id": "r041_c02",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Same longitudinal healthcare worker cohort; not an independent cohort",
+          "timepoint": "Week 2 of serial testing",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 14,
+            "total": 284
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "serial_follow_up_rt_pcr_screen",
+          "cohort_relationship": "serial_follow_up_same_cohort",
+          "source_location": "PDF p. 1, serial-testing Results paragraph"
+        },
+        {
+          "candidate_id": "r041_c03",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Same longitudinal healthcare worker cohort; not an independent cohort",
+          "timepoint": "Week 3 of serial testing",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 4,
+            "total": 263
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "serial_follow_up_rt_pcr_screen",
+          "cohort_relationship": "serial_follow_up_same_cohort",
+          "source_location": "PDF p. 1, serial-testing Results paragraph"
+        },
+        {
+          "candidate_id": "r041_c04",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Same longitudinal healthcare worker cohort; not an independent cohort",
+          "timepoint": "Week 4 of serial testing",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 4,
+            "total": 267
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "serial_follow_up_rt_pcr_screen",
+          "cohort_relationship": "serial_follow_up_same_cohort",
+          "source_location": "PDF p. 1, serial-testing Results paragraph"
+        },
+        {
+          "candidate_id": "r041_c05",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Same longitudinal healthcare worker cohort; not an independent cohort",
+          "timepoint": "Week 5 of serial testing",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 3,
+            "total": 269
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "serial_follow_up_rt_pcr_screen",
+          "cohort_relationship": "serial_follow_up_same_cohort",
+          "source_location": "PDF p. 1, serial-testing Results paragraph"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r043",
+      "study_id": "s_0026_r043",
+      "citation": "Tosato et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r043_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Asymptomatic healthcare professionals in a tertiary-centre laboratory medicine department",
+          "timepoint": "Source-defined testing assessment",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 1,
+            "total": 133
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 2, Results paragraph; Methods cohort description"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r044",
+      "study_id": "s_0026_r044",
+      "citation": "Tostmann et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r044_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers tested for SARS-CoV-2 by PCR in the Netherlands",
+          "timepoint": "March 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 90,
+            "total": 803
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 2, Table 1 heading and Results text"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r050",
+      "study_id": "s_0026_r050",
+      "citation": "Lai et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r050_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers at Tongji Hospital",
+          "timepoint": "Through February 9, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 110,
+            "total": 9684
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract Results; Results cohort description"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r051",
+      "study_id": "s_0026_r051",
+      "citation": "Khalil et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r051_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Staff members at a London maternity hospital tested by nasopharyngeal SARS-CoV-2 RT-PCR",
+          "timepoint": "March 17 to April 16, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 47,
+            "total": 266
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Results paragraph and Figure caption"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r052",
+      "study_id": "s_0026_r052",
+      "citation": "Contejean et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r052_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic healthcare workers screened by nasopharyngeal swab in adult and paediatric settings",
+          "timepoint": "Source-defined prospective screening period",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 373,
+            "total": 1344
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract Results; PDF p. 6, Results text"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r053",
+      "study_id": "s_0026_r053",
+      "citation": "Graham et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r053_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Asymptomatic nursing-home staff sampled across three UK nursing homes",
+          "timepoint": "Testing programme initiated April 15, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 3,
+            "total": 70
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 4, SARS-CoV-2 Testing Results and Clinical Features; Discussion"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r054",
+      "study_id": "s_0026_r054",
+      "citation": "Vahidy et al. (2020)",
+      "source_disposition": "source_only",
+      "source_only_reason": "The report gives rounded positivity percentages and denominators for several HCW strata, but no exact stratum event counts. Exact events must not be reverse-engineered from rounded percentages.",
+      "source_location": "PDF pp. 1-2, Results and Table 1",
+      "candidates": []
+    },
+    {
+      "article_id": "a_0026_r057",
+      "study_id": "s_0026_r057",
+      "citation": "Yombi et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r057_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers screened during Period 1, including symptomatic staff and staff tested despite respiratory symptoms without fever",
+          "timepoint": "Before March 30, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 81,
+            "total": 158
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Results paragraph; Table I"
+        },
+        {
+          "candidate_id": "r057_c02",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers screened during Period 2",
+          "timepoint": "After March 30, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 94,
+            "total": 378
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "later_programme_period",
+          "cohort_relationship": "serial_programme_follow_up",
+          "source_location": "PDF p. 1, Results paragraph; Table I"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r058",
+      "study_id": "s_0026_r058",
+      "citation": "Olalla et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r058_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers recruited at Costa del Sol Hospital",
+          "timepoint": "April 15-25, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 2,
+            "total": 498
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 2, Abstract Results; p. 7, naso-oropharyngeal PCR results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r059",
+      "study_id": "s_0026_r059",
+      "citation": "Antonio et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r059_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers in Mexico City recorded in the National Epidemiological Surveillance System",
+          "timepoint": "Through September 20, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 17531,
+            "total": 57758
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 2, Abstract Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r062",
+      "study_id": "s_0026_r062",
+      "citation": "Borras et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r062_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Nursing-home staff screened in Barcelona",
+          "timepoint": "April 10-24, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 403,
+            "total": 2655
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, research-letter results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r064",
+      "study_id": "s_0026_r064",
+      "citation": "Cho et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r064_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers in 11 haemodialysis units in Daegu",
+          "timepoint": "Through March 14, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 7,
+            "total": 278
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract; p. 6, Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r065",
+      "study_id": "s_0026_r065",
+      "citation": "Clemency et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r065_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Outpatient healthcare workers tested after symptom assessment in western New York",
+          "timepoint": "March-April 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 225,
+            "total": 961
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r066",
+      "study_id": "s_0026_r066",
+      "citation": "Fusco et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r066_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers at an infectious-diseases hospital in Naples",
+          "timepoint": "First molecular-testing round, March 23-26, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 2,
+            "total": 115
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 6, Results paragraph"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r067",
+      "study_id": "s_0026_r067",
+      "citation": "Galan et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r067_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic healthcare workers who received SARS-CoV-2 PCR in a Madrid hospital",
+          "timepoint": "Source-defined symptomatic testing period",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 306,
+            "total": 421
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 13, Results: 306/421 PCR positive"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r068",
+      "study_id": "s_0026_r068",
+      "citation": "Albalate et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r068_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Staff of the haemodialysis unit at Hospital Universitario Infanta Leonor",
+          "timepoint": "Source-defined outbreak period",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 4,
+            "total": 44
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r070",
+      "study_id": "s_0026_r070",
+      "citation": "Bhattacharya et al. (2020)",
+      "source_disposition": "source_only",
+      "source_only_reason": "The report is an HCQ exposure comparison. It supplies several restricted arm-by-contact tables but no source-stated unstratified RT-PCR event count for the full 106-person HCW cohort.",
+      "source_location": "PDF pp. 4-6, Methods/Results; pp. 17-18, Tables 2-3",
+      "candidates": []
+    },
+    {
+      "article_id": "a_0026_r071",
+      "study_id": "s_0026_r071",
+      "citation": "Brandstetter et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r071_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Hospital staff undergoing outbreak RT-PCR testing in Regensburg",
+          "timepoint": "March 2020 outbreak",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 36,
+            "total": 379
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Results text: 36 hospital staff positive among 379 tested"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r074",
+      "study_id": "s_0026_r074",
+      "citation": "Houlihan et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r074_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Front-line healthcare workers in a London acute hospital",
+          "timepoint": "First month of serial testing beginning March 26, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 42,
+            "total": 200
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Results and Table 1: at least one PCR-positive self-swab"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r078",
+      "study_id": "s_0026_r078",
+      "citation": "Lahner et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r078_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers assessed by nasopharyngeal RT-PCR in Rome",
+          "timepoint": "Source-defined cross-sectional assessment",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 58,
+            "total": 2057
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract Results; p. 4, Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r079",
+      "study_id": "s_0026_r079",
+      "citation": "Lan et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r079_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers with triage and initial SARS-CoV-2 RT-PCR assays",
+          "timepoint": "March 9-April 15, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 83,
+            "total": 592
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 1, Abstract; p. 4, Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r080",
+      "study_id": "s_0026_r080",
+      "citation": "Lombardi et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r080_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers undergoing nasopharyngeal SARS-CoV-2 swab testing in Milan",
+          "timepoint": "February 24-March 31, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 139,
+            "total": 1573
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 3, Abstract Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r081",
+      "study_id": "s_0026_r081",
+      "citation": "Ma et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r081_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Medical staff in a Wuhan haemodialysis centre",
+          "timepoint": "January 14-March 12, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 4,
+            "total": 33
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF p. 3, Abstract Results; p. 4, Methods"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r082",
+      "study_id": "s_0026_r082",
+      "citation": "Mani et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r082_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic employees tested at two University of Washington Medicine testing centres",
+          "timepoint": "March 12-April 23, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 185,
+            "total": 3477
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Abstract and Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r083",
+      "study_id": "s_0026_r083",
+      "citation": "Jones et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r083_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Asymptomatic healthcare workers in the Cambridge screening arm",
+          "timepoint": "April 2020 baseline screening",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 31,
+            "total": 1032
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "asymptomatic_screening_arm",
+          "cohort_relationship": "independent_parallel_screening_arm",
+          "source_location": "PDF p. 1, Abstract reporting the asymptomatic screening arm"
+        },
+        {
+          "candidate_id": "r083_c02",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic healthcare workers in the Cambridge screening arm",
+          "timepoint": "April 2020 baseline screening",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 26,
+            "total": 169
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "symptomatic_screening_arm",
+          "cohort_relationship": "independent_parallel_screening_arm",
+          "source_location": "PDF p. 2, Results reporting the symptomatic HCW screening arm"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r084",
+      "study_id": "s_0026_r084",
+      "citation": "Martin et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r084_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Staff working in COVID-19 units who completed the Day 1 visit",
+          "timepoint": "Day 1 baseline visit",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 10,
+            "total": 326
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "baseline_rt_pcr_screen",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Results: ten participants with positive RT-PCR on Day 1"
+        },
+        {
+          "candidate_id": "r084_c02",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Same staff cohort at Day 15 follow-up",
+          "timepoint": "Day 15 follow-up visit",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 8,
+            "total": 326
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "serial_follow_up_rt_pcr_screen",
+          "cohort_relationship": "serial_follow_up_same_cohort",
+          "source_location": "PDF Results: six persistent plus two new RT-PCR-positive participants"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r086",
+      "study_id": "s_0026_r086",
+      "citation": "Paderno et al. (2020)",
+      "source_disposition": "source_only",
+      "source_only_reason": "All 58 staff received serology, while swabs were limited to symptomatic staff. The report gives a combined serology-or-swab outcome but no denominator for a uniform RT-PCR cohort.",
+      "source_location": "PDF Methods and Results",
+      "candidates": []
+    },
+    {
+      "article_id": "a_0026_r087",
+      "study_id": "s_0026_r087",
+      "citation": "Parcell et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r087_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic health and social care workers tested in Tayside",
+          "timepoint": "March 17-April 11, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 325,
+            "total": 1173
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Abstract Results"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r092",
+      "study_id": "s_0026_r092",
+      "citation": "Shields et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r092_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Asymptomatic healthcare workers tested at University Hospitals Birmingham",
+          "timepoint": "April 25, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 13,
+            "total": 554
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Results: point prevalence of PCR positivity"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r093",
+      "study_id": "s_0026_r093",
+      "citation": "Sikkema et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r093_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic healthcare workers screened in three Dutch hospitals",
+          "timepoint": "March 2-12, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 96,
+            "total": 1796
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Summary Findings"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r094",
+      "study_id": "s_0026_r094",
+      "citation": "Bird et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r094_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Symptomatic and/or self-isolating healthcare workers tested in the United Kingdom",
+          "timepoint": "Seven-week source-defined period",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 47,
+            "total": 152
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Results and Figure 1A totals"
+        }
+      ]
+    },
+    {
+      "article_id": "a_0026_r095",
+      "study_id": "s_0026_r095",
+      "citation": "Wee et al. (2020)",
+      "source_disposition": "quantitative_candidates_available",
+      "candidates": [
+        {
+          "candidate_id": "r095_c01",
+          "target_id": "rt_pcr_sars_cov_2_prevalence_in_healthcare_workers",
+          "outcome": "RT-PCR-confirmed SARS-CoV-2 infection",
+          "comparison": "Single-arm prevalence; no comparator",
+          "population_or_subgroup": "Healthcare workers with acute respiratory illness tested at Staff Clinic/Emergency Department",
+          "timepoint": "January 1-April 22, 2020",
+          "data_family": "single_arm_event_counts",
+          "estimand": "rt_pcr_confirmed_sars_cov_2_prevalence_among_screened_healthcare_workers",
+          "raw_data": {
+            "events": 9,
+            "total": 1642
+          },
+          "quantitative_usability": "usable_source_count",
+          "candidate_scope": "source_defined_rt_pcr_cohort",
+          "cohort_relationship": "independent_source_defined_cohort",
+          "source_location": "PDF Results: centralized acute-respiratory-illness surveillance"
+        }
+      ]
+    }
+  ]
+}
