@@ -25,6 +25,8 @@ Publications are listed by **DOI and title**. Retrieve the publications locally 
 
 Document counts refer to case-document entries. T3 operates on the supplied structured evidence candidates. PDFs, article text, abstracts and source figures are obtained separately.
 
+Original-paper evidence locations are recorded in the `source_location` fields within `evaluation/gold/<case>/extraction.json`. Locators are provided as structured annotations (with fields such as `document_id`, `page`, `source_type`, `source_id`, `locator_note` and, where available, `bbox`) or text descriptions such as `PDF p.4, Table 2`. These annotations allow the reference extraction records to be traced back to the corresponding evidence in the locally retrieved publications.
+
 ## Repository Structure
 
 ```text
